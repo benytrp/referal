@@ -1,0 +1,163 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:00.820Z",
+    "source_text_length": 1611,
+    "word_count": 108,
+    "sentence_count": 6,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "afff8596f383973fc4210fa42a4dedd9",
+    "entropy_level": 0.924,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "ecbca820764cdca17f781e4578d2ee83f21edd7e652341004a0620a9f595f9f7.json",
+      "processing_timestamp": "2025-08-11T15:16:00.820Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0926",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0926",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "layer",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"layer\",\n"
+        ]
+      },
+      {
+        "theme": "meta",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"meta\",\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"aeon\",\n"
+        ]
+      },
+      {
+        "theme": "ai_studio_code",
+        "frequency": 2,
+        "significance": "0.0185",
+        "examples": [
+          "\"ai_studio_code"
+        ]
+      },
+      {
+        "theme": "1966",
+        "frequency": 1,
+        "significance": "0.0093",
+        "examples": [
+          "1966,\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0093",
+        "examples": [
+          "\"2025-08-11T05:52:30.294Z\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:30...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.08055,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "afff8596f383973fc4210fa42a4dedd9"
+  }
+}

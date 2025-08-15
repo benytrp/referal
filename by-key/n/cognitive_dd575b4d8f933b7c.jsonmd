@@ -1,0 +1,184 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:06.091Z",
+    "source_text_length": 4566,
+    "word_count": 443,
+    "sentence_count": 40,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "dd575b4d8f933b7c301ac9a35ef00eed",
+    "entropy_level": 0.934,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "feedback_56bdd22eaa9b5426dc57c2cc628370b001c8ccc838d06ce97f642e6ac3f635f8_feedin_1754897456944_gen001.json",
+      "processing_timestamp": "2025-08-11T15:16:06.091Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 19,
+        "significance": "0.0429",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0361",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "contested",
+        "frequency": 10,
+        "significance": "0.0226",
+        "examples": [
+          "\"contested\",\n"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 7,
+        "significance": "0.0158",
+        "examples": [
+          "\"cycle\",\n"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 6,
+        "significance": "0.0135",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "rows",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"rows\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "error",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "Error('No"
+        ]
+      },
+      {
+        "theme": "array",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "array"
+        ]
+      },
+      {
+        "theme": "length",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "if(!rows.length)"
+        ]
+      }
+    ],
+    "key_questions": [
+      "contested? 'error':'ok'}\\\">${r",
+      "contested? 'Contested' : 'Not contested'}</span> </div>`; el",
+      "'); const md = toMarkdown(rows);\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"getAttribute('data-theme') === 'dark' ?\",\n      \"length",
+      "?\",\n      \"length",
+      "?\",\n      \"length",
+      "?\",\n      \"end)",
+      "?\",\n      \"cycle",
+      "?\",\n      \"phase"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "length) throw new Error('Found a JSON array, b",
+        "statement_b": "it does not contain recognizable cycle objects",
+        "line": 12,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.27"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 5,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:38...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.2533,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.51",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "dd575b4d8f933b7c301ac9a35ef00eed"
+  }
+}

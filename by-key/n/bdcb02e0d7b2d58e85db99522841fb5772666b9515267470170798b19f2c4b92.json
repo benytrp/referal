@@ -1,0 +1,136 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.370Z",
+    "anchor_id": "bdcb02e0d7b2d58e85db99522841fb5772666b9515267470170798b19f2c4b92",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.746,
+    "contradictions_detected": 9,
+    "word_count": 1733
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 62
+      },
+      {
+        "theme": "return",
+        "frequency": 38
+      },
+      {
+        "theme": "await",
+        "frequency": 37
+      },
+      {
+        "theme": "function",
+        "frequency": 30
+      },
+      {
+        "theme": "text",
+        "frequency": 30
+      },
+      {
+        "theme": "name",
+        "frequency": 21
+      },
+      {
+        "theme": "cycle",
+        "frequency": 19
+      },
+      {
+        "theme": "total",
+        "frequency": 19
+      },
+      {
+        "theme": "log",
+        "frequency": 18
+      },
+      {
+        "theme": "length",
+        "frequency": 18
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "p(x=>x.toLowerCase()); const stop = new Set(['the','and','for','are','but','not','you','with','this','that','have','will','from','into','your','about','ther"
+      },
+      {
+        "idx": 1,
+        "sample": "=[]; s.forEach((sent,i)=>{ const m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m"
+      },
+      {
+        "idx": 2,
+        "sample": "s.forEach((sent,i)=>{ const m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m){ const"
+      },
+      {
+        "idx": 3,
+        "sample": "orEach((sent,i)=>{ const m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m){ const pos"
+      },
+      {
+        "idx": 4,
+        "sample": "ent,i)=>{ const m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m){ const pos = sent.t"
+      },
+      {
+        "idx": 5,
+        "sample": "{ const m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m){ const pos = sent.toLowerCa"
+      },
+      {
+        "idx": 6,
+        "sample": "m = sent.toLowerCase().match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m){ const pos = sent.toLowerCase().indexOf("
+      },
+      {
+        "idx": 7,
+        "sample": "20 }) { if (!isExt) { qsLog.textContent = 'Quick Web Search disabled (not in extension context).'; return { ok:false, results:[] }; } tr"
+      },
+      {
+        "idx": 8,
+        "sample": "url}\\n ${x.snippet||''}`).join('\\n\\n'); qsLog.textContent = lines || 'No results.'; return res; } qsLog.textContent = 'Search fail"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "(txt|md|markdown|html?",
+      "chrome?",
+      "runtime?",
+      "requestPermission?",
+      "?",
+      "length||1); return maxH?",
+      "?",
+      "]*\\?",
+      "?",
+      "includes(' '+w+' ')?",
+      "length>3 ?",
+      "if (res?",
+      "tag: cycle===total ?",
+      "const topic = ($(\"qs-topic\")?",
+      "const recency = +($(\"qs-recency\")?"
+    ],
+    "summary": "const, return, await, function, text"
+  },
+  "sentiment_indicators": {
+    "positive": 13,
+    "negative": 7,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "sdfgh.html",
+    "relative_path": "sdfgh.html",
+    "size_bytes": 22609,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.84
+  }
+}

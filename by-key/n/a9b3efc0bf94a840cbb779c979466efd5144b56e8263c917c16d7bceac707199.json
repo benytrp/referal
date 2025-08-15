@@ -1,0 +1,204 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.737Z",
+    "anchor_id": "a9b3efc0bf94a840cbb779c979466efd5144b56e8263c917c16d7bceac707199",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.778,
+    "contradictions_detected": 27,
+    "word_count": 4401
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 176
+      },
+      {
+        "theme": "const",
+        "frequency": 136
+      },
+      {
+        "theme": "object",
+        "frequency": 81
+      },
+      {
+        "theme": "data",
+        "frequency": 80
+      },
+      {
+        "theme": "schema",
+        "frequency": 69
+      },
+      {
+        "theme": "null",
+        "frequency": 64
+      },
+      {
+        "theme": "return",
+        "frequency": 48
+      },
+      {
+        "theme": "message",
+        "frequency": 47
+      },
+      {
+        "theme": "true",
+        "frequency": 45
+      },
+      {
+        "theme": "false",
+        "frequency": 42
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "AEON‑Bridge Offline Runner Single‑file app • No network • JSON‑Schema‑guarded Controls T"
+      },
+      {
+        "idx": 1,
+        "sample": "Choose Output Folder Artifacts write optional; stays in‑memory if no folder picked. Seed Facets (JSON array)"
+      },
+      {
+        "idx": 2,
+        "sample": "n’s routing_hints.triggers. Tip: Everything runs locally. No CDN, no server. Console & Lineage"
+      },
+      {
+        "idx": 3,
+        "sample": "ing_hints.triggers. Tip: Everything runs locally. No CDN, no server. Console & Lineage Run"
+      },
+      {
+        "idx": 4,
+        "sample": "f data}`); if(schema.enum && !schema.enum.includes(data)) errs.push(`${path}: not in enum`); if(typeof data === 'string'){ if(schema.minLength != null &"
+      },
+      {
+        "idx": 5,
+        "sample": "{})) if(!(k in schema.properties)) errs.push(`${path}: additional property ${k} not allowed`); } } } if(schema.type === 'array' || (Array.isArray("
+      },
+      {
+        "idx": 6,
+        "sample": "array', items:{type:'object'}, default:[]}, widen_policy:{type:'string', enum:['never','plateau','aggressive'], default:'plateau'}}}, output_schema:{type:'o"
+      },
+      {
+        "idx": 7,
+        "sample": "bestScore=score; } }); if(!best) return {ok:false, data:null, message:'no focus candidate'}; // Minimal facet suggestion placeholder const face"
+      },
+      {
+        "idx": 8,
+        "sample": "overwrite=true}){ if(!ctx.dirHandle) return {ok:false, data:null, message:'No directory chosen. Use \"Choose Output Folder\".'}; try{ // Best-effor"
+      },
+      {
+        "idx": 9,
+        "sample": "nSignals({text, word_count, entropy_level, patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|n"
+      },
+      {
+        "idx": 10,
+        "sample": "({text, word_count, entropy_level, patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n"
+      },
+      {
+        "idx": 11,
+        "sample": "xt, word_count, entropy_level, patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)"
+      },
+      {
+        "idx": 12,
+        "sample": "count, entropy_level, patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\"
+      },
+      {
+        "idx": 13,
+        "sample": "ntropy_level, patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always"
+      },
+      {
+        "idx": 14,
+        "sample": "patterns=[]}){ const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|every"
+      },
+      {
+        "idx": 15,
+        "sample": "const base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all."
+      },
+      {
+        "idx": 16,
+        "sample": "st base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*non"
+      },
+      {
+        "idx": 17,
+        "sample": "base = [/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\"
+      },
+      {
+        "idx": 18,
+        "sample": "[/\\b(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi,"
+      },
+      {
+        "idx": 19,
+        "sample": "(however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...pa"
+      },
+      {
+        "idx": 20,
+        "sample": "spite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp"
+      },
+      {
+        "idx": 21,
+        "sample": "vertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp(p,'gi')"
+      },
+      {
+        "idx": 22,
+        "sample": "less|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp(p,'gi'))];"
+      },
+      {
+        "idx": 23,
+        "sample": ")\\b/gi, /\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp(p,'gi'))]; let hits=0"
+      },
+      {
+        "idx": 24,
+        "sample": "/\\b(not|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp(p,'gi'))]; let hits=0; for(co"
+      },
+      {
+        "idx": 25,
+        "sample": "ot|no|never|none|nothing|n\\'t)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi, ...patterns.map(p=>new RegExp(p,'gi'))]; let hits=0; for(const r"
+      },
+      {
+        "idx": 26,
+        "sample": "results.data) || results.data.length===0) return {ok:false, data:null, message:'no sources'}; const claimsOut = await call('extractClaims', {results:result"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "isArray(t) ?",
+      "includes(t)?",
+      "?",
+      "5?",
+      "forEach(j=> C[i][j] = i===j ?",
+      "stance==='pro')) ?",
+      "const c = cov[cid]?",
+      "tension?",
+      "const level = density>10 ?",
+      "'EXTREMELY_SPICY' : density>6 ?",
+      "v, data:v||null, message:v?",
+      "4 ?",
+      "recursive_potential==='High'?",
+      "length?",
+      "telemetry?"
+    ],
+    "summary": "type, const, object, data, schema"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 6,
+    "uncertainty": 2
+  },
+  "temporal_markers": [
+    "2024",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "aeon_bridge_offline_runner_single_file_app.html",
+    "relative_path": "aeon_bridge_offline_runner_single_file_app.html",
+    "size_bytes": 43176,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.95
+  }
+}

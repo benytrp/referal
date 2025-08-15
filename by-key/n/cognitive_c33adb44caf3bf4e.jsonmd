@@ -1,0 +1,190 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:37.240Z",
+    "source_text_length": 2348,
+    "word_count": 178,
+    "sentence_count": 16,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "c33adb44caf3bf4ed54f61dd861ff7d5",
+    "entropy_level": 0.947,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "8e7524182c04ecf22594c07a48b159394e0f27c0654c9a2264777b958f3f27a3.json",
+      "processing_timestamp": "2025-08-11T15:15:37.240Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0562",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0562",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 5,
+        "significance": "0.0281",
+        "examples": [
+          "\"html\",\n"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 3,
+        "significance": "0.0169",
+        "examples": [
+          "\"Offline"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 3,
+        "significance": "0.0169",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"value\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "master",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"master\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "click(); setTimeout(()=>{ URL\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"cur[k] ?",
+      "?\",\n      \"reduce((acc,k)=> acc && (k in acc)",
+      "?\",\n      \"return (v === undefined || v === null || v === '')",
+      "?\",\n      \"replace(/[\\\\\\\\\\\\/:*",
+      "?\"\n    ],\n    \"summary\": \"const, data, value, function, html\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"e_3_master_template_builder_offline"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:36...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "726,\n    \"contradictions_detected\": 3,\n    \"word_count\": 697\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"const\",\n        \"frequency\": 41\n      },\n      {\n        \"theme\": \"data\",\n        \"frequency\": 23\n      },\n      {\n        \"theme\": \"value\",\n        \"frequency\": 16\n      },\n      {\n        \"theme\": \"function\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"html\",\n        \"frequency\": 12\n      },\n      {\n        \"theme\": \"url\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"addeventlistener\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"input\",\n        \"frequency\": 8\n      },\n      {\n        \"theme\": \"master\",\n        \"frequency\": 7\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"E3 Master Template Builder (Offline) No deps • Works offline Spawns downloadable child HTML files\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"Preview Tip: Everything runs in your browser",
+        "urgency_score": "0.13",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": " // ---------- helpers ---------- c\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"createElement('a'); a",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.97"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"const, data, value, function, html\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"e_3_master_template_builder_offline",
+        "urgency_score": "0.31",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"e_3_master_template_builder_offline",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.71"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1174,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.07",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 4 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c33adb44caf3bf4ed54f61dd861ff7d5"
+  }
+}

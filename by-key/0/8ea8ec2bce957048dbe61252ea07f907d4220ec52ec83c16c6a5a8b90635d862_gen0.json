@@ -1,0 +1,177 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:28.705Z",
+    "anchor_id": "8ea8ec2bce957048dbe61252ea07f907d4220ec52ec83c16c6a5a8b90635d862",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.655,
+    "contradictions_detected": 12,
+    "word_count": 4136
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 173
+      },
+      {
+        "theme": "editor",
+        "frequency": 85
+      },
+      {
+        "theme": "function",
+        "frequency": 82
+      },
+      {
+        "theme": "document",
+        "frequency": 79
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 65
+      },
+      {
+        "theme": "content",
+        "frequency": 65
+      },
+      {
+        "theme": "length",
+        "frequency": 54
+      },
+      {
+        "theme": "span",
+        "frequency": 53
+      },
+      {
+        "theme": "ctrl",
+        "frequency": 48
+      },
+      {
+        "theme": "return",
+        "frequency": 46
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Outline 🔄 No symbols found Bookmarks"
+      },
+      {
+        "idx": 1,
+        "sample": "Bookmarks 🗑️ No bookmarks Macros"
+      },
+      {
+        "idx": 2,
+        "sample": "om|if|elif|else|for|while|try|except|finally|with|as|return|yield|lambda|and|or|not|in|is|None|True|False|pass|break|continue|global|nonlocal)\\b/g; const"
+      },
+      {
+        "idx": 3,
+        "sample": "|else|for|while|try|except|finally|with|as|return|yield|lambda|and|or|not|in|is|None|True|False|pass|break|continue|global|nonlocal)\\b/g; const strings ="
+      },
+      {
+        "idx": 4,
+        "sample": "Autocomplete() { document.getElementById('autocomplete').style.display = 'none'; } // Enhanced Find/Replace function showFindPanel() {"
+      },
+      {
+        "idx": 5,
+        "sample": "closeFindPanel() { document.getElementById('find-panel').style.display = 'none'; } function findAll() { const searchTerm = document.getElem"
+      },
+      {
+        "idx": 6,
+        "sample": "Macro = []; document.getElementById('record-btn').style.display = 'none'; document.getElementById('stop-btn').style.display = 'inline-block';"
+      },
+      {
+        "idx": 7,
+        "sample": "ay = 'inline-block'; document.getElementById('stop-btn').style.display = 'none'; document.getElementById('macro-status').style.display = 'none';"
+      },
+      {
+        "idx": 8,
+        "sample": "isplay = 'none'; document.getElementById('macro-status').style.display = 'none'; updateStatusBar('Macro recorded'); } function recor"
+      },
+      {
+        "idx": 9,
+        "sample": "unction playMacro() { if (macros.length === 0) { updateStatusBar('No macros available'); return; } const macro = macros"
+      },
+      {
+        "idx": 10,
+        "sample": "list.innerHTML = '<div style=\"color:#666;font-style:italic;padding:10px;\">No macros recorded</div>'; return; } list.innerHTML ="
+      },
+      {
+        "idx": 11,
+        "sample": "ent.getElementById('kpi-recursion').textContent = insights.recursion ? 'Yes' : 'No'; // Update insights list const list = document.getElement"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "key === 'ArrowDown' ?",
+      "const strings = /([\"'`])(?",
+      ":(?",
+      ")*?",
+      "*$|\\/\\*[\\s\\S]*?",
+      "?",
+      "const functions = /\\b(\\w+)(?",
+      "const tags = /&lt;(\\/?",
+      "[\\w-]+)([^&gt;]*?",
+      "--[\\s\\S]*?",
+      "const selectors = /^[^{]+(?",
+      "const properties = /(\\w+(?",
+      "const comments = /\\/\\*[\\s\\S]*?",
+      "const strings = /([\"']{3}[\\s\\S]*?",
+      "[\"']{3}|[\"'](?"
+    ],
+    "summary": "const, editor, function, document, getelementbyid"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "!DOCTY.html",
+    "relative_path": "!DOCTY.html",
+    "size_bytes": 83338,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.85
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 363
+- Complexity score: 96.3
+- Key themes: const, sample, document, theme, frequency, getelementbyid, none, style, display, function
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of const?
+2. How does const connect to broader patterns?
+3. What are the deeper implications of sample?
+4. How does sample connect to broader patterns?
+5. What are the deeper implications of document?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: const, sample, document
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: const
+This theme emerges as significant in generation 0. Consider how const relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: sample
+This theme emerges as significant in generation 0. Consider how sample relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

@@ -1,0 +1,178 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:59.036Z",
+    "source_text_length": 3785,
+    "word_count": 307,
+    "sentence_count": 33,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "15480fb9962b3de8123633d6d9c9f4a5",
+    "entropy_level": 0.932,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "d41ffec34c80b32ad3941a7cd369652b292f88d921cefb8617b56d337e35ea66.json",
+      "processing_timestamp": "2025-08-11T15:15:59.036Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 14,
+        "significance": "0.0456",
+        "examples": [
+          "\"html\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 12,
+        "significance": "0.0391",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0326",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0326",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 7,
+        "significance": "0.0228",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 6,
+        "significance": "0.0195",
+        "examples": [
+          "\"class\",\n"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 6,
+        "significance": "0.0195",
+        "examples": [
+          "class=\\\"checkbox-cell\\\">Yes</th>"
+        ]
+      },
+      {
+        "theme": "strong",
+        "frequency": 5,
+        "significance": "0.0163",
+        "examples": [
+          "\"strong\",\n"
+        ]
+      },
+      {
+        "theme": "cell",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "class=\\\"checkbox-cell\\\">Yes</th>"
+        ]
+      },
+      {
+        "theme": "attendance",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "<tr><td><strong>Attendance</strong>"
+        ]
+      },
+      {
+        "theme": "htmloutput",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "$('htmlOutput');"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "(!el.value)"
+        ]
+      }
+    ],
+    "key_questions": [
+      "', 'err'); return; } try { const prepared = prep\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"const esc = (s) => String(s ?",
+      "?\",\n      \"== '')",
+      "?\",\n      \"const s = String(v",
+      "?\",\n      \"const is = (v, target) => String(v",
+      "?\",\n      \"const triCheck = (v, opt) => is(v, opt)",
+      "?\",\n      \"totalUnits",
+      "?\",\n      \"signatures",
+      "?\",\n      \"signatures"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:36...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\"\n    ],\n    \"summary\": \"div, const, class, html, writeu\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 3,\n    \"negative\": 2,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile (1)",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.51"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.18925,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "15480fb9962b3de8123633d6d9c9f4a5"
+  }
+}

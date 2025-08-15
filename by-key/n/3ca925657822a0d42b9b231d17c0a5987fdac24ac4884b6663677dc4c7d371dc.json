@@ -1,0 +1,105 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.869Z",
+    "anchor_id": "3ca925657822a0d42b9b231d17c0a5987fdac24ac4884b6663677dc4c7d371dc",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.748,
+    "contradictions_detected": 3,
+    "word_count": 2790
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 159
+      },
+      {
+        "theme": "state",
+        "frequency": 92
+      },
+      {
+        "theme": "function",
+        "frequency": 38
+      },
+      {
+        "theme": "claims",
+        "frequency": 34
+      },
+      {
+        "theme": "max",
+        "frequency": 33
+      },
+      {
+        "theme": "await",
+        "frequency": 32
+      },
+      {
+        "theme": "length",
+        "frequency": 29
+      },
+      {
+        "theme": "json",
+        "frequency": 25
+      },
+      {
+        "theme": "answers",
+        "frequency": 25
+      },
+      {
+        "theme": "claim",
+        "frequency": 25
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ck = arr => arr[Math.floor(Math.random() * arr.length)]; // Fallback UUID if not available const uuid = () => (crypto?.randomUUID ? crypto.randomUUID() : ("
+      },
+      {
+        "idx": 1,
+        "sample": "} catch (e) { logUI(lineageLog, `[fs] Directory selection canceled or not supported.`); } } async function writeOut(path, data) { if (!OU"
+      },
+      {
+        "idx": 2,
+        "sample": "map(c=>c.id); if (!ids.length) { matrixView.innerHTML = '<div class=\"badge\">no claims</div>'; return; } const table = document.createElement('table');"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const hash = obj => djb2(typeof obj === 'string' ?",
+      "const uuid = () => (crypto?",
+      "randomUUID ?",
+      "random()*16|0, v=c==='x'?",
+      "write(typeof data === 'string' ?",
+      "logUI(lineageLog, `[import] Loaded run with ${obj?",
+      "claims?",
+      "dedupe = new Set(run?",
+      "${typeof s === 'string' ?",
+      "matrix[i]?",
+      "[j]) ??",
+      "textContent = typeof v==='object' ?",
+      "length>n ?",
+      "map((s, i)=> ({ id: `r${i+1}`, title: typeof s==='string'?",
+      "title||`source_${i+1}`), body: typeof s==='string'?"
+    ],
+    "summary": "const, state, function, claims, max"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 4,
+    "uncertainty": 4
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "aeon_loop_scaffolder_offline_single_file_app.html",
+    "relative_path": "aeon_loop_scaffolder_offline_single_file_app.html",
+    "size_bytes": 33735,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

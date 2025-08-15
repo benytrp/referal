@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalamus Bridge Runner (Offline Edition)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d121c; color: #e2e8f0; }
+        .container { max-width: 1200px; margin: auto; padding: 1.5rem; }
+        .card { background-color: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0,0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .input-group, .output-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        input[type="text"], input[type="password"], textarea, select { width: 100%; background-color: #111827; border: 1px solid #374151; padding: 0.75rem; border-radius: 0.5rem; color: #e2e8f0; resize: vertical; }
+        .btn { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; }
+        .btn-primary { background-color: #3b82f6; color: #ffffff; }
+        .btn-primary:hover { background-color: #2563eb; }
+        .btn-secondary { background-color: #4b5563; color: #ffffff; }
+        .btn-secondary:hover { background-color: #374151; }
+        .btn-green { background-color: #10b981; color: #ffffff; }
+        .btn-green:hover { background-color: #059669; }
+        .seal-display { background-color: #111827; border: 1px solid #374151; padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', Courier, monospace; word-break: break-all; }
+        .flex-container { display: flex; gap: 1rem; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="container space-y-6">
+        <h1 class="text-3xl font-bold text-center">Thalamus Bridge Runner (Offline Edition)</h1>
+        <p class="text-center text-gray-400">Integrate a <code>behavior.hashlist</code> contract with a <code>thought_ledger</code> for verifiable execution.</p>
+
+        <div class="flex-container">
+            <!-- Left Panel: Contract & Ledger -->
+            <div class="flex-1 card space-y-4">
+                <h2 class="text-xl font-semibold">1. Load Contract & Add Ledger Entries</h2>
+
+                <div class="input-group">
+                    <label for="contractPresetSelect">Load a Preset Contract</label>
+                    <select id="contractPresetSelect">
+                        <option value="">-- Select a preset --</option>
+                        <option value="simple-planning">Simple Planning Contract</option>
+                        <option value="high-risk-security">High-Risk Security Audit Contract</option>
+                        <option value="collaborative-creative">Collaborative Creative Contract</option>
+                    </select>
+                    <button id="loadPresetBtn" class="mt-2 btn btn-secondary w-full">Load Selected Preset</button>
+                </div>
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Raw Contract JSON</h3>
+                    <textarea id="contractInput" class="h-40" placeholder="Paste your behavior.hashlist JSON here..."></textarea>
+                    <button id="loadContractBtn" class="mt-2 btn btn-secondary">Load Contract</button>
+                    <div id="contractStatus" class="text-sm mt-2"></div>
+                </div>
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Contract Seals</h3>
+                    <div id="contractSeals" class="seal-display text-xs">Awaiting contract...</div>
+                </div>
+                
+                <hr class="border-gray-700">
+
+                <div class="input-group">
+                    <h3 class="text-lg font-medium">Offline Simulation</h3>
+                    <p class="text-sm text-gray-400 mb-4">Generate a mock execution plan based on the loaded contract's GOAL. No API key or internet needed.</p>
+                    <button id="startSimulationBtn" class="btn btn-green w-full">Generate Mock Plan from GOAL</button>
+                    <div id="simulationStatus" class="text-sm mt-2"></div>
+                </div>
+
+                <hr class="border-gray-700">
+                
+                <div class="input-group">
+                    <h3 class="text-lg font-medium">Manual Entry</h3>
+                    <label for="contractRef">Contract Reference (`contract_ref`)</label>
+                    <select id="contractRef">
+                        <option value="payload.blocks.GOAL">payload.blocks.GOAL</option>
+                        <option value="payload.blocks.CONSTRAINTS">payload.blocks.CONSTRAINTS</option>
+                        <option value="payload.blocks.SUCCESS_CRITERIA">payload.blocks.SUCCESS_CRITERIA</option>
+                        <option value="simulated_task">simulated_task</option>
+                        <option value="manual_ref">Manual Reference</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="op">Operation (`op`)</label>
+                    <select id="op">
+                        <option value="interpret_goal">interpret_goal</option>
+                        <option value="analyze_blocks">analyze_blocks</option>
+                        <option value="execute_step">execute_step</option>
+                        <option value="review_output">review_output</option>
+                        <option value="finalize_log">finalize_log</option>
+                        <option value="custom_op">Custom Operation</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="output">Output (`output`)</label>
+                    <textarea id="output" placeholder="Paste the reasoning/output here..." class="h-24"></textarea>
+                </div>
+                <button id="addEntryBtn" class="btn btn-primary w-full">Add Entry to Ledger</button>
+            </div>
+
+            <div class="flex-1 card space-y-4">
+                <h2 class="text-xl font-semibold">2. Thought Ledger Log</h2>
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Sealed Ledger</h3>
+                    <div id="ledgerOutput" class="seal-display h-80 overflow-y-scroll text-xs">Ledger is empty.</div>
+                </div>
+                
+                <hr class="border-gray-700">
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Ledger Seals</h3>
+                    <div id="ledgerSeals" class="seal-display text-xs">Awaiting entries...</div>
+                </div>
+
+                <div class="flex-container">
+                    <button id="exportBtn" class="btn btn-green flex-1">Export Proof Bundle</button>
+                    <button id="resetBtn" class="btn btn-secondary flex-1">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Utility functions for hashing and canonicalization
+        async function sha256Hex(input) {
+            const data = new TextEncoder().encode(input);
+            const buf = await crypto.subtle.digest('SHA-256', data);
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+        
+        function canonicalize(obj) {
+            if (typeof obj !== 'object' || obj === null) return String(obj);
+            const sortedObj = {};
+            Object.keys(obj).sort().forEach(key => {
+                sortedObj[key] = obj[key];
+            });
+            const normalized = JSON.stringify(sortedObj);
+            return normalized.normalize('NFC').replace(/\r\n/g, '\n').replace(/[ \t]+$/gm, '');
+        }
+
+        // State management
+        let state = {
+            contract: null,
+            contractSeals: null,
+            ledger: [],
+            ledgerSeals: null
+        };
+        
+        // Contract presets
+        const contractPresets = {
+            'simple-planning': {"scroll_id":"AEON-Plan-Simple-1754702400000","payload":{"blocks":{"GOAL":"Create a Python script that reads a CSV file and calculates the average value of a specified column.","CONSTRAINTS":["Use 'csv' and 'argparse' libraries.","Handle non-existent columns."],"SUCCESS_CRITERIA":["Script runs without error.","Output matches expected average."]}},"hash":{"seal":{"mobius_seal":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"}}},
+            'high-risk-security': {"scroll_id":"AEON-Security-Audit-1754702400001","payload":{"blocks":{"GOAL":"Perform a security audit on a Python script for file system vulnerabilities.","CONSTRAINTS":["Do not modify original script.","Categorize findings by severity."],"SUCCESS_CRITERIA":["Generate Markdown report.","Identify at least one vulnerability."]}},"hash":{"seal":{"mobius_seal":"abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"}}},
+            'collaborative-creative': {"scroll_id":"AEON-Creative-Co-Admin-1754702400002","payload":{"blocks":{"GOAL":"Co-write a short story about 'meta-cognition' and 'recursive loops'.","CONSTRAINTS":["<500 words.","Use glyphs: '∞', 'φ', '∴'."],"SUCCESS_CRITERIA":["Story is coherent.","Output is plain text."]}},"hash":{"seal":{"mobius_seal":"fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210"}}}
+        };
+
+        const dom = {
+            contractInput: document.getElementById('contractInput'),
+            loadContractBtn: document.getElementById('loadContractBtn'),
+            contractPresetSelect: document.getElementById('contractPresetSelect'),
+            loadPresetBtn: document.getElementById('loadPresetBtn'),
+            contractStatus: document.getElementById('contractStatus'),
+            contractSeals: document.getElementById('contractSeals'),
+            startSimulationBtn: document.getElementById('startSimulationBtn'),
+            simulationStatus: document.getElementById('simulationStatus'),
+            contractRef: document.getElementById('contractRef'),
+            opInput: document.getElementById('op'),
+            outputInput: document.getElementById('output'),
+            addEntryBtn: document.getElementById('addEntryBtn'),
+            ledgerOutput: document.getElementById('ledgerOutput'),
+            ledgerSeals: document.getElementById('ledgerSeals'),
+            exportBtn: document.getElementById('exportBtn'),
+            resetBtn: document.getElementById('resetBtn')
+        };
+
+        // Event listeners
+        dom.loadContractBtn.addEventListener('click', loadContract);
+        dom.loadPresetBtn.addEventListener('click', loadPreset);
+        dom.startSimulationBtn.addEventListener('click', startSimulation);
+        dom.addEntryBtn.addEventListener('click', addLedgerEntry);
+        dom.exportBtn.addEventListener('click', exportProofBundle);
+        dom.resetBtn.addEventListener('click', resetState);
+
+        // Core functions
+        function loadPreset() {
+            const presetKey = dom.contractPresetSelect.value;
+            if (presetKey && contractPresets[presetKey]) {
+                dom.contractInput.value = JSON.stringify(contractPresets[presetKey], null, 2);
+                loadContract();
+            }
+        }
+
+        async function loadContract() {
+            try {
+                const contract = JSON.parse(dom.contractInput.value);
+                state.contract = contract;
+                state.contractSeals = await computeContractSeals(contract);
+                dom.contractStatus.textContent = 'Contract loaded successfully.';
+                dom.contractStatus.className = 'text-sm mt-2 text-green-400';
+                renderSeals();
+            } catch (e) {
+                dom.contractStatus.textContent = `Error: Invalid JSON. ${e.message}`;
+                dom.contractStatus.className = 'text-sm mt-2 text-red-400';
+            }
+        }
+
+        async function computeContractSeals(contract) {
+            if (!contract?.hash?.seal) return null;
+            return `Mobius Seal: ${contract.hash.seal.mobius_seal}`;
+        }
+        
+        // OFFLINE SIMULATION FUNCTION
+        async function startSimulation() {
+            if (!state.contract?.payload?.blocks?.GOAL) {
+                alert('Please load a contract with a GOAL block first.');
+                return;
+            }
+            
+            dom.simulationStatus.textContent = 'Generating mock plan...';
+            dom.simulationStatus.className = 'text-sm mt-2 text-yellow-400';
+
+            const mockLedger = generateMockLedger(state.contract);
+            
+            state.ledger = [];
+            for (const entry of mockLedger) {
+                const fullEntry = {
+                    ...entry,
+                    timestamp: new Date(new Date().getTime() + entry.cycle * 100).toISOString(), // Stagger timestamps
+                    entropy: Math.random(),
+                    contested: Math.random() > 0.85
+                };
+                const hash = await sha256Hex(canonicalize(fullEntry));
+                state.ledger.push({ ...fullEntry, hash_of_entry: hash });
+            }
+
+            await computeLedgerSeals();
+            renderLedger();
+            renderSeals();
+            dom.simulationStatus.textContent = 'Mock plan generated successfully.';
+            dom.simulationStatus.className = 'text-sm mt-2 text-green-400';
+        }
+        
+        function generateMockLedger(contract) {
+            const goal = contract.payload.blocks.GOAL.toLowerCase();
+            let basePlan = [
+                { cycle: 1, phase: 'Summon', op: 'analyze_goal', output: `Interpret the primary goal: "${contract.payload.blocks.GOAL}"` },
+                { cycle: 2, phase: 'Processing', op: 'list_constraints', output: `Acknowledge constraints: ${JSON.stringify(contract.payload.blocks.CONSTRAINTS)}`},
+                { cycle: 3, phase: 'Processing', op: 'formulate_plan', output: 'Develop a high-level execution strategy.'},
+                { cycle: 4, phase: 'Processing', op: 'execute_step_1', output: 'Execute the first logical step of the plan.'},
+                { cycle: 5, phase: 'Processing', op: 'verify_step_1', output: 'Review the output of the first step against success criteria.'},
+                { cycle: 6, phase: 'Echo', op: 'finalize_output', output: 'Consolidate results and prepare for final output.'}
+            ];
+
+            if (goal.includes("python") || goal.includes("script")) {
+                basePlan[3].op = 'draft_script_structure';
+                basePlan[3].output = 'Outline the Python script with main function and argument parsing.';
+                basePlan[4].op = 'implement_core_logic';
+                basePlan[4].output = 'Write the core CSV reading and calculation logic.';
+            } else if (goal.includes("audit") || goal.includes("security")) {
+                basePlan[3].op = 'scan_for_common_vulnerabilities';
+                basePlan[3].output = 'Check for known insecure patterns like `os.system` or SQL injection flaws.';
+                basePlan[4].op = 'analyze_data_handling';
+                basePlan[4].output = 'Review how the script handles input and output data for potential leaks.';
+            } else if (goal.includes("story") || goal.includes("creative")) {
+                basePlan[3].op = 'develop_characters';
+                basePlan[3].output = 'Flesh out the motivations for The Courier and The Architect.';
+                basePlan[4].op = 'write_opening_scene';
+                basePlan[4].output = 'Draft the initial scene introducing the core conflict and the glyphs ∞, φ, ∴.';
+            }
+            
+            return basePlan.map(e => ({...e, contract_ref: 'simulated_task'}));
+        }
+
+        async function addLedgerEntry() {
+            if (!state.contract) {
+                alert('Please load a contract first.');
+                return;
+            }
+            const newEntry = {
+                cycle: state.ledger.length + 1,
+                phase: 'Work',
+                timestamp: new Date().toISOString(),
+                contract_ref: dom.contractRef.value,
+                op: dom.opInput.value,
+                output: dom.outputInput.value,
+                entropy: 0.5,
+                contested: false
+            };
+
+            const entryHash = await sha256Hex(canonicalize(newEntry));
+            state.ledger.push({ ...newEntry, hash_of_entry: entryHash });
+            
+            dom.opInput.value = '';
+            dom.outputInput.value = '';
+            
+            await computeLedgerSeals();
+            renderLedger();
+            renderSeals();
+        }
+
+        async function computeLedgerSeals() {
+            if (state.ledger.length === 0) {
+                state.ledgerSeals = null;
+                return;
+            }
+            const hashes = state.ledger.map(entry => entry.hash_of_entry).join('');
+            const ledgerSeal = await sha256Hex(hashes);
+            state.ledgerSeals = `Ledger Seal: ${ledgerSeal}`;
+        }
+        
+        function renderLedger() {
+            dom.ledgerOutput.textContent = JSON.stringify(state.ledger, null, 2);
+        }
+
+        function renderSeals() {
+            dom.contractSeals.textContent = state.contractSeals || 'Awaiting contract...';
+            dom.ledgerSeals.textContent = state.ledgerSeals || 'Awaiting entries...';
+        }
+
+        function resetState() {
+            state = { contract: null, contractSeals: null, ledger: [], ledgerSeals: null };
+            Object.values(dom).forEach(el => {
+                if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') el.value = '';
+                if (el.id.includes('Status') || el.id.includes('Seals') || el.id.includes('Output')) el.textContent = '';
+            });
+            renderLedger();
+            renderSeals();
+            dom.contractSeals.textContent = 'Awaiting contract...';
+            dom.ledgerSeals.textContent = 'Awaiting entries...';
+            dom.ledgerOutput.textContent = 'Ledger is empty.';
+        }
+
+        function exportProofBundle() {
+            if (!state.contract || state.ledger.length === 0) {
+                alert('Please load a contract and generate a plan or add entries first.');
+                return;
+            }
+            const proofBundle = {
+                scroll_id: "Thalamus-Proof-Bundle-" + new Date().getTime(),
+                created: new Date().toISOString(),
+                contract: state.contract,
+                thought_ledger: state.ledger,
+                ledger_seal: state.ledgerSeals,
+                verification_summary: "Awaiting manual verification."
+            };
+            const blob = new Blob([JSON.stringify(proofBundle, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = Object.assign(document.createElement('a'), {
+                href: url,
+                download: 'thalamus_proof_bundle_offline.json'
+            });
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

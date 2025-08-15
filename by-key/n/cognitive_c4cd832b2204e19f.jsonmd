@@ -1,0 +1,170 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:04.996Z",
+    "source_text_length": 2360,
+    "word_count": 173,
+    "sentence_count": 16,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "c4cd832b2204e19f5423ea9439759e8e",
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "feedback_436b010925081db3185ee3929b27398199bd88e6c90b108eaf646ab6bab685bc_gen001.json",
+      "processing_timestamp": "2025-08-11T15:16:04.996Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0578",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0578",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "attitude",
+        "frequency": 4,
+        "significance": "0.0231",
+        "examples": [
+          "\"attitude\",\n"
+        ]
+      },
+      {
+        "theme": "task",
+        "frequency": 4,
+        "significance": "0.0231",
+        "examples": [
+          "\"task\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 3,
+        "significance": "0.0173",
+        "examples": [
+          "\"2025-08-11T05:52:34.849Z\",\n"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "436b010925081db3185ee3929b27398199bd88e6c90b108eaf646ab6bab685bc",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"436b010925081db3185ee3929b27398199bd88e6c90b108eaf646ab6bab685bc\",\n"
+        ]
+      },
+      {
+        "theme": "date",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"date\",\n"
+        ]
+      },
+      {
+        "theme": "item",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"item\",\n"
+        ]
+      },
+      {
+        "theme": "positive",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "Positive"
+        ]
+      },
+      {
+        "theme": "metadata",
+        "frequency": 2,
+        "significance": "0.0116",
+        "examples": [
+          "\"metadata\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "838,\n    \"contradictions_detected\": 0,\n    \"word_count\": 70\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"date\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"item\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"yes\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"attitude\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"task\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"signature\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"achievement\",\n        \"frequency\": 1\n      },\n      {\n        \"theme\": \"daily\",\n        \"frequency\": 1\n      },\n      {\n        \"theme\": \"participant\",\n        \"frequency\": 1\n      },\n      {\n        \"theme\": \"evaluation\",\n        \"frequency\": 1\n      }\n    ],\n    \"contradiction_map\": []\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"Attendance — Correct day and time?\",\n      \"Hygiene — Appropriately groomed",
+      "?\",\n      \"Attitude — Positive attitude",
+      "?\",\n      \"Attention Span — Adequate for tasks",
+      "?\",\n      \"Task Completion — Stayed on task",
+      "?\",\n      \"Safety — Followed procedures",
+      "?\"\n    ],\n    \"summary\": \"date, item, yes, attitude, task\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 1,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"E3-Form"
+    ],
+    "pattern_recognition": [
+      "recursive"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:34...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.118,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.66",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c4cd832b2204e19f5423ea9439759e8e"
+  }
+}

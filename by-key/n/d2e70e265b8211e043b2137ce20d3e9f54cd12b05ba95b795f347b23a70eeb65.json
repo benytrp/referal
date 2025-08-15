@@ -1,0 +1,188 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.954Z",
+    "anchor_id": "d2e70e265b8211e043b2137ce20d3e9f54cd12b05ba95b795f347b23a70eeb65",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.749,
+    "contradictions_detected": 22,
+    "word_count": 2984
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 131
+      },
+      {
+        "theme": "await",
+        "frequency": 62
+      },
+      {
+        "theme": "name",
+        "frequency": 57
+      },
+      {
+        "theme": "function",
+        "frequency": 57
+      },
+      {
+        "theme": "return",
+        "frequency": 52
+      },
+      {
+        "theme": "text",
+        "frequency": 48
+      },
+      {
+        "theme": "json",
+        "frequency": 32
+      },
+      {
+        "theme": "file",
+        "frequency": 31
+      },
+      {
+        "theme": "outhandle",
+        "frequency": 27
+      },
+      {
+        "theme": "length",
+        "frequency": 26
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ile to Reprocess Writes into _reprocessed/ under your chosen Output; does not touch the blacklist. Plan Scan Results — ✅ Run Now"
+      },
+      {
+        "idx": 1,
+        "sample": "type:\"text/plain\" })); a.download = fname; a.click(); }catch{ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{"
+      },
+      {
+        "idx": 2,
+        "sample": "\" })); a.download = fname; a.click(); }catch{ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{ blacklistHandle"
+      },
+      {
+        "idx": 3,
+        "sample": ".trim().split(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return"
+      },
+      {
+        "idx": 4,
+        "sample": "split(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return {"
+      },
+      {
+        "idx": 5,
+        "sample": "t(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { jso"
+      },
+      {
+        "idx": 6,
+        "sample": "length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusi"
+      },
+      {
+        "idx": 7,
+        "sample": "0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scrol"
+      },
+      {
+        "idx": 8,
+        "sample": "contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scroll: {"
+      },
+      {
+        "idx": 9,
+        "sample": "$(\"outList\").innerHTML = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outListDialog\").showModal(); }catch{ alert('Canno"
+      },
+      {
+        "idx": 10,
+        "sample": "st\").innerHTML = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outListDialog\").showModal(); }catch{ alert('Cannot enumerate"
+      },
+      {
+        "idx": 11,
+        "sample": "3) : 0; } function countContradictions(t){ const terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' parado"
+      },
+      {
+        "idx": 12,
+        "sample": "} function countContradictions(t){ const terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' paradox',' contrad"
+      },
+      {
+        "idx": 13,
+        "sample": "nction countContradictions(t){ const terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' paradox',' contradiction',"
+      },
+      {
+        "idx": 14,
+        "sample": "ontradictions(t){ const terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' paradox',' contradiction',' conflict','"
+      },
+      {
+        "idx": 15,
+        "sample": "s(t){ const terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' paradox',' contradiction',' conflict',' tension'];"
+      },
+      {
+        "idx": 16,
+        "sample": "terms=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ',' paradox',' contradiction',' conflict',' tension']; let c=0; co"
+      },
+      {
+        "idx": 17,
+        "sample": "const sents=sentencesArray(t); const out=[]; const markers=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ']; for (let i=0"
+      },
+      {
+        "idx": 18,
+        "sample": "nts=sentencesArray(t); const out=[]; const markers=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ']; for (let i=0;i<sents.len"
+      },
+      {
+        "idx": 19,
+        "sample": "encesArray(t); const out=[]; const markers=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ']; for (let i=0;i<sents.length;i++)"
+      },
+      {
+        "idx": 20,
+        "sample": "; const out=[]; const markers=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ']; for (let i=0;i<sents.length;i++){ con"
+      },
+      {
+        "idx": 21,
+        "sample": "[]; const markers=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ']; for (let i=0;i<sents.length;i++){ const s=' '+sen"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "items?",
+      "textContent = ms ?",
+      "extTxt ??",
+      "extMd ??",
+      "extMarkdown ??",
+      "extHtml ??",
+      "push(\"html?",
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "?",
+      "]*\\?",
+      "?",
+      "trim()?",
+      "length>160?",
+      "function joinRel(rel, name){ return rel ?"
+    ],
+    "summary": "const, await, name, function, return"
+  },
+  "sentiment_indicators": {
+    "positive": 7,
+    "negative": 10,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "jsonmd_downloads_scanner_v_1_3.html",
+    "relative_path": "jsonmd_downloads_scanner_v_1_3.html",
+    "size_bytes": 33033,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.95
+  }
+}

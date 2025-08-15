@@ -1,0 +1,191 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:31.178Z",
+    "source_text_length": 4615,
+    "word_count": 403,
+    "sentence_count": 31,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "026ad140144025b78e92bafa88c9a06a",
+    "entropy_level": 0.947,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "1590d6eb1c6693992aa7efabd52db7e72481911aa30a57922c1981b4a2381801.json",
+      "processing_timestamp": "2025-08-11T15:15:31.178Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "strong",
+        "frequency": 13,
+        "significance": "0.0323",
+        "examples": [
+          "`<strong>${isError"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 12,
+        "significance": "0.0298",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0248",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0248",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "error",
+        "frequency": 5,
+        "significance": "0.0124",
+        "examples": [
+          "\"error\",\n"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 5,
+        "significance": "0.0124",
+        "examples": [
+          "status.style.display"
+        ]
+      },
+      {
+        "theme": "iserror",
+        "frequency": 5,
+        "significance": "0.0124",
+        "examples": [
+          "updateSystemStatus(isError"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 5,
+        "significance": "0.0124",
+        "examples": [
+          "template"
+        ]
+      },
+      {
+        "theme": "showmessage",
+        "frequency": 4,
+        "significance": "0.0099",
+        "examples": [
+          "\"showmessage\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 3,
+        "significance": "0.0074",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "debuglog",
+        "frequency": 3,
+        "significance": "0.0074",
+        "examples": [
+          "\"debuglog\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 3,
+        "significance": "0.0074",
+        "examples": [
+          "\"function\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "display = 'none', 5000); updateSystemStatus(isError ? 'Error' : 'Ready');\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"if (",
+      "templateLoaded ? 'Yes' : 'No'} DEBUG LOG (Last 20 entries) ---------------------------- ${debugLog",
+      "re\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"innerHTML = `<strong>${isError ?\",\n      \"className = 'status ' + (isError",
+      "?\",\n      \"updateSystemStatus(isError",
+      "?\",\n      \"debugLog_add(text, isError",
+      "?\",\n      \"className = 'status-indicator ' + (status === 'Error'",
+      "?\",\n      \"'error' : status === 'Warning'",
+      "?\",\n      \"const confirmReset = confirm('Are you sure you want to reset the entire system"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "bulk) { showMessage('No bulk data to validate', true); return; }\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"cale\\\">Rating Scale: Excellent (E) | Satisfactory (S) | Needs Improvement (NI) | Not Applicable (NA)</div> <table> <tr><th style=\\\"width: 45%;\\\">Professional Compe\"\n      },\n      {\n        \"idx\": 4,\n        \"sample\": \"le\\\">Proficiency Levels: Mastered (M) | Developing (D) | Requires Support (RS) | Not Applicable (NA)</div> <table> <tr><th style=\\\"width: 45%;\\\">Core Competency Ar\"\n      },\n      {\n        \"idx\": 5,\n        \"sample\": \"coming in future update'); debugLog_add('Custom template requested (not y",
+        "statement_b": "implemented)', 'INFO'); } function clearTemplate() {\"\n      },\n      {\n        \"idx\": 6,\n        \"sample\": \"ng in future update'); debugLog_add('Custom template requested (not yet implemented)', 'INFO'); } function clearTemplate() {\"\n      },\n      {\n        \"idx\": 7,\n        \"sample\": \"value; if (",
+        "line": 9,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.03"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 2,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:43...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "bulk) { showMessage('No bulk data to validate', true); return; }\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"cale\\\">Rating Scale: Excellent (E) | Satisfactory (S) | Needs Improvement (NI) | Not Applicable (NA)</div> <table> <tr><th style=\\\"width: 45%;\\\">Professional Compe\"\n      },\n      {\n        \"idx\": 4,\n        \"sample\": \"le\\\">Proficiency Levels: Mastered (M) | Developing (D) | Requires Support (RS) | Not Applicable (NA)</div> <table> <tr><th style=\\\"width: 45%;\\\">Core Competency Ar\"\n      },\n      {\n        \"idx\": 5,\n        \"sample\": \"coming in future update'); debugLog_add('Custom template requested (not yet implemented)', 'INFO'); } function clearTemplate() {\"\n      },\n      {\n        \"idx\": 6,\n        \"sample\": \"ng in future update'); debugLog_add('Custom template requested (not yet implemented)', 'INFO'); } function clearTemplate() {\"\n      },\n      {\n        \"idx\": 7,\n        \"sample\": \"value; if (",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"error, class, const, debuglog, add\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 4,\n    \"negative\": 7,\n    \"uncertainty\": 1\n  },\n  \"temporal_markers\": [\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"template_maker_debugged",
+        "urgency_score": "0.77",
+        "feasibility_score": "0.72"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.25575000000000003,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.42",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "026ad140144025b78e92bafa88c9a06a"
+  }
+}

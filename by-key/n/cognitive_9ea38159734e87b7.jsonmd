@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:37.027Z",
+    "source_text_length": 3358,
+    "word_count": 324,
+    "sentence_count": 27,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9ea38159734e87b72f593fecc181b6d1",
+    "entropy_level": 0.926,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "89e0f9abbab7a31ecfd3d4fda83dc2fe3cc9cb21080d7fb293fe75ff9b11a6c4_feedin_1754897459937.json",
+      "processing_timestamp": "2025-08-11T15:15:37.027Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0556",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0494",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "ledger",
+        "frequency": 6,
+        "significance": "0.0185",
+        "examples": [
+          "\"ledger\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0154",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "verificationstatus",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "\"verificationstatus\",\n"
+        ]
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 4,
+        "significance": "0.0123",
+        "examples": [
+          "\"textcontent\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "thought",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"thought\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "thought_ledger?",
+      "entries_summary?",
+      "public_ledger_seal || \\\"Not Found\\\"; let finalStatusText = ''; let isTampered =\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"thought_ledger?\",\n      \"entries_summary",
+      "?\"\n    ],\n    \"summary\": \"ledger, const, data, thought, verificationstatus\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"ai_studio_code (1)",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 4,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:29...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1679,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.08",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "9ea38159734e87b72f593fecc181b6d1"
+  }
+}

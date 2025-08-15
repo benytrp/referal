@@ -1,0 +1,204 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:00.103Z",
+    "source_text_length": 5979,
+    "word_count": 571,
+    "sentence_count": 35,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "d8a9913d141c2b8b7c624d2cfa88d621",
+    "entropy_level": 0.891,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e81f6bb7d90cb656ae0f87161f206b9ef7a129cca1d307acb992dce5f5c0ca0c.json",
+      "processing_timestamp": "2025-08-11T15:16:00.104Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "sample",
+        "frequency": 22,
+        "significance": "0.0385",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 22,
+        "significance": "0.0385",
+        "examples": [
+          "None`"
+        ]
+      },
+      {
+        "theme": "self",
+        "frequency": 21,
+        "significance": "0.0368",
+        "examples": [
+          "\"self\",\n"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 11,
+        "significance": "0.0193",
+        "examples": [
+          "\"anchor_id\":"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0175",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0175",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "anchor_id",
+        "frequency": 9,
+        "significance": "0.0158",
+        "examples": [
+          "\"anchor_id\":"
+        ]
+      },
+      {
+        "theme": "run_id",
+        "frequency": 9,
+        "significance": "0.0158",
+        "examples": [
+          "{\\\"run_id\\\":"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 8,
+        "significance": "0.0140",
+        "examples": [
+          "\"paradox\",\n"
+        ]
+      },
+      {
+        "theme": "dict",
+        "frequency": 8,
+        "significance": "0.0140",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 8,
+        "significance": "0.0140",
+        "examples": [
+          "return"
+        ]
+      },
+      {
+        "theme": "resolutionresult",
+        "frequency": 6,
+        "significance": "0.0105",
+        "examples": [
+          "list[ResolutionResult\"\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:28...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "726,\n    \"contradictions_detected\": 22,\n    \"word_count\": 1844\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"str\",\n        \"frequency\": 61\n      },\n      {\n        \"theme\": \"anchor\",\n        \"frequency\": 60\n      },\n      {\n        \"theme\": \"self\",\n        \"frequency\": 55\n      },\n      {\n        \"theme\": \"paradox\",\n        \"frequency\": 48\n      },\n      {\n        \"theme\": \"run\",\n        \"frequency\": 44\n      },\n      {\n        \"theme\": \"entropy\",\n        \"frequency\": 39\n      },\n      {\n        \"theme\": \"ctx\",\n        \"frequency\": 36\n      },\n      {\n        \"theme\": \"depth\",\n        \"frequency\": 26\n      },\n      {\n        \"theme\": \"type\",\n        \"frequency\": 26\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 24\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"ontext` ### Paradox Handling - `queue_paradox_resolution(paradox: Paradox) -> None` - `drain_paradox_queue(strategy: str = \\\"default\\\") -> list[ResolutionResult\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"id: str statement_a: str statement_b: str context: Dict[str, Any] | None = None @dataclass class ResolutionResult: paradox_id: str resolved\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"statement_a: str statement_b: str context: Dict[str, Any] | None = None @dataclass class ResolutionResult: paradox_id: str resolved: bool\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"List[ResolutionResult] metrics: Metrics anchor_created: Optional[str] = None # ---------- Adapters ---------- class StorageAdapter: def put(self, k\"\n      },\n      {\n        \"idx\": 4,\n        \"sample\": \"rs ---------- class StorageAdapter: def put(self, key: str, data: bytes) -> None: raise NotImplementedError def get(self, key: str) -> Optional[bytes]:\"\n      },\n      {\n        \"idx\": 5,\n        \"sample\": \"n os",
+        "urgency_score": "0.61",
+        "feasibility_score": "0.26"
+      },
+      {
+        "action": "618\\\" if ok else None} def initialize_awareness(self, params: Dict[str, Any]) -> RunContext:\"\n      },\n      {\n        \"idx\": 9,\n        \"sample\": \"def create_anchor(self, ctx: RunContext, tag: str, policy: Dict[str, Any] | None = None) -> Anchor: state_min = {\\\"run_id\\\": ctx",
+        "urgency_score": "0.55",
+        "feasibility_score": "0.83"
+      },
+      {
+        "action": "run_id, \\\"client_id\\\":\"\n      },\n      {\n        \"idx\": 10,\n        \"sample\": \"create_anchor(self, ctx: RunContext, tag: str, policy: Dict[str, Any] | None = None) -> Anchor: state_min = {\\\"run_id\\\": ctx",
+        "urgency_score": "0.88",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": "append(paradox) def execute_resolution_algo\"\n      },\n      {\n        \"idx\": 14,\n        \"sample\": \"rain_paradox_queue(self, strategy: str = \\\"default\\\", ctx: Optional[RunContext] = None) -> List[ResolutionResult]: results: List[ResolutionResult] = []\"\n      },\n      {\n        \"idx\": 15,\n        \"sample\": \"on_algorithm(p, strategy=strategy) results",
+        "urgency_score": "0.31",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "create_anchor(ctx, tag=f\\\"depth:{depth}\\\") else: anchor = None payload = json",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "mon\"\n      },\n      {\n        \"idx\": 17,\n        \"sample\": \", anchor_created=anchor",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.48"
+      },
+      {
+        "action": "max_unresolved: return\"\n      },\n      {\n        \"idx\": 19,\n        \"sample\": \", anchor_created=anchor",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.69"
+      },
+      {
+        "action": "anchor_id if anchor else None) return LayerResult(status=\\\"ok\\\", paradox_resolutions=results,\"\n      },\n      {\n        \"idx\": 20,\n        \"sample\": \"lta), anchor_created=anchor",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.35"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.29895,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.83",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 8 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d8a9913d141c2b8b7c624d2cfa88d621"
+  }
+}

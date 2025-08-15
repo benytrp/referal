@@ -1,0 +1,155 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.303Z",
+    "anchor_id": "baac71553daf3d19ff72f71ec800240d81b8f3e6860d3286e11985e0638b0ea7",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.748,
+    "contradictions_detected": 18,
+    "word_count": 1089
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 40
+      },
+      {
+        "theme": "text",
+        "frequency": 30
+      },
+      {
+        "theme": "log",
+        "frequency": 25
+      },
+      {
+        "theme": "await",
+        "frequency": 23
+      },
+      {
+        "theme": "json",
+        "frequency": 19
+      },
+      {
+        "theme": "return",
+        "frequency": 15
+      },
+      {
+        "theme": "onclick",
+        "frequency": 15
+      },
+      {
+        "theme": "fusion",
+        "frequency": 14
+      },
+      {
+        "theme": "name",
+        "frequency": 14
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 12
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "2; function analyzeContradictions(text) { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|n"
+      },
+      {
+        "idx": 1,
+        "sample": "unction analyzeContradictions(text) { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n"
+      },
+      {
+        "idx": 2,
+        "sample": "ion analyzeContradictions(text) { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/g"
+      },
+      {
+        "idx": 3,
+        "sample": "zeContradictions(text) { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi,"
+      },
+      {
+        "idx": 4,
+        "sample": "dictions(text) { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how"
+      },
+      {
+        "idx": 5,
+        "sample": ") { const patterns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|supp"
+      },
+      {
+        "idx": 6,
+        "sample": "rns = [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi,"
+      },
+      {
+        "idx": 7,
+        "sample": "= [ /but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /a"
+      },
+      {
+        "idx": 8,
+        "sample": "/but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /alwa"
+      },
+      {
+        "idx": 9,
+        "sample": "/but|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /always.*ne"
+      },
+      {
+        "idx": 10,
+        "sample": "|however|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /always.*never|e"
+      },
+      {
+        "idx": 11,
+        "sample": "|yet|although|despite|nevertheless|whereas/gi, /not|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /always.*never|everythin"
+      },
+      {
+        "idx": 12,
+        "sample": "|no|never|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /always.*never|everything.*none/gi, /vs\\.|versus|against|opposite/gi,"
+      },
+      {
+        "idx": 13,
+        "sample": "r|none|nothing|n't/gi, /why|how|what if|suppose|assume/gi, /always.*never|everything.*none/gi, /vs\\.|versus|against|opposite/gi, /both.*"
+      },
+      {
+        "idx": 14,
+        "sample": "/gi, /why|how|what if|suppose|assume/gi, /always.*never|everything.*none/gi, /vs\\.|versus|against|opposite/gi, /both.*and|either.*or/gi,"
+      },
+      {
+        "idx": 15,
+        "sample": "xample').onclick = () => { $('textInput').value = `I think, therefore I am. However, some say consciousness is an illusion. Isn't that contradictory?`;"
+      },
+      {
+        "idx": 16,
+        "sample": "e = `I think, therefore I am. However, some say consciousness is an illusion. Isn't that contradictory?`; $('jsonOutput').value = ''; $('fusionStatus')."
+      },
+      {
+        "idx": 17,
+        "sample": "y { const data = $('jsonOutput').value; if (!data) { alert('Nothing to download.'); return; } const blob = new Blob([dat"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "(txt|md|markdown|json|html?",
+      "tag: i === totalCycles ?",
+      "Isn't that contradictory?"
+    ],
+    "summary": "const, text, log, await, json"
+  },
+  "sentiment_indicators": {
+    "positive": 9,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "sdfg.html",
+    "relative_path": "sdfg.html",
+    "size_bytes": 15129,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.93
+  }
+}

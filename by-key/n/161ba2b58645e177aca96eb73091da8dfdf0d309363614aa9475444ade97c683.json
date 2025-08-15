@@ -1,0 +1,109 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.425Z",
+    "anchor_id": "161ba2b58645e177aca96eb73091da8dfdf0d309363614aa9475444ade97c683",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.732,
+    "contradictions_detected": 4,
+    "word_count": 2102
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 107
+      },
+      {
+        "theme": "await",
+        "frequency": 61
+      },
+      {
+        "theme": "return",
+        "frequency": 53
+      },
+      {
+        "theme": "function",
+        "frequency": 45
+      },
+      {
+        "theme": "async",
+        "frequency": 25
+      },
+      {
+        "theme": "meta",
+        "frequency": 25
+      },
+      {
+        "theme": "text",
+        "frequency": 22
+      },
+      {
+        "theme": "name",
+        "frequency": 21
+      },
+      {
+        "theme": "new",
+        "frequency": 19
+      },
+      {
+        "theme": "roothandle",
+        "frequency": 17
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Logs Everything runs locally in your browser. No network calls. Offline-first. // ======= Utilities (st"
+      },
+      {
+        "idx": 1,
+        "sample": "` : 'choose a folder'; } else { ge('btnPickOut').style.display = 'none'; ge('outPath').textContent = `stage: ${sel}`; } } as"
+      },
+      {
+        "idx": 2,
+        "sample": "=ok>clear</span>'}</td> <td>${r.nearDupe?'<span class=warn>yes</span>':'no'}</td> <td>${r.cooling?'<span class=warn>on</span>':'off'}</td>"
+      },
+      {
+        "idx": 3,
+        "sample": "ySelector('.sel').checked).map(r=> r._row); if (!sels.length) return log('Nothing selected.'); const bucket = new TokenBucket(+ge('cfgCap').value |"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const buf = typeof str === 'string' ?",
+      "replace(/\\r\\n?",
+      "vec[i] += (bit === 1n) ?",
+      "result?",
+      "const mode = (await isStructuredRoot()) ?",
+      "textContent = customOutHandle ?",
+      "'); return i>0?",
+      "'); return i>0?",
+      "hashes?",
+      "scheduling?",
+      "cooling) ?",
+      "const reason = idemHit ?",
+      "'idempotent_hit' : nearDupe ?",
+      "'near_duplicate' : cooling ?",
+      "decision==='process'?"
+    ],
+    "summary": "const, await, return, function, async"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "New Text Docu.html",
+    "relative_path": "New Text Docu.html",
+    "size_bytes": 26254,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}

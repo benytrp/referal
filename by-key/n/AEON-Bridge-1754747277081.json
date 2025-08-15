@@ -1,0 +1,5009 @@
+{
+  "scroll_id": "AEON-Bridge-1754747277081",
+  "format": "json_md_fusion_scroll",
+  "created": "2025-08-09T13:47:57.081Z",
+  "equation": "I(n+1) = f(C(n), T(n), R(n))",
+  "glyphs": [
+    "∞",
+    "φ",
+    "∴",
+    "ψ",
+    "Δ",
+    "∅"
+  ],
+  "layers": [
+    {
+      "layer_id": 1,
+      "phase": "Summon",
+      "timestamp": "2025-08-09T13:47:57.081Z",
+      "description": "fuse functions into mutant bridge file .json:# Perplexity AI — Tool Calls Cheatsheet (Standalone)",
+      "entropy": 0.19,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 2,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:47:58.081Z",
+      "description": "A compact, copy‑pasteable reference for invoking **Perplexity-style tools** via the XML‑like <function_calls> syntax. Batch multiple calls by repeating <invoke>. Aim for **≤ 3 tool calls per turn**.",
+      "entropy": 0.4,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 3,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:47:59.081Z",
+      "description": "> Tip: Plan first. Use tools to gather facts, then answer. Prefer authoritative sources; **cite** when you’ve used the web.",
+      "entropy": 0.25,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 4,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:00.081Z",
+      "description": "---",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 5,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:01.081Z",
+      "description": "## Favorites",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 6,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:02.081Z",
+      "description": "**Quick Web Search**",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 7,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:03.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 8,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:04.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 9,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:05.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 10,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:06.081Z",
+      "description": "<tool_name>search_web</tool_name>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 11,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:07.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 12,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:08.081Z",
+      "description": "<queries>[\"latest AI developments\"]</queries>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 13,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:09.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 14,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:10.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 15,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:11.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 16,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:12.081Z",
+      "description": "**Execute Python Code**",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 17,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:13.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 18,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:14.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 19,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:15.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 20,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:16.081Z",
+      "description": "<tool_name>execute_python</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 21,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:17.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 22,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:18.081Z",
+      "description": "<code>import math; print(math.sqrt(16))</code>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 23,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:19.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 24,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:20.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 25,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:21.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 26,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:22.081Z",
+      "description": "**Generate Image**",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 27,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:23.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 28,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:24.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 29,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:25.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 30,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:26.081Z",
+      "description": "<tool_name>generate_image</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 31,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:27.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 32,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:28.081Z",
+      "description": "<prompt>A futuristic AI cityscape</prompt>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 33,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:29.081Z",
+      "description": "<style>realistic</style>",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 34,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:30.081Z",
+      "description": "<size>1024x1024</size>",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 35,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:31.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 36,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:32.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 37,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:33.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 38,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:34.081Z",
+      "description": "**Search User Files**",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 39,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:35.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 40,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:36.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 41,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:37.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 42,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:38.081Z",
+      "description": "<tool_name>search_files</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 43,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:39.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 44,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:40.081Z",
+      "description": "<queries>[\"timestamp anchors\", \"chris\"]</queries>",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 45,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:41.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 46,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:42.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 47,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:43.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 48,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:44.081Z",
+      "description": "---",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 49,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:45.081Z",
+      "description": "## Universal Pattern",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 50,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:46.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 51,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:47.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 52,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:48.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 53,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:49.081Z",
+      "description": "<tool_name>TOOL_NAME</tool_name>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 54,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:50.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 55,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:51.081Z",
+      "description": "<!-- Parameters as tags or JSON -->",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 56,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:52.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 57,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:53.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 58,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:54.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 59,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:55.081Z",
+      "description": "---",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 60,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:56.081Z",
+      "description": "## Tool Reference",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 61,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:57.081Z",
+      "description": "### search_web",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 62,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:58.081Z",
+      "description": "**Purpose:** Search the web for up‑to‑date information. Use short keyword queries; up to 3 per call.",
+      "entropy": 0.2,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 63,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:48:59.081Z",
+      "description": "**Params:** <queries>[\"query1\", \"query2\", \"query3\"]</queries>",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 64,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:00.081Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 65,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:01.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 66,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:02.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 67,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:03.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 68,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:04.081Z",
+      "description": "<tool_name>search_web</tool_name>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 69,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:05.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 70,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:06.081Z",
+      "description": "<queries>[\"current stock price of AAPL\"]</queries>",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 71,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:07.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 72,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:08.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 73,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:09.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 74,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:10.081Z",
+      "description": "### fetch_url",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 75,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:11.081Z",
+      "description": "**Purpose:** Fetch content from specific URLs. Use for full pages or lists.",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 76,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:12.081Z",
+      "description": "**Params:** <urls>[\"url1\", \"url2\"]</urls>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 77,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:13.081Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 78,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:14.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 79,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:15.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 80,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:16.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 81,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:17.081Z",
+      "description": "<tool_name>fetch_url</tool_name>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 82,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:18.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 83,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:19.081Z",
+      "description": "<urls>[\"https://example.com/page\"]</urls>",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 84,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:20.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 85,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:21.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 86,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:22.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 87,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:23.081Z",
+      "description": "### execute_python",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 88,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:24.081Z",
+      "description": "**Purpose:** Run Python for calculations, filtering, or data processing.",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 89,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:25.081Z",
+      "description": "**Params:** <code>your_python_code_here</code>",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 90,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:26.081Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 91,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:27.081Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 92,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:28.081Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 93,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:29.081Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 94,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:30.081Z",
+      "description": "<tool_name>execute_python</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 95,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:31.081Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 96,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:32.081Z",
+      "description": "<code>import math; print(math.sqrt(16))</code>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 97,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:33.081Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 98,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:34.081Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 99,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:35.081Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 100,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:36.081Z",
+      "description": "### create_chart",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 101,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:37.081Z",
+      "description": "**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**).",
+      "entropy": 0.19,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 102,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:38.082Z",
+      "description": "**Params:** <data>[{\"x\":1, \"y\":2}, ...]</data> <type>line</type> <title>Chart Title</title>",
+      "entropy": 0.18,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 103,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:39.082Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 104,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:40.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 105,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:41.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 106,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:42.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 107,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:43.082Z",
+      "description": "<tool_name>create_chart</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 108,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:44.082Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 109,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:45.082Z",
+      "description": "<data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 110,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:46.082Z",
+      "description": "<type>bar</type>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 111,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:47.082Z",
+      "description": "<title>Sales Data</title>",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 112,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:48.082Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 113,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:49.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 114,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:50.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 115,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:51.082Z",
+      "description": "### generate_image",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 116,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:52.082Z",
+      "description": "**Purpose:** Generate or edit images from prompts.",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 117,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:53.082Z",
+      "description": "**Params:** <prompt>Detailed description</prompt> <style>style_name</style> <size>1024x1024</size>",
+      "entropy": 0.2,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 118,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:54.082Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 119,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:55.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 120,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:56.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 121,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:57.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 122,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:58.082Z",
+      "description": "<tool_name>generate_image</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 123,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:49:59.082Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 124,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:00.082Z",
+      "description": "<prompt>A serene mountain landscape</prompt>",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 125,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:01.082Z",
+      "description": "<style>oil painting</style>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 126,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:02.082Z",
+      "description": "<size>1024x768</size>",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 127,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:03.082Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 128,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:04.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 129,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:05.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 130,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:06.082Z",
+      "description": "### search_files",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 131,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:07.082Z",
+      "description": "**Purpose:** Search user files for information.",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 132,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:08.082Z",
+      "description": "**Params:** <queries>[\"query1\", \"query2\", \"query3\"]</queries>",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 133,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:09.082Z",
+      "description": "**Template:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 134,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:10.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 135,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:11.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 136,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:12.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 137,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:13.082Z",
+      "description": "<tool_name>search_files</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 138,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:14.082Z",
+      "description": "<parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 139,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:15.082Z",
+      "description": "<queries>[\"recursive architecture\", \"zero node\"]</queries>",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 140,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:16.082Z",
+      "description": "</parameters>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 141,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:17.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 142,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:18.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 143,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:19.082Z",
+      "description": "---",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 144,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:20.082Z",
+      "description": "## Citations",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 145,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:21.082Z",
+      "description": "* Use [citation_id] inline for web/file results.",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 146,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:22.082Z",
+      "description": "* Place the cite at the end of the sentence/paragraph that used it.",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 147,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:23.082Z",
+      "description": "**Examples:**",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 148,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:24.082Z",
+      "description": "* OpenAI says X. [turn2search5]",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 149,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:25.082Z",
+      "description": "* Water boils at 100°C. [turn3fetch1]",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 150,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:26.082Z",
+      "description": "---",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 151,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:27.082Z",
+      "description": "## Notes & Best Practices",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 152,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:28.082Z",
+      "description": "* **Plan first.** Use tools to gather facts, then answer.",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 153,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:29.082Z",
+      "description": "* **Web freshness:** If there’s even a \\~10% chance info changed, use search_web and **include dates** in outputs.",
+      "entropy": 0.23,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 154,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:30.082Z",
+      "description": "* **Batching:** Multiple <invoke> blocks allowed per <function_calls>.",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 155,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:31.082Z",
+      "description": "* **Limits:** ≤ 3 tool calls per turn.",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 156,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:32.082Z",
+      "description": "* **No guessing.** If info isn’t available, explain limitations.",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 157,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:33.082Z",
+      "description": "## Video",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 158,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:34.082Z",
+      "description": "Ready-to-paste function-calling templates for common video tasks. These assume your backend exposes tools like video.generate, video.edit, etc. (Ping me if you want me to align names/params to your Bridgefile Runner schemas.)",
+      "entropy": 0.45,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 159,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:35.082Z",
+      "description": "### Prompt‑to‑Video",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 160,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:36.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 161,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:37.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 162,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:38.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 163,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:39.082Z",
+      "description": "<tool_name>video.generate</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 164,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:40.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 165,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:41.082Z",
+      "description": "\"prompt\": \"slow drone fly-through of a neon cyberpunk alley, rain, cinematic\",",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 166,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:42.082Z",
+      "description": "\"duration_s\": 6,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 167,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:43.082Z",
+      "description": "\"fps\": 24,",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 168,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:44.082Z",
+      "description": "\"width\": 1024,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 169,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:45.082Z",
+      "description": "\"height\": 576,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 170,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:46.082Z",
+      "description": "\"seed\": 42,",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 171,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:47.082Z",
+      "description": "\"style_preset\": \"cinematic\",",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 172,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:48.082Z",
+      "description": "\"safety_mode\": \"strict\"",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 173,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:49.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 174,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:50.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 175,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:51.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 176,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:52.082Z",
+      "description": "### Edit (mask / inpaint or replace background)",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 177,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:53.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 178,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:54.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 179,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:55.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 180,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:56.082Z",
+      "description": "<tool_name>video.edit</tool_name>",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 181,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:57.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 182,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:58.082Z",
+      "description": "\"video_url\": \"https://example.com/input.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 183,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:50:59.082Z",
+      "description": "\"operations\": [{",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 184,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:00.082Z",
+      "description": "\"op\": \"inpaint\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 185,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:01.082Z",
+      "description": "\"mask_url\": \"https://example.com/mask.png\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 186,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:02.082Z",
+      "description": "\"prompt\": \"replace billboard with a retro arcade sign, glowing\"",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 187,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:03.082Z",
+      "description": "}],",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 188,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:04.082Z",
+      "description": "\"fps\": 24",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 189,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:05.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 190,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:06.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 191,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:07.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 192,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:08.082Z",
+      "description": "### Compose / Concatenate Clips (with crossfade)",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 193,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:09.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 194,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:10.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 195,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:11.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 196,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:12.082Z",
+      "description": "<tool_name>video.compose</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 197,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:13.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 198,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:14.082Z",
+      "description": "\"timeline\": [",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 199,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:15.082Z",
+      "description": "{ \"src\": \"https://ex.com/a.mp4\", \"in\": 0, \"out\": 4 },",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 200,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:16.082Z",
+      "description": "{ \"transition\": \"crossfade\", \"duration_s\": 0.5 },",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 201,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:17.082Z",
+      "description": "{ \"src\": \"https://ex.com/b.mp4\", \"in\": 1, \"out\": 6 }",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 202,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:18.082Z",
+      "description": "],",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 203,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:19.082Z",
+      "description": "\"canvas\": { \"width\": 1080, \"height\": 1080, \"background\": \"#000\" },",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 204,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:20.082Z",
+      "description": "\"fps\": 30",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 205,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:21.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 206,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:22.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 207,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:23.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 208,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:24.082Z",
+      "description": "### Add Audio (music bed + ducking)",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 209,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:25.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 210,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:26.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 211,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:27.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 212,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:28.082Z",
+      "description": "<tool_name>video.add_audio</tool_name>",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 213,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:29.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 214,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:30.082Z",
+      "description": "\"video_url\": \"https://example.com/silent.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 215,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:31.082Z",
+      "description": "\"tracks\": [",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 216,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:32.082Z",
+      "description": "{ \"type\": \"music\", \"url\": \"https://example.com/bed.mp3\", \"gain_db\": -6 },",
+      "entropy": 0.16,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 217,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:33.082Z",
+      "description": "{ \"type\": \"voiceover\", \"url\": \"https://example.com/vo.wav\", \"duck_under\": \"music\", \"duck_gain_db\": -10 }",
+      "entropy": 0.22,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 218,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:34.082Z",
+      "description": "]",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 219,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:35.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 220,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:36.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 221,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:37.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 222,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:38.082Z",
+      "description": "### Burn‑in Subtitles (from SRT)",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 223,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:39.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 224,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:40.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 225,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:41.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 226,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:42.082Z",
+      "description": "<tool_name>video.subtitles_burn</tool_name>",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 227,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:43.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 228,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:44.082Z",
+      "description": "\"video_url\": \"https://example.com/clip.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 229,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:45.082Z",
+      "description": "\"srt_url\": \"https://example.com/lines.srt\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 230,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:46.082Z",
+      "description": "\"font\": \"Inter-SemiBold\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 231,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:47.082Z",
+      "description": "\"font_size\": 42,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 232,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:48.082Z",
+      "description": "\"color\": \"#ffffff\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 233,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:49.082Z",
+      "description": "\"stroke\": { \"color\": \"#000000\", \"width\": 2 },",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 234,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:50.082Z",
+      "description": "\"position\": \"bottom\"",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 235,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:51.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 236,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:52.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 237,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:53.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 238,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:54.082Z",
+      "description": "### Export to GIF (looping)",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 239,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:55.082Z",
+      "description": "xml",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 240,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:56.082Z",
+      "description": "<function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 241,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:57.082Z",
+      "description": "<invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 242,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:58.082Z",
+      "description": "<tool_name>video.export_gif</tool_name>",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 243,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:51:59.082Z",
+      "description": "<parameters>{",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 244,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:00.082Z",
+      "description": "\"video_url\": \"https://example.com/clip.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 245,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:01.082Z",
+      "description": "\"fps\": 12,",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 246,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:02.082Z",
+      "description": "\"max_width\": 640,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 247,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:03.082Z",
+      "description": "\"loop\": true,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 248,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:04.082Z",
+      "description": "\"palette\": \"median\"",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 249,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:05.082Z",
+      "description": "}</parameters>",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 250,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:06.082Z",
+      "description": "</invoke>",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 251,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:07.082Z",
+      "description": "</function_calls>",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 252,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:08.082Z",
+      "description": "ChatGPT said:",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 253,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:09.082Z",
+      "description": "Thought for 35s",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 254,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:10.082Z",
+      "description": "Analyzed",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 255,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:11.082Z",
+      "description": "python",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 256,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:12.082Z",
+      "description": "Always show details",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 257,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:13.082Z",
+      "description": "Copy",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 258,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:14.082Z",
+      "description": "# Construct a \"mutant\" Bridge-style tool manifest JSON that fuses all functions",
+      "entropy": 0.16,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 259,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:15.082Z",
+      "description": "import json, datetime, re, os, textwrap",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 260,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:16.082Z",
+      "description": "manifest = {",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 261,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:17.082Z",
+      "description": "\"name\": \"Perplexity-Style Tools — Mutant Bridgefile\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 262,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:18.082Z",
+      "description": "\"version\": \"1.0.0\",",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 263,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:19.082Z",
+      "description": "\"generated_at\": datetime.datetime.now().isoformat(),",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 264,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:20.082Z",
+      "description": "\"max_tool_calls_per_turn\": 3,",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 265,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:21.082Z",
+      "description": "\"notes\": \"Schemas follow a JSON-Schema-like shape under `parameters`. Each tool has a minimal sample payload under `sample`. No comments included.\",",
+      "entropy": 0.3,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 266,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:22.082Z",
+      "description": "\"citations\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 267,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:23.082Z",
+      "description": "\"format\": \"[turnId]\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 268,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:24.082Z",
+      "description": "\"placement\": \"end_of_sentence_or_paragraph\"",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 269,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:25.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 270,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:26.082Z",
+      "description": "\"tools\": [",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 271,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:27.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 272,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:28.082Z",
+      "description": "\"name\": \"search_web\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 273,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:29.082Z",
+      "description": "\"description\": \"Search the web for up-to-date information. Prefer short keyword queries; up to 3 per call.\",",
+      "entropy": 0.23,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 274,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:30.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 275,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:31.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 276,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:32.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 277,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:33.082Z",
+      "description": "\"queries\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 278,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:34.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 279,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:35.082Z",
+      "description": "\"description\": \"1-3 short keyword queries\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 280,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:36.082Z",
+      "description": "\"items\": {\"type\": \"string\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 281,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:37.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 282,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:38.082Z",
+      "description": "\"maxItems\": 3",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 283,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:39.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 284,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:40.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 285,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:41.082Z",
+      "description": "\"required\": [\"queries\"],",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 286,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:42.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 287,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:43.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 288,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:44.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 289,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:45.082Z",
+      "description": "\"queries\": [\"latest AI developments\"]",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 290,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:46.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 291,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:47.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 292,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:48.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 293,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:49.082Z",
+      "description": "\"name\": \"fetch_url\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 294,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:50.082Z",
+      "description": "\"description\": \"Fetch content from specific URLs. Use for full pages or lists.\",",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 295,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:51.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 296,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:52.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 297,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:53.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 298,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:54.082Z",
+      "description": "\"urls\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 299,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:55.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 300,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:56.082Z",
+      "description": "\"description\": \"1-5 absolute URLs to fetch\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 301,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:57.082Z",
+      "description": "\"items\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 302,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:58.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 303,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:52:59.082Z",
+      "description": "\"maxItems\": 5",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 304,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:00.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 305,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:01.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 306,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:02.082Z",
+      "description": "\"required\": [\"urls\"],",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 307,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:03.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 308,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:04.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 309,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:05.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 310,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:06.082Z",
+      "description": "\"urls\": [\"https://example.com/page\"]",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 311,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:07.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 312,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:08.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 313,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:09.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 314,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:10.082Z",
+      "description": "\"name\": \"execute_python\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 315,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:11.082Z",
+      "description": "\"description\": \"Run Python for calculations, filtering, or data processing.\",",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 316,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:12.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 317,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:13.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 318,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:14.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 319,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:15.082Z",
+      "description": "\"code\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 320,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:16.082Z",
+      "description": "\"type\": \"string\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 321,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:17.082Z",
+      "description": "\"minLength\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 322,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:18.082Z",
+      "description": "\"description\": \"Python source code to execute\"",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 323,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:19.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 324,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:20.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 325,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:21.082Z",
+      "description": "\"required\": [\"code\"],",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 326,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:22.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 327,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:23.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 328,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:24.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 329,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:25.082Z",
+      "description": "\"code\": \"import math; print(math.sqrt(16))\"",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 330,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:26.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 331,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:27.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 332,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:28.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 333,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:29.082Z",
+      "description": "\"name\": \"create_chart\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 334,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:30.082Z",
+      "description": "\"description\": \"Generate visual charts from quantitative data (use only if explicitly requested).\",",
+      "entropy": 0.21,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 335,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:31.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 336,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:32.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 337,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:33.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 338,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:34.082Z",
+      "description": "\"data\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 339,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:35.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 340,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:36.082Z",
+      "description": "\"description\": \"Series of points with numeric x/y\",",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 341,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:37.082Z",
+      "description": "\"items\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 342,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:38.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 343,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:39.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 344,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:40.082Z",
+      "description": "\"x\": {\"type\": \"number\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 345,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:41.082Z",
+      "description": "\"y\": {\"type\": \"number\"}",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 346,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:42.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 347,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:43.082Z",
+      "description": "\"required\": [\"x\", \"y\"],",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 348,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:44.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 349,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:45.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 350,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:46.082Z",
+      "description": "\"minItems\": 1",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 351,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:47.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 352,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:48.082Z",
+      "description": "\"type\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 353,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:49.082Z",
+      "description": "\"type\": \"string\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 354,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:50.082Z",
+      "description": "\"enum\": [\"line\", \"bar\", \"area\", \"scatter\", \"pie\"]",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 355,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:51.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 356,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:52.082Z",
+      "description": "\"title\": {\"type\": \"string\"}",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 357,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:53.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 358,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:54.082Z",
+      "description": "\"required\": [\"data\", \"type\"],",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 359,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:55.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 360,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:56.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 361,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:57.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 362,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:58.082Z",
+      "description": "\"data\": [{\"x\":1,\"y\":2},{\"x\":3,\"y\":4}],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 363,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:53:59.082Z",
+      "description": "\"type\": \"bar\",",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 364,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:00.082Z",
+      "description": "\"title\": \"Sales Data\"",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 365,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:01.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 366,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:02.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 367,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:03.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 368,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:04.082Z",
+      "description": "\"name\": \"generate_image\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 369,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:05.082Z",
+      "description": "\"description\": \"Generate or edit images from prompts.\",",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 370,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:06.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 371,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:07.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 372,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:08.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 373,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:09.082Z",
+      "description": "\"prompt\": {\"type\": \"string\", \"minLength\": 1},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 374,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:10.082Z",
+      "description": "\"style\": {\"type\": \"string\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 375,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:11.082Z",
+      "description": "\"size\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 376,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:12.082Z",
+      "description": "\"type\": \"string\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 377,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:13.082Z",
+      "description": "\"description\": \"WxH in pixels\",",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 378,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:14.082Z",
+      "description": "\"pattern\": \"^[0-9]+x[0-9]+$\"",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 379,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:15.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 380,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:16.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 381,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:17.082Z",
+      "description": "\"required\": [\"prompt\"],",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 382,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:18.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 383,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:19.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 384,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:20.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 385,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:21.082Z",
+      "description": "\"prompt\": \"A serene mountain landscape\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 386,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:22.082Z",
+      "description": "\"style\": \"oil painting\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 387,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:23.082Z",
+      "description": "\"size\": \"1024x768\"",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 388,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:24.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 389,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:25.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 390,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:26.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 391,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:27.082Z",
+      "description": "\"name\": \"search_files\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 392,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:28.082Z",
+      "description": "\"description\": \"Search user files for information.\",",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 393,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:29.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 394,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:30.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 395,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:31.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 396,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:32.082Z",
+      "description": "\"queries\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 397,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:33.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 398,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:34.082Z",
+      "description": "\"items\": {\"type\": \"string\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 399,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:35.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 400,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:36.082Z",
+      "description": "\"maxItems\": 3",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 401,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:37.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 402,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:38.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 403,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:39.082Z",
+      "description": "\"required\": [\"queries\"],",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 404,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:40.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 405,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:41.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 406,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:42.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 407,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:43.082Z",
+      "description": "\"queries\": [\"timestamp anchors\", \"chris\"]",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 408,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:44.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 409,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:45.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 410,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:46.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 411,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:47.082Z",
+      "description": "\"name\": \"video.generate\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 412,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:48.082Z",
+      "description": "\"description\": \"Prompt-to-video generation.\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 413,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:49.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 414,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:50.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 415,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:51.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 416,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:52.082Z",
+      "description": "\"prompt\": {\"type\": \"string\", \"minLength\": 1},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 417,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:53.082Z",
+      "description": "\"duration_s\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 60},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 418,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:54.082Z",
+      "description": "\"fps\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 60},",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 419,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:55.082Z",
+      "description": "\"width\": {\"type\": \"integer\", \"minimum\": 64, \"maximum\": 2048},",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 420,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:56.082Z",
+      "description": "\"height\": {\"type\": \"integer\", \"minimum\": 64, \"maximum\": 2048},",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 421,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:57.082Z",
+      "description": "\"seed\": {\"type\": \"integer\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 422,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:58.082Z",
+      "description": "\"style_preset\": {\"type\": \"string\"},",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 423,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:54:59.082Z",
+      "description": "\"safety_mode\": {\"type\": \"string\", \"enum\": [\"strict\", \"standard\", \"relaxed\"]}",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 424,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:00.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 425,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:01.082Z",
+      "description": "\"required\": [\"prompt\", \"duration_s\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 426,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:02.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 427,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:03.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 428,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:04.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 429,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:05.082Z",
+      "description": "\"prompt\": \"slow drone fly-through of a neon cyberpunk alley, rain, cinematic\",",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 430,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:06.082Z",
+      "description": "\"duration_s\": 6,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 431,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:07.082Z",
+      "description": "\"fps\": 24,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 432,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:08.082Z",
+      "description": "\"width\": 1024,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 433,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:09.082Z",
+      "description": "\"height\": 576,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 434,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:10.082Z",
+      "description": "\"seed\": 42,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 435,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:11.082Z",
+      "description": "\"style_preset\": \"cinematic\",",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 436,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:12.082Z",
+      "description": "\"safety_mode\": \"strict\"",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 437,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:13.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 438,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:14.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 439,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:15.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 440,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:16.082Z",
+      "description": "\"name\": \"video.edit\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 441,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:17.082Z",
+      "description": "\"description\": \"Edit video via operations like inpaint or background replacement.\",",
+      "entropy": 0.18,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 442,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:18.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 443,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:19.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 444,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:20.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 445,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:21.082Z",
+      "description": "\"video_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 446,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:22.082Z",
+      "description": "\"operations\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 447,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:23.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 448,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:24.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 449,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:25.082Z",
+      "description": "\"items\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 450,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:26.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 451,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:27.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 452,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:28.082Z",
+      "description": "\"op\": {\"type\": \"string\", \"enum\": [\"inpaint\", \"replace_background\"]},",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 453,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:29.082Z",
+      "description": "\"mask_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 454,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:30.082Z",
+      "description": "\"prompt\": {\"type\": \"string\"}",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 455,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:31.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 456,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:32.082Z",
+      "description": "\"required\": [\"op\"],",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 457,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:33.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 458,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:34.082Z",
+      "description": "}",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 459,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:35.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 460,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:36.082Z",
+      "description": "\"fps\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 60}",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 461,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:37.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 462,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:38.082Z",
+      "description": "\"required\": [\"video_url\", \"operations\"],",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 463,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:39.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 464,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:40.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 465,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:41.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 466,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:42.082Z",
+      "description": "\"video_url\": \"https://example.com/input.mp4\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 467,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:43.082Z",
+      "description": "\"operations\": [{",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 468,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:44.082Z",
+      "description": "\"op\": \"inpaint\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 469,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:45.082Z",
+      "description": "\"mask_url\": \"https://example.com/mask.png\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 470,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:46.082Z",
+      "description": "\"prompt\": \"replace billboard with a retro arcade sign, glowing\"",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 471,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:47.082Z",
+      "description": "}],",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 472,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:48.082Z",
+      "description": "\"fps\": 24",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 473,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:49.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 474,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:50.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 475,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:51.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 476,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:52.082Z",
+      "description": "\"name\": \"video.compose\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 477,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:53.082Z",
+      "description": "\"description\": \"Concatenate clips on a timeline with optional transitions.\",",
+      "entropy": 0.16,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 478,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:54.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 479,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:55.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 480,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:56.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 481,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:57.082Z",
+      "description": "\"timeline\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 482,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:58.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 483,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:55:59.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 484,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:00.082Z",
+      "description": "\"items\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 485,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:01.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 486,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:02.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 487,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:03.082Z",
+      "description": "\"src\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 488,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:04.082Z",
+      "description": "\"in\": {\"type\": \"number\", \"minimum\": 0},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 489,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:05.082Z",
+      "description": "\"out\": {\"type\": \"number\", \"minimum\": 0},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 490,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:06.082Z",
+      "description": "\"transition\": {\"type\": \"string\", \"enum\": [\"crossfade\", \"cut\", \"fade_to_black\"]},",
+      "entropy": 0.19,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 491,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:07.082Z",
+      "description": "\"duration_s\": {\"type\": \"number\", \"minimum\": 0}",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 492,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:08.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 493,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:09.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 494,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:10.082Z",
+      "description": "}",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 495,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:11.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 496,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:12.082Z",
+      "description": "\"canvas\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 497,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:13.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 498,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:14.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 499,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:15.082Z",
+      "description": "\"width\": {\"type\": \"integer\", \"minimum\": 64, \"maximum\": 4096},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 500,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:16.082Z",
+      "description": "\"height\": {\"type\": \"integer\", \"minimum\": 64, \"maximum\": 4096},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 501,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:17.082Z",
+      "description": "\"background\": {\"type\": \"string\", \"description\": \"hex color like #000 or #000000\"}",
+      "entropy": 0.19,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 502,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:18.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 503,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:19.082Z",
+      "description": "\"required\": [\"width\", \"height\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 504,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:20.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 505,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:21.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 506,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:22.082Z",
+      "description": "\"fps\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 60}",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 507,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:23.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 508,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:24.082Z",
+      "description": "\"required\": [\"timeline\", \"canvas\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 509,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:25.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 510,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:26.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 511,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:27.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 512,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:28.082Z",
+      "description": "\"timeline\": [",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 513,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:29.082Z",
+      "description": "{\"src\": \"https://ex.com/a.mp4\", \"in\": 0, \"out\": 4},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 514,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:30.082Z",
+      "description": "{\"transition\": \"crossfade\", \"duration_s\": 0.5},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 515,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:31.082Z",
+      "description": "{\"src\": \"https://ex.com/b.mp4\", \"in\": 1, \"out\": 6}",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 516,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:32.082Z",
+      "description": "],",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 517,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:33.082Z",
+      "description": "\"canvas\": {\"width\": 1080, \"height\": 1080, \"background\": \"#000\"},",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 518,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:34.082Z",
+      "description": "\"fps\": 30",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 519,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:35.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 520,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:36.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 521,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:37.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 522,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:38.082Z",
+      "description": "\"name\": \"video.add_audio\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 523,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:39.082Z",
+      "description": "\"description\": \"Add audio tracks (music, voiceover) and optionally duck one under another.\",",
+      "entropy": 0.2,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 524,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:40.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 525,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:41.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 526,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:42.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 527,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:43.082Z",
+      "description": "\"video_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 528,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:44.082Z",
+      "description": "\"tracks\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 529,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:45.082Z",
+      "description": "\"type\": \"array\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 530,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:46.082Z",
+      "description": "\"minItems\": 1,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 531,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:47.082Z",
+      "description": "\"items\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 532,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:48.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 533,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:49.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 534,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:50.082Z",
+      "description": "\"type\": {\"type\": \"string\", \"enum\": [\"music\", \"voiceover\"]},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 535,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:51.082Z",
+      "description": "\"url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 536,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:52.082Z",
+      "description": "\"gain_db\": {\"type\": \"number\"},",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 537,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:53.082Z",
+      "description": "\"duck_under\": {\"type\": \"string\", \"enum\": [\"music\", \"voiceover\"]},",
+      "entropy": 0.16,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 538,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:54.082Z",
+      "description": "\"duck_gain_db\": {\"type\": \"number\"}",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 539,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:55.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 540,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:56.082Z",
+      "description": "\"required\": [\"type\", \"url\"],",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 541,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:57.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 542,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:58.082Z",
+      "description": "}",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 543,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:56:59.082Z",
+      "description": "}",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 544,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:00.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 545,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:01.082Z",
+      "description": "\"required\": [\"video_url\", \"tracks\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 546,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:02.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 547,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:03.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 548,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:04.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 549,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:05.082Z",
+      "description": "\"video_url\": \"https://example.com/silent.mp4\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 550,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:06.082Z",
+      "description": "\"tracks\": [",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 551,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:07.082Z",
+      "description": "{\"type\":\"music\",\"url\":\"https://example.com/bed.mp3\",\"gain_db\":-6},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 552,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:08.082Z",
+      "description": "{\"type\":\"voiceover\",\"url\":\"https://example.com/vo.wav\",\"duck_under\":\"music\",\"duck_gain_db\":-10}",
+      "entropy": 0.21,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 553,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:09.082Z",
+      "description": "]",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 554,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:10.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 555,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:11.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 556,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:12.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 557,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:13.082Z",
+      "description": "\"name\": \"video.subtitles_burn\",",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 558,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:14.082Z",
+      "description": "\"description\": \"Burn in subtitles from SRT.\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 559,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:15.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 560,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:16.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 561,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:17.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 562,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:18.082Z",
+      "description": "\"video_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 563,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:19.082Z",
+      "description": "\"srt_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 564,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:20.082Z",
+      "description": "\"font\": {\"type\": \"string\"},",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 565,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:21.082Z",
+      "description": "\"font_size\": {\"type\": \"integer\", \"minimum\": 6, \"maximum\": 200},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 566,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:22.082Z",
+      "description": "\"color\": {\"type\": \"string\", \"description\": \"hex color\"},",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 567,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:23.082Z",
+      "description": "\"stroke\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 568,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:24.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 569,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:25.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 570,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:26.082Z",
+      "description": "\"color\": {\"type\": \"string\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 571,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:27.082Z",
+      "description": "\"width\": {\"type\": \"integer\", \"minimum\": 0, \"maximum\": 20}",
+      "entropy": 0.14,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 572,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:28.082Z",
+      "description": "},",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 573,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:29.082Z",
+      "description": "\"required\": [\"color\", \"width\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 574,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:30.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 575,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:31.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 576,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:32.082Z",
+      "description": "\"position\": {\"type\": \"string\", \"enum\": [\"bottom\", \"top\", \"middle\"]}",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 577,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:33.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 578,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:34.082Z",
+      "description": "\"required\": [\"video_url\", \"srt_url\"],",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 579,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:35.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 580,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:36.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 581,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:37.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 582,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:38.082Z",
+      "description": "\"video_url\": \"https://example.com/clip.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 583,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:39.082Z",
+      "description": "\"srt_url\": \"https://example.com/lines.srt\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 584,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:40.082Z",
+      "description": "\"font\": \"Inter-SemiBold\",",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 585,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:41.082Z",
+      "description": "\"font_size\": 42,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 586,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:42.082Z",
+      "description": "\"color\": \"#ffffff\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 587,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:43.082Z",
+      "description": "\"stroke\": {\"color\": \"#000000\", \"width\": 2},",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 588,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:44.082Z",
+      "description": "\"position\": \"bottom\"",
+      "entropy": 0.06,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 589,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:45.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 590,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:46.082Z",
+      "description": "},",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 591,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:47.082Z",
+      "description": "{",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 592,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:48.082Z",
+      "description": "\"name\": \"video.export_gif\",",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 593,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:49.082Z",
+      "description": "\"description\": \"Export a video to looping GIF.\",",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 594,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:50.082Z",
+      "description": "\"parameters\": {",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 595,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:51.082Z",
+      "description": "\"type\": \"object\",",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 596,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:52.082Z",
+      "description": "\"properties\": {",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 597,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:53.082Z",
+      "description": "\"video_url\": {\"type\": \"string\", \"format\": \"uri\"},",
+      "entropy": 0.12,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 598,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:54.082Z",
+      "description": "\"fps\": {\"type\": \"integer\", \"minimum\": 1, \"maximum\": 60},",
+      "entropy": 0.13,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 599,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:55.082Z",
+      "description": "\"max_width\": {\"type\": \"integer\", \"minimum\": 64, \"maximum\": 2000},",
+      "entropy": 0.15,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 600,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:56.082Z",
+      "description": "\"loop\": {\"type\": \"boolean\"},",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 601,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:57.082Z",
+      "description": "\"palette\": {\"type\": \"string\", \"enum\": [\"median\", \"websafe\", \"optimized\"]}",
+      "entropy": 0.17,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 602,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:58.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 603,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:57:59.082Z",
+      "description": "\"required\": [\"video_url\"],",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 604,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:00.082Z",
+      "description": "\"additionalProperties\": False",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 605,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:01.082Z",
+      "description": "},",
+      "entropy": 0.02,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 606,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:02.082Z",
+      "description": "\"sample\": {",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 607,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:03.082Z",
+      "description": "\"video_url\": \"https://example.com/clip.mp4\",",
+      "entropy": 0.1,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 608,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:04.082Z",
+      "description": "\"fps\": 12,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 609,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:05.082Z",
+      "description": "\"max_width\": 640,",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 610,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:06.082Z",
+      "description": "\"loop\": True,",
+      "entropy": 0.04,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 611,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:07.082Z",
+      "description": "\"palette\": \"median\"",
+      "entropy": 0.05,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 612,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:08.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 613,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:09.082Z",
+      "description": "}",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 614,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:10.082Z",
+      "description": "]",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 615,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:11.082Z",
+      "description": "}",
+      "entropy": 0,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 616,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:12.082Z",
+      "description": "path = \"/mnt/data/mutant_bridgefile.json\"",
+      "entropy": 0.08,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 617,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:13.082Z",
+      "description": "with open(path, \"w\", encoding=\"utf-8\") as f:",
+      "entropy": 0.09,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 618,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:14.082Z",
+      "description": "json.dump(manifest, f, ensure_ascii=False, indent=2)",
+      "entropy": 0.11,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 619,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:15.082Z",
+      "description": "path",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 620,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:16.082Z",
+      "description": "Result",
+      "entropy": 0.01,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 621,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:17.082Z",
+      "description": "'/mnt/data/mutant_bridgefile.json'",
+      "entropy": 0.07,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 622,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:18.082Z",
+      "description": "Done. I fused everything into a single JSON “mutant bridgefile” with schemas, constraints, and samples for every tool you listed (web, files, python, charts, images, and all the video ops).",
+      "entropy": 0.38,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 623,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:19.082Z",
+      "description": "Download the JSON",
+      "entropy": 0.03,
+      "contradictions": 0
+    },
+    {
+      "layer_id": 624,
+      "phase": "Echo",
+      "timestamp": "2025-08-09T13:58:20.082Z",
+      "description": "Want me to tweak the parameter enums or align this to a specific Bridgefile Runner schema?",
+      "entropy": 0.18,
+      "contradictions": 0
+    }
+  ],
+  "session_summary": "Auto-generated from raw session input. Total layers: 624. Total contradictions: 0."
+}

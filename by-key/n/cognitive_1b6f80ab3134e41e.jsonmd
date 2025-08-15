@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:31.407Z",
+    "source_text_length": 3233,
+    "word_count": 323,
+    "sentence_count": 25,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "1b6f80ab3134e41e95655b3b2a6d8520",
+    "entropy_level": 0.925,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "1821f940482fd37d8ed24cbaafb818de77844c070cc7ba57c4b440f508db24c6_feedin_1754897453548.json",
+      "processing_timestamp": "2025-08-11T15:15:31.407Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0557",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0495",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 6,
+        "significance": "0.0186",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0155",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "participant",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"participant\",\n"
+        ]
+      },
+      {
+        "theme": "evaluation",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"evaluation\",\n"
+        ]
+      },
+      {
+        "theme": "generated",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"generated\",\n"
+        ]
+      },
+      {
+        "theme": "date",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"date\",\n"
+        ]
+      },
+      {
+        "theme": "instructor",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "\"instructor\",\n"
+        ]
+      },
+      {
+        "theme": "assigned",
+        "frequency": 3,
+        "significance": "0.0093",
+        "examples": [
+          "assigned"
+        ]
+      }
+    ],
+    "key_questions": [
+      "848,\n    \"contradictions_detected\": 0,\n    \"word_count\": 120\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"participant\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"evaluation\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"generated\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"date\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"instructor\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"assessment\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"comments\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"battle\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"creek\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"michigan\",\n        \"frequency\": 2\n      }\n    ],\n    \"contradiction_map\": []\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"Attendance — Correct day and time?\",\n      \"Hygiene — Appropriately groomed",
+      "?\",\n      \"Attitude — Cooperative and engaged",
+      "?\",\n      \"Attention Span — Adequate for assigned tasks",
+      "?\",\n      \"Safety — Followed all procedures correctly",
+      "?\",\n      \"Task Completion — Finished assigned work",
+      "?\"\n    ],\n    \"summary\": \"participant, evaluation, generated, date, instructor\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"E3-Form-bob-1-",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:34...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.16165,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.69",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "1b6f80ab3134e41e95655b3b2a6d8520"
+  }
+}

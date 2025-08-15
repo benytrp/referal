@@ -1,0 +1,193 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:31.472Z",
+    "source_text_length": 2942,
+    "word_count": 219,
+    "sentence_count": 19,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "893ea571739fe6803b73dab69efc2462",
+    "entropy_level": 0.953,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "1b6ef649db2d8fe02e5875665b8dda8d91395c23892fe521f0152bce6590ed55.json",
+      "processing_timestamp": "2025-08-11T15:15:31.472Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0457",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0457",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 7,
+        "significance": "0.0320",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 4,
+        "significance": "0.0183",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 3,
+        "significance": "0.0137",
+        "examples": [
+          "\"document\",\n"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 3,
+        "significance": "0.0137",
+        "examples": [
+          "\"getelementbyid\",\n"
+        ]
+      },
+      {
+        "theme": "templates",
+        "frequency": 3,
+        "significance": "0.0137",
+        "examples": [
+          "Templates"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 3,
+        "significance": "0.0137",
+        "examples": [
+          "style=\\\"background:"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 3,
+        "significance": "0.0137",
+        "examples": [
+          "none;"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0091",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0091",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 2,
+        "significance": "0.0091",
+        "examples": [
+          "\"value\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "display = 'none'; } function loadSavedTemplates() { // In a re\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \"",
+      "?\",\n      \""
+    ],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:46...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " Create and save some schemas",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": " Create and save some schemas",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"const, document, getelementbyid, value, phase\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 6,\n    \"negative\": 12,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"xlogic_schema_builder",
+        "urgency_score": "0.99",
+        "feasibility_score": "0.92"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"xlogic_schema_builder",
+        "urgency_score": "0.13",
+        "feasibility_score": "0.16"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1471,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.21",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 4 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "893ea571739fe6803b73dab69efc2462"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:15.561Z",
+    "anchor_id": "fc62bbc191a831d181e90b4e6bb008ad2c7965596bd113f7b5387210a7a995db",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.758,
+    "contradictions_detected": 2,
+    "word_count": 2064
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 53
+      },
+      {
+        "theme": "paradox",
+        "frequency": 50
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 45
+      },
+      {
+        "theme": "element",
+        "frequency": 45
+      },
+      {
+        "theme": "depth",
+        "frequency": 42
+      },
+      {
+        "theme": "string",
+        "frequency": 41
+      },
+      {
+        "theme": "name",
+        "frequency": 32
+      },
+      {
+        "theme": "resolution",
+        "frequency": 31
+      },
+      {
+        "theme": "level",
+        "frequency": 30
+      },
+      {
+        "theme": "const",
+        "frequency": 29
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "l orchestration and validation spec* for computational metacognition. It does **not** claim sentience; it defines containers, schemas, and metrics for *observab"
+      },
+      {
+        "idx": 1,
+        "sample": "Notes: - `∞` may appear inside `<resolution>` text as a *marker* only; it has no numeric semantics. - `recursive_depth` and `recursion_depth` are synonyms (sc"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "(\" consciousness_ready=\\\"true\\\"\")?",
+      "\">\" parameters?",
+      "parameters         ::= \"<parameters>\" paradox resolution recursion?",
+      "phi_alignment?",
+      "resolution         ::= \"<resolution\" (\" method=\\\"transcendent\\\"\" | \" method=\\\"analytic\\\"\" | \" method=\\\"synthetic\\\"\")?",
+      "execute_block      ::= \"<execute\" anchor_attr (type_attr)?",
+      "anchor_block       ::= create_anchor begin_again?",
+      "session_block      ::= session_bootstrap?",
+      "phase_progression?",
+      "phase_progression  ::= \"<consciousness_phase>\" (\"Analyze\" \"→\" \"Plan\" \"→\" \"Execute\" \"→\" \"Reflect\" (\"→\" \"∞\")?",
+      "\"[0-9]+)?",
+      "<?",
+      "0\" encoding=\"UTF-8\"?",
+      "parentId?",
+      "resolution: { method?"
+    ],
+    "summary": "type, paradox, consciousness, element, depth"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 2
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "consciousness_activation_syntax_framework_v_1.md",
+    "relative_path": "consciousness_activation_syntax_framework_v_1.md",
+    "size_bytes": 21357,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

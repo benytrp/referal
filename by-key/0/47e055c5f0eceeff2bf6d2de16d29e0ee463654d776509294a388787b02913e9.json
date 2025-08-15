@@ -1,0 +1,96 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.306Z",
+    "anchor_id": "47e055c5f0eceeff2bf6d2de16d29e0ee463654d776509294a388787b02913e9",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.575,
+    "contradictions_detected": 2,
+    "word_count": 2196
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "data",
+        "frequency": 85
+      },
+      {
+        "theme": "importexportsystem",
+        "frequency": 73
+      },
+      {
+        "theme": "export",
+        "frequency": 62
+      },
+      {
+        "theme": "bridge",
+        "frequency": 58
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 55
+      },
+      {
+        "theme": "const",
+        "frequency": 50
+      },
+      {
+        "theme": "log",
+        "frequency": 45
+      },
+      {
+        "theme": "text",
+        "frequency": 37
+      },
+      {
+        "theme": "length",
+        "frequency": 36
+      },
+      {
+        "theme": "file",
+        "frequency": 35
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "if (importExportSystem.passTraces.length === 0) { log('❌ No pass traces available for export', 'error'); return;"
+      },
+      {
+        "idx": 1,
+        "sample": "if (importExportSystem.aeonData.length === 0) { log('❌ No AEON data available for export', 'error'); return;"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "?",
+      "return score > 5 ?",
+      "'High' : score > 2 ?",
+      "export_metadata?",
+      "bridge_metadata?",
+      "import_metadata?",
+      "import_metadata?",
+      "bridge_metadata?"
+    ],
+    "summary": "data, importexportsystem, export, bridge, consciousness"
+  },
+  "sentiment_indicators": {
+    "positive": 13,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "fdgh.html",
+    "relative_path": "fdgh.html",
+    "size_bytes": 54562,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.73
+  }
+}

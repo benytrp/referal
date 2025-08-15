@@ -1,0 +1,163 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:34.082Z",
+    "source_text_length": 1625,
+    "word_count": 112,
+    "sentence_count": 6,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "729ed3a3acf521a3c843a75669438778",
+    "entropy_level": 0.932,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "512b981ae94a4aa9fbeeb9d12e8188adf10d1a84db9495091bbe8477da86049f.json",
+      "processing_timestamp": "2025-08-11T15:15:34.082Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0893",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0893",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "summary",
+        "frequency": 3,
+        "significance": "0.0268",
+        "examples": [
+          "\"summary\":"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"cycle\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"type\",\n"
+        ]
+      },
+      {
+        "theme": "keys",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"keys\",\n"
+        ]
+      },
+      {
+        "theme": "entry",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"entry\",\n"
+        ]
+      },
+      {
+        "theme": "metadata",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"metadata\",\n"
+        ]
+      },
+      {
+        "theme": "nvrstry",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"Nvrstry.cleaned.summary"
+        ]
+      },
+      {
+        "theme": "cleaned",
+        "frequency": 2,
+        "significance": "0.0179",
+        "examples": [
+          "\"Nvrstry.cleaned.summary"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:39...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.08125,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.51",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "729ed3a3acf521a3c843a75669438778"
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:01.353Z",
+    "source_text_length": 2629,
+    "word_count": 199,
+    "sentence_count": 16,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bb9f324f30d84377efe459cf22907318",
+    "entropy_level": 0.946,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "efa21b822efda987d75f9d7894a997a4b087a01827808638119200fa7efd49fd.json",
+      "processing_timestamp": "2025-08-11T15:16:01.353Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 12,
+        "significance": "0.0603",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0503",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 5,
+        "significance": "0.0251",
+        "examples": [
+          "\"name\",\n"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 5,
+        "significance": "0.0251",
+        "examples": [
+          "border-color:"
+        ]
+      },
+      {
+        "theme": "validation",
+        "frequency": 5,
+        "significance": "0.0251",
+        "examples": [
+          "${validation"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 4,
+        "significance": "0.0201",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 3,
+        "significance": "0.0151",
+        "examples": [
+          "\"html\",\n"
+        ]
+      },
+      {
+        "theme": "focus",
+        "frequency": 3,
+        "significance": "0.0151",
+        "examples": [
+          "input:focus,"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 3,
+        "significance": "0.0151",
+        "examples": [
+          "none;"
+        ]
+      },
+      {
+        "theme": "color",
+        "frequency": 3,
+        "significance": "0.0151",
+        "examples": [
+          "border-color:"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 2,
+        "significance": "0.0101",
+        "examples": [
+          "\"Offline"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0101",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "submit-btn { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; } ${ti\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"name}\\\" rows=\\\"4\\\" ${validation ?\",\n      \"name}\\\" ${validation",
+      "?\",\n      \"name}\\\" ${validation",
+      "?\",\n      \"${responsive",
+      "?\",\n      \"${description",
+      "?\",\n      \"<form action=\\\"${action}\\\" method=\\\"POST\\\" ${validation",
+      "?\",\n      \"${validation",
+      "?\",\n      \"How satisfied are you with our service",
+      "?\",\n      \""
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:40...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "516,\n    \"contradictions_detected\": 4,\n    \"word_count\": 1418\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"const\",\n        \"frequency\": 37\n      },\n      {\n        \"theme\": \"template\",\n        \"frequency\": 36\n      },\n      {\n        \"theme\": \"value\",\n        \"frequency\": 34\n      },\n      {\n        \"theme\": \"option\",\n        \"frequency\": 28\n      },\n      {\n        \"theme\": \"name\",\n        \"frequency\": 26\n      },\n      {\n        \"theme\": \"html\",\n        \"frequency\": 25\n      },\n      {\n        \"theme\": \"document\",\n        \"frequency\": 25\n      },\n      {\n        \"theme\": \"field\",\n        \"frequency\": 24\n      },\n      {\n        \"theme\": \"form\",\n        \"frequency\": 20\n      },\n      {\n        \"theme\": \"function\",\n        \"frequency\": 17\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"uilder Create professional templates that work completely offline - no dependencies required\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"} input:focus, textarea:focus, select:focus { outline: none; border-color: ${themes[theme]}; } ",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.69"
+      },
+      {
+        "action": "\",\n      \"<form action=\\\"${action}\\\" method=\\\"POST\\\" ${validation ",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.01"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"const, template, value, option, name\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"offline_template_builder",
+        "urgency_score": "0.93",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"offline_template_builder",
+        "urgency_score": "0.87",
+        "feasibility_score": "0.15"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.13145,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.07",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 4 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bb9f324f30d84377efe459cf22907318"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.228Z",
+    "anchor_id": "677a31adec57e95057d924d754697a1c52c421e21332ef004715de52b8591098",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.63,
+    "contradictions_detected": 7,
+    "word_count": 1436
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "generation",
+        "frequency": 45
+      },
+      {
+        "theme": "log",
+        "frequency": 38
+      },
+      {
+        "theme": "const",
+        "frequency": 37
+      },
+      {
+        "theme": "function",
+        "frequency": 29
+      },
+      {
+        "theme": "content",
+        "frequency": 25
+      },
+      {
+        "theme": "await",
+        "frequency": 25
+      },
+      {
+        "theme": "enhancedcontent",
+        "frequency": 22
+      },
+      {
+        "theme": "document",
+        "frequency": 21
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 20
+      },
+      {
+        "theme": "evolution",
+        "frequency": 19
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "🤔 Philosophical Protocol Monitor Bracketing: Not Active Inquiry Cycle: Not Started Dialogue: No Horiz"
+      },
+      {
+        "idx": 1,
+        "sample": "Protocol Monitor Bracketing: Not Active Inquiry Cycle: Not Started Dialogue: No Horizon Fusion Reflection: No A"
+      },
+      {
+        "idx": 2,
+        "sample": "keting: Not Active Inquiry Cycle: Not Started Dialogue: No Horizon Fusion Reflection: No Active Monitoring"
+      },
+      {
+        "idx": 3,
+        "sample": "le: Not Started Dialogue: No Horizon Fusion Reflection: No Active Monitoring 🌀 Recursive Pipeline Log -"
+      },
+      {
+        "idx": 4,
+        "sample": "State = { phenomenologyActive: false, pragmatismCycle: 'not-started', hermeneuticsFusion: false, reflectionMonit"
+      },
+      {
+        "idx": 5,
+        "sample": "or: ${error.message}`); // Pragmatic fallibilism - continue despite errors log('🔄 PRAGMATIC FALLIBILISM: Continuing des"
+      },
+      {
+        "idx": 6,
+        "sample": "ue despite errors log('🔄 PRAGMATIC FALLIBILISM: Continuing despite errors'); } } } async funct"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "textContent = isPaused ?",
+      "log(isPaused ?"
+    ],
+    "summary": "generation, log, const, function, content"
+  },
+  "sentiment_indicators": {
+    "positive": 3,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "dshde.html",
+    "relative_path": "dshde.html",
+    "size_bytes": 26728,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.8
+  }
+}

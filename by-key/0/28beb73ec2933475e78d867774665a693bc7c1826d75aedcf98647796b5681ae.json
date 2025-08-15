@@ -1,0 +1,130 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.926Z",
+    "anchor_id": "28beb73ec2933475e78d867774665a693bc7c1826d75aedcf98647796b5681ae",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.69,
+    "contradictions_detected": 9,
+    "word_count": 2474
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "return",
+        "frequency": 68
+      },
+      {
+        "theme": "function",
+        "frequency": 67
+      },
+      {
+        "theme": "text",
+        "frequency": 59
+      },
+      {
+        "theme": "const",
+        "frequency": 59
+      },
+      {
+        "theme": "analysis",
+        "frequency": 54
+      },
+      {
+        "theme": "cognitive",
+        "frequency": 42
+      },
+      {
+        "theme": "mode",
+        "frequency": 41
+      },
+      {
+        "theme": "length",
+        "frequency": 34
+      },
+      {
+        "theme": "actions",
+        "frequency": 26
+      },
+      {
+        "theme": "math",
+        "frequency": 26
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "de (Tab) Files Processed: 0 Active Mode: None Cognitive Load: 0% Quality Score: —"
+      },
+      {
+        "idx": 1,
+        "sample": "ould','would','also','only','very','just','like','the','and','for','are','but','not','you','all','can','her','was','one','our','had','use','word','each','said',"
+      },
+      {
+        "idx": 2,
+        "sample": "= (\" \" + sentence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the"
+      },
+      {
+        "idx": 3,
+        "sample": "sentence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the other h"
+      },
+      {
+        "idx": 4,
+        "sample": "tence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the other hand)"
+      },
+      {
+        "idx": 5,
+        "sample": "\").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the other hand)\\b/);"
+      },
+      {
+        "idx": 6,
+        "sample": "werCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the other hand)\\b/); if (m"
+      },
+      {
+        "idx": 7,
+        "sample": "const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely|on the other hand)\\b/); if (match) {"
+      },
+      {
+        "idx": 8,
+        "sample": "k = () => { $(\"testInput\").value = ''; $(\"testOutput\").style.display = 'none'; }; $(\"btnCloseTest\").onclick = () => $(\"testDialog\").close(); $(\"b"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "?",
+      "?",
+      "]*\\?",
+      "?",
+      "return maxEntropy ?",
+      "positive ?",
+      "length > 3 ?",
+      "$(\"btnStart\")?",
+      "$(\"btnPreview\")?"
+    ],
+    "summary": "return, function, text, const, analysis"
+  },
+  "sentiment_indicators": {
+    "positive": 14,
+    "negative": 20,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "cognitive_jsonmd_scanner_v2 (3).html",
+    "relative_path": "cognitive_jsonmd_scanner_v2 (3).html",
+    "size_bytes": 41209,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.83
+  }
+}

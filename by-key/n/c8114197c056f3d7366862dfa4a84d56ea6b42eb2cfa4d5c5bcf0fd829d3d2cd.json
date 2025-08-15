@@ -1,0 +1,164 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.782Z",
+    "anchor_id": "c8114197c056f3d7366862dfa4a84d56ea6b42eb2cfa4d5c5bcf0fd829d3d2cd",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.772,
+    "contradictions_detected": 16,
+    "word_count": 4887
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 222
+      },
+      {
+        "theme": "await",
+        "frequency": 100
+      },
+      {
+        "theme": "name",
+        "frequency": 76
+      },
+      {
+        "theme": "text",
+        "frequency": 74
+      },
+      {
+        "theme": "type",
+        "frequency": 66
+      },
+      {
+        "theme": "return",
+        "frequency": 66
+      },
+      {
+        "theme": "function",
+        "frequency": 57
+      },
+      {
+        "theme": "json",
+        "frequency": 42
+      },
+      {
+        "theme": "length",
+        "frequency": 39
+      },
+      {
+        "theme": "new",
+        "frequency": 38
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ould','would','also','only','very','just','like','the','and','for','are','but','not','you','all','can','her','was','one','our','had','use','each','said','his','"
+      },
+      {
+        "idx": 1,
+        "sample": "dictions(text){ const s=sentencesArr(text); const out=[]; const cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(le"
+      },
+      {
+        "idx": 2,
+        "sample": "t){ const s=sentencesArr(text); const out=[]; const cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(let i=0;i<s.le"
+      },
+      {
+        "idx": 3,
+        "sample": "t s=sentencesArr(text); const out=[]; const cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(let i=0;i<s.length;i++"
+      },
+      {
+        "idx": 4,
+        "sample": "Arr(text); const out=[]; const cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(let i=0;i<s.length;i++){ const line"
+      },
+      {
+        "idx": 5,
+        "sample": "onst out=[]; const cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(let i=0;i<s.length;i++){ const line=(' '+s[i]+'"
+      },
+      {
+        "idx": 6,
+        "sample": "t cons=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; for(let i=0;i<s.length;i++){ const line=(' '+s[i]+' ').toLowerCase()"
+      },
+      {
+        "idx": 7,
+        "sample": "----------------------- async function openListing(){ if(!outJsonDir){ alert('No output yet'); return; } const items=[]; for await (const [name,entry] of outJ"
+      },
+      {
+        "idx": 8,
+        "sample": "------------- async function openListing(){ if(!outJsonDir){ alert('No output yet'); return; } const items=[]; for await (const [name,entry] of outJsonDir.ent"
+      },
+      {
+        "idx": 9,
+        "sample": "ort().reverse(); const html = items.slice(0,80).map(n=>`• ${n}`).join('<br>')||'No outputs yet.'; const w=window.open('', '_blank'); w.document.write(`<pre styl"
+      },
+      {
+        "idx": 10,
+        "sample": "se(); const html = items.slice(0,80).map(n=>`• ${n}`).join('<br>')||'No outputs yet.'; const w=window.open('', '_blank'); w.document.write(`<pre style=\"font-fam"
+      },
+      {
+        "idx": 11,
+        "sample": "ocument.close(); }; $(\"btnDownloadLast\").onclick = ()=>{ if(!lastObj){ alert('No JSON to download yet'); return;} const blob=new Blob([JSON.stringify(lastObj,"
+      },
+      {
+        "idx": 12,
+        "sample": "$(\"btnDownloadLast\").onclick = ()=>{ if(!lastObj){ alert('No JSON to download yet'); return;} const blob=new Blob([JSON.stringify(lastObj,null,2)],{type:'appl"
+      },
+      {
+        "idx": 13,
+        "sample": "]} }, async ({query,limit,recency_bias})=>{ if(!IN) throw new Error('AEON not initialized'); const q=query.toLowerCase().split(/\\s+/).filter(Boolean); con"
+      },
+      {
+        "idx": 14,
+        "sample": ",budget={max_cycles:7,max_parallel:3}){ if(!IN||!OUT) throw new Error('AEON not initialized'); const root=await ensure(OUT,'aeon_runs'); const run=await"
+      },
+      {
+        "idx": 15,
+        "sample": "stener('click', async ()=>{ try{ if(!window.AEON){ alert('AEON module not loaded'); return; } // We reuse the directory handles initialized by t"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const icon = type===\"err\"?",
+      "\"❌\": type===\"warn\"?",
+      "\"⚠️\": type===\"ok\"?",
+      "items?",
+      "textContent = ms?",
+      "push(\"html?",
+      "body?",
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "text(); bl = raw?",
+      "log(2); const ent=maxH?",
+      "includes(' '+w+' ')?",
+      "log(2); return maxH?",
+      "?",
+      "]*\\?"
+    ],
+    "summary": "const, await, name, text, type"
+  },
+  "sentiment_indicators": {
+    "positive": 10,
+    "negative": 12,
+    "uncertainty": 6
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "unified_offline_jsonmd_cognitive_scanner_aeon_loop_gen_7.html",
+    "relative_path": "unified_offline_jsonmd_cognitive_scanner_aeon_loop_gen_7.html",
+    "size_bytes": 43290,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.91
+  }
+}

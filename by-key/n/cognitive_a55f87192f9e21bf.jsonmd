@@ -1,0 +1,196 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:33.829Z",
+    "source_text_length": 3005,
+    "word_count": 278,
+    "sentence_count": 22,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "a55f87192f9e21bfe8f1c5f85e6a99c6",
+    "entropy_level": 0.938,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "508f87e4bfcbf6a426a0821e86fd0c9f22d8a7cc54a537260153af0a29d5805e.json",
+      "processing_timestamp": "2025-08-11T15:15:33.829Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0360",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0360",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "placeholder",
+        "frequency": 8,
+        "significance": "0.0288",
+        "examples": [
+          "placeholder-gray-400"
+        ]
+      },
+      {
+        "theme": "focus",
+        "frequency": 8,
+        "significance": "0.0288",
+        "examples": [
+          "focus:border-purple-400"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 8,
+        "significance": "0.0288",
+        "examples": [
+          "focus:outline-none"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 6,
+        "significance": "0.0216",
+        "examples": [
+          "\"text\",\n"
+        ]
+      },
+      {
+        "theme": "gray",
+        "frequency": 6,
+        "significance": "0.0216",
+        "examples": [
+          "\"gray\",\n"
+        ]
+      },
+      {
+        "theme": "purple",
+        "frequency": 5,
+        "significance": "0.0180",
+        "examples": [
+          "\"purple\",\n"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 5,
+        "significance": "0.0180",
+        "examples": [
+          "\"border\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 4,
+        "significance": "0.0144",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "white",
+        "frequency": 4,
+        "significance": "0.0144",
+        "examples": [
+          "text-white"
+        ]
+      },
+      {
+        "theme": "outline",
+        "frequency": 4,
+        "significance": "0.0144",
+        "examples": [
+          "focus:outline-none"
+        ]
+      }
+    ],
+    "key_questions": [
+      "\\\" />\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"What is the core tension?\",\n      \"What new territories does this contradiction reveal",
+      "?\",\n      \"What questions emerge when you follow each thread",
+      "?\",\n      \"Where do they contradict each other",
+      "?\",\n      \"What happens when you compress all possibilities into one point",
+      "?\",\n      \"What cannot coexist but must",
+      "?\",\n      \"What did this cycle reveal about your root input",
+      "?\",\n      \"How has \\\"${rootInput}\\\" changed while remaining the same",
+      "?\",\n      \"What new cycle does this suggest"
+    ],
+    "pattern_recognition": [
+      "cycle",
+      "spiral"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "\",\n      \"What cannot coexist b",
+        "statement_b": "must",
+        "line": 12,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.12"
+      },
+      {
+        "statement_a": "\",\n      \"How has \\\"${rootInput}\\\" changed w",
+        "statement_b": "remaining the same",
+        "line": 14,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.65"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:39...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n      \"What cannot coexist but must",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.66"
+      }
+    ],
+    "unresolved_tensions": [
+      "\",\n      \"How has \\\"${rootInput}\\\" changed w vs remaining the same"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.20024999999999998,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 2 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.72",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a55f87192f9e21bfe8f1c5f85e6a99c6"
+  }
+}

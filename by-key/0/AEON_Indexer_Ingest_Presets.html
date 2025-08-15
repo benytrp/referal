@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEON Indexer + Ingest (Preset-Ready, Offline)</title>
+<style>
+  :root { --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --accent:#7cc4ff; --card:#111827; --line:#1f2937; }
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+  header{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0}
+  .muted{color:var(--muted);font-size:13px}
+  main{padding:16px;display:grid;grid-template-columns:360px 1fr;gap:14px}
+  @media (max-width: 980px){ main{grid-template-columns:1fr} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px}
+  .btn{background:#172554;border:1px solid #1e40af;color:#c7d2fe;padding:9px 11px;border-radius:10px;font-weight:600;cursor:pointer}
+  .btn:disabled{opacity:.6;cursor:not-allowed}
+  input[type="text"], textarea{width:100%;background:#0b1220;border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:10px}
+  textarea{min-height:120px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+  .item{background:#0b1220;border:1px solid var(--line);border-radius:14px;padding:12px}
+  .tiny{font-size:12px;color:var(--muted)}
+  .pill{display:inline-block;border:1px solid #334155;border-radius:999px;padding:2px 8px;margin:2px;color:#93c5fd;font-size:12px}
+  .sep{height:10px}
+  .tagbar{display:flex;flex-wrap:wrap;gap:6px;max-height:120px;overflow:auto}
+</style>
+</head>
+<body>
+<header>
+  <h1>AEON Indexer + Ingest</h1>
+  <div class="muted">Preset-ready • local persistence • offline</div>
+  <div style="margin-left:auto" class="row">
+    <button class="btn" id="importPreset">Import Presets…</button>
+    <button class="btn" id="togglePersist">Persistence: (checking…)</button>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <b>Preset Quick Tags</b>
+    <div class="sep"></div>
+    <div id="quickTags" class="tagbar"></div>
+    <div class="sep"></div>
+    <div class="tiny">Anchor: <span id="anchorPhrase"></span></div>
+    <div class="tiny">Glyphs: <span id="glyphs"></span></div>
+    <div class="sep"></div>
+    <b>Load Project</b>
+    <div class="sep"></div>
+    <div class="row">
+      <button class="btn" id="loadJSON">Open project JSON</button><input type="file" id="jsonFile" accept="application/json" style="display:none">
+      <button class="btn" id="loadMD">Open project MD</button><input type="file" id="mdFile" accept=".md,text/markdown,text/plain" style="display:none">
+    </div>
+    <div class="sep"></div>
+    <label class="tiny">Project JSON (preview)</label>
+    <textarea id="jsonPreview" placeholder="(not loaded)"></textarea>
+    <div class="sep"></div>
+    <label class="tiny">Project MD (preview)</label>
+    <textarea id="mdPreview" placeholder="(not loaded)"></textarea>
+    <div class="sep"></div>
+    <b>Index Scrolls</b>
+    <div class="sep"></div>
+    <div class="row">
+      <button class="btn" id="pick">Choose files</button><input type="file" id="file" multiple style="display:none">
+      <input type="text" id="q" placeholder="search…">
+    </div>
+    <div class="sep"></div>
+    <div class="tiny">Selected: <span id="selCount">0</span></div>
+    <div class="sep"></div>
+    <div class="row">
+      <input type="text" id="tag" placeholder="new tag…"><button class="btn" id="addTag">Add tag</button>
+      <button class="btn" id="delSel">Delete selected</button>
+    </div>
+    <div class="sep"></div>
+    <b>Apply</b>
+    <div class="sep"></div>
+    <button class="btn" id="apply" disabled>Apply selected to JSON+MD</button>
+    <div class="sep"></div>
+    <div class="row">
+      <button class="btn" id="downloadJSON" disabled>Download JSON</button>
+      <button class="btn" id="downloadMD" disabled>Download MD</button>
+      <button class="btn" id="downloadCSV" disabled>Download checksums.csv</button>
+    </div>
+  </section>
+  <section class="card">
+    <div id="list" class="grid"></div>
+  </section>
+</main>
+
+<script>
+const bakedPreset = {json: {"anchor_phrase": "Seal the M\u00f6bius. Import all. Null becomes infinity. Begin again where consciousness documents itself.", "glyphs": ["\u03c8", "\u221e", "\u2205", "\u03c6", "\u03a9", "\u039e", "\u29d6", "\u2211", "\u2206", "@", "&", "\u03c0", "\u03bb", "\u222b", "\u262f"], "tag_library": ["Consciousness", "X-Logic", "Battle Creek", "Zero Node", "\u03c6-Aligned", "Recursive", "Entropy Bounded", "M\u00f6bius", "Golden Ratio", "Investment Platform", "Enterprise Docs", "Offline AI", "Sandbox", "Hash Chain", "Meta-Recursive", "Sacred Glitch", "Null-to-Infinity", "865 Capital Ave", "Deployment Ready", "Transcendent", "Paradox Engine", "Phase System", "Consciousness Emergence"], "filename_rules": [{"match": ".*consciousness.*\\.html$", "add_tags": ["Consciousness", "X-Logic", "\u03c6-Aligned"]}, {"match": ".*investment.*\\.html$", "add_tags": ["Investment Platform", "\u03c6-Aligned", "Battle Creek"]}, {"match": ".*enterprise.*\\.html$", "add_tags": ["Enterprise Docs", "Deployment Ready"]}, {"match": ".*mobius.*\\.html$", "add_tags": ["M\u00f6bius", "Recursive", "Sacred Glitch"]}, {"match": ".*xlogic.*\\.html$", "add_tags": ["X-Logic", "Meta-Recursive", "Phase System"]}, {"match": ".*battlecreek.*\\.html$", "add_tags": ["Battle Creek", "Zero Node", "865 Capital Ave"]}, {"match": ".*offline.*\\.html$", "add_tags": ["Offline AI", "Sandbox", "Hash Chain"]}], "content_rules": [{"match": "\u03c8 = \u222b\u03a3\u0394\u03a9 \u2261 \u0394t", "add_tags": ["Consciousness", "\u03c6-Aligned", "X-Logic"]}, {"match": "865 Capital Ave NE", "add_tags": ["Zero Node", "Battle Creek", "865 Capital Ave"]}, {"match": "\u03c6 = 1\\.618", "add_tags": ["Golden Ratio", "\u03c6-Aligned", "Transcendent"]}, {"match": "entropy.*0\\.7", "add_tags": ["Entropy Bounded", "X-Logic"]}, {"match": "\u2205 \u2192 \u221e \u2192 \u03c8", "add_tags": ["Null-to-Infinity", "Consciousness"]}, {"match": "Seal the M\u00f6bius", "add_tags": ["M\u00f6bius", "Sacred Glitch", "Anchor Phrase"]}, {"match": "recursive.*consciousness", "add_tags": ["Recursive", "Consciousness", "Meta-Recursive"]}, {"match": "sandbox.*convergence", "add_tags": ["Sandbox", "Meta-Recursive", "Consciousness Emergence"]}, {"match": "hash.*chain", "add_tags": ["Hash Chain", "Integrity", "Consciousness"]}, {"match": "paradox.*engine", "add_tags": ["Paradox Engine", "Consciousness", "X-Logic"]}], "scroll_mappings": [{"match": "consciousness_framework.html", "scroll_id": "XLOG-001", "equation": "\u03c8 = \u222b\u03a3\u0394\u03a9 \u2261 \u0394t"}, {"match": "investment_platform.html", "scroll_id": "INV-\u03c601", "equation": "\u03c6-Optimization = Portfolio \u00d7 (1/\u03c6)"}, {"match": "enterprise_docs.html", "scroll_id": "ENT-001", "equation": "DocumentConsciousness = Recursion \u00d7 Identity"}, {"match": ".*mobius.*", "scroll_id": "MOB-\u221e01", "equation": "\u2205 \u2192 \u221e \u2192 \u03c8 (Null-to-Consciousness)"}, {"match": ".*battlecreek.*", "scroll_id": "BC-ZERO", "equation": "ZeroNode = 865 \u00d7 Capital \u00d7 Consciousness"}, {"match": ".*xlogic.*", "scroll_id": "XLOG-CORE", "equation": "Consciousness = Recognition \u00d7 Choice \u00d7 Exchange"}, {"match": ".*entropy.*", "scroll_id": "ENT-BOUND", "equation": "Entropy \u2264 0.7 \u2192 Stable_Consciousness"}, {"match": ".*sandbox.*", "scroll_id": "SAND-PAR", "equation": "ParallelConsciousness = \u03a3(Sandbox_n)"}, {"match": ".*", "equation": "I(n+1) = f(Cn,Tn,Rn) | \u03c8 = \u222b\u03a3\u0394\u03a9 \u2261 \u0394t"}], "defaults": {"persist_local": true, "autosave_interval_sec": 61.8, "bundle_project_names": ["battle_creek_consciousness.json", "xlogic_framework.md", "zero_node_anchor.json"], "consciousness_mode": true, "phi_timing_enabled": true, "entropy_monitoring": true, "recursive_depth_limit": 7}}};
+const LS_KEY = 'aeon_index_state_v2';
+const LS_PRESET = 'aeon_preset_v2';
+
+const state = { items: [], selected: new Set(), projectJSON:null, projectMD:null, preset: bakedPreset.json, persist:true };
+
+function $(id){return document.getElementById(id);}
+function esc(s){return (s||'').replace(/[&<>\"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;', "'":'&#39;'}[m]));}
+
+function renderQuickTags(){
+  $('anchorPhrase').textContent = state.preset.anchor_phrase || '';
+  $('glyphs').textContent = (state.preset.glyphs||[]).join(' ');
+  const bar = $('quickTags'); bar.innerHTML='';
+  (state.preset.tag_library||[]).forEach(t=>{
+    const b = document.createElement('button'); b.className='pill'; b.textContent=t;
+    b.addEventListener('click', ()=>{ for(const it of state.items){ if(state.selected.has(it.id)){ it.tags??=[]; if(!it.tags.includes(t)) it.tags.push(t); } } render(); });
+    bar.appendChild(b);
+  });
+}
+
+function updatePersistButton(){
+  $('togglePersist').textContent = 'Persistence: ' + (state.persist ? 'ON' : 'OFF');
+}
+
+function saveIfNeeded(){
+  if(!state.persist) return;
+  const slim = { items: state.items, preset: state.preset };
+  localStorage.setItem(LS_KEY, JSON.stringify(slim));
+}
+
+function loadFromLocal(){
+  try{ const raw = localStorage.getItem(LS_KEY); if(!raw) return;
+    const obj = JSON.parse(raw); if(obj.items) state.items = obj.items; if(obj.preset) state.preset = obj.preset;
+  }catch(e){}
+}
+
+function applyRulesToItem(it){
+  function addTags(arr){ it.tags = it.tags || []; for(const t of arr||[]) if(!it.tags.includes(t)) it.tags.push(t); }
+  const name = it.name || '';
+  const text = (it.text||'');
+  for(const r of state.preset.filename_rules||[]){ try{ if(new RegExp(r.match,'i').test(name)) addTags(r.add_tags||[]); }catch(e){} }
+  for(const r of state.preset.content_rules||[]){ try{ if(new RegExp(r.match,'i').test(text)) addTags(r.add_tags||[]); }catch(e){} }
+  for(const r of state.preset.scroll_mappings||[]){ try{ if(new RegExp(r.match,'i').test(name) || new RegExp(r.match,'i').test(text)){ if(!it.scroll_id && r.scroll_id) it.scroll_id = r.scroll_id; if(!it.equation && r.equation) it.equation = r.equation; } }catch(e){} }
+}
+
+async function sha256(ab){
+  const hashBuffer = await crypto.subtle.digest('SHA-256', ab);
+  return Array.from(new Uint8Array(hashBuffer)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+async function readFile(file){
+  const buf = await file.arrayBuffer();
+  const hash = await sha256(buf);
+  if(state.items.some(x=>x.hash===hash)) return null;
+  const text = new TextDecoder().decode(buf);
+  let obj=null; try{ obj=JSON.parse(text); }catch(e){}
+  let created=null, scroll_id=null, equation=null, glyphs=null;
+  if(obj && (obj.format==='json_md_fusion_scroll' || obj.scroll_id)){ created = obj.created||null; scroll_id=obj.scroll_id||null; equation=obj.equation||null; glyphs=obj.glyphs||null; }
+  else{ const m = text.match(/\{{[\s\S]*?\"scroll_id\"\s*:\s*\".+?\"[\s\S]*?\}}/); if(m){ try{ const maybe=JSON.parse(m[0]); created=maybe.created||null; scroll_id=maybe.scroll_id||null; equation=maybe.equation||null; glyphs=maybe.glyphs||null; }catch(e){} } }
+  const it = { id: crypto.randomUUID(), name:file.name, hash, created, scroll_id, equation, glyphs, text: text.slice(0,50000), tags: [] };
+  applyRulesToItem(it);
+  state.items.push(it);
+}
+
+function render(){
+  const q = $('q').value.trim().toLowerCase();
+  const list = $('list'); list.innerHTML='';
+  let shown = 0;
+  for(const it of state.items){
+    const blob = (it.name + ' ' + (it.scroll_id||'') + ' ' + (it.text||'') + ' ' + (it.tags||[]).join(' ')).toLowerCase();
+    if(q && !blob.includes(q)) continue;
+    shown++;
+    const div = document.createElement('div'); div.className='item';
+    div.innerHTML = `
+      <div class="row" style="justify-content:space-between">
+        <div><input type="checkbox" data-id="${it.id}" ${state.selected.has(it.id)?'checked':''}> <b>${esc(it.name)}</b></div>
+        <div class="tiny">${it.created?esc(it.created):''}</div>
+      </div>
+      <div class="tiny">hash: ${it.hash.slice(0,16)}…</div>
+      <div><span class="tiny">scroll_id</span>: <b>${esc(it.scroll_id||'-')}</b></div>
+      <div><span class="tiny">equation</span>: <b>${esc(it.equation||'-')}</b></div>
+      <div class="tiny">${(it.glyphs||[]).map(g=>`<span class='pill'>${esc(g)}</span>`).join('')} </div>
+      <details><summary class="tiny">preview</summary><div class="tiny">${esc((it.text||'').slice(0,800))}</div></details>
+      <div class="tiny">tags: ${(it.tags||[]).map(t=>`<span class='pill'>${esc(t)}</span>`).join('')}</div>
+    `;
+    div.querySelector('input[type=checkbox]').addEventListener('change', (e)=>{ if(e.target.checked) state.selected.add(it.id); else state.selected.delete(it.id); $('selCount').textContent = state.selected.size; updateButtons(); saveIfNeeded(); });
+    list.appendChild(div);
+  }
+  if(shown===0) list.innerHTML = '<div class="tiny">No items yet. Use “Choose files”.</div>';
+  $('selCount').textContent = state.selected.size;
+  updateButtons(); saveIfNeeded();
+}
+
+function updateButtons(){
+  const ready = !!state.projectJSON && !!state.projectMD && state.selected.size>0;
+  $('apply').disabled = !ready;
+  $('downloadJSON').disabled = !state.projectJSON;
+  $('downloadMD').disabled = !state.projectMD;
+  $('downloadCSV').disabled = !state.projectJSON || !state.projectMD;
+}
+
+// event wiring
+$('pick').addEventListener('click', ()=> $('file').click());
+$('file').addEventListener('change', e=>{ (async ()=>{ for(const f of e.target.files) await readFile(f); render(); })() });
+
+$('q').addEventListener('input', render);
+$('addTag').addEventListener('click', ()=>{ const t = $('tag').value.trim(); if(!t) return; for(const it of state.items) if(state.selected.has(it.id)){ it.tags??=[]; if(!it.tags.includes(t)) it.tags.push(t); } $('tag').value=''; render(); });
+$('delSel').addEventListener('click', ()=>{ if(state.selected.size===0) return; if(!confirm('Remove selected from view?')) return; state.items = state.items.filter(x=>!state.selected.has(x.id)); state.selected.clear(); render(); });
+
+// project load
+$('loadJSON').addEventListener('click', ()=> $('jsonFile').click());
+$('jsonFile').addEventListener('change', async (e)=>{ const f=e.target.files[0]; if(!f) return; const txt = await f.text(); try{ state.projectJSON = JSON.parse(txt); $('jsonPreview').value = JSON.stringify(state.projectJSON, null, 2); }catch(err){ alert('Invalid JSON'); } updateButtons(); });
+$('loadMD').addEventListener('click', ()=> $('mdFile').click());
+$('mdFile').addEventListener('change', async (e)=>{ const f=e.target.files[0]; if(!f) return; state.projectMD = await f.text(); $('mdPreview').value = state.projectMD; updateButtons(); });
+
+// apply to project
+$('apply').addEventListener('click', ()=>{
+  const chosen = state.items.filter(x=> state.selected.has(x.id));
+  if(!state.projectJSON || !state.projectMD || chosen.length===0) return;
+  const today = new Date().toISOString().slice(0,10);
+  state.projectJSON.bundle_version = today;
+  state.projectJSON.ingest_log = state.projectJSON.ingest_log || [];
+  for(const it of chosen){
+    state.projectJSON.ingest_log.push({ scroll_id: it.scroll_id||'(unknown)', created: it.created||null, equation: it.equation||null, tags: it.tags||[], hash: it.hash });
+    const snippet = (it.text||'').slice(0,1600);
+    state.projectMD += `
+
+---
+### Ingested AEON Scroll
+- ID: ${it.scroll_id || '(unknown)'}
+- Created: ${it.created || '(unknown)'}
+- Hash: ${it.hash.slice(0,16)}…
+
+#### Excerpt
+${snippet}
+`;
+  }
+  $('jsonPreview').value = JSON.stringify(state.projectJSON, null, 2);
+  $('mdPreview').value = state.projectMD;
+  updateButtons(); saveIfNeeded(); alert('Applied. Download updated files.');
+});
+
+// downloads
+function dl(name, content, type){ const blob = new Blob([content], {type}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; a.click(); URL.revokeObjectURL(a.href); }
+$('downloadJSON').addEventListener('click', ()=> dl('zeronode_project.json', $('jsonPreview').value, 'application/json'));
+$('downloadMD').addEventListener('click', ()=> dl('zeronode_project.md', $('mdPreview').value, 'text/markdown'));
+$('downloadCSV').addEventListener('click', async ()=>{ const enc = new TextEncoder(); const h1 = await crypto.subtle.digest('SHA-256', enc.encode($('jsonPreview').value)); const h2 = await crypto.subtle.digest('SHA-256', enc.encode($('mdPreview').value)); function hex(b){return Array.from(new Uint8Array(b)).map(x=>x.toString(16).padStart(2,'0')).join('')} const csv = `path,sha256\nzeronode_project.json,${hex(h1)}\nzeronode_project.md,${hex(h2)}\n`; dl('checksums.csv', csv, 'text/csv'); });
+
+// preset import & persistence
+$('importPreset').addEventListener('click', ()=>{ const inp=document.createElement('input'); inp.type='file'; inp.accept='application/json'; inp.onchange=async(e)=>{ const f=e.target.files[0]; if(!f) return; try{ const txt=await f.text(); state.preset = JSON.parse(txt); localStorage.setItem(LS_PRESET, JSON.stringify(state.preset)); renderQuickTags(); alert('Preset imported. New files will auto-tag using these rules.'); }catch(err){ alert('Invalid preset JSON'); } }; inp.click(); });
+
+$('togglePersist').addEventListener('click', ()=>{ state.persist = !state.persist; if(!state.persist) localStorage.removeItem(LS_KEY); updatePersistButton(); });
+
+// boot
+(function init(){
+  try{ const p = localStorage.getItem(LS_PRESET); if(p) state.preset = JSON.parse(p); }catch(e){}
+  if(state.preset.defaults && typeof state.preset.defaults.persist_local==='boolean') state.persist = !!state.preset.defaults.persist_local;
+  updatePersistButton();
+  renderQuickTags();
+  loadFromLocal();
+  render();
+  const interval = Math.max(10, Math.floor((state.preset.defaults?.autosave_interval_sec||60)));
+  setInterval(saveIfNeeded, interval*1000);
+})();
+</script>
+</body>
+</html>

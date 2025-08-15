@@ -1,0 +1,152 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.524Z",
+    "anchor_id": "1e044e2ac091b87d1e701b93abfbddd77308868508186f8adc0e020bd5409831",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.742,
+    "contradictions_detected": 13,
+    "word_count": 2276
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 90
+      },
+      {
+        "theme": "await",
+        "frequency": 43
+      },
+      {
+        "theme": "text",
+        "frequency": 36
+      },
+      {
+        "theme": "length",
+        "frequency": 36
+      },
+      {
+        "theme": "return",
+        "frequency": 28
+      },
+      {
+        "theme": "json",
+        "frequency": 26
+      },
+      {
+        "theme": "function",
+        "frequency": 24
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 22
+      },
+      {
+        "theme": "files",
+        "frequency": 21
+      },
+      {
+        "theme": "log",
+        "frequency": 20
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "CORS sources: Wikipedia, Crossref (fallback) Extension detected: no Tip: if you load this inside your MV3 popup or hosted page, the Web S"
+      },
+      {
+        "idx": 1,
+        "sample": "alThis.chrome?.runtime?.id); $(\"ws-ext\").textContent = isExtension ? \"yes\" : \"no\"; $(\"ws-modeval\").textContent = isExtension ? \"Extension (bg fetch)\" : \"Loc"
+      },
+      {
+        "idx": 2,
+        "sample": "ion renderSources(items){ if(!items.length){ $(\"ws-results\").textContent = \"No results.\"; return; } $(\"ws-results\").textContent = items.map(r=>`• [${r.s"
+      },
+      {
+        "idx": 3,
+        "sample": "ter(f=>ALLOWED.test(f.name) && !SKIP.test(f.name)); if(!files.length){ log(\"No acceptable files in drop.\", \"warn\"); return; } await processFiles(files);"
+      },
+      {
+        "idx": 4,
+        "sample": "{ runDir, topic, stamp } = await ensureRunRoot(); // 00_sources.json (if not yet saved but present in memory) if (currentSources.length){ a"
+      },
+      {
+        "idx": 5,
+        "sample": "unDir, topic, stamp } = await ensureRunRoot(); // 00_sources.json (if not yet saved but present in memory) if (currentSources.length){ await"
+      },
+      {
+        "idx": 6,
+        "sample": "(picks.map(async h=> await h.getFile())); } if(!files.length){ log(\"No files selected.\", \"warn\"); return; } $(\"progress\").textContent = `0/${"
+      },
+      {
+        "idx": 7,
+        "sample": "); const out=[]; sents.forEach((s,i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i);"
+      },
+      {
+        "idx": 8,
+        "sample": "onst out=[]; sents.forEach((s,i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i); if(m){"
+      },
+      {
+        "idx": 9,
+        "sample": "out=[]; sents.forEach((s,i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i); if(m){"
+      },
+      {
+        "idx": 10,
+        "sample": "sents.forEach((s,i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i); if(m){ const"
+      },
+      {
+        "idx": 11,
+        "sample": "s.forEach((s,i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i); if(m){ const pos = s"
+      },
+      {
+        "idx": 12,
+        "sample": "i)=>{ const m = s.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|though|conversely)\\b/i); if(m){ const pos = s.toLowerCase("
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "(txt|md|markdown|html?",
+      "(crdownload|part|tmp|exe|dll|zip|rar|pdf|png|jpe?",
+      "chrome?",
+      "runtime?",
+      "textContent = isExtension ?",
+      "textContent = isExtension ?",
+      "res?",
+      "ok) throw new Error(res?",
+      "date ?",
+      "return isNaN(t) ?",
+      "replace(/[?",
+      "php?",
+      "query?",
+      "snippet?",
+      "replace(/<\\/?"
+    ],
+    "summary": "const, await, text, length, return"
+  },
+  "sentiment_indicators": {
+    "positive": 9,
+    "negative": 6,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "thisonemaybvbe.html",
+    "relative_path": "thisonemaybvbe.html",
+    "size_bytes": 25151,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.88
+  }
+}

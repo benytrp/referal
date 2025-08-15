@@ -1,0 +1,85 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.297Z",
+    "anchor_id": "b9cadd4c7700f664140e5b5b28b9092fbf834aa43db815796a9cf42e37f3e6ec",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.812,
+    "contradictions_detected": 0,
+    "word_count": 559
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 22
+      },
+      {
+        "theme": "prompt",
+        "frequency": 16
+      },
+      {
+        "theme": "auto",
+        "frequency": 15
+      },
+      {
+        "theme": "name",
+        "frequency": 13
+      },
+      {
+        "theme": "const",
+        "frequency": 12
+      },
+      {
+        "theme": "contr",
+        "frequency": 11
+      },
+      {
+        "theme": "layer",
+        "frequency": 10
+      },
+      {
+        "theme": "layers",
+        "frequency": 9
+      },
+      {
+        "theme": "trim",
+        "frequency": 9
+      },
+      {
+        "theme": "document",
+        "frequency": 8
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "prompt:\"What problem does this solve that people pay for?",
+      "prompt:\"How does this grow without breaking?",
+      "prompt:\"What's the minimum viable path to profitability?",
+      "prompt:\"What changes when reality meets the plan?",
+      "what can it do?",
+      "prompt:\"How do we optimise for speed & clarity?",
+      "prompt:\"How do we keep it usable and safe?",
+      "prompt:\"How do we ship fast but reliably?"
+    ],
+    "summary": "value, prompt, auto, name, const"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "!DOC.html",
+    "relative_path": "!DOC.html",
+    "size_bytes": 7443,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}

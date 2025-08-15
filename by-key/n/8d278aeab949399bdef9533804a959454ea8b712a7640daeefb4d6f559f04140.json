@@ -1,0 +1,168 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.607Z",
+    "anchor_id": "8d278aeab949399bdef9533804a959454ea8b712a7640daeefb4d6f559f04140",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.749,
+    "contradictions_detected": 17,
+    "word_count": 2735
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 107
+      },
+      {
+        "theme": "await",
+        "frequency": 47
+      },
+      {
+        "theme": "text",
+        "frequency": 41
+      },
+      {
+        "theme": "name",
+        "frequency": 39
+      },
+      {
+        "theme": "return",
+        "frequency": 38
+      },
+      {
+        "theme": "function",
+        "frequency": 36
+      },
+      {
+        "theme": "length",
+        "frequency": 30
+      },
+      {
+        "theme": "new",
+        "frequency": 26
+      },
+      {
+        "theme": "entry",
+        "frequency": 24
+      },
+      {
+        "theme": "math",
+        "frequency": 23
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": ",{type:'text/plain'})); a.download = fname; a.click(); }catch{ alert('No log available yet.'); } } async function loadBlacklist(){ try{"
+      },
+      {
+        "idx": 1,
+        "sample": "n'})); a.download = fname; a.click(); }catch{ alert('No log available yet.'); } } async function loadBlacklist(){ try{ const h = await o"
+      },
+      {
+        "idx": 2,
+        "sample": "const sents=sentencesArray(t); const out=[]; const connectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; se"
+      },
+      {
+        "idx": 3,
+        "sample": "ts=sentencesArray(t); const out=[]; const connectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; sents.forEach("
+      },
+      {
+        "idx": 4,
+        "sample": "ncesArray(t); const out=[]; const connectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; sents.forEach((s,i)=>{"
+      },
+      {
+        "idx": 5,
+        "sample": "const out=[]; const connectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; sents.forEach((s,i)=>{ const"
+      },
+      {
+        "idx": 6,
+        "sample": "]; const connectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; sents.forEach((s,i)=>{ const L=(' '+s+' '"
+      },
+      {
+        "idx": 7,
+        "sample": "ectors=[' but ',' however ',' yet ',' although ',' despite ',' nevertheless ',' whereas ']; sents.forEach((s,i)=>{ const L=(' '+s+' ').toLowerCase();"
+      },
+      {
+        "idx": 8,
+        "sample": "ould','would','also','only','very','just','like','the','and','for','are','but','not','you','all','can','her','was','one','our','had','use','each','said','his','"
+      },
+      {
+        "idx": 9,
+        "sample": "$('outList').innerHTML = items.slice(0,60).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; } // ---------------- UI events ---------------- $('btn"
+      },
+      {
+        "idx": 10,
+        "sample": "st').innerHTML = items.slice(0,60).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; } // ---------------- UI events ---------------- $('btnSelectIn')."
+      },
+      {
+        "idx": 11,
+        "sample": "k= () => { try{ $('previewJson').textContent = JSON.stringify(lastFused||{note:'no result yet'},null,2); }catch{ $('previewJson').textContent='(stringify error)"
+      },
+      {
+        "idx": 12,
+        "sample": "try{ $('previewJson').textContent = JSON.stringify(lastFused||{note:'no result yet'},null,2); }catch{ $('previewJson').textContent='(stringify error)'; } };"
+      },
+      {
+        "idx": 13,
+        "sample": "{ const example = `I wonder if speed and quality really oppose each other? However, when we slow down, bugs decrease. Next step: add tests. What pattern re"
+      },
+      {
+        "idx": 14,
+        "sample": "Next step: add tests. What pattern repeats when deadlines loom? We cut reviews, yet we know reviews raise quality.`; $('manualText').value = example; };"
+      },
+      {
+        "idx": 15,
+        "sample": "out = $('manualOut').textContent; if(!out || out.includes('Awaiting')){ alert('Nothing to download'); return; } const a=document.createElement('a'); a."
+      },
+      {
+        "idx": 16,
+        "sample": "(id){ ['pane-scan','pane-manual','pane-outputs'].forEach(p=>$(p).style.display='none'); $(id).style.display='block'; ['tab-scan','tab-manual','tab-outputs'].for"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "items?",
+      "textContent = ms?",
+      "push('html?",
+      "length ?",
+      "(txt|md|markdown|html?",
+      "body ?",
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "?",
+      "return maxH ?",
+      "?",
+      "]*\\?",
+      "?",
+      "slice(-1)[0]?",
+      "length>3 ?"
+    ],
+    "summary": "const, await, text, name, return"
+  },
+  "sentiment_indicators": {
+    "positive": 7,
+    "negative": 7,
+    "uncertainty": 3
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "unified_jsonmd_reactor_offline_7_cycle.html",
+    "relative_path": "unified_jsonmd_reactor_offline_7_cycle.html",
+    "size_bytes": 30337,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.92
+  }
+}

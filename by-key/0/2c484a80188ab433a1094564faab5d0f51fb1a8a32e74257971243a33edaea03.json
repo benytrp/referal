@@ -1,0 +1,91 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.197Z",
+    "anchor_id": "2c484a80188ab433a1094564faab5d0f51fb1a8a32e74257971243a33edaea03",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.728,
+    "contradictions_detected": 3,
+    "word_count": 1974
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 71
+      },
+      {
+        "theme": "function",
+        "frequency": 38
+      },
+      {
+        "theme": "console",
+        "frequency": 29
+      },
+      {
+        "theme": "performance",
+        "frequency": 28
+      },
+      {
+        "theme": "results",
+        "frequency": 28
+      },
+      {
+        "theme": "async",
+        "frequency": 25
+      },
+      {
+        "theme": "error",
+        "frequency": 25
+      },
+      {
+        "theme": "code",
+        "frequency": 25
+      },
+      {
+        "theme": "item",
+        "frequency": 24
+      },
+      {
+        "theme": "output",
+        "frequency": 23
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ling 💡 Community Tips Maria: \"Use for...of for better readability\" John: \"Don't forget error boundaries!\" Peer Code Review: MR Code Review from Maria:"
+      },
+      {
+        "idx": 1,
+        "sample": "so, you might want to use const instead of let for the loop variable since it's not reassigned.\" JS Suggestion from John: \"This loop could be more functional"
+      },
+      {
+        "idx": 2,
+        "sample": "nline', () => { document.getElementById('offline-indicator').style.display = 'none'; }); window.addEventListener('offline', () => { document.getElementById"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "const, function, console, performance, results"
+  },
+  "sentiment_indicators": {
+    "positive": 8,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "js_loops_v1.html",
+    "relative_path": "js_loops_v1.html",
+    "size_bytes": 28316,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

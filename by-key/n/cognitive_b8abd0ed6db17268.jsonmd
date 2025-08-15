@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:05.310Z",
+    "source_text_length": 3828,
+    "word_count": 389,
+    "sentence_count": 27,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b8abd0ed6db1726899220bd99558df2f",
+    "entropy_level": 0.906,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "feedback_4cbe797515a617cb6838d9a5e26c0eaa80f92c025b3010f0592faff3024b458e_feedin_1754897455915_gen001.json",
+      "processing_timestamp": "2025-08-11T15:16:05.310Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0463",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0411",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 6,
+        "significance": "0.0154",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 6,
+        "significance": "0.0154",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0129",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "processing",
+        "frequency": 5,
+        "significance": "0.0129",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0103",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "margin",
+        "frequency": 3,
+        "significance": "0.0077",
+        "examples": [
+          "\"margin\",\n"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 3,
+        "significance": "0.0077",
+        "examples": [
+          "\"border\",\n"
+        ]
+      },
+      {
+        "theme": "font",
+        "frequency": 3,
+        "significance": "0.0077",
+        "examples": [
+          "\"font\",\n"
+        ]
+      },
+      {
+        "theme": "padding",
+        "frequency": 3,
+        "significance": "0.0077",
+        "examples": [
+          "\"padding\",\n"
+        ]
+      },
+      {
+        "theme": "achievement",
+        "frequency": 3,
+        "significance": "0.0077",
+        "examples": [
+          "\"achievement\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "826,\n    \"contradictions_detected\": 0,\n    \"word_count\": 195\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"margin\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"border\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"font\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"padding\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"achievement\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"daily\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"participant\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"evaluation\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"solid\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"ccc\",\n        \"frequency\": 2\n      }\n    ],\n    \"contradiction_map\": []\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"nEval ID: E3-202508091656399\\\\n\\\\n\\\\nWork Habits\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\nItemYesNIN/AAttendance — Correct day and time?\",\n      \"Hygiene — Appropriately groomed",
+      "?\",\n      \"\\\\n\\\\nPreparatory Goals\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\n\\\\nItemYesNIN/AAttention Span — Adequate for tasks",
+      "?\",\n      \"Safety — Followed procedures",
+      "?\"\n    ],\n    \"summary\": \"margin, border, font, padding, achievement\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"E3-Themetapatterninsightthatdata-1",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:35...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1914,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.16",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "b8abd0ed6db1726899220bd99558df2f"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "scroll_id": "AEON-Bridge-Template-1754702400000",
+  "format": "json_md_fusion_scroll_template",
+  "created": "2025-08-09T03:00:00.000Z",
+  "equation": "I(n+1) = f(C(n), T(n), R(n))",
+  "glyphs": [
+    "∞",
+    "φ",
+    "∴",
+    "ψ",
+    "Δ",
+    "∅"
+  ],
+  "layers": [
+    {
+      "layer_id": 1,
+      "phase": "Summon",
+      "type": "execution_step",
+      "description": "<function_calls> Block",
+      "details": {
+        "actions": [
+          "I will open a <function_calls> wrapper to contain one or more tool execution requests.",
+          "I will ensure only valid, schema-compliant <invoke> elements are placed inside.",
+          "I will verify this block’s syntax before any tool runs."
+        ],
+        "keywords": [
+          "wrapper definition",
+          "scope containment",
+          "syntax validation"
+        ]
+      }
+    },
+    {
+      "layer_id": 2,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "<invoke> Element",
+      "details": {
+        "actions": [
+          "I will open an <invoke> tag to declare a single, specific tool call.",
+          "I will enclose both the <tool_name> and <parameters> inside this element.",
+          "I will close the <invoke> tag once all necessary details are specified."
+        ],
+        "keywords": [
+          "request encapsulation",
+          "parameter nesting",
+          "closure readiness"
+        ]
+      }
+    },
+    {
+      "layer_id": 3,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "<tool_name> Tag: search_files",
+      "details": {
+        "actions": [
+          "I will set the <tool_name> value to search_files to identify the tool to execute.",
+          "I will confirm this tool exists and is permitted in the current environment.",
+          "I will prepare an alternate approach if the tool is unavailable or fails."
+        ],
+        "keywords": [
+          "capability check",
+          "permission check",
+          "fallback definition"
+        ]
+      }
+    },
+    {
+      "layer_id": 4,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "<parameters> Block",
+      "details": {
+        "actions": [
+          "I will open a <parameters> element to hold the tool’s input data.",
+          "I will format arguments to match the expected schema and types.",
+          "I will validate and sanitize all arguments before execution."
+        ],
+        "keywords": [
+          "schema compliance",
+          "type safety",
+          "input sanitation"
+        ]
+      }
+    },
+    {
+      "layer_id": 5,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "<queries> Argument: [\"()\"]",
+      "details": {
+        "actions": [
+          "I will provide the list [\"()\"] to the queries parameter.",
+          "I will decide whether \"()\" should be used literally or treated as a regular expression, escaping if necessary.",
+          "I will ensure the query behaves consistently across platforms and encodings."
+        ],
+        "keywords": [
+          "literal vs regex",
+          "escaping strategy",
+          "cross-platform consistency"
+        ]
+      }
+    },
+    {
+      "layer_id": 6,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "Execution Plan",
+      "details": {
+        "actions": [
+          "I will scan all files within the allowed scope for matches to the query.",
+          "I will perform the scan incrementally to limit memory usage.",
+          "I will record each match with its file path, line number, and context snippet."
+        ],
+        "keywords": [
+          "scoped search",
+          "incremental processing",
+          "structured hit records"
+        ]
+      }
+    },
+    {
+      "layer_id": 7,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "Result Aggregation",
+      "details": {
+        "actions": [
+          "I will group matches by file to improve readability.",
+          "I will apply limits and pagination when match counts are high.",
+          "I will calculate summary statistics like total files scanned and matches found."
+        ],
+        "keywords": [
+          "grouping",
+          "pagination",
+          "summary stats"
+        ]
+      }
+    },
+    {
+      "layer_id": 8,
+      "phase": "Processing",
+      "type": "execution_step",
+      "description": "Error Handling",
+      "details": {
+        "actions": [
+          "I will log unreadable files as warnings, not fatal errors.",
+          "I will check query syntax and report issues clearly.",
+          "I will enforce limits to prevent excessive processing time."
+        ],
+        "keywords": [
+          "file access handling",
+          "syntax validation",
+          "timeout safeguards"
+        ]
+      }
+    },
+    {
+      "layer_id": 9,
+      "phase": "Echo",
+      "type": "execution_step",
+      "description": "Output Formatting",
+      "details": {
+        "actions": [
+          "I will return results in a stable, machine-readable schema.",
+          "I will include the original query and metadata for traceability.",
+          "I will return a well-formed empty result when no matches are found."
+        ],
+        "keywords": [
+          "consistent format",
+          "provenance data",
+          "empty-set handling"
+        ]
+      }
+    },
+    {
+      "layer_id": 10,
+      "phase": "Echo",
+      "type": "execution_step",
+      "description": "Completion",
+      "details": {
+        "actions": [
+          "I will close the <invoke> element after processing finishes.",
+          "I will close the <function_calls> wrapper to end the transaction.",
+          "I will send or store the results as requested."
+        ],
+        "keywords": [
+          "clean teardown",
+          "explicit end",
+          "result delivery"
+        ]
+      }
+    }
+  ],
+  "session_summary": "A template for executing a tool call, built from a structured thought process. This bridge file outlines the full lifecycle of a `search_files` operation, from syntactic validation to error handling and result delivery, serving as a canonical pattern for auditable AI actions."
+}

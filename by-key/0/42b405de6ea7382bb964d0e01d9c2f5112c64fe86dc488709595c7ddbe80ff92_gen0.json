@@ -1,0 +1,117 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:42.701Z",
+    "anchor_id": "42b405de6ea7382bb964d0e01d9c2f5112c64fe86dc488709595c7ddbe80ff92",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.774,
+    "contradictions_detected": 1,
+    "word_count": 1229
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "plan",
+        "frequency": 14
+      },
+      {
+        "theme": "weekly",
+        "frequency": 12
+      },
+      {
+        "theme": "operation",
+        "frequency": 9
+      },
+      {
+        "theme": "top",
+        "frequency": 9
+      },
+      {
+        "theme": "define",
+        "frequency": 8
+      },
+      {
+        "theme": "metrics",
+        "frequency": 8
+      },
+      {
+        "theme": "effort",
+        "frequency": 8
+      },
+      {
+        "theme": "constraints",
+        "frequency": 7
+      },
+      {
+        "theme": "budget",
+        "frequency": 7
+      },
+      {
+        "theme": "week",
+        "frequency": 7
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "concurrent changes. 4) **Tool access delays** → Pre‑approve access in W1; use no‑code backup. 5) **Scope creep** → Change control via governance gate; budge"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "plan, weekly, operation, top, define"
+  },
+  "sentiment_indicators": {
+    "positive": 3,
+    "negative": 7,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today"
+  ],
+  "metadata": {
+    "source_name": "strategic_plan_v_1.md",
+    "relative_path": "strategic_plan_v_1.md",
+    "size_bytes": 9710,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 134
+- Complexity score: 18.9
+- Key themes: theme, frequency, synthesis, plan, weekly, operation, define, access, offline, analyzer
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of synthesis?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, synthesis
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

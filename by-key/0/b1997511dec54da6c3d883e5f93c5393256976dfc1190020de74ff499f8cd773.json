@@ -1,0 +1,76 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.564Z",
+    "anchor_id": "b1997511dec54da6c3d883e5f93c5393256976dfc1190020de74ff499f8cd773",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.564,
+    "contradictions_detected": 0,
+    "word_count": 1184
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "log",
+        "frequency": 33
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 28
+      },
+      {
+        "theme": "document",
+        "frequency": 27
+      },
+      {
+        "theme": "active",
+        "frequency": 25
+      },
+      {
+        "theme": "const",
+        "frequency": 25
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 21
+      },
+      {
+        "theme": "console",
+        "frequency": 18
+      },
+      {
+        "theme": "math",
+        "frequency": 18
+      },
+      {
+        "theme": "bridge",
+        "frequency": 16
+      },
+      {
+        "theme": "status",
+        "frequency": 14
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "log, textcontent, document, active, const"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "bridge_protocol_hub (1).html",
+    "relative_path": "bridge_protocol_hub (1).html",
+    "size_bytes": 36377,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.71
+  }
+}

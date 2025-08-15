@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:36.366Z",
+    "source_text_length": 3014,
+    "word_count": 294,
+    "sentence_count": 20,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "a7d62acb02248862aa6f0bc829edb966",
+    "entropy_level": 0.927,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "78d845dcc33c450226cade76a31ef351ad27608c25c1780d9fafbfd4545e7661_feedin_1754897459194.json",
+      "processing_timestamp": "2025-08-11T15:15:36.366Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0612",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0544",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 6,
+        "significance": "0.0204",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0170",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0136",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0136",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"entropy_level\":"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"contract\",\n"
+        ]
+      },
+      {
+        "theme": "orchestrator",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"orchestrator\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 3,
+        "significance": "0.0102",
+        "examples": [
+          "\"workflow_orchestrator.html\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "539,\n    \"contradictions_detected\": 0,\n    \"word_count\": 1337\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"entropy\",\n        \"frequency\": 37\n      },\n      {\n        \"theme\": \"data\",\n        \"frequency\": 32\n      },\n      {\n        \"theme\": \"contract\",\n        \"frequency\": 27\n      },\n      {\n        \"theme\": \"orchestrator\",\n        \"frequency\": 23\n      },\n      {\n        \"theme\": \"const\",\n        \"frequency\": 23\n      },\n      {\n        \"theme\": \"phase\",\n        \"frequency\": 21\n      },\n      {\n        \"theme\": \"operation\",\n        \"frequency\": 20\n      },\n      {\n        \"theme\": \"execution\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"artifact\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"document\",\n        \"frequency\": 15\n      }\n    ],\n    \"contradiction_map\": []\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"currentPhase - 1]?\",\n      \"1",
+      "?\",\n      \"3",
+      "?\",\n      \"6",
+      "?\"\n    ],\n    \"summary\": \"entropy, data, contract, orchestrator, const\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 19,\n    \"negative\": 1,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"workflow_orchestrator",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:45...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1507,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.76",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "a7d62acb02248862aa6f0bc829edb966"
+  }
+}

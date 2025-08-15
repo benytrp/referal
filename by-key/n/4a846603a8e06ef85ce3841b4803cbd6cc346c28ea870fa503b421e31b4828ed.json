@@ -1,0 +1,114 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.388Z",
+    "anchor_id": "4a846603a8e06ef85ce3841b4803cbd6cc346c28ea870fa503b421e31b4828ed",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.741,
+    "contradictions_detected": 6,
+    "word_count": 1819
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 67
+      },
+      {
+        "theme": "text",
+        "frequency": 34
+      },
+      {
+        "theme": "function",
+        "frequency": 33
+      },
+      {
+        "theme": "return",
+        "frequency": 33
+      },
+      {
+        "theme": "key",
+        "frequency": 29
+      },
+      {
+        "theme": "log",
+        "frequency": 28
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 24
+      },
+      {
+        "theme": "await",
+        "frequency": 22
+      },
+      {
+        "theme": "name",
+        "frequency": 21
+      },
+      {
+        "theme": "hash",
+        "frequency": 20
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": ").join(''); artTbody.innerHTML = rows || `<tr><td colspan=\"5\" class=\"muted\">No artifacts yet.</td></tr>`; } async function download(filename, text, typ"
+      },
+      {
+        "idx": 1,
+        "sample": "artTbody.innerHTML = rows || `<tr><td colspan=\"5\" class=\"muted\">No artifacts yet.</td></tr>`; } async function download(filename, text, type='applicatio"
+      },
+      {
+        "idx": 2,
+        "sample": "r(kind='input') { if (!fsSupported()) { alert('File System Access API not available (need a secure context, e.g., served via https or as a PWA). Use S"
+      },
+      {
+        "idx": 3,
+        "sample": "run is already in progress', 'warn'); return; } if (!inputDirHandle) { log('No input dir; run SIMULATE or pick a folder.', 'warn'); return; } isBusy = t"
+      },
+      {
+        "idx": 4,
+        "sample": "log('Stopped'); } // ============================= // Simulation Mode (no FS API) // ============================= function mockFiles() { // Ge"
+      },
+      {
+        "idx": 5,
+        "sample": "ple for…of over entries; read text; compute basic stats.', change: 'Naive scan; no dedup; UI could block on big files.' }, { n: 2, title: 'Filter & skip', l"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'dot ' + (tone === 'ok' ?",
+      "'ok' : tone === 'run' ?",
+      "'run' : tone === 'err' ?",
+      "const tag = level === 'error' ?",
+      "'[ERR]' : level === 'warn' ?",
+      "const obj = raw ?",
+      "textContent = inputDirHandle ?",
+      "textContent = outputDirHandle ?",
+      "const path = prefix ?",
+      "body ?",
+      "map((t, i) => ({ name: `mock_${i+1}${i===6?",
+      "addEventListener('click', ()=>{ if (confirm('Clear blacklist?"
+    ],
+    "summary": "const, text, function, return, key"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "iterative-offline-scanner.html",
+    "relative_path": "iterative-offline-scanner.html",
+    "size_bytes": 24711,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.81
+  }
+}

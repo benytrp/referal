@@ -1,0 +1,105 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.953Z",
+    "anchor_id": "60f10f72890483799f2196484c74ca3a9a7af1c26e7b1a4826e5438004f21709",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.793,
+    "contradictions_detected": 4,
+    "word_count": 737
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 36
+      },
+      {
+        "theme": "files",
+        "frequency": 27
+      },
+      {
+        "theme": "window",
+        "frequency": 15
+      },
+      {
+        "theme": "function",
+        "frequency": 15
+      },
+      {
+        "theme": "document",
+        "frequency": 15
+      },
+      {
+        "theme": "state",
+        "frequency": 13
+      },
+      {
+        "theme": "dir",
+        "frequency": 13
+      },
+      {
+        "theme": "await",
+        "frequency": 13
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 11
+      },
+      {
+        "theme": "addeventlistener",
+        "frequency": 11
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Set Output Folder Export — 0 files No folder Progress Drop files here to add to"
+      },
+      {
+        "idx": 1,
+        "sample": "el) return; if(!Array.isArray(list) || !list.length){ el.textContent = '— no matches —'; return; } el.textContent = list.map(x => (x.path || x.name"
+      },
+      {
+        "idx": 2,
+        "sample": "Id('out-badge'); if(b) b.textContent = mode || (state.OUT_DIR ? 'Folder set' : 'No folder'); } function registerInputs(fileList){ const files = Array.from(f"
+      },
+      {
+        "idx": 3,
+        "sample": "; } else { state.OUT_DIR = null; renderOutBadge('Manual'); alert('Folder saving not supported in this browser. Fallback will download each file.'); } }catch(err"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "textContent = supportsFS ?",
+      "OUT_DIR ?",
+      "length===1?",
+      "sources)?",
+      "preventDefault(); try{ const bundle = (typeof buildExportBundle==='function') ?",
+      "isArray(bundle) ?",
+      "bundle : (bundle?",
+      "error('export error', err); alert('Export failed: '+(err?",
+      "getElementById('searchBox')?"
+    ],
+    "summary": "const, files, window, function, document"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "aeon_offline_analyzer_updated_i_o_export_fallback.html",
+    "relative_path": "aeon_offline_analyzer_updated_i_o_export_fallback.html",
+    "size_bytes": 10104,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.8
+  }
+}

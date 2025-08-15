@@ -1,0 +1,79 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:13.600Z",
+    "anchor_id": "e15d460596828bceb2009600b73e93bb9c4cfeee22bdcc07ed3dc911e21da8f6",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.788,
+    "contradictions_detected": 0,
+    "word_count": 325
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "video",
+        "frequency": 11
+      },
+      {
+        "theme": "tool",
+        "frequency": 5
+      },
+      {
+        "theme": "pulse",
+        "frequency": 5
+      },
+      {
+        "theme": "cinematic",
+        "frequency": 4
+      },
+      {
+        "theme": "step",
+        "frequency": 4
+      },
+      {
+        "theme": "output",
+        "frequency": 4
+      },
+      {
+        "theme": "blueprint",
+        "frequency": 4
+      },
+      {
+        "theme": "concept",
+        "frequency": 3
+      },
+      {
+        "theme": "logic",
+        "frequency": 3
+      },
+      {
+        "theme": "must",
+        "frequency": 3
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "video, tool, pulse, cinematic, step"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "were",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (4).txt",
+    "relative_path": "ai_studio_code (4).txt",
+    "size_bytes": 2729,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}

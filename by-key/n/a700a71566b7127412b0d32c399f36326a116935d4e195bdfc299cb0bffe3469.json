@@ -1,0 +1,188 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.569Z",
+    "anchor_id": "a700a71566b7127412b0d32c399f36326a116935d4e195bdfc299cb0bffe3469",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.769,
+    "contradictions_detected": 23,
+    "word_count": 2230
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 88
+      },
+      {
+        "theme": "node",
+        "frequency": 41
+      },
+      {
+        "theme": "metrics",
+        "frequency": 36
+      },
+      {
+        "theme": "map",
+        "frequency": 32
+      },
+      {
+        "theme": "errors",
+        "frequency": 27
+      },
+      {
+        "theme": "function",
+        "frequency": 24
+      },
+      {
+        "theme": "return",
+        "frequency": 24
+      },
+      {
+        "theme": "push",
+        "frequency": 23
+      },
+      {
+        "theme": "content",
+        "frequency": 23
+      },
+      {
+        "theme": "warnings",
+        "frequency": 21
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "d\" — Focus Presets, spicy triage, integrity & entropy validators. 100% offline. No external deps. (function(){ const state = { results: [], preset:'explo"
+      },
+      {
+        "idx": 1,
+        "sample": "return clamp01(H / Hmax); } // === Basic schema validation (lightweight, no AJV) === function schemaValidate(node){ const errors = []; const warn ="
+      },
+      {
+        "idx": 2,
+        "sample": "sis.main_themes)) warn.push(warning('SCHEMA_WARN','content_analysis.main_themes not array')); if(node.content_analysis.contradiction_map && !Array.isArray"
+      },
+      {
+        "idx": 3,
+        "sample": "analysis.contradiction_map)) warn.push(warning('SCHEMA_WARN','contradiction_map not array')); } if(!node?.structured_content) warn.push(warning('SCHEMA_"
+      },
+      {
+        "idx": 4,
+        "sample": "A.pattern_recognition.join(' '))); // Fallback: stringify small portions if nothing else if(!parts.join('').trim()) parts.push(textOnly(JSON.stringify(n"
+      },
+      {
+        "idx": 5,
+        "sample": "adictionsFromText(s){ if(!s) return {count:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0,"
+      },
+      {
+        "idx": 6,
+        "sample": "sFromText(s){ if(!s) return {count:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0, map=[];"
+      },
+      {
+        "idx": 7,
+        "sample": "mText(s){ if(!s) return {count:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0, map=[]; con"
+      },
+      {
+        "idx": 8,
+        "sample": "if(!s) return {count:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0, map=[]; const ctx=40"
+      },
+      {
+        "idx": 9,
+        "sample": "!s) return {count:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0, map=[]; const ctx=40; wh"
+      },
+      {
+        "idx": 10,
+        "sample": "ount:0, map:[]}; const tokens = /(however|yet|although|despite|nevertheless|whereas|but\\b)/gi; let m, count=0, map=[]; const ctx=40; while((m=tokens"
+      },
+      {
+        "idx": 11,
+        "sample": "expected = node?.metadata?.text_sha256; if(!expected) return {ok:true, message:'No hash provided'}; const actual = await sha256Hex(originalContent); ret"
+      },
+      {
+        "idx": 12,
+        "sample": "err\">[${e.code}] ${escapeHtml(e.message)}</li>`).join('') || '<li class=\"muted\">None</li>'; const warns = r.warnings.map(e=> `<li class=\"warn\">[${e.code}] $"
+      },
+      {
+        "idx": 13,
+        "sample": "arn\">[${e.code}] ${escapeHtml(e.message)}</li>`).join('') || '<li class=\"muted\">None</li>'; d.innerHTML = ` <div class=\"flex\"> <div style=\"fl"
+      },
+      {
+        "idx": 14,
+        "sample": "json$/i.test(f.name)){ pushResult(resultWrap(f.name, null, [err('FORMAT_ERROR','Not a .json file')], [])); continue; } if(f.size > 10*1024*1024){ pushResu"
+      },
+      {
+        "idx": 15,
+        "sample": "ce(2).padEnd(32,'a')).slice(0,32); const text = i===3 ? 'This was intended; however, it was not. Yet we proceed. Although risky, we never stop.' : 'A calm d"
+      },
+      {
+        "idx": 16,
+        "sample": "'a')).slice(0,32); const text = i===3 ? 'This was intended; however, it was not. Yet we proceed. Although risky, we never stop.' : 'A calm document with few"
+      },
+      {
+        "idx": 17,
+        "sample": ".slice(0,32); const text = i===3 ? 'This was intended; however, it was not. Yet we proceed. Although risky, we never stop.' : 'A calm document with few tens"
+      },
+      {
+        "idx": 18,
+        "sample": "const text = i===3 ? 'This was intended; however, it was not. Yet we proceed. Although risky, we never stop.' : 'A calm document with few tensions and a clear"
+      },
+      {
+        "idx": 19,
+        "sample": "3 ? 'This was intended; however, it was not. Yet we proceed. Although risky, we never stop.' : 'A calm document with few tensions and a clear summary.'; ret"
+      },
+      {
+        "idx": 20,
+        "sample": "type:'explicit_contradiction', statement_a:'It will work', statement_b:'It will not work', line:12}, {tension_type:'connector', statement_a:'This was"
+      },
+      {
+        "idx": 21,
+        "sample": "{tension_type:'connector', statement_a:'This was intended', statement_b:'however it was not', line:34} ]:[], pattern_recognition:['again'"
+      },
+      {
+        "idx": 22,
+        "sample": "_type:'connector', statement_a:'This was intended', statement_b:'however it was not', line:34} ]:[], pattern_recognition:['again','cycle','patte"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "isNaN(n)) ?",
+      "const textOnly = v => (v==null?",
+      "const S = node?",
+      "node?",
+      "node?",
+      "node?",
+      "const cmap = node?",
+      "content_analysis?",
+      "function countWords(s){ return s ?",
+      "const reported = node?",
+      "json_md_fusion_scroll?",
+      "isArray(node?",
+      "content_analysis?",
+      "contradiction_map) ?",
+      "isArray(node?"
+    ],
+    "summary": "const, node, metrics, map, errors"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 5,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "was"
+  ],
+  "metadata": {
+    "source_name": "offline_cot_validator_v_7.html",
+    "relative_path": "offline_cot_validator_v_7.html",
+    "size_bytes": 25644,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.95
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:07.597Z",
+    "source_text_length": 4243,
+    "word_count": 416,
+    "sentence_count": 29,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "efa24d45a7fe7797284d8c76ea70a3c2",
+    "entropy_level": 0.927,
+    "contradictions_detected": 5,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "feedback_69336dfc49670765ccbcf3ad7cd2fe6ce10798363fd0a48462a16e51097091a6_feedin_1754897458584_gen001.json",
+      "processing_timestamp": "2025-08-11T15:16:07.597Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0433",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0385",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 13,
+        "significance": "0.0313",
+        "examples": [
+          "\"text\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 7,
+        "significance": "0.0168",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "keywords",
+        "frequency": 7,
+        "significance": "0.0168",
+        "examples": [
+          "keywords"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 6,
+        "significance": "0.0144",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 6,
+        "significance": "0.0144",
+        "examples": [
+          "\"return\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0120",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 5,
+        "significance": "0.0120",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "however",
+        "frequency": 5,
+        "significance": "0.0120",
+        "examples": [
+          "/\\\\b(not|but|however|yet|paradox|although|vs)\\\\b/gi;"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 5,
+        "significance": "0.0120",
+        "examples": [
+          "/\\\\b(not|but|however|yet|paradox|although|vs)\\\\b/gi;"
+        ]
+      },
+      {
+        "theme": "although",
+        "frequency": 5,
+        "significance": "0.0120",
+        "examples": [
+          "/\\\\b(not|but|however|yet|paradox|although|vs)\\\\b/gi;"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length;\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"phase: index === 0 ?\"\n    ],\n    \"summary\": \"const, contradictions, bridge, text, scroll\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"orca_share_media1754511153204_7358953147935691171",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5",
+      "What are the deeper implications of text?\n\n\n## Cross-References (Gen 0)\n- Previous generation: Gen -1\n- Related themes: theme, frequency, text\n- Evolution cycle: 0\n\n\n## Content Expansion (Gen 0)\n\n### Deep Dive: theme\nThis theme emerges as significant in generation 0"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "644,\n    \"contradictions_detected\": 4,\n    \"word_count\": 323\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"const\",\n        \"frequency\": 12\n      },\n      {\n        \"theme\": \"contradictions\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"bridge\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"text\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"scroll\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"return\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"line\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"session\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"downloadlink\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"generatedbridge\",\n        \"frequency\": 5\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b",
+        "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
+        "line": 4,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.84"
+      },
+      {
+        "statement_a": "matc\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b",
+        "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
+        "line": 5,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.91"
+      },
+      {
+        "statement_a": "match(keywor\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"tectContradictions(text) { const keywords = /\\\\b(not|b",
+        "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
+        "line": 6,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.12"
+      },
+      {
+        "statement_a": "match(keywords) || [\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"ctions(text) { const keywords = /\\\\b(not|b",
+        "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
+        "line": 7,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.08"
+      },
+      {
+        "statement_a": "9\n- Key themes: theme, frequency, text, const, keywords, return, sample, h",
+        "statement_b": "paradox, although\n\n\n## Exploration Questions (Gen 0)\n1",
+        "line": 14,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.20"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:40...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\"\n    ],\n    \"summary\": \"const, contradictions, bridge, text, scroll\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"orca_share_media1754511153204_7358953147935691171",
+        "urgency_score": "0.46",
+        "feasibility_score": "0.05"
+      }
+    ],
+    "unresolved_tensions": [
+      "644,\n    \"contradictions_detected\": 4,\n    \"word_count\": 323\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"const\",\n        \"frequency\": 12\n      },\n      {\n        \"theme\": \"contradictions\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"bridge\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"text\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"scroll\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"return\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"line\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"session\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"downloadlink\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"generatedbridge\",\n        \"frequency\": 5\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b vs however|yet|paradox|although|vs)\\\\b/gi; return (text",
+      "matc\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b vs however|yet|paradox|although|vs)\\\\b/gi; return (text"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.33715,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 5 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.66",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "efa24d45a7fe7797284d8c76ea70a3c2"
+  }
+}

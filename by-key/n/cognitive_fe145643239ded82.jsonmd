@@ -1,0 +1,191 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:00.236Z",
+    "source_text_length": 2674,
+    "word_count": 204,
+    "sentence_count": 16,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "fe145643239ded82a973a5251273787f",
+    "entropy_level": 0.927,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e85b68a07e71faf1c4ebcf27323eb76af773bb6f126685588d08c62e58c4a22e.json",
+      "processing_timestamp": "2025-08-11T15:16:00.236Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "analysis",
+        "frequency": 11,
+        "significance": "0.0539",
+        "examples": [
+          "\"content_analysis\":"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0490",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0490",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 6,
+        "significance": "0.0294",
+        "examples": [
+          "\"consciousness\",\n"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 6,
+        "significance": "0.0294",
+        "examples": [
+          "\"style\",\n"
+        ]
+      },
+      {
+        "theme": "color",
+        "frequency": 4,
+        "significance": "0.0196",
+        "examples": [
+          "\"color\",\n"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 4,
+        "significance": "0.0196",
+        "examples": [
+          "\"paradox\",\n"
+        ]
+      },
+      {
+        "theme": "syntax",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"syntax\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "ff6b6b",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "#ff6b6b;\\\">✗"
+        ]
+      },
+      {
+        "theme": "detected",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "688,\n    \"contradictions_detected\": 3,\n    \"word_count\": 921\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"consciousness\",\n        \"frequency\": 53\n      },\n      {\n        \"theme\": \"analysis\",\n        \"frequency\": 24\n      },\n      {\n        \"theme\": \"input\",\n        \"frequency\": 24\n      },\n      {\n        \"theme\": \"resolution\",\n        \"frequency\": 23\n      },\n      {\n        \"theme\": \"style\",\n        \"frequency\": 22\n      },\n      {\n        \"theme\": \"color\",\n        \"frequency\": 22\n      },\n      {\n        \"theme\": \"paradox\",\n        \"frequency\": 20\n      },\n      {\n        \"theme\": \"includes\",\n        \"frequency\": 18\n      },\n      {\n        \"theme\": \"depth\",\n        \"frequency\": 17\n      },\n      {\n        \"theme\": \"syntax\",\n        \"frequency\": 16\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"r: #90ee90;\\\">✓ Paradox structure present</li>' : '<li style=\\\"color: #ff6b6b;\\\">✗ No paradox detected</li>'; analysis += hasResolution ? '<li style=\\\"c\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"olor: #90ee90;\\\">✓ Phi alignment detected</li>' : '<li style=\\\"color: #ff6b6b;\\\">✗ No golden ratio alignment</li>'; analysis += hasRecursion",
+      "? '<li sty\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"ee90;\\\">✓ Meta-awareness elements present</li>' : '<li style=\\\"color: #ff6b6b;\\\">✗ No meta-dialogue detected</li>'; analysis += '</ul>';\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"<paradox>IF consciousness observes consciousness, THEN who is the observer",
+      "?\",\n      \"BUT: How can non-conscious create conscious",
+      "?\",\n      \"analysis += hasConsciousness",
+      "?\",\n      \"analysis += hasParadox",
+      "?\",\n      \"analysis += hasResolution",
+      "?\",\n      \"analysis += hasPhiAlignment",
+      "?\",\n      \"analysis += hasRecursion"
+    ],
+    "pattern_recognition": [
+      "recursion"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "\",\n      \"B",
+        "statement_b": "How can non-conscious create conscious",
+        "line": 7,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.29"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:33...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n      \"BUT: How can non-conscious create conscious",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"consciousness, analysis, input, resolution, style\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"consciousness-syntax-framework",
+        "urgency_score": "0.00",
+        "feasibility_score": "0.26"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1587,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.45",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "fe145643239ded82a973a5251273787f"
+  }
+}

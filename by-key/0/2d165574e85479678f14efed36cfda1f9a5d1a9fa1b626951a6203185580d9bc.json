@@ -1,0 +1,128 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.120Z",
+    "anchor_id": "2d165574e85479678f14efed36cfda1f9a5d1a9fa1b626951a6203185580d9bc",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.644,
+    "contradictions_detected": 8,
+    "word_count": 2998
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function",
+        "frequency": 60
+      },
+      {
+        "theme": "const",
+        "frequency": 51
+      },
+      {
+        "theme": "shownotification",
+        "frequency": 41
+      },
+      {
+        "theme": "tests",
+        "frequency": 40
+      },
+      {
+        "theme": "performance",
+        "frequency": 35
+      },
+      {
+        "theme": "info",
+        "frequency": 31
+      },
+      {
+        "theme": "error",
+        "frequency": 26
+      },
+      {
+        "theme": "document",
+        "frequency": 26
+      },
+      {
+        "theme": "async",
+        "frequency": 24
+      },
+      {
+        "theme": "code",
+        "frequency": 24
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ait processor.processDataStream(testData, mockProcessor); // Verify that no more than 2 items were processed concurrently const concurrentProcessin"
+      },
+      {
+        "idx": 1,
+        "sample": "🛡️ Security Scan Results ✅ No high-risk vulnerabilities found ⚠️ 2"
+      },
+      {
+        "idx": 2,
+        "sample": ".3s<br> 📈 Throughput: 4,347 items/sec<br> 💾 Memory usage: 45.2MB peak<br> 🛡️ No security violations detected<br> 📊 Metrics exported to monitoring dashboard<"
+      },
+      {
+        "idx": 3,
+        "sample": "chatWindow.style.display === 'flex'; chatWindow.style.display = isVisible ? 'none' : 'flex'; } function sendChatMessage() { const input = document.getElem"
+      },
+      {
+        "idx": 4,
+        "sample": "('a11yToolbar'); toolbar.style.display = toolbar.style.display === 'block' ? 'none' : 'block'; } function toggleHighContrast() { document.body.classList.to"
+      },
+      {
+        "idx": 5,
+        "sample": "<button onclick=\"this.parentElement.remove()\" style=\"float: right; background: none; border: none; cursor: pointer;\">✕</button> `; container.appendChild"
+      },
+      {
+        "idx": 6,
+        "sample": "ck=\"this.parentElement.remove()\" style=\"float: right; background: none; border: none; cursor: pointer;\">✕</button> `; container.appendChild(notification)"
+      },
+      {
+        "idx": 7,
+        "sample": "{ document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none'; } function trackUserActivity(action, data = {}) { // Analytics trackin"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "batchSize?",
+      "concurrency?",
+      "retryAttempts?",
+      "timeout?",
+      "enableMetrics?",
+      "securityLevel?",
+      "What would you like to work on today?",
+      "What would you like to work on today?",
+      "display = isVisible ?",
+      "Could you be more specific about what aspect of JavaScript loops or performance optimization you\\'d like to explore?",
+      "display === 'block' ?",
+      "highContrast ?",
+      "screenReader ?",
+      "display = show ?"
+    ],
+    "summary": "function, const, shownotification, tests, performance"
+  },
+  "sentiment_indicators": {
+    "positive": 28,
+    "negative": 4,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "tomorrow",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "js_loops_v1 (1).html",
+    "relative_path": "js_loops_v1 (1).html",
+    "size_bytes": 65823,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.81
+  }
+}

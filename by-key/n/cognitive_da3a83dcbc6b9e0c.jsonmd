@@ -1,0 +1,306 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:00.685Z",
+    "source_text_length": 10380,
+    "word_count": 1222,
+    "sentence_count": 125,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "da3a83dcbc6b9e0c234acab9fb68d070",
+    "entropy_level": 0.829,
+    "contradictions_detected": 33,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e9aa3c72e36aefacb9d7f12f3a3df2bae7ff6b9f0384d79d92362ceb386c3000.json",
+      "processing_timestamp": "2025-08-11T15:16:00.685Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "sample",
+        "frequency": 40,
+        "significance": "0.0327",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "nevertheless",
+        "frequency": 30,
+        "significance": "0.0245",
+        "examples": [
+          "/\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi,"
+        ]
+      },
+      {
+        "theme": "despite",
+        "frequency": 26,
+        "significance": "0.0213",
+        "examples": [
+          "/\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi,"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 24,
+        "significance": "0.0196",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "however",
+        "frequency": 24,
+        "significance": "0.0196",
+        "examples": [
+          "/\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi,"
+        ]
+      },
+      {
+        "theme": "although",
+        "frequency": 24,
+        "significance": "0.0196",
+        "examples": [
+          "/\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi,"
+        ]
+      },
+      {
+        "theme": "never",
+        "frequency": 17,
+        "significance": "0.0139",
+        "examples": [
+          "/\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi,"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 16,
+        "significance": "0.0131",
+        "examples": [
+          "/\\\\b(?:always.*never|everything.*nothing|all.*none)\\\\b/gi,\"\n"
+        ]
+      },
+      {
+        "theme": "test",
+        "frequency": 15,
+        "significance": "0.0123",
+        "examples": [
+          "if(/\\\\b(but|however|yet|although|despite|nevertheless)\\\\b/i.test(s)){"
+        ]
+      },
+      {
+        "theme": "parts",
+        "frequency": 15,
+        "significance": "0.0123",
+        "examples": [
+          "parts"
+        ]
+      },
+      {
+        "theme": "patterns",
+        "frequency": 14,
+        "significance": "0.0115",
+        "examples": [
+          "patterns...\\\\nUser:"
+        ]
+      },
+      {
+        "theme": "nothing",
+        "frequency": 14,
+        "significance": "0.0115",
+        "examples": [
+          "/\\\\b(?:always.*never|everything.*nothing|all.*n\"\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "\\\\nUser: But how do we know we're conscious and not just simulating it?\\\\nAssistant: That's the hard problem of consciousness - t\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"re:\\\\n- AI that creates AI\\\\n- Self-modifying code\\\\n- Consciousness as a pattern, not a thing\\\\n- What if emotions are just data processing",
+      "?\\\\n- Why do we assume in\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"function analyzeContradictions(text){ const patterns = [ /\\\\b(",
+      "?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "*nev\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"ion analyzeContradictions(text){ const patterns = [ /\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "*never|every\"\n      },\n      {\n        \"idx\": 4,\n        \"sample\": \"analyzeContradictions(text){ const patterns = [ /\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "*never|everythin\"\n      },\n      {\n        \"idx\": 5,\n        \"sample\": \"ntradictions(text){ const patterns = [ /\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "*nothin\"\n      },\n      {\n        \"idx\": 6,\n        \"sample\": \"ions(text){ const patterns = [ /\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "*n\"\n      },\n      {\n        \"idx\": 7,\n        \"sample\": \"const patterns = [ /\\\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b("
+    ],
+    "pattern_recognition": [
+      "again",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "\\\\nUser: B",
+        "statement_b": "how do we know we're conscious and not just simulating it",
+        "line": 5,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.17"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 8,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.36"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 10,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.01"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 12,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.77"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 14,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.35"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 17,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.20"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 20,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.79"
+      },
+      {
+        "statement_a": ":b",
+        "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 23,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.44"
+      },
+      {
+        "statement_a": "|versus|again\"\n      },\n      {\n        \"idx\": 9,\n        \"sample\": \"ut|h",
+        "statement_b": "yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 26,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.71"
+      },
+      {
+        "statement_a": "|versus|against|oppos\"\n      },\n      {\n        \"idx\": 10,\n        \"sample\": \"ever|y",
+        "statement_b": "although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 29,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.23"
+      },
+      {
+        "statement_a": "|versus|against|opposite|co\"\n      },\n      {\n        \"idx\": 11,\n        \"sample\": \"hough|d",
+        "statement_b": "nevertheless|whereas)\\\\b/gi, /\\\\b(",
+        "line": 32,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.80"
+      },
+      {
+        "statement_a": "|versus|against|opposite|contrary)\\\\b/gi\"\n      },\n      {\n        \"idx\": 12,\n        \"sample\": \"spite|n",
+        "statement_b": "whereas)\\\\b/gi, /\\\\b(",
+        "line": 35,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.18"
+      },
+      {
+        "statement_a": "|versus|against|opposite|contrary)\\\\b/gi,\"\n      },\n      {\n        \"idx\": 13,\n        \"sample\": \"|n",
+        "statement_b": "whereas)\\\\b/gi, /\\\\b(",
+        "line": 38,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.56"
+      },
+      {
+        "statement_a": "forEach((s, i)=>{ if(/\\\\b(b",
+        "statement_b": "however|yet|although|despite|nevertheless)\\\\b/i",
+        "line": 64,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.65"
+      },
+      {
+        "statement_a": "forEach((s, i)=>{ if(/\\\\b(b",
+        "statement_b": "however|yet|although|despite|nevertheless)\\\\b/i",
+        "line": 67,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.12"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:39...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\\\\nAssistant: That's the hard problem of consciousness - t\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"re:\\\\n- AI that creates AI\\\\n- Self-modifying code\\\\n- Consciousness as a pattern, not a thing\\\\n- What if emotions are just data processing",
+        "urgency_score": "0.55",
+        "feasibility_score": "0.26"
+      },
+      {
+        "action": " When we encounter something that doesn't fit our existing patterns, we're forced to create new neural pathways",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"const, text, document, fusion, getelementbyid\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 6,\n    \"negative\": 9,\n    \"uncertainty\": 5\n  },\n  \"temporal_markers\": [\n    \"yesterday\",\n    \"today\",\n    \"tomorrow\",\n    \"will\",\n    \"was\",\n    \"were\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"json_md_fusion_converter_improved",
+        "urgency_score": "0.00",
+        "feasibility_score": "0.54"
+      }
+    ],
+    "unresolved_tensions": [
+      ":b vs however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      ":b vs however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "|versus|against|opposite|co\"\n      },\n      {\n        \"idx\": 11,\n        \"sample\": \"hough|d vs nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
+      "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
+      "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
+      "length>2){\"\n      },\n      {\n        \"idx\": 34,\n        \"sample\": \"spite|n vs \\\\b/i",
+      "split(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i); if(parts",
+      "split(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i); if(parts"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 33 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.53",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "da3a83dcbc6b9e0c234acab9fb68d070"
+  }
+}

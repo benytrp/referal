@@ -1,0 +1,181 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:30.291Z",
+    "source_text_length": 2310,
+    "word_count": 174,
+    "sentence_count": 24,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e4302e2c1c2d25ec267e52ee995eab33",
+    "entropy_level": 0.944,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "006c699a9ab6d6cc4abeb7f6604cecefaa45a8b629faf7f502410f616c799073.json",
+      "processing_timestamp": "2025-08-11T15:15:30.291Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0575",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0575",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "tags",
+        "frequency": 4,
+        "significance": "0.0230",
+        "examples": [
+          "\"tags\",\n"
+        ]
+      },
+      {
+        "theme": "match",
+        "frequency": 3,
+        "significance": "0.0172",
+        "examples": [
+          "\"match\",\n"
+        ]
+      },
+      {
+        "theme": "list",
+        "frequency": 3,
+        "significance": "0.0172",
+        "examples": [
+          "\"list.appendChild(div);"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "scroll",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "shown",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "if(shown===0)"
+        ]
+      },
+      {
+        "theme": "innerhtml",
+        "frequency": 2,
+        "significance": "0.0115",
+        "examples": [
+          "list.innerHTML"
+        ]
+      }
+    ],
+    "key_questions": [
+      "si\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"tags?",
+      "?\",\n      \"persist",
+      "?\",\n      \"match(/\\\\{{[\\\\s\\\\S]*",
+      "?\",\n      \"+",
+      "?\",\n      \"\\\\\\\"[\\\\s\\\\S]*",
+      "?\",\n      \"id)",
+      "?\",\n      \"created",
+      "?\",\n      \"tags"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:29...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n      \"created",
+        "urgency_score": "0.60",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"state, const, tags, match, scroll\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 8\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"AEON_Indexer_Ingest_Presets",
+        "urgency_score": "0.02",
+        "feasibility_score": "0.94"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1155,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.26",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e4302e2c1c2d25ec267e52ee995eab33"
+  }
+}

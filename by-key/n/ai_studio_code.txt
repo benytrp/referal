@@ -1,0 +1,126 @@
+{
+  "bridgefile_version": "2.0.0",
+  "scroll_id": "ecosystem_manifest_main",
+  "timestamp": "2025-08-09T13:00:00Z",
+  "layers": [
+    {
+      "layer_id": 1,
+      "phase": "Summon",
+      "type": "title",
+      "description": "Bridge File: Content Processing Ecosystem Manifest"
+    },
+    {
+      "layer_id": 2,
+      "phase": "Summon",
+      "type": "section_title",
+      "description": "1. Purpose & Outcome Forecast"
+    },
+    {
+      "layer_id": 3,
+      "phase": "Processing",
+      "type": "description",
+      "entropy": 0.1,
+      "description": "This document outlines a complete, production-ready Content Processing Ecosystem. It unifies advanced HTML preprocessing, multi-model AI orchestration, and auditable logging into a coherent, deployable pipeline. The system delivers end-to-end document intelligence, from raw HTML analysis to policy automation and multi-audience reporting."
+    },
+    {
+      "layer_id": 4,
+      "phase": "Processing",
+      "type": "outcome_forecast",
+      "description": "Outcome: A fully packaged, self-documenting, and scientifically validated content intelligence pipeline that can be deployed by any enterprise to orchestrate and audit AI-driven content analysis."
+    },
+    {
+      "layer_id": 5,
+      "phase": "Summon",
+      "type": "section_title",
+      "description": "2. Quickstart & Package Structure"
+    },
+    {
+      "layer_id": 6,
+      "phase": "Processing",
+      "type": "description",
+      "description": "The ecosystem is designed to be packaged into a standard directory structure for easy deployment and maintenance. The full README and installation guides would be included in the final package."
+    },
+    {
+      "layer_id": 7,
+      "phase": "Processing",
+      "type": "code_block",
+      "language": "text",
+      "code": "content_processing_ecosystem/\n│\n├── lib/              # Core library code (chunker.py, orchestrator.py)\n├── config/           # Default configurations (default_usf.json)\n├── docs/             # Full documentation (README.md, INSTALL.md)\n├── scripts/          # Entrypoints for production (entrypoint.sh)\n├── test/             # Pytest/unit test directory\n└── manifest/         # Examples and session templates"
+    },
+    {
+      "layer_id": 8,
+      "phase": "Summon",
+      "type": "section_title",
+      "description": "3. Core Component: Chain-of-Thought Ledger"
+    },
+    {
+      "layer_id": 9,
+      "phase": "Processing",
+      "type": "description",
+      "description": "At the heart of the system's auditability is the Enhanced Chain-of-Thought (CoT) Ledger. It provides a structured, immutable log of every reasoning step. Below is the official JSON Schema for this ledger."
+    },
+    {
+      "layer_id": 10,
+      "phase": "Echo",
+      "type": "schema",
+      "entropy": 0.85,
+      "contradictions": 0,
+      "description": "JSON Schema for enhanced_cot.schema.json. This defines the structure for the thought_ledger and its CoTNode entries, ensuring interoperability.",
+      "code": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://aeon/specs/enhanced-cot.schema.json",
+        "title": "Enhanced CoT Ledger",
+        "type": "object",
+        "required": ["format", "created", "thought_ledger"],
+        "properties": {
+          "format": {"type": "string", "const": "enhanced_cot_json"},
+          "created": {"type": "string", "format": "date-time"},
+          "thought_ledger": {
+            "type": "array",
+            "items": {"$ref": "#/$defs/CoTNode"}
+          }
+        },
+        "$defs": {
+          "CoTNode": {
+            "type": "object",
+            "required": ["cycle", "phase", "timestamp", "output"],
+            "properties": {
+                "cycle": {"type": "integer"},
+                "phase": {"type": "string"},
+                "timestamp": {"type": "string", "format": "date-time"},
+                "context": {"type": ["string", "null"]},
+                "output": {"type": "string"},
+                "contested": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "layer_id": 11,
+      "phase": "Summon",
+      "type": "section_title",
+      "description": "4. Governance: Sealed Behavior & Redaction"
+    },
+    {
+      "layer_id": 12,
+      "phase": "Processing",
+      "type": "description",
+      "description": "Deterministic execution is enforced via a `behavior.hashlist`, a sealed contract that binds directives to cryptographic hashes. The `thought_ledger` supports a dual-seal system for auditable redaction, enabling both private integrity and public verification."
+    },
+    {
+      "layer_id": 13,
+      "phase": "Echo",
+      "type": "governance_principle",
+      "entropy": 0.2,
+      "description": "Principle 1: Determinism. The `behavior.hashlist` uses a `mobius_seal` (a hash of concatenated instruction hashes) to ensure that an AI's execution path is verifiable against its sealed instructions."
+    },
+    {
+        "layer_id": 14,
+        "phase": "Echo",
+        "type": "governance_principle",
+        "entropy": 0.3,
+        "description": "Principle 2: Auditable Redaction. A `private_ledger_seal` guarantees the integrity of the full, unredacted thought ledger. A `public_ledger_seal` is computed from the redacted version, allowing third parties to verify its integrity without accessing sensitive data."
+    }
+  ]
+}

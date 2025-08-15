@@ -1,0 +1,164 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:31.049Z",
+    "source_text_length": 1638,
+    "word_count": 109,
+    "sentence_count": 6,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "278dfa5e0a041cb98caa5dc82a75a592",
+    "entropy_level": 0.923,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "14fd3c9688fcbbad9053d6acd0447a41e9aa670a1abec1b62f4555d849ae8f87.json",
+      "processing_timestamp": "2025-08-11T15:15:31.049Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0917",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0917",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 3,
+        "significance": "0.0275",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "summary",
+        "frequency": 3,
+        "significance": "0.0275",
+        "examples": [
+          "\"summary\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"2025-08-11T05:52:30.921Z\",\n"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "layer",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"layer\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"type\",\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"name\",\n"
+        ]
+      },
+      {
+        "theme": "ai_studio_code",
+        "frequency": 2,
+        "significance": "0.0183",
+        "examples": [
+          "\"ai_studio_code"
+        ]
+      },
+      {
+        "theme": "3530",
+        "frequency": 1,
+        "significance": "0.0092",
+        "examples": [
+          "3530,\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "loop"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:30...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.0819,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.68",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "278dfa5e0a041cb98caa5dc82a75a592"
+  }
+}

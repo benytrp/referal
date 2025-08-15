@@ -1,0 +1,179 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:36.048Z",
+    "source_text_length": 2899,
+    "word_count": 262,
+    "sentence_count": 19,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9ac832e107ac51d26bbc4d7e8c45d515",
+    "entropy_level": 0.919,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "6e692b61ae0cfac8484c0f1c3dd5d272195c8da8f145669da6c24876e50acccb.json",
+      "processing_timestamp": "2025-08-11T15:15:36.048Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0382",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0382",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 6,
+        "significance": "0.0229",
+        "examples": [
+          "status.style.display"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "\"class\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "display",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "status.style.display"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "'none';"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 4,
+        "significance": "0.0153",
+        "examples": [
+          "\"=\\\"checkbox\\\"></td>\\\\\\\\n<td"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 3,
+        "significance": "0.0115",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "parseddata",
+        "frequency": 3,
+        "significance": "0.0115",
+        "examples": [
+          "\"parseddata\",\n"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 3,
+        "significance": "0.0115",
+        "examples": [
+          "document.getElementById('detectedSection').style.display"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length === 0) { showStatus('Could not parse data - try a different format', 'error'); return;\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"<th style=\\\"width: 60%;\\\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\\\\\n<tr>\\\\\\\\n<td>Attendance — Correct day and time?\",\n      \"=\\\"checkbox\\\"></td>\\\\\\\\n<td class=\\\"center\\\"><input type=\\\"checkbox\\\"></td>\\\\\\\\n</tr>\\\\\\\\n<tr>\\\\\\\\n<td>Hygiene — Appropriately groomed",
+      "?\",\n      \"h style=\\\"width: 60%;\\\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\\\\\n<tr>\\\\\\\\n<td>Attention Span — Adequate for tasks",
+      "?\",\n      \"ype=\\\"checkbox\\\"></td>\\\\\\\\n<td class=\\\"center\\\"><input type=\\\"checkbox\\\"></td>\\\\\\\\n</tr>\\\\\\\\n<tr>\\\\\\\\n<td>Safety — Followed procedures",
+      "?\"\n    ],\n    \"summary\": \"var, data, key, class, function\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 7,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (2)"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:44...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\"\n    ],\n    \"summary\": \"var, data, key, class, function\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 7,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (2)",
+        "urgency_score": "0.78",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"unified_e3_builder (2)",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.49"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.14495,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.68",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9ac832e107ac51d26bbc4d7e8c45d515"
+  }
+}

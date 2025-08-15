@@ -1,0 +1,244 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.440Z",
+    "anchor_id": "8fe0e5216685833d8d534c5696d104ce7f490d7eaa32e58cec856c261acb24a5",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.755,
+    "contradictions_detected": 36,
+    "word_count": 2207
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 89
+      },
+      {
+        "theme": "text",
+        "frequency": 74
+      },
+      {
+        "theme": "return",
+        "frequency": 39
+      },
+      {
+        "theme": "await",
+        "frequency": 37
+      },
+      {
+        "theme": "function",
+        "frequency": 30
+      },
+      {
+        "theme": "json",
+        "frequency": 29
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 21
+      },
+      {
+        "theme": "fusion",
+        "frequency": 20
+      },
+      {
+        "theme": "total",
+        "frequency": 20
+      },
+      {
+        "theme": "out",
+        "frequency": 20
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "e quick web seed Fetch & save sources Quick Web Search disabled (not in extension context). 📝 Text Input"
+      },
+      {
+        "idx": 1,
+        "sample": "HESIS\" } ]; function analyzeContradictions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|"
+      },
+      {
+        "idx": 2,
+        "sample": "]; function analyzeContradictions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/"
+      },
+      {
+        "idx": 3,
+        "sample": "; function analyzeContradictions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|"
+      },
+      {
+        "idx": 4,
+        "sample": "tion analyzeContradictions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what"
+      },
+      {
+        "idx": 5,
+        "sample": "lyzeContradictions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppo"
+      },
+      {
+        "idx": 6,
+        "sample": "tions(text){ const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,"
+      },
+      {
+        "idx": 7,
+        "sample": "const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*nev"
+      },
+      {
+        "idx": 8,
+        "sample": "const patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|e"
+      },
+      {
+        "idx": 9,
+        "sample": "nst patterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|ever"
+      },
+      {
+        "idx": 10,
+        "sample": "tterns=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything"
+      },
+      {
+        "idx": 11,
+        "sample": "s=[/but|however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*not"
+      },
+      {
+        "idx": 12,
+        "sample": "however|yet|although|despite|nevertheless|whereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all"
+      },
+      {
+        "idx": 13,
+        "sample": "hereas/gi,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|con"
+      },
+      {
+        "idx": 14,
+        "sample": "i,/not|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|contrary/gi"
+      },
+      {
+        "idx": 15,
+        "sample": "|no|never|none|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|contrary/gi,/both"
+      },
+      {
+        "idx": 16,
+        "sample": "ne|nothing|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|contrary/gi,/both.*and|either"
+      },
+      {
+        "idx": 17,
+        "sample": "ng|n't/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|contrary/gi,/both.*and|either.*or|nei"
+      },
+      {
+        "idx": 18,
+        "sample": "t/gi,/why|how|what if|suppose|assume/gi,/always.*never|everything.*nothing|all.*none/gi,/vs\\.|versus|against|opposite|contrary/gi,/both.*and|either.*or|neither."
+      },
+      {
+        "idx": 19,
+        "sample": "()); const out=[]; s.forEach((sentence,idx)=>{ if(sentence.match(/but|however|yet|although|despite|nevertheless/i)){ const parts=sentence.spli"
+      },
+      {
+        "idx": 20,
+        "sample": "st out=[]; s.forEach((sentence,idx)=>{ if(sentence.match(/but|however|yet|although|despite|nevertheless/i)){ const parts=sentence.split(/but|h"
+      },
+      {
+        "idx": 21,
+        "sample": "ut=[]; s.forEach((sentence,idx)=>{ if(sentence.match(/but|however|yet|although|despite|nevertheless/i)){ const parts=sentence.split(/but|howev"
+      },
+      {
+        "idx": 22,
+        "sample": "s.forEach((sentence,idx)=>{ if(sentence.match(/but|however|yet|although|despite|nevertheless/i)){ const parts=sentence.split(/but|however|yet|al"
+      },
+      {
+        "idx": 23,
+        "sample": "ach((sentence,idx)=>{ if(sentence.match(/but|however|yet|although|despite|nevertheless/i)){ const parts=sentence.split(/but|however|yet|although|d"
+      },
+      {
+        "idx": 24,
+        "sample": "|yet|although|despite|nevertheless/i)){ const parts=sentence.split(/but|however|yet|although|despite|nevertheless/i); if(parts.length>1) out.pus"
+      },
+      {
+        "idx": 25,
+        "sample": "hough|despite|nevertheless/i)){ const parts=sentence.split(/but|however|yet|although|despite|nevertheless/i); if(parts.length>1) out.push({state"
+      },
+      {
+        "idx": 26,
+        "sample": "h|despite|nevertheless/i)){ const parts=sentence.split(/but|however|yet|although|despite|nevertheless/i); if(parts.length>1) out.push({statement"
+      },
+      {
+        "idx": 27,
+        "sample": "|nevertheless/i)){ const parts=sentence.split(/but|however|yet|although|despite|nevertheless/i); if(parts.length>1) out.push({statement_a:parts["
+      },
+      {
+        "idx": 28,
+        "sample": "eless/i)){ const parts=sentence.split(/but|however|yet|although|despite|nevertheless/i); if(parts.length>1) out.push({statement_a:parts[0].trim("
+      },
+      {
+        "idx": 29,
+        "sample": "const unc=(text.match(/maybe|perhaps|might|could|unsure|unclear|confused|don't know/gi)||[]).length; return {positive:pos, negative:neg, uncertainty:un"
+      },
+      {
+        "idx": 30,
+        "sample": "contradictions actually enhance learning. When we encounter something that doesn't fit our existing patterns, we're forced to create new neural pathways. Yet w"
+      },
+      {
+        "idx": 31,
+        "sample": "doesn't fit our existing patterns, we're forced to create new neural pathways. Yet we tend to avoid contradictions because they're uncomfortable. What if the"
+      },
+      {
+        "idx": 32,
+        "sample": "st.'); return; } const t=($(\"text-input\").value||'').trim(); if(!t){ alert('No text to save.'); return; } if(!currentRun){ const runTopic=($(\"qs-t"
+      },
+      {
+        "idx": 33,
+        "sample": "click=async ()=>{ if(!isExt){ qsLog.textContent='Quick Web Search disabled (not in extension context).'; return; } const topic=($(\"qs-topic\").value||'')"
+      },
+      {
+        "idx": 34,
+        "sample": "ontent=res.results.map((x,i)=>`${i+1}. ${x.title}\\n ${x.url}`).join('\\n\\n')||'No results'; if(outHandle){ if(!currentRun){ currentRun={ topi"
+      },
+      {
+        "idx": 35,
+        "sample": "} }); // greet if(!isExt) qsLog.textContent='Quick Web Search disabled (not in extension context).'; log(`AEON Fusion + Scanner ready${isExt?' (extens"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "chrome?",
+      "runtime?",
+      "?",
+      "]*\\?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "return score>5?",
+      "\"High - strong recursion\":(score>2?"
+    ],
+    "summary": "const, text, return, await, function"
+  },
+  "sentiment_indicators": {
+    "positive": 13,
+    "negative": 8,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "stheh.html",
+    "relative_path": "stheh.html",
+    "size_bytes": 24362,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.95
+  }
+}

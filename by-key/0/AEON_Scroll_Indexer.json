@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEON Scroll Indexer — Offline</title>
+<style>
+  :root { --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --accent:#7cc4ff; --card:#111827; --line:#1f2937; }
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+  header{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0;font-weight:600}
+  header .hint{color:var(--muted);font-size:13px}
+  main{padding:18px;display:grid;grid-template-columns:320px 1fr;gap:16px}
+  @media (max-width: 900px){ main{grid-template-columns:1fr} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+  .drop{border:2px dashed #334155;background:#0b1220;padding:18px;border-radius:16px;text-align:center;color:var(--muted)}
+  .btn{background:#172554;border:1px solid #1e40af;color:#c7d2fe;padding:10px 12px;border-radius:10px;font-weight:600;cursor:pointer}
+  .btn:disabled{opacity:.6;cursor:not-allowed}
+  input[type="text"], textarea{width:100%;background:#0b1220;border:1px solid var(--line);color:var(--fg);border-radius:10px;padding:10px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:12px}
+  .item{background:#0b1220;border:1px solid var(--line);border-radius:14px;padding:12px}
+  .k{color:#86efac}
+  .v{color:#eab308}
+  .tiny{font-size:12px;color:var(--muted)}
+  .pill{display:inline-block;border:1px solid #334155;border-radius:999px;padding:2px 8px;margin:2px;color:#93c5fd;font-size:12px}
+  .right{display:flex;gap:8px;align-items:center;margin-left:auto}
+  .tagbox{display:flex;gap:6px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>AEON Scroll Indexer</h1>
+  <div class="hint">Drag in your HTML/JSON “scrolls”. Everything stays on-device.</div>
+  <div class="right">
+    <button class="btn" id="pick">Choose files</button>
+    <button class="btn" id="export">Export index.json</button>
+    <input type="file" id="openIndex" accept="application/json" style="display:none">
+    <button class="btn" id="import">Open index.json</button>
+  </div>
+</header>
+<main>
+  <section class="card">
+    <div class="drop" id="drop">Drop files here or click “Choose files”.</div>
+    <div style="height:10px"></div>
+    <label class="tiny">Quick search</label>
+    <input type="text" id="q" placeholder="scroll_id, text, tags…">
+    <div style="height:10px"></div>
+    <label class="tiny">New tag for selected</label>
+    <div class="row">
+      <input type="text" id="tag" placeholder="e.g. spiral, anchor, CTR">
+      <button class="btn" id="addTag">Add tag</button>
+      <button class="btn" id="delSel">Delete selected</button>
+    </div>
+    <div style="height:10px"></div>
+    <div class="tiny">Selected: <span id="selCount">0</span></div>
+  </section>
+  <section class="card">
+    <div class="grid" id="list"></div>
+  </section>
+</main>
+
+<input type="file" id="file" multiple style="display:none">
+
+<script>
+const state = {
+  items: [],    // {id, name, hash, created, scroll_id, equation, glyphs[], text, tags[]}
+  selected: new Set(),
+};
+
+function $(id){return document.getElementById(id);}
+
+function render(){
+  const q = $('q').value.trim().toLowerCase();
+  const list = $('list');
+  list.innerHTML = '';
+  let shown = 0;
+  for(const it of state.items){
+    if(q){
+      const blob = (it.name + ' ' + (it.scroll_id||'') + ' ' + (it.text||'') + ' ' + (it.tags||[]).join(' ')).toLowerCase();
+      if(!blob.includes(q)) continue;
+    }
+    shown++;
+    const div = document.createElement('div');
+    div.className = 'item';
+    div.innerHTML = `
+      <div class="row" style="justify-content:space-between">
+        <div><input type="checkbox" data-id="${it.id}" ${state.selected.has(it.id)?'checked':''}> <b>${escapeHtml(it.name)}</b></div>
+        <div class="tiny">${it.created?escapeHtml(it.created):''}</div>
+      </div>
+      <div class="tiny">hash: ${it.hash.slice(0,16)}…</div>
+      <div><span class="k">scroll_id</span>: <span class="v">${escapeHtml(it.scroll_id||'-')}</span></div>
+      <div><span class="k">equation</span>: <span class="v">${escapeHtml(it.equation||'-')}</span></div>
+      <div class="tiny">${(it.glyphs||[]).map(g=>`<span class="pill">${escapeHtml(g)}</span>`).join('')}</div>
+      <details>
+        <summary class="tiny">preview</summary>
+        <div class="tiny">${escapeHtml((it.text||'').slice(0,800))}</div>
+      </details>
+      <div class="tagbox">${(it.tags||[]).map(t=>`<span class="pill">${escapeHtml(t)}</span>`).join('')}</div>
+    `;
+    div.querySelector('input[type=checkbox]').addEventListener('change', (e)=>{
+      if(e.target.checked) state.selected.add(it.id); else state.selected.delete(it.id);
+      $('selCount').textContent = state.selected.size;
+    });
+    list.appendChild(div);
+  }
+  if(shown===0){
+    list.innerHTML = '<div class="tiny">No items match.</div>';
+  }
+  $('selCount').textContent = state.selected.size;
+}
+
+function escapeHtml(s){return (s||'').replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));}
+
+async function sha256(ab){
+  const hashBuffer = await crypto.subtle.digest('SHA-256', ab);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+async function readFile(file){
+  const buf = await file.arrayBuffer();
+  const hash = await sha256(buf);
+  // If duplicate by hash, skip
+  if(state.items.some(x=>x.hash===hash)) return null;
+  const text = new TextDecoder().decode(buf);
+  // Try JSON first
+  let obj = null;
+  try { obj = JSON.parse(text); } catch(e){}
+  let created=null, scroll_id=null, equation=null, glyphs=null;
+  if(obj && (obj.format==='json_md_fusion_scroll' || obj.scroll_id)){
+    created = obj.created || null;
+    scroll_id = obj.scroll_id || null;
+    equation = obj.equation || null;
+    glyphs = obj.glyphs || null;
+  }else{
+    // Try to extract embedded JSON from HTML comments or <script> blocks
+    const m = text.match(/\{[\s\S]*?"scroll_id"\s*:\s*".+?"[\s\S]*?\}/);
+    if(m){
+      try{
+        const maybe = JSON.parse(m[0]);
+        created = maybe.created || null;
+        scroll_id = maybe.scroll_id || null;
+        equation = maybe.equation || null;
+        glyphs = maybe.glyphs || null;
+      }catch(e){}
+    }
+  }
+  const item = {
+    id: crypto.randomUUID(),
+    name: file.name,
+    hash, created, scroll_id, equation, glyphs,
+    text: text.slice(0, 50000), // store a slice to keep memory sane
+    tags: []
+  };
+  state.items.push(item);
+  return item;
+}
+
+function handleFiles(files){
+  (async ()=>{
+    for(const f of files){
+      await readFile(f);
+    }
+    render();
+  })();
+}
+
+$('pick').addEventListener('click', ()=> $('file').click());
+$('file').addEventListener('change', e => handleFiles(e.target.files));
+
+const drop = $('drop');
+drop.addEventListener('dragover', e => { e.preventDefault(); drop.style.borderColor='#60a5fa'; });
+drop.addEventListener('dragleave', e => { drop.style.borderColor=''; });
+drop.addEventListener('drop', e => {
+  e.preventDefault(); drop.style.borderColor='';
+  handleFiles(e.dataTransfer.files);
+});
+
+$('addTag').addEventListener('click', ()=>{
+  const t = $('tag').value.trim();
+  if(!t) return;
+  for(const it of state.items){
+    if(state.selected.has(it.id)){
+      if(!it.tags) it.tags=[];
+      if(!it.tags.includes(t)) it.tags.push(t);
+    }
+  }
+  $('tag').value='';
+  render();
+});
+
+$('delSel').addEventListener('click', ()=>{
+  if(state.selected.size===0) return;
+  if(!confirm('Delete selected from index view? (Original files are untouched)')) return;
+  state.items = state.items.filter(x => !state.selected.has(x.id));
+  state.selected.clear();
+  render();
+});
+
+$('q').addEventListener('input', render);
+
+$('export').addEventListener('click', ()=>{
+  const out = {
+    version: "aeon-index-1",
+    created: new Date().toISOString(),
+    count: state.items.length,
+    items: state.items
+  };
+  const blob = new Blob([JSON.stringify(out, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'aeon_index.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+$('import').addEventListener('click', ()=> $('openIndex').click());
+$('openIndex').addEventListener('change', async (e)=>{
+  const f = e.target.files[0]; if(!f) return;
+  const txt = await f.text();
+  try{
+    const obj = JSON.parse(txt);
+    if(obj.version!=='aeon-index-1'){ alert('Unknown index format'); return; }
+    state.items = obj.items||[];
+    state.selected.clear();
+    render();
+  }catch(err){
+    alert('Failed to parse index.json');
+  }
+});
+</script>
+</body>
+</html>

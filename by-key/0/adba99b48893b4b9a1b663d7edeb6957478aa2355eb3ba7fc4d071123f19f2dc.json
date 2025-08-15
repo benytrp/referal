@@ -1,0 +1,100 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.459Z",
+    "anchor_id": "adba99b48893b4b9a1b663d7edeb6957478aa2355eb3ba7fc4d071123f19f2dc",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.775,
+    "contradictions_detected": 1,
+    "word_count": 1801
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 52
+      },
+      {
+        "theme": "steps",
+        "frequency": 41
+      },
+      {
+        "theme": "status",
+        "frequency": 39
+      },
+      {
+        "theme": "result",
+        "frequency": 31
+      },
+      {
+        "theme": "title",
+        "frequency": 21
+      },
+      {
+        "theme": "tags",
+        "frequency": 20
+      },
+      {
+        "theme": "function",
+        "frequency": 20
+      },
+      {
+        "theme": "loop",
+        "frequency": 17
+      },
+      {
+        "theme": "trim",
+        "frequency": 17
+      },
+      {
+        "theme": "div",
+        "frequency": 17
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "(TAG_RE.test(line)) pendingTags.push(line.trim()); i++; } } // if no global tags were present, seed defaults if(globalTags.length === 0){ gl"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "textContent = ok ?",
+      "*?",
+      "split(/\\r?",
+      "tags ?",
+      "result ?",
+      "status==='✅' ?",
+      "status==='❌' ?",
+      "const row = el('div', {class:`step ${i===selected?",
+      "tags ?",
+      "length?",
+      "confirm('Reset workspace?",
+      "result?",
+      "key==='ArrowUp' ?",
+      "html')?",
+      "// preload the user-provided plan if present in prompt?"
+    ],
+    "summary": "const, steps, status, result, title"
+  },
+  "sentiment_indicators": {
+    "positive": 5,
+    "negative": 2,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "!DOCTcxncPE html.html",
+    "relative_path": "!DOCTcxncPE html.html",
+    "size_bytes": 21707,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

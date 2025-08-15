@@ -1,0 +1,163 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:35.162Z",
+    "anchor_id": "9700935ddde763556b0b516df34668b0ea57a6976bba2178fe82129f114cc829",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.762,
+    "contradictions_detected": 8,
+    "word_count": 3799
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 196
+      },
+      {
+        "theme": "data",
+        "frequency": 167
+      },
+      {
+        "theme": "div",
+        "frequency": 156
+      },
+      {
+        "theme": "label",
+        "frequency": 139
+      },
+      {
+        "theme": "span",
+        "frequency": 119
+      },
+      {
+        "theme": "key",
+        "frequency": 68
+      },
+      {
+        "theme": "opt",
+        "frequency": 66
+      },
+      {
+        "theme": "const",
+        "frequency": 66
+      },
+      {
+        "theme": "type",
+        "frequency": 64
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 63
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "erlays this base data. Allowed precheck values: yes/ni/na (also y/true/1 → yes; no/false/0 → ni; n/a/na → na). Child template"
+      },
+      {
+        "idx": 1,
+        "sample": "muted{color:#666} @media print{ body{margin:0; font-size:12px} .no-print.controls{display:none !important} input[type=\"checkbox\"]{ transfo"
+      },
+      {
+        "idx": 2,
+        "sample": "ia print{ body{margin:0; font-size:12px} .no-print.controls{display:none !important} input[type=\"checkbox\"]{ transform: scale(1.2); } }"
+      },
+      {
+        "idx": 3,
+        "sample": "Focus:</div><div class=\"value\">⟦todays_focus⟧</div></div> <div class=\"legend no-print controls\"><strong>Selection rule:</strong> choose exactly one box per r"
+      },
+      {
+        "idx": 4,
+        "sample": "; const map = { \"yes\":\"yes\",\"y\":\"yes\",\"true\":\"yes\",\"1\":\"yes\",\"ni\":\"ni\",\"no\":\"ni\",\"false\":\"ni\",\"0\":\"ni\",\"n/a\":\"na\",\"na\":\"na\",\"none\":\"na\" }; retur"
+      },
+      {
+        "idx": 5,
+        "sample": "\"yes\",\"1\":\"yes\",\"ni\":\"ni\",\"no\":\"ni\",\"false\":\"ni\",\"0\":\"ni\",\"n/a\":\"na\",\"na\":\"na\",\"none\":\"na\" }; return map[s]; } function apply(initial){"
+      },
+      {
+        "idx": 6,
+        "sample": "cksFromData(data){ const allowed = new Set(['yes','ni','na','y','true','1','no','false','0','n/a','none']); const out = {}; (function walk(prefix, o"
+      },
+      {
+        "idx": 7,
+        "sample": "const allowed = new Set(['yes','ni','na','y','true','1','no','false','0','n/a','none']); const out = {}; (function walk(prefix, obj){ if(!obj || t"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "<td>Attendance — Correct day and time?",
+      "<td>Attendance — Excessive absences?",
+      "<td>Timeliness — Arrived on time?",
+      "<td>Timeliness — Excessive tardiness?",
+      "<td>Hygiene — Participant was appropriately groomed?",
+      "<td>Dress — Participant was appropriately dressed?",
+      "<td>Attitude — Participant exhibited positive attitude?",
+      "<td>Attention Span — adequate span for tasks?",
+      "<td>Following Directions — followed simple instructions?",
+      "<td>Following Directions — followed multi-step instructions?",
+      "<td>Task Completion — stayed on task?",
+      "<td>Task Completion — completed task being worked on?",
+      "<td>Motor Skills — exhibits improvement?",
+      "<td>Problem Solving — able to solve presented problems?",
+      "<td>Safety — followed safety procedures?"
+    ],
+    "summary": "class, data, div, label, span"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 2,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "will",
+    "was"
+  ],
+  "metadata": {
+    "source_name": "E3-Master-Template-Builder-AEON.html",
+    "relative_path": "E3-Master-Template-Builder-AEON.html",
+    "size_bytes": 36347,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.83
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 420
+- Complexity score: 89.0
+- Key themes: theme, frequency, sample, const, none, false, print, class, data, span
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of sample?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, sample
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

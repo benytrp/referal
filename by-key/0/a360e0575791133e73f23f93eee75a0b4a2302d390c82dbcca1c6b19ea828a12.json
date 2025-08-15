@@ -1,0 +1,76 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.626Z",
+    "anchor_id": "a360e0575791133e73f23f93eee75a0b4a2302d390c82dbcca1c6b19ea828a12",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.512,
+    "contradictions_detected": 0,
+    "word_count": 591
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "active",
+        "frequency": 15
+      },
+      {
+        "theme": "math",
+        "frequency": 13
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 11
+      },
+      {
+        "theme": "const",
+        "frequency": 10
+      },
+      {
+        "theme": "document",
+        "frequency": 9
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 9
+      },
+      {
+        "theme": "bridge",
+        "frequency": 8
+      },
+      {
+        "theme": "bridgeconnections",
+        "frequency": 8
+      },
+      {
+        "theme": "protocol",
+        "frequency": 7
+      },
+      {
+        "theme": "aeon",
+        "frequency": 7
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "active, math, textcontent, const, document"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "bridge_protocol_hub.html",
+    "relative_path": "bridge_protocol_hub.html",
+    "size_bytes": 28480,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.7
+  }
+}

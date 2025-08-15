@@ -1,0 +1,186 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:34.613Z",
+    "source_text_length": 3823,
+    "word_count": 379,
+    "sentence_count": 36,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "08dd1cd8c16b62cb8795ed24160a889b",
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "59fb51d3fb659c05689979c89df3610dd8e2789a00fa67c37b1b76ac91f449b4_feedin_1754897457088.json",
+      "processing_timestamp": "2025-08-11T15:15:34.613Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0475",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0422",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "task",
+        "frequency": 9,
+        "significance": "0.0237",
+        "examples": [
+          "\"task\",\n"
+        ]
+      },
+      {
+        "theme": "participant",
+        "frequency": 6,
+        "significance": "0.0158",
+        "examples": [
+          "\"participant\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0132",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0106",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0106",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4,
+        "significance": "0.0106",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "attendance",
+        "frequency": 4,
+        "significance": "0.0106",
+        "examples": [
+          "Attendance"
+        ]
+      },
+      {
+        "theme": "followed",
+        "frequency": 4,
+        "significance": "0.0106",
+        "examples": [
+          "Followed"
+        ]
+      },
+      {
+        "theme": "abilities",
+        "frequency": 3,
+        "significance": "0.0079",
+        "examples": [
+          "\"abilities\",\n"
+        ]
+      },
+      {
+        "theme": "date",
+        "frequency": 3,
+        "significance": "0.0079",
+        "examples": [
+          "\"date\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "Work Habits Assessment Yes No Attendance — Correct day and time? Atten\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"Attendance — Correct day and time",
+      "?\",\n      \"Attendance — Excessive absences",
+      "?\",\n      \"Timeliness — Arrived on time",
+      "?\",\n      \"Timeliness — Excessive tardiness",
+      "?\",\n      \"Hygiene — Participant appropriately groomed",
+      "?\",\n      \"Dress — Participant appropriately dressed",
+      "?\",\n      \"Attitude — Participant exhibited positive attitude",
+      "?\",\n      \"Attention Span — Adequate for tasks"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 2,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 4,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:34...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "642,\n    \"contradictions_detected\": 1,\n    \"word_count\": 363\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"participant\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"time\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"abilities\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"task\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"date\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"scott\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"will\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"work\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"achievement\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"goals\",\n        \"frequency\": 3\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"esher",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": "\"\n    ],\n    \"summary\": \"participant, time, abilities, task, date\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 3,\n    \"negative\": 2,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"e3-evaluation",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.15"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.19115,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.15",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "08dd1cd8c16b62cb8795ed24160a889b"
+  }
+}

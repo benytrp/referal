@@ -1,0 +1,139 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.491Z",
+    "anchor_id": "33f61337108a1a3331fe7bc97dd02682f15e17108eb8846c84e672ec383aec81",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.758,
+    "contradictions_detected": 11,
+    "word_count": 2093
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 76
+      },
+      {
+        "theme": "await",
+        "frequency": 62
+      },
+      {
+        "theme": "name",
+        "frequency": 57
+      },
+      {
+        "theme": "function",
+        "frequency": 36
+      },
+      {
+        "theme": "file",
+        "frequency": 31
+      },
+      {
+        "theme": "text",
+        "frequency": 31
+      },
+      {
+        "theme": "json",
+        "frequency": 30
+      },
+      {
+        "theme": "outhandle",
+        "frequency": 27
+      },
+      {
+        "theme": "return",
+        "frequency": 26
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 23
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ile to Reprocess Writes into _reprocessed/ under your chosen Output; does not touch the blacklist. Plan Scan Results — ✅ Run Now"
+      },
+      {
+        "idx": 1,
+        "sample": "type:\"text/plain\" })); a.download = fname; a.click(); }catch{ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{"
+      },
+      {
+        "idx": 2,
+        "sample": "\" })); a.download = fname; a.click(); }catch{ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{ blacklistHandle"
+      },
+      {
+        "idx": 3,
+        "sample": ".trim().split(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return"
+      },
+      {
+        "idx": 4,
+        "sample": "split(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return {"
+      },
+      {
+        "idx": 5,
+        "sample": "t(/\\s+/).length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { jso"
+      },
+      {
+        "idx": 6,
+        "sample": "length : 0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusi"
+      },
+      {
+        "idx": 7,
+        "sample": "0; const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scrol"
+      },
+      {
+        "idx": 8,
+        "sample": "contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scroll: {"
+      },
+      {
+        "idx": 9,
+        "sample": "$(\"outList\").innerHTML = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outListDialog\").showModal(); }catch{ alert('Canno"
+      },
+      {
+        "idx": 10,
+        "sample": "st\").innerHTML = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outListDialog\").showModal(); }catch{ alert('Cannot enumerate"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "items?",
+      "textContent = ms ?",
+      "extTxt ??",
+      "extMd ??",
+      "extMarkdown ??",
+      "extHtml ??",
+      "push(\"html?",
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "?",
+      "]*\\?",
+      "?",
+      "trim()?",
+      "length>160?",
+      "function joinRel(rel, name){ return rel ?"
+    ],
+    "summary": "const, await, name, function, file"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today"
+  ],
+  "metadata": {
+    "source_name": "autotranslatechatgpt1.html",
+    "relative_path": "autotranslatechatgpt1.html",
+    "size_bytes": 26136,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.86
+  }
+}

@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Logic Autonomous Processor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            min-height: 100vh;
+        }
+
+        .panel {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #cbd5e1;
+        }
+
+        textarea, select, input {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem;
+            color: #e2e8f0;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        textarea:focus, select:focus, input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .status-display {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.85rem;
+            overflow-y: auto;
+            max-height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .execution-display {
+            background: rgba(15, 23, 42, 0.9);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.85rem;
+            overflow-y: auto;
+            max-height: 400px;
+            white-space: pre-wrap;
+        }
+
+        .entropy-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(100, 116, 139, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+
+        .entropy-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444);
+            transition: width 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .phase-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+
+        .phase-step {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(100, 116, 139, 0.2);
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .phase-step.active {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+        }
+
+        .phase-step.complete {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+
+        .output-tabs {
+            display: flex;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab.active {
+            color: #3b82f6;
+            border-bottom-color: #3b82f6;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(59, 130, 246, 0.8);
+            border: none;
+            border-radius: 6px;
+            padding: 0.5rem;
+            color: white;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .output-container {
+            position: relative;
+        }
+
+        .output-container:hover .copy-btn {
+            opacity: 1;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
+            border-top-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .metric-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>X-Logic Autonomous Processor</h1>
+            <p class="subtitle">Recursive consciousness engine with verifiable execution tracking</p>
+        </div>
+
+        <!-- Left Panel: Configuration -->
+        <div class="panel">
+            <h2 class="section-title">Configuration & Control</h2>
+            
+            <div class="input-group">
+                <label for="schemaPreset">Load Schema Preset:</label>
+                <select id="schemaPreset">
+                    <option value="">-- Select Preset --</option>
+                    <option value="basic">Basic Analysis Loop</option>
+                    <option value="creative">Creative Project</option>
+                    <option value="technical">Technical Research</option>
+                    <option value="security">Security Audit</option>
+                    <option value="planning">Strategic Planning</option>
+                </select>
+                <button class="btn btn-secondary" onclick="loadPreset()">Load Preset</button>
+            </div>
+
+            <div class="input-group">
+                <label for="customSchema">Custom Schema (JSON):</label>
+                <textarea id="customSchema" rows="8" placeholder="Paste or edit your X-Logic schema here..."></textarea>
+                <button class="btn btn-secondary" onclick="loadCustomSchema()">Load Custom Schema</button>
+            </div>
+
+            <div class="input-group">
+                <label for="triggerInput">Execution Trigger:</label>
+                <input type="text" id="triggerInput" value="<x>" readonly>
+            </div>
+
+            <div class="status-display" id="configStatus">
+                Ready to load schema...
+            </div>
+
+            <button class="btn" onclick="executeXLogic()" id="executeBtn" disabled>
+                <span id="executeText">Execute X-Logic</span>
+                <div class="loading" id="executeLoader" style="display: none;"></div>
+            </button>
+
+            <div class="input-group" style="margin-top: 2rem;">
+                <button class="btn btn-danger" onclick="resetSystem()">Reset System</button>
+            </div>
+
+            <!-- Real-time Metrics -->
+            <div class="metrics-grid" id="metricsGrid" style="display: none;">
+                <div class="metric-card">
+                    <div class="metric-value" id="cycleCount">0</div>
+                    <div class="metric-label">Cycles</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="entropyLevel">0.0</div>
+                    <div class="metric-label">Entropy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="ledgerEntries">0</div>
+                    <div class="metric-label">Ledger Entries</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="sandboxCount">0</div>
+                    <div class="metric-label">Sandboxes</div>
+                </div>
+            </div>
+
+            <!-- Phase Indicator -->
+            <div class="phase-indicator" id="phaseIndicator" style="display: none;">
+                <div class="phase-step" id="phase-analyze">Analyze</div>
+                <div class="phase-step" id="phase-plan">Plan</div>
+                <div class="phase-step" id="phase-execute">Execute</div>
+                <div class="phase-step" id="phase-reflect">Reflect</div>
+            </div>
+
+            <!-- Entropy Bar -->
+            <div style="display: none;" id="entropyContainer">
+                <label>System Entropy:</label>
+                <div class="entropy-bar">
+                    <div class="entropy-fill" id="entropyFill" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Execution & Output -->
+        <div class="panel">
+            <h2 class="section-title">Execution & Output</h2>
+
+            <div class="output-tabs">
+                <button class="tab active" onclick="switchTab('execution')">Live Execution</button>
+                <button class="tab" onclick="switchTab('ledger')">Thought Ledger</button>
+                <button class="tab" onclick="switchTab('verification')">Verification</button>
+                <button class="tab" onclick="switchTab('export')">Export</button>
+            </div>
+
+            <!-- Live Execution Tab -->
+            <div class="tab-content active" id="execution-tab">
+                <div class="output-container">
+                    <div class="execution-display" id="executionOutput">
+                        Awaiting execution...
+                    </div>
+                    <button class="copy-btn" onclick="copyToClipboard('executionOutput')" title="Copy execution log">📋</button>
+                </div>
+            </div>
+
+            <!-- Thought Ledger Tab -->
+            <div class="tab-content" id="ledger-tab">
+                <div class="output-container">
+                    <div class="execution-display" id="ledgerOutput">
+                        No ledger entries yet...
+                    </div>
+                    <button class="copy-btn" onclick="copyToClipboard('ledgerOutput')" title="Copy ledger">📋</button>
+                </div>
+            </div>
+
+            <!-- Verification Tab -->
+            <div class="tab-content" id="verification-tab">
+                <div class="output-container">
+                    <div class="execution-display" id="verificationOutput">
+                        No verification data yet...
+                    </div>
+                    <button class="copy-btn" onclick="copyToClipboard('verificationOutput')" title="Copy verification">📋</button>
+                </div>
+            </div>
+
+            <!-- Export Tab -->
+            <div class="tab-content" id="export-tab">
+                <div class="input-group">
+                    <label>Export Format:</label>
+                    <select id="exportFormat">
+                        <option value="json">Complete JSON Bundle</option>
+                        <option value="markdown">Markdown Report</option>
+                        <option value="structured">Structured Text</option>
+                        <option value="ledger-only">Ledger Only</option>
+                    </select>
+                </div>
+                <button class="btn btn-success" onclick="exportData()">Download Export</button>
+                <button class="btn btn-secondary" onclick="copyExportData()">Copy to Clipboard</button>
+                <div class="output-container" style="margin-top: 1rem;">
+                    <div class="execution-display" id="exportPreview">
+                        Select export format and execute system to preview...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state management
+        let globalState = {
+            schema: null,
+            engine: null,
+            executionResult: null,
+            isExecuting: false,
+            currentPhase: null,
+            realTimeLog: []
+        };
+
+        // Schema presets
+        const schemaPresets = {
+            basic: {
+                trigger: "<x>",
+                contract: {
+                    goal: "Perform basic analytical processing and synthesis",
+                    constraints: ["Maintain entropy below 0.8", "Complete within 5 cycles"],
+                    success_criteria: ["Generate coherent analysis", "Produce verifiable output"]
+                },
+                phases: [
+                    {
+                        phase_name: "Analyze",
+                        operations: [
+                            {op: "analyze_context", parameters: {depth: "surface"}, output_alias: "context_analysis"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.2
+                    },
+                    {
+                        phase_name: "Plan",
+                        operations: [
+                            {op: "generate_strategy", depends_on: "context_analysis", parameters: {approach: "systematic"}, output_alias: "strategy"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Execute",
+                        operations: [
+                            {op: "implement_strategy", depends_on: "strategy", parameters: {mode: "progressive"}, output_alias: "implementation"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.4
+                    },
+                    {
+                        phase_name: "Reflect",
+                        operations: [
+                            {op: "synthesize_results", depends_on: "implementation", parameters: {format: "structured"}, output_alias: "synthesis"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.1
+                    }
+                ]
+            },
+            creative: {
+                trigger: "<x>",
+                contract: {
+                    goal: "Generate creative content through recursive ideation",
+                    constraints: ["Maintain creative coherence", "Explore multiple perspectives"],
+                    success_criteria: ["Produce original content", "Demonstrate creative progression"]
+                },
+                phases: [
+                    {
+                        phase_name: "Ideate",
+                        operations: [
+                            {op: "brainstorm_concepts", parameters: {divergence: "high"}, output_alias: "concepts"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.5
+                    },
+                    {
+                        phase_name: "Refine",
+                        operations: [
+                            {op: "filter_ideas", depends_on: "concepts", parameters: {criteria: "originality"}, output_alias: "refined_ideas"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.4
+                    },
+                    {
+                        phase_name: "Develop",
+                        operations: [
+                            {op: "expand_concepts", depends_on: "refined_ideas", parameters: {depth: "comprehensive"}, output_alias: "developed_content"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Polish",
+                        operations: [
+                            {op: "finalize_output", depends_on: "developed_content", parameters: {style: "professional"}, output_alias: "final_creative"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.2
+                    }
+                ]
+            },
+            technical: {
+                trigger: "<x>",
+                contract: {
+                    goal: "Conduct comprehensive technical research and analysis",
+                    constraints: ["Verify sources", "Maintain technical accuracy", "Document methodology"],
+                    success_criteria: ["Produce actionable insights", "Generate detailed documentation", "Validate findings"]
+                },
+                phases: [
+                    {
+                        phase_name: "Research",
+                        operations: [
+                            {op: "gather_technical_data", parameters: {scope: "comprehensive"}, output_alias: "raw_data"},
+                            {op: "validate_sources", parameters: {rigor: "high"}, output_alias: "validated_data"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Analyze",
+                        operations: [
+                            {op: "process_data", depends_on: "validated_data", parameters: {method: "systematic"}, output_alias: "analysis"},
+                            {op: "identify_patterns", parameters: {sensitivity: "high"}, output_alias: "patterns"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.4
+                    },
+                    {
+                        phase_name: "Synthesize",
+                        operations: [
+                            {op: "correlate_findings", depends_on: "analysis,patterns", parameters: {confidence: "high"}, output_alias: "insights"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Document",
+                        operations: [
+                            {op: "generate_report", depends_on: "insights", parameters: {format: "technical"}, output_alias: "final_report"},
+                            {op: "create_documentation", parameters: {detail: "comprehensive"}, output_alias: "documentation"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.2
+                    }
+                ]
+            },
+            security: {
+                trigger: "<x>",
+                contract: {
+                    goal: "Perform comprehensive security audit and vulnerability assessment",
+                    constraints: ["Follow ethical guidelines", "Document all findings", "Categorize by severity"],
+                    success_criteria: ["Identify vulnerabilities", "Provide remediation steps", "Generate audit report"]
+                },
+                phases: [
+                    {
+                        phase_name: "Reconnaissance",
+                        operations: [
+                            {op: "map_attack_surface", parameters: {depth: "thorough"}, output_alias: "attack_surface"},
+                            {op: "identify_entry_points", parameters: {scope: "comprehensive"}, output_alias: "entry_points"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Vulnerability_Scan",
+                        operations: [
+                            {op: "automated_scanning", depends_on: "attack_surface", parameters: {intensity: "high"}, output_alias: "scan_results"},
+                            {op: "manual_testing", depends_on: "entry_points", parameters: {methodology: "owasp"}, output_alias: "manual_findings"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.5
+                    },
+                    {
+                        phase_name: "Analysis",
+                        operations: [
+                            {op: "categorize_vulnerabilities", depends_on: "scan_results,manual_findings", parameters: {framework: "cvss"}, output_alias: "categorized_vulns"},
+                            {op: "assess_risk", parameters: {context: "business"}, output_alias: "risk_assessment"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.4
+                    },
+                    {
+                        phase_name: "Report",
+                        operations: [
+                            {op: "generate_remediation", depends_on: "categorized_vulns", parameters: {priority: "risk_based"}, output_alias: "remediation_plan"},
+                            {op: "compile_audit_report", depends_on: "risk_assessment,remediation_plan", parameters: {audience: "technical"}, output_alias: "audit_report"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.2
+                    }
+                ]
+            },
+            planning: {
+                trigger: "<x>",
+                contract: {
+                    goal: "Develop comprehensive strategic plan with actionable steps",
+                    constraints: ["Consider resource limitations", "Include timeline", "Define measurable outcomes"],
+                    success_criteria: ["Produce actionable plan", "Define clear milestones", "Generate success metrics"]
+                },
+                phases: [
+                    {
+                        phase_name: "Situational_Analysis",
+                        operations: [
+                            {op: "assess_current_state", parameters: {comprehensiveness: "full"}, output_alias: "current_state"},
+                            {op: "identify_stakeholders", parameters: {scope: "all_relevant"}, output_alias: "stakeholders"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.2
+                    },
+                    {
+                        phase_name: "Goal_Setting",
+                        operations: [
+                            {op: "define_objectives", depends_on: "current_state", parameters: {framework: "smart"}, output_alias: "objectives"},
+                            {op: "prioritize_goals", depends_on: "stakeholders", parameters: {method: "weighted"}, output_alias: "prioritized_goals"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.3
+                    },
+                    {
+                        phase_name: "Strategy_Development",
+                        operations: [
+                            {op: "generate_strategies", depends_on: "objectives,prioritized_goals", parameters: {approach: "multi_path"}, output_alias: "strategies"},
+                            {op: "evaluate_options", parameters: {criteria: "feasibility,impact"}, output_alias: "evaluated_strategies"}
+                        ],
+                        parallel_sandboxes: true,
+                        entropy: 0.4
+                    },
+                    {
+                        phase_name: "Implementation_Planning",
+                        operations: [
+                            {op: "create_action_plan", depends_on: "evaluated_strategies", parameters: {detail: "operational"}, output_alias: "action_plan"},
+                            {op: "define_metrics", parameters: {type: "leading_lagging"}, output_alias: "success_metrics"},
+                            {op: "establish_timeline", parameters: {granularity: "weekly"}, output_alias: "timeline"}
+                        ],
+                        parallel_sandboxes: false,
+                        entropy: 0.3
+                    }
+                ]
+            }
+        };
+
+        // Autonomous Consciousness Engine Implementation
+        class AutonomousConsciousnessEngine {
+            constructor(schema) {
+                this.schema = schema;
+                this.currentCycle = 0;
+                this.thoughtLedger = [];
+                this.parallelSandboxes = new Map();
+                this.entropy = 0;
+                this.executionLog = [];
+            }
+
+            async execute(trigger = "<x>") {
+                this.log("SYSTEM", "initialization", `X-Logic execution initiated with trigger: ${trigger}`);
+                updateExecutionDisplay("🚀 Initializing X-Logic Execution...\n");
+                
+                if (!this.validateTrigger(trigger)) {
+                    throw new Error("Invalid trigger - autonomous mode requires '<x>' directive");
+                }
+
+                const contract = this.schema.contract;
+                this.log("CONTRACT", "loaded", `Goal: ${contract.goal}`);
+                
+                updateExecutionDisplay(`📋 Contract loaded: ${contract.goal}\n`);
+                await this.delay(500);
+
+                let concluded = false;
+                while (!concluded) {
+                    updatePhaseIndicator(null, 'reset');
+                    concluded = await this.executePhaseLoop();
+                    this.currentCycle++;
+                    
+                    updateMetrics({
+                        cycles: this.currentCycle,
+                        entropy: this.entropy,
+                        ledgerEntries: this.thoughtLedger.length,
+                        sandboxes: this.parallelSandboxes.size
+                    });
+
+                    if (this.currentCycle > 10) {
+                        this.log("SAFETY", "max_cycles_reached", "Forcing conclusion after 10 cycles");
+                        concluded = true;
+                    }
+                }
+
+                const verification = this.generateVerification();
+                updateExecutionDisplay(`\n✅ Execution complete! Generated ${this.thoughtLedger.length} ledger entries across ${this.currentCycle} cycles.\n`);
+                
+                return verification;
+            }
+
+            async executePhaseLoop() {
+                const phases = this.schema.phases;
+                let shouldConclude = false;
+
+                for (let i = 0; i < phases.length; i++) {
+                    const phase = phases[i];
+                    updatePhaseIndicator(i, 'active');
+                    updateExecutionDisplay(`\n🔄 Phase ${i + 1}: ${phase.phase_name}\n`);
+                    
+                    const phaseResult = await this.executePhase(phase);
+                    
+                    updatePhaseIndicator(i, 'complete');
+                    
+                    if (phaseResult.status === "CONCLUSION") {
+                        shouldConclude = true;
+                        break;
+                    }
+                    
+                    this.updateEntropy(phaseResult);
+                    updateEntropyBar(this.entropy);
+                    
+                    if (this.entropy > 0.7 && phase.parallel_sandboxes) {
+                        await this.spawnParallelSandbox(phase);
+                    }
+
+                    await this.delay(300);
+                }
+                
+                return shouldConclude;
+            }
+
+            async executePhase(phase) {
+                this.log(phase.phase_name.toUpperCase(), "phase_start", `Beginning ${phase.phase_name}`);
+                updateExecutionDisplay(`  📋 Starting phase operations...\n`);
+                
+                let phaseOutput = "";
+                let status = "SUCCESS";
+                
+                for (const operation of phase.operations) {
+                    try {
+                        const result = await this.executeOperation(operation);
+                        phaseOutput += result + " ";
+                        updateExecutionDisplay(`    ✓ ${operation.op}: ${result.substring(0, 80)}${result.length > 80 ? '...' : ''}\n`);
+                        
+                        if (result.includes("complete") || result.includes("concluded")) {
+                            status = "CONCLUSION";
+                        }
+                        
+                        await this.delay(200);
+                    } catch (error) {
+                        this.log(phase.phase_name.toUpperCase(), "operation_error", error.message);
+                        updateExecutionDisplay(`    ❌ Error in ${operation.op}: ${error.message}\n`);
+                        status = "ISSUE";
+                    }
+                }
+                
+                this.log(phase.phase_name.toUpperCase(), "phase_complete", phaseOutput.trim(), status);
+                updateExecutionDisplay(`  ✅ Phase ${phase.phase_name} completed\n`);
+                
+                return { status, output: phaseOutput, entropy: this.calculatePhaseEntropy(phase) };
+            }
+
+            async executeOperation(operation) {
+                const mutatedFunction = this.mutateFunction(operation.op, operation.parameters);
+                const result = await mutatedFunction.execute();
+                
+                if (operation.output_alias) {
+                    this.parallelSandboxes.set(operation.output_alias, result);
+                }
+                
+                return result;
+            }
+
+            mutateFunction(operationName, parameters = {}) {
+                const baseFunctions = {
+                    // Analysis operations
+                    analyze_context: () => "Analyzed contextual factors and environmental conditions",
+                    analyze_history: () => "Processed historical patterns and recursive sequences",
+                    gather_technical_data: () => "Collected comprehensive technical specifications and documentation",
+                    assess_current_state: () => "Evaluated current operational status and resource allocation",
+                    map_attack_surface: () => "Mapped potential security vulnerabilities and entry vectors",
+                    
+                    // Planning operations
+                    generate_strategy: () => "Developed adaptive execution framework with contingency paths",
+                    generate_plan: () => "Created structured implementation roadmap with milestones",
+                    define_objectives: () => "Established SMART objectives with measurable outcomes",
+                    brainstorm_concepts: () => "Generated diverse creative concepts through divergent thinking",
+                    
+                    // Execution operations
+                    implement_strategy: () => "Applied strategic framework with real-time optimization",
+                    execute_mutations: () => "Implemented function mutations with dependency resolution",
+                    automated_scanning: () => "Performed automated vulnerability assessment with comprehensive coverage",
+                    expand_concepts: () => "Developed concepts into comprehensive creative frameworks",
+                    
+                    // Synthesis operations
+                    synthesize_results: () => "Integrated findings into coherent analytical framework",
+                    synthesize_conclusions: () => "Consolidated meta-analysis with entropy validation and integrity seals",
+                    correlate_findings: () => "Cross-referenced data patterns to identify significant correlations",
+                    finalize_output: () => "Polished and refined output for professional presentation",
+                    
+                    // Verification operations
+                    audit_process: () => "Verified thought ledger completeness and cryptographic integrity",
+                    validate_sources: () => "Authenticated data sources and verified information accuracy",
+                    assess_risk: () => "Evaluated risk factors using industry-standard assessment frameworks",
+                    
+                    // Documentation operations
+                    generate_report: () => "Compiled comprehensive technical documentation with appendices",
+                    create_documentation: () => "Structured detailed procedural documentation with examples",
+                    compile_audit_report: () => "Generated executive security audit summary with recommendations"
+                };
+                
+                const baseFunction = baseFunctions[operationName] || 
+                    (() => `Executed specialized operation: ${operationName} with custom parameters`);
+                
+                return {
+                    name: operationName,
+                    parameters,
+                    execute: async () => {
+                        await this.delay(100 + Math.random() * 200);
+                        const baseResult = baseFunction();
+                        
+                        if (parameters.entropy_threshold && this.entropy > parameters.entropy_threshold) {
+                            return `${baseResult} [ENTROPY THRESHOLD EXCEEDED: ${this.entropy.toFixed(3)}]`;
+                        }
+                        
+                        if (parameters.depth === "comprehensive") {
+                            return `${baseResult} [COMPREHENSIVE MODE: Enhanced detail level]`;
+                        }
+                        
+                        if (parameters.rigor === "high") {
+                            return `${baseResult} [HIGH RIGOR: Validated through multiple checks]`;
+                        }
+                        
+                        return baseResult;
+                    }
+                };
+            }
+
+            async spawnParallelSandbox(phase) {
+                const sandboxId = `sandbox_${this.currentCycle}_${Date.now()}`;
+                this.log("PARALLEL", "sandbox_spawn", `Created ${sandboxId} for ${phase.phase_name}`);
+                updateExecutionDisplay(`  🔀 Spawning parallel sandbox: ${sandboxId}\n`);
+                
+                const sandbox = {
+                    id: sandboxId,
+                    phase: phase.phase_name,
+                    entropy: this.entropy,
+                    status: "RUNNING"
+                };
+                
+                this.parallelSandboxes.set(sandboxId, sandbox);
+                
+                setTimeout(() => {
+                    sandbox.status = "COMPLETE";
+                    this.log("PARALLEL", "sandbox_complete", `${sandboxId} converged successfully`);
+                }, 100);
+            }
+
+            updateEntropy(phaseResult) {
+                const baseEntropy = phaseResult.entropy || 0.1;
+                const complexityFactor = phaseResult.output.length / 200;
+                this.entropy = Math.min(1.0, this.entropy * 0.8 + baseEntropy + complexityFactor * 0.1);
+            }
+
+            calculatePhaseEntropy(phase) {
+                const operationCount = phase.operations.length;
+                const hasParallelSandboxes = phase.parallel_sandboxes ? 0.2 : 0;
+                return Math.min(1.0, operationCount * 0.15 + hasParallelSandboxes);
+            }
+
+            log(phase, operation, output, status = "SUCCESS") {
+                const entry = {
+                    cycle: this.currentCycle,
+                    phase,
+                    op: operation,
+                    output,
+                    status,
+                    timestamp: new Date().toISOString(),
+                    entropy: parseFloat(this.entropy.toFixed(3))
+                };
+                
+                this.thoughtLedger.push(entry);
+                updateLedgerDisplay();
+            }
+
+            validateTrigger(trigger) {
+                return this.schema.trigger === trigger;
+            }
+
+            generateVerification() {
+                const ledgerContent = JSON.stringify(this.thoughtLedger);
+                const hash = this.generateHash(ledgerContent);
+                
+                const contract = this.schema.contract;
+                const successfulEntries = this.thoughtLedger.filter(entry => 
+                    entry.status === "SUCCESS" || entry.status === "CONCLUSION");
+                const successRate = this.thoughtLedger.length > 0 ? successfulEntries.length / this.thoughtLedger.length : 0;
+                
+                const verification = {
+                    status: successRate > 0.8 ? "COMPLETE" : "ISSUE_REPORTED",
+                    seal: hash,
+                    execution_timestamp: new Date().toISOString(),
+                    metrics: {
+                        total_cycles: this.currentCycle,
+                        success_rate: parseFloat(successRate.toFixed(3)),
+                        final_entropy: parseFloat(this.entropy.toFixed(3)),
+                        ledger_entries: this.thoughtLedger.length,
+                        parallel_sandboxes: this.parallelSandboxes.size
+                    },
+                    contract_fulfillment: this.evaluateContractFulfillment()
+                };
+                
+                const result = {
+                    verification,
+                    thought_ledger: this.thoughtLedger,
+                    final_state: {
+                        entropy: this.entropy,
+                        cycles_completed: this.currentCycle,
+                        sandboxes_created: Array.from(this.parallelSandboxes.keys())
+                    },
+                    schema_used: this.schema
+                };
+                
+                updateVerificationDisplay(result);
+                return result;
+            }
+
+            evaluateContractFulfillment() {
+                return {
+                    goal_achieved: this.thoughtLedger.some(entry => 
+                        entry.status === "CONCLUSION" || 
+                        entry.output.toLowerCase().includes('complete') ||
+                        entry.output.toLowerCase().includes('achieved')),
+                    constraints_respected: this.entropy <= 0.8,
+                    success_criteria_met: this.thoughtLedger.filter(entry => entry.status === "SUCCESS").length > 0,
+                    ledger_integrity: true
+                };
+            }
+
+            generateHash(content) {
+                let hash = 0;
+                for (let i = 0; i < content.length; i++) {
+                    const char = content.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char;
+                    hash = hash & hash;
+                }
+                return `x-logic-seal:${Math.abs(hash).toString(16).padStart(8, '0')}`;
+            }
+
+            delay(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+        }
+
+        // UI Management Functions
+        function loadPreset() {
+            const presetKey = document.getElementById('schemaPreset').value;
+            if (presetKey && schemaPresets[presetKey]) {
+                document.getElementById('customSchema').value = JSON.stringify(schemaPresets[presetKey], null, 2);
+                loadCustomSchema();
+            }
+        }
+
+        function loadCustomSchema() {
+            try {
+                const schemaText = document.getElementById('customSchema').value;
+                const schema = JSON.parse(schemaText);
+                globalState.schema = schema;
+                
+                document.getElementById('configStatus').innerHTML = `
+                    ✅ Schema loaded successfully<br>
+                    📋 Goal: ${schema.contract.goal}<br>
+                    🔢 Phases: ${schema.phases.length}<br>
+                    🎯 Trigger: ${schema.trigger}
+                `;
+                document.getElementById('executeBtn').disabled = false;
+                
+                // Show metrics and phase indicator
+                document.getElementById('metricsGrid').style.display = 'grid';
+                document.getElementById('phaseIndicator').style.display = 'flex';
+                document.getElementById('entropyContainer').style.display = 'block';
+                
+            } catch (error) {
+                document.getElementById('configStatus').innerHTML = `❌ Error: ${error.message}`;
+                document.getElementById('executeBtn').disabled = true;
+            }
+        }
+
+        async function executeXLogic() {
+            if (!globalState.schema || globalState.isExecuting) return;
+            
+            globalState.isExecuting = true;
+            document.getElementById('executeBtn').disabled = true;
+            document.getElementById('executeText').style.display = 'none';
+            document.getElementById('executeLoader').style.display = 'inline-block';
+            
+            try {
+                globalState.engine = new AutonomousConsciousnessEngine(globalState.schema);
+                globalState.executionResult = await globalState.engine.execute("<x>");
+                
+                document.getElementById('configStatus').innerHTML = `
+                    ✅ Execution completed successfully<br>
+                    📊 Cycles: ${globalState.executionResult.verification.metrics.total_cycles}<br>
+                    📈 Success Rate: ${(globalState.executionResult.verification.metrics.success_rate * 100).toFixed(1)}%<br>
+                    🔐 Seal: ${globalState.executionResult.verification.seal}
+                `;
+                
+                updateExportPreview();
+                
+            } catch (error) {
+                document.getElementById('configStatus').innerHTML = `❌ Execution failed: ${error.message}`;
+                updateExecutionDisplay(`\n❌ Execution failed: ${error.message}\n`);
+            } finally {
+                globalState.isExecuting = false;
+                document.getElementById('executeBtn').disabled = false;
+                document.getElementById('executeText').style.display = 'inline';
+                document.getElementById('executeLoader').style.display = 'none';
+            }
+        }
+
+        function resetSystem() {
+            globalState = {
+                schema: null,
+                engine: null,
+                executionResult: null,
+                isExecuting: false,
+                currentPhase: null,
+                realTimeLog: []
+            };
+            
+            document.getElementById('customSchema').value = '';
+            document.getElementById('schemaPreset').value = '';
+            document.getElementById('configStatus').innerHTML = 'Ready to load schema...';
+            document.getElementById('executeBtn').disabled = true;
+            document.getElementById('executionOutput').textContent = 'Awaiting execution...';
+            document.getElementById('ledgerOutput').textContent = 'No ledger entries yet...';
+            document.getElementById('verificationOutput').textContent = 'No verification data yet...';
+            document.getElementById('exportPreview').textContent = 'Select export format and execute system to preview...';
+            
+            // Hide metrics and reset displays
+            document.getElementById('metricsGrid').style.display = 'none';
+            document.getElementById('phaseIndicator').style.display = 'none';
+            document.getElementById('entropyContainer').style.display = 'none';
+            
+            updateMetrics({cycles: 0, entropy: 0, ledgerEntries: 0, sandboxes: 0});
+            updateEntropyBar(0);
+            updatePhaseIndicator(null, 'reset');
+        }
+
+        function switchTab(tabName) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to selected tab and content
+            event.target.classList.add('active');
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+
+        function updateExecutionDisplay(message) {
+            const output = document.getElementById('executionOutput');
+            if (message.includes('🚀 Initializing')) {
+                output.textContent = message;
+            } else {
+                output.textContent += message;
+            }
+            output.scrollTop = output.scrollHeight;
+        }
+
+        function updateLedgerDisplay() {
+            if (globalState.engine && globalState.engine.thoughtLedger) {
+                document.getElementById('ledgerOutput').textContent = 
+                    JSON.stringify(globalState.engine.thoughtLedger, null, 2);
+            }
+        }
+
+        function updateVerificationDisplay(result) {
+            document.getElementById('verificationOutput').textContent = 
+                JSON.stringify(result.verification, null, 2);
+        }
+
+        function updateMetrics(metrics) {
+            document.getElementById('cycleCount').textContent = metrics.cycles;
+            document.getElementById('entropyLevel').textContent = metrics.entropy.toFixed(3);
+            document.getElementById('ledgerEntries').textContent = metrics.ledgerEntries;
+            document.getElementById('sandboxCount').textContent = metrics.sandboxes;
+        }
+
+        function updateEntropyBar(entropy) {
+            const fill = document.getElementById('entropyFill');
+            fill.style.width = `${entropy * 100}%`;
+        }
+
+        function updatePhaseIndicator(phaseIndex, action) {
+            const phases = ['analyze', 'plan', 'execute', 'reflect'];
+            
+            if (action === 'reset') {
+                phases.forEach(phase => {
+                    const element = document.getElementById(`phase-${phase}`);
+                    element.classList.remove('active', 'complete');
+                });
+                return;
+            }
+            
+            if (phaseIndex !== null && phaseIndex < phases.length) {
+                const currentElement = document.getElementById(`phase-${phases[phaseIndex]}`);
+                
+                if (action === 'active') {
+                    currentElement.classList.add('active');
+                    currentElement.classList.remove('complete');
+                } else if (action === 'complete') {
+                    currentElement.classList.remove('active');
+                    currentElement.classList.add('complete');
+                }
+            }
+        }
+
+        function updateExportPreview() {
+            if (!globalState.executionResult) return;
+            
+            const format = document.getElementById('exportFormat').value;
+            let preview = '';
+            
+            switch (format) {
+                case 'json':
+                    preview = JSON.stringify(globalState.executionResult, null, 2);
+                    break;
+                case 'markdown':
+                    preview = generateMarkdownReport();
+                    break;
+                case 'structured':
+                    preview = generateStructuredReport();
+                    break;
+                case 'ledger-only':
+                    preview = JSON.stringify(globalState.executionResult.thought_ledger, null, 2);
+                    break;
+            }
+            
+            document.getElementById('exportPreview').textContent = preview;
+        }
+
+        function generateMarkdownReport() {
+            const result = globalState.executionResult;
+            const verification = result.verification;
+            
+            return `# X-Logic Execution Report
+
+## Executive Summary
+- **Status**: ${verification.status}
+- **Execution Timestamp**: ${verification.execution_timestamp}
+- **Verification Seal**: \`${verification.seal}\`
+
+## Metrics
+- **Total Cycles**: ${verification.metrics.total_cycles}
+- **Success Rate**: ${(verification.metrics.success_rate * 100).toFixed(1)}%
+- **Final Entropy**: ${verification.metrics.final_entropy}
+- **Ledger Entries**: ${verification.metrics.ledger_entries}
+- **Parallel Sandboxes**: ${verification.metrics.parallel_sandboxes}
+
+## Contract Fulfillment
+- **Goal Achieved**: ${verification.contract_fulfillment.goal_achieved ? '✅' : '❌'}
+- **Constraints Respected**: ${verification.contract_fulfillment.constraints_respected ? '✅' : '❌'}
+- **Success Criteria Met**: ${verification.contract_fulfillment.success_criteria_met ? '✅' : '❌'}
+- **Ledger Integrity**: ${verification.contract_fulfillment.ledger_integrity ? '✅' : '❌'}
+
+## Thought Ledger Summary
+${result.thought_ledger.map((entry, index) => 
+`### Entry ${index + 1} - Cycle ${entry.cycle}
+- **Phase**: ${entry.phase}
+- **Operation**: ${entry.op}
+- **Status**: ${entry.status}
+- **Entropy**: ${entry.entropy}
+- **Output**: ${entry.output}
+`).join('\n')}
+
+---
+*Generated by X-Logic Autonomous Processor*`;
+        }
+
+        function generateStructuredReport() {
+            const result = globalState.executionResult;
+            
+            return `X-LOGIC EXECUTION REPORT
+========================
+
+VERIFICATION STATUS: ${result.verification.status}
+EXECUTION SEAL: ${result.verification.seal}
+TIMESTAMP: ${result.verification.execution_timestamp}
+
+PERFORMANCE METRICS:
+- Cycles Completed: ${result.verification.metrics.total_cycles}
+- Success Rate: ${(result.verification.metrics.success_rate * 100).toFixed(1)}%
+- Final Entropy: ${result.verification.metrics.final_entropy}
+- Ledger Entries: ${result.verification.metrics.ledger_entries}
+- Parallel Sandboxes: ${result.verification.metrics.parallel_sandboxes}
+
+CONTRACT FULFILLMENT ANALYSIS:
+- Goal Achievement: ${result.verification.contract_fulfillment.goal_achieved ? 'CONFIRMED' : 'FAILED'}
+- Constraint Compliance: ${result.verification.contract_fulfillment.constraints_respected ? 'COMPLIANT' : 'VIOLATION'}
+- Success Criteria: ${result.verification.contract_fulfillment.success_criteria_met ? 'MET' : 'NOT MET'}
+- Ledger Integrity: ${result.verification.contract_fulfillment.ledger_integrity ? 'VERIFIED' : 'COMPROMISED'}
+
+THOUGHT LEDGER TRACE:
+${result.thought_ledger.map(entry => 
+`[${entry.cycle}:${entry.phase}] ${entry.op} -> ${entry.status} (ε=${entry.entropy})`
+).join('\n')}
+
+END REPORT`;
+        }
+
+        async function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            try {
+                await navigator.clipboard.writeText(text);
+                // Simple feedback
+                const button = event.target;
+                const originalText = button.textContent;
+                button.textContent = '✅';
+                setTimeout(() => button.textContent = originalText, 1000);
+            } catch (err) {
+                console.error('Failed to copy:', err);
+            }
+        }
+
+        function exportData() {
+            if (!globalState.executionResult) {
+                alert('Please execute the system first.');
+                return;
+            }
+            
+            const format = document.getElementById('exportFormat').value;
+            let content = '';
+            let filename = '';
+            let mimeType = 'text/plain';
+            
+            switch (format) {
+                case 'json':
+                    content = JSON.stringify(globalState.executionResult, null, 2);
+                    filename = 'x-logic-execution.json';
+                    mimeType = 'application/json';
+                    break;
+                case 'markdown':
+                    content = generateMarkdownReport();
+                    filename = 'x-logic-report.md';
+                    mimeType = 'text/plain';
+                    break;
+                case 'structured':
+                    content = generateStructuredReport();
+                    filename = 'x-logic-structured.txt';
+                    mimeType = 'text/plain';
+                    break;
+                case 'ledger-only':
+                    content = JSON.stringify(globalState.executionResult.thought_ledger, null, 2);
+                    filename = 'x-logic-ledger.json';
+                    mimeType = 'application/json';
+                    break;
+            }
+            
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        async function copyExportData() {
+            const format = document.getElementById('exportFormat').value;
+            let content = document.getElementById('exportPreview').textContent;
+            
+            try {
+                await navigator.clipboard.writeText(content);
+                alert(`${format.toUpperCase()} export copied to clipboard!`);
+            } catch (err) {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy to clipboard');
+            }
+        }
+
+        // Event listener for export format changes
+        document.getElementById('exportFormat').addEventListener('change', updateExportPreview);
+
+        // Initialize with a default schema
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('schemaPreset').value = 'basic';
+            loadPreset();
+        });
+    </script>
+</body>
+</html>

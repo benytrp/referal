@@ -1,0 +1,194 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:16:06.644Z",
+    "source_text_length": 4229,
+    "word_count": 425,
+    "sentence_count": 33,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "2c3115ced0762ab02d4450c0ee76ff13",
+    "entropy_level": 0.936,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "feedback_5d59d3be5d7af2b0ae92f23d69cb094cdec04688b23f80310d11050eb40c7fc9_feedin_1754897457537_gen001.json",
+      "processing_timestamp": "2025-08-11T15:16:06.644Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0424",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0376",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 7,
+        "significance": "0.0165",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 6,
+        "significance": "0.0141",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 6,
+        "significance": "0.0141",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "processing",
+        "frequency": 5,
+        "significance": "0.0118",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0094",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4,
+        "significance": "0.0094",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 3,
+        "significance": "0.0071",
+        "examples": [
+          "\"2025-08-11T05:52:30.448Z\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 3,
+        "significance": "0.0071",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 3,
+        "significance": "0.0071",
+        "examples": [
+          "\"contract\",\n"
+        ]
+      },
+      {
+        "theme": "ledger",
+        "frequency": 3,
+        "significance": "0.0071",
+        "examples": [
+          "\"ledger\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "\\\"); } } catch (error) {\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"5-flash-latest:generateContent?\"\n    ],\n    \"summary\": \"const, contract, state, ledger, document\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 5,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"ai_studio_code (4)",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5",
+      "What are the deeper implications of sample?\n\n\n## Cross-References (Gen 0)\n- Previous generation: Gen -1\n- Related themes: theme, frequency, sample\n- Evolution cycle: 0\n\n\n## Content Expansion (Gen 0)\n\n### Deep Dive: theme\nThis theme emerges as significant in generation 0"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 5,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:30...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\\\",\\\"It should handle cases where the specified column does not exist",
+        "urgency_score": "0.15",
+        "feasibility_score": "0.80"
+      },
+      {
+        "action": "\\\",\\\"The output should be a single floating-point number",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "\\\",\\\"All findings must be categorized by severity:\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"lse { throw new Error(\\\"Unexpected API response structure or no content found",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.44"
+      },
+      {
+        "action": "8\n- Key themes: theme, frequency, sample, synthesis, const, contract, state, ledger, document, should\n\n\n## Exploration Questions (Gen 0)\n1",
+        "urgency_score": "0.47",
+        "feasibility_score": "0.51"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.21145,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 4 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "2c3115ced0762ab02d4450c0ee76ff13"
+  }
+}

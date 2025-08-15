@@ -1,0 +1,122 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.217Z",
+    "anchor_id": "9a0fe1f03f7251ac48af49d524499a2a6252e996824003572cd051713cb680ea",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.767,
+    "contradictions_detected": 6,
+    "word_count": 1280
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 54
+      },
+      {
+        "theme": "await",
+        "frequency": 22
+      },
+      {
+        "theme": "query",
+        "frequency": 18
+      },
+      {
+        "theme": "function",
+        "frequency": 18
+      },
+      {
+        "theme": "return",
+        "frequency": 17
+      },
+      {
+        "theme": "status",
+        "frequency": 16
+      },
+      {
+        "theme": "recency",
+        "frequency": 13
+      },
+      {
+        "theme": "sections",
+        "frequency": 13
+      },
+      {
+        "theme": "length",
+        "frequency": 12
+      },
+      {
+        "theme": "search",
+        "frequency": 11
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ilder Pick Seed Folder Scan & Propose Query no folder This reads local artifacts (e.g., bridge-pass-trace-*.jso"
+      },
+      {
+        "idx": 1,
+        "sample": "tus = msg => ($('#ws-status').textContent = msg); const STOP = new Set(['do','not','answer','remain','silent','3/4','slower','decrease','speed','designation',"
+      },
+      {
+        "idx": 2,
+        "sample": "as,were,be,been,being,this,that,these,those,about,into,over,after,before,and,or,not,if,then,else i,you,he,she,it,we,they,me,my,your,our,their do,does,di"
+      },
+      {
+        "idx": 3,
+        "sample": "s){ const box = $('#ws-results'); if(!items.length){ box.textContent = 'No results.'; return; } const lines = items.map(r=>`• [${r.source||'web'}] $"
+      },
+      {
+        "idx": 4,
+        "sample": "s-enable').disabled=true; $('#ws-save').disabled=true; status('Search disabled (not in extension context).'); return; } status('Ready. Extension context"
+      },
+      {
+        "idx": 5,
+        "sample": "e}`); } } async function onSave(){ if(!currentResults.length){ status('Nothing to save. Run a search first.'); return; } try{ const runRoot ="
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const recencyTriggers = /(today|latest|now|current|price|version|update|ceo|results?",
+      "const entityHint = /[A-Z][a-z]+(?",
+      ":\\s+[A-Z][a-z]+)*|\\b(v?",
+      "const multiTopic = /(?",
+      "test(t) ?",
+      "length ?",
+      "chrome?",
+      "runtime?",
+      "if(j?",
+      "if(j?",
+      "if(j?",
+      "isArray(j?",
+      "facets?",
+      "res?",
+      "ok) throw new Error(res?"
+    ],
+    "summary": "const, await, query, function, return"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "aeon_web_seed_integrated_local_pipeline_router_html.html",
+    "relative_path": "aeon_web_seed_integrated_local_pipeline_router_html.html",
+    "size_bytes": 14110,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.81
+  }
+}

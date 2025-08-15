@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Data Translator to JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #111827;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+        textarea, select, input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            background-color: #f9fafb;
+            resize: vertical;
+        }
+        textarea {
+            min-height: 150px;
+            font-family: monospace;
+        }
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        .form-row input[type="text"], .form-row select {
+            flex: 1;
+        }
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        button {
+            flex: 1;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+        #addBtn {
+            flex: none;
+            width: auto;
+            background-color: #10b981;
+            color: #ffffff;
+        }
+        #addBtn:hover {
+            background-color: #059669;
+        }
+        #translateFormBtn, #translateBulkBtn {
+            background-color: #4f46e5;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        #translateFormBtn:hover, #translateBulkBtn:hover {
+            background-color: #4338ca;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #copyBtn {
+            background-color: #6b7280;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        #copyBtn:hover {
+            background-color: #4b5563;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .status {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            text-align: center;
+            display: none;
+        }
+        .status.success {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        .status.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        #formFields {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Format Translator</h1>
+        <p>This tool converts your data into the JSON format needed for the E3 Template Builder. Use the form for a single entry or the text area for bulk data.</p>
+
+        <h2>1. Single Record Entry</h2>
+        <div id="formFields">
+            <div class="form-row">
+                <select class="key-select">
+                    <option value="">Select a Key</option>
+                    <optgroup label="Form Fields">
+                        <option value="participant_name">participant_name</option>
+                        <option value="participant_id">participant_id</option>
+                        <option value="eval_date">eval_date</option>
+                        <option value="instructor_name">instructor_name</option>
+                        <option value="signature_date">signature_date</option>
+                        <option value="comments_section">comments_section</option>
+                    </optgroup>
+                    <optgroup label="Checkbox Fields">
+                        <option value="work_habits.attendance">work_habits.attendance</option>
+                        <option value="work_habits.hygiene">work_habits.hygiene</option>
+                        <option value="work_habits.attitude">work_habits.attitude</option>
+                        <option value="preparatory_goals.attention_span">preparatory_goals.attention_span</option>
+                        <option value="preparatory_goals.task_completion">preparatory_goals.task_completion</option>
+                        <option value="preparatory_goals.safety">preparatory_goals.safety</option>
+                    </optgroup>
+                </select>
+                <div class="value-container">
+                    <input type="text" class="value-input" placeholder="Enter Value">
+                </div>
+            </div>
+            <div class="form-row">
+                <select class="key-select">
+                    <option value="">Select a Key</option>
+                    <optgroup label="Form Fields">
+                        <option value="participant_name">participant_name</option>
+                        <option value="participant_id">participant_id</option>
+                        <option value="eval_date">eval_date</option>
+                        <option value="instructor_name">instructor_name</option>
+                        <option value="signature_date">signature_date</option>
+                        <option value="comments_section">comments_section</option>
+                    </optgroup>
+                    <optgroup label="Checkbox Fields">
+                        <option value="work_habits.attendance">work_habits.attendance</option>
+                        <option value="work_habits.hygiene">work_habits.hygiene</option>
+                        <option value="work_habits.attitude">work_habits.attitude</option>
+                        <option value="preparatory_goals.attention_span">preparatory_goals.attention_span</option>
+                        <option value="preparatory_goals.task_completion">preparatory_goals.task_completion</option>
+                        <option value="preparatory_goals.safety">preparatory_goals.safety</option>
+                    </optgroup>
+                </select>
+                <div class="value-container">
+                    <input type="text" class="value-input" placeholder="Enter Value">
+                </div>
+            </div>
+        </div>
+        <div class="button-group" style="justify-content: flex-start;">
+            <button id="addBtn">Add Field</button>
+            <button id="translateFormBtn">Translate Form to JSON</button>
+        </div>
+
+        <h2>2. Bulk Data Entry</h2>
+        <label for="inputData">Paste multiple `key=value` pairs below (one record per line):</label>
+        <textarea id="inputData" placeholder="Example:
+participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09
+participant_name=John Smith, participant_id=P002, eval_date=2025-08-09"></textarea>
+        <button id="translateBulkBtn" style="width: 100%;">Translate Bulk to JSON</button>
+
+        <div class="button-group">
+            <button id="copyBtn">Copy to Clipboard</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <label for="outputJson" style="margin-top: 1.5rem;">JSON Output:</label>
+        <textarea id="outputJson" readonly></textarea>
+    </div>
+
+    <script>
+        const checkboxKeys = [
+            'work_habits.attendance',
+            'work_habits.hygiene',
+            'work_habits.attitude',
+            'preparatory_goals.attention_span',
+            'preparatory_goals.task_completion',
+            'preparatory_goals.safety'
+        ];
+
+        function createValueInput(key) {
+            const container = document.createElement('div');
+            container.classList.add('value-container');
+            if (checkboxKeys.includes(key)) {
+                container.innerHTML = `
+                    <select class="value-input">
+                        <option value="yes">yes</option>
+                        <option value="ni">ni</option>
+                        <option value="na">na</option>
+                    </select>
+                `;
+            } else {
+                container.innerHTML = `<input type="text" class="value-input" placeholder="Enter Value">`;
+            }
+            return container;
+        }
+
+        function createFormRow() {
+            const formFields = document.getElementById('formFields');
+            const newRow = document.createElement('div');
+            newRow.classList.add('form-row');
+
+            const keySelect = document.createElement('select');
+            keySelect.classList.add('key-select');
+            keySelect.innerHTML = `
+                <option value="">Select a Key</option>
+                <optgroup label="Form Fields">
+                    <option value="participant_name">participant_name</option>
+                    <option value="participant_id">participant_id</option>
+                    <option value="eval_date">eval_date</option>
+                    <option value="instructor_name">instructor_name</option>
+                    <option value="signature_date">signature_date</option>
+                    <option value="comments_section">comments_section</option>
+                </optgroup>
+                <optgroup label="Checkbox Fields">
+                    <option value="work_habits.attendance">work_habits.attendance</option>
+                    <option value="work_habits.hygiene">work_habits.hygiene</option>
+                    <option value="work_habits.attitude">work_habits.attitude</option>
+                    <option value="preparatory_goals.attention_span">preparatory_goals.attention_span</option>
+                    <option value="preparatory_goals.task_completion">preparatory_goals.task_completion</option>
+                    <option value="preparatory_goals.safety">preparatory_goals.safety</option>
+                </optgroup>
+            `;
+            
+            const valueInput = createValueInput('');
+
+            keySelect.addEventListener('change', function() {
+                const selectedKey = this.value;
+                const parentRow = this.closest('.form-row');
+                const currentValueContainer = parentRow.querySelector('.value-container');
+                currentValueContainer.replaceWith(createValueInput(selectedKey));
+            });
+            
+            newRow.appendChild(keySelect);
+            newRow.appendChild(valueInput);
+            formFields.appendChild(newRow);
+        }
+
+        document.getElementById('addBtn').addEventListener('click', createFormRow);
+
+        document.getElementById('formFields').addEventListener('change', function(e) {
+            if (e.target.classList.contains('key-select')) {
+                const selectedKey = e.target.value;
+                const parentRow = e.target.closest('.form-row');
+                const currentValueContainer = parentRow.querySelector('.value-container');
+                const newValueContainer = createValueInput(selectedKey);
+                currentValueContainer.replaceWith(newValueContainer);
+            }
+        });
+
+        document.getElementById('translateFormBtn').addEventListener('click', function() {
+            const formFields = document.getElementById('formFields');
+            const rows = formFields.querySelectorAll('.form-row');
+            const outputJsonEl = document.getElementById('outputJson');
+            let obj = {};
+
+            try {
+                rows.forEach(row => {
+                    const key = row.querySelector('.key-select').value.trim();
+                    const value = row.querySelector('.value-input').value.trim();
+                    if (key && value) {
+                        obj[key] = value;
+                    }
+                });
+                
+                if (Object.keys(obj).length === 0) {
+                    showStatus('No data entered in the form.', true);
+                    outputJsonEl.value = '';
+                    return;
+                }
+
+                outputJsonEl.value = JSON.stringify(obj, null, 2);
+                showStatus('Translation successful!', false);
+            } catch (e) {
+                showStatus('Error during translation: ' + e.message, true);
+                outputJsonEl.value = '';
+            }
+        });
+
+        document.getElementById('translateBulkBtn').addEventListener('click', function() {
+            const inputData = document.getElementById('inputData').value;
+            const outputJsonEl = document.getElementById('outputJson');
+
+            if (!inputData) {
+                showStatus('Please enter data to translate in the bulk area.', true);
+                outputJsonEl.value = '';
+                return;
+            }
+
+            const lines = inputData.split('\\n').filter(line => line.trim() !== '');
+
+            try {
+                let parsedData = [];
+                lines.forEach(line => {
+                    let obj = {};
+                    const pairs = line.split(',');
+                    pairs.forEach(pair => {
+                        const [key, value] = pair.split('=').map(s => s.trim());
+                        if (key && value) {
+                            obj[key] = value;
+                        }
+                    });
+                    if (Object.keys(obj).length > 0) {
+                        parsedData.push(obj);
+                    }
+                });
+
+                if (parsedData.length === 0) {
+                    showStatus('No valid data found.', true);
+                    outputJsonEl.value = '';
+                    return;
+                }
+
+                let output;
+                if (parsedData.length === 1) {
+                    output = JSON.stringify(parsedData[0], null, 2);
+                } else {
+                    output = JSON.stringify(parsedData, null, 2);
+                }
+                
+                outputJsonEl.value = output;
+                showStatus('Translation successful!', false);
+            } catch (e) {
+                showStatus('Error during translation: ' + e.message, true);
+                outputJsonEl.value = '';
+            }
+        });
+
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            const outputJsonEl = document.getElementById('outputJson');
+            if (outputJsonEl.value) {
+                outputJsonEl.select();
+                document.execCommand('copy');
+                showStatus('Copied to clipboard!', false);
+            } else {
+                showStatus('Nothing to copy.', true);
+            }
+        });
+
+        function showStatus(message, isError) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = isError ? 'status error' : 'status success';
+            statusEl.style.display = 'block';
+        }
+        
+        // Initial form setup
+        document.addEventListener('DOMContentLoaded', () => {
+            const initialFormRows = document.getElementById('formFields').querySelectorAll('.form-row');
+            initialFormRows.forEach(row => {
+                const keySelect = row.querySelector('.key-select');
+                keySelect.addEventListener('change', function() {
+                    const selectedKey = this.value;
+                    const parentRow = this.closest('.form-row');
+                    const currentValueContainer = parentRow.querySelector('.value-container');
+                    const newValueContainer = createValueInput(selectedKey);
+                    currentValueContainer.replaceWith(newValueContainer);
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>

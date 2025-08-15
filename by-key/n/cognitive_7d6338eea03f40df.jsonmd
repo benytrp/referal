@@ -1,0 +1,181 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:34.267Z",
+    "source_text_length": 2803,
+    "word_count": 221,
+    "sentence_count": 23,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "7d6338eea03f40df4c7abfbf58a1f7da",
+    "entropy_level": 0.948,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "56bdd22eaa9b5426dc57c2cc628370b001c8ccc838d06ce97f642e6ac3f635f8.json",
+      "processing_timestamp": "2025-08-11T15:15:34.267Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 11,
+        "significance": "0.0498",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0452",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "contested",
+        "frequency": 7,
+        "significance": "0.0317",
+        "examples": [
+          "\"contested\",\n"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 5,
+        "significance": "0.0226",
+        "examples": [
+          "\"cycle\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "rows",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "\"rows\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "error",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "Error('No"
+        ]
+      },
+      {
+        "theme": "array",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "array"
+        ]
+      },
+      {
+        "theme": "length",
+        "frequency": 4,
+        "significance": "0.0181",
+        "examples": [
+          "if(!rows.length)"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 3,
+        "significance": "0.0136",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "throw",
+        "frequency": 3,
+        "significance": "0.0136",
+        "examples": [
+          "throw"
+        ]
+      }
+    ],
+    "key_questions": [
+      "contested? 'error':'ok'}\\\">${r",
+      "contested? 'Contested' : 'Not contested'}</span> </div>`; el",
+      "'); const md = toMarkdown(rows);\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"getAttribute('data-theme') === 'dark' ?\",\n      \"length",
+      "?\",\n      \"length",
+      "?\",\n      \"length",
+      "?\",\n      \"end)",
+      "?\",\n      \"cycle",
+      "?\",\n      \"phase"
+    ],
+    "pattern_recognition": [
+      "cycle",
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "length) throw new Error('Found a JSON array, b",
+        "statement_b": "it does not contain recognizable cycle objects",
+        "line": 12,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.84"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:38...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.16515,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.16",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "7d6338eea03f40df4c7abfbf58a1f7da"
+  }
+}

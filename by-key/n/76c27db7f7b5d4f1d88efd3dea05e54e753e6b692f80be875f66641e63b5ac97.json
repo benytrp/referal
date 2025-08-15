@@ -1,0 +1,142 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.005Z",
+    "anchor_id": "76c27db7f7b5d4f1d88efd3dea05e54e753e6b692f80be875f66641e63b5ac97",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.713,
+    "contradictions_detected": 12,
+    "word_count": 1896
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 61
+      },
+      {
+        "theme": "analysis",
+        "frequency": 41
+      },
+      {
+        "theme": "text",
+        "frequency": 36
+      },
+      {
+        "theme": "function",
+        "frequency": 28
+      },
+      {
+        "theme": "length",
+        "frequency": 26
+      },
+      {
+        "theme": "return",
+        "frequency": 26
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 23
+      },
+      {
+        "theme": "focus",
+        "frequency": 20
+      },
+      {
+        "theme": "await",
+        "frequency": 20
+      },
+      {
+        "theme": "name",
+        "frequency": 19
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Processed: 0 Last scan: — Focus: None 📊 Recent Activity"
+      },
+      {
+        "idx": 1,
+        "sample": "eas needing resolution\", preview: \"• Surface explicit contradictions (but/however/yet)\\n• Map dialectical tensions\\n• Classify conflict types\\n• Suggest s"
+      },
+      {
+        "idx": 2,
+        "sample": "ing resolution\", preview: \"• Surface explicit contradictions (but/however/yet)\\n• Map dialectical tensions\\n• Classify conflict types\\n• Suggest synthesis"
+      },
+      {
+        "idx": 3,
+        "sample": ".forEach(btn => { btn.style.opacity = '0.6'; btn.style.transform = 'none'; }); if (mode === 'explore') $(\"btnFocusExplore\").style.opaci"
+      },
+      {
+        "idx": 4,
+        "sample": "ould','would','also','only','very','just','like','the','and','for','are','but','not','you','all','can','her','was','one','our','had','use','word','each','said',"
+      },
+      {
+        "idx": 5,
+        "sample": "= (\" \" + sentence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) {"
+      },
+      {
+        "idx": 6,
+        "sample": "sentence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) { const"
+      },
+      {
+        "idx": 7,
+        "sample": "tence + \" \").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) { const pos"
+      },
+      {
+        "idx": 8,
+        "sample": "\").toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) { const pos = lower."
+      },
+      {
+        "idx": 9,
+        "sample": "werCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) { const pos = lower.indexOf("
+      },
+      {
+        "idx": 10,
+        "sample": "const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/); if (match) { const pos = lower.indexOf(match[0]);"
+      },
+      {
+        "idx": 11,
+        "sample": "\").close(); $(\"testText\").value = ''; $(\"testResults\").style.display = 'none'; }; // Initialize log(\"🧠 Cognitive JSONMD Scanner v1.4 ready\");"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "items?",
+      "textContent = ms ?",
+      "?",
+      "?",
+      "]*\\?",
+      "?",
+      "return maxEntropy ?",
+      "?",
+      "body ?"
+    ],
+    "summary": "const, analysis, text, function, length"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 8,
+    "uncertainty": 2
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "cognitive_jsonmd_scanner_v2 (4).html",
+    "relative_path": "cognitive_jsonmd_scanner_v2 (4).html",
+    "size_bytes": 29432,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.86
+  }
+}

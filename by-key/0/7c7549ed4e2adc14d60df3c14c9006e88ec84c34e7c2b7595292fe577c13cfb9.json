@@ -1,0 +1,119 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.160Z",
+    "anchor_id": "7c7549ed4e2adc14d60df3c14c9006e88ec84c34e7c2b7595292fe577c13cfb9",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.599,
+    "contradictions_detected": 8,
+    "word_count": 2402
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 78
+      },
+      {
+        "theme": "processingdata",
+        "frequency": 66
+      },
+      {
+        "theme": "return",
+        "frequency": 52
+      },
+      {
+        "theme": "content",
+        "frequency": 51
+      },
+      {
+        "theme": "document",
+        "frequency": 38
+      },
+      {
+        "theme": "cycle",
+        "frequency": 35
+      },
+      {
+        "theme": "processing",
+        "frequency": 34
+      },
+      {
+        "theme": "tags",
+        "frequency": 34
+      },
+      {
+        "theme": "output",
+        "frequency": 33
+      },
+      {
+        "theme": "analysis",
+        "frequency": 31
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "if (this.processingQueue.length === 0) { alert('No files in processing queue. Please select files first.');"
+      },
+      {
+        "idx": 1,
+        "sample": "(sentence, index) => { const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if ("
+      },
+      {
+        "idx": 2,
+        "sample": "e, index) => { const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if (contradi"
+      },
+      {
+        "idx": 3,
+        "sample": "ndex) => { const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if (contradictio"
+      },
+      {
+        "idx": 4,
+        "sample": "{ const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if (contradictionMarkers."
+      },
+      {
+        "idx": 5,
+        "sample": "const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if (contradictionMarkers.test(sen"
+      },
+      {
+        "idx": 6,
+        "sample": "const contradictionMarkers = /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/i; if (contradictionMarkers.test(sentence)) {"
+      },
+      {
+        "idx": 7,
+        "sample": ") { if (this.results.length === 0) { alert('No results to download'); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getFile ?",
+      "Output?",
+      "outputMetadata?",
+      "Input?",
+      "Contradict?",
+      "anchor_id?",
+      "return maxEntropy ?",
+      "?",
+      "statement_b: parts[2]?"
+    ],
+    "summary": "const, processingdata, return, content, document"
+  },
+  "sentiment_indicators": {
+    "positive": 11,
+    "negative": 1,
+    "uncertainty": 1
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "completeautoperp.html",
+    "relative_path": "completeautoperp.html",
+    "size_bytes": 51647,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:36.111Z",
+    "source_text_length": 4148,
+    "word_count": 444,
+    "sentence_count": 32,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9c82c35f314df5c47312932dc940174b",
+    "entropy_level": 0.923,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "6e692b61ae0cfac8484c0f1c3dd5d272195c8da8f145669da6c24876e50acccb_feedin_1754897458900.json",
+      "processing_timestamp": "2025-08-11T15:15:36.111Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0405",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0360",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 9,
+        "significance": "0.0203",
+        "examples": [
+          "status.style.display"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"class\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "display",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "status.style.display"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "'none';"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 5,
+        "significance": "0.0113",
+        "examples": [
+          "\"=\\\"checkbox\\\"></td>\\\\\\\\n<td"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0090",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0090",
+        "examples": [
+          "Generation"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length === 0) { showStatus('Could not parse data - try a different format', 'error'); return;\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"<th style=\\\"width: 60%;\\\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\\\\\n<tr>\\\\\\\\n<td>Attendance — Correct day and time?\",\n      \"=\\\"checkbox\\\"></td>\\\\\\\\n<td class=\\\"center\\\"><input type=\\\"checkbox\\\"></td>\\\\\\\\n</tr>\\\\\\\\n<tr>\\\\\\\\n<td>Hygiene — Appropriately groomed",
+      "?\",\n      \"h style=\\\"width: 60%;\\\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\\\\\n<tr>\\\\\\\\n<td>Attention Span — Adequate for tasks",
+      "?\",\n      \"ype=\\\"checkbox\\\"></td>\\\\\\\\n<td class=\\\"center\\\"><input type=\\\"checkbox\\\"></td>\\\\\\\\n</tr>\\\\\\\\n<tr>\\\\\\\\n<td>Safety — Followed procedures",
+      "?\"\n    ],\n    \"summary\": \"var, data, key, class, function\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 7,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (2)",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 3
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 4,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:44...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\"\n    ],\n    \"summary\": \"var, data, key, class, function\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 7,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (2)",
+        "urgency_score": "0.85",
+        "feasibility_score": "0.41"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"unified_e3_builder (2)",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.45"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.2074,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.04",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "9c82c35f314df5c47312932dc940174b"
+  }
+}

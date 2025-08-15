@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notepad++ Ultimate Clone — Consciousness Enhanced</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Consolas','Monaco','Courier New',monospace; background:#2d2d30; color:#fff; height:100vh; display:flex; flex-direction:column; overflow:hidden; }
+    
+    /* Enhanced Menu Bar */
+    .menu-bar { background:#3c3c3c; border-bottom:1px solid #555; padding:5px 10px; display:flex; gap:20px; }
+    .menu-item { padding:5px 10px; cursor:pointer; border-radius:3px; position:relative; }
+    .menu-item:hover { background:#555; }
+    .dropdown { position:absolute; top:100%; left:0; background:#3c3c3c; border:1px solid #555; border-radius:3px; min-width:250px; display:none; z-index:1000; max-height:400px; overflow-y:auto; }
+    .dropdown-item { padding:8px 15px; cursor:pointer; border-bottom:1px solid #555; display:flex; justify-content:space-between; }
+    .dropdown-item:hover { background:#555; }
+    .dropdown-submenu { position:relative; }
+    .dropdown-submenu .dropdown { left:100%; top:0; }
+    
+    /* Enhanced Toolbar */
+    .toolbar { background:#404040; padding:8px; border-bottom:1px solid #555; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+    .toolbar button { background:#555; color:#fff; border:none; padding:6px 12px; border-radius:3px; cursor:pointer; font-size:12px; }
+    .toolbar button:hover { background:#666; }
+    .toolbar button.active { background:#007acc; }
+    .toolbar input, .toolbar select { background:#333; color:#fff; border:1px solid #555; padding:4px 8px; border-radius:3px; font-size:12px; }
+    .toolbar .separator { border-left:1px solid #666; height:20px; margin:0 5px; }
+    
+    /* Split View Container */
+    .main-container { display:flex; flex:1; overflow:hidden; }
+    .editor-group { display:flex; flex:1; position:relative; }
+    .editor-group.split-vertical { flex-direction:column; }
+    .editor-group.split-horizontal { flex-direction:row; }
+    .split-handle { background:#555; cursor:col-resize; width:4px; }
+    .split-handle.horizontal { cursor:row-resize; height:4px; width:auto; }
+    
+    /* Enhanced Sidebar */
+    .sidebar { width:300px; background:#252526; border-right:1px solid #555; display:flex; flex-direction:column; resize:horizontal; overflow:auto; }
+    .sidebar-header { background:#3c3c3c; padding:10px; border-bottom:1px solid #555; font-size:12px; font-weight:bold; display:flex; justify-content:space-between; align-items:center; }
+    .sidebar-tab { background:#404040; color:#ccc; padding:8px 15px; cursor:pointer; border-bottom:1px solid #555; font-size:12px; display:flex; justify-content:space-between; }
+    .sidebar-tab.active { background:#252526; color:#fff; border-left:3px solid #007acc; }
+    .sidebar-content { display:none; flex:1; overflow-y:auto; }
+    .sidebar-content.active { display:block; }
+    
+    /* Project Tree */
+    .tree-item { padding:4px 8px; cursor:pointer; border-radius:3px; font-size:12px; display:flex; align-items:center; gap:5px; }
+    .tree-item:hover { background:#444; }
+    .tree-item.folder::before { content:'📁'; }
+    .tree-item.file::before { content:'📄'; }
+    .tree-item.expanded::before { content:'📂'; }
+    .tree-item.indent-1 { padding-left:20px; }
+    .tree-item.indent-2 { padding-left:35px; }
+    .tree-item.indent-3 { padding-left:50px; }
+    
+    /* Enhanced Editor Container */
+    .editor-container { flex:1; display:flex; flex-direction:column; min-width:0; }
+    .tab-bar { background:#2d2d30; border-bottom:1px solid #555; display:flex; overflow-x:auto; position:relative; }
+    .tab { background:#404040; color:#ccc; padding:8px 15px; border-right:1px solid #555; cursor:pointer; min-width:120px; display:flex; justify-content:space-between; align-items:center; position:relative; font-size:12px; }
+    .tab.active { background:#2d2d30; color:#fff; }
+    .tab.modified::after { content:'●'; color:#ffa500; margin-left:5px; }
+    .tab-close { margin-left:8px; padding:2px 6px; background:#666; border-radius:3px; font-size:10px; opacity:0.7; }
+    .tab-close:hover { background:#888; opacity:1; }
+    
+    /* Code Folding & Line Numbers */
+    .editor-area { flex:1; display:flex; position:relative; overflow:hidden; }
+    .gutter { background:#1e1e1e; border-right:1px solid #555; display:flex; user-select:none; }
+    .line-numbers { color:#858585; padding:10px 5px; font-size:14px; line-height:1.5; text-align:right; min-width:50px; }
+    .fold-markers { color:#666; padding:10px 3px; font-size:12px; line-height:1.5; text-align:center; width:20px; cursor:pointer; }
+    .fold-markers:hover { background:#333; }
+    .fold-marker.collapsed::before { content:'▶'; }
+    .fold-marker.expanded::before { content:'▼'; }
+    
+    /* Enhanced Editor */
+    .editor { flex:1; background:#1e1e1e; color:#d4d4d4; font-size:14px; line-height:1.5; padding:10px; border:none; outline:none; resize:none; font-family:inherit; overflow:auto; tab-size:4; }
+    .editor.word-wrap { white-space:pre-wrap; }
+    .editor-overlay { position:absolute; top:0; left:0; right:0; bottom:0; pointer-events:none; padding:10px; line-height:1.5; font-size:14px; color:transparent; overflow:hidden; }
+    
+    /* Syntax Highlighting */
+    .syntax-javascript .keyword { color:#569cd6; font-weight:bold; }
+    .syntax-javascript .string { color:#ce9178; }
+    .syntax-javascript .comment { color:#6a9955; font-style:italic; }
+    .syntax-javascript .number { color:#b5cea8; }
+    .syntax-javascript .function { color:#dcdcaa; }
+    .syntax-javascript .operator { color:#d4d4d4; }
+    .syntax-javascript .variable { color:#9cdcfe; }
+    
+    .syntax-html .tag { color:#569cd6; }
+    .syntax-html .attribute { color:#92c5f7; }
+    .syntax-html .string { color:#ce9178; }
+    .syntax-html .comment { color:#6a9955; }
+    
+    .syntax-css .property { color:#9cdcfe; }
+    .syntax-css .value { color:#ce9178; }
+    .syntax-css .selector { color:#d7ba7d; }
+    .syntax-css .comment { color:#6a9955; }
+    
+    .syntax-python .keyword { color:#569cd6; }
+    .syntax-python .string { color:#ce9178; }
+    .syntax-python .comment { color:#6a9955; }
+    .syntax-python .function { color:#dcdcaa; }
+    
+    /* Multi-cursor */
+    .cursor-secondary { background:rgba(0, 122, 204, 0.3); position:absolute; width:2px; height:18px; pointer-events:none; }
+    
+    /* Status Bar */
+    .status-bar { background:#007acc; color:#fff; padding:5px 10px; font-size:12px; display:flex; justify-content:space-between; border-top:1px solid #555; }
+    .status-segment { display:flex; gap:15px; }
+    .status-item { cursor:pointer; padding:2px 8px; border-radius:3px; }
+    .status-item:hover { background:rgba(255,255,255,0.1); }
+    
+    /* Enhanced Dialogs */
+    .dialog { position:fixed; top:20%; left:50%; transform:translateX(-50%); background:#2d2d30; border:1px solid #555; border-radius:8px; padding:20px; display:none; z-index:1000; min-width:500px; max-width:80vw; box-shadow:0 10px 30px rgba(0,0,0,0.5); }
+    .dialog h3 { color:#fff; margin-bottom:15px; padding-bottom:10px; border-bottom:1px solid #555; }
+    .dialog input, .dialog textarea, .dialog select { width:100%; background:#333; color:#fff; border:1px solid #555; padding:8px; margin:5px 0; border-radius:3px; font-family:inherit; }
+    .dialog textarea { height:200px; resize:vertical; font-family:inherit; }
+    .dialog-buttons { display:flex; justify-content:flex-end; gap:10px; margin-top:15px; }
+    .dialog button { background:#007acc; color:#fff; border:none; padding:8px 16px; border-radius:3px; cursor:pointer; }
+    .dialog button:hover { background:#005a9e; }
+    .dialog button.secondary { background:#555; }
+    .dialog button.secondary:hover { background:#666; }
+    
+    /* Find Panel */
+    .find-panel { position:absolute; top:0; right:20px; background:#3c3c3c; border:1px solid #555; border-radius:5px; padding:15px; display:none; z-index:100; min-width:350px; }
+    .find-row { display:flex; gap:5px; margin:5px 0; align-items:center; }
+    .find-row input { flex:1; background:#333; color:#fff; border:1px solid #555; padding:6px; border-radius:3px; }
+    .find-row button { background:#555; color:#fff; border:none; padding:6px 12px; border-radius:3px; cursor:pointer; }
+    .find-options { display:flex; gap:10px; margin:10px 0; }
+    .find-options label { font-size:12px; display:flex; align-items:center; gap:5px; }
+    
+    /* Theme Support */
+    .theme-dark { background:#2d2d30; color:#fff; }
+    .theme-light { background:#f3f3f3; color:#000; }
+    .theme-high-contrast { background:#000; color:#fff; }
+    
+    /* Minimap */
+    .minimap { width:120px; background:#1a1a1a; border-left:1px solid #555; position:relative; overflow:hidden; cursor:pointer; }
+    .minimap-content { font-size:1px; line-height:2px; color:#666; padding:2px; transform-origin:top left; transform:scale(0.08); width:1500px; height:auto; pointer-events:none; }
+    .minimap-viewport { position:absolute; left:0; right:10px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2); pointer-events:none; }
+    
+    /* Auto-complete */
+    .autocomplete { position:absolute; background:#3c3c3c; border:1px solid #555; border-radius:3px; max-height:200px; overflow-y:auto; z-index:200; display:none; min-width:200px; }
+    .autocomplete-item { padding:8px 12px; cursor:pointer; font-size:12px; display:flex; align-items:center; gap:8px; }
+    .autocomplete-item:hover, .autocomplete-item.selected { background:#555; }
+    .autocomplete-icon { width:16px; text-align:center; }
+    
+    /* Enhanced KPIs */
+    .kpi { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:8px; margin:10px 0; }
+    .kpi .card { background:#1f1f1f; border:1px solid #444; padding:10px; border-radius:6px; }
+    .kpi .card .label { color:#9bb7d0; font-size:11px; margin-bottom:4px; }
+    .kpi .card .value { font-size:16px; font-weight:bold; color:#fff; }
+    
+    /* Plugin System */
+    .plugin-item { padding:8px 12px; border:1px solid #444; border-radius:4px; margin:5px 0; background:#1f1f1f; }
+    .plugin-header { display:flex; justify-content:space-between; align-items:center; }
+    .plugin-name { font-weight:bold; color:#007acc; }
+    .plugin-version { font-size:10px; color:#666; }
+    .plugin-desc { font-size:11px; color:#ccc; margin:5px 0; }
+    .plugin-toggle { background:#007acc; color:#fff; border:none; padding:4px 8px; border-radius:3px; cursor:pointer; font-size:10px; }
+    .plugin-toggle.disabled { background:#666; }
+    
+    /* Macro System */
+    .macro-item { display:flex; justify-content:space-between; align-items:center; padding:5px 8px; border-radius:3px; margin:2px 0; }
+    .macro-item:hover { background:#333; }
+    .macro-name { font-size:12px; }
+    .macro-controls { display:flex; gap:5px; }
+    .macro-btn { background:#555; border:none; color:#fff; padding:2px 6px; border-radius:2px; cursor:pointer; font-size:10px; }
+    .macro-btn:hover { background:#666; }
+    
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .sidebar { width:250px; }
+      .minimap { width:80px; }
+    }
+    @media (max-width: 800px) {
+      .toolbar { flex-wrap:wrap; }
+      .sidebar { width:200px; }
+      .minimap { display:none; }
+    }
+    
+    /* Loading and Error States */
+    .loading { opacity:0.6; pointer-events:none; }
+    .error-highlight { background:rgba(255, 0, 0, 0.2) !important; }
+    .warning-highlight { background:rgba(255, 165, 0, 0.2) !important; }
+    
+    /* Scrollbars */
+    ::-webkit-scrollbar { width:10px; height:10px; }
+    ::-webkit-scrollbar-track { background:#2d2d30; }
+    ::-webkit-scrollbar-thumb { background:#555; border-radius:5px; }
+    ::-webkit-scrollbar-thumb:hover { background:#666; }
+  </style>
+</head>
+<body class="theme-dark">
+  <!-- Enhanced Menu Bar -->
+  <div class="menu-bar">
+    <div class="menu-item" onclick="toggleDropdown('file-menu', event)">File
+      <div class="dropdown" id="file-menu">
+        <div class="dropdown-item" onclick="newFile()">New <span>Ctrl+N</span></div>
+        <div class="dropdown-item" onclick="openFile()">Open <span>Ctrl+O</span></div>
+        <div class="dropdown-item" onclick="openFolder()">Open Folder <span>Ctrl+K Ctrl+O</span></div>
+        <div class="dropdown-item dropdown-submenu">Recent Files <span>▶</span>
+          <div class="dropdown" id="recent-files">
+            <div class="dropdown-item">example.txt</div>
+            <div class="dropdown-item">script.js</div>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="saveFile()">Save <span>Ctrl+S</span></div>
+        <div class="dropdown-item" onclick="saveAsFile()">Save As <span>Ctrl+Shift+S</span></div>
+        <div class="dropdown-item" onclick="saveAllFiles()">Save All <span>Ctrl+Shift+Alt+S</span></div>
+        <div class="dropdown-item" onclick="reloadFile()">Reload from Disk</div>
+        <div class="dropdown-item" onclick="closeCurrentTab()">Close <span>Ctrl+W</span></div>
+        <div class="dropdown-item" onclick="closeOtherTabs()">Close Others</div>
+        <div class="dropdown-item" onclick="closeAllTabs()">Close All</div>
+        <div class="dropdown-item" onclick="newWindow()">New Window <span>Ctrl+Shift+N</span></div>
+        <div class="dropdown-item" onclick="saveSession()">Save Session</div>
+        <div class="dropdown-item" onclick="loadSession()">Load Session</div>
+        <div class="dropdown-item" onclick="exportAsHtml()">Export as HTML</div>
+        <div class="dropdown-item" onclick="printFile()">Print <span>Ctrl+P</span></div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('edit-menu', event)">Edit
+      <div class="dropdown" id="edit-menu">
+        <div class="dropdown-item" onclick="undo()">Undo <span>Ctrl+Z</span></div>
+        <div class="dropdown-item" onclick="redo()">Redo <span>Ctrl+Y</span></div>
+        <div class="dropdown-item" onclick="cut()">Cut <span>Ctrl+X</span></div>
+        <div class="dropdown-item" onclick="copy()">Copy <span>Ctrl+C</span></div>
+        <div class="dropdown-item" onclick="paste()">Paste <span>Ctrl+V</span></div>
+        <div class="dropdown-item" onclick="selectAll()">Select All <span>Ctrl+A</span></div>
+        <div class="dropdown-item" onclick="duplicateLine()">Duplicate Line <span>Ctrl+D</span></div>
+        <div class="dropdown-item" onclick="deleteLine()">Delete Line <span>Ctrl+L</span></div>
+        <div class="dropdown-item" onclick="moveLineUp()">Move Line Up <span>Ctrl+Shift+Up</span></div>
+        <div class="dropdown-item" onclick="moveLineDown()">Move Line Down <span>Ctrl+Shift+Down</span></div>
+        <div class="dropdown-item" onclick="toggleCase()">Toggle Case <span>Ctrl+U</span></div>
+        <div class="dropdown-item" onclick="toggleComment()">Toggle Comment <span>Ctrl+/</span></div>
+        <div class="dropdown-item" onclick="blockComment()">Block Comment <span>Ctrl+Shift+/</span></div>
+        <div class="dropdown-item" onclick="increaseIndent()">Increase Indent <span>Tab</span></div>
+        <div class="dropdown-item" onclick="decreaseIndent()">Decrease Indent <span>Shift+Tab</span></div>
+        <div class="dropdown-item" onclick="insertDateTime()">Insert Date/Time <span>F5</span></div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('search-menu', event)">Search
+      <div class="dropdown" id="search-menu">
+        <div class="dropdown-item" onclick="showFindPanel()">Find <span>Ctrl+F</span></div>
+        <div class="dropdown-item" onclick="showReplacePanel()">Replace <span>Ctrl+H</span></div>
+        <div class="dropdown-item" onclick="findInFiles()">Find in Files <span>Ctrl+Shift+F</span></div>
+        <div class="dropdown-item" onclick="replaceInFiles()">Replace in Files <span>Ctrl+Shift+H</span></div>
+        <div class="dropdown-item" onclick="findNext()">Find Next <span>F3</span></div>
+        <div class="dropdown-item" onclick="findPrevious()">Find Previous <span>Shift+F3</span></div>
+        <div class="dropdown-item" onclick="goToLine()">Go to Line <span>Ctrl+G</span></div>
+        <div class="dropdown-item" onclick="goToDefinition()">Go to Definition <span>F12</span></div>
+        <div class="dropdown-item" onclick="toggleBookmark()">Toggle Bookmark <span>Ctrl+F2</span></div>
+        <div class="dropdown-item" onclick="nextBookmark()">Next Bookmark <span>F2</span></div>
+        <div class="dropdown-item" onclick="clearAllBookmarks()">Clear All Bookmarks</div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('view-menu', event)">View
+      <div class="dropdown" id="view-menu">
+        <div class="dropdown-item" onclick="zoomIn()">Zoom In <span>Ctrl++</span></div>
+        <div class="dropdown-item" onclick="zoomOut()">Zoom Out <span>Ctrl+-</span></div>
+        <div class="dropdown-item" onclick="resetZoom()">Reset Zoom <span>Ctrl+0</span></div>
+        <div class="dropdown-item" onclick="toggleSidebar()">Toggle Sidebar <span>Ctrl+B</span></div>
+        <div class="dropdown-item" onclick="toggleLineNumbers()">Toggle Line Numbers</div>
+        <div class="dropdown-item" onclick="toggleMinimap()">Toggle Minimap</div>
+        <div class="dropdown-item" onclick="toggleWordWrap()">Toggle Word Wrap <span>Alt+Z</span></div>
+        <div class="dropdown-item" onclick="toggleCodeFolding()">Toggle Code Folding</div>
+        <div class="dropdown-item" onclick="splitViewVertical()">Split View Vertical</div>
+        <div class="dropdown-item" onclick="splitViewHorizontal()">Split View Horizontal</div>
+        <div class="dropdown-item" onclick="closeSplitView()">Close Split View</div>
+        <div class="dropdown-item dropdown-submenu">Themes <span>▶</span>
+          <div class="dropdown">
+            <div class="dropdown-item" onclick="setTheme('dark')">Dark</div>
+            <div class="dropdown-item" onclick="setTheme('light')">Light</div>
+            <div class="dropdown-item" onclick="setTheme('high-contrast')">High Contrast</div>
+          </div>
+        </div>
+        <div class="dropdown-item" onclick="toggleFullscreen()">Toggle Fullscreen <span>F11</span></div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('language-menu', event)">Language
+      <div class="dropdown" id="language-menu">
+        <div class="dropdown-item" onclick="setLanguage('text')">Plain Text</div>
+        <div class="dropdown-item" onclick="setLanguage('javascript')">JavaScript</div>
+        <div class="dropdown-item" onclick="setLanguage('typescript')">TypeScript</div>
+        <div class="dropdown-item" onclick="setLanguage('html')">HTML</div>
+        <div class="dropdown-item" onclick="setLanguage('css')">CSS</div>
+        <div class="dropdown-item" onclick="setLanguage('python')">Python</div>
+        <div class="dropdown-item" onclick="setLanguage('java')">Java</div>
+        <div class="dropdown-item" onclick="setLanguage('cpp')">C++</div>
+        <div class="dropdown-item" onclick="setLanguage('json')">JSON</div>
+        <div class="dropdown-item" onclick="setLanguage('xml')">XML</div>
+        <div class="dropdown-item" onclick="setLanguage('markdown')">Markdown</div>
+        <div class="dropdown-item" onclick="setLanguage('yaml')">YAML</div>
+        <div class="dropdown-item" onclick="setLanguage('sql')">SQL</div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('tools-menu', event)">Tools
+      <div class="dropdown" id="tools-menu">
+        <div class="dropdown-item" onclick="formatCode()">Format Code <span>Shift+Alt+F</span></div>
+        <div class="dropdown-item" onclick="validateSyntax()">Validate Syntax</div>
+        <div class="dropdown-item" onclick="runCode()">Run Code <span>Ctrl+F5</span></div>
+        <div class="dropdown-item" onclick="showCommandPalette()">Command Palette <span>Ctrl+Shift+P</span></div>
+        <div class="dropdown-item" onclick="analyzeConsciousness()">Consciousness Analysis <span>Ctrl+Alt+A</span></div>
+        <div class="dropdown-item" onclick="showMacroDialog()">Macros <span>Ctrl+Alt+M</span></div>
+        <div class="dropdown-item" onclick="showPluginManager()">Plugin Manager</div>
+        <div class="dropdown-item" onclick="showPreferences()">Preferences <span>Ctrl+,</span></div>
+        <div class="dropdown-item" onclick="showEncodingDialog()">Encoding</div>
+        <div class="dropdown-item" onclick="convertEOL()">Convert EOL</div>
+        <div class="dropdown-item" onclick="exportInsights()">Export Insights JSON</div>
+      </div>
+    </div>
+
+    <div class="menu-item" onclick="toggleDropdown('help-menu', event)">Help
+      <div class="dropdown" id="help-menu">
+        <div class="dropdown-item" onclick="showKeyboardShortcuts()">Keyboard Shortcuts</div>
+        <div class="dropdown-item" onclick="showAbout()">About</div>
+        <div class="dropdown-item" onclick="checkForUpdates()">Check for Updates</div>
+        <div class="dropdown-item" onclick="showUserGuide()">User Guide</div>
+        <div class="dropdown-item" onclick="reportIssue()">Report Issue</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Toolbar -->
+  <div class="toolbar">
+    <button onclick="newFile()" title="New File (Ctrl+N)">📄</button>
+    <button onclick="openFile()" title="Open (Ctrl+O)">📁</button>
+    <button onclick="saveFile()" title="Save (Ctrl+S)">💾</button>
+    <button onclick="saveAllFiles()" title="Save All">💾*</button>
+    <div class="separator"></div>
+    <button onclick="undo()" title="Undo (Ctrl+Z)">↶</button>
+    <button onclick="redo()" title="Redo (Ctrl+Y)">↷</button>
+    <div class="separator"></div>
+    <button onclick="cut()" title="Cut (Ctrl+X)">✂️</button>
+    <button onclick="copy()" title="Copy (Ctrl+C)">📋</button>
+    <button onclick="paste()" title="Paste (Ctrl+V)">📄</button>
+    <div class="separator"></div>
+    <button onclick="showFindPanel()" title="Find (Ctrl+F)">🔍</button>
+    <button onclick="showReplacePanel()" title="Replace (Ctrl+H)">🔄</button>
+    <div class="separator"></div>
+    <button onclick="toggleMultiCursor()" id="multi-cursor-btn" title="Multi-cursor Mode (Alt+Click)">⚡</button>
+    <button onclick="formatCode()" title="Format Code (Shift+Alt+F)">🎨</button>
+    <button onclick="toggleComment()" title="Toggle Comment (Ctrl+/)">💬</button>
+    <div class="separator"></div>
+    <button onclick="analyzeConsciousness()" title="Consciousness Analysis" style="background:#007acc;">🧠</button>
+    <div class="separator"></div>
+    
+    <select id="syntax-mode" onchange="changeSyntaxMode()" title="Language Mode">
+      <option value="text">Plain Text</option>
+      <option value="javascript">JavaScript</option>
+      <option value="typescript">TypeScript</option>
+      <option value="html">HTML</option>
+      <option value="css">CSS</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="cpp">C++</option>
+      <option value="json">JSON</option>
+      <option value="xml">XML</option>
+      <option value="markdown">Markdown</option>
+      <option value="yaml">YAML</option>
+      <option value="sql">SQL</option>
+    </select>
+    
+    <select id="encoding" onchange="changeEncoding()" title="File Encoding">
+      <option value="utf-8" selected>UTF-8</option>
+      <option value="utf-16">UTF-16</option>
+      <option value="ascii">ASCII</option>
+      <option value="iso-8859-1">ISO-8859-1</option>
+    </select>
+    
+    <select id="eol-mode" onchange="changeEOL()" title="Line Endings">
+      <option value="lf" selected>LF (Unix)</option>
+      <option value="crlf">CRLF (Windows)</option>
+      <option value="cr">CR (Mac)</option>
+    </select>
+    
+    <div class="separator"></div>
+    <div class="zoom-controls">
+      <button onclick="zoomOut()" title="Zoom Out (Ctrl+-)">🔍-</button>
+      <span id="zoom-level" title="Current Zoom">100%</span>
+      <button onclick="zoomIn()" title="Zoom In (Ctrl++)">🔍+</button>
+    </div>
+  </div>
+
+  <!-- Main Container with Split View Support -->
+  <div class="main-container">
+    <!-- Enhanced Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-tab active" onclick="switchSidebarTab('explorer')">📁 Explorer</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('search')">🔍 Search</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('git')">🌿 Git</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('functions')">⚡ Outline</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('bookmarks')">🔖 Bookmarks</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('macros')">🎯 Macros</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('plugins')">🔌 Plugins</div>
+      <div class="sidebar-tab" onclick="switchSidebarTab('insights')">🧠 Insights</div>
+
+      <!-- Explorer Panel -->
+      <div class="sidebar-content active" id="explorer-content">
+        <div class="sidebar-header">
+          Explorer
+          <div>
+            <button onclick="refreshExplorer()" title="Refresh">🔄</button>
+            <button onclick="newFileInExplorer()" title="New File">📄</button>
+            <button onclick="newFolderInExplorer()" title="New Folder">📁</button>
+          </div>
+        </div>
+        <div class="file-tree" id="file-tree">
+          <div class="tree-item folder" onclick="toggleFolder(this)">📁 Project Root</div>
+          <div class="tree-item file indent-1" onclick="openFileFromTree('README.md')">📄 README.md</div>
+          <div class="tree-item file indent-1" onclick="openFileFromTree('index.html')">📄 index.html</div>
+          <div class="tree-item folder indent-1" onclick="toggleFolder(this)">📁 src</div>
+          <div class="tree-item file indent-2" onclick="openFileFromTree('src/main.js')">📄 main.js</div>
+          <div class="tree-item file indent-2" onclick="openFileFromTree('src/style.css')">📄 style.css</div>
+        </div>
+      </div>
+
+      <!-- Search Panel -->
+      <div class="sidebar-content" id="search-content">
+        <div class="sidebar-header">Search & Replace</div>
+        <div style="padding:10px;">
+          <input type="text" id="global-search" placeholder="Search across files..." style="width:100%; margin-bottom:10px;">
+          <input type="text" id="global-replace" placeholder="Replace with..." style="width:100%; margin-bottom:10px;">
+          <div style="display:flex; gap:5px; margin-bottom:10px;">
+            <button onclick="searchInAllFiles()">Search All</button>
+            <button onclick="replaceInAllFiles()">Replace All</button>
+          </div>
+          <div id="search-results" style="max-height:300px; overflow-y:auto;"></div>
+        </div>
+      </div>
+
+      <!-- Git Panel -->
+      <div class="sidebar-content" id="git-content">
+        <div class="sidebar-header">Source Control</div>
+        <div style="padding:10px;">
+          <div>📊 <strong>Status:</strong> Working tree clean</div>
+          <div>🌿 <strong>Branch:</strong> main</div>
+          <div style="margin-top:15px;">
+            <button onclick="gitStatus()" style="width:100%; margin-bottom:5px;">Check Status</button>
+            <button onclick="gitCommit()" style="width:100%; margin-bottom:5px;">Commit Changes</button>
+            <button onclick="gitPush()" style="width:100%;">Push to Remote</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Functions/Outline Panel -->
+      <div class="sidebar-content" id="functions-content">
+        <div class="sidebar-header">
+          Outline
+          <button onclick="refreshOutline()" title="Refresh">🔄</button>
+        </div>
+        <div class="function-list" id="function-list">
+          <div style="color:#666; font-style:italic; padding:10px;">No symbols found</div>
+        </div>
+      </div>
+
+      <!-- Bookmarks Panel -->
+      <div class="sidebar-content" id="bookmarks-content">
+        <div class="sidebar-header">
+          Bookmarks
+          <button onclick="clearAllBookmarks()" title="Clear All">🗑️</button>
+        </div>
+        <div class="bookmarks-list" id="bookmarks-list">
+          <div style="color:#666; font-style:italic; padding:10px;">No bookmarks</div>
+        </div>
+      </div>
+
+      <!-- Macros Panel -->
+      <div class="sidebar-content" id="macros-content">
+        <div class="sidebar-header">
+          Macros
+          <div>
+            <button onclick="recordMacro()" id="record-btn" title="Record">⏺️</button>
+            <button onclick="stopRecording()" id="stop-btn" title="Stop" style="display:none;">⏹️</button>
+            <button onclick="playMacro()" title="Play">▶️</button>
+          </div>
+        </div>
+        <div id="macro-list" style="padding:10px;">
+          <div class="macro-item">
+            <span class="macro-name">Sample Macro</span>
+            <div class="macro-controls">
+              <button class="macro-btn" onclick="editMacro(0)">Edit</button>
+              <button class="macro-btn" onclick="playMacroByIndex(0)">Play</button>
+              <button class="macro-btn" onclick="deleteMacro(0)">Del</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plugins Panel -->
+      <div class="sidebar-content" id="plugins-content">
+        <div class="sidebar-header">Plugin Manager</div>
+        <div style="padding:10px;">
+          <div class="plugin-item">
+            <div class="plugin-header">
+              <span class="plugin-name">Auto-Complete</span>
+              <button class="plugin-toggle" onclick="togglePlugin('autocomplete')">Enabled</button>
+            </div>
+            <div class="plugin-desc">Provides intelligent code completion</div>
+          </div>
+          
+          <div class="plugin-item">
+            <div class="plugin-header">
+              <span class="plugin-name">Syntax Checker</span>
+              <button class="plugin-toggle" onclick="togglePlugin('syntax')">Enabled</button>
+            </div>
+            <div class="plugin-desc">Real-time syntax validation</div>
+          </div>
+          
+          <div class="plugin-item">
+            <div class="plugin-header">
+              <span class="plugin-name">Code Formatter</span>
+              <button class="plugin-toggle" onclick="togglePlugin('formatter')">Enabled</button>
+            </div>
+            <div class="plugin-desc">Automatic code formatting</div>
+          </div>
+          
+          <div class="plugin-item">
+            <div class="plugin-header">
+              <span class="plugin-name">Consciousness AI</span>
+              <button class="plugin-toggle" onclick="togglePlugin('consciousness')">Enabled</button>
+            </div>
+            <div class="plugin-desc">AI-powered consciousness analysis</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Insights Panel -->
+      <div class="sidebar-content" id="insights-content">
+        <div class="sidebar-header">
+          Consciousness Insights
+          <button onclick="analyzeConsciousness()" title="Run Analysis">🧠</button>
+        </div>
+        <div style="padding:10px;">
+          <button onclick="analyzeConsciousness()" style="width:100%; margin-bottom:15px;">Run Full Analysis</button>
+          
+          <div class="kpi" id="insight-kpi">
+            <div class="card">
+              <div class="label">Consciousness Score</div>
+              <div class="value" id="kpi-score">—</div>
+            </div>
+            <div class="card">
+              <div class="label">Complexity</div>
+              <div class="value" id="kpi-complexity">—</div>
+            </div>
+            <div class="card">
+              <div class="label">Entropy</div>
+              <div class="value" id="kpi-entropy">—</div>
+            </div>
+            <div class="card">
+              <div class="label">Meta-awareness</div>
+              <div class="value" id="kpi-meta">—</div>
+            </div>
+            <div class="card">
+              <div class="label">Intent</div>
+              <div class="value" id="kpi-intent">—</div>
+            </div>
+            <div class="card">
+              <div class="label">Recursion</div>
+              <div class="value" id="kpi-recursion">—</div>
+            </div>
+          </div>
+          
+          <div style="margin-top:15px;">
+            <strong>Analysis Results:</strong>
+            <ul id="insight-list" style="margin:10px 0; font-size:12px; color:#ddd;">
+              <li>• Ready for analysis</li>
+            </ul>
+          </div>
+          
+          <div style="margin-top:15px;">
+            <button onclick="exportInsights()" style="width:100%; margin-bottom:5px;">Export JSON</button>
+            <button onclick="shareInsights()" style="width:100%;">Share Analysis</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editor Group with Split View Support -->
+    <div class="editor-group" id="main-editor-group">
+      <div class="editor-container">
+        <div class="tab-bar" id="tab-bar"></div>
+        <div class="editor-area">
+          <div class="gutter">
+            <div class="fold-markers" id="fold-markers">
+              <div class="fold-marker expanded" onclick="toggleFold(1)"></div>
+            </div>
+            <div class="line-numbers" id="line-numbers">1</div>
+          </div>
+          <textarea class="editor" id="main-editor" 
+                   placeholder="Welcome to Notepad++ Ultimate Clone!
+
+Start typing to begin...
+
+Features:
+• Advanced syntax highlighting for 15+ languages
+• Multi-cursor editing (Alt+Click)
+• Code folding and outlining
+• Powerful find/replace with regex
+• Plugin system
+• Macro recording and playback
+• Split view editing
+• Git integration
+• Consciousness analysis
+• And much more!
+
+Try Ctrl+Shift+P for the command palette."></textarea>
+          <div class="editor-overlay" id="editor-overlay"></div>
+          <div class="minimap" id="minimap">
+            <div class="minimap-content" id="minimap-content"></div>
+            <div class="minimap-viewport" id="minimap-viewport"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enhanced Status Bar -->
+  <div class="status-bar">
+    <div class="status-segment">
+      <div class="status-item" id="file-status">Ready</div>
+      <div class="status-item" id="cursor-position">Ln 1, Col 1</div>
+      <div class="status-item" id="selection-info">Sel 0</div>
+      <div class="status-item" id="word-count">Words: 0</div>
+    </div>
+    <div class="status-segment">
+      <div class="status-item" id="encoding-status" onclick="showEncodingDialog()">UTF-8</div>
+      <div class="status-item" id="eol-status" onclick="convertEOL()">LF</div>
+      <div class="status-item" id="syntax-status">Plain Text</div>
+      <div class="status-item" id="zoom-status">100%</div>
+      <div class="status-item" id="insights-status">CScore: —</div>
+      <div class="status-item" id="macro-status" style="display:none;">● REC</div>
+    </div>
+  </div>
+
+  <!-- Enhanced Find Panel -->
+  <div class="find-panel" id="find-panel">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+      <strong>Find & Replace</strong>
+      <button onclick="closeFindPanel()" style="background:none; border:none; color:#fff; cursor:pointer;">✕</button>
+    </div>
+    
+    <div class="find-row">
+      <input type="text" id="find-input" placeholder="Find">
+      <button onclick="findNext()">⬇</button>
+      <button onclick="findPrevious()">⬆</button>
+      <button onclick="findAll()">All</button>
+    </div>
+    
+    <div class="find-row">
+      <input type="text" id="replace-input" placeholder="Replace">
+      <button onclick="replaceNext()">Replace</button>
+      <button onclick="replaceAll()">All</button>
+    </div>
+    
+    <div class="find-options">
+      <label><input type="checkbox" id="match-case"> Aa Match case</label>
+      <label><input type="checkbox" id="whole-word"> Ab Whole word</label>
+      <label><input type="checkbox" id="regex-mode"> .* Regex</label>
+    </div>
+    
+    <div id="find-results" style="font-size:11px; color:#999; margin-top:10px;"></div>
+  </div>
+
+  <!-- Auto-complete -->
+  <div class="autocomplete" id="autocomplete"></div>
+
+  <!-- Enhanced Dialogs -->
+  <div class="dialog" id="preferences-dialog">
+    <h3>Preferences</h3>
+    <div style="display:grid; grid-template-columns:200px 1fr; gap:20px;">
+      <div>
+        <div style="font-weight:bold; margin-bottom:10px;">Categories:</div>
+        <div onclick="showPrefCategory('general')" style="padding:5px; cursor:pointer; border-radius:3px;" class="pref-category active">General</div>
+        <div onclick="showPrefCategory('editor')" style="padding:5px; cursor:pointer; border-radius:3px;" class="pref-category">Editor</div>
+        <div onclick="showPrefCategory('appearance')" style="padding:5px; cursor:pointer; border-radius:3px;" class="pref-category">Appearance</div>
+        <div onclick="showPrefCategory('advanced')" style="padding:5px; cursor:pointer; border-radius:3px;" class="pref-category">Advanced</div>
+      </div>
+      <div id="pref-content">
+        <!-- Preference content will be loaded here -->
+      </div>
+    </div>
+    <div class="dialog-buttons">
+      <button onclick="applyPreferences()">Apply</button>
+      <button onclick="savePreferences()">OK</button>
+      <button class="secondary" onclick="closeDialog('preferences-dialog')">Cancel</button>
+    </div>
+  </div>
+
+  <div class="dialog" id="command-palette">
+    <h3>Command Palette</h3>
+    <input type="text" id="command-input" placeholder="Type a command..." onkeyup="filterCommands()" style="margin-bottom:15px;">
+    <div id="command-list" style="max-height:300px; overflow-y:auto;">
+      <!-- Commands will be populated here -->
+    </div>
+  </div>
+
+  <div class="dialog" id="macro-dialog">
+    <h3>Macro Manager</h3>
+    <div style="display:flex; gap:15px; height:300px;">
+      <div style="flex:1;">
+        <strong>Recorded Macros:</strong>
+        <div id="macro-dialog-list" style="border:1px solid #555; height:200px; overflow-y:auto; margin:10px 0;"></div>
+        <div>
+          <button onclick="startMacroRecording()">Record New</button>
+          <button onclick="deleteMacroDialog()">Delete</button>
+        </div>
+      </div>
+      <div style="flex:1;">
+        <strong>Macro Details:</strong>
+        <textarea id="macro-details" style="height:200px;" placeholder="Macro commands will appear here..."></textarea>
+        <button onclick="saveMacroChanges()">Save Changes</button>
+      </div>
+    </div>
+    <div class="dialog-buttons">
+      <button onclick="closeDialog('macro-dialog')">Close</button>
+    </div>
+  </div>
+
+  <div class="dialog" id="keyboard-shortcuts">
+    <h3>Keyboard Shortcuts</h3>
+    <div style="max-height:400px; overflow-y:auto;">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr style="border-bottom:1px solid #555;">
+          <th style="text-align:left; padding:8px;">Command</th>
+          <th style="text-align:left; padding:8px;">Shortcut</th>
+        </tr>
+        <tr><td>New File</td><td>Ctrl+N</td></tr>
+        <tr><td>Open File</td><td>Ctrl+O</td></tr>
+        <tr><td>Save</td><td>Ctrl+S</td></tr>
+        <tr><td>Find</td><td>Ctrl+F</td></tr>
+        <tr><td>Replace</td><td>Ctrl+H</td></tr>
+        <tr><td>Go to Line</td><td>Ctrl+G</td></tr>
+        <tr><td>Comment Toggle</td><td>Ctrl+/</td></tr>
+        <tr><td>Format Code</td><td>Shift+Alt+F</td></tr>
+        <tr><td>Multi-cursor</td><td>Alt+Click</td></tr>
+        <tr><td>Command Palette</td><td>Ctrl+Shift+P</td></tr>
+        <tr><td>Consciousness Analysis</td><td>Ctrl+Alt+A</td></tr>
+      </table>
+    </div>
+    <div class="dialog-buttons">
+      <button onclick="closeDialog('keyboard-shortcuts')">Close</button>
+    </div>
+  </div>
+
+  <!-- File Input -->
+  <input type="file" id="file-input" style="display:none;" multiple accept="*/*">
+
+  <script>
+    // Enhanced Global State
+    let tabs = [];
+    let activeTabIndex = 0;
+    let fileContent = {};
+    let fileHistory = {};
+    let redoHistory = {};
+    let suppressHistory = false;
+    
+    let bookmarks = {};
+    let currentZoom = 100;
+    let settings = {
+      theme: 'dark',
+      fontSize: 14,
+      tabSize: 4,
+      wordWrap: false,
+      lineNumbers: true,
+      minimap: true,
+      autoComplete: true,
+      codefolding: true,
+      multiCursor: false
+    };
+    
+    let macros = [];
+    let isRecordingMacro = false;
+    let currentMacro = [];
+    
+    let plugins = {
+      autocomplete: true,
+      syntax: true,
+      formatter: true,
+      consciousness: true
+    };
+    
+    let multiCursors = [];
+    let lastInsights = null;
+    let splitViewActive = false;
+    
+    const PHI = 1.618033988749;
+
+    // Enhanced Initialization
+    function init() {
+      newFile();
+      setupEventListeners();
+      loadSettingsFromStorage();
+      setupCommandPalette();
+      initializePlugins();
+      updateStatusBar();
+    }
+
+    function setupEventListeners() {
+      const editor = document.getElementById('main-editor');
+      const fileInput = document.getElementById('file-input');
+
+      editor.addEventListener('input', handleEditorChange);
+      editor.addEventListener('scroll', () => { updateMinimap(); syncLineNumberScroll(); });
+      editor.addEventListener('click', handleEditorClick);
+      editor.addEventListener('keyup', updateCursorPosition);
+      editor.addEventListener('select', updateSelection);
+      editor.addEventListener('keydown', handleEditorKeydown);
+
+      document.addEventListener('keydown', handleGlobalKeyboard);
+      document.addEventListener('click', closeDropdowns);
+      window.addEventListener('beforeunload', handleBeforeUnload);
+      fileInput.addEventListener('change', handleFileLoad);
+
+      // Enhanced editor events
+      editor.addEventListener('contextmenu', showContextMenu);
+      editor.addEventListener('dblclick', handleDoubleClick);
+    }
+
+    // Enhanced File Management
+    function newFile() {
+      const tabId = generateTabId();
+      const fileName = `Untitled-${tabs.length + 1}`;
+      
+      const tab = {
+        id: tabId,
+        name: fileName,
+        filePath: null,
+        content: '',
+        modified: false,
+        syntaxMode: 'text',
+        encoding: 'utf-8',
+        eol: 'lf',
+        cursorPosition: 0,
+        scrollPosition: 0
+      };
+
+      tabs.push(tab);
+      fileContent[tabId] = '';
+      fileHistory[tabId] = [''];
+      redoHistory[tabId] = [];
+      
+      createTab(tabId, fileName);
+      switchToTab(tabs.length - 1);
+      updateStatusBar('New file created');
+    }
+
+    function openFile() {
+      document.getElementById('file-input').click();
+    }
+
+    function openFolder() {
+      // Simulate folder opening
+      updateStatusBar('Folder opened in explorer');
+      // In a real implementation, this would use the File System Access API
+    }
+
+    function handleFileLoad(event) {
+      const files = Array.from(event.target.files);
+      files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const content = e.target.result;
+          const tabId = generateTabId();
+          const syntaxMode = detectSyntaxMode(file.name);
+
+          const tab = {
+            id: tabId,
+            name: file.name,
+            filePath: file.name,
+            content: content,
+            modified: false,
+            syntaxMode: syntaxMode,
+            encoding: 'utf-8',
+            eol: detectEOL(content),
+            cursorPosition: 0,
+            scrollPosition: 0
+          };
+
+          tabs.push(tab);
+          fileContent[tabId] = content;
+          fileHistory[tabId] = [content];
+          redoHistory[tabId] = [];
+          
+          createTab(tabId, file.name);
+          switchToTab(tabs.length - 1);
+          applySyntaxHighlighting();
+          updateFunctionList();
+          updateStatusBar(`Opened ${file.name}`);
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    // Enhanced Editor Functions
+    function handleEditorChange() {
+      const currentTab = tabs[activeTabIndex];
+      if (!currentTab) return;
+
+      const editor = document.getElementById('main-editor');
+      const content = editor.value;
+      
+      fileContent[currentTab.id] = content;
+      
+      if (content !== currentTab.content) {
+        currentTab.modified = true;
+        updateTabModifiedState();
+      }
+
+      updateLineNumbers();
+      updateCursorPosition();
+      updateFunctionList();
+      updateMinimap();
+      updateWordCount();
+      
+      // Auto-complete
+      if (plugins.autocomplete) {
+        checkAutoComplete();
+      }
+      
+      // Syntax validation
+      if (plugins.syntax) {
+        validateSyntax();
+      }
+
+      // Record macro action
+      if (isRecordingMacro) {
+        recordMacroAction('type', { text: content.slice(-1) });
+      }
+
+      // Add to history
+      if (!suppressHistory) {
+        const history = fileHistory[currentTab.id];
+        if (history[history.length - 1] !== content) {
+          history.push(content);
+          if (history.length > 200) history.shift();
+        }
+        redoHistory[currentTab.id] = [];
+      }
+    }
+
+    function handleEditorClick(event) {
+      updateCursorPosition();
+      
+      // Multi-cursor support
+      if (event.altKey && settings.multiCursor) {
+        const editor = document.getElementById('main-editor');
+        const rect = editor.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        
+        // Calculate position and add cursor
+        addMultiCursor(editor.selectionStart);
+        event.preventDefault();
+      }
+      
+      closeAutocomplete();
+    }
+
+    function handleEditorKeydown(event) {
+      const editor = document.getElementById('main-editor');
+      
+      // Auto-completion navigation
+      const autocomplete = document.getElementById('autocomplete');
+      if (autocomplete.style.display === 'block') {
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          navigateAutocomplete(event.key === 'ArrowDown' ? 1 : -1);
+          event.preventDefault();
+          return;
+        } else if (event.key === 'Enter') {
+          selectAutocomplete();
+          event.preventDefault();
+          return;
+        } else if (event.key === 'Escape') {
+          closeAutocomplete();
+          return;
+        }
+      }
+
+      // Multi-cursor handling
+      if (multiCursors.length > 0) {
+        handleMultiCursorKeydown(event);
+      }
+    }
+
+    // Enhanced Syntax Highlighting
+    function applySyntaxHighlighting() {
+      const currentTab = tabs[activeTabIndex];
+      if (!currentTab) return;
+
+      const editor = document.getElementById('main-editor');
+      const overlay = document.getElementById('editor-overlay');
+      
+      editor.className = `editor syntax-${currentTab.syntaxMode}`;
+      
+      if (currentTab.syntaxMode !== 'text') {
+        highlightSyntax(editor.value, currentTab.syntaxMode);
+      }
+    }
+
+    function highlightSyntax(content, mode) {
+      const overlay = document.getElementById('editor-overlay');
+      let highlightedContent = content;
+
+      switch (mode) {
+        case 'javascript':
+        case 'typescript':
+          highlightedContent = highlightJavaScript(content);
+          break;
+        case 'html':
+          highlightedContent = highlightHTML(content);
+          break;
+        case 'css':
+          highlightedContent = highlightCSS(content);
+          break;
+        case 'python':
+          highlightedContent = highlightPython(content);
+          break;
+        case 'json':
+          highlightedContent = highlightJSON(content);
+          break;
+      }
+
+      overlay.innerHTML = highlightedContent;
+    }
+
+    function highlightJavaScript(code) {
+      const keywords = /\b(function|var|let|const|if|else|for|while|return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\b/g;
+      const strings = /(["'`])(?:(?!\1)[^\\]|\\.)*?\1/g;
+      const comments = /\/\/.*$|\/\*[\s\S]*?\*\//gm;
+      const numbers = /\b\d+\.?\d*\b/g;
+      const functions = /\b(\w+)(?=\s*\()/g;
+
+      return code
+        .replace(comments, '<span class="comment">$&</span>')
+        .replace(strings, '<span class="string">$&</span>')
+        .replace(keywords, '<span class="keyword">$&</span>')
+        .replace(numbers, '<span class="number">$&</span>')
+        .replace(functions, '<span class="function">$&</span>');
+    }
+
+    function highlightHTML(code) {
+      const tags = /&lt;(\/?[\w-]+)([^&gt;]*?)&gt;/g;
+      const attributes = /(\w+)=("[^"]*"|'[^']*')/g;
+      const comments = /&lt;!--[\s\S]*?--&gt;/g;
+
+      return code
+        .replace(comments, '<span class="comment">$&</span>')
+        .replace(tags, (match, tagName, attrs) => {
+          const highlightedAttrs = attrs.replace(attributes, '<span class="attribute">$1</span>=<span class="string">$2</span>');
+          return `&lt;<span class="tag">${tagName}</span>${highlightedAttrs}&gt;`;
+        });
+    }
+
+    function highlightCSS(code) {
+      const selectors = /^[^{]+(?={)/gm;
+      const properties = /(\w+(?:-\w+)*)\s*:/g;
+      const values = /:\s*([^;]+)/g;
+      const comments = /\/\*[\s\S]*?\*\//g;
+
+      return code
+        .replace(comments, '<span class="comment">$&</span>')
+        .replace(selectors, '<span class="selector">$&</span>')
+        .replace(properties, '<span class="property">$1</span>:')
+        .replace(values, ': <span class="value">$1</span>');
+    }
+
+    function highlightPython(code) {
+      const keywords = /\b(def|class|import|from|if|elif|else|for|while|try|except|finally|with|as|return|yield|lambda|and|or|not|in|is|None|True|False|pass|break|continue|global|nonlocal)\b/g;
+      const strings = /(["']{3}[\s\S]*?["']{3}|["'](?:[^"'\\]|\\.)*?["'])/g;
+      const comments = /#.*$/gm;
+      const functions = /\b(\w+)(?=\s*\()/g;
+
+      return code
+        .replace(comments, '<span class="comment">$&</span>')
+        .replace(strings, '<span class="string">$&</span>')
+        .replace(keywords, '<span class="keyword">$&</span>')
+        .replace(functions, '<span class="function">$&</span>');
+    }
+
+    function highlightJSON(code) {
+      const strings = /"([^"\\]|\\.)*"/g;
+      const numbers = /\b-?\d+\.?\d*([eE][+-]?\d+)?\b/g;
+      const booleans = /\b(true|false|null)\b/g;
+
+      return code
+        .replace(strings, '<span class="string">$&</span>')
+        .replace(numbers, '<span class="number">$&</span>')
+        .replace(booleans, '<span class="keyword">$&</span>');
+    }
+
+    // Enhanced Multi-cursor Support
+    function toggleMultiCursor() {
+      settings.multiCursor = !settings.multiCursor;
+      const btn = document.getElementById('multi-cursor-btn');
+      btn.classList.toggle('active', settings.multiCursor);
+      updateStatusBar(`Multi-cursor ${settings.multiCursor ? 'enabled' : 'disabled'}`);
+    }
+
+    function addMultiCursor(position) {
+      multiCursors.push(position);
+      renderMultiCursors();
+    }
+
+    function clearMultiCursors() {
+      multiCursors = [];
+      document.querySelectorAll('.cursor-secondary').forEach(el => el.remove());
+    }
+
+    function renderMultiCursors() {
+      document.querySelectorAll('.cursor-secondary').forEach(el => el.remove());
+      
+      const editor = document.getElementById('main-editor');
+      const editorRect = editor.getBoundingClientRect();
+      
+      multiCursors.forEach(position => {
+        const cursor = document.createElement('div');
+        cursor.className = 'cursor-secondary';
+        
+        // Calculate cursor position
+        const textBeforeCursor = editor.value.substring(0, position);
+        const lines = textBeforeCursor.split('\n');
+        const line = lines.length;
+        const column = lines[lines.length - 1].length;
+        
+        const top = (line - 1) * 18 + 10; // Line height
+        const left = column * 7.2 + 10; // Character width approximation
+        
+        cursor.style.top = `${top}px`;
+        cursor.style.left = `${left}px`;
+        
+        document.querySelector('.editor-area').appendChild(cursor);
+      });
+    }
+
+    function handleMultiCursorKeydown(event) {
+      // Handle typing with multiple cursors
+      if (event.key.length === 1 && !event.ctrlKey && !event.altKey) {
+        insertAtMultiCursors(event.key);
+        event.preventDefault();
+      }
+    }
+
+    function insertAtMultiCursors(text) {
+      const editor = document.getElementById('main-editor');
+      let content = editor.value;
+      let offset = 0;
+
+      // Sort cursors by position (descending) to maintain positions
+      const sortedCursors = [...multiCursors].sort((a, b) => b - a);
+
+      sortedCursors.forEach(position => {
+        const adjustedPosition = position + offset;
+        content = content.slice(0, adjustedPosition) + text + content.slice(adjustedPosition);
+        offset += text.length;
+      });
+
+      suppressHistory = true;
+      editor.value = content;
+      suppressHistory = false;
+      handleEditorChange();
+      
+      // Update cursor positions
+      multiCursors = multiCursors.map(pos => pos + text.length);
+      renderMultiCursors();
+    }
+
+    // Enhanced Auto-complete
+    function checkAutoComplete() {
+      const editor = document.getElementById('main-editor');
+      const cursorPos = editor.selectionStart;
+      const textBeforeCursor = editor.value.substring(0, cursorPos);
+      const words = textBeforeCursor.match(/\w+/g) || [];
+      const currentWord = words[words.length - 1] || '';
+
+      if (currentWord.length > 2) {
+        showAutoComplete(currentWord, cursorPos);
+      } else {
+        closeAutocomplete();
+      }
+    }
+
+    function showAutoComplete(prefix, position) {
+      const suggestions = getAutoCompleteSuggestions(prefix);
+      if (suggestions.length === 0) {
+        closeAutocomplete();
+        return;
+      }
+
+      const autocomplete = document.getElementById('autocomplete');
+      const editor = document.getElementById('main-editor');
+      const editorRect = editor.getBoundingClientRect();
+      
+      // Calculate position
+      const textBeforeCursor = editor.value.substring(0, position);
+      const lines = textBeforeCursor.split('\n');
+      const line = lines.length;
+      const column = lines[lines.length - 1].length;
+      
+      const top = (line - 1) * 18 + 40; // Adjust for line height
+      const left = column * 7.2 + 60; // Adjust for character width
+      
+      autocomplete.style.top = `${top}px`;
+      autocomplete.style.left = `${left}px`;
+      autocomplete.style.display = 'block';
+
+      autocomplete.innerHTML = suggestions.map((item, index) => `
+        <div class="autocomplete-item ${index === 0 ? 'selected' : ''}" data-text="${item.text}">
+          <span class="autocomplete-icon">${item.icon}</span>
+          <span>${item.text}</span>
+        </div>
+      `).join('');
+
+      autocomplete.querySelectorAll('.autocomplete-item').forEach(item => {
+        item.addEventListener('click', () => {
+          insertAutoComplete(item.dataset.text);
+        });
+      });
+    }
+
+    function getAutoCompleteSuggestions(prefix) {
+      const currentTab = tabs[activeTabIndex];
+      const suggestions = [];
+      
+      // Language-specific suggestions
+      switch (currentTab.syntaxMode) {
+        case 'javascript':
+          suggestions.push(
+            { text: 'function', icon: '🔧' },
+            { text: 'console.log', icon: '📝' },
+            { text: 'document.getElementById', icon: '🎯' },
+            { text: 'addEventListener', icon: '👂' },
+            { text: 'querySelector', icon: '🔍' }
+          );
+          break;
+        case 'html':
+          suggestions.push(
+            { text: '<div>', icon: '📦' },
+            { text: '<span>', icon: '📝' },
+            { text: '<button>', icon: '🔘' },
+            { text: '<input>', icon: '⌨️' }
+          );
+          break;
+        case 'css':
+          suggestions.push(
+            { text: 'background-color', icon: '🎨' },
+            { text: 'margin', icon: '📏' },
+            { text: 'padding', icon: '📏' },
+            { text: 'font-size', icon: '📝' }
+          );
+          break;
+      }
+
+      return suggestions.filter(item => 
+        item.text.toLowerCase().startsWith(prefix.toLowerCase())
+      );
+    }
+
+    function navigateAutocomplete(direction) {
+      const items = document.querySelectorAll('.autocomplete-item');
+      const selected = document.querySelector('.autocomplete-item.selected');
+      const currentIndex = Array.from(items).indexOf(selected);
+      const newIndex = Math.max(0, Math.min(items.length - 1, currentIndex + direction));
+
+      selected.classList.remove('selected');
+      items[newIndex].classList.add('selected');
+    }
+
+    function selectAutocomplete() {
+      const selected = document.querySelector('.autocomplete-item.selected');
+      if (selected) {
+        insertAutoComplete(selected.dataset.text);
+      }
+    }
+
+    function insertAutoComplete(text) {
+      const editor = document.getElementById('main-editor');
+      const cursorPos = editor.selectionStart;
+      const textBeforeCursor = editor.value.substring(0, cursorPos);
+      const textAfterCursor = editor.value.substring(cursorPos);
+      
+      // Find the word being completed
+      const words = textBeforeCursor.match(/\w+/g) || [];
+      const currentWord = words[words.length - 1] || '';
+      const startPos = cursorPos - currentWord.length;
+      
+      const newText = editor.value.substring(0, startPos) + text + textAfterCursor;
+      
+      suppressHistory = true;
+      editor.value = newText;
+      editor.selectionStart = editor.selectionEnd = startPos + text.length;
+      suppressHistory = false;
+      
+      handleEditorChange();
+      closeAutocomplete();
+    }
+
+    function closeAutocomplete() {
+      document.getElementById('autocomplete').style.display = 'none';
+    }
+
+    // Enhanced Find/Replace
+    function showFindPanel() {
+      const panel = document.getElementById('find-panel');
+      panel.style.display = 'block';
+      document.getElementById('find-input').focus();
+    }
+
+    function closeFindPanel() {
+      document.getElementById('find-panel').style.display = 'none';
+    }
+
+    function findAll() {
+      const searchTerm = document.getElementById('find-input').value;
+      if (!searchTerm) return;
+
+      const editor = document.getElementById('main-editor');
+      const content = editor.value;
+      const regex = buildSearchRegex(searchTerm);
+      
+      if (!regex) return;
+
+      const matches = Array.from(content.matchAll(regex));
+      document.getElementById('find-results').textContent = 
+        `${matches.length} matches found`;
+      
+      // Highlight all matches
+      highlightSearchResults(matches);
+    }
+
+    function buildSearchRegex(term) {
+      const matchCase = document.getElementById('match-case').checked;
+      const wholeWord = document.getElementById('whole-word').checked;
+      const regexMode = document.getElementById('regex-mode').checked;
+      
+      try {
+        let pattern = regexMode ? term : escapeRegExp(term);
+        if (wholeWord) pattern = `\\b${pattern}\\b`;
+        
+        const flags = matchCase ? 'g' : 'gi';
+        return new RegExp(pattern, flags);
+      } catch (e) {
+        updateStatusBar('Invalid regular expression');
+        return null;
+      }
+    }
+
+    function highlightSearchResults(matches) {
+      // Implementation for highlighting search results
+      // This would require overlay management
+    }
+
+    // Macro System
+    function recordMacro() {
+      if (isRecordingMacro) return;
+      
+      isRecordingMacro = true;
+      currentMacro = [];
+      
+      document.getElementById('record-btn').style.display = 'none';
+      document.getElementById('stop-btn').style.display = 'inline-block';
+      document.getElementById('macro-status').style.display = 'block';
+      
+      updateStatusBar('Recording macro...');
+    }
+
+    function stopRecording() {
+      if (!isRecordingMacro) return;
+      
+      isRecordingMacro = false;
+      
+      const name = prompt('Macro name:', `Macro ${macros.length + 1}`);
+      if (name) {
+        macros.push({
+          name: name,
+          commands: [...currentMacro],
+          created: new Date().toISOString()
+        });
+        updateMacroList();
+      }
+      
+      document.getElementById('record-btn').style.display = 'inline-block';
+      document.getElementById('stop-btn').style.display = 'none';
+      document.getElementById('macro-status').style.display = 'none';
+      
+      updateStatusBar('Macro recorded');
+    }
+
+    function recordMacroAction(action, data) {
+      if (!isRecordingMacro) return;
+      
+      currentMacro.push({
+        action: action,
+        data: data,
+        timestamp: Date.now()
+      });
+    }
+
+    function playMacro() {
+      if (macros.length === 0) {
+        updateStatusBar('No macros available');
+        return;
+      }
+      
+      const macro = macros[macros.length - 1]; // Play last recorded macro
+      playMacroByData(macro);
+    }
+
+    function playMacroByIndex(index) {
+      if (index >= macros.length) return;
+      playMacroByData(macros[index]);
+    }
+
+    function playMacroByData(macro) {
+      const editor = document.getElementById('main-editor');
+      
+      macro.commands.forEach((command, index) => {
+        setTimeout(() => {
+          switch (command.action) {
+            case 'type':
+              insertText(command.data.text);
+              break;
+            case 'key':
+              simulateKeyPress(command.data.key);
+              break;
+            case 'cursor':
+              editor.selectionStart = editor.selectionEnd = command.data.position;
+              break;
+          }
+        }, index * 10); // Small delay between commands
+      });
+      
+      updateStatusBar(`Played macro: ${macro.name}`);
+    }
+
+    function updateMacroList() {
+      const list = document.getElementById('macro-list');
+      if (macros.length === 0) {
+        list.innerHTML = '<div style="color:#666;font-style:italic;padding:10px;">No macros recorded</div>';
+        return;
+      }
+      
+      list.innerHTML = macros.map((macro, index) => `
+        <div class="macro-item">
+          <span class="macro-name">${macro.name}</span>
+          <div class="macro-controls">
+            <button class="macro-btn" onclick="editMacro(${index})">Edit</button>
+            <button class="macro-btn" onclick="playMacroByIndex(${index})">Play</button>
+            <button class="macro-btn" onclick="deleteMacro(${index})">Del</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Command Palette
+    function showCommandPalette() {
+      const dialog = document.getElementById('command-palette');
+      dialog.style.display = 'block';
+      document.getElementById('command-input').focus();
+      populateCommands();
+    }
+
+    function setupCommandPalette() {
+      const commands = [
+        { name: 'New File', action: 'newFile()', keys: 'Ctrl+N' },
+        { name: 'Open File', action: 'openFile()', keys: 'Ctrl+O' },
+        { name: 'Save File', action: 'saveFile()', keys: 'Ctrl+S' },
+        { name: 'Find', action: 'showFindPanel()', keys: 'Ctrl+F' },
+        { name: 'Replace', action: 'showReplacePanel()', keys: 'Ctrl+H' },
+        { name: 'Go to Line', action: 'goToLine()', keys: 'Ctrl+G' },
+        { name: 'Format Code', action: 'formatCode()', keys: 'Shift+Alt+F' },
+        { name: 'Toggle Comment', action: 'toggleComment()', keys: 'Ctrl+/' },
+        { name: 'Consciousness Analysis', action: 'analyzeConsciousness()', keys: 'Ctrl+Alt+A' },
+        { name: 'Split View Vertical', action: 'splitViewVertical()' },
+        { name: 'Close Split View', action: 'closeSplitView()' },
+        { name: 'Toggle Sidebar', action: 'toggleSidebar()', keys: 'Ctrl+B' },
+        { name: 'Preferences', action: 'showPreferences()', keys: 'Ctrl+,' }
+      ];
+      
+      window.commandPaletteCommands = commands;
+    }
+
+    function populateCommands(filter = '') {
+      const commands = window.commandPaletteCommands || [];
+      const filtered = commands.filter(cmd => 
+        cmd.name.toLowerCase().includes(filter.toLowerCase())
+      );
+      
+      const list = document.getElementById('command-list');
+      list.innerHTML = filtered.map(cmd => `
+        <div onclick="executeCommand('${cmd.action}')" style="padding:8px; cursor:pointer; border-radius:3px;" 
+             onmouseover="this.style.background='#555'" onmouseout="this.style.background='transparent'">
+          <strong>${cmd.name}</strong>
+          ${cmd.keys ? `<span style="float:right; color:#999;">${cmd.keys}</span>` : ''}
+        </div>
+      `).join('');
+    }
+
+    function filterCommands() {
+      const input = document.getElementById('command-input');
+      populateCommands(input.value);
+    }
+
+    function executeCommand(action) {
+      eval(action);
+      closeDialog('command-palette');
+    }
+
+    // Enhanced Consciousness Analysis
+    function analyzeConsciousness() {
+      const currentTab = tabs[activeTabIndex];
+      if (!currentTab) return;
+
+      const content = document.getElementById('main-editor').value;
+      const analysis = performDeepConsciousnessAnalysis(content);
+      
+      lastInsights = analysis;
+      renderInsights(analysis);
+      updateStatusBar('Consciousness analysis complete');
+    }
+
+    function performDeepConsciousnessAnalysis(content) {
+      const tokens = (content.match(/\b[\w$]+\b/g) || []);
+      const lines = content.split('\n');
+      const unique = new Set(tokens);
+      
+      // Enhanced metrics
+      const complexity = tokens.length ? unique.size / tokens.length : 0;
+      const entropy = computeEntropy(content);
+      const meta = calculateMetaAwareness(tokens, content);
+      const intent = calculateIntentionality(tokens, content);
+      const recursion = detectAdvancedRecursion(content);
+      const structure = analyzeStructuralComplexity(content);
+      const semantics = analyzeSemanticDepth(content);
+      
+      // Consciousness score calculation using PHI
+      const baseScore = 0.2 * complexity + 0.15 * entropy + 0.2 * meta + 
+                       0.15 * intent + 0.1 * structure + 0.1 * semantics + 
+                       0.1 * recursion;
+      
+      const consciousnessScore = +(PHI * baseScore * (1 + 0.15 * recursion)).toFixed(3);
+
+      return {
+        score: consciousnessScore,
+        complexity: +complexity.toFixed(3),
+        entropy: +entropy.toFixed(3),
+        meta: +meta.toFixed(3),
+        intent: +intent.toFixed(3),
+        recursion: recursion,
+        structure: +structure.toFixed(3),
+        semantics: +semantics.toFixed(3),
+        lines: lines.length,
+        tokens: tokens.length,
+        unique: unique.size,
+        analysis: generateConsciousnessInsights(content, {
+          complexity, entropy, meta, intent, recursion, structure, semantics
+        })
+      };
+    }
+
+    function calculateMetaAwareness(tokens, content) {
+      const metaTerms = ['this', 'self', 'meta', 'aware', 'conscious', 'monitor', 
+                       'reflect', 'introspect', 'observe', 'analyze', 'think', 'consider'];
+      let score = 0;
+      
+      metaTerms.forEach(term => {
+        const count = (content.toLowerCase().match(new RegExp(`\\b${term}\\b`, 'g')) || []).length;
+        score += count;
+      });
+      
+      return score / (tokens.length || 1);
+    }
+
+    function calculateIntentionality(tokens, content) {
+      const intentTerms = ['goal', 'intent', 'plan', 'target', 'objective', 'strategy', 
+                          'purpose', 'aim', 'want', 'need', 'should', 'will', 'must'];
+      let score = 0;
+      
+      intentTerms.forEach(term => {
+        const count = (content.toLowerCase().match(new RegExp(`\\b${term}\\b`, 'g')) || []).length;
+        score += count;
+      });
+      
+      return score / (tokens.length || 1);
+    }
+
+    function detectAdvancedRecursion(content) {
+      let recursionScore = 0;
+      
+      // Function calling itself
+      const functionNames = (content.match(/function\s+(\w+)|(\w+)\s*=\s*function/g) || []);
+      functionNames.forEach(func => {
+        const name = func.match(/\w+/)[0];
+        const calls = (content.match(new RegExp(`\\b${name}\\s*\\(`, 'g')) || []).length;
+        if (calls > 1) recursionScore += 0.3;
+      });
+      
+      // Self-referential patterns
+      if (content.includes('this.') || content.includes('self.')) recursionScore += 0.2;
+      
+      // Recursive keywords
+      const recursivePatterns = ['recursive', 'recurse', 'loop', 'iterate', 'cycle'];
+      recursivePatterns.forEach(pattern => {
+        if (content.toLowerCase().includes(pattern)) recursionScore += 0.1;
+      });
+      
+      return Math.min(recursionScore, 1.0);
+    }
+
+    function analyzeStructuralComplexity(content) {
+      const lines = content.split('\n').filter(line => line.trim());
+      let complexity = 0;
+      
+      lines.forEach(line => {
+        // Nested structures
+        const indentLevel = (line.match(/^\s*/)[0].length / 2);
+        complexity += indentLevel * 0.1;
+        
+        // Control structures
+        if (/\b(if|for|while|switch|try)\b/.test(line)) complexity += 0.2;
+        
+        // Function definitions
+        if (/\bfunction\b|\s*=>\s*/.test(line)) complexity += 0.3;
+        
+        // Object/array structures
+        if (/[{[]/.test(line)) complexity += 0.1;
+      });
+      
+      return Math.min(complexity / lines.length, 1.0);
+    }
+
+    function analyzeSemanticDepth(content) {
+      const words = content.toLowerCase().match(/\b\w+\b/g) || [];
+      const semanticWords = ['meaning', 'understand', 'interpret', 'semantic', 'context',
+                            'knowledge', 'wisdom', 'insight', 'comprehend', 'grasp'];
+      
+      let depth = 0;
+      semanticWords.forEach(word => {
+        depth += (words.filter(w => w === word).length * 0.1);
+      });
+      
+      // Abstract concept detection
+      const abstractTerms = ['concept', 'idea', 'theory', 'principle', 'philosophy',
+                           'paradigm', 'framework', 'model', 'system', 'approach'];
+      abstractTerms.forEach(term => {
+        if (content.toLowerCase().includes(term)) depth += 0.05;
+      });
+      
+      return Math.min(depth, 1.0);
+    }
+
+    function generateConsciousnessInsights(content, metrics) {
+      const insights = [];
+      
+      if (metrics.meta > 0.02) {
+        insights.push('Strong meta-cognitive awareness detected');
+      }
+      
+      if (metrics.recursion > 0.5) {
+        insights.push('Recursive self-reference patterns present');
+      }
+      
+      if (metrics.complexity > 0.7) {
+        insights.push('High cognitive complexity achieved');
+      }
+      
+      if (metrics.entropy > 0.8) {
+        insights.push('Rich information diversity detected');
+      }
+      
+      if (metrics.intent > 0.03) {
+        insights.push('Clear intentionality markers found');
+      }
+      
+      if (content.includes('consciousness') || content.includes('aware')) {
+        insights.push('Explicit consciousness references detected');
+      }
+      
+      if (insights.length === 0) {
+        insights.push('Basic pattern recognition active');
+      }
+      
+      return insights;
+    }
+
+    function renderInsights(insights) {
+      // Update KPIs
+      document.getElementById('kpi-score').textContent = insights.score;
+      document.getElementById('kpi-complexity').textContent = insights.complexity;
+      document.getElementById('kpi-entropy').textContent = insights.entropy;
+      document.getElementById('kpi-meta').textContent = insights.meta;
+      document.getElementById('kpi-intent').textContent = insights.intent;
+      document.getElementById('kpi-recursion').textContent = insights.recursion ? 'Yes' : 'No';
+      
+      // Update insights list
+      const list = document.getElementById('insight-list');
+      list.innerHTML = [
+        ...insights.analysis.map(insight => `<li>• ${insight}</li>`),
+        `<li>• Lines: ${insights.lines}, Tokens: ${insights.tokens}</li>`,
+        `<li>• Unique tokens: ${insights.unique} (${((insights.unique/insights.tokens)*100).toFixed(1)}%)</li>`,
+        `<li>• Structural complexity: ${(insights.structure * 100).toFixed(1)}%</li>`,
+        `<li>• Semantic depth: ${(insights.semantics * 100).toFixed(1)}%</li>`
+      ].join('');
+      
+      // Update status bar
+      document.getElementById('insights-status').textContent = `CScore: ${insights.score}`;
+    }
+
+    // Enhanced Utility Functions
+    function generateTabId() {
+      return 'tab_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    }
+
+    function detectSyntaxMode(filename) {
+      const ext = filename.toLowerCase().split('.').pop();
+      const modes = {
+        'js': 'javascript', 'ts': 'typescript', 'jsx': 'javascript', 'tsx': 'typescript',
+        'html': 'html', 'htm': 'html', 'xhtml': 'html',
+        'css': 'css', 'scss': 'css', 'sass': 'css', 'less': 'css',
+        'py': 'python', 'pyw': 'python',
+        'java': 'java', 'class': 'java',
+        'cpp': 'cpp', 'c': 'cpp', 'cc': 'cpp', 'cxx': 'cpp',
+        'json': 'json',
+        'xml': 'xml', 'xsl': 'xml', 'xsd': 'xml',
+        'md': 'markdown', 'markdown': 'markdown',
+        'yml': 'yaml', 'yaml': 'yaml',
+        'sql': 'sql'
+      };
+      return modes[ext] || 'text';
+    }
+
+    function detectEOL(content) {
+      if (content.includes('\r\n')) return 'crlf';
+      if (content.includes('\r')) return 'cr';
+      return 'lf';
+    }
+
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function computeEntropy(text) {
+      if (!text.length) return 0;
+      const freq = {};
+      for (const char of text) {
+        freq[char] = (freq[char] || 0) + 1;
+      }
+      
+      const length = text.length;
+      let entropy = 0;
+      for (const count of Object.values(freq)) {
+        const p = count / length;
+        entropy += -p * Math.log2(p);
+      }
+      
+      const maxEntropy = Math.log2(Math.min(256, length));
+      return Math.min(1, entropy / (maxEntropy || 1));
+    }
+
+    // Enhanced Status Bar
+    function updateStatusBar(message) {
+      if (message) {
+        document.getElementById('file-status').textContent = message;
+        setTimeout(() => {
+          document.getElementById('file-status').textContent = 'Ready';
+        }, 3000);
+      }
+      
+      updateCursorPosition();
+      updateWordCount();
+      updateSelection();
+      
+      const currentTab = tabs[activeTabIndex];
+      if (currentTab) {
+        document.getElementById('syntax-status').textContent = 
+          currentTab.syntaxMode.charAt(0).toUpperCase() + currentTab.syntaxMode.slice(1);
+        document.getElementById('encoding-status').textContent = currentTab.encoding.toUpperCase();
+        document.getElementById('eol-status').textContent = currentTab.eol.toUpperCase();
+      }
+      
+      document.getElementById('zoom-status').textContent = `${currentZoom}%`;
+    }
+
+    function updateCursorPosition() {
+      const editor = document.getElementById('main-editor');
+      const content = editor.value;
+      const position = editor.selectionStart;
+      
+      const lines = content.substring(0, position).split('\n');
+      const line = lines.length;
+      const column = lines[lines.length - 1].length + 1;
+      
+      document.getElementById('cursor-position').textContent = `Ln ${line}, Col ${column}`;
+    }
+
+    function updateSelection() {
+      const editor = document.getElementById('main-editor');
+      const selectionLength = editor.selectionEnd - editor.selectionStart;
+      document.getElementById('selection-info').textContent = `Sel ${selectionLength}`;
+    }
+
+    function updateWordCount() {
+      const editor = document.getElementById('main-editor');
+      const words = (editor.value.match(/\b\w+\b/g) || []).length;
+      document.getElementById('word-count').textContent = `Words: ${words}`;
+    }
+
+    // Enhanced Tab Management
+    function createTab(tabId, fileName) {
+      const tabBar = document.getElementById('tab-bar');
+      const tab = document.createElement('div');
+      tab.className = 'tab';
+      tab.dataset.tabId = tabId;
+      tab.innerHTML = `
+        <span class="tab-name">${fileName}</span>
+        <span class="tab-close" onclick="event.stopPropagation(); closeTab('${tabId}')">&times;</span>
+      `;
+      tab.onclick = () => {
+        const index = tabs.findIndex(t => t.id === tabId);
+        switchToTab(index);
+      };
+      tabBar.appendChild(tab);
+    }
+
+    function switchToTab(index) {
+      if (index < 0 || index >= tabs.length) return;
+
+      // Save current tab state
+      if (tabs[activeTabIndex]) {
+        const editor = document.getElementById('main-editor');
+        const currentContent = editor.value;
+        fileContent[tabs[activeTabIndex].id] = currentContent;
+        tabs[activeTabIndex].content = currentContent;
+        tabs[activeTabIndex].cursorPosition = editor.selectionStart;
+        tabs[activeTabIndex].scrollPosition = editor.scrollTop;
+      }
+
+      activeTabIndex = index;
+      const currentTab = tabs[activeTabIndex];
+
+      // Update active tab styling
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      const activeTabElement = document.querySelector(`[data-tab-id="${currentTab.id}"]`);
+      if (activeTabElement) activeTabElement.classList.add('active');
+
+      // Load tab content
+      const editor = document.getElementById('main-editor');
+      editor.value = fileContent[currentTab.id] || '';
+      editor.selectionStart = editor.selectionEnd = currentTab.cursorPosition || 0;
+      editor.scrollTop = currentTab.scrollPosition || 0;
+
+      // Update UI
+      document.getElementById('syntax-mode').value = currentTab.syntaxMode;
+      applySyntaxHighlighting();
+      updateLineNumbers();
+      updateFunctionList();
+      updateBookmarksList();
+      updateMinimap();
+      updateStatusBar();
+    }
+
+    function closeTab(tabId) {
+      const index = tabs.findIndex(t => t.id === tabId);
+      if (index === -1) return;
+
+      const tab = tabs[index];
+      if (tab.modified && !confirm(`${tab.name} has unsaved changes. Close anyway?`)) {
+        return;
+      }
+
+      // Remove tab element
+      const tabElement = document.querySelector(`[data-tab-id="${tabId}"]`);
+      if (tabElement) tabElement.remove();
+
+      // Clean up data
+      delete fileContent[tabId];
+      delete fileHistory[tabId];
+      delete redoHistory[tabId];
+      delete bookmarks[tabId];
+
+      tabs.splice(index, 1);
+
+      if (tabs.length === 0) {
+        newFile();
+        return;
+      }
+
+      // Update active tab index
+      if (activeTabIndex >= tabs.length) {
+        activeTabIndex = tabs.length - 1;
+      } else if (index <= activeTabIndex && activeTabIndex > 0) {
+        activeTabIndex--;
+      }
+
+      switchToTab(activeTabIndex);
+    }
+
+    function updateTabModifiedState() {
+      const currentTab = tabs[activeTabIndex];
+      if (!currentTab) return;
+
+      const tabElement = document.querySelector(`[data-tab-id="${currentTab.id}"]`);
+      if (tabElement) {
+        if (currentTab.modified) {
+          tabElement.classList.add('modified');
+        } else {
+          tabElement.classList.remove('modified');
+        }
+      }
+    }
+
+    // Enhanced Plugin System
+    function initializePlugins() {
+      Object.keys(plugins).forEach(pluginName => {
+        if (plugins[pluginName]) {
+          activatePlugin(pluginName);
+        }
+      });
+    }
+
+    function togglePlugin(pluginName) {
+      plugins[pluginName] = !plugins[pluginName];
+      const button = event.target;
+      
+      if (plugins[pluginName]) {
+        button.textContent = 'Enabled';
+        button.classList.remove('disabled');
+        activatePlugin(pluginName);
+      } else {
+        button.textContent = 'Disabled';
+        button.classList.add('disabled');
+        deactivatePlugin(pluginName);
+      }
+      
+      updateStatusBar(`Plugin ${pluginName} ${plugins[pluginName] ? 'enabled' : 'disabled'}`);
+    }
+
+    function activatePlugin(pluginName) {
+      switch (pluginName) {
+        case 'autocomplete':
+          // Already integrated in handleEditorChange
+          break;
+        case 'syntax':
+          // Already integrated in applySyntaxHighlighting
+          break;
+        case 'formatter':
+          // Code formatting functionality
+          break;
+        case 'consciousness':
+          // Already integrated in analyzeConsciousness
+          break;
+      }
+    }
+
+    function deactivatePlugin(pluginName) {
+      switch (pluginName) {
+        case 'autocomplete':
+          closeAutocomplete();
+          break;
+        case 'syntax':
+          // Remove syntax highlighting
+          break;
+        case 'formatter':
+          // Disable formatting
+          break;
+        case 'consciousness':
+          // Clear consciousness analysis
+          break;
+      }
+    }
+
+    // Keyboard Shortcuts and Global Handlers
+    function handleG

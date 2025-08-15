@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalamus Bridge Runner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0d121c; color: #e2e8f0; }
+        .container { max-width: 1200px; margin: auto; padding: 1.5rem; }
+        .card { background-color: #1f2937; padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
+        .input-group, .output-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        input[type="text"], input[type="password"], textarea, select { width: 100%; background-color: #111827; border: 1px solid #374151; padding: 0.75rem; border-radius: 0.5rem; color: #e2e8f0; resize: vertical; }
+        .btn { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; }
+        .btn-primary { background-color: #3b82f6; color: #ffffff; }
+        .btn-primary:hover { background-color: #2563eb; }
+        .btn-secondary { background-color: #4b5563; color: #ffffff; }
+        .btn-secondary:hover { background-color: #374151; }
+        .btn-green { background-color: #10b981; color: #ffffff; }
+        .btn-green:hover { background-color: #059669; }
+        .seal-display { background-color: #111827; border: 1px solid #374151; padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', Courier, monospace; word-break: break-all; }
+        .flex-container { display: flex; gap: 1rem; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="container space-y-6">
+        <h1 class="text-3xl font-bold text-center">Thalamus Bridge Runner</h1>
+        <p class="text-center text-gray-400">Integrate a <code>behavior.hashlist</code> contract with a <code>thought_ledger</code> for verifiable AI execution.</p>
+
+        <div class="flex-container">
+            <!-- Left Panel: Contract & Ledger -->
+            <div class="flex-1 card space-y-4">
+                <h2 class="text-xl font-semibold">1. Load Contract & Add Ledger Entries</h2>
+
+                <!-- Contract Presets -->
+                <div class="input-group">
+                    <label for="contractPresetSelect">Load a Preset Contract</label>
+                    <select id="contractPresetSelect">
+                        <option value="">-- Select a preset --</option>
+                        <option value="simple-planning">Simple Planning Contract</option>
+                        <option value="high-risk-security">High-Risk Security Audit Contract</option>
+                        <option value="collaborative-creative">Collaborative Creative Contract</option>
+                    </select>
+                    <button id="loadPresetBtn" class="mt-2 btn btn-secondary w-full">Load Selected Preset</button>
+                </div>
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Raw Contract JSON</h3>
+                    <textarea id="contractInput" class="h-40" placeholder="Paste your behavior.hashlist JSON here..."></textarea>
+                    <button id="loadContractBtn" class="mt-2 btn btn-secondary">Load Contract</button>
+                    <div id="contractStatus" class="text-sm mt-2"></div>
+                </div>
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Contract Seals</h3>
+                    <div id="contractSeals" class="seal-display text-xs">Awaiting contract...</div>
+                </div>
+                
+                <hr class="border-gray-700">
+
+                <!-- Simulation & Iteration -->
+                <div class="input-group">
+                    <h3 class="text-lg font-medium">Simulation & Iteration</h3>
+                    
+                    <!-- SECURE API KEY INPUT -->
+                    <div class="input-group">
+                        <label for="apiKeyInput" class="text-yellow-400 font-bold">Your Google AI API Key</label>
+                        <input type="password" id="apiKeyInput" placeholder="Paste your API key here for the session...">
+                        <p class="text-xs text-gray-500 mt-1">Required for simulation. Key is used only for this session and is not stored.</p>
+                    </div>
+
+                    <label for="rawTextInput">Task Description (Optional)</label>
+                    <textarea id="rawTextInput" placeholder="Enter a task description, line by line. The AI will use the contract's GOAL by default." class="h-24"></textarea>
+                    <button id="startSimulationBtn" class="mt-2 btn btn-green w-full">Start AI-Driven Process</button>
+                    <div id="simulationStatus" class="text-sm mt-2"></div>
+                </div>
+
+                <hr class="border-gray-700">
+                
+                <!-- Manual Thought Ledger Entry -->
+                <div class="input-group">
+                    <h3 class="text-lg font-medium">Manual Entry</h3>
+                    <label for="contractRef">Contract Reference (`contract_ref`)</label>
+                    <select id="contractRef">
+                        <option value="payload.blocks.GOAL">payload.blocks.GOAL</option>
+                        <option value="payload.blocks.CONSTRAINTS">payload.blocks.CONSTRAINTS</option>
+                        <option value="payload.blocks.SUCCESS_CRITERIA">payload.blocks.SUCCESS_CRITERIA</option>
+                        <option value="payload.blocks.OUTPUT_CONTRACT">payload.blocks.OUTPUT_CONTRACT</option>
+                        <option value="payload.blocks.TESTS">payload.blocks.TESTS</option>
+                        <option value="simulated_task">simulated_task</option>
+                        <option value="manual_ref">Manual Reference</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="op">Operation (`op`)</label>
+                    <select id="op">
+                        <option value="interpret_goal">interpret_goal</option>
+                        <option value="analyze_blocks">analyze_blocks</option>
+                        <option value="execute_step">execute_step</option>
+                        <option value="review_output">review_output</option>
+                        <option value="finalize_log">finalize_log</option>
+                        <option value="custom_op">Custom Operation</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="output">Output (`output`)</label>
+                    <textarea id="output" placeholder="Paste the reasoning/output here..." class="h-24"></textarea>
+                </div>
+                <button id="addEntryBtn" class="btn btn-primary w-full">Add Entry to Ledger</button>
+            </div>
+
+            <!-- Right Panel: Execution Log & Output -->
+            <div class="flex-1 card space-y-4">
+                <h2 class="text-xl font-semibold">2. Thought Ledger Log</h2>
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Sealed Ledger</h3>
+                    <div id="ledgerOutput" class="seal-display h-80 overflow-y-scroll text-xs">Ledger is empty.</div>
+                </div>
+                
+                <hr class="border-gray-700">
+
+                <div class="output-group">
+                    <h3 class="text-lg font-medium">Ledger Seals</h3>
+                    <div id="ledgerSeals" class="seal-display text-xs">Awaiting entries...</div>
+                </div>
+
+                <div class="flex-container">
+                    <button id="exportBtn" class="btn btn-green flex-1">Export Proof Bundle</button>
+                    <button id="resetBtn" class="btn btn-secondary flex-1">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Utility functions for hashing and canonicalization
+        async function sha256Hex(input) {
+            const data = new TextEncoder().encode(input);
+            const buf = await crypto.subtle.digest('SHA-256', data);
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+        
+        function canonicalize(obj) {
+            const normalized = JSON.stringify(obj, Object.keys(obj).sort());
+            return normalized.normalize('NFC').replace(/\r\n/g, '\n').replace(/[ \t]+$/gm, '');
+        }
+
+        // State management
+        let state = {
+            contract: null,
+            contractSeals: null,
+            ledger: [],
+            ledgerSeals: null
+        };
+        
+        // Contract presets
+        const contractPresets = {
+            'simple-planning': {"scroll_id":"AEON-Plan-Simple-1754702400000","format":"json_md_fusion_scroll_behavior","created":"2025-08-09T03:00:00.000Z","directives":{"mode":"plan","theme":"technical","risk":"low","tone":"neutral","self_check":"off"},"payload":{"blocks":{"GOAL":"Create a Python script that reads a CSV file and calculates the average value of a specified column. The script should be runnable from the command line.","CONSTRAINTS":["The script must use the 'csv' and 'argparse' built-in libraries.","It should handle cases where the specified column does not exist.","The output should be a single floating-point number."],"SUCCESS_CRITERIA":["The script runs without error on a sample CSV file.","The output matches the expected average value."]}},"hash":{"policy":{"algo":"sha256","canonicalize":["unicode_nfc","normalize_newlines","trim_trailing_ws","stable_object_keys"]},"seal":{"mobius_seal":"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"}}},
+            'high-risk-security': {"scroll_id":"AEON-Security-Audit-1754702400001","format":"json_md_fusion_scroll_behavior","created":"2025-08-09T03:01:00.000Z","directives":{"mode":"execute","theme":"forensics","risk":"high","tone":"formal","self_check":"on"},"payload":{"blocks":{"GOAL":"Perform a security audit on the provided Python script for potential file system vulnerabilities or insecure data handling. Log all findings and proposed remediations.","CONSTRAINTS":["Do not modify the original script.","All findings must be categorized by severity: 'Critical', 'High', 'Medium', 'Low'."],"SUCCESS_CRITERIA":["A formal report of findings is generated in Markdown.","At least one vulnerability is identified and a remediation is proposed."]}},"hash":{"policy":{"algo":"sha256","canonicalize":["unicode_nfc","normalize_newlines","trim_trailing_ws","stable_object_keys"]},"seal":{"mobius_seal":"abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789"}}},
+            'collaborative-creative': {"scroll_id":"AEON-Creative-Co-Admin-1754702400002","format":"json_md_fusion_scroll_behavior","created":"2025-08-09T03:02:00.000Z","directives":{"mode":"simulate","theme":"creative","risk":"low","tone":"friendly","self_check":"on"},"payload":{"blocks":{"GOAL":"Co-write a short story based on the concept of 'meta-cognition' and 'recursive loops'. The story should introduce two characters, 'The Courier' and 'The Architect'.","CONSTRAINTS":["The story should be less than 500 words.","It must use at least three of the provided glyphs: '∞', 'φ', '∴'."],"SUCCESS_CRITERIA":["The story is coherent and well-structured.","The output is a single, complete story in plain text."]}},"hash":{"policy":{"algo":"sha256","canonicalize":["unicode_nfc","normalize_newlines","trim_trailing_ws","stable_object_keys"]},"seal":{"mobius_seal":"fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210"}}}
+        };
+
+        // DOM elements
+        const contractInput = document.getElementById('contractInput');
+        const loadContractBtn = document.getElementById('loadContractBtn');
+        const contractPresetSelect = document.getElementById('contractPresetSelect');
+        const loadPresetBtn = document.getElementById('loadPresetBtn');
+        const contractStatus = document.getElementById('contractStatus');
+        const contractSeals = document.getElementById('contractSeals');
+        
+        const apiKeyInput = document.getElementById('apiKeyInput');
+        const rawTextInput = document.getElementById('rawTextInput');
+        const startSimulationBtn = document.getElementById('startSimulationBtn');
+        const simulationStatus = document.getElementById('simulationStatus');
+        
+        const contractRef = document.getElementById('contractRef');
+        const opInput = document.getElementById('op');
+        const outputInput = document.getElementById('output');
+        const addEntryBtn = document.getElementById('addEntryBtn');
+        
+        const ledgerOutput = document.getElementById('ledgerOutput');
+        const ledgerSeals = document.getElementById('ledgerSeals');
+        const exportBtn = document.getElementById('exportBtn');
+        const resetBtn = document.getElementById('resetBtn');
+
+        // Event listeners
+        loadContractBtn.addEventListener('click', loadContract);
+        loadPresetBtn.addEventListener('click', loadPreset);
+        startSimulationBtn.addEventListener('click', startSimulation);
+        addEntryBtn.addEventListener('click', addLedgerEntry);
+        exportBtn.addEventListener('click', exportProofBundle);
+        resetBtn.addEventListener('click', resetState);
+
+        // Core functions
+        function loadPreset() {
+            const presetKey = contractPresetSelect.value;
+            if (presetKey && contractPresets[presetKey]) {
+                contractInput.value = JSON.stringify(contractPresets[presetKey], null, 2);
+                loadContract();
+            } else if (presetKey === "") {
+                alert('Please select a preset to load.');
+            } else {
+                alert('Invalid preset selected.');
+            }
+        }
+
+        async function loadContract() {
+            try {
+                const contract = JSON.parse(contractInput.value);
+                state.contract = contract;
+                state.contractSeals = await computeContractSeals(contract);
+                contractStatus.textContent = 'Contract loaded successfully.';
+                contractStatus.className = 'text-sm mt-2 text-green-400';
+                renderSeals();
+            } catch (e) {
+                contractStatus.textContent = `Error: Invalid JSON. ${e.message}`;
+                contractStatus.className = 'text-sm mt-2 text-red-400';
+            }
+        }
+
+        async function computeContractSeals(contract) {
+            if (!contract || !contract.hash || !contract.hash.seal) return null;
+            const mobius_seal = contract.hash.seal.mobius_seal;
+            return `Mobius Seal: ${mobius_seal}`;
+        }
+        
+        async function startSimulation() {
+            const apiKey = apiKeyInput.value;
+            if (!apiKey) {
+                simulationStatus.textContent = 'Error: Please enter your Google AI API key to start the simulation.';
+                simulationStatus.className = 'text-sm mt-2 text-red-400';
+                alert('Please enter your Google AI API key to start the simulation.');
+                return;
+            }
+
+            if (!state.contract || !state.contract.payload.blocks.GOAL) {
+                alert('Please load a contract with a GOAL block first.');
+                return;
+            }
+            
+            state.ledger = [];
+            state.ledgerSeals = null;
+            simulationStatus.textContent = 'Contacting AI for interpretation...';
+            simulationStatus.className = 'text-sm mt-2 text-yellow-400';
+
+            const goal = state.contract.payload.blocks.GOAL;
+            const constraints = state.contract.payload.blocks.CONSTRAINTS.join('\n');
+            const prompt = `You are a professional AI assistant tasked with breaking down a user's request into a series of logical, step-by-step actions. The request is defined by a GOAL and CONSTRAINTS.
+
+GOAL: ${goal}
+CONSTRAINTS: ${constraints}
+
+Your output must be a single, valid JSON array of objects. Each object should represent a single, atomic step in your thought process to achieve the GOAL, adhering to the following schema:
+- "cycle": a number representing the step order.
+- "phase": a string, either "Summon", "Processing", or "Echo".
+- "op": a brief, imperative string describing the action (e.g., "analyze_prompt", "generate_code").
+- "output": a string containing the detailed reasoning or result of the action.
+
+Please generate a plan with at least 5 steps. The first step should be "Summon", and the last should be "Echo". The output must be only a single, complete JSON array.`;
+
+            const payload = {
+                contents: [{ role: "user", parts: [{ text: prompt }] }],
+                generationConfig: { responseMimeType: "application/json" }
+            };
+
+            const apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=" + apiKey;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.text();
+                    throw new Error(`API Error: ${response.status} - ${errorData}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates[0].content.parts[0].text) {
+                    const jsonString = result.candidates[0].content.parts[0].text;
+                    const parsedJson = JSON.parse(jsonString);
+
+                    state.ledger = parsedJson.map((entry, index) => ({
+                        cycle: entry.cycle || (index + 1),
+                        phase: entry.phase || 'Processing',
+                        timestamp: new Date().toISOString(),
+                        contract_ref: 'simulated_task',
+                        op: entry.op,
+                        output: entry.output,
+                        entropy: Math.random(),
+                        contested: Math.random() > 0.8,
+                        hash_of_entry: ''
+                    }));
+
+                    for(const entry of state.ledger) {
+                        entry.hash_of_entry = await sha256Hex(canonicalize(entry));
+                    }
+
+                    await computeLedgerSeals();
+                    renderLedger();
+                    renderSeals();
+                    simulationStatus.textContent = 'AI process complete.';
+                    simulationStatus.className = 'text-sm mt-2 text-green-400';
+                } else {
+                    throw new Error("Unexpected API response structure or no content found.");
+                }
+
+            } catch (error) {
+                simulationStatus.textContent = `Error: ${error.message}`;
+                simulationStatus.className = 'text-sm mt-2 text-red-400';
+                console.error(error);
+            }
+        }
+
+        async function addLedgerEntry() {
+            if (!state.contract) {
+                alert('Please load a contract first.');
+                return;
+            }
+
+            const newEntry = {
+                cycle: state.ledger.length + 1,
+                phase: 'Work',
+                timestamp: new Date().toISOString(),
+                contract_ref: contractRef.value,
+                op: opInput.value,
+                output: outputInput.value,
+                entropy: 0.5,
+                contested: false
+            };
+
+            const entryHash = await sha256Hex(canonicalize(newEntry));
+            state.ledger.push({ ...newEntry, hash_of_entry: entryHash });
+            
+            opInput.value = '';
+            outputInput.value = '';
+            
+            await computeLedgerSeals();
+            renderLedger();
+            renderSeals();
+        }
+
+        async function computeLedgerSeals() {
+            if (state.ledger.length === 0) {
+                state.ledgerSeals = null;
+                return;
+            }
+            const hashes = state.ledger.map(entry => entry.hash_of_entry).join('');
+            const ledgerSeal = await sha256Hex(hashes);
+            state.ledgerSeals = `Ledger Seal: ${ledgerSeal}`;
+        }
+        
+        function renderLedger() {
+            ledgerOutput.textContent = JSON.stringify(state.ledger, null, 2);
+        }
+
+        function renderSeals() {
+            contractSeals.textContent = state.contractSeals || 'Awaiting contract...';
+            ledgerSeals.textContent = state.ledgerSeals || 'Awaiting entries...';
+        }
+
+        function resetState() {
+            state = { contract: null, contractSeals: null, ledger: [], ledgerSeals: null };
+            contractInput.value = '';
+            contractStatus.textContent = '';
+            opInput.value = '';
+            outputInput.value = '';
+            rawTextInput.value = '';
+            apiKeyInput.value = '';
+            simulationStatus.textContent = '';
+            renderLedger();
+            renderSeals();
+        }
+
+        async function exportProofBundle() {
+            if (!state.contract || state.ledger.length === 0) {
+                alert('Please load a contract and add entries first.');
+                return;
+            }
+
+            const proofBundle = {
+                scroll_id: "Thalamus-Proof-Bundle-" + new Date().getTime(),
+                created: new Date().toISOString(),
+                contract: state.contract,
+                thought_ledger: state.ledger,
+                ledger_seal: state.ledgerSeals,
+                verification_summary: "Awaiting manual verification."
+            };
+
+            const blob = new Blob([JSON.stringify(proofBundle, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = Object.assign(document.createElement('a'), {
+                href: url,
+                download: 'thalamus_proof_bundle.json'
+            });
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

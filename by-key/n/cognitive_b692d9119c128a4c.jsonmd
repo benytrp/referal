@@ -1,0 +1,169 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:59.843Z",
+    "source_text_length": 2302,
+    "word_count": 158,
+    "sentence_count": 17,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b692d9119c128a4c81ab3e3b4b97a374",
+    "entropy_level": 0.949,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e53570ee841e312abda0f94cd673e4800665487bdfa3ceb008b29fe215f88508.json",
+      "processing_timestamp": "2025-08-11T15:15:59.843Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0633",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0633",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 4,
+        "significance": "0.0253",
+        "examples": [
+          "\"document\",\n"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"entropy_level\":"
+        ]
+      },
+      {
+        "theme": "sandbox",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"sandbox\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "document.getElementById('parallel-sandbox').style.display"
+        ]
+      },
+      {
+        "theme": "length",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "successCriteria.length"
+        ]
+      },
+      {
+        "theme": "phases",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "phases:"
+        ]
+      },
+      {
+        "theme": "1000",
+        "frequency": 2,
+        "significance": "0.0127",
+        "examples": [
+          "1000);"
+        ]
+      },
+      {
+        "theme": "processing_phase",
+        "frequency": 2,
+        "significance": "0.0127",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0127",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length ? successCriteria : [\\\"Goal achieved\\\", \\\"No critical errors\\\"] }, phases: [\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"8",
+      "?\",\n      \"currentSchema",
+      "?\",\n      \"<strong>${phases[phaseIndex]",
+      "?\",\n      \"<div class=\\\"entropy-fill\\\" style=\\\"width: ${(phases[phaseIndex]",
+      "?\",\n      \"length",
+      "?\",\n      \"length",
+      "?\"\n    ],\n    \"summary\": \"phase, const, status, entropy, document\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 3,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"x_executor_engine"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:46...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1151,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.22",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b692d9119c128a4c81ab3e3b4b97a374"
+  }
+}

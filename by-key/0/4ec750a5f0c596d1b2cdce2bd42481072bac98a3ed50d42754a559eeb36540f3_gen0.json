@@ -1,0 +1,122 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:29.285Z",
+    "anchor_id": "4ec750a5f0c596d1b2cdce2bd42481072bac98a3ed50d42754a559eeb36540f3",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.799,
+    "contradictions_detected": 1,
+    "word_count": 739
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "div",
+        "frequency": 26
+      },
+      {
+        "theme": "const",
+        "frequency": 24
+      },
+      {
+        "theme": "state",
+        "frequency": 20
+      },
+      {
+        "theme": "selected",
+        "frequency": 15
+      },
+      {
+        "theme": "null",
+        "frequency": 15
+      },
+      {
+        "theme": "scroll",
+        "frequency": 14
+      },
+      {
+        "theme": "class",
+        "frequency": 14
+      },
+      {
+        "theme": "json",
+        "frequency": 13
+      },
+      {
+        "theme": "items",
+        "frequency": 13
+      },
+      {
+        "theme": "span",
+        "frequency": 12
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": ".appendChild(div); } if(shown===0){ list.innerHTML = '<div class=\"tiny\">No items match.</div>'; } $('selCount').textContent = state.selected.size; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "id)?",
+      "created?",
+      "match(/\\{[\\s\\S]*?",
+      "+?",
+      "\"[\\s\\S]*?",
+      "confirm('Delete selected from index view?"
+    ],
+    "summary": "div, const, state, selected, null"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 6
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "AEON_Scroll_Indexer.html",
+    "relative_path": "AEON_Scroll_Indexer.html",
+    "size_bytes": 8934,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 141
+- Complexity score: 36.6
+- Key themes: theme, frequency, selected, state, synthesis, const, null, class, items, match
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of selected?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, selected
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

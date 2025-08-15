@@ -1,0 +1,137 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:31.721Z",
+    "source_text_length": 137,
+    "word_count": 20,
+    "sentence_count": 4,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "c08aa042fcf34d349b349c23365ad839",
+    "entropy_level": 0.982,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T15:15:31.721Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 2,
+        "significance": "0.1000",
+        "examples": [
+          "[2025-08-11T11:00:11.408Z]"
+        ]
+      },
+      {
+        "theme": "11t11",
+        "frequency": 2,
+        "significance": "0.1000",
+        "examples": [
+          "[2025-08-11T11:00:11.408Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 2,
+        "significance": "0.1000",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 2,
+        "significance": "0.1000",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 2,
+        "significance": "0.1000",
+        "examples": [
+          "streamlined_translator.html\n[2025-08-11T11:00:11.960Z]"
+        ]
+      },
+      {
+        "theme": "408z",
+        "frequency": 1,
+        "significance": "0.0500",
+        "examples": [
+          "[2025-08-11T11:00:11.408Z]"
+        ]
+      },
+      {
+        "theme": "streamlined_translator",
+        "frequency": 1,
+        "significance": "0.0500",
+        "examples": [
+          "streamlined_translator.html\n[2025-08-11T11:00:11.960Z]"
+        ]
+      },
+      {
+        "theme": "960z",
+        "frequency": 1,
+        "significance": "0.0500",
+        "examples": [
+          "streamlined_translator.html\n[2025-08-11T11:00:11.960Z]"
+        ]
+      },
+      {
+        "theme": "x_logic_processor",
+        "frequency": 1,
+        "significance": "0.0500",
+        "examples": [
+          "x_logic_processor.html\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T11:00:11 408Z] skip(blacklist) streamlined_translator...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.00685,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "9 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.64",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c08aa042fcf34d349b349c23365ad839"
+  }
+}

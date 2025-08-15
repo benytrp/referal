@@ -1,0 +1,87 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:12.442Z",
+    "anchor_id": "ff279f48c76c92f93c35d8995a7ac19ab05048fdbdfda0c2163aafc47122146a",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.568,
+    "contradictions_detected": 1,
+    "word_count": 1202
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "name",
+        "frequency": 26
+      },
+      {
+        "theme": "const",
+        "frequency": 26
+      },
+      {
+        "theme": "preset",
+        "frequency": 25
+      },
+      {
+        "theme": "performancemetrics",
+        "frequency": 24
+      },
+      {
+        "theme": "document",
+        "frequency": 24
+      },
+      {
+        "theme": "true",
+        "frequency": 20
+      },
+      {
+        "theme": "performance",
+        "frequency": 18
+      },
+      {
+        "theme": "config",
+        "frequency": 17
+      },
+      {
+        "theme": "offline",
+        "frequency": 16
+      },
+      {
+        "theme": "test",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "if (!preset) { this.updateStatus(`❌ Preset '${presetName}' not found`); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const status = passed ?",
+      "const icon = passed ?",
+      "name}: ${passed ?",
+      "?",
+      "?"
+    ],
+    "summary": "name, const, preset, performancemetrics, document"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "ai_optimized_offline_html_system.html",
+    "relative_path": "ai_optimized_offline_html_system.html",
+    "size_bytes": 30871,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.72
+  }
+}

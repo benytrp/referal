@@ -1,0 +1,89 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.717Z",
+    "anchor_id": "8975a0ab8cde16a5971596831cfd836840f67ed1e0a4e347e5cf00231ac5b4fd",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.762,
+    "contradictions_detected": 0,
+    "word_count": 996
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "console",
+        "frequency": 37
+      },
+      {
+        "theme": "log",
+        "frequency": 37
+      },
+      {
+        "theme": "code",
+        "frequency": 28
+      },
+      {
+        "theme": "loop",
+        "frequency": 23
+      },
+      {
+        "theme": "count",
+        "frequency": 22
+      },
+      {
+        "theme": "output",
+        "frequency": 19
+      },
+      {
+        "theme": "document",
+        "frequency": 18
+      },
+      {
+        "theme": "const",
+        "frequency": 17
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 17
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 17
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "What does each part do?",
+      "• What happens if you change the 5 to a 3?",
+      "• What if you change i++ to i += 2?",
+      "• Can you make it count backwards?",
+      "• What happens if you forget the count++ line?",
+      "• What if you change the condition to count < 7?",
+      "• Can you make it count by 2s instead of 1s?",
+      "• Can you add more fruits to the list?",
+      "• What if you change \"fruits\" to \"colors\" and add color names?",
+      "• Try adding numbers to the list - what happens?"
+    ],
+    "summary": "console, log, code, loop, count"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "philosophical_loops_learning.html",
+    "relative_path": "philosophical_loops_learning.html",
+    "size_bytes": 12151,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.75
+  }
+}

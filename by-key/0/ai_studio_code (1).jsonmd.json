@@ -1,0 +1,88 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:12.737Z",
+    "anchor_id": "75e988df035ca2b61723f25dd89bda322029d580c2fa9184ec9c14d3c27a6013",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.677,
+    "contradictions_detected": 2,
+    "word_count": 595
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "will",
+        "frequency": 30
+      },
+      {
+        "theme": "execution",
+        "frequency": 13
+      },
+      {
+        "theme": "type",
+        "frequency": 11
+      },
+      {
+        "theme": "details",
+        "frequency": 11
+      },
+      {
+        "theme": "actions",
+        "frequency": 11
+      },
+      {
+        "theme": "tool",
+        "frequency": 11
+      },
+      {
+        "theme": "layer",
+        "frequency": 10
+      },
+      {
+        "theme": "phase",
+        "frequency": 10
+      },
+      {
+        "theme": "step",
+        "frequency": 10
+      },
+      {
+        "theme": "description",
+        "frequency": 10
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ls\": { \"actions\": [ \"I will log unreadable files as warnings, not fatal errors.\", \"I will check query syntax and report issues clear"
+      },
+      {
+        "idx": 1,
+        "sample": "ta for traceability.\", \"I will return a well-formed empty result when no matches are found.\" ], \"keywords\": [ \"consistent fo"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "will, execution, type, details, actions"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (1).txt",
+    "relative_path": "ai_studio_code (1).txt",
+    "size_bytes": 6217,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.956Z",
+    "anchor_id": "13889f993171460bf5043caf269e1f6aae643e3ff74f066e540a5a3eb818f70d",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.68,
+    "contradictions_detected": 5,
+    "word_count": 1687
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 44
+      },
+      {
+        "theme": "content",
+        "frequency": 41
+      },
+      {
+        "theme": "evolution",
+        "frequency": 31
+      },
+      {
+        "theme": "log",
+        "frequency": 29
+      },
+      {
+        "theme": "generation",
+        "frequency": 28
+      },
+      {
+        "theme": "expanded",
+        "frequency": 25
+      },
+      {
+        "theme": "error",
+        "frequency": 24
+      },
+      {
+        "theme": "return",
+        "frequency": 24
+      },
+      {
+        "theme": "files",
+        "frequency": 21
+      },
+      {
+        "theme": "questions",
+        "frequency": 21
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "toryPicker' in window; if (!fsSupported) { log('⚠️ File System Access API not supported. Please use Chrome/Edge.'); } // DOM Elements const $ = (id"
+      },
+      {
+        "idx": 1,
+        "sample": "irectory(purpose) { if (!fsSupported) { alert('File System Access API not supported in this browser.'); return null; } try {"
+      },
+      {
+        "idx": 2,
+        "sample": "s('input-stage', 'active'); if (fileCount === 0) { log('📁 No files found in input directory'); return false; }"
+      },
+      {
+        "idx": 3,
+        "sample": "} } if (outputFiles.length === 0) { log('⚠️ No output files to feed back'); return false; } // Co"
+      },
+      {
+        "idx": 4,
+        "sample": "1000} seconds...`); } } else { log('⚠️ Evolution cycle failed - no files processed'); pauseEvolution(); } } function pauseEvoluti"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "?",
+      "match(/\\?",
+      "push(`What are the deeper implications of ${theme}?",
+      "push(`How does ${theme} connect to broader patterns?",
+      "push(\"What additional context or examples would strengthen this content?",
+      "includes('?",
+      "push(\"What questions does this content raise?",
+      "]+$/)?",
+      "const speed = elapsed > 0 ?"
+    ],
+    "summary": "const, content, evolution, log, generation"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 0,
+    "uncertainty": 1
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "recursive_content_pipeline.html",
+    "relative_path": "recursive_content_pipeline.html",
+    "size_bytes": 26861,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}

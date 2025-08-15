@@ -1,0 +1,97 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.393Z",
+    "anchor_id": "7f9f10440497415d28d03392906609143b7ace8d279d247d47f32867a8a47d7c",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.686,
+    "contradictions_detected": 1,
+    "word_count": 2488
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "prompt",
+        "frequency": 74
+      },
+      {
+        "theme": "layer",
+        "frequency": 62
+      },
+      {
+        "theme": "document",
+        "frequency": 53
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 51
+      },
+      {
+        "theme": "value",
+        "frequency": 43
+      },
+      {
+        "theme": "depth",
+        "frequency": 39
+      },
+      {
+        "theme": "bius",
+        "frequency": 36
+      },
+      {
+        "theme": "let",
+        "frequency": 36
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 35
+      },
+      {
+        "theme": "layers",
+        "frequency": 34
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ntent = template; console.log('Template generated—loop complete yet endless'); } catch (error) { console.error('Gene"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "Market Reality', prompt: 'What problem does this solve that people actually pay for?",
+      "Simplicity', prompt: 'How does this grow without breaking?",
+      "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?",
+      "Adapting', prompt: 'What changes when reality meets the plan?",
+      "Void', prompt: 'What patterns emerge from the abyss?",
+      "Collapse', prompt: 'How does golden ratio stabilize the flux?",
+      "Resonance', prompt: 'What frequencies awaken the void?",
+      "Expansion', prompt: 'How do opposites entwine eternally?",
+      "Feasible', prompt: 'What must yield to reality?",
+      "Innovation', prompt: 'How does breakage fuel rebirth?",
+      "Evidence', prompt: 'What data shatters assumptions?",
+      "Macro', prompt: 'How do scales entwine without fracture?",
+      "value = 'How does stasis yield to flux?",
+      "let taskType = prompt('What type of task do you wish to create a protocol for?",
+      "let layerCount = prompt('How many layers for your business plan?"
+    ],
+    "summary": "prompt, layer, document, getelementbyid, value"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 4,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "!DOCTYPasfd.html",
+    "relative_path": "!DOCTYPasfd.html",
+    "size_bytes": 31917,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.75
+  }
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perplexity AI — Tool Calls Cheatsheet (Standalone)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #212529;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 2.2rem;
+        }
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+            border-bottom-width: 2px;
+        }
+        h2 {
+            font-size: 1.7em;
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #0056b3;
+            margin-top: 2rem;
+            border-bottom: none;
+        }
+        blockquote {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            color: #6c757d;
+            background-color: #f1f3f5;
+            margin: 1.5em 0;
+            font-style: italic;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        .code-container {
+            position: relative;
+            margin: 1.5em 0;
+        }
+        pre {
+            background-color: #212529;
+            color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre;
+            word-wrap: normal;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+        .code-container:hover .copy-btn {
+            opacity: 1;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+        }
+        .copy-btn.copied {
+            background-color: #28a745;
+            opacity: 1;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #e9ecef;
+            margin: 3rem 0;
+        }
+        ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perplexity AI — Tool Calls Cheatsheet (Standalone)</h1>
+        <p>A compact, copy-pasteable reference for invoking <strong>Perplexity-style tools</strong> via the XML-like <code>&lt;function_calls&gt;</code> syntax. Batch multiple calls by repeating <code>&lt;invoke&gt;</code>. Aim for <strong>&le; 3 tool calls per turn</strong>.</p>
+        <blockquote>Tip: Plan first. Use tools to gather facts, then answer. Prefer authoritative sources; <strong>cite</strong> when you’ve used the web.</blockquote>
+        <hr>
+
+        <h2>Favorites</h2>
+        <h3>Quick Web Search</h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;search_web&lt;/tool_name&gt;
+    &lt;parameters&gt;
+      &lt;queries&gt;["latest AI developments"]&lt;/queries&gt;
+    &lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h3>Execute Python Code</h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;execute_python&lt;/tool_name&gt;
+    &lt;parameters&gt;
+      &lt;code&gt;import math; print(math.sqrt(16))&lt;/code&gt;
+    &lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h3>Generate Image</h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;generate_image&lt;/tool_name&gt;
+    &lt;parameters&gt;
+      &lt;prompt&gt;A futuristic AI cityscape&lt;/prompt&gt;
+      &lt;style&gt;realistic&lt;/style&gt;
+      &lt;size&gt;1024x1024&lt;/size&gt;
+    &lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h3>Search User Files</h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;search_files&lt;/tool_name&gt;
+    &lt;parameters&gt;
+      &lt;queries&gt;["timestamp anchors", "chris"]&lt;/queries&gt;
+    &lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+        <hr>
+
+        <h2>Video</h2>
+        <p>Aligned to your Perplexity Video API (as of 2025-08-09). Field names, enums, and limits match your spec. Include your key as <code>api_key</code> in the body (as required by your endpoints) even if your gateway also injects <code>Authorization</code>.</p>
+        <p><strong>Base URL (server-side mapping):</strong> <code>https://api.perplexity.video/v1/</code></p>
+        <blockquote>Tip: Set <code>"async": true</code> on any call to get a <code>job_id</code> immediately, then poll status.</blockquote>
+
+        <h3>Prompt-to-Video &nbsp;<code>POST /generate</code></h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;video.generate&lt;/tool_name&gt;
+    &lt;parameters&gt;{
+      "api_key": "YOUR_API_KEY",
+      "prompt": "slow drone fly-through of a neon cyberpunk alley, rain, cinematic",
+      "duration": 6,                   
+      "fps": 24,                       
+      "resolution": "1024x576",      
+      "style_preset": "cinematic",   
+      "safety_mode": "strict",       
+      "async": false
+    }&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h3>Edit (inpaint / replace background / extend / loop) &nbsp;<code>POST /edit</code></h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;video.edit&lt;/tool_name&gt;
+    &lt;parameters&gt;{
+      "api_key": "YOUR_API_KEY",
+      "video_url": "https://example.com/input.mp4",
+      "op": "inpaint",                
+      "mask": "https://example.com/mask.png",   
+      "prompt": "replace billboard with a retro arcade sign, glowing",
+      "fps": 24,                        
+      "resolution": "1920x1080",
+      "async": false
+    }&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+        <blockquote><code>op</code> enum: <code>"inpaint" | "replace_bg" | "extend" | "loop"</code>. For <code>replace_bg</code>, provide <code>bg_url</code>. If <code>duration</code>, <code>fps</code>, or <code>resolution</code> are omitted, the input video values are used.</blockquote>
+
+        <h3>Compose / Concatenate Clips (with per-clip transition) &nbsp;<code>POST /compose</code></h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls&gt;
+  &lt;invoke&gt;
+    &lt;tool_name&gt;video.compose&lt;/tool_name&gt;
+    &lt;parameters&gt;{
+      "api_key": "YOUR_API_KEY",
+      "timeline": [
+        { "src": "https://ex.com/a.mp4", "in": 0, "out": 4, "transition": "fade", "duration": 0.5 },
+        { "src": "https://ex.com/b.mp4", "in": 1, "out": 6 }
+      ],
+      "fps": 30,
+      "resolution": "1080x1080",
+      "async": false
+    }&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+        <blockquote><code>transition</code> enum per clip: <code>"fade" | "cut" | "dissolve"</code>. Max total duration 300s.</blockquote>
+
+        <hr>
+
+        <h2>Function-Calls v2 — Appendix (IDs, Timeouts, Caching, Dependencies)</h2>
+        <p>This appendix adds the v2 envelope and the execution-safety fields you asked for: <code>id</code>, <code>timeout_ms</code>, <code>retry</code>, <code>cache_key</code>, <code>depends_on</code>, <code>invocation_digest</code> (plus optional <code>&lt;expect&gt;</code> constraints) — and the linter rules that govern them.</p>
+
+        <h3>Annotated Skeleton (two-step chain)</h3>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls version="2" session_id="sess_2025-08-09" turn_id="t42"&gt;
+  &lt;invoke id="ivk_1" timeout_ms="8000" retry="1" cache_key="2b9f…" invocation_digest="sha256:a3c4…"&gt;
+    &lt;tool_name&gt;search_web&lt;/tool_name&gt;
+    &lt;parameters&gt;{"queries":["openai sora licensing news"]}&lt;/parameters&gt;
+    &lt;expect&gt;freshness&lt;=7d; max_results&lt;=5&lt;/expect&gt;
+  &lt;/invoke&gt;
+
+  &lt;invoke id="ivk_2" timeout_ms="12000" retry="1" cache_key="5f01…" depends_on="ivk_1" invocation_digest="sha256:9a7e…"&gt;
+    &lt;tool_name&gt;fetch_url&lt;/tool_name&gt;
+    &lt;parameters&gt;{{ ivk_1.top_urls(3) }}&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h3>Copy-ready mini-templates</h3>
+        <h4>Single invoke (cached)</h4>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls version="2" session_id="sess_YYYY-MM-DD" turn_id="t1"&gt;
+  &lt;invoke id="ivk_1" timeout_ms="8000" retry="1" cache_key="{{ AUTO }}" invocation_digest="sha256:{{ AUTO }}"&gt;
+    &lt;tool_name&gt;search_files&lt;/tool_name&gt;
+    &lt;parameters&gt;{"queries":["design doc"]}&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+        <h4>Two invokes with dependency &amp; template</h4>
+        <div class="code-container"><button class="copy-btn">Copy</button><pre><code>&lt;function_calls version="2" session_id="sess_YYYY-MM-DD" turn_id="t7"&gt;
+  &lt;invoke id="ivk_1" timeout_ms="8000" retry="1" cache_key="{{ AUTO }}" invocation_digest="sha256:{{ AUTO }}"&gt;
+    &lt;tool_name&gt;search_web&lt;/tool_name&gt;
+    &lt;parameters&gt;{"queries":["latest model pricing 2025"]}&lt;/parameters&gt;
+    &lt;expect&gt;freshness&lt;=7d; max_results&lt;=5&lt;/expect&gt;
+  &lt;/invoke&gt;
+  &lt;invoke id="ivk_2" timeout_ms="12000" retry="1" cache_key="{{ AUTO }}" depends_on="ivk_1" invocation_digest="sha256:{{ AUTO }}"&gt;
+    &lt;tool_name&gt;fetch_url&lt;/tool_name&gt;
+    &lt;parameters&gt;{{ ivk_1.top_urls(3) }}&lt;/parameters&gt;
+  &lt;/invoke&gt;
+&lt;/function_calls&gt;</code></pre></div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const btn = e.target;
+                    const pre = btn.parentElement.querySelector('pre');
+                    const code = pre.querySelector('code');
+                    const textToCopy = code.innerText;
+
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        btn.textContent = 'Copied!';
+                        btn.classList.add('copied');
+                        setTimeout(() => {
+                            btn.textContent = 'Copy';
+                            btn.classList.remove('copied');
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

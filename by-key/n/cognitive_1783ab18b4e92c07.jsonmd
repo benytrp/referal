@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:39.532Z",
+    "source_text_length": 3403,
+    "word_count": 345,
+    "sentence_count": 28,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "1783ab18b4e92c071edaee311a2f07a2",
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "c75600de9837d942e98b4e0d6e9f915f97bc52ea1c21e53c5a5a6b13dd6b0b1c_feedin_1754897463044.json",
+      "processing_timestamp": "2025-08-11T15:15:39.532Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0522",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0464",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 8,
+        "significance": "0.0232",
+        "examples": [
+          "\"contract\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0145",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0116",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0116",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4,
+        "significance": "0.0116",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "goal",
+        "frequency": 4,
+        "significance": "0.0116",
+        "examples": [
+          "\"goal\",\n"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 3,
+        "significance": "0.0087",
+        "examples": [
+          "\"output\",\n"
+        ]
+      },
+      {
+        "theme": "ledger",
+        "frequency": 3,
+        "significance": "0.0087",
+        "examples": [
+          "\"ledger\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 3,
+        "significance": "0.0087",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "generate",
+        "frequency": 3,
+        "significance": "0.0087",
+        "examples": [
+          "\"Generate"
+        ]
+      }
+    ],
+    "key_questions": [
+      "\\\"],\\\"SUCCESS_CRITER\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"contract?\",\n      \"hash",
+      "?\",\n      \"contract",
+      "?\",\n      \"payload",
+      "?\",\n      \"blocks",
+      "?\"\n    ],\n    \"summary\": \"contract, dom, output, state, ledger\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 1,\n    \"negative\": 2,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"ai_studio_code (5)",
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:30...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.17015,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.62",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "1783ab18b4e92c071edaee311a2f07a2"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T09:29:09.783Z",
+    "source_text_length": 39877,
+    "word_count": 3879,
+    "entropy_level": "0.862",
+    "contradictions_detected": 209,
+    "processing_phase": "FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "anchor_id": "f62bfb1f10d9d34f334d4ff6d94ae7d3"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "consciousness",
+        "frequency": 5,
+        "examples": [
+          "conscious",
+          "CONSCIOUS",
+          "conscious"
+        ]
+      },
+      {
+        "theme": "patterns",
+        "frequency": 24,
+        "examples": [
+          "RECUR",
+          "recur",
+          "recur"
+        ]
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 48,
+        "examples": [
+          "paradox",
+          "contradict",
+          "contradict"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 8,
+        "examples": [
+          "grow",
+          "Adapt",
+          "change"
+        ]
+      },
+      {
+        "theme": "systems",
+        "frequency": 10,
+        "examples": [
+          "framework",
+          "STRUCTURE",
+          "architecture"
+        ]
+      }
+    ],
+    "key_questions": [
+      "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n            { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+      "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n            { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+      "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n            { layer: 'EXECUTION', contradiction: 'Planning vs",
+      "Adapting', prompt: 'What changes when reality meets the plan?', auto_execute: 'Build scenario planning framework' }\r\n        ],\r\n        completionProtocol: 'Synthesize all layers into comprehensive business plan with financial projections, looping contradictions into eternal growth",
+      "Void', prompt: 'What patterns emerge from the abyss?', auto_execute: 'Map echo constellations' },\r\n            { layer: 'φ-CONVERGE', contradiction: 'Expansion vs"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "',\r\n        depth: 'Exhaustive'\r\n    }\r\n};\r\n\r\n// The primary example used by the \"Load Example\"",
+        "statement_b": "ton",
+        "line": 38,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "innerHTML = '<h2>Instruction Sequence (Möbius Layers)</h2><",
+        "statement_b": "ton onclick=\"addLayer()\">+ Add Layer</",
+        "line": 60,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "innerHTML = '<h2>Instruction Sequence (Möbius Layers)</h2><",
+        "statement_b": "ton onclick=\"addLayer()\">+ Add Layer</",
+        "line": 93,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "log('Template generated—loop complete",
+        "statement_b": "endless');\r\n    } catch (error) {\r\n        console",
+        "line": 206,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "5); color: var(--text-light); border: 1px solid var(--border-color); padding: 10px; border-radius: 5px; font-family: inherit; }",
+        "statement_b": "ton { background: var(--primary); color: #000; padding: 10px 15px; margin: 5px; cursor: pointer; border: none; border-radius: 5px; font-weight: bold; transition: all 0",
+        "line": 262,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "2s ease; }",
+        "statement_b": "ton:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 255, 255, 0",
+        "line": 263,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "</p>\r\n        </header>\r\n\r\n        <nav class=\"tabs\">\r\n            <",
+        "statement_b": "ton class=\"tab active\" onclick=\"switchTab('builder')\">🧬 Architect</",
+        "line": 302,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\"></textarea></label>\r\n                    <label>Recursion Depth:\r\n                        <select id=\"depth\">\r\n                            <option>EXHAUSTIVE</option>\r\n                            <option>COMPLETE_UNTIL_ACTIONABLE</option>\r\n                            <option>DEPTH_3</option>\r\n                            <option>DEPTH_5</option>\r\n                            <option>MINIMAL_VIABLE</option>\r\n                        </select>\r\n                    </label>\r\n                </section>\r\n            </div>\r\n            <section id=\"layers\">\r\n                <div class=\"section-title\">Instruction Layers</div>\r\n                <div id=\"layers-container\"></div>\r\n                <",
+        "statement_b": "ton onclick=\"addLayer()\">+ Add Layer</",
+        "line": 309,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "</p>\r\n                <div id=\"library-list\" style=\"margin-top: 20px;\"></div>\r\n                 <",
+        "statement_b": "ton onclick=\"saveToLibrary()\">💾 Save Current Template</",
+        "line": 318,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "-- Controls and Output -->\r\n        <section>\r\n            <div class=\"section-title\">Controls & Output</div>\r\n            <",
+        "statement_b": "ton onclick=\"loadExample()\">📚 Load Full Example</",
+        "line": 319,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "autoExecute || ''}\"></label>\r\n        <",
+        "statement_b": "ton onclick=\"removeLayer(${layerId})\" class=\"preset-btn\">Remove Layer</",
+        "line": 436,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "createElement('",
+        "statement_b": "ton');\r\n        btn",
+        "line": 561,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "contradiction}\r\n            <",
+        "statement_b": "ton onclick=\"triggerBeacon('${layer",
+        "line": 610,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "note})` : 'No Beacon Assigned'}\r\n            </",
+        "statement_b": "ton>\r\n        `;\r\n        dashboard",
+        "line": 615,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "innerHTML = '<p>No templates saved",
+        "statement_b": "",
+        "line": 637,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "innerHTML = `\r\n            <strong>${id}</strong>\r\n            <",
+        "statement_b": "ton onclick=\"loadFromLibrary('${id}')\">Load</",
+        "line": 641,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 5,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 153,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "// --- 1. ... href);\r\n}\r\n\r\n</script>\r\n</body>\r\n</html>.",
+    "key_insights": [],
+    "action_items": [
+      "must",
+      "do",
+      "do"
+    ],
+    "unresolved_tensions": [
+      " Market Reality', prompt: 'What problem",
+      "contradiction: 'Vision vs",
+      "contradiction: 'Scalability vs"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Automated text analysis with contradiction mapping",
+    "confidence_level": "0.07",
+    "recommended_next_steps": [],
+    "recursive_potential": "High - strong recursion",
+    "text_sha256": "f62bfb1f10d9d34f334d4ff6d94ae7d3"
+  }
+}

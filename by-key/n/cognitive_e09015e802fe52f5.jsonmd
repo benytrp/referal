@@ -1,0 +1,183 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:32.552Z",
+    "source_text_length": 3019,
+    "word_count": 282,
+    "sentence_count": 23,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e09015e802fe52f5c498e6810d5cafac",
+    "entropy_level": 0.923,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "32fa76b4ed93a11839c747960978bb94280223253fda72a753ab25b42e7d7a58.json",
+      "processing_timestamp": "2025-08-11T15:15:32.552Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 10,
+        "significance": "0.0355",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 10,
+        "significance": "0.0355",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "line",
+        "frequency": 6,
+        "significance": "0.0213",
+        "examples": [
+          "\"Offline"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 4,
+        "significance": "0.0142",
+        "examples": [
+          "\"class\",\n"
+        ]
+      },
+      {
+        "theme": "showmessage",
+        "frequency": 4,
+        "significance": "0.0142",
+        "examples": [
+          "\"showmessage\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 4,
+        "significance": "0.0142",
+        "examples": [
+          "\"type=\\\"checkbox\\\"></td>\\\\n<td"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 4,
+        "significance": "0.0142",
+        "examples": [
+          "\"type=\\\"checkbox\\\"></td>\\\\n<td"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 3,
+        "significance": "0.0106",
+        "examples": [
+          "\"value\",\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 3,
+        "significance": "0.0106",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 3,
+        "significance": "0.0106",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "sample",
+        "frequency": 3,
+        "significance": "0.0106",
+        "examples": [
+          "\"sample\":"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 3,
+        "significance": "0.0106",
+        "examples": [
+          "status.style.display"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length === 0) { showMessage('No valid data found', true); return; } showMessage('Validat\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"className = 'status ' + (isError ?\",\n      \"getMonth() + 1 < 10",
+      "?\",\n      \"getDate() < 10",
+      "?\",\n      \"getHours() < 10",
+      "?\",\n      \"getMinutes() < 10",
+      "?\",\n      \"if (id) line += (line",
+      "?\",\n      \"if (date) line += (line",
+      "?\",\n      \"if (instructor) line += (line",
+      "?\",\n      \"r><th style=\\\"width: 60%;\\\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\n<tr>\\\\n<td>Attendance — Correct day and time"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:44...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\"\n    ],\n    \"summary\": \"var, template, document, value, class\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 1,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (1)",
+        "urgency_score": "0.82",
+        "feasibility_score": "0.98"
+      },
+      {
+        "action": "html\",\n    \"relative_path\": \"unified_e3_builder (1)",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.51"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.15095,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.32",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e09015e802fe52f5c498e6810d5cafac"
+  }
+}

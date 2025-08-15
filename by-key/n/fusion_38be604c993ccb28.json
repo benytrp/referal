@@ -1,0 +1,64 @@
+{
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T09:28:52.334Z",
+    "source_text_length": 14893,
+    "word_count": 1247,
+    "entropy_level": "0.719",
+    "contradictions_detected": 128,
+    "processing_phase": "FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "anchor_id": "38be604c993ccb28876753aed1b97a33"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "patterns",
+        "frequency": 6,
+        "examples": [
+          "Sequence",
+          "sequence",
+          "sequence"
+        ]
+      },
+      {
+        "theme": "systems",
+        "frequency": 12,
+        "examples": [
+          "System",
+          "System",
+          "System"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 17,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "<img src=\"https://r2cdn. ... export_beacon_log()\n    print(f\"System state: {log_data}\").",
+    "key_insights": [],
+    "action_items": [
+      "Implement",
+      "DO"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Automated text analysis with contradiction mapping",
+    "confidence_level": "0.14",
+    "recommended_next_steps": [],
+    "recursive_potential": "Low",
+    "text_sha256": "38be604c993ccb28876753aed1b97a33"
+  }
+}

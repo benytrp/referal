@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.499Z",
+    "anchor_id": "495252bb891d640a5581878ef51fc078cd907e53c71bd9813a1c89859cc51e91",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.566,
+    "contradictions_detected": 0,
+    "word_count": 1832
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "ecosystemstate",
+        "frequency": 68
+      },
+      {
+        "theme": "log",
+        "frequency": 49
+      },
+      {
+        "theme": "metrics",
+        "frequency": 45
+      },
+      {
+        "theme": "philosophical",
+        "frequency": 29
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 26
+      },
+      {
+        "theme": "document",
+        "frequency": 23
+      },
+      {
+        "theme": "recursive",
+        "frequency": 22
+      },
+      {
+        "theme": "all",
+        "frequency": 19
+      },
+      {
+        "theme": "active",
+        "frequency": 18
+      },
+      {
+        "theme": "ecosystem",
+        "frequency": 18
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "realityLayers > 5 ?"
+    ],
+    "summary": "ecosystemstate, log, metrics, philosophical, consciousness"
+  },
+  "sentiment_indicators": {
+    "positive": 15,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "New Text Document.html",
+    "relative_path": "New Text Document.html",
+    "size_bytes": 58223,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.71
+  }
+}

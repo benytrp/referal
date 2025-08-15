@@ -1,0 +1,178 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:35.185Z",
+    "source_text_length": 3143,
+    "word_count": 308,
+    "sentence_count": 21,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "c9bec958f48b1c8309d7fc3bafabd2e1",
+    "entropy_level": 0.925,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "643537de05118511eeee5d037c3c147687ef274a27bd43d15c7e862021065b95_feedin_1754897457856.json",
+      "processing_timestamp": "2025-08-11T15:15:35.185Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0584",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0519",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "search",
+        "frequency": 6,
+        "significance": "0.0195",
+        "examples": [
+          "\"search\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0162",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "patterns",
+        "frequency": 5,
+        "significance": "0.0162",
+        "examples": [
+          "\"patterns\",\n"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "repl",
+        "frequency": 3,
+        "significance": "0.0097",
+        "examples": [
+          "\"repl\",\n"
+        ]
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 3,
+        "significance": "0.0097",
+        "examples": [
+          "\"artifacts\",\n"
+        ]
+      },
+      {
+        "theme": "analysis",
+        "frequency": 3,
+        "significance": "0.0097",
+        "examples": [
+          "\"content_analysis\":"
+        ]
+      },
+      {
+        "theme": "contains",
+        "frequency": 3,
+        "significance": "0.0097",
+        "examples": [
+          "`contains`,"
+        ]
+      }
+    ],
+    "key_questions": [
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5",
+      "What are the deeper implications of search?\n\n\n## Cross-References (Gen 0)\n- Previous generation: Gen -1\n- Related themes: theme, frequency, search\n- Evolution cycle: 0\n\n\n## Content Expansion (Gen 0)\n\n### Deep Dive: theme\nThis theme emerges as significant in generation 0"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:33...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "774,\n    \"contradictions_detected\": 1,\n    \"word_count\": 641\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"search\",\n        \"frequency\": 28\n      },\n      {\n        \"theme\": \"repl\",\n        \"frequency\": 21\n      },\n      {\n        \"theme\": \"artifacts\",\n        \"frequency\": 19\n      },\n      {\n        \"theme\": \"web\",\n        \"frequency\": 17\n      },\n      {\n        \"theme\": \"patterns\",\n        \"frequency\": 12\n      },\n      {\n        \"theme\": \"analysis\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"chaining\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"create\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"update\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"results\",\n        \"frequency\": 9\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"Operators:** - `contains`, `=`, `",
+        "urgency_score": "0.81",
+        "feasibility_score": "0.87"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.15715,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.42",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "c9bec958f48b1c8309d7fc3bafabd2e1"
+  }
+}

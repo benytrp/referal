@@ -1,0 +1,87 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.526Z",
+    "anchor_id": "220c3cc722ac2ea64495adfda0696bee91fab2df9b65071f8f593c70abcb3207",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.575,
+    "contradictions_detected": 0,
+    "word_count": 456
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "div",
+        "frequency": 42
+      },
+      {
+        "theme": "class",
+        "frequency": 22
+      },
+      {
+        "theme": "archetype",
+        "frequency": 18
+      },
+      {
+        "theme": "shadow",
+        "frequency": 13
+      },
+      {
+        "theme": "data",
+        "frequency": 13
+      },
+      {
+        "theme": "name",
+        "frequency": 10
+      },
+      {
+        "theme": "direction",
+        "frequency": 9
+      },
+      {
+        "theme": "keywords",
+        "frequency": 9
+      },
+      {
+        "theme": "center",
+        "frequency": 7
+      },
+      {
+        "theme": "what",
+        "frequency": 7
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "\"Where does boundary give birth to freedom?",
+      "\"What framework wants to hold me now?",
+      "\"Where am I still starving for unconditional regard?",
+      "\"What does it mean to hold without collapse?",
+      "\"What sacred play have I postponed?",
+      "\"Where does the spiral of emergence beckon me?",
+      "\"What exile returns bearing sacred gifts?",
+      "\"What part of me awaits my loving gaze?"
+    ],
+    "summary": "div, class, archetype, shadow, data"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "was"
+  ],
+  "metadata": {
+    "source_name": "!DOCTYPE.html",
+    "relative_path": "!DOCTYPE.html",
+    "size_bytes": 16739,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.71
+  }
+}

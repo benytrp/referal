@@ -1,0 +1,95 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.882Z",
+    "anchor_id": "d32163127e5ab1f59096f4573d337f794c27400b7a63fb4cd388b9b0ce329cae",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.779,
+    "contradictions_detected": 0,
+    "word_count": 660
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 34
+      },
+      {
+        "theme": "query",
+        "frequency": 18
+      },
+      {
+        "theme": "out",
+        "frequency": 15
+      },
+      {
+        "theme": "breadth",
+        "frequency": 13
+      },
+      {
+        "theme": "recency",
+        "frequency": 12
+      },
+      {
+        "theme": "scores",
+        "frequency": 12
+      },
+      {
+        "theme": "domains",
+        "frequency": 11
+      },
+      {
+        "theme": "freshness",
+        "frequency": 11
+      },
+      {
+        "theme": "return",
+        "frequency": 11
+      },
+      {
+        "theme": "route",
+        "frequency": 8
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "const recencyTriggers = /(today|latest|now|current|price|version|update|ceo|results?",
+      "const entityHint = /[A-Z][a-z]+(?",
+      ":\\s+[A-Z][a-z]+)*|\\b(v?",
+      "const multiTopic = /(?",
+      "test(t) ?",
+      "props: { query: \"string\", recency: \"number?",
+      "\", domains: \"array?",
+      "endsWith('?",
+      "const base = opt ?",
+      "const ok = (base===\"string\"?",
+      "typeof v===\"string\": base===\"number\"?",
+      "typeof v===\"number\": base===\"array\"?",
+      "let html = `<table><thead><tr><th>Query</th><th>Route</th><th>Scores</th><th>OK?",
+      "toFixed(2)}</td><td class=\"${ok?",
+      "'ok':'bad'}\">${ok?"
+    ],
+    "summary": "const, query, out, breadth, recency"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "quick_web_search_router_demo_validator_html.html",
+    "relative_path": "quick_web_search_router_demo_validator_html.html",
+    "size_bytes": 8955,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.358Z",
+    "anchor_id": "69dfe660f68b431e92b507246c730417a500fae4a56a0dc39accd302d9b1ad4f",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.53,
+    "contradictions_detected": 22,
+    "word_count": 1136
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 36
+      },
+      {
+        "theme": "await",
+        "frequency": 24
+      },
+      {
+        "theme": "type",
+        "frequency": 22
+      },
+      {
+        "theme": "error",
+        "frequency": 18
+      },
+      {
+        "theme": "return",
+        "frequency": 17
+      },
+      {
+        "theme": "content",
+        "frequency": 17
+      },
+      {
+        "theme": "cycles",
+        "frequency": 15
+      },
+      {
+        "theme": "aeon",
+        "frequency": 14
+      },
+      {
+        "theme": "message",
+        "frequency": 14
+      },
+      {
+        "theme": "loop",
+        "frequency": 13
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "is.outputDirectory) { throw new Error(\"Output directory not selected\"); } c"
+      },
+      {
+        "idx": 1,
+        "sample": "} catch (e) { // File might not exist, that's OK } }"
+      },
+      {
+        "idx": 2,
+        "sample": "// Note: File System Access API doesn't support true atomic rename // This is a best-effort"
+      },
+      {
+        "idx": 3,
+        "sample": "m const defaultPatterns = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi,"
+      },
+      {
+        "idx": 4,
+        "sample": "const defaultPatterns = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not"
+      },
+      {
+        "idx": 5,
+        "sample": "const defaultPatterns = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|"
+      },
+      {
+        "idx": 6,
+        "sample": "const defaultPatterns = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|non"
+      },
+      {
+        "idx": 7,
+        "sample": "efaultPatterns = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothin"
+      },
+      {
+        "idx": 8,
+        "sample": "s = [ /\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi,"
+      },
+      {
+        "idx": 9,
+        "sample": "er|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|e"
+      },
+      {
+        "idx": 10,
+        "sample": "et|although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|every"
+      },
+      {
+        "idx": 11,
+        "sample": "although|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everythi"
+      },
+      {
+        "idx": 12,
+        "sample": "gh|despite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*no"
+      },
+      {
+        "idx": 13,
+        "sample": "spite|nevertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing"
+      },
+      {
+        "idx": 14,
+        "sample": "vertheless|whereas)\\b/gi, /\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*no"
+      },
+      {
+        "idx": 15,
+        "sample": "/\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ];"
+      },
+      {
+        "idx": 16,
+        "sample": "/\\b(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ];"
+      },
+      {
+        "idx": 17,
+        "sample": "(not|no|never|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ];"
+      },
+      {
+        "idx": 18,
+        "sample": "r|none|nothing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ];"
+      },
+      {
+        "idx": 19,
+        "sample": "othing|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ];"
+      },
+      {
+        "idx": 20,
+        "sample": "g|n't)\\b/gi, /\\b(always.*never|everything.*nothing|all.*none)\\b/gi ]; const"
+      },
+      {
+        "idx": 21,
+        "sample": "if (!func) { throw new Error(`Function ${functionName} not found`); } cons"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "write(typeof content === 'string' ?",
+      "currentChunk += (currentChunk ?"
+    ],
+    "summary": "const, await, type, error, return"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "New Tex.html",
+    "relative_path": "New Tex.html",
+    "size_bytes": 22037,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.91
+  }
+}

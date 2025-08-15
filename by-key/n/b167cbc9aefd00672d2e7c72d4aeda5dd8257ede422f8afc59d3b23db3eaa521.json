@@ -1,0 +1,153 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.798Z",
+    "anchor_id": "b167cbc9aefd00672d2e7c72d4aeda5dd8257ede422f8afc59d3b23db3eaa521",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.749,
+    "contradictions_detected": 12,
+    "word_count": 2417
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 104
+      },
+      {
+        "theme": "await",
+        "frequency": 57
+      },
+      {
+        "theme": "return",
+        "frequency": 38
+      },
+      {
+        "theme": "txt",
+        "frequency": 36
+      },
+      {
+        "theme": "ext",
+        "frequency": 35
+      },
+      {
+        "theme": "name",
+        "frequency": 34
+      },
+      {
+        "theme": "function",
+        "frequency": 34
+      },
+      {
+        "theme": "jsonmd",
+        "frequency": 27
+      },
+      {
+        "theme": "async",
+        "frequency": 27
+      },
+      {
+        "theme": "checked",
+        "frequency": 25
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ile to Reprocess Writes into _reprocessed/ under your chosen Output; does not touch the blacklist. Last Result Preview — Close"
+      },
+      {
+        "idx": 1,
+        "sample": "async function pickDirectory(){ if(!fsSupported){ alert('Your browser does not support the File System Access API (try Chrome/Edge).'); throw new Error('FS"
+      },
+      {
+        "idx": 2,
+        "sample": "i, /\\bno\\b/gi, /\\bnever\\b/gi, /\\bnone\\b/gi, /\\bnothing\\b/gi, /n\\'t\\b/gi, /always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}n"
+      },
+      {
+        "idx": 3,
+        "sample": "never\\b/gi, /\\bnone\\b/gi, /\\bnothing\\b/gi, /n\\'t\\b/gi, /always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}none/gi ];"
+      },
+      {
+        "idx": 4,
+        "sample": "/\\bnone\\b/gi, /\\bnothing\\b/gi, /n\\'t\\b/gi, /always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}none/gi ]; let total=0"
+      },
+      {
+        "idx": 5,
+        "sample": "ing\\b/gi, /n\\'t\\b/gi, /always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}none/gi ]; let total=0; const indices=[];"
+      },
+      {
+        "idx": 6,
+        "sample": "'t\\b/gi, /always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}none/gi ]; let total=0; const indices=[]; for(const r"
+      },
+      {
+        "idx": 7,
+        "sample": "/always[\\s\\S]{0,40}never/gi, /everything[\\s\\S]{0,40}nothing/gi, /all[\\s\\S]{0,40}none/gi ]; let total=0; const indices=[]; for(const re of patterns){"
+      },
+      {
+        "idx": 8,
+        "sample": "n,for,with,by,at,from,is,are,was,were,be,been,being,it,as,that,this,these,those,not,do,does,did,but,so,we,you,i,they,them,our,your,his,her,its,their\".split(',')"
+      },
+      {
+        "idx": 9,
+        "sample": "ew $(\"btnPreview\").addEventListener('click', ()=>{ if(!lastFused){ alert('No result yet. Run a scan first or Self-Test.'); return; } $(\"previewJson\")."
+      },
+      {
+        "idx": 10,
+        "sample": "nPreview\").addEventListener('click', ()=>{ if(!lastFused){ alert('No result yet. Run a scan first or Self-Test.'); return; } $(\"previewJson\").textConten"
+      },
+      {
+        "idx": 11,
+        "sample": "'click', async ()=>{ const sample = `Sample document\\n\\nWe planned to ship, however we discovered a risk. It was unclear yesterday, but now we will proceed."
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "items?",
+      "textContent = ms ?",
+      "const path = prefix ?",
+      "body ?",
+      "return Hmax ?",
+      "match(/[^\\n\\r?",
+      "]{0,120}\\?",
+      "replace(/[-/\\\\^$*+?",
+      "html?",
+      "const text = isHTML ?",
+      "__jsonmd_last_extract_method = isHTML ?",
+      "confirm('Clear blacklist?",
+      "html?",
+      "const txt = isHTML ?",
+      "\\nQuestions: What is the next step?"
+    ],
+    "summary": "const, await, return, txt, ext"
+  },
+  "sentiment_indicators": {
+    "positive": 8,
+    "negative": 9,
+    "uncertainty": 6
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "next week",
+    "last week",
+    "will",
+    "was",
+    "were",
+    "2023",
+    "2024",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "jsonmd_downloads_scanner_v_1_3 (3).html",
+    "relative_path": "jsonmd_downloads_scanner_v_1_3 (3).html",
+    "size_bytes": 28327,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.87
+  }
+}

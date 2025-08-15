@@ -1,0 +1,107 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:56.027Z",
+    "anchor_id": "9da3a35a16da0fbbb07583c3dfa78d93e09474b7042567823e6d93583453192b",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.732,
+    "contradictions_detected": 3,
+    "word_count": 2097
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 104
+      },
+      {
+        "theme": "await",
+        "frequency": 56
+      },
+      {
+        "theme": "return",
+        "frequency": 51
+      },
+      {
+        "theme": "function",
+        "frequency": 42
+      },
+      {
+        "theme": "meta",
+        "frequency": 28
+      },
+      {
+        "theme": "async",
+        "frequency": 23
+      },
+      {
+        "theme": "text",
+        "frequency": 22
+      },
+      {
+        "theme": "name",
+        "frequency": 20
+      },
+      {
+        "theme": "new",
+        "frequency": 20
+      },
+      {
+        "theme": "inbox",
+        "frequency": 19
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Logs Everything runs locally in your browser. No network calls. Offline-first. // ======= Utilities (st"
+      },
+      {
+        "idx": 1,
+        "sample": "=ok>clear</span>'}</td> <td>${r.nearDupe?'<span class=warn>yes</span>':'no'}</td> <td>${r.cooling?'<span class=warn>on</span>':'off'}</td>"
+      },
+      {
+        "idx": 2,
+        "sample": "ySelector('.sel').checked).map(r=> r._row); if (!sels.length) return log('Nothing selected.'); const bucket = new TokenBucket(+ge('cfgCap').value ||"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const buf = typeof str === 'string' ?",
+      "replace(/\\r\\n?",
+      "vec[i] += (bit === 1n) ?",
+      "result?",
+      "const mode = (await isStructuredRoot()) ?",
+      "'); return i>0?",
+      "'); return i>0?",
+      "hashes?",
+      "scheduling?",
+      "cooling) ?",
+      "const reason = idemHit ?",
+      "'idempotent_hit' : nearDupe ?",
+      "'near_duplicate' : cooling ?",
+      "decision==='process'?",
+      "idemHit?"
+    ],
+    "summary": "const, await, return, function, meta"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "rec_pipe_offline_studio_single_file_html_app (1).html",
+    "relative_path": "rec_pipe_offline_studio_single_file_html_app (1).html",
+    "size_bytes": 24476,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

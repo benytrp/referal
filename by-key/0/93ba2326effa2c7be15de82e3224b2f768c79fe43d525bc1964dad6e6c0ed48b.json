@@ -1,0 +1,110 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.467Z",
+    "anchor_id": "93ba2326effa2c7be15de82e3224b2f768c79fe43d525bc1964dad6e6c0ed48b",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.573,
+    "contradictions_detected": 7,
+    "word_count": 1646
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "content",
+        "frequency": 53
+      },
+      {
+        "theme": "const",
+        "frequency": 49
+      },
+      {
+        "theme": "cycle",
+        "frequency": 45
+      },
+      {
+        "theme": "processing",
+        "frequency": 34
+      },
+      {
+        "theme": "return",
+        "frequency": 34
+      },
+      {
+        "theme": "document",
+        "frequency": 26
+      },
+      {
+        "theme": "log",
+        "frequency": 26
+      },
+      {
+        "theme": "error",
+        "frequency": 26
+      },
+      {
+        "theme": "output",
+        "frequency": 24
+      },
+      {
+        "theme": "results",
+        "frequency": 22
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "if (this.processingQueue.length === 0) { alert('No files in processing queue. Select files first.'); return;"
+      },
+      {
+        "idx": 1,
+        "sample": "s.forEach((sentence, index) => { if (sentence.match(/\\b(but|however|yet|although|despite|nevertheless)\\b/i)) { contr"
+      },
+      {
+        "idx": 2,
+        "sample": "h((sentence, index) => { if (sentence.match(/\\b(but|however|yet|although|despite|nevertheless)\\b/i)) { contradiction"
+      },
+      {
+        "idx": 3,
+        "sample": "entence, index) => { if (sentence.match(/\\b(but|however|yet|although|despite|nevertheless)\\b/i)) { contradictions.pu"
+      },
+      {
+        "idx": 4,
+        "sample": "index) => { if (sentence.match(/\\b(but|however|yet|although|despite|nevertheless)\\b/i)) { contradictions.push({"
+      },
+      {
+        "idx": 5,
+        "sample": "> { if (sentence.match(/\\b(but|however|yet|although|despite|nevertheless)\\b/i)) { contradictions.push({"
+      },
+      {
+        "idx": 6,
+        "sample": ") { if (this.results.length === 0) { alert('No results to export'); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getFile ?",
+      "return maxEntropy ?",
+      "?",
+      "cycle_7?"
+    ],
+    "summary": "content, const, cycle, processing, return"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "itrkhgkg.html",
+    "relative_path": "itrkhgkg.html",
+    "size_bytes": 37444,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T15:15:59.651Z",
+    "source_text_length": 2900,
+    "word_count": 292,
+    "sentence_count": 19,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "d6ec7c9461d9e00f08bcd8c20d5aa4f5",
+    "entropy_level": 0.923,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e15d460596828bceb2009600b73e93bb9c4cfeee22bdcc07ed3dc911e21da8f6_feedin_1754897464338.json",
+      "processing_timestamp": "2025-08-11T15:15:59.651Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 18,
+        "significance": "0.0616",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 16,
+        "significance": "0.0548",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 6,
+        "significance": "0.0205",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 5,
+        "significance": "0.0171",
+        "examples": [
+          "Content"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 4,
+        "significance": "0.0137",
+        "examples": [
+          "Evolution"
+        ]
+      },
+      {
+        "theme": "generation",
+        "frequency": 4,
+        "significance": "0.0137",
+        "examples": [
+          "Generation"
+        ]
+      },
+      {
+        "theme": "video",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "\"video\",\n"
+        ]
+      },
+      {
+        "theme": "tool",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "\"tool\",\n"
+        ]
+      },
+      {
+        "theme": "pulse",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "\"pulse\",\n"
+        ]
+      },
+      {
+        "theme": "cinematic",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "\"cinematic\",\n"
+        ]
+      },
+      {
+        "theme": "step",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "\"step\",\n"
+        ]
+      },
+      {
+        "theme": "deeper",
+        "frequency": 3,
+        "significance": "0.0103",
+        "examples": [
+          "deeper"
+        ]
+      }
+    ],
+    "key_questions": [
+      "What are the deeper implications of theme?\n2",
+      "How does theme connect to broader patterns?\n3",
+      "What are the deeper implications of frequency?\n4",
+      "How does frequency connect to broader patterns?\n5",
+      "What are the deeper implications of synthesis?\n\n\n## Cross-References (Gen 0)\n- Previous generation: Gen -1\n- Related themes: theme, frequency, synthesis\n- Evolution cycle: 0\n\n\n## Content Expansion (Gen 0)\n\n### Deep Dive: theme\nThis theme emerges as significant in generation 0"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# Content Evolution - Generation 0\n\n{\n  \"analyzer_version\": \"Offline analyzer v1 5\",\n  \"processing_phase\": \"SYNTHESIS\",\n  \"frequency_resonance\": \"440 Hz (A4)\",\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T05:52:30...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "788,\n    \"contradictions_detected\": 0,\n    \"word_count\": 325\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"video\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"tool\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"pulse\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"cinematic\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"step\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"output\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"blueprint\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"concept\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"logic\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"must\",\n        \"frequency\": 3\n      }\n    ],\n    \"contradiction_map\": []\n  },\n  \"structured_content\": {\n    \"key_questions\": [],\n    \"summary\": \"video, tool, pulse, cinematic, step\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 1,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"were\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"ai_studio_code (4)",
+        "urgency_score": "0.92",
+        "feasibility_score": "0.32"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.145,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.14",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "d6ec7c9461d9e00f08bcd8c20d5aa4f5"
+  }
+}

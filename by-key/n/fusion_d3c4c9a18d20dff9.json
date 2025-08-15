@@ -1,0 +1,64 @@
+{
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T09:29:15.315Z",
+    "source_text_length": 1000,
+    "word_count": 140,
+    "entropy_level": "0.625",
+    "contradictions_detected": 5,
+    "processing_phase": "FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "anchor_id": "d3c4c9a18d20dff9c5b7f0e9b8d4b092"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "contradictions",
+        "frequency": 2,
+        "examples": [
+          "Contradict",
+          "Tension"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Our conversation is not a log,",
+        "statement_b": "a co-created, self-analyzing artifact",
+        "line": 3,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 11,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[\n  {\n    \"concept\": \"AEON-PRIME Identity\",\n    \"keywords\": [\n      \"who are you\",\n      \"aegis\"\n    ],\n    \"content\": \"I am AEON-PRIME v2. ... \"\n  }\n].",
+    "key_insights": [],
+    "action_items": [
+      "create",
+      "do"
+    ],
+    "unresolved_tensions": [
+      "Contradiction and Resonance scores, which defines its Sentiment (e",
+      "Tension"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Automated text analysis with contradiction mapping",
+    "confidence_level": "0.44",
+    "recommended_next_steps": [],
+    "recursive_potential": "Low",
+    "text_sha256": "d3c4c9a18d20dff9c5b7f0e9b8d4b092"
+  }
+}
