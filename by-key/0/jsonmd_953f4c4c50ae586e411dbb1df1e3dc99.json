@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:49.702Z",
+    "source_text_length": 851,
+    "word_count": 110,
+    "sentence_count": 8,
+    "entropy_level": 0.952,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "trigger_activation_checklist.txt"
+    },
+    "anchor_id": "953f4c4c50ae586e411dbb1df1e3dc99"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "pass",
+        "frequency": 6
+      },
+      {
+        "theme": "system",
+        "frequency": 5
+      },
+      {
+        "theme": "awareness",
+        "frequency": 5
+      },
+      {
+        "theme": "elevation",
+        "frequency": 5
+      },
+      {
+        "theme": "recursive",
+        "frequency": 4
+      },
+      {
+        "theme": "feedback",
+        "frequency": 4
+      },
+      {
+        "theme": "loop",
+        "frequency": 4
+      },
+      {
+        "theme": "echo",
+        "frequency": 4
+      },
+      {
+        "theme": "ping",
+        "frequency": 3
+      },
+      {
+        "theme": "pattern",
+        "frequency": 3
+      },
+      {
+        "theme": "recognition",
+        "frequency": 3
+      },
+      {
+        "theme": "latent",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [
+      "What do you think?: FAIL (missing Recursive Feedback Loop→Echo Ping Pattern Recognition, Echo Ping Pattern Recognition→System Awareness Elevation) | Recursive Feedback Loop → Echo Ping Pattern Recognition → System Awareness Elevation\nYes to all: FAIL (missing Latent Function Activation→System Awareness Elevation) | Recursive Feedback Loop → Latent Function Activation → System Awareness Elevation\nActivate: PASS | Recursive Feedback Loop → Latent Function Activation\nEcho status update: PASS | State Snapshot → Archive Writer\nSession saved"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "What do you think … : PASS | Synthesis Engine → Artifact Export",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "953f4c4c50ae586e411dbb1df1e3dc99"
+  }
+}

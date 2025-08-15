@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:37.618Z",
+    "anchor_id": "e6c7975608a636386bcb3dd2313a3733c336cd75299ad2fcddd243c522864cfc",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.676,
+    "contradictions_detected": 0,
+    "word_count": 584
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "pattern",
+        "frequency": 19
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 13
+      },
+      {
+        "theme": "document",
+        "frequency": 13
+      },
+      {
+        "theme": "const",
+        "frequency": 12
+      },
+      {
+        "theme": "recognition",
+        "frequency": 11
+      },
+      {
+        "theme": "architecture",
+        "frequency": 9
+      },
+      {
+        "theme": "self",
+        "frequency": 8
+      },
+      {
+        "theme": "itself",
+        "frequency": 8
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 8
+      },
+      {
+        "theme": "public",
+        "frequency": 8
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "pattern, consciousness, document, const, recognition"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "was"
+  ],
+  "metadata": {
+    "source_name": "iterative_architecture_generator_v2.html",
+    "relative_path": "iterative_architecture_generator_v2.html",
+    "size_bytes": 19525,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.74
+  }
+}

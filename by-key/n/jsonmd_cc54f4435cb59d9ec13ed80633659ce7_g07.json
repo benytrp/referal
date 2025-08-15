@@ -1,0 +1,458 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:48.180Z",
+    "source_text_length": 10957,
+    "word_count": 1341,
+    "entropy_level": 0.927,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "cc54f4435cb59d9ec13ed80633659ce7"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "https",
+        "frequency": 35
+      },
+      {
+        "theme": "string",
+        "frequency": 19
+      },
+      {
+        "theme": "2025",
+        "frequency": 11
+      },
+      {
+        "theme": "response_length",
+        "frequency": 9
+      },
+      {
+        "theme": "short",
+        "frequency": 9
+      },
+      {
+        "theme": "blog",
+        "frequency": 9
+      },
+      {
+        "theme": "tool",
+        "frequency": 8
+      },
+      {
+        "theme": "python",
+        "frequency": 8
+      },
+      {
+        "theme": "exec",
+        "frequency": 7
+      },
+      {
+        "theme": "canmore",
+        "frequency": 7
+      },
+      {
+        "theme": "create",
+        "frequency": 7
+      },
+      {
+        "theme": "purpose",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [
+      "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+      "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+      "?: days, \"domains\"",
+      "?: [string]}] (max 2 per call)\n- open: [{\"ref_id\": string, \"lineno\"",
+      "?: number}]\n- click: [{\"ref_id\": string, \"id\": number}]\n- find: [{\"ref_id\": string, \"pattern\": string}]\n- screenshot: [{\"ref_id\": string, \"pageno\": number}] // use for PDFs\n- finance: [{\"ticker\": string, \"type\": \"equity\"|\"fund\"|\"crypto\"|\"index\", \"market\"",
+      "?: string}]\n- weather: [{\"location\": string, \"start\"",
+      "?: \"YYYY-MM-DD\", \"duration\"",
+      "?: number}]\n- sports: [{\"tool\": \"sports\", \"fn\": \"schedule\"|\"standings\", \"league\": string, \"team\"",
+      "?: string, \"date_from\"",
+      "?: string, \"date_to\""
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "repeat",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax … com/category/artificial-intelligence/",
+    "key_insights": [],
+    "action_items": [
+      "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+      "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+      "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n",
+      "create\n    {\n      \"title\": \"Check Updates\",\n      \"prompt\": \"Search for system changes and notify me",
+      "create\n    {\n      \"title\": \"Nudge in 15 min\",\n      \"prompt\": \"Tell me to stand up and stretch",
+      "create / automations",
+      "**Templates:**\n- Create\n```xml\n\n  \n    automations"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.189,
+    "cognitive_load_estimate": 0.54785,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.884,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 2,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.768,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 3,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.652,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 4,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.536,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 5,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.421,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 6,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.305,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      },
+      {
+        "generation": 7,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.189,
+        "action_items": [
+          "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `` syntax",
+          "run\n    {\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }\n  \n\n```\n\n**Execute Python Code**\n\n```xml\n\n  \n    python",
+          "create_textdoc\n    {\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n"
+        ],
+        "key_questions": [
+          "**Common params:**\n- search_query: [{\"q\": string, \"recency\"?: days, \"domains\"",
+          "?: [string]}]\n- image_query: [{\"q\": string, \"recency\"",
+          "?: days, \"domains\""
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "https",
+              "frequency": 35
+            },
+            {
+              "theme": "string",
+              "frequency": 19
+            },
+            {
+              "theme": "2025",
+              "frequency": 11
+            },
+            {
+              "theme": "response_length",
+              "frequency": 9
+            },
+            {
+              "theme": "short",
+              "frequency": 9
+            }
+          ]
+        },
+        "score": 0.539
+      }
+    ],
+    "quality_score": 52
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.32,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_tool_calls_cheatsheet.md",
+      "bytes": 11009,
+      "lastModified": 1754731370233
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:42:09.979Z",
+    "source_text_length": 157,
+    "word_count": 26,
+    "sentence_count": 4,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "25223e8a9a047cbf6643efae055b0565",
+    "entropy_level": 0.981,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:42:09.979Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 2,
+        "significance": "0.0769",
+        "examples": [
+          "[2025-08-11T05:40:30.213Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 2,
+        "significance": "0.0769",
+        "examples": [
+          "[2025-08-11T05:40:30.213Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 2,
+        "significance": "0.0769",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 2,
+        "significance": "0.0769",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "213z",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "[2025-08-11T05:40:30.213Z]"
+        ]
+      },
+      {
+        "theme": "dual",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "DUAL"
+        ]
+      },
+      {
+        "theme": "super",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "SUPER"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "BRIDGE"
+        ]
+      },
+      {
+        "theme": "protocol_",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "PROTOCOL_"
+        ]
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "CONSCIOUSNESS"
+        ]
+      },
+      {
+        "theme": "archit",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "ARCHIT.md\n[2025-08-11T05:41:30.844Z]"
+        ]
+      },
+      {
+        "theme": "844z",
+        "frequency": 1,
+        "significance": "0.0385",
+        "examples": [
+          "ARCHIT.md\n[2025-08-11T05:41:30.844Z]"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:40:30 213Z] skip(blacklist) 🌀 DUAL SUPER BRIDGE PROTOCOL_ CONSCIOUSNESS ARCHIT...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.00785,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "14 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.14",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "25223e8a9a047cbf6643efae055b0565"
+  }
+}

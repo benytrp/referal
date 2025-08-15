@@ -1,0 +1,180 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:51.017Z",
+    "source_text_length": 2214,
+    "word_count": 184,
+    "sentence_count": 9,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "7cfb8b4bc8f950f6f9ba556d76d91aaa",
+    "entropy_level": 0.944,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_90a21adea69deef769d39d51dbcaf721.json",
+      "processing_timestamp": "2025-08-11T05:13:51.017Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0435",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0435",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "format",
+        "frequency": 6,
+        "significance": "0.0326",
+        "examples": [
+          "\"format\":"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 6,
+        "significance": "0.0326",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 5,
+        "significance": "0.0272",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "bulk",
+        "frequency": 3,
+        "significance": "0.0163",
+        "examples": [
+          "\"bulk\",\n"
+        ]
+      },
+      {
+        "theme": "entry",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "\"entry\",\n"
+        ]
+      },
+      {
+        "theme": "record",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "\"record\",\n"
+        ]
+      },
+      {
+        "theme": "translator",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "Translator"
+        ]
+      },
+      {
+        "theme": "tool",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "tool"
+        ]
+      },
+      {
+        "theme": "converts",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "converts"
+        ]
+      },
+      {
+        "theme": "needed",
+        "frequency": 2,
+        "significance": "0.0109",
+        "examples": [
+          "needed"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:54...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 9989,\n      \"lastModified\": 1754769427036\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"data\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"entry\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"bulk\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"format\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"form\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"single\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"record\",\n        \"frequency\": 2\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder",
+        "urgency_score": "0.19",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": " … Bulk Data Entry Paste multiple `key=value` pairs below (one record per line): Translate Bulk to JSON Copy to Clipboard JSON Output:\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder",
+        "urgency_score": "0.82",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "52,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.43"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1107,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.30",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "7cfb8b4bc8f950f6f9ba556d76d91aaa"
+  }
+}

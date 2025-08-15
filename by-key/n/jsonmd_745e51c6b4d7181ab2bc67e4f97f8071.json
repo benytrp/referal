@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:08.403Z",
+    "source_text_length": 7096,
+    "word_count": 676,
+    "sentence_count": 48,
+    "entropy_level": 0.901,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "create image fusion.md"
+    },
+    "anchor_id": "745e51c6b4d7181ab2bc67e4f97f8071"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 53
+      },
+      {
+        "theme": "string",
+        "frequency": 27
+      },
+      {
+        "theme": "object",
+        "frequency": 17
+      },
+      {
+        "theme": "properties",
+        "frequency": 17
+      },
+      {
+        "theme": "json",
+        "frequency": 14
+      },
+      {
+        "theme": "required",
+        "frequency": 11
+      },
+      {
+        "theme": "funder",
+        "frequency": 9
+      },
+      {
+        "theme": "schema",
+        "frequency": 8
+      },
+      {
+        "theme": "text",
+        "frequency": 8
+      },
+      {
+        "theme": "format",
+        "frequency": 7
+      },
+      {
+        "theme": "items",
+        "frequency": 7
+      },
+      {
+        "theme": "funderrequirements",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "<img src=\"https://r2cdn … If you want executable code snippets or a sample API scaffold for this pipeline, just let me know your language/environment preference",
+    "key_insights": [],
+    "action_items": [
+      "png\" class=\"logo\" width=\"120\"/>\n\n# create image fusion\n\nHere’s a production-ready, standards-compliant foundation for a grant-writing automation engine that outputs proposals in strict JSON‑ms‑json format—perfect for further integration with AI, APIs, or funder databases",
+      "*\n- **Budget:**\n*List line items and cost (must sum to \\${{funderRequirements",
+      "**Next Steps**\n\n- Use these schemas as your contract for system design and debugging"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "745e51c6b4d7181ab2bc67e4f97f8071"
+  }
+}

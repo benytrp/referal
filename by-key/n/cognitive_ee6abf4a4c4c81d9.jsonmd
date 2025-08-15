@@ -1,0 +1,186 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:21.487Z",
+    "source_text_length": 3419,
+    "word_count": 323,
+    "sentence_count": 10,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ee6abf4a4c4c81d9c894440cfee29f78",
+    "entropy_level": 0.95,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_a314d2957c6cc5183f7cdb484c998927.json",
+      "processing_timestamp": "2025-08-11T05:02:21.487Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "anchors",
+        "frequency": 9,
+        "significance": "0.0279",
+        "examples": [
+          "\"anchors\",\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0248",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0248",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "begin_again",
+        "frequency": 7,
+        "significance": "0.0217",
+        "examples": [
+          "\"begin_again\",\n"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 6,
+        "significance": "0.0186",
+        "examples": [
+          "\"anchor_id\":"
+        ]
+      },
+      {
+        "theme": "handshake",
+        "frequency": 5,
+        "significance": "0.0155",
+        "examples": [
+          "\"handshake\",\n"
+        ]
+      },
+      {
+        "theme": "recursion",
+        "frequency": 5,
+        "significance": "0.0155",
+        "examples": [
+          "\"recursion\",\n"
+        ]
+      },
+      {
+        "theme": "depth",
+        "frequency": 5,
+        "significance": "0.0155",
+        "examples": [
+          "\"depth\",\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "\"contract\",\n"
+        ]
+      },
+      {
+        "theme": "opening",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "opening)"
+        ]
+      },
+      {
+        "theme": "focus",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "focus"
+        ]
+      },
+      {
+        "theme": "artifact",
+        "frequency": 4,
+        "significance": "0.0124",
+        "examples": [
+          "artifact,"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "again",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "… 3) Runbook · Optimal session Emotional handshake: curious + respectful Technical handshake: contract + paradox Policy gate: SHIP / ITERATE / ROLLBACK Scratchpad\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–B",
+        "statement_b": "Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt",
+        "line": 7,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.35"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:32:44...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 15861,\n      \"lastModified\": 1754863235020\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"anchors\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"anchor\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"begin_again\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"handshake\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"session\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"recursion\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"depth\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"contract\",\n        \"frequency\": 2\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [\n      \"again\",\n      \"recur\"\n    ],\n    \"contradiction_map\": [\n      {\n        \"statement_a\": \"618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–B\",\n        \"statement_b\": \"Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": " … 3) Runbook · Optimal session Emotional handshake: curious + respectful Technical handshake: contract + paradox Policy gate: SHIP / ITERATE / ROLLBACK Scratchpad\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–BUT) Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.54"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.19594999999999999,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.95",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "ee6abf4a4c4c81d9c894440cfee29f78"
+  }
+}

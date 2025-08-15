@@ -1,0 +1,436 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:25:15.975Z",
+    "source_text_length": 13548,
+    "word_count": 1494,
+    "entropy_level": 0.902,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "e10b979fa30dd4ca1fb5709bedeb209b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "parameters",
+        "frequency": 55
+      },
+      {
+        "theme": "invoke",
+        "frequency": 54
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 51
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 45
+      },
+      {
+        "theme": "queries",
+        "frequency": 16
+      },
+      {
+        "theme": "video",
+        "frequency": 12
+      },
+      {
+        "theme": "https",
+        "frequency": 11
+      },
+      {
+        "theme": "template",
+        "frequency": 10
+      },
+      {
+        "theme": "prompt",
+        "frequency": 9
+      },
+      {
+        "theme": "timeout_ms",
+        "frequency": 9
+      },
+      {
+        "theme": "ivk_1",
+        "frequency": 9
+      },
+      {
+        "theme": "style",
+        "frequency": 8
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "repeat",
+      "again",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 4,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Perplexity AI — Tool Calls Cheatsheet (Standalone)\n\nA compact, copy‑pasteable reference for invoking **Perplexity-style tools** via the XML‑like `<function_calls>` syntax … - **R8: timeout exceeded** → Lower `timeout_ms` or raise the tool’s allowed max (if you control the catalog)",
+    "key_insights": [],
+    "action_items": [
+      "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+      "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+      "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts",
+      "Must be ≤ the tool’s `max_timeout_ms` (see R8)",
+      "Must reference a **prior** `ivk_*` (see R5)",
+      "### Linter rules (R1–R9)\n\n- **R1**: `<function_calls>` must include `version=\"2\"`",
+      "- **R5**: Dependencies form a DAG — `depends_on` must reference a **previous** invoke; cycles are forbidden"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.211,
+    "cognitive_load_estimate": 0.6774,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.887,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 2,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.774,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 3,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.662,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 4,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.549,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 5,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.436,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 6,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.324,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 7,
+        "entropy": 0.902,
+        "contradictions": 0,
+        "novelty_index": 0.211,
+        "action_items": [
+          "---\n\n## Favorites\n\n**Quick Web Search**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>search_web</tool_name>\n    <parameters>\n      <queries>[\"latest AI developments\"]</queries>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>execute_python</tool_name>\n    <parameters>\n      <code>import math; print(math",
+          "sqrt(16))</code>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `create_chart`\n\n**Purpose:** Generate visual charts from quantitative data (**only if explicitly requested**)",
+          "]</data>` `<type>line</type>` `<title>Chart Title</title>`\n\n**Template:**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>create_chart</tool_name>\n    <parameters>\n      <data>[{\"x\":1, \"y\":2}, {\"x\":3, \"y\":4}]</data>\n      <type>bar</type>\n      <title>Sales Data</title>\n    </parameters>\n  </invoke>\n</function_calls>\n```\n\n### `generate_image`\n\n**Purpose:** Generate or edit images from prompts"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "loop",
+            "cycle",
+            "repeat",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "parameters",
+              "frequency": 55
+            },
+            {
+              "theme": "invoke",
+              "frequency": 54
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 51
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 45
+            },
+            {
+              "theme": "queries",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.549
+      }
+    ],
+    "quality_score": 53
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.34,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "perplexity_tool_calls_cheatsheet_standalone.md",
+      "bytes": 13673,
+      "lastModified": 1754739271200
+    }
+  }
+}

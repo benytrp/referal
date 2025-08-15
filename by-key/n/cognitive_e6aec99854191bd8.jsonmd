@@ -1,0 +1,206 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:21.116Z",
+    "source_text_length": 2427,
+    "word_count": 187,
+    "sentence_count": 16,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e6aec99854191bd8c148869e24ecce6e",
+    "entropy_level": 0.951,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_9b8f9a5548872ec58cb214b74a238b7d.json",
+      "processing_timestamp": "2025-08-11T05:02:21.116Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0428",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0428",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 5,
+        "significance": "0.0267",
+        "examples": [
+          "\"template\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 4,
+        "significance": "0.0214",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 4,
+        "significance": "0.0214",
+        "examples": [
+          "\"document\",\n"
+        ]
+      },
+      {
+        "theme": "createelement",
+        "frequency": 4,
+        "significance": "0.0214",
+        "examples": [
+          "\"createElement('a');"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 3,
+        "significance": "0.0160",
+        "examples": [
+          "\"e3cmbo.html\",\n"
+        ]
+      },
+      {
+        "theme": "container",
+        "frequency": 3,
+        "significance": "0.0160",
+        "examples": [
+          "container"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 2,
+        "significance": "0.0107",
+        "examples": [
+          "\"value\",\n"
+        ]
+      },
+      {
+        "theme": "master",
+        "frequency": 2,
+        "significance": "0.0107",
+        "examples": [
+          "Master"
+        ]
+      },
+      {
+        "theme": "manager",
+        "frequency": 2,
+        "significance": "0.0107",
+        "examples": [
+          "Manager"
+        ]
+      },
+      {
+        "theme": "bulk",
+        "frequency": 2,
+        "significance": "0.0107",
+        "examples": [
+          "Bulk"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:12...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … value = 'yes'; });\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"Template & Actions Child Template HTML (use ALL_CAPS for placeholders) Preview Download Single Form Bulk File Export Bulk Export 4",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.28"
+      },
+      {
+        "action": "\",\n      \"createObjectURL(blob); const a = document",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.74"
+      },
+      {
+        "action": "\",\n      \"createElement('a'); a",
+        "urgency_score": "0.32",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "\",\n      \"revokeObjectURL(url); } function createValueInput(key) { const container = document",
+        "urgency_score": "0.88",
+        "feasibility_score": "0.23"
+      },
+      {
+        "action": "\",\n      \"createElement('div'); container",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.94"
+      },
+      {
+        "action": "\",\n      \"innerHTML = ` `; } return container; } function createFormRow() { const formFields = document",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.57"
+      },
+      {
+        "action": "\",\n      \"createElement('div'); newRow",
+        "urgency_score": "0.64",
+        "feasibility_score": "1.00"
+      },
+      {
+        "action": "\",\n      \"createElement('select'); keySelect",
+        "urgency_score": "0.21",
+        "feasibility_score": "0.56"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.12135,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.17",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 8 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e6aec99854191bd8c148869e24ecce6e"
+  }
+}

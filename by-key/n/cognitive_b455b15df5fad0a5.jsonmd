@@ -1,0 +1,180 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:23.272Z",
+    "source_text_length": 1946,
+    "word_count": 151,
+    "sentence_count": 9,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b455b15df5fad0a5f91dc31f3d3728e0",
+    "entropy_level": 0.937,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_d41a73b674985cc8ab89681ae0082204.json",
+      "processing_timestamp": "2025-08-11T05:02:23.272Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0530",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0530",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 5,
+        "significance": "0.0331",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "forms",
+        "frequency": 4,
+        "significance": "0.0265",
+        "examples": [
+          "\"forms\",\n"
+        ]
+      },
+      {
+        "theme": "smart",
+        "frequency": 4,
+        "significance": "0.0265",
+        "examples": [
+          "\"smart\",\n"
+        ]
+      },
+      {
+        "theme": "format",
+        "frequency": 3,
+        "significance": "0.0199",
+        "examples": [
+          "\"format\":"
+        ]
+      },
+      {
+        "theme": "paste",
+        "frequency": 3,
+        "significance": "0.0199",
+        "examples": [
+          "\"paste\",\n"
+        ]
+      },
+      {
+        "theme": "figure",
+        "frequency": 3,
+        "significance": "0.0199",
+        "examples": [
+          "\"figure\",\n"
+        ]
+      },
+      {
+        "theme": "builder",
+        "frequency": 2,
+        "significance": "0.0132",
+        "examples": [
+          "\"unified_e3_builder"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0066",
+        "examples": [
+          "\"2025-08-11T04:32:47.221Z\",\n"
+        ]
+      },
+      {
+        "theme": "21729",
+        "frequency": 1,
+        "significance": "0.0066",
+        "examples": [
+          "21729,\n"
+        ]
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 1,
+        "significance": "0.0066",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:32:47...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "969,\n    \"contradictions_detected\": 0,\n    \"processing_phase\": \"SYNTHESIS\",\n    \"frequency_resonance\": \"440 Hz (A4)\",\n    \"format\": \"json_md_fusion\",\n    \"anchor_id\": \"d41a73b674985cc8ab89681ae0082204\",\n    \"source\": {\n      \"path\": \"unified_e3_builder (2)",
+        "urgency_score": "0.55",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "html\",\n      \"bytes\": 21729,\n      \"lastModified\": 1754771918754\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"data\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"sample\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"forms\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"paste\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"excel\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"smart\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"we'll\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"figure\",\n        \"frequency\": 2\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"🚀 E3 Smart Builder Just paste your data - we'll figure out the format",
+        "urgency_score": "0.00",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": " … 🎯 Auto-Detected Data 🧠 Smart Parse Data ⚡ Generate Forms 👁️ Preview Forms 📦 Download All Forms\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"🚀 E3 Smart Builder Just paste your data - we'll figure out the format",
+        "urgency_score": "0.25",
+        "feasibility_score": "1.00"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.0973,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.63",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b455b15df5fad0a5f91dc31f3d3728e0"
+  }
+}

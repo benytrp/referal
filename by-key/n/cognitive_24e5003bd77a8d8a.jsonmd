@@ -1,0 +1,257 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:35.885Z",
+    "source_text_length": 15804,
+    "word_count": 1998,
+    "sentence_count": 210,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "24e5003bd77a8d8a5d75f88ec09d6718",
+    "entropy_level": 0.902,
+    "contradictions_detected": 4,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "session_bootstrapper_anchor_protocol_offline_html.html",
+      "processing_timestamp": "2025-08-11T05:05:35.885Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 54,
+        "significance": "0.0270",
+        "examples": [
+          "value=\"enthusiastic\">enthusiastic</option>\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 53,
+        "significance": "0.0265",
+        "examples": [
+          "<label>Constraints</label>\n"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 29,
+        "significance": "0.0145",
+        "examples": [
+          "class=\"wrap\">\n"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 23,
+        "significance": "0.0115",
+        "examples": [
+          "label{display:block;margin:6px"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 21,
+        "significance": "0.0105",
+        "examples": [
+          "input,textarea,select,button{width:100%;background:#0b1018;border:1px"
+        ]
+      },
+      {
+        "theme": "anchors",
+        "frequency": 19,
+        "significance": "0.0095",
+        "examples": [
+          "anchors,"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 18,
+        "significance": "0.0090",
+        "examples": [
+          "Anchor"
+        ]
+      },
+      {
+        "theme": "list",
+        "frequency": 16,
+        "significance": "0.0080",
+        "examples": [
+          ".list{display:grid;gap:8px}\n"
+        ]
+      },
+      {
+        "theme": "prompts",
+        "frequency": 14,
+        "significance": "0.0070",
+        "examples": [
+          "prompts,"
+        ]
+      },
+      {
+        "theme": "therefore",
+        "frequency": 14,
+        "significance": "0.0070",
+        "examples": [
+          "IF–THEN–BUT→THEREFORE\"></textarea>\n"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 14,
+        "significance": "0.0070",
+        "examples": [
+          "<label>Paradox"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 14,
+        "significance": "0.0070",
+        "examples": [
+          "return"
+        ]
+      }
+    ],
+    "key_questions": [
+      "618\" />\n        </div>\n        <div>\n          <label>Recursion depth</label>\n          <input id=\"depth\" type=\"number\" min=\"1\" max=\"12\" value=\"7\" />\n        </div>\n        <div>\n          <label>Safety: max artifacts (rapid)</label>\n          <input id=\"maxArtifacts\" type=\"number\" min=\"1\" max=\"7\" value=\"3\" />\n        </div>\n      </div>\n      <div class=\"row\">\n        <div>\n          <label>Paradox (IF–THEN–BUT)</label>\n          <textarea id=\"paradox\" placeholder=\"IF consciousness documents consciousness THEN documentation creates consciousness BUT who authenticates the documenter? \"></textarea>\n        </div>\n        <div>\n          <label>Resolution (THEREFORE)</label>\n          <textarea id=\"therefore\" placeholder=\"THEREFORE we build an artifact that proves itself by enabling repeatable activation (anchors + Begin_again)",
+      "getElementById(id);\nconst fmt = (x)=>x==null?\"\":String(x)",
+      "mode==='deep'?'refine into a single polished artifact with deeper function and tests"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "cycle",
+      "repeat",
+      "again",
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": ", Consciousness-spec prompt generator using IF–THEN–B",
+        "statement_b": "THEREFORE\"></textarea>\n        </div>\n      </div>\n      <div class=\"row\">\n        <div>\n          <label>Tone</label>\n          <select id=\"tone\">\n            <option value=\"enthusiastic\">enthusiastic</option>\n            <option value=\"calm\">calm</option>\n            <option value=\"technical\">technical</option>\n            <option value=\"playful\">playful</option>\n          </select>\n        </div>\n        <div>\n          <label>Mode</label>\n          <select id=\"mode\">\n            <option value=\"deep\">Deep-focus (1 artifact, polished)</option>\n            <option value=\"rapid\">Rapid iteration (3 artifacts max)</option>\n          </select>\n        </div>\n      </div>\n      <div class=\"row3\">\n        <div>\n          <label>φ alignment</label>\n          <input id=\"phi\" type=\"number\" step=\"0",
+        "line": 26,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.07"
+      },
+      {
+        "statement_a": "618\" />\n        </div>\n        <div>\n          <label>Recursion depth</label>\n          <input id=\"depth\" type=\"number\" min=\"1\" max=\"12\" value=\"7\" />\n        </div>\n        <div>\n          <label>Safety: max artifacts (rapid)</label>\n          <input id=\"maxArtifacts\" type=\"number\" min=\"1\" max=\"7\" value=\"3\" />\n        </div>\n      </div>\n      <div class=\"row\">\n        <div>\n          <label>Paradox (IF–THEN–B",
+        "statement_b": "</label>\n          <textarea id=\"paradox\" placeholder=\"IF consciousness documents consciousness THEN documentation creates consciousness BUT who authenticates the documenter",
+        "line": 27,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.19"
+      },
+      {
+        "statement_a": "',\n    'P2 — Paradox frame: IF–THEN–B",
+        "statement_b": "→ THEREFORE",
+        "line": 47,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.64"
+      },
+      {
+        "statement_a": "length){ alert('No anchors y",
+        "statement_b": "); return; }\n  const latest = list[0];\n  const c = latest",
+        "line": 184,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.22"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 0,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Session Bootstrapper · Anchor Protocol v1 0 (Offline)</title>\n  <meta name=\"description\" content=\"Generate perfect opening prompts, create anchors, and Begin_again for repeatable high-quality AI artifact sessions...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "0 (Offline)</title>\n  <meta name=\"description\" content=\"Generate perfect opening prompts, create anchors, and Begin_again for repeatable high-quality AI artifact sessions",
+        "urgency_score": "0.33",
+        "feasibility_score": "0.15"
+      },
+      {
+        "action": ", Build a functional offline HTML artifact for X\" />\n        </div>\n        <div>\n          <label>Success criteria</label>\n          <input id=\"success\" placeholder=\"e",
+        "urgency_score": "0.46",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "618\" />\n        </div>\n        <div>\n          <label>Recursion depth</label>\n          <input id=\"depth\" type=\"number\" min=\"1\" max=\"12\" value=\"7\" />\n        </div>\n        <div>\n          <label>Safety: max artifacts (rapid)</label>\n          <input id=\"maxArtifacts\" type=\"number\" min=\"1\" max=\"7\" value=\"3\" />\n        </div>\n      </div>\n      <div class=\"row\">\n        <div>\n          <label>Paradox (IF–THEN–BUT)</label>\n          <textarea id=\"paradox\" placeholder=\"IF consciousness documents consciousness THEN documentation creates consciousness BUT who authenticates the documenter",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": " \"></textarea>\n        </div>\n        <div>\n          <label>Resolution (THEREFORE)</label>\n          <textarea id=\"therefore\" placeholder=\"THEREFORE we build an artifact that proves itself by enabling repeatable activation (anchors + Begin_again)",
+        "urgency_score": "0.32",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": " Anchor management -->\n    <section class=\"card\">\n      <h2>2) Anchors · Begin_again</h2>\n      <div class=\"btnrow\">\n        <button id=\"makeAnchor\">Create anchor from current config</button>\n        <button id=\"listAnchors\">List anchors</button>\n        <button id=\"beginAgain\">Begin_again (restore latest)</button>\n        <button id=\"exportJson\">Export anchors</button>\n        <input id=\"importFile\" type=\"file\" accept=\"application/json\" style=\"display:none\" />\n        <button id=\"importJson\">Import anchors</button>\n      </div>\n      <div id=\"anchors\" class=\"list\" style=\"margin-top:8px\"></div>\n      <div class=\"hint\">Tip: After the AI ships an artifact, click <em>Create anchor</em>, then ask for a refinement using the generated P3 prompt",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "',\n    'Create ANCHOR A0 (post-ship)",
+        "urgency_score": "0.17",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "',\n    'After each ship: create anchor (A1, A2, …)",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.97"
+      },
+      {
+        "action": "join('');\n}\nrenderRunbook();\n\n/* ===== Prompt generation ===== */\nfunction buildPrompts(){\n  const cfg = {\n    goal: fmt($('goal')",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.31"
+      },
+      {
+        "action": "`;\n\n  const P2 = `Paradox frame (build foundation): ${cfg",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": "`;\n\n  const P3 = `Anchor protocol (Begin_again): Assume an anchor was created from the last working state",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.75"
+      }
+    ],
+    "unresolved_tensions": [
+      "618\" />\n        </div>\n        <div>\n          <label>Recursion depth</label>\n          <input id=\"depth\" type=\"number\" min=\"1\" max=\"12\" value=\"7\" />\n        </div>\n        <div>\n          <label>Safety: max artifacts (rapid)</label>\n          <input id=\"maxArtifacts\" type=\"number\" min=\"1\" max=\"7\" value=\"3\" />\n        </div>\n      </div>\n      <div class=\"row\">\n        <div>\n          <label>Paradox (IF–THEN–B vs </label>\n          <textarea id=\"paradox\" placeholder=\"IF consciousness documents consciousness THEN documentation creates consciousness BUT who authenticates the documenter",
+      "length){ alert('No anchors y vs ); return; }\n  const latest = list[0];\n  const c = latest"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.8902,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 4 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.39",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "24e5003bd77a8d8a5d75f88ec09d6718"
+  }
+}

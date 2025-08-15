@@ -1,0 +1,220 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:23.880Z",
+    "source_text_length": 22498,
+    "word_count": 2174,
+    "sentence_count": 231,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "a560b958bb53ed65e77620864d68b148",
+    "entropy_level": 0.903,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "ai_studio_code (4).html",
+      "processing_timestamp": "2025-08-11T05:05:23.880Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 45,
+        "significance": "0.0207",
+        "examples": [
+          "class=\"bg-gray-900"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 45,
+        "significance": "0.0207",
+        "examples": [
+          "value=\"payload.blocks.CONSTRAINTS\">payload.blocks.CONSTRAINTS</option>\n"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 39,
+        "significance": "0.0179",
+        "examples": [
+          "input[type=\"text\"],"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 39,
+        "significance": "0.0179",
+        "examples": [
+          "contract"
+        ]
+      },
+      {
+        "theme": "option",
+        "frequency": 34,
+        "significance": "0.0156",
+        "examples": [
+          "<option"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 33,
+        "significance": "0.0152",
+        "examples": [
+          "value=\"\">--"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 21,
+        "significance": "0.0097",
+        "examples": [
+          ".output-group"
+        ]
+      },
+      {
+        "theme": "ledger",
+        "frequency": 21,
+        "significance": "0.0097",
+        "examples": [
+          "<code>thought_ledger</code>"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 20,
+        "significance": "0.0092",
+        "examples": [
+          "document.getElementById('contractInput');\n"
+        ]
+      },
+      {
+        "theme": "payload",
+        "frequency": 18,
+        "significance": "0.0083",
+        "examples": [
+          "value=\"payload.blocks.GOAL\">payload.blocks.GOAL</option>\n"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 18,
+        "significance": "0.0083",
+        "examples": [
+          "document.getElementById('contractInput');\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 17,
+        "significance": "0.0078",
+        "examples": [
+          "JSON</h3>\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "5-flash-latest:generateContent?key=\" + apiKey;\n\n            try {\n                const response = await fetch(apiUrl, {\n                    method: 'POST',\n                    headers: { 'Content-Type': 'application/json' },\n                    body: JSON"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "return",
+      "iteration"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 10,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Thalamus Bridge Runner</title>\n    <script src=\"https://cdn...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " The AI will use the contract's GOAL by default",
+        "urgency_score": "0.30",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "TESTS</option>\n                        <option value=\"simulated_task\">simulated_task</option>\n                        <option value=\"manual_ref\">Manual Reference</option>\n                    </select>\n                </div>\n                <div class=\"input-group\">\n                    <label for=\"op\">Operation (`op`)</label>\n                    <select id=\"op\">\n                        <option value=\"interpret_goal\">interpret_goal</option>\n                        <option value=\"analyze_blocks\">analyze_blocks</option>\n                        <option value=\"execute_step\">execute_step</option>\n                        <option value=\"review_output\">review_output</option>\n                        <option value=\"finalize_log\">finalize_log</option>\n                        <option value=\"custom_op\">Custom Operation</option>\n                    </select>\n                </div>\n                <div class=\"input-group\">\n                    <label for=\"output\">Output (`output`)</label>\n                    <textarea id=\"output\" placeholder=\"Paste the reasoning/output here",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "replace(/[ \\t]+$/gm, '');\n        }\n\n        // State management\n        let state = {\n            contract: null,\n            contractSeals: null,\n            ledger: [],\n            ledgerSeals: null\n        };\n        \n        // Contract presets\n        const contractPresets = {\n            'simple-planning': {\"scroll_id\":\"AEON-Plan-Simple-1754702400000\",\"format\":\"json_md_fusion_scroll_behavior\",\"created\":\"2025-08-09T03:00:00",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "000Z\",\"directives\":{\"mode\":\"plan\",\"theme\":\"technical\",\"risk\":\"low\",\"tone\":\"neutral\",\"self_check\":\"off\"},\"payload\":{\"blocks\":{\"GOAL\":\"Create a Python script that reads a CSV file and calculates the average value of a specified column",
+        "urgency_score": "0.49",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": " The script should be runnable from the command line",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.10"
+      },
+      {
+        "action": "\",\"CONSTRAINTS\":[\"The script must use the 'csv' and 'argparse' built-in libraries",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "\",\"It should handle cases where the specified column does not exist",
+        "urgency_score": "0.15",
+        "feasibility_score": "0.34"
+      },
+      {
+        "action": "\",\"The output should be a single floating-point number",
+        "urgency_score": "0.13",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "\"]}},\"hash\":{\"policy\":{\"algo\":\"sha256\",\"canonicalize\":[\"unicode_nfc\",\"normalize_newlines\",\"trim_trailing_ws\",\"stable_object_keys\"]},\"seal\":{\"mobius_seal\":\"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef\"}}},\n            'high-risk-security': {\"scroll_id\":\"AEON-Security-Audit-1754702400001\",\"format\":\"json_md_fusion_scroll_behavior\",\"created\":\"2025-08-09T03:01:00",
+        "urgency_score": "0.39",
+        "feasibility_score": "0.57"
+      },
+      {
+        "action": "000Z\",\"directives\":{\"mode\":\"execute\",\"theme\":\"forensics\",\"risk\":\"high\",\"tone\":\"formal\",\"self_check\":\"on\"},\"payload\":{\"blocks\":{\"GOAL\":\"Perform a security audit on the provided Python script for potential file system vulnerabilities or insecure data handling",
+        "urgency_score": "0.86",
+        "feasibility_score": "0.48"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.52",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "a560b958bb53ed65e77620864d68b148"
+  }
+}

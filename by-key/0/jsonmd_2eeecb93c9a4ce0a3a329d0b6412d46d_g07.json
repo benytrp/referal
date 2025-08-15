@@ -1,0 +1,390 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:37.059Z",
+    "source_text_length": 4744,
+    "word_count": 486,
+    "entropy_level": 0.857,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "2eeecb93c9a4ce0a3a329d0b6412d46d"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "preparatory_goals",
+        "frequency": 28
+      },
+      {
+        "theme": "work_habits",
+        "frequency": 22
+      },
+      {
+        "theme": "interests_abilities",
+        "frequency": 10
+      },
+      {
+        "theme": "attendance",
+        "frequency": 8
+      },
+      {
+        "theme": "timeliness",
+        "frequency": 8
+      },
+      {
+        "theme": "record_meta",
+        "frequency": 6
+      },
+      {
+        "theme": "comments",
+        "frequency": 6
+      },
+      {
+        "theme": "participant",
+        "frequency": 5
+      },
+      {
+        "theme": "session",
+        "frequency": 5
+      },
+      {
+        "theme": "attitude",
+        "frequency": 5
+      },
+      {
+        "theme": "hygiene",
+        "frequency": 4
+      },
+      {
+        "theme": "dress",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [
+      "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+      "na⟧ Attendance — Excessive absences? ⟦chk",
+      "na⟧ Timeliness — Arrived on time? ⟦chk",
+      "na⟧ Timeliness — Excessive tardiness? ⟦chk",
+      "na⟧ Hygiene — Participant was appropriately groomed? ⟦chk",
+      "na⟧ Dress — Participant was appropriately dressed? ⟦chk",
+      "na⟧ Attitude — Participant exhibited positive attitude? ⟦chk",
+      "comments⟧ Preparatory Goals ItemYesNIN/A Attention Span — adequate span for tasks? ⟦chk",
+      "na⟧ Following Directions — followed simple instructions? ⟦chk",
+      "na⟧ Following Directions — followed multi-step instructions? ⟦chk"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Achievement Daily Participant Evaluation Name:⟦record_meta … Rendered by your merge script",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.25,
+    "cognitive_load_estimate": 0.2372,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.893,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 2,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.786,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 3,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.679,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 4,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.572,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 5,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.464,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 6,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.357,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      },
+      {
+        "generation": 7,
+        "entropy": 0.857,
+        "contradictions": 0,
+        "novelty_index": 0.25,
+        "action_items": [],
+        "key_questions": [
+          "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+          "na⟧ Attendance — Excessive absences? ⟦chk",
+          "na⟧ Timeliness — Arrived on time? ⟦chk"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "preparatory_goals",
+              "frequency": 28
+            },
+            {
+              "theme": "work_habits",
+              "frequency": 22
+            },
+            {
+              "theme": "interests_abilities",
+              "frequency": 10
+            },
+            {
+              "theme": "attendance",
+              "frequency": 8
+            },
+            {
+              "theme": "timeliness",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.357
+      }
+    ],
+    "quality_score": 35
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.09,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "e3try - Copy.html",
+      "bytes": 13211,
+      "lastModified": 1754743761129
+    }
+  }
+}

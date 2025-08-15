@@ -1,0 +1,109 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:27.503Z",
+    "source_text_length": 3567,
+    "word_count": 413,
+    "sentence_count": 107,
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "infinite ai perplex offline.html"
+    },
+    "anchor_id": "946bd2d397363af5c850f6e8de433b5e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 14
+      },
+      {
+        "theme": "document",
+        "frequency": 10
+      },
+      {
+        "theme": "json",
+        "frequency": 9
+      },
+      {
+        "theme": "function",
+        "frequency": 7
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 7
+      },
+      {
+        "theme": "type",
+        "frequency": 6
+      },
+      {
+        "theme": "blob",
+        "frequency": 6
+      },
+      {
+        "theme": "logs",
+        "frequency": 6
+      },
+      {
+        "theme": "content",
+        "frequency": 5
+      },
+      {
+        "theme": "stringify",
+        "frequency": 5
+      },
+      {
+        "theme": "scrolls",
+        "frequency": 5
+      },
+      {
+        "theme": "canvas",
+        "frequency": 5
+      }
+    ],
+    "key_questions": [
+      "stringify(latest, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL",
+      "display === 'block' ? 'none' : 'block'; }); }); window",
+      "\" — AEON 🧠 AEON Interactive Chatbot ⧖ ?Enter to fuse and generate"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "`; } else if (type === 'json_md') { content = JSON … ∴ ↱ ↰ ∴",
+    "key_insights": [],
+    "action_items": [
+      "createObjectURL(blob); const a = document",
+      "createElement('a'); a",
+      "createElement('a'); link",
+      "createObjectURL(blob); link",
+      "Generate: Create beacons from scrolls"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "946bd2d397363af5c850f6e8de433b5e"
+  }
+}

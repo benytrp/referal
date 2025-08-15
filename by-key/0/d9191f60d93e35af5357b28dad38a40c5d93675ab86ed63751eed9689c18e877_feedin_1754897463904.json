@@ -1,0 +1,123 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:41.914Z",
+    "anchor_id": "d9191f60d93e35af5357b28dad38a40c5d93675ab86ed63751eed9689c18e877",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.75,
+    "contradictions_detected": 1,
+    "word_count": 1377
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "state",
+        "frequency": 49
+      },
+      {
+        "theme": "const",
+        "frequency": 45
+      },
+      {
+        "theme": "div",
+        "frequency": 24
+      },
+      {
+        "theme": "name",
+        "frequency": 19
+      },
+      {
+        "theme": "target",
+        "frequency": 18
+      },
+      {
+        "theme": "timer",
+        "frequency": 16
+      },
+      {
+        "theme": "save",
+        "frequency": 16
+      },
+      {
+        "theme": "session",
+        "frequency": 15
+      },
+      {
+        "theme": "json",
+        "frequency": 15
+      },
+      {
+        "theme": "file",
+        "frequency": 14
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Launcher state persists in localStorage • No network calls • Designed for your offline kit. v1.0 • storage key: csr_se"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getItem(STORAGE_KEY); return raw?",
+      "core?",
+      "done?",
+      "done?",
+      "start?",
+      "onclick = ()=>{ if(confirm('Reset timer and clear progress?",
+      "begin; if(confirm('Restore full snapshot from this anchor?"
+    ],
+    "summary": "state, const, div, name, target"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "session_launcher_complete_replication_protocol_single_file_html.html",
+    "relative_path": "session_launcher_complete_replication_protocol_single_file_html.html",
+    "size_bytes": 19089,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 152
+- Complexity score: 38.2
+- Key themes: theme, frequency, state, offline, synthesis, const, name, target, timer, done
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of state?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, state
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

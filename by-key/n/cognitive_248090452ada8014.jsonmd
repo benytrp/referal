@@ -1,0 +1,222 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:22.174Z",
+    "source_text_length": 8920,
+    "word_count": 1181,
+    "sentence_count": 127,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "248090452ada80145aa4e55f91dfc698",
+    "entropy_level": 0.911,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "AEON_Scroll_Indexer.json",
+      "processing_timestamp": "2025-08-11T05:05:22.174Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 29,
+        "significance": "0.0246",
+        "examples": [
+          "class=\"hint\">Drag"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 24,
+        "significance": "0.0203",
+        "examples": [
+          "style=\"display:none\">\n\n<script>\nconst"
+        ]
+      },
+      {
+        "theme": "items",
+        "frequency": 16,
+        "significance": "0.0135",
+        "examples": [
+          "var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}\n"
+        ]
+      },
+      {
+        "theme": "selected",
+        "frequency": 15,
+        "significance": "0.0127",
+        "examples": [
+          "selected</label>\n"
+        ]
+      },
+      {
+        "theme": "null",
+        "frequency": 15,
+        "significance": "0.0127",
+        "examples": [
+          "null;\n"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 14,
+        "significance": "0.0119",
+        "examples": [
+          "#334155;background:#0b1220;padding:18px;border-radius:16px;text-align:center;color:var(--muted)}\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 14,
+        "significance": "0.0119",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 13,
+        "significance": "0.0110",
+        "examples": [
+          "20px;border-bottom:1px"
+        ]
+      },
+      {
+        "theme": "drop",
+        "frequency": 13,
+        "significance": "0.0110",
+        "examples": [
+          ".drop{border:2px"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 13,
+        "significance": "0.0110",
+        "examples": [
+          "HTML/JSON"
+        ]
+      },
+      {
+        "theme": "scroll_id",
+        "frequency": 13,
+        "significance": "0.0110",
+        "examples": [
+          "placeholder=\"scroll_id,"
+        ]
+      },
+      {
+        "theme": "addeventlistener",
+        "frequency": 12,
+        "significance": "0.0102",
+        "examples": [
+          "div.querySelector('input[type=checkbox]').addEventListener('change',"
+        ]
+      }
+    ],
+    "key_questions": [
+      "id)?'checked':''}> <b>${escapeHtml(it",
+      "created?escapeHtml(it",
+      "match(/\\{[\\s\\S]*?\"scroll_id\"\\s*:\\s*\"",
+      "?\\}/);\n    if(m){\n      try{\n        const maybe = JSON",
+      "confirm('Delete selected from index view? (Original files are untouched)')) return;\n  state"
+    ],
+    "pattern_recognition": [
+      "repeat",
+      "return",
+      "spiral"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>AEON Scroll Indexer — Offline</title>\n<style>\n  :root { --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --accent:#7cc4ff; --card:#111827; --line:#1f2937; }\n  body{margin:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}\n  header{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}\n  header h1{font-size:18px;margin:0;font-weight:600}\n  header  hint{color:var(--muted);font-size:13px}\n  main{padding:18px;display:grid;grid-template-columns:320px 1fr;gap:16px}\n  @media (max-width: 900px){ main{grid-template-columns:1fr} }\n  ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " spiral, anchor, CTR\">\n      <button class=\"btn\" id=\"addTag\">Add tag</button>\n      <button class=\"btn\" id=\"delSel\">Delete selected</button>\n    </div>\n    <div style=\"height:10px\"></div>\n    <div class=\"tiny\">Selected: <span id=\"selCount\">0</span></div>\n  </section>\n  <section class=\"card\">\n    <div class=\"grid\" id=\"list\"></div>\n  </section>\n</main>\n\n<input type=\"file\" id=\"file\" multiple style=\"display:none\">\n\n<script>\nconst state = {\n  items: [],    // {id, name, hash, created, scroll_id, equation, glyphs[], text, tags[]}\n  selected: new Set(),\n};\n\nfunction $(id){return document",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "createElement('div');\n    div",
+        "urgency_score": "0.39",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "created):''}</div>\n      </div>\n      <div class=\"tiny\">hash: ${it",
+        "urgency_score": "0.22",
+        "feasibility_score": "0.24"
+      },
+      {
+        "action": "parse(text); } catch(e){}\n  let created=null, scroll_id=null, equation=null, glyphs=null;\n  if(obj && (obj",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "scroll_id)){\n    created = obj",
+        "urgency_score": "0.21",
+        "feasibility_score": "0.13"
+      },
+      {
+        "action": "created || null;\n    scroll_id = obj",
+        "urgency_score": "0.46",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "parse(m[0]);\n        created = maybe",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.42"
+      },
+      {
+        "action": "created || null;\n        scroll_id = maybe",
+        "urgency_score": "0.83",
+        "feasibility_score": "0.28"
+      },
+      {
+        "action": "name,\n    hash, created, scroll_id, equation, glyphs,\n    text: text",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": "addEventListener('click', ()=>{\n  const out = {\n    version: \"aeon-index-1\",\n    created: new Date()",
+        "urgency_score": "0.89",
+        "feasibility_score": "0.60"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.446,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.20",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "248090452ada80145aa4e55f91dfc698"
+  }
+}

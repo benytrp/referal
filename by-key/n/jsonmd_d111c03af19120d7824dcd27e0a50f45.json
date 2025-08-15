@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:50.068Z",
+    "source_text_length": 4123,
+    "word_count": 445,
+    "sentence_count": 51,
+    "entropy_level": 0.901,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (6).txt"
+    },
+    "anchor_id": "d111c03af19120d7824dcd27e0a50f45"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "margin",
+        "frequency": 13
+      },
+      {
+        "theme": "font",
+        "frequency": 11
+      },
+      {
+        "theme": "rgba",
+        "frequency": 11
+      },
+      {
+        "theme": "bottom",
+        "frequency": 10
+      },
+      {
+        "theme": "background",
+        "frequency": 10
+      },
+      {
+        "theme": "border",
+        "frequency": 9
+      },
+      {
+        "theme": "10px",
+        "frequency": 9
+      },
+      {
+        "theme": "text",
+        "frequency": 8
+      },
+      {
+        "theme": "size",
+        "frequency": 8
+      },
+      {
+        "theme": "20px",
+        "frequency": 8
+      },
+      {
+        "theme": "grid",
+        "frequency": 7
+      },
+      {
+        "theme": "radius",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "container {\n        max-width: 1200px;\n        margin: 0 auto;\n    } … 1;\n    }\n</style>",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d111c03af19120d7824dcd27e0a50f45"
+  }
+}

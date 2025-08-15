@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:51.080Z",
+    "source_text_length": 2004,
+    "word_count": 147,
+    "sentence_count": 9,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "7781633394a2f37e811f6bfbbb334419",
+    "entropy_level": 0.943,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_7975dd702e73d5e7eb12e82cc27f2d09.json",
+      "processing_timestamp": "2025-08-11T05:12:51.080Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0544",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0544",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "load",
+        "frequency": 3,
+        "significance": "0.0204",
+        "examples": [
+          "\"load\",\n"
+        ]
+      },
+      {
+        "theme": "thought",
+        "frequency": 3,
+        "significance": "0.0204",
+        "examples": [
+          "\"thought\",\n"
+        ]
+      },
+      {
+        "theme": "ledger",
+        "frequency": 3,
+        "significance": "0.0204",
+        "examples": [
+          "\"ledger\",\n"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 3,
+        "significance": "0.0204",
+        "examples": [
+          "\"aeon\",\n"
+        ]
+      },
+      {
+        "theme": "file",
+        "frequency": 2,
+        "significance": "0.0136",
+        "examples": [
+          "\"file\",\n"
+        ]
+      },
+      {
+        "theme": "metadata",
+        "frequency": 2,
+        "significance": "0.0136",
+        "examples": [
+          "\"metadata\",\n"
+        ]
+      },
+      {
+        "theme": "universal",
+        "frequency": 2,
+        "significance": "0.0136",
+        "examples": [
+          "\"universal\",\n"
+        ]
+      },
+      {
+        "theme": "explore",
+        "frequency": 2,
+        "significance": "0.0136",
+        "examples": [
+          "\"Explore"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0068",
+        "examples": [
+          "\"2025-08-11T05:12:32.004Z\",\n"
+        ]
+      },
+      {
+        "theme": "8712",
+        "frequency": 1,
+        "significance": "0.0068",
+        "examples": [
+          "8712,\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:32...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "52,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.75"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1002,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.66",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "7781633394a2f37e811f6bfbbb334419"
+  }
+}

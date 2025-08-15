@@ -1,0 +1,97 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:30.448Z",
+    "anchor_id": "5d59d3be5d7af2b0ae92f23d69cb094cdec04688b23f80310d11050eb40c7fc9",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.681,
+    "contradictions_detected": 4,
+    "word_count": 1426
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 45
+      },
+      {
+        "theme": "contract",
+        "frequency": 40
+      },
+      {
+        "theme": "state",
+        "frequency": 28
+      },
+      {
+        "theme": "ledger",
+        "frequency": 22
+      },
+      {
+        "theme": "document",
+        "frequency": 20
+      },
+      {
+        "theme": "json",
+        "frequency": 19
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 18
+      },
+      {
+        "theme": "text",
+        "frequency": 17
+      },
+      {
+        "theme": "entry",
+        "frequency": 16
+      },
+      {
+        "theme": "value",
+        "frequency": 16
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Required for simulation. Key is used only for this session and is not stored. Task Description (Optional"
+      },
+      {
+        "idx": 1,
+        "sample": "e' built-in libraries.\",\"It should handle cases where the specified column does not exist.\",\"The output should be a single floating-point number.\"],\"SUCCESS_CRI"
+      },
+      {
+        "idx": 2,
+        "sample": "data handling. Log all findings and proposed remediations.\",\"CONSTRAINTS\":[\"Do not modify the original script.\",\"All findings must be categorized by severity:"
+      },
+      {
+        "idx": 3,
+        "sample": "lse { throw new Error(\"Unexpected API response structure or no content found.\"); } } catch (error) {"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "5-flash-latest:generateContent?"
+    ],
+    "summary": "const, contract, state, ledger, document"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 5,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (4).html",
+    "relative_path": "ai_studio_code (4).html",
+    "size_bytes": 22503,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

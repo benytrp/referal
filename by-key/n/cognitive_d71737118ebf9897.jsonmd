@@ -1,0 +1,240 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.474Z",
+    "source_text_length": 47017,
+    "word_count": 5625,
+    "sentence_count": 454,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "d71737118ebf98972caf862caa429452",
+    "entropy_level": 0.841,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "E3-Master-Template-Builder-Enhanced.html",
+      "processing_timestamp": "2025-08-11T05:05:29.474Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 240,
+        "significance": "0.0427",
+        "examples": [
+          "class=\"muted\">—"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 172,
+        "significance": "0.0306",
+        "examples": [
+          "textarea#dataJson{height:160px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px}\n"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 161,
+        "significance": "0.0286",
+        "examples": [
+          "aria-label=\"Identifier"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 132,
+        "significance": "0.0235",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 117,
+        "significance": "0.0208",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 84,
+        "significance": "0.0149",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 77,
+        "significance": "0.0137",
+        "examples": [
+          "input[type=\"text\"],input[type=\"number\"],textarea{width:100%;padding:8px;border:1px"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 66,
+        "significance": "0.0117",
+        "examples": [
+          "checkbox"
+        ]
+      },
+      {
+        "theme": "chkwrap",
+        "frequency": 59,
+        "significance": "0.0105",
+        "examples": [
+          ".chkwrap{"
+        ]
+      },
+      {
+        "theme": "chkcell",
+        "frequency": 58,
+        "significance": "0.0103",
+        "examples": [
+          ".chkcell{"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 54,
+        "significance": "0.0096",
+        "examples": [
+          "value=\"1\""
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 41,
+        "significance": "0.0073",
+        "examples": [
+          "return"
+        ]
+      }
+    ],
+    "key_questions": [
+      "getItem(key) ?",
+      "? fallback; }catch(e){ return fallback; } }\n\n  // ---------- ID helpers ----------\n  function pad(n,w=2){ return String(n)",
+      "slice(-8);\n  }\n  function genEvalIdRandom(){ const d=new Date(); return `E3-${yyyymmdd(d)}-${hhmmss(d)}-${randHex(4)}`; }\n  function genEvalIdDeterministic(data, instanceSeq){\n    const date = (data?",
+      "record_meta?",
+      "date) || '';\n    const pcode = (data?",
+      "record_meta?",
+      "eval_id = deterministic ? genEvalIdDeterministic(data, instanceSeq) : genEvalIdRandom();\n    data",
+      "date = yyyymmdd(new Date());\n    for(let i=1;i<=n;i++){\n      const id = deterministic ? genEvalIdDeterministic(base, i) : genEvalIdRandom();\n      if(set"
+    ],
+    "pattern_recognition": [
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "push(row); row=[]; }\n    w",
+        "statement_b": "i<text",
+        "line": 104,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.80"
+      },
+      {
+        "statement_a": "template, DEFAULT_CHILD);\n    }\n  });\n\n  function lintTokens(tpl, data){\n    const set = new Set();\n    let m, re = /⟦([^⟧]+)⟧/g;\n    w",
+        "statement_b": "(m = re",
+        "line": 333,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.06"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 8,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Template Builder — offline (Enhanced)</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <style>\n    :root{--ink:#111;--muted:#586174;--rule:#d8dee9;--accent:#0e7afe;--bg:#fcfdff}\n    *{box-sizing:border-box}\n    body{font:14px/1 45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:18px;color:var(--ink);background:var(--bg)}\n    h1{margin:0 0 8px 0;font-size:18px}\n    h3{margin:0 0 6px 0}\n    ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Template Builder — offline (Enhanced)</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <style>\n    :root{--ink:#111;--muted:#586174;--rule:#d8dee9;--accent:#0e7afe;--bg:#fcfdff}\n    *{box-sizing:border-box}\n    body{font:14px/1",
+        "urgency_score": "0.87",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "section{page-break-inside: avoid}\n    }\n  </style>\n</head>\n<body>\n  <h1>E3 Master Template Builder <small class=\"muted\">— Enhanced</small></h1>\n  <p class=\"muted\">Offline generator for child evaluation pages with unique IDs, token filling, and auto checkbox prechecks",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": " CSV: headers should be dot-paths (e",
+        "urgency_score": "0.64",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": "eval_id⟧ will be replaced",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.64"
+      },
+      {
+        "action": "-- Actions -->\n    <div class=\"card\">\n      <h3>Actions</h3>\n      <label>File name pattern (tokens allowed)<br>\n        <input id=\"filePattern\" type=\"text\" class=\"mono\" value=\"E3-⟦record_meta",
+        "urgency_score": "0.93",
+        "feasibility_score": "0.83"
+      },
+      {
+        "action": "push(n & 0xFF, (n>>>8)&0xFF, (n>>>16)&0xFF, (n>>>24)&0xFF); }\n  function buildZip(files){\n    // files: [{name, content(string)}]\n    const encoder = new TextEncoder();\n    const fileRecords = [];\n    const out = [];\n    let offset = 0;\n    files",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.26"
+      },
+      {
+        "action": " The page will keep only one checked per row",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": " Your current edits will be lost",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "createElement('a');\n    a",
+        "urgency_score": "0.86",
+        "feasibility_score": "0.80"
+      },
+      {
+        "action": "createObjectURL(blob);\n    a",
+        "urgency_score": "0.64",
+        "feasibility_score": "0.57"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 2 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.99",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d71737118ebf98972caf862caa429452"
+  }
+}

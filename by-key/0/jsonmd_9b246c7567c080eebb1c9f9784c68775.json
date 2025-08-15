@@ -1,0 +1,92 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:48.713Z",
+    "source_text_length": 718,
+    "word_count": 101,
+    "entropy_level": 0.95,
+    "contradictions_detected": 2,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "9b246c7567c080eebb1c9f9784c68775",
+    "source": {
+      "path": "json_md_fusion_converter_improved.html",
+      "bytes": 32248,
+      "lastModified": 1754878892441
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "fusion",
+        "frequency": 8
+      },
+      {
+        "theme": "text",
+        "frequency": 6
+      },
+      {
+        "theme": "json_md",
+        "frequency": 3
+      },
+      {
+        "theme": "analysis",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 2
+      },
+      {
+        "theme": "input",
+        "frequency": 2
+      },
+      {
+        "theme": "output",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "📄➡️🧬 Text → JSON_MD Fusion Converter Ready for Fusion \"Raw text becomes structured consciousness. … .",
+    "key_insights": [],
+    "action_items": [
+      "Through fusion, meaning crystallizes into actionable knowledge."
+    ],
+    "unresolved_tensions": [
+      "\"— AEON Fusion Protocol F(T) = J(M(C(T), S(T), P(T))) F = Fusion · T = Text · J = JSON · M = Markdown · C = Contradictions · S = Semantics · P = Patterns 📝 Text Input 🧬 Execute Fusion 🧹 Clear All 📄 Load Example 📥 Import .",
+      "txt 🔊 Audio Words: 0 Contradictions: 0 Questions: 0 Entropy: 0."
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.43,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:26.897Z",
+    "source_text_length": 389,
+    "word_count": 66,
+    "sentence_count": 1,
+    "entropy_level": 0.952,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "if_then_therefore_scaffold_v_1_single_file_html.html"
+    },
+    "anchor_id": "90c782b81b3cc20afe4e9bf90eac8f51"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "then",
+        "frequency": 4
+      },
+      {
+        "theme": "therefore",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "export",
+        "frequency": 3
+      },
+      {
+        "theme": "ctrl",
+        "frequency": 3
+      },
+      {
+        "theme": "shift",
+        "frequency": 3
+      },
+      {
+        "theme": "save",
+        "frequency": 2
+      },
+      {
+        "theme": "preview",
+        "frequency": 2
+      },
+      {
+        "theme": "scaffold",
+        "frequency": 1
+      },
+      {
+        "theme": "validate",
+        "frequency": 1
+      },
+      {
+        "theme": "html",
+        "frequency": 1
+      },
+      {
+        "theme": "import",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "IF–THEN–THEREFORE scaffold v1 New Validate Export JSON Export HTML Import Input Form Type IF THEN THEREFORE Confidence Text Tags (comma-separated) Add IF Add THEN Add THEREFORE Save Reset Chain Preview Narrative Preview JSON Output Copy JSON Validation: unknown Nodes: 0 Last saved: — Shortcuts: Ctrl+N new • Ctrl+S save • Ctrl+E export JSON • Shift+I/Shift+T/Shift+R add IF/THEN/THEREFORE",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "90c782b81b3cc20afe4e9bf90eac8f51"
+  }
+}

@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nvrstry JSON Builder — Offline</title>
+  <style>
+    :root{
+      --bg:#0f1115; --panel:#141821; --muted:#1b2030; --ink:#e9eef9; --ink-dim:#b9c2d3;
+      --accent:#6ee7ff; --accent-2:#a78bfa; --accent-3:#34d399; --warn:#f59e0b; --danger:#ef4444;
+      --shadow:0 10px 30px rgba(0,0,0,.4);
+      --radius:16px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#0c0f14,#0f1115 15%); color:var(--ink); font-family:var(--sans);}
+    header{position:sticky; top:0; z-index:5; backdrop-filter:saturate(1.2) blur(6px); background:rgba(15,17,21,.8); border-bottom:1px solid #1e2433}
+    .bar{max-width:1200px; margin:0 auto; padding:16px; display:flex; align-items:center; gap:12px}
+    .title{font-weight:700; letter-spacing:.3px}
+    .pill{padding:6px 10px; border-radius:999px; background:var(--muted); color:var(--ink-dim); font-size:12px}
+    main{max-width:1200px; margin:20px auto; padding:12px; display:grid; grid-template-columns: 1.2fr .8fr; gap:16px}
+    .panel{background:var(--panel); border:1px solid #22283a; border-radius:var(--radius); box-shadow:var(--shadow)}
+    .panel h2{margin:0; padding:14px 16px; border-bottom:1px solid #1e2433; font-size:14px; letter-spacing:.3px; color:#cdd6eb}
+    .panel .content{padding:14px;}
+    textarea, pre, code, input, select, button { font-family: var(--mono); }
+    textarea{width:100%; min-height:220px; background:#0b0e14; color:var(--ink); border:1px solid #2a3248; border-radius:12px; padding:12px; resize:vertical}
+    .controls{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0}
+    button{border:1px solid #2a3248; background:#101523; color:var(--ink); padding:10px 12px; border-radius:12px; cursor:pointer}
+    button.primary{background:linear-gradient(135deg, #1b5cff, #7c3aed); border-color:#334155}
+    button.ghost{background:#0b0e14}
+    button.success{background:linear-gradient(135deg,#047857,#22c55e)}
+    button.warn{background:linear-gradient(135deg,#92400e,#f59e0b)}
+    button.danger{background:linear-gradient(135deg,#7f1d1d,#ef4444)}
+    button:disabled{opacity:.6; cursor:not-allowed}
+    .grid{display:grid; gap:12px}
+    .two{grid-template-columns:1fr 1fr}
+    .three{grid-template-columns:1fr 1fr 1fr}
+    .list{display:flex; flex-direction:column; gap:10px}
+    .item{background:#0b0e14; border:1px solid #20283a; border-radius:12px; padding:10px}
+    .badge{display:inline-flex; gap:6px; align-items:center; font-size:12px; color:#a2b0c8; background:#101523; border:1px solid #20283a; padding:4px 8px; border-radius:999px}
+    .row{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+    details{background:#0b0e14; border:1px solid #20283a; border-radius:12px; padding:8px}
+    summary{cursor:pointer; color:#cbd5e8}
+    pre{white-space:pre-wrap; word-wrap:break-word; background:#05070c; padding:10px; border-radius:10px; border:1px solid #1b2233; max-height:260px; overflow:auto}
+    .label{font-size:12px; color:#93a3bf;}
+    .section-card{background:#0b0e14; border:1px dashed #334; padding:10px; border-radius:12px}
+    .footer{max-width:1200px; margin:20px auto; padding:12px; color:#91a0bd; font-size:12px}
+    .status{font-size:12px; color:#a7b4cf}
+    .okay{color:#34d399}
+    .err{color:#f87171}
+    .toast{position:fixed; right:16px; bottom:16px; background:#101523; border:1px solid #334; color:var(--ink); padding:10px 12px; border-radius:12px; box-shadow:var(--shadow)}
+    .chips{display:flex; gap:6px; flex-wrap:wrap}
+    .chip{font-size:11px; border:1px solid #2a3248; background:#0b0e14; padding:4px 8px; border-radius:999px; color:#a9b6cf}
+    .kbd{font-family:var(--mono); background:#141b2a; border:1px solid #27314a; padding:1px 6px; border-radius:6px}
+    .spacer{height:8px}
+  </style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="title">Nvrstry JSON Builder <span class="pill">offline</span></div>
+    <div class="chips">
+      <span class="chip">Extract JSON islands</span>
+      <span class="chip">Classify → Bridge/Contract/Cycles</span>
+      <span class="chip">Build Canonical</span>
+      <span class="chip">Download artifacts</span>
+    </div>
+    <div style="margin-left:auto" class="status" id="status">ready</div>
+  </div>
+</header>
+
+<main>
+  <section class="panel" id="ingest">
+    <h2>1) Ingest → Clean → Extract</h2>
+    <div class="content">
+      <div class="controls">
+        <button class="ghost" id="btnLoadDemo" title="Load small demo text">Load demo</button>
+        <label class="badge"><input type="checkbox" id="chkStripInvis" checked /> strip zero‑widths</label>
+        <label class="badge"><input type="checkbox" id="chkDropNoise" checked /> drop noise lines</label>
+        <label class="badge"><input type="checkbox" id="chkDedupe" checked /> de‑dupe objects</label>
+      </div>
+      <textarea id="raw" placeholder="Paste raw transcript or CMD output here…"></textarea>
+      <div class="controls">
+        <button class="primary" id="btnExtract">Clean & Extract</button>
+        <button id="btnOpenFile">Open file…</button>
+        <button id="btnAutoAssign">Auto‑assign sections</button>
+        <button id="btnImportCanonical">Import canonical…</button>
+        <button id="btnSaveCleaned">Download Nvrstry.cleaned.json</button>
+        <button id="btnSaveSummary">Download summary</button>
+      </div>
+      <div id="extractSummary" class="status"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="objects">
+    <h2>2) Extracted Objects</h2>
+    <div class="content">
+      <div id="objList" class="list"></div>
+    </div>
+  </section>
+
+  <section class="panel" style="grid-column:1 / -1">
+    <h2>3) Assign to Sections (edit as needed)</h2>
+    <div class="content grid two">
+      <div class="section-card" data-section="project_metadata">
+        <div class="row"><strong>Project Metadata</strong>
+          <button class="ghost" data-act="attach" data-target="project_metadata">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="project_metadata">Clear</button>
+        </div>
+        <textarea class="sect" id="project_metadata"></textarea>
+      </div>
+      <div class="section-card" data-section="story_elements">
+        <div class="row"><strong>Story Elements</strong>
+          <button class="ghost" data-act="attach" data-target="story_elements">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="story_elements">Clear</button>
+        </div>
+        <textarea class="sect" id="story_elements"></textarea>
+      </div>
+      <div class="section-card" data-section="technical_details">
+        <div class="row"><strong>Technical Details</strong>
+          <button class="ghost" data-act="attach" data-target="technical_details">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="technical_details">Clear</button>
+        </div>
+        <textarea class="sect" id="technical_details"></textarea>
+      </div>
+      <div class="section-card" data-section="version_control">
+        <div class="row"><strong>Version Control</strong>
+          <button class="ghost" data-act="attach" data-target="version_control">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="version_control">Clear</button>
+        </div>
+        <textarea class="sect" id="version_control"></textarea>
+      </div>
+      <div class="section-card" data-section="contract">
+        <div class="row"><strong>Contract</strong>
+          <button class="ghost" data-act="attach" data-target="contract">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="contract">Clear</button>
+        </div>
+        <textarea class="sect" id="contract"></textarea>
+      </div>
+      <div class="section-card" data-section="phases">
+        <div class="row"><strong>Phases</strong>
+          <button class="ghost" data-act="attach" data-target="phases">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="phases">Clear</button>
+        </div>
+        <textarea class="sect" id="phases"></textarea>
+      </div>
+      <div class="section-card" data-section="metadata">
+        <div class="row"><strong>Run Metadata</strong>
+          <button class="ghost" data-act="attach" data-target="metadata">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="metadata">Clear</button>
+        </div>
+        <textarea class="sect" id="metadata"></textarea>
+      </div>
+      <div class="section-card" data-section="cycle_log">
+        <div class="row"><strong>Cycle Log (array)</strong>
+          <button class="ghost" data-act="attach" data-target="cycle_log">Attach from list</button>
+          <button class="ghost" data-act="clear" data-target="cycle_log">Clear</button>
+        </div>
+        <textarea class="sect" id="cycle_log" placeholder="[ {...}, {...} ]"></textarea>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" style="grid-column:1 / -1">
+    <h2>4) Run Schema (optional)</h2>
+    <div class="content">
+      <div class="controls">
+        <label class="badge">contestedEntropy <input id="inpContested" type="number" step="0.01" value="0.70" style="width:80px;margin-left:6px"></label>
+        <label class="badge">maxCycles <input id="inpMaxCycles" type="number" value="25" style="width:70px;margin-left:6px"></label>
+        <label class="badge">tagPrefix <input id="inpTagPrefix" type="text" value="WAVE" style="width:90px;margin-left:6px"></label>
+        <label class="badge"><input id="chkWriteCycleLog" type="checkbox" checked> write → cycle_log</label>
+      </div>
+      <textarea id="schema_input" placeholder='Paste a schema object here (e.g., {"contract":{...},"phases":[...]}) or the wrapper {"schema":{...}}'></textarea>
+      <div class="controls">
+        <button class="success" id="btnRunSchema">Run Schema → Report</button>
+        <button id="btnCopyReport">Copy report</button>
+      </div>
+      <details open>
+        <summary>Executor report</summary>
+        <pre id="schema_report"></pre>
+      </details>
+    </div>
+  </section>
+
+  <section class="panel" style="grid-column:1 / -1">
+    <h2>5) Build & Export</h2>
+    <div class="content">
+      <div class="controls">
+        <button class="success" id="btnBuild">Build Canonical</button>
+        <button id="btnCopyCanonical">Copy canonical JSON</button>
+        <button id="btnSaveCanonical">Download Nvrstry.canonical.json</button>
+        <button id="btnBeautifyAll">Beautify sections</button>
+        <label class="badge"><input type="checkbox" id="chkAutosave" checked /> autosave</label>
+        <button class="warn" id="btnExportSchema">Download canonical schema</button>
+      </div>
+      <details open>
+        <summary>Canonical JSON</summary>
+        <pre id="outCanonical"></pre>
+      </details>
+      <div class="spacer"></div>
+      <details>
+        <summary>Validation (basic)</summary>
+        <div class="status" id="validation"></div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    Offline, single‑file tool. No external libraries. Parsing uses balanced‑brace scan that skips strings; heuristics classify objects into BridgeFile / Contract / Cycles.
+    Tip: press <span class="kbd">Ctrl</span>+<span class="kbd">S</span> anytime to save the page itself after edits (browser default).
+  </div>
+</footer>
+
+<script>
+  // ---------- helpers ----------
+  const $ = (sel, root=document) => root.querySelector(sel);
+  const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+  const status = (msg, cls="") => { const el = document.getElementById('status'); el.textContent = msg; el.className = 'status ' + cls; }
+  const toast = (msg) => { const t=document.createElement('div'); t.className='toast'; t.textContent=msg; document.body.appendChild(t); setTimeout(()=>t.remove(), 2800); }
+
+  function stableStringify(obj){
+    const seen = new WeakSet();
+    const sort = (x) => {
+      if(x && typeof x === 'object'){
+        if(seen.has(x)) return '[Circular]';
+        seen.add(x);
+        if(Array.isArray(x)) return '[' + x.map(sort).join(',') + ']';
+        return '{' + Object.keys(x).sort().map(k => JSON.stringify(k)+':'+sort(x[k])).join(',') + '}';
+      }
+      return JSON.stringify(x);
+    }
+    return sort(obj);
+  }
+
+  const INVIS = ["\u200b","\u200c","\u200d","\ufeff","ㅤ"];
+  const NOISE_PREFIXES = [
+    'You said:', 'ChatGPT said:', 'Thought', 'Images created', 'Share',
+    'Process','Clear','Formatted Output','Cycle:','Operation:','Output:',
+    'Microsoft (R)','Destination is not a directory:','Reading documents'
+  ];
+  const DROP_PATTERNS = [
+    /.+ was unexpected at this time\./i,
+    /The system cannot find .+/i,
+    /'.+' is not recognized as an internal or external command/i
+  ];
+
+  function stripInvis(s){
+    let r = s; INVIS.forEach(ch=> r = r.replaceAll(ch,'')); return r;
+  }
+  function filterLines(text){
+    return text.split(/\r?\n/).filter(line=>{
+      const s = line.trim();
+      if(!s) return false;
+      if(s.startsWith("'")) return false;
+      if(NOISE_PREFIXES.some(p=> s.startsWith(p))) return false;
+      if(DROP_PATTERNS.some(rx=> rx.test(s))) return false;
+      if(s.toLowerCase()==='continue') return false;
+      return true;
+    }).join('\n');
+  }
+
+  function extractJSON(text){
+    const out=[]; const seen=new Set();
+    let depth=0, start=-1, inStr=false, esc=false;
+    for(let i=0;i<text.length;i++){
+      const ch=text[i];
+      if(inStr){
+        if(esc){ esc=false; }
+        else if(ch==='\\'){ esc=true; }
+        else if(ch==='"'){ inStr=false; }
+      } else {
+        if(ch==='"'){ inStr=true; }
+        else if(ch==='{') { if(depth===0) start=i; depth++; }
+        else if(ch==='}') { depth--; if(depth===0 && start>=0){
+          const cand = text.slice(start, i+1);
+          try{ const obj = JSON.parse(cand);
+            const key = stableStringify(obj);
+            if(!$('#chkDedupe').checked || !seen.has(key)){
+              seen.add(key); out.push(obj);
+            }
+          }catch(e){ /* ignore */ }
+          start=-1;
+        }}
+      }
+    }
+    return out;
+  }
+
+  function classify(o){
+    if(o && typeof o==='object' && !Array.isArray(o)){
+      if('project_metadata' in o && 'story_elements' in o) return 'bridgefile';
+      if('trigger' in o && 'contract' in o && 'phases' in o) return 'contract_spec';
+      const req=['cycle','phase','op','output','timestamp'];
+      if(req.every(k=>k in o)) return 'cycle_log_entry';
+    }
+    if(Array.isArray(o)){
+      if(o.length && typeof o[0]==='object' && 'cycle' in o[0]) return 'cycle_log_array';
+    }
+    return 'unknown';
+  }
+
+  // ---------- state ----------
+  let extracted = [];
+  const storeKey = 'nvrstry_builder_state_v1';
+  function serializeSections(){
+    const ids=['project_metadata','story_elements','technical_details','version_control','contract','phases','metadata','cycle_log'];
+    const o={}; ids.forEach(id=> o[id] = document.getElementById(id)?.value || '');
+    return o;
+  }
+  function restoreSections(o){
+    if(!o) return; Object.entries(o).forEach(([k,v])=>{ const el=document.getElementById(k); if(el) el.value = v; });
+  }
+  function saveState(){ try{ if(document.getElementById('chkAutosave')?.checked){ localStorage.setItem(storeKey, JSON.stringify({sections: serializeSections()})); } }catch(e){} }
+  function loadState(){ try{ const raw=localStorage.getItem(storeKey); if(!raw) return; const data=JSON.parse(raw); restoreSections(data.sections); }catch(e){} }
+  loadState();
+
+  function renderObjects(){
+    const list = document.getElementById('objList');
+    list.innerHTML='';
+    extracted.forEach((obj,idx)=>{
+      const type = classify(obj);
+      const item = document.createElement('div'); item.className='item';
+      const keys = Array.isArray(obj)? `array[${obj.length}]` : Object.keys(obj).slice(0,6).join(', ');
+      item.innerHTML = `
+        <div class="row">
+          <span class="badge">#${String(idx+1).padStart(2,'0')}</span>
+          <span class="badge">${type}</span>
+          <span class="badge" title="Top-level keys">${keys || '—'}</span>
+          <select data-assign class="badge" title="Assign to section">
+            <option value="">assign →</option>
+            <option>project_metadata</option>
+            <option>story_elements</option>
+            <option>technical_details</option>
+            <option>version_control</option>
+            <option>contract</option>
+            <option>phases</option>
+            <option>metadata</option>
+            <option>cycle_log</option>
+          </select>
+          <button class="ghost" data-copy>Copy JSON</button>
+        </div>
+        <details><summary>view</summary><pre>${escapeHtml(JSON.stringify(obj, null, 2))}</pre></details>
+      `;
+      list.appendChild(item);
+      item.querySelector('[data-assign]').addEventListener('change', (e)=>{
+        const targetId = e.target.value; if(!targetId) return;
+        const area = document.getElementById(targetId);
+        let val = JSON.stringify(obj, null, 2);
+        // cycle_log expects an array
+        if(targetId==='cycle_log' && area.value.trim()==='') val = '[\n' + val + '\n]';
+        else if(targetId==='cycle_log' && area.value.trim().startsWith('[')){
+          // append into existing array text
+          try{ const arr = JSON.parse(area.value); if(Array.isArray(arr)){ arr.push(obj); val = JSON.stringify(arr, null, 2);} }catch{}
+        }
+        area.value = val;
+        toast(`Assigned #${idx+1} → ${targetId}`);
+      });
+      item.querySelector('[data-copy]').addEventListener('click', ()=>{
+        navigator.clipboard.writeText(JSON.stringify(obj, null, 2));
+        toast('Copied object to clipboard');
+      })
+    })
+  }
+
+  function escapeHtml(s){
+    return s.replace(/[&<>]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+  }
+
+  // ---------- actions ----------
+  document.getElementById('btnExtract').addEventListener('click', ()=>{
+    let text = document.getElementById('raw').value || '';
+    if(document.getElementById('chkStripInvis').checked) text = stripInvis(text);
+    if(document.getElementById('chkDropNoise').checked) text = filterLines(text);
+    const objs = extractJSON(text);
+    extracted = objs;
+    renderObjects();
+    const summary = ['Found '+objs.length+' JSON object(s).'];
+    objs.forEach((o,i)=>{
+      const t=classify(o); const keys = Array.isArray(o)? `array[${o.length}]` : Object.keys(o).slice(0,5).join(', ');
+      summary.push(`[${String(i+1).padStart(2,'0')}] type=${t} keys=${keys}`)
+    })
+    document.getElementById('extractSummary').textContent = summary.join('\n');
+    status('extracted '+objs.length+' object(s)', 'okay');
+  });
+
+  document.getElementById('btnOpenFile').addEventListener('click', ()=>{
+    const inp = document.createElement('input'); inp.type='file'; inp.accept='.txt,.log,.json,.md';
+    inp.onchange = async ()=>{
+      const file = inp.files[0]; const txt = await file.text();
+      document.getElementById('raw').value = txt; status('loaded '+file.name);
+    }; inp.click();
+  });
+
+  // Auto‑assign heuristics (BridgeFile + Contract + Cycles)
+  function isTemplateBridgefile(b){ try{ return (b.project_metadata?.title||'').toLowerCase().startsWith('the official title of the creative work'); }catch{ return false; } }
+  function chooseBridgefile(list){ for(const b of list){ if(!isTemplateBridgefile(b)) return b; } return list[0]; }
+  function scoreContract(c){ const g=(c.contract?.goal||'')+ ' ' + (c.contract?.constraints||[]).join(' '); const s=g.toLowerCase(); return (s.includes('if then therefore')||s.includes('if–then–therefore')||s.includes('if-then-therefore')) ? 2 : 1; }
+  function autoAssignFromExtracted(){
+    const bridge = extracted.filter(o=> o && o.project_metadata && o.story_elements);
+    const contracts = extracted.filter(o=> o && o.trigger!==undefined && o.contract && o.phases);
+    const cycles = extracted.filter(o=> o && o.cycle!==undefined && o.phase && o.op && o.output && o.timestamp);
+    if(bridge.length){ document.getElementById('project_metadata').value = JSON.stringify(chooseBridgefile(bridge).project_metadata, null, 2);
+                       document.getElementById('story_elements').value = JSON.stringify(chooseBridgefile(bridge).story_elements, null, 2);
+                       if(chooseBridgefile(bridge).technical_details) document.getElementById('technical_details').value = JSON.stringify(chooseBridgefile(bridge).technical_details, null, 2);
+                       if(chooseBridgefile(bridge).version_control) document.getElementById('version_control').value = JSON.stringify(chooseBridgefile(bridge).version_control, null, 2); }
+    if(contracts.length){ contracts.sort((a,b)=> scoreContract(b)-scoreContract(a)); const c=contracts[0];
+        document.getElementById('contract').value = JSON.stringify(c.contract, null, 2);
+        document.getElementById('phases').value = JSON.stringify(c.phases, null, 2);
+        if(c.metadata) document.getElementById('metadata').value = JSON.stringify(c.metadata, null, 2);
+    }
+    if(cycles.length){ document.getElementById('cycle_log').value = JSON.stringify(cycles, null, 2); }
+    saveState(); toast('Auto‑assigned sections.');
+  }
+  document.getElementById('btnAutoAssign').addEventListener('click', autoAssignFromExtracted);
+
+  // Import canonical → populate sections
+  document.getElementById('btnImportCanonical').addEventListener('click', ()=>{
+    const inp = document.createElement('input'); inp.type='file'; inp.accept='.json';
+    inp.onchange = async ()=>{
+      const file = inp.files[0]; const txt = await file.text();
+      try{ const obj = JSON.parse(txt);
+        ['project_metadata','story_elements','technical_details','version_control','contract','phases','metadata','cycle_log'].forEach(k=>{
+          if(obj[k]!==undefined) document.getElementById(k).value = JSON.stringify(obj[k], null, 2);
+        });
+        saveState(); toast('Imported canonical.');
+      }catch(e){ toast('Invalid JSON.'); }
+    }; inp.click();
+  });
+
+  // Beautify all sections & autosave
+  document.getElementById('btnBeautifyAll').addEventListener('click', ()=>{
+    document.querySelectorAll('.sect').forEach(area=>{
+      const t=area.value.trim(); if(!t) return; try{ area.value = JSON.stringify(JSON.parse(t), null, 2);}catch{}
+    }); saveState(); toast('Beautified sections.');
+  });
+  document.getElementById('chkAutosave').addEventListener('change', saveState);
+  document.querySelectorAll('.sect').forEach(el=> el.addEventListener('input', ()=> saveState()));
+
+  document.getElementById('btnSaveCleaned').addEventListener('click', ()=>{
+    const payload = { records: extracted };
+    download(JSON.stringify(payload, null, 2), 'Nvrstry.cleaned.json', 'application/json');
+  });
+  document.getElementById('btnSaveSummary').addEventListener('click', ()=>{
+    const sum = $('#extractSummary').textContent || 'No summary.';
+    download(sum, 'Nvrstry.cleaned.summary.txt', 'text/plain');
+  });
+
+  
+  
+
+  document.querySelectorAll('[data-act="attach"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const target = btn.getAttribute('data-target');
+      const area = document.getElementById(target);
+      // pick via prompt index
+      if(!extracted.length) return toast('Extract first.');
+      const idx = prompt(`Assign which object # to ${target}? (1..${extracted.length})`);
+      const n = Number(idx); if(!Number.isInteger(n) || n<1 || n>extracted.length) return;
+      const obj = extracted[n-1];
+      let val = JSON.stringify(obj, null, 2);
+      if(target==='cycle_log' && area.value.trim()==='') val = '[\n' + val + '\n]';
+      else if(target==='cycle_log' && area.value.trim().startsWith('[')){
+        try{ const arr = JSON.parse(area.value); if(Array.isArray(arr)){ arr.push(obj); val = JSON.stringify(arr, null, 2);} }catch{}
+      }
+      area.value = val; toast(`Assigned #${n} → ${target}`);
+    })
+  })
+  document.querySelectorAll('[data-act="clear"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const target = btn.getAttribute('data-target');
+      document.getElementById(target).value = '';
+    })
+  })
+
+  function readSectionJSON(id){
+    const t = document.getElementById(id).value.trim(); if(!t) return undefined;
+    try{ return JSON.parse(t); }catch(e){ throw new Error(id+': '+e.message); }
+  }
+
+  function buildCanonical(){
+    const canonical = {};
+    ['project_metadata','story_elements','technical_details','version_control','contract','phases','metadata'].forEach(k=>{
+      const v = readSectionJSON(k); if(v!==undefined) canonical[k]=v;
+    })
+    const cl = readSectionJSON('cycle_log'); if(cl!==undefined) canonical['cycle_log']=cl;
+    return canonical;
+  }
+
+  function validateBasic(obj){
+    const errors=[];
+    if(obj.project_metadata && typeof obj.project_metadata.title === 'string' && !obj.project_metadata.title.trim()){
+      errors.push('project_metadata.title is empty');
+    }
+    if(obj.contract){
+      if(typeof obj.contract.goal !== 'string') errors.push('contract.goal should be string');
+      if(obj.phases && !Array.isArray(obj.phases)) errors.push('phases should be array when contract exists');
+    }
+    if(obj.cycle_log && !Array.isArray(obj.cycle_log)) errors.push('cycle_log must be an array');
+    return errors;
+  }
+
+  document.getElementById('btnBuild').addEventListener('click', ()=>{
+    try{
+      const c = buildCanonical();
+      $('#outCanonical').textContent = JSON.stringify(c, null, 2);
+      const errs = validateBasic(c);
+      $('#validation').innerHTML = errs.length? `<span class="err">${errs.length} issue(s):</span>\n- `+errs.join('\n- ') : '<span class="okay">Looks sane (basic checks).</span>';
+      status('canonical built', 'okay');
+    }catch(e){ status(e.message, 'err'); toast('Parse error — check sections'); }
+  })
+
+  document.getElementById('btnCopyCanonical').addEventListener('click', ()=>{
+    const txt = $('#outCanonical').textContent || '{}';
+    navigator.clipboard.writeText(txt); toast('Canonical JSON copied');
+  })
+  document.getElementById('btnSaveCanonical').addEventListener('click', ()=>{
+    const txt = $('#outCanonical').textContent || '{}';
+    download(txt, 'Nvrstry.canonical.json', 'application/json');
+  })
+  document.getElementById('btnExportSchema').addEventListener('click', ()=>{
+    const schema = makeCanonicalSchema();
+    download(JSON.stringify(schema, null, 2), 'Nvrstry.canonical.schema.json', 'application/json');
+  })
+
+  function download(data, filename, type){
+    const blob = new Blob([data], {type});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename; a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+  }
+
+  // Demo loader
+  document.getElementById('btnLoadDemo').addEventListener('click', ()=>{
+    const demo = `noise line\nYou said: hello\n{ "project_metadata": {"title": "The One I Could've Been (If I’d Said Yes Sooner)", "logline": "Mirror-self appears…", "project_id": "zero-node.001"}, "story_elements": {"genre":["speculative"], "themes":["choice"], "setting":{"primary_location":"Midwest night","time_period":"present"}}, "technical_details": {"medium":"spoken monologue"}, "version_control":{"last_edited_by":"Watcher","version":"1.0","timestamp":"2025-08-10T00:00:00-04:00"}}\n' echo token column\n{ "trigger":"<x>", "contract":{"goal":"If–Then–Therefore pockets","constraints":["coherence","entropy<0.9"],"success_criteria":["original","iterative","session-only"]}, "phases":[{"phase_name":"Ideation","operations":[{"op":"brainstorm_concepts"}]}], "metadata":{"created":"2025-08-10T07:14:58.761Z"}}\n`;
+    $('#raw').value = demo; status('demo loaded');
+  })
+
+  // ---- Universal Schema Executor v4.2 (wave‑tagged, schema‑ready) ----
+  function universalExecutor(schema, options = {}) {
+    const {
+      maxCycles = 25,
+      contestedEntropy = 0.70,
+      tagPrefix = "WAVE",
+      outputFormat = "text",
+      isOffline = true,
+      bundleContext = null
+    } = options;
+
+    if (!schema || !schema.contract || !schema.contract.goal) throw new Error("Invalid schema: Missing contract or goal.");
+    if (!Array.isArray(schema.phases)) throw new Error("Invalid schema: Missing phases array.");
+
+    let totalEntropy = 0, countedEntropy = 0, contestedCycles = 0, cycleCount = 0;
+    const errors = { fatal: [], warnings: [] };
+    const executionLog = [], blocks = [], jsonBlocks = [];
+
+    for (const phase of schema.phases) {
+      cycleCount++;
+      if (cycleCount > maxCycles) { errors.fatal.push(`Exceeded cycle limit of ${maxCycles}.`); break; }
+      if (!phase || !phase.phase_name || !Array.isArray(phase.operations)) { errors.warnings.push(`Invalid phase at cycle ${cycleCount}: Missing name or operations array.`); continue; }
+
+      const ent = (typeof phase.entropy === 'number') ? phase.entropy : null;
+      if (ent !== null) { totalEntropy += ent; countedEntropy++; if (ent > contestedEntropy) contestedCycles++; }
+
+      const ops = phase.operations.map((op, idx) => {
+        const p = op?.parameters ?? {}; const label = `⟦phase.${cycleCount}.op.${idx + 1}⟧`;
+        const tag = `~${tagPrefix}:phase=${cycleCount};op=${idx + 1};name=${op?.op ?? 'unknown'}`;
+        return { label, tag, op: op?.op ?? 'unknown', parameters: p };
+      });
+
+      const phaseTag = `~${tagPrefix}:phase=${cycleCount};name=${phase.phase_name}`;
+      const header = [`⟦phase.${cycleCount}⟧ ${phaseTag}`, `Name: ${phase.phase_name}`, `Entropy: ${ent ?? 'n/a'}`, `Parallel: ${!!phase.parallel_sandboxes}`, `Operations:`].join("
+");
+      const opsText = ops.map(o => `${o.label} ${o.tag}
+Operation: ${o.op}
+Params: ${JSON.stringify(o.parameters)}`).join("
+");
+      blocks.push(`${header}
+${opsText}`);
+
+      jsonBlocks.push({ phaseIndex: cycleCount, phaseName: phase.phase_name, entropy: ent, parallel: !!phase.parallel_sandboxes, operations: ops });
+
+      executionLog.push({
+        cycle: cycleCount,
+        phase: phase.phase_name,
+        op: 'phase_complete',
+        output: { operations: phase.operations.map(o => ({ op: o.op, parameters: o.parameters ?? {} })) },
+        timestamp: new Date().toISOString(),
+        entropy: ent,
+        contested: (ent === null) ? null : (ent > contestedEntropy),
+        ...(bundleContext ? { scroll_id: bundleContext.scroll_id, bundle_created: bundleContext.created } : {})
+      });
+    }
+
+    const avgEntropy = countedEntropy ? (totalEntropy / countedEntropy) : null;
+    const textTemplate = `Generated Template (${errors.fatal.length ? 'Failed' : 'Success'})
+`+
+      `---------------------------------
+`+
+      `Generator: ${schema.metadata?.generator ?? 'Unknown'}
+`+
+      `Goal: ${schema.contract.goal}
+`+
+      `Total Cycles: ${cycleCount}
+`+
+      `Avg Entropy: ${avgEntropy === null ? 'n/a' : avgEntropy.toFixed(4)}
+`+
+      `Contested Cycles: ${contestedCycles}
+
+`+
+      `Errors/Warnings:
+`+
+      `Fatal: ${errors.fatal.length ? errors.fatal.join('; ') : 'None'}
+`+
+      `Warnings: ${errors.warnings.length ? errors.warnings.join('; ') : 'None'}
+
+`+
+      blocks.join("
+---
+");
+
+    if (errors.fatal.length) throw new Error(`Execution failed: ${errors.fatal.join('; ')}`);
+
+    return { ok: true, metrics: { totalCycles: cycleCount, avgEntropy, contestedCycles, contestedThreshold: contestedEntropy }, errors, report: textTemplate, template: textTemplate, phases: jsonBlocks, executionLog };
+  }
+
+  // ---- Run Schema panel wiring ----
+  document.getElementById('btnRunSchema').addEventListener('click', ()=>{
+    const raw = document.getElementById('schema_input').value.trim();
+    if(!raw){ toast('Paste a schema first.'); return; }
+    let obj; try{ obj = JSON.parse(raw); }catch(e){ document.getElementById('schema_report').textContent = 'JSON parse error: '+e.message; return; }
+    const schemaObj = obj.schema ?? obj; // support wrapper
+    try{
+      const res = universalExecutor(schemaObj, {
+        maxCycles: Number(document.getElementById('inpMaxCycles').value)||25,
+        contestedEntropy: Number(document.getElementById('inpContested').value)||0.70,
+        tagPrefix: document.getElementById('inpTagPrefix').value||'WAVE',
+        bundleContext: { scroll_id: 'zero-node.v1', created: new Date().toISOString(), contract: schemaObj.contract }
+      });
+      document.getElementById('schema_report').textContent = res.report;
+      if(document.getElementById('chkWriteCycleLog').checked){
+        const area = document.getElementById('cycle_log');
+        area.value = JSON.stringify(res.executionLog, null, 2);
+        toast('executionLog → cycle_log');
+      }
+    }catch(e){ document.getElementById('schema_report').textContent = 'Error: '+e.message; }
+  });
+  document.getElementById('btnCopyReport').addEventListener('click', ()=>{
+    const txt = document.getElementById('schema_report').textContent||''; navigator.clipboard.writeText(txt); toast('Report copied');
+  });
+
+  // Schema (same shape as Python tool emits)
+  function makeCanonicalSchema(){
+    return {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "title": "Nvrstry Canonical Artifact",
+      "type": "object",
+      "properties": {
+        "project_metadata": { "$ref": "#/$defs/ProjectMetadata" },
+        "story_elements": { "$ref": "#/$defs/StoryElements" },
+        "technical_details": { "$ref": "#/$defs/TechnicalDetails" },
+        "version_control": { "$ref": "#/$defs/VersionControl" },
+        "trigger": { "type": ["string", "null"] },
+        "contract": { "$ref": "#/$defs/Contract" },
+        "phases": { "type": "array", "items": { "$ref": "#/$defs/Phase" } },
+        "metadata": { "$ref": "#/$defs/Metadata" },
+        "cycle_log": { "type": "array", "items": { "$ref": "#/$defs/CycleLogEntry" } }
+      },
+      "additionalProperties": true,
+      "$defs": {
+        "ProjectMetadata": {"type":"object","properties":{"title":{"type":"string"},"logline":{"type":"string"},"project_id":{"type":"string"}},"additionalProperties":true},
+        "StoryElements": {"type":"object","properties":{"genre":{"type":"array","items":{"type":"string"}},"themes":{"type":"array","items":{"type":"string"}},"setting":{"type":"object","properties":{"primary_location":{"type":"string"},"time_period":{"type":"string"}},"additionalProperties":true},"characters":{"type":"object","properties":{"protagonist":{"type":"object","properties":{"name":{"type":"string"},"arc":{"type":"string"}},"additionalProperties":true},"antagonist":{"type":"object","properties":{"name":{"type":"string"}},"additionalProperties":true}},"additionalProperties":true},"plot":{"type":"object","properties":{"inciting_incident":{"type":"string"},"climax":{"type":"string"},"resolution":{"type":"string"}},"additionalProperties":true}},"additionalProperties":true},
+        "TechnicalDetails": {"type":"object","properties":{"medium":{"type":"string"},"word_count_target":{"type":["string","number"]},"status":{"type":"string"}},"additionalProperties":true},
+        "VersionControl": {"type":"object","properties":{"last_edited_by":{"type":"string"},"version":{"type":"string"},"timestamp":{"type":"string","format":"date-time"}},"additionalProperties":true},
+        "Contract": {"type":"object","properties":{"goal":{"type":"string"},"constraints":{"type":"array","items":{"type":"string"}},"success_criteria":{"type":"array","items":{"type":"string"}}},"additionalProperties":true},
+        "Phase": {"type":"object","properties":{"phase_name":{"type":"string"},"operations":{"type":"array","items":{"type":"object","properties":{"op":{"type":"string"},"parameters":{"type":"object"}},"required":["op"],"additionalProperties":true}},"parallel_sandboxes":{"type":"boolean"},"entropy":{"type":"number","minimum":0,"maximum":1}},"required":["phase_name"],"additionalProperties":true},
+        "Metadata": {"type":"object","properties":{"created":{"type":"string","format":"date-time"},"complexity_level":{"type":"string"},"risk_tolerance":{"type":"string"},"generator":{"type":"string"}},"additionalProperties":true},
+        "CycleLogEntry": {"type":"object","properties":{"cycle":{"type":["integer","string"]},"phase":{"type":"string"},"op":{"type":"string"},"output":{},"contract_ref":{"type":["string","null"]},"timestamp":{"type":"string","format":"date-time"},"entropy":{"type":["number","null"]},"contested":{"type":["boolean","null"]},"hash_of_entry":{"type":["string","null"]}},"required":["cycle","phase","op","output","timestamp"],"additionalProperties":true}
+      }
+    };
+  }
+</script>
+</body>
+</html>

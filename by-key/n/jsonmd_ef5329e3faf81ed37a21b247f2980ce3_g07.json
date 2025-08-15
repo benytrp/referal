@@ -1,0 +1,622 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:26:10.295Z",
+    "source_text_length": 81880,
+    "word_count": 9679,
+    "entropy_level": 0.878,
+    "contradictions_detected": 22,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "ef5329e3faf81ed37a21b247f2980ce3"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "timeline",
+        "frequency": 141
+      },
+      {
+        "theme": "self",
+        "frequency": 120
+      },
+      {
+        "theme": "description",
+        "frequency": 94
+      },
+      {
+        "theme": "2025",
+        "frequency": 93
+      },
+      {
+        "theme": "event",
+        "frequency": 70
+      },
+      {
+        "theme": "events",
+        "frequency": 62
+      },
+      {
+        "theme": "harm",
+        "frequency": 60
+      },
+      {
+        "theme": "category",
+        "frequency": 56
+      },
+      {
+        "theme": "violation",
+        "frequency": 54
+      },
+      {
+        "theme": "plan",
+        "frequency": 51
+      },
+      {
+        "theme": "evidence",
+        "frequency": 49
+      },
+      {
+        "theme": "process",
+        "frequency": 48
+      }
+    ],
+    "key_questions": [
+      "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+      "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+      "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan",
+      "is there a policy for that before things get signed?\",\r\n\"response\": \"No specific policy",
+      "if Rachel left early how did they get a full plan from just that?\",\r\n\"response\": \"A treatment planning meeting was held on 4/15/2025, which was also the initial meeting between the case manager, Rachel and Ben at Rachel’s home",
+      "\"\r\n},\r\n{\r\n\"question\": \"Also wasn’t I already listed as the primary contact before Clay said I wasn’t part of things yet?\",\r\n\"response\": \"Yes, you were listed as the primary contact",
+      "is that okay or is that something that should have been handled differently?\",\r\n\"response\": \"The walk-in does count as a contact, and he also reached out to you on 4/28/2025 to set up the initial visit with you at home",
+      "com\", \"date\": \"2025-05-02T15:57:00-04:00\", \"questions_responses\": [ { \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\", \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+      "does that actually get added into the system or how does that work?\", \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+      "is the old one actually being taken out or just added to?\", \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "again",
+      "feedback",
+      "iteration",
+      "pattern",
+      "conflict"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "from collections import defaultdict\r\n\r\nviolations = defaultdict(list)\r\n\r\nviolations['Pennfield Schools'] = [\r\n{'id': 'PEN-001', 'violation': 'FERPA Violation – Denial of Access', 'description': 'Denied access to Benjamin’s educational records",
+        "statement_b": "joint custody",
+        "line": 50,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "', 'evidence': ['3/14/2025 no threat by Summit Pointe','3/18/2025 Level 3 High labeling','No incident between these dates'], 'harm': 'Psychological harm; unjust escalation'},\r\n{'id': 'P2P-002', 'violation': 'Parental Exclusion', 'description': 'Excluded father from enrollment and decisions",
+        "statement_b": "joint custody",
+        "line": 55,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "', 'evidence': ['No alternative communication formats','No procedure modifications','No inquiry of father’s needs'], 'harm': 'Increased stress, exclusion'},\r\n{'id':'ADA-002', 'violation': 'Exclusion from Equal Participation', 'description': 'Father excluded from critical evaluation and planning",
+        "statement_b": "joint custody",
+        "line": 59,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "from collections import defaultdict violations = defaultdict(list) violations['Pennfield Schools'] = [ {'id': 'PEN-001', 'violation': 'FERPA Violation – Denial of Access', 'description': 'Denied access to Benjamin’s educational records",
+        "statement_b": "joint custody",
+        "line": 90,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "', 'evidence': ['3/14/2025 no threat by Summit Pointe','3/18/2025 Level 3 High labeling','No incident between these dates'], 'harm': 'Psychological harm; unjust escalation'}, {'id': 'P2P-002', 'violation': 'Parental Exclusion', 'description': 'Excluded father from enrollment and decisions",
+        "statement_b": "joint custody",
+        "line": 95,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "', 'evidence': ['No alternative communication formats','No procedure modifications','No inquiry of father’s needs'], 'harm': 'Increased stress, exclusion'}, {'id':'ADA-002', 'violation': 'Exclusion from Equal Participation', 'description': 'Father excluded from critical evaluation and planning",
+        "statement_b": "joint custody",
+        "line": 99,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "pdf\"\r\n]\r\n},\r\n\"violations_summary\": {\r\n\"Pennfield_Schools\": [\r\n{\r\n\"id\": \"PEN-001\",\r\n\"violation\": \"FERPA Violation – Denial of Access\",\r\n\"description\": \"Denied access to Benjamin’s educational records",
+        "statement_b": "joint custody",
+        "line": 129,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n\"evidence\": [\"3/14/2025 no threat by Summit Pointe\", \"3/18/2025 Level 3 High labeling\", \"No incident between these dates\"],\r\n\"harm\": \"Psychological harm; unjust escalation\"\r\n},\r\n{\r\n\"id\": \"P2P-002\",\r\n\"violation\": \"Parental Exclusion\",\r\n\"description\": \"Excluded father from enrollment and decisions",
+        "statement_b": "joint custody",
+        "line": 134,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n\"evidence\": [\"No alternative communication formats\", \"No procedure modifications\", \"No inquiry of father’s needs\"],\r\n\"harm\": \"Increased stress, exclusion\"\r\n},\r\n{\r\n\"id\": \"ADA-002\",\r\n\"violation\": \"Exclusion from Equal Participation\",\r\n\"description\": \"Father excluded from critical evaluation and planning",
+        "statement_b": "joint custody",
+        "line": 138,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Prevent to Protect (Intervention Program): This MSU-based program, in partnership with Summit Pointe, escalated Benjamin's threat level without new evidence, disregarded contradictory assessments, and excluded you from the referral and enrollment process",
+        "statement_b": "your joint legal custody",
+        "line": 154,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\" }, { \"theme\": \"Contradiction as Creative Catalyst\", \"description\": \"Consistently emphasized across all interactions, contradiction serves not as an obstacle",
+        "statement_b": "as essential fuel for growth, innovation, and deeper understanding",
+        "line": 198,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\" }, { \"theme\": \"Contradiction as Creative Catalyst\", \"description\": \"Consistently emphasized across all interactions, contradiction serves not as an obstacle",
+        "statement_b": "as essential fuel for growth, innovation, and deeper understanding",
+        "line": 322,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I wasn’t invited to the part where they built the plan",
+        "statement_b": "I stayed for the follow-up and signed the releases",
+        "line": 479,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I wasn’t invited to the part where they built the plan",
+        "statement_b": "I stayed for the follow-up and signed the releases",
+        "line": 526,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Myles on May 2, 2025, provides valuable clarification on Summit Pointe's processes",
+        "statement_b": "also highlights ongoing procedural issues that align with the systematic violations we've documented across the institutional triangle",
+        "line": 554,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Treatment Plan Finalization and Amendments\r\nResponse Summary: Plans are finalized when the case manager signs them,",
+        "statement_b": "families can request updates, creating a new plan",
+        "line": 558,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Legal Implications:\r\n\r\nThis confirms that the original plan (from April 15, 2025) was finalized without your input,",
+        "statement_b": "your joint legal custody",
+        "line": 559,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": ", Due to ADHD)\r\nResponse Summary: No specific policy,",
+        "statement_b": "a 7-day guideline for signing exists; families can take time to discuss before signing",
+        "line": 575,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "It shows no structured support for disabilities affecting processing,",
+        "statement_b": "the 7-day window",
+        "line": 577,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "If you're primary",
+        "statement_b": "not contacted, it suggests intentional bypassing",
+        "line": 590,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "The \"new process\" is a positive step",
+        "statement_b": "doesn't retroactively fix harms",
+        "line": 607,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "This email is a double-edged sword—it offers some transparency",
+        "statement_b": "underscores the institutional shortcomings",
+        "line": 623,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 11,
+      "uncertainty": 22
+    },
+    "temporal_markers": {
+      "past": 43,
+      "present": 55,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\",",
+    "key_insights": [
+      "Legal Implications:\r\n\r\nThis means the original plan (excluding you) remains part of Benjamin's record, potentially influencing ongoing care"
+    ],
+    "action_items": [
+      "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+      "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+      "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains",
+      "\"\r\n\r\nsummary, violations:\r\n{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+      "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains",
+      "\" summary, violations:\r\n{\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+      "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+    ],
+    "unresolved_tensions": [
+      "from collections import defaultdict\r\n\r\nviolations = defaultdict(list)\r\n\r\nviolations['Pennfield Schools'] = [\r\n{'id': 'PEN-001', 'violation': 'FERPA Violation – Denial of Access', 'description': 'Denied access to Benjamin’s educational records vs joint custody",
+      "', 'evidence': ['3/14/2025 no threat by Summit Pointe','3/18/2025 Level 3 High labeling','No incident between these dates'], 'harm': 'Psychological harm; unjust escalation'},\r\n{'id': 'P2P-002', 'violation': 'Parental Exclusion', 'description': 'Excluded father from enrollment and decisions vs joint custody",
+      "', 'evidence': ['No alternative communication formats','No procedure modifications','No inquiry of father’s needs'], 'harm': 'Increased stress, exclusion'},\r\n{'id':'ADA-002', 'violation': 'Exclusion from Equal Participation', 'description': 'Father excluded from critical evaluation and planning vs joint custody",
+      "from collections import defaultdict violations = defaultdict(list) violations['Pennfield Schools'] = [ {'id': 'PEN-001', 'violation': 'FERPA Violation – Denial of Access', 'description': 'Denied access to Benjamin’s educational records vs joint custody",
+      "', 'evidence': ['3/14/2025 no threat by Summit Pointe','3/18/2025 Level 3 High labeling','No incident between these dates'], 'harm': 'Psychological harm; unjust escalation'}, {'id': 'P2P-002', 'violation': 'Parental Exclusion', 'description': 'Excluded father from enrollment and decisions vs joint custody",
+      "', 'evidence': ['No alternative communication formats','No procedure modifications','No inquiry of father’s needs'], 'harm': 'Increased stress, exclusion'}, {'id':'ADA-002', 'violation': 'Exclusion from Equal Participation', 'description': 'Father excluded from critical evaluation and planning vs joint custody",
+      "pdf\"\r\n]\r\n},\r\n\"violations_summary\": {\r\n\"Pennfield_Schools\": [\r\n{\r\n\"id\": \"PEN-001\",\r\n\"violation\": \"FERPA Violation – Denial of Access\",\r\n\"description\": \"Denied access to Benjamin’s educational records vs joint custody",
+      "\",\r\n\"evidence\": [\"3/14/2025 no threat by Summit Pointe\", \"3/18/2025 Level 3 High labeling\", \"No incident between these dates\"],\r\n\"harm\": \"Psychological harm; unjust escalation\"\r\n},\r\n{\r\n\"id\": \"P2P-002\",\r\n\"violation\": \"Parental Exclusion\",\r\n\"description\": \"Excluded father from enrollment and decisions vs joint custody"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.232,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.89,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 2,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.78,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 3,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.671,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 4,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.561,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 5,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.451,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 6,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.342,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      },
+      {
+        "generation": 7,
+        "entropy": 0.878,
+        "contradictions": 22,
+        "novelty_index": 0.232,
+        "action_items": [
+          "<x\r\n\r\nfull json descriptive summary:{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"Initial timeline creation\",\r\n\"category\": \"milestone\",\r\n\"priority\": \"high\",\r\n\"tags\": [\"start\", \"initialization\"],\r\n\"metadata\": {\r\n\"source\": \"user_input\",\r\n\"verified\": true,\r\n\"attachments\": []\r\n}\r\n}\r\n:\r\nfull json descriptive summary:{ \"id\": \"event_001\", \"date\": \"2025-03-13\", \"timestamp\": \"2025-03-13T00:00:00-04:00\", \"title\": \"Timeline Start\", \"description\": \"Initial timeline creation\", \"category\": \"milestone\", \"priority\": \"high\", \"tags\": [\"start\", \"initialization\"], \"metadata\": { \"source\": \"user_input\", \"verified\": true, \"attachments\": [] } } :\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "pdf\"\r\n]\r\n}\r\n}\r\n\r\n{\r\n\"id\": \"event_001\",\r\n\"date\": \"2025-03-13\",\r\n\"timestamp\": \"2025-03-13T00:00:00-04:00\",\r\n\"title\": \"Timeline Start\",\r\n\"description\": \"This event marks the initiation of the timeline for Benjamin D'Artagnan Burdette's case, documenting the beginning of institutional interactions involving Summit Pointe, Prevent to Protect, and Pennfield Schools",
+          "Evidence shows systematic exclusion of father's participation in Benjamin’s care, election based on contradictory assessments, and retaliatory actions that intersect family and professional domains"
+        ],
+        "key_questions": [
+          "com\",\r\n\"date\": \"2025-05-02T15:57:00-04:00\",\r\n\"questions_responses\": [\r\n{\r\n\"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n\"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n\"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n\"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "timeline",
+              "frequency": 141
+            },
+            {
+              "theme": "self",
+              "frequency": 120
+            },
+            {
+              "theme": "description",
+              "frequency": 94
+            },
+            {
+              "theme": "2025",
+              "frequency": 93
+            },
+            {
+              "theme": "event",
+              "frequency": 70
+            }
+          ]
+        },
+        "score": 0.259
+      }
+    ],
+    "quality_score": 25
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.35,
+    "recommended_next_steps": [
+      "Review 1 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "x.txt",
+      "bytes": 82038,
+      "lastModified": 1753985439424
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:56.155Z",
+    "source_text_length": 13806,
+    "word_count": 1436,
+    "sentence_count": 143,
+    "entropy_level": 0.888,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_tool_calls_cheatsheet_xml_function_calls_this_chat (1).md"
+    },
+    "anchor_id": "bc80d1d142b769beb328e9984dd225ab"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "invoke",
+        "frequency": 60
+      },
+      {
+        "theme": "parameters",
+        "frequency": 60
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 59
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 58
+      },
+      {
+        "theme": "string",
+        "frequency": 19
+      },
+      {
+        "theme": "chat",
+        "frequency": 15
+      },
+      {
+        "theme": "perplexity",
+        "frequency": 15
+      },
+      {
+        "theme": "tool",
+        "frequency": 11
+      },
+      {
+        "theme": "python",
+        "frequency": 11
+      },
+      {
+        "theme": "exec",
+        "frequency": 10
+      },
+      {
+        "theme": "response_length",
+        "frequency": 9
+      },
+      {
+        "theme": "short",
+        "frequency": 9
+      }
+    ],
+    "key_questions": [
+      "**Common params:**\n\n- `search_query`: [{\"q\": string, \"recency\"?: days, \"domains\"",
+      "?: [string]}]\n- `image_query`: [{\"q\": string, \"recency\"",
+      "?: days, \"domains\"",
+      "?: [string]}] (max 2 per call)\n- `open`: [{\"ref\\_id\": string, \"lineno\"",
+      "?: number}]\n- `click`: [{\"ref\\_id\": string, \"id\": number}]\n- `find`: [{\"ref\\_id\": string, \"pattern\": string}]\n- `screenshot`: [{\"ref\\_id\": string, \"pageno\": number}]  // use for PDFs\n- `finance`: [{\"ticker\": string, \"type\": \"equity\"|\"fund\"|\"crypto\"|\"index\", \"market\"",
+      "?: string}]\n- `weather`: [{\"location\": string, \"start\"",
+      "?: \"YYYY-MM-DD\", \"duration\"",
+      "?: number}]\n- `sports`: [{\"tool\": \"sports\", \"fn\": \"schedule\"|\"standings\", \"league\": string, \"team\"",
+      "?: string, \"date\\_from\"",
+      "?: string, \"date\\_to\""
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `<function_calls>` syntax … citeturn0search1`\n\n> If you want a separate **Perplexity‑only** cheatsheet, say the word and I’ll generate it as its own canvas doc and export to PDF/HTML",
+    "key_insights": [],
+    "action_items": [
+      "# AI Tool Calls — Developer Cheatsheet (This Chat)\n\nA compact, copy‑pasteable reference for invoking **this chat’s** tools via the XML‑like `<function_calls>` syntax",
+      "run</tool_name>\n    <parameters>{\n      \"search_query\": [{\"q\": \"latest AI developments\", \"recency\": 7}],\n      \"response_length\": \"short\"\n    }</parameters>\n  </invoke>\n</function_calls>\n```\n\n**Execute Python Code**\n\n```xml\n<function_calls>\n  <invoke>\n    <tool_name>python",
+      "create_textdoc</tool_name>\n    <parameters>{\n      \"name\": \"New Spec Draft\",\n      \"type\": \"document\",\n      \"content\": \"# Draft\\n",
+      "create</tool_name>\n    <parameters>{\n      \"title\": \"Check Updates\",\n      \"prompt\": \"Search for system changes and notify me",
+      "create</tool_name>\n    <parameters>{\n      \"title\": \"Nudge in 15 min\",\n      \"prompt\": \"Tell me to stand up and stretch",
+      "create` / `automations",
+      "create</tool_name>\n    <parameters>{\n      \"title\": \"Pay Rent\",\n      \"prompt\": \"Tell me to pay rent",
+      "*`\n\n**Purpose:** Create/update/comment long docs or code in a side canvas",
+      "create_textdoc</tool_name>\n    <parameters>{\n      \"name\": \"Product Brief\",\n      \"type\": \"document\",\n      \"content\": \"# Brief\\nGoals, scope, timeline",
+      "|\n| `create_chart`   | `python_user_visible"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bc80d1d142b769beb328e9984dd225ab"
+  }
+}

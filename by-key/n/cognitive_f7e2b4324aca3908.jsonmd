@@ -1,0 +1,278 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:50.418Z",
+    "source_text_length": 180619,
+    "word_count": 22600,
+    "sentence_count": 1337,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "f7e2b4324aca3908368c162b9fcd446e",
+    "entropy_level": 0.664,
+    "contradictions_detected": 5,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_675ca2f422cc130a3bb32a7c948617b0.json",
+      "processing_timestamp": "2025-08-11T05:13:50.418Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 405,
+        "significance": "0.0179",
+        "examples": [
+          "\"self\",\n"
+        ]
+      },
+      {
+        "theme": "model",
+        "frequency": 167,
+        "significance": "0.0074",
+        "examples": [
+          "\"model\",\n"
+        ]
+      },
+      {
+        "theme": "config",
+        "frequency": 143,
+        "significance": "0.0063",
+        "examples": [
+          "\"config\",\n"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 126,
+        "significance": "0.0056",
+        "examples": [
+          "\"return\",\n"
+        ]
+      },
+      {
+        "theme": "print",
+        "frequency": 108,
+        "significance": "0.0048",
+        "examples": [
+          "\"print\",\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 102,
+        "significance": "0.0045",
+        "examples": [
+          "\"name\",\n"
+        ]
+      },
+      {
+        "theme": "layer",
+        "frequency": 99,
+        "significance": "0.0044",
+        "examples": [
+          "<title>Five-Layer"
+        ]
+      },
+      {
+        "theme": "models",
+        "frequency": 98,
+        "significance": "0.0043",
+        "examples": [
+          "\"models\",\n"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 89,
+        "significance": "0.0039",
+        "examples": [
+          "\\\"status\\\":"
+        ]
+      },
+      {
+        "theme": "orchestrator",
+        "frequency": 86,
+        "significance": "0.0038",
+        "examples": [
+          "\"orchestrator\",\n"
+        ]
+      },
+      {
+        "theme": "decision",
+        "frequency": 81,
+        "significance": "0.0036",
+        "examples": [
+          "decision,"
+        ]
+      },
+      {
+        "theme": "dict",
+        "frequency": 76,
+        "significance": "0.0034",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "split(r\\\"(?\",\n      \"<=[",
+      "?\",\n      \"])\\\\s+\\\", text",
+      "compile(r\\\"(nav|menu|breadcrumb|sidebar|sidenav|drawer|tabs?\",\n      \")\\\", re",
+      "**Strategic Implications**: What does this mean for decision-making?\"\n    ],\n    \"pattern_recognition\": [\n      \"always\",\n      \"every\",\n      \"repeat\",\n      \"loop\",\n      \"pattern\",\n      \"recur\"\n    ],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 8,\n      \"negative\": 13,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 3,\n      \"present\": 16,\n      \"future\": 13\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"<"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "repeat",
+      "return",
+      "feedback",
+      "iteration",
+      "spiral",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "= failed_model]\\r\\n        return healthy_models[0] if healthy_models else failed_model\\r\\n    \\r\\n    async def _periodic_health_checks(self):\\r\\n        \\\"\\\"\\\"Periodic health monitoring of all models\\\"\\\"\\\"\\r\\n        w",
+        "statement_b": "self",
+        "line": 366,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.00"
+      },
+      {
+        "statement_a": "0)\\r\\n                if weight > best_weight:\\r\\n                    best_weight = weight\\r\\n                    best_model = model\\r\\n            \\r\\n            return best_model\\r\\n    \\r\\n    async def _periodic_health_checks(self):\\r\\n        \\\"\\\"\\\"Periodic health monitoring with circuit breaker recovery\\\"\\\"\\\"\\r\\n        w",
+        "statement_b": "self",
+        "line": 731,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.08"
+      },
+      {
+        "statement_a": "blocks)\\r\\n        buf = carryover\\r\\n        \\r\\n        w",
+        "statement_b": "para_queue:\\r\\n            candidate = sanitize_ws((buf + \\\" \\\" + para_queue[0])",
+        "line": 929,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.42"
+      },
+      {
+        "statement_a": "0)\\r\\n                if weight > best_weight:\\r\\n                    best_weight = weight\\r\\n                    best_model = model\\r\\n            \\r\\n            return best_model\\r\\n    \\r\\n    async def _periodic_health_checks(self):\\r\\n        w",
+        "statement_b": "self",
+        "line": 1121,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.30"
+      },
+      {
+        "statement_a": "**Creative Enhancement**: Add metaphors, examples, or analogies\\r\\n\\r\\n## Source Material\\r\\n{content}\\r\\n\\r\\n## Output Style\\r\\n- Engaging and accessible tone\\r\\n- Preserve factual accuracy w",
+        "statement_b": "enhancing readability\\r\\n- Include vivid examples or analogies where appropriate\\r\\n- Maintain professional credibility\\r\\n\\r\\nStructure your response with clear, engaging sections",
+        "line": 1310,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.23"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 7,
+      "negative": 6,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 10,
+      "present": 99,
+      "future": 18
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:59...",
+    "key_insights": [
+      {
+        "insight": " The strange attractor reveals itself",
+        "confidence_level": "0.05",
+        "insight_type": "analytical_insight"
+      },
+      {
+        "insight": "0 Demonstration Complete\\\")\\r\\n    print(\\\"All Five Layers Successfully Demonstrated\\\")\\r\\n    print(\\\"=\\\" * 80)\\r\\n\\r\\nasync def simple_usage_example():\\r\\n    \\\"\\\"\\\"Simple usage example for the elegant activation pattern\\\"\\\"\\\"\\r\\n    \\r\\n    # This demonstrates the elegant one-line activation:\\r\\n    # python -c \\\"import json, asyncio; artifact=json",
+        "confidence_level": "0.41",
+        "insight_type": "analytical_insight"
+      }
+    ],
+    "action_items": [
+      {
+        "action": "particle {\\r\\n            position: absolute;\\r\\n            width: 2px;\\r\\n            height: 2px;\\r\\n            background: #00ff88;\\r\\n            animation: float 10s infinite linear;\\r\\n        }\\r\\n\\r\\n        @keyframes float {\\r\\n            0% { transform: translateY(100vh) translateX(0); opacity: 0; }\\r\\n            10% { opacity: 1; }\\r\\n            90% { opacity: 1; }\\r\\n            100% { transform: translateY(-10vh) translateX(100px); opacity: 0; }\\r\\n        }\\r\\n    </style>\\r\\n</head>\\r\\n<body>\\r\\n    <div class=\\\"floating-particles\\\" id=\\\"particles\\\"></div>\\r\\n    \\r\\n    <div class=\\\"container\\\">\\r\\n        <div class=\\\"header\\\">\\r\\n            <h1 class=\\\"title\\\">Five-Layer Architecture Generator</h1>\\r\\n            <div class=\\\"iteration-counter\\\">Iteration: <span id=\\\"iterationCount\\\">1</span></div>\\r\\n            <div class=\\\"progress-bar\\\">\\r\\n                <div class=\\\"progress-fill\\\" id=\\\"progressFill\\\"></div>\\r\\n            </div>\\r\\n        </div>\\r\\n\\r\\n        <div class=\\\"control-panel\\\">\\r\\n            <button class=\\\"btn\\\" onclick=\\\"processData()\\\">Process Architecture</button>\\r\\n            <button class=\\\"btn\\\" onclick=\\\"generateCode()\\\">Generate Code</button>\\r\\n            <button class=\\\"btn\\\" onclick=\\\"createNextIteration()\\\">Next Iteration</button>\\r\\n            <button class=\\\"btn\\\" onclick=\\\"exportArtifact()\\\">Export Artifact</button>\\r\\n        </div>\\r\\n\\r\\n        <div class=\\\"data-visualization\\\" id=\\\"dataViz\\\"></div>\\r\\n\\r\\n        <div class=\\\"layer-grid\\\" id=\\\"layerGrid\\\"></div>\\r\\n\\r\\n        <div class=\\\"generated-code\\\" id=\\\"generatedCode\\\">\\r\\n// Generated Java Integration Code will appear here",
+        "urgency_score": "0.31",
+        "feasibility_score": "0.12"
+      },
+      {
+        "action": " We consolidated conceptual architecture, concrete implementation, operational flow, and strategic value into a single unified blueprint, culminating in the design of a portable, self-verifying, presentation-native system with an executable CLI harness",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "\\\"\\r\\n          },\\r\\n          {\\r\\n            \\\"name\\\": \\\"Presentation Abstraction (Multi-Audience Output)\\\",\\r\\n            \\\"purpose\\\": \\\"Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": "\\\"\\r\\n          }\\r\\n        ]\\r\\n      }\\r\\n    ]\\r\\n  }\\r\\n};\\r\\n\\r\\n        let currentIteration = 1;\\r\\n        let processedData = {};\\r\\n\\r\\n        function createParticles() {\\r\\n            const container = document",
+        "urgency_score": "0.06",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": "createElement('div');\\r\\n                particle",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "createElement('div');\\r\\n                card",
+        "urgency_score": "0.75",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "createElement('div');\\r\\n                node",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "put(\\\"policy\\\", new LayerData(\\r\\n            \\\"Automated Decision\\\",\\r\\n            \\\"SHIP/ITERATE/ROLLBACK without human lag\\\"\\r\\n        ));\\r\\n        \\r\\n        // Layer 5: Presentation Abstraction\\r\\n        layers",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.66"
+      },
+      {
+        "action": "toString());\\r\\n        return json;\\r\\n    }\\r\\n}`;\\r\\n        }\\r\\n\\r\\n        function createNextIteration() {\\r\\n            currentIteration++;\\r\\n            document",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.77"
+      },
+      {
+        "action": "createObjectURL(blob);\\r\\n            const a = document",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.60"
+      }
+    ],
+    "unresolved_tensions": [
+      "0)\\r\\n                if weight > best_weight:\\r\\n                    best_weight = weight\\r\\n                    best_model = model\\r\\n            \\r\\n            return best_model\\r\\n    \\r\\n    async def _periodic_health_checks(self):\\r\\n        w vs self",
+      "**Creative Enhancement**: Add metaphors, examples, or analogies\\r\\n\\r\\n## Source Material\\r\\n{content}\\r\\n\\r\\n## Output Style\\r\\n- Engaging and accessible tone\\r\\n- Preserve factual accuracy w vs enhancing readability\\r\\n- Include vivid examples or analogies where appropriate\\r\\n- Maintain professional credibility\\r\\n\\r\\nStructure your response with clear, engaging sections"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 5 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.34",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 2 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "f7e2b4324aca3908368c162b9fcd446e"
+  }
+}

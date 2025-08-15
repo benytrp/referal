@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:26.081Z",
+    "source_text_length": 698,
+    "word_count": 115,
+    "sentence_count": 8,
+    "entropy_level": 0.969,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "if_then_therefore_builder_connector_bridgefile_v_1_single_file_html.html"
+    },
+    "anchor_id": "bcb002f8787ed7be99d62ee75e946763"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "proxy",
+        "frequency": 6
+      },
+      {
+        "theme": "mode",
+        "frequency": 4
+      },
+      {
+        "theme": "bridgefile",
+        "frequency": 3
+      },
+      {
+        "theme": "download",
+        "frequency": 3
+      },
+      {
+        "theme": "direct",
+        "frequency": 3
+      },
+      {
+        "theme": "then",
+        "frequency": 2
+      },
+      {
+        "theme": "therefore",
+        "frequency": 2
+      },
+      {
+        "theme": "preset",
+        "frequency": 2
+      },
+      {
+        "theme": "clear",
+        "frequency": 2
+      },
+      {
+        "theme": "chain",
+        "frequency": 2
+      },
+      {
+        "theme": "copy",
+        "frequency": 2
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "IF–THEN–THEREFORE Builder Single‑File Bridgefile 1 … js",
+    "key_insights": [],
+    "action_items": [
+      "IF–THEN–THEREFORE Builder Single‑File Bridgefile 1",
+      "0 IF (pick a preset or type) THEN THEREFORE Add Step (Enter) Clear Fields Chain Preview Steps: 0 Clear Chain Bridgefile Export User requests (one per line): Build Bridgefile Validate Copy Download JSON Optional: Download example proxy for web"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bcb002f8787ed7be99d62ee75e946763"
+  }
+}

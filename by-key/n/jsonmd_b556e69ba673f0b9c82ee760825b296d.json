@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:35.099Z",
+    "source_text_length": 2059,
+    "word_count": 308,
+    "sentence_count": 30,
+    "entropy_level": 0.943,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_plan_runner_20250808-213551.md"
+    },
+    "anchor_id": "b556e69ba673f0b9c82ee760825b296d"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "export",
+        "frequency": 6
+      },
+      {
+        "theme": "status",
+        "frequency": 5
+      },
+      {
+        "theme": "_result",
+        "frequency": 5
+      },
+      {
+        "theme": "html",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "readable",
+        "frequency": 4
+      },
+      {
+        "theme": "step",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 3
+      },
+      {
+        "theme": "single",
+        "frequency": 3
+      },
+      {
+        "theme": "file",
+        "frequency": 3
+      },
+      {
+        "theme": "then",
+        "frequency": 3
+      },
+      {
+        "theme": "therefore",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "< … -- AI:END_PLAN -->",
+    "key_insights": [],
+    "action_items": [
+      "The artifact must run locally in any modern browser with **no external assets**, and it must preserve the AI tags and step headings in exports",
+      "# I decide whether I am building a static HTML template or an interactive tool that constructs IF–THEN–THEREFORE chains",
+      "[STATUS: ✅]\n_Result:_\n**Spec (v1):** The artifact must:\n- Be a single HTML file (inline CSS/JS) and work offline"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b556e69ba673f0b9c82ee760825b296d"
+  }
+}

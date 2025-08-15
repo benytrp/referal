@@ -1,0 +1,95 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:45.320Z",
+    "source_text_length": 122,
+    "word_count": 15,
+    "sentence_count": 2,
+    "entropy_level": 0.984,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (19).html"
+    },
+    "anchor_id": "dc3405ccdc16d7e28d519ba3b4f96e7e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "aegis",
+        "frequency": 2
+      },
+      {
+        "theme": "response",
+        "frequency": 2
+      },
+      {
+        "theme": "autonomous",
+        "frequency": 1
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 1
+      },
+      {
+        "theme": "engine",
+        "frequency": 1
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      },
+      {
+        "theme": "synthesize",
+        "frequency": 1
+      },
+      {
+        "theme": "synthesized",
+        "frequency": 1
+      },
+      {
+        "theme": "awaiting",
+        "frequency": 1
+      },
+      {
+        "theme": "user",
+        "frequency": 1
+      },
+      {
+        "theme": "beacon",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEGIS v2 0 Autonomous Synthesis Engine (Offline) Synthesize Response > AEGIS Synthesized Response: Awaiting user beacon",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "dc3405ccdc16d7e28d519ba3b4f96e7e"
+  }
+}

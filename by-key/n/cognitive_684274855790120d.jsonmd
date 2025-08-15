@@ -1,0 +1,220 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:30.504Z",
+    "source_text_length": 32654,
+    "word_count": 3992,
+    "sentence_count": 273,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "684274855790120d29b57b043188fb20",
+    "entropy_level": 0.81,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e_3_master_template_builder_offline.html",
+      "processing_timestamp": "2025-08-11T05:05:30.504Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 240,
+        "significance": "0.0601",
+        "examples": [
+          "class=\"wrap\">\n"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 176,
+        "significance": "0.0441",
+        "examples": [
+          "label{display:grid;"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 162,
+        "significance": "0.0406",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 142,
+        "significance": "0.0356",
+        "examples": [
+          "data-key=\"work_habits.attendance.correct_day_time\""
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 87,
+        "significance": "0.0218",
+        "examples": [
+          "input[type=\"text\"],"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 82,
+        "significance": "0.0205",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 63,
+        "significance": "0.0158",
+        "examples": [
+          "(Checkbox"
+        ]
+      },
+      {
+        "theme": "chkwrap",
+        "frequency": 59,
+        "significance": "0.0148",
+        "examples": [
+          ".chkwrap{"
+        ]
+      },
+      {
+        "theme": "chkcell",
+        "frequency": 58,
+        "significance": "0.0145",
+        "examples": [
+          ".chkcell{"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 44,
+        "significance": "0.0110",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 35,
+        "significance": "0.0088",
+        "examples": [
+          "value=\"E3-Daily-⟦record_meta.participant_label⟧-⟦record_meta.date⟧.html\""
+        ]
+      },
+      {
+        "theme": "preparatory_goals",
+        "frequency": 28,
+        "significance": "0.0070",
+        "examples": [
+          "id=\"f_preparatory_goals.comments\""
+        ]
+      }
+    ],
+    "key_questions": [
+      "-- Work Habits -->\n  <div class=\"section\">\n    <h2>Work Habits</h2>\n    <table>\n      <colgroup><col class=\"w-40\"/><col/><col/><col/></colgroup>\n      <thead>\n        <tr><th>Item</th><th class=\"center\">Yes</th><th class=\"center\">NI</th><th class=\"center\">N/A</th></tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>Attendance — Correct day and time?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "correct_day_time\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Attendance — Excessive absences?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "excessive_absences\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Timeliness — Arrived on time?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "arrived_on_time\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Timeliness — Excessive tardiness?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "excessive_tardiness\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Hygiene — Participant was appropriately groomed?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "hygiene\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Dress — Participant was appropriately dressed?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "dress\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Attitude — Participant exhibited positive attitude?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "-- Preparatory Goals -->\n  <div class=\"section\">\n    <h2>Preparatory Goals</h2>\n    <table>\n      <colgroup><col class=\"w-40\"/><col/><col/><col/></colgroup>\n      <thead>\n        <tr><th>Item</th><th class=\"center\">Yes</th><th class=\"center\">NI</th><th class=\"center\">N/A</th></tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>Attention Span — adequate span for tasks?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"preparatory_goals"
+    ],
+    "pattern_recognition": [
+      "again",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 7,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <title>E3 Master Template Builder (Offline)</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <style>\n    :root{\n      --ink:#0f172a; /* slate-900 */\n      --muted:#64748b; /* slate-500 */\n      --rule:#e2e8f0; /* slate-200 */\n      --accent:#0ea5e9; /* sky-500 */\n      --bg:#ffffff;\n      --pad:12px;\n    }\n    *{box-sizing:border-box}\n    body{font:14px/1 45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); margin:0}\n    header{position:sticky; top:0; background:#fff; z-index:10; border-bottom:1px solid var(--rule)}\n    header ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <title>E3 Master Template Builder (Offline)</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <style>\n    :root{\n      --ink:#0f172a; /* slate-900 */\n      --muted:#64748b; /* slate-500 */\n      --rule:#e2e8f0; /* slate-200 */\n      --accent:#0ea5e9; /* sky-500 */\n      --bg:#ffffff;\n      --pad:12px;\n    }\n    *{box-sizing:border-box}\n    body{font:14px/1",
+        "urgency_score": "0.43",
+        "feasibility_score": "0.76"
+      },
+      {
+        "action": "footer-note{margin-top:10px; color:#64748b; font-size:12px}\n  </style>\n</head>\n<body>\n  <header>\n    <div class=\"wrap\">\n      <h1>E3 Master Template Builder (Offline)</h1>\n      <span class=\"chip\">No deps • Works offline</span>\n      <span class=\"chip\">Spawns downloadable child HTML files</span>\n    </div>\n  </header>\n\n  <div class=\"app\">\n    <aside class=\"side\">\n      <div class=\"section\">\n        <h2>Fill tokens</h2>\n        <div class=\"stack\">\n          <label><span class=\"l\">Name</span><input type=\"text\" id=\"f_record_meta",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": " Keys should match token paths (e",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.99"
+      },
+      {
+        "action": "</div>\n        <div class=\"row\">\n          <input type=\"file\" id=\"jsonFile\" accept=\"application/json\"/>\n          <button class=\"btn secondary\" id=\"runBulk\" disabled>Bulk Export</button>\n        </div>\n      </div>\n\n      <div class=\"section\">\n        <h2>Template source</h2>\n        <div class=\"row\" style=\"margin-bottom:6px\">\n          <button class=\"btn secondary\" id=\"resetTemplate\">Reset to default</button>\n          <button class=\"btn ghost\" id=\"saveLocal\">Save locally</button>\n          <button class=\"btn ghost\" id=\"loadLocal\">Load saved</button>\n        </div>\n        <textarea id=\"editor\" class=\"editor\" spellcheck=\"false\"></textarea>\n      </div>\n    </aside>\n\n    <main class=\"main\">\n      <div class=\"section\">\n        <h2>Actions</h2>\n        <div class=\"row\">\n          <button class=\"btn\" id=\"btnPreview\">Preview Child</button>\n          <button class=\"btn\" id=\"btnDownload\">Download Child</button>\n        </div>\n      </div>\n\n      <div class=\"section\">\n        <h2>Preview</h2>\n        <iframe class=\"preview\" id=\"preview\"></iframe>\n      </div>\n\n      <p class=\"footer-note\">Tip: Everything runs in your browser",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": " The page will keep only one checked per row",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": "createObjectURL(blob);\n      const a = document",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.49"
+      },
+      {
+        "action": "createElement('a');\n      a",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "createObjectURL(blob);\n      const iframe = $('#preview');\n      iframe",
+        "urgency_score": "0.29",
+        "feasibility_score": "0.42"
+      },
+      {
+        "action": "isArray(items)) throw new Error('JSON root must be an array of objects');\n          const tpl = $('#editor')",
+        "urgency_score": "0.88",
+        "feasibility_score": "0.75"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.91",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 9 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "684274855790120d29b57b043188fb20"
+  }
+}

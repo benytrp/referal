@@ -1,0 +1,123 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:40.560Z",
+    "anchor_id": "efa21b822efda987d75f9d7894a997a4b087a01827808638119200fa7efd49fd",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.516,
+    "contradictions_detected": 4,
+    "word_count": 1418
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 37
+      },
+      {
+        "theme": "template",
+        "frequency": 36
+      },
+      {
+        "theme": "value",
+        "frequency": 34
+      },
+      {
+        "theme": "option",
+        "frequency": 28
+      },
+      {
+        "theme": "name",
+        "frequency": 26
+      },
+      {
+        "theme": "html",
+        "frequency": 25
+      },
+      {
+        "theme": "document",
+        "frequency": 25
+      },
+      {
+        "theme": "field",
+        "frequency": 24
+      },
+      {
+        "theme": "form",
+        "frequency": 20
+      },
+      {
+        "theme": "function",
+        "frequency": 17
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "uilder Create professional templates that work completely offline - no dependencies required"
+      },
+      {
+        "idx": 1,
+        "sample": "} input:focus, textarea:focus, select:focus { outline: none; border-color: ${themes[theme]}; } .submit-btn"
+      },
+      {
+        "idx": 2,
+        "sample": "background: ${themes[theme]}; color: white; border: none; padding: 15px 30px; border-radius: 5px;"
+      },
+      {
+        "idx": 3,
+        "sample": "-right: 8px; } .submit-btn { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; } ${ti"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "name}\" rows=\"4\" ${validation ?",
+      "name}\" ${validation ?",
+      "name}\" ${validation ?",
+      "${responsive ?",
+      "${description ?",
+      "<form action=\"${action}\" method=\"POST\" ${validation ?",
+      "${validation ?",
+      "How satisfied are you with our service?",
+      "?",
+      "*?"
+    ],
+    "summary": "const, template, value, option, name"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "offline_template_builder.html",
+    "relative_path": "offline_template_builder.html",
+    "size_bytes": 40276,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.74
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.590
+- Word Count: 238
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:50.887Z",
+  "original_file": "efa21b822efda987d75f9d7894a997a4b087a01827808638119200fa7efd49fd.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

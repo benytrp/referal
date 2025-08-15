@@ -1,0 +1,383 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:44.313Z",
+    "source_text_length": 534,
+    "word_count": 74,
+    "entropy_level": 0.971,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "3e9c9c02b593173c67eeef8ff3ee0952"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "project",
+        "frequency": 3
+      },
+      {
+        "theme": "task",
+        "frequency": 3
+      },
+      {
+        "theme": "plan",
+        "frequency": 2
+      },
+      {
+        "theme": "grant",
+        "frequency": 2
+      },
+      {
+        "theme": "responsible",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "methods",
+        "frequency": 1
+      },
+      {
+        "theme": "proposal",
+        "frequency": 1
+      },
+      {
+        "theme": "goal",
+        "frequency": 1
+      },
+      {
+        "theme": "projectgoal",
+        "frequency": 1
+      },
+      {
+        "theme": "describe",
+        "frequency": 1
+      },
+      {
+        "theme": "implemented",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "Write the methods and project plan for this grant proposal … deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives",
+    "key_insights": [],
+    "action_items": [
+      "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+      "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+      "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.15,
+    "cognitive_load_estimate": 0.0267,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.879,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 2,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.757,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 3,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.636,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 4,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.514,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 5,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.393,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 6,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.272,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      },
+      {
+        "generation": 7,
+        "entropy": 0.971,
+        "contradictions": 0,
+        "novelty_index": 0.15,
+        "action_items": [
+          "Project Goal: {{ projectGoal }}\r\n\r\nDescribe how the project will be implemented, including:\r\n- Key activities or phases\r\n- Who will be responsible for each task\r\n- A timeline or milestone schedule\r\n\r\nOutput as a list of tasks or a structured narrative",
+          "Each task should include:\r\n- Task name\r\n- Responsible party\r\n- Estimated completion date (before {{ funderRequirements",
+          "deadline }})\r\n\r\nThe plan should be feasible within the grant period and aligned with objectives"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "task",
+              "frequency": 3
+            },
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "grant",
+              "frequency": 2
+            },
+            {
+              "theme": "responsible",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.402
+      }
+    ],
+    "quality_score": 39
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.14,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "GrantWriter-Automation/Prompts/methods_plan.txt",
+      "bytes": 534,
+      "lastModified": 1753638361301
+    }
+  }
+}

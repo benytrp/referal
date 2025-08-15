@@ -1,0 +1,383 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:10.381Z",
+    "source_text_length": 2155,
+    "word_count": 318,
+    "entropy_level": 0.924,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "2279ec0e3a5ec85e1aea24ecff9397e8"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "_result",
+        "frequency": 10
+      },
+      {
+        "theme": "quiz",
+        "frequency": 8
+      },
+      {
+        "theme": "mastery",
+        "frequency": 7
+      },
+      {
+        "theme": "deeper",
+        "frequency": 6
+      },
+      {
+        "theme": "answers",
+        "frequency": 5
+      },
+      {
+        "theme": "questions",
+        "frequency": 4
+      },
+      {
+        "theme": "correct",
+        "frequency": 4
+      },
+      {
+        "theme": "understanding",
+        "frequency": 4
+      },
+      {
+        "theme": "understand",
+        "frequency": 4
+      },
+      {
+        "theme": "architectural",
+        "frequency": 4
+      },
+      {
+        "theme": "question",
+        "frequency": 4
+      },
+      {
+        "theme": "executable",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct,",
+        "statement_b": "one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting",
+        "line": 1,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "# I understand that all answers are technically correct,",
+        "statement_b": "one demonstrates deeper architectural mastery",
+        "line": 3,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 4
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 6
+    }
+  },
+  "structured_content": {
+    "summary": "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct, but one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting … Restart Quiz",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct, vs one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting",
+      "# I understand that all answers are technically correct, vs one demonstrates deeper architectural mastery"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.192,
+    "cognitive_load_estimate": 0.15775,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.884,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 2,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.769,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 3,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.653,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 4,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.538,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 5,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.422,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 6,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.307,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      },
+      {
+        "generation": 7,
+        "entropy": 0.924,
+        "contradictions": 2,
+        "novelty_index": 0.192,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "_result",
+              "frequency": 10
+            },
+            {
+              "theme": "quiz",
+              "frequency": 8
+            },
+            {
+              "theme": "mastery",
+              "frequency": 7
+            },
+            {
+              "theme": "deeper",
+              "frequency": 6
+            },
+            {
+              "theme": "answers",
+              "frequency": 5
+            }
+          ]
+        },
+        "score": 0.29
+      }
+    ],
+    "quality_score": 28
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.05,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_checklist_quiz (1).html",
+      "bytes": 36678,
+      "lastModified": 1754689741106
+    }
+  }
+}

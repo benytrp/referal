@@ -1,0 +1,223 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.621Z",
+    "source_text_length": 28214,
+    "word_count": 2515,
+    "sentence_count": 267,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "71a51260f454b3ce884fd8d68e8ead8e",
+    "entropy_level": 0.877,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e3cmb.html",
+      "processing_timestamp": "2025-08-11T05:05:29.621Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 85,
+        "significance": "0.0338",
+        "examples": [
+          "value=\"\">Select"
+        ]
+      },
+      {
+        "theme": "option",
+        "frequency": 64,
+        "significance": "0.0254",
+        "examples": [
+          "<option"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 63,
+        "significance": "0.0250",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 59,
+        "significance": "0.0235",
+        "examples": [
+          "data."
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 46,
+        "significance": "0.0183",
+        "examples": [
+          "class=\"container\">\r\n"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 39,
+        "significance": "0.0155",
+        "examples": [
+          "input[type=\"text\"]"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 37,
+        "significance": "0.0147",
+        "examples": [
+          "document.getElementById('status');\r\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 30,
+        "significance": "0.0119",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 29,
+        "significance": "0.0115",
+        "examples": [
+          "html>\r\n<html"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 27,
+        "significance": "0.0107",
+        "examples": [
+          "center;\r\n"
+        ]
+      },
+      {
+        "theme": "form",
+        "frequency": 27,
+        "significance": "0.0107",
+        "examples": [
+          ".form-row"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 27,
+        "significance": "0.0107",
+        "examples": [
+          "document.getElementById('status');\r\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }\r\n        @media print { body { margin: 0; font-size: 12px; } }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Name:</span> PARTICIPANT_NAME\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">ID:</span> PARTICIPANT_ID\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Date:</span> EVAL_DATE\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Batch ID:</span> BATCH_ID\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Eval ID:</span> EVAL_ID\r\n    </div>\r\n\r\n    <h3>Work Habits</h3>\r\n    <table>\r\n    <tr>\r\n    <th style=\"width: 50%;\">Item</th>\r\n    <th>Yes</th>\r\n    <th>NI</th>\r\n    <th>N/A</th>\r\n    </tr>\r\n    <tr>\r\n    <td>Attendance — Correct day and time?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits",
+      "attendance\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Hygiene — Appropriately groomed?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits",
+      "hygiene\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Attitude — Positive attitude?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits",
+      "attitude\" data-opt=\"na\"></td>\r\n    </tr>\r\n    </table>\r\n\r\n    <h3>Preparatory Goals</h3>\r\n    <table>\r\n    <tr>\r\n    <th style=\"width: 50%;\">Item</th>\r\n    <th>Yes</th>\r\n    <th>NI</th>\r\n    <th>N/A</th>\r\n    </tr>\r\n    <tr>\r\n    <td>Attention Span — Adequate for tasks?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals",
+      "attention_span\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Task Completion — Stayed on task?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals",
+      "task_completion\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Safety — Followed procedures?</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals",
+      "className = isError ? 'status error' : 'status success';\r\n            statusEl",
+      "== undefined ? String(tokenMap[key]) : '';\r\n                const placeholder = new RegExp(key"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 7,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Master Template Manager</title>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\r\n    <style>\r\n        body {\r\n            font-family: 'Inter', sans-serif;\r\n            background-color: #f3f4f6;\r\n            color: #1f2937;\r\n            margin: 0;\r\n            padding: 2rem;\r\n            display: flex;\r\n            justify-content: center;\r\n            min-height: 100vh;\r\n        }\r\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " Template & Actions</h2>\r\n        <label for=\"template\">Child Template HTML (use ALL_CAPS for placeholders)</label>\r\n        <textarea id=\"template\"></textarea>\r\n        <div class=\"button-group\">\r\n            <button id=\"previewBtn\">Preview</button>\r\n            <button id=\"downloadOneBtn\">Download Single Form</button>\r\n            <div>\r\n                <label for=\"bulkFile\" style=\"text-align: center;\">Bulk File Export</label>\r\n                <input type=\"file\" id=\"bulkFile\" accept=\"",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.89"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n            const a = document",
+        "urgency_score": "0.17",
+        "feasibility_score": "0.44"
+      },
+      {
+        "action": "createElement('a');\r\n            a",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "revokeObjectURL(url);\r\n        }\r\n\r\n        // Creates a dynamic value input field based on the selected key\r\n        function createValueInput(key) {\r\n            const container = document",
+        "urgency_score": "0.32",
+        "feasibility_score": "0.56"
+      },
+      {
+        "action": "createElement('div');\r\n            container",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "innerHTML = `<input type=\"text\" class=\"value-input\" placeholder=\"Enter Value\">`;\r\n            }\r\n            return container;\r\n        }\r\n\r\n        // Creates a new form row with key/value inputs\r\n        function createFormRow() {\r\n            const formFields = document",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": "createElement('div');\r\n            newRow",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "createElement('select');\r\n            keySelect",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.16"
+      },
+      {
+        "action": "safety</option>\r\n                </optgroup>\r\n            `;\r\n            \r\n            const valueInput = createValueInput('');\r\n\r\n            keySelect",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": "value-container');\r\n                const newValueContainer = createValueInput(selectedKey);\r\n                currentValueContainer",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.19"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.51",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "71a51260f454b3ce884fd8d68e8ead8e"
+  }
+}

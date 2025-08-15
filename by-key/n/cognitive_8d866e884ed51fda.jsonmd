@@ -1,0 +1,204 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:37.537Z",
+    "source_text_length": 21691,
+    "word_count": 2212,
+    "sentence_count": 181,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "8d866e884ed51fda9a2376aafce67521",
+    "entropy_level": 0.886,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "unified_e3_builder (2).html",
+      "processing_timestamp": "2025-08-11T05:05:37.537Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 44,
+        "significance": "0.0199",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 41,
+        "significance": "0.0185",
+        "examples": [
+          ".detected-data"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 24,
+        "significance": "0.0108",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 24,
+        "significance": "0.0108",
+        "examples": [
+          "functions\n"
+        ]
+      },
+      {
+        "theme": "length",
+        "frequency": 24,
+        "significance": "0.0108",
+        "examples": [
+          "(lines.length"
+        ]
+      },
+      {
+        "theme": "lines",
+        "frequency": 21,
+        "significance": "0.0095",
+        "examples": [
+          "lines</li>\n"
+        ]
+      },
+      {
+        "theme": "parseddata",
+        "frequency": 21,
+        "significance": "0.0095",
+        "examples": [
+          "window.parsedData"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 21,
+        "significance": "0.0095",
+        "examples": [
+          "return"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 20,
+        "significance": "0.0090",
+        "examples": [
+          "border-radius:"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 20,
+        "significance": "0.0090",
+        "examples": [
+          "center;"
+        ]
+      },
+      {
+        "theme": "record",
+        "frequency": 20,
+        "significance": "0.0090",
+        "examples": [
+          "record"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 20,
+        "significance": "0.0090",
+        "examples": [
+          "id=\"smartInput\""
+        ]
+      }
+    ],
+    "key_questions": [
+      "comments { border: 1px dashed #999; padding: 8px; min-height: 30px; }\\\\n@media print { body { margin: 0; font-size: 12px; } }\\\\n</style>\\\\n</head>\\\\n<body>\\\\n<h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\\\\n\\\\n<div class=\"field\">\\\\n<span class=\"label\">Name:</span> PARTICIPANT_NAME\\\\n</div>\\\\n<div class=\"field\">\\\\n<span class=\"label\">ID:</span> PARTICIPANT_ID\\\\n</div>\\\\n<div class=\"field\">\\\\n<span class=\"label\">Date:</span> EVAL_DATE\\\\n</div>\\\\n<div class=\"field\">\\\\n<span class=\"label\">Batch:</span> BATCH_ID\\\\n</div>\\\\n<div class=\"field\">\\\\n<span class=\"label\">Eval ID:</span> EVAL_ID\\\\n</div>\\\\n\\\\n<h3>Work Habits</h3>\\\\n<table>\\\\n<tr><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\n<tr>\\\\n<td>Attendance — Correct day and time?</td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n<tr>\\\\n<td>Hygiene — Appropriately groomed",
+      "?</td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n</table>\\\\n\\\\n<h3>Preparatory Goals</h3>\\\\n<table>\\\\n<tr><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\n<tr>\\\\n<td>Attention Span — Adequate for tasks",
+      "?</td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n<tr>\\\\n<td>Safety — Followed procedures",
+      "?</td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n</table>\\\\n\\\\n<h3>Comments</h3>\\\\n<div class=\"comments\">COMMENTS_SECTION</div>\\\\n\\\\n<h3>Signature</h3>\\\\n<div class=\"field\">\\\\n<span class=\"label\">Instructor:</span> INSTRUCTOR_NAME\\\\n</div>\\\\n\\\\n</body>\\\\n</html>';\n        }\n\n        function replaceTokens(template, data) {\n            var result = template;\n            \n            // Add system data\n            data"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "toUpperCase();\n                    var value = String(data[key] || '');\n                    \n                    w",
+        "statement_b": "(result",
+        "line": 154,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.80"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 7,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>E3 Smart Builder</title>\n    <style>\n        body { font-family: Arial, sans-serif; margin: 20px; background: #f0f0f0; }\n         container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>E3 Smart Builder</title>\n    <style>\n        body { font-family: Arial, sans-serif; margin: 20px; background: #f0f0f0; }\n        ",
+        "urgency_score": "0.13",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "auto-detected { font-size: 12px; color: #28a745; font-weight: bold; }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h1>🚀 E3 Smart Builder</h1>\n        <p style=\"text-align: center; color: #666; font-size: 18px;\">Just paste your data - we'll figure out the format",
+        "urgency_score": "0.96",
+        "feasibility_score": "0.19"
+      },
+      {
+        "action": "createObjectURL(blob);\n                        var a = document",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "createElement('a');\n                        a",
+        "urgency_score": "0.90",
+        "feasibility_score": "0.78"
+      },
+      {
+        "action": "', 'success');\n        }\n\n        // Initialize\n        showStatus('E3 Smart Builder ready - paste any data format",
+        "urgency_score": "0.75",
+        "feasibility_score": "0.73"
+      }
+    ],
+    "unresolved_tensions": [
+      "toUpperCase();\n                    var value = String(data[key] || '');\n                    \n                    w vs (result"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 5 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8d866e884ed51fda9a2376aafce67521"
+  }
+}

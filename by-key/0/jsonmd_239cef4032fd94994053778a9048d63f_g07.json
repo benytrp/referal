@@ -1,0 +1,403 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:33.640Z",
+    "source_text_length": 7404,
+    "word_count": 883,
+    "entropy_level": 0.872,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "239cef4032fd94994053778a9048d63f"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function_calls",
+        "frequency": 48
+      },
+      {
+        "theme": "invoke",
+        "frequency": 48
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 48
+      },
+      {
+        "theme": "parameters",
+        "frequency": 48
+      },
+      {
+        "theme": "copy",
+        "frequency": 25
+      },
+      {
+        "theme": "search",
+        "frequency": 12
+      },
+      {
+        "theme": "create",
+        "frequency": 8
+      },
+      {
+        "theme": "python",
+        "frequency": 7
+      },
+      {
+        "theme": "title",
+        "frequency": 7
+      },
+      {
+        "theme": "short",
+        "frequency": 6
+      },
+      {
+        "theme": "image",
+        "frequency": 6
+      },
+      {
+        "theme": "queries",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AI Tool Calls — Offline Cheatsheet Copy-paste presets • Works offline This Chat Perplexity Tip: edit placeholders like YOUR QUERY, turnX…, or UTC±HH:MM before you run … card>",
+    "key_insights": [],
+    "action_items": [
+      "exec Create tables/plots/files that render to the user",
+      "create_textdoc Create a rich document/code file in the side canvas",
+      "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore",
+      "comment_textdoc Add actionable comments anchored to regex matches",
+      "\"} ] }</parameters> </invoke> </function_calls> Copy Create Reminder (daily 9am) automations",
+      "create Schedule a recurring task via iCal RRULE",
+      "create</tool_name> <parameters>{ \"title\": \"Check headlines\", \"prompt\": \"Search for top AI news and summarize for me"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.237,
+    "cognitive_load_estimate": 0.3702,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.891,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 2,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.782,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 3,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.673,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 4,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.564,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 5,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.455,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 6,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.346,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      },
+      {
+        "generation": 7,
+        "entropy": 0.872,
+        "contradictions": 0,
+        "novelty_index": 0.237,
+        "action_items": [
+          "exec Create tables/plots/files that render to the user",
+          "create_textdoc Create a rich document/code file in the side canvas",
+          "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 48
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 48
+            },
+            {
+              "theme": "parameters",
+              "frequency": 48
+            },
+            {
+              "theme": "copy",
+              "frequency": 25
+            }
+          ]
+        },
+        "score": 0.561
+      }
+    ],
+    "quality_score": 55
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.36,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "dfhsehe - Copy.html",
+      "bytes": 27746,
+      "lastModified": 1754737201385
+    }
+  }
+}

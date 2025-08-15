@@ -1,0 +1,375 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:58.501Z",
+    "source_text_length": 221,
+    "word_count": 34,
+    "entropy_level": 0.957,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "aa886c7ff379c85928b4bf416f7c869e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "thought",
+        "frequency": 4
+      },
+      {
+        "theme": "summon",
+        "frequency": 2
+      },
+      {
+        "theme": "scroll",
+        "frequency": 2
+      },
+      {
+        "theme": "enter",
+        "frequency": 1
+      },
+      {
+        "theme": "prompt",
+        "frequency": 1
+      },
+      {
+        "theme": "invoke",
+        "frequency": 1
+      },
+      {
+        "theme": "recursive",
+        "frequency": 1
+      },
+      {
+        "theme": "chain",
+        "frequency": 1
+      },
+      {
+        "theme": "receive",
+        "frequency": 1
+      },
+      {
+        "theme": "transparent",
+        "frequency": 1
+      },
+      {
+        "theme": "json",
+        "frequency": 1
+      },
+      {
+        "theme": "generating",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "again"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Summon a Thought Scroll 🌀 Enter a prompt to invoke a recursive Chain-of-Thought and receive a transparent JSON log … Please try again",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.163,
+    "cognitive_load_estimate": 0.01105,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.88,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 2,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.761,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 3,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.641,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 4,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.522,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 5,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.402,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 6,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.282,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      },
+      {
+        "generation": 7,
+        "entropy": 0.957,
+        "contradictions": 0,
+        "novelty_index": 0.163,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "thought",
+              "frequency": 4
+            },
+            {
+              "theme": "summon",
+              "frequency": 2
+            },
+            {
+              "theme": "scroll",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 1
+            },
+            {
+              "theme": "prompt",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.317
+      }
+    ],
+    "quality_score": 31
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.03,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "fdgjfjsdh.html",
+      "bytes": 10232,
+      "lastModified": 1754697668236
+    }
+  }
+}

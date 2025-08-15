@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:48.268Z",
+    "source_text_length": 832,
+    "word_count": 123,
+    "sentence_count": 10,
+    "entropy_level": 0.964,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsonmd_scanner_v132.html"
+    },
+    "anchor_id": "8189612122268d11ee38ecba6aba010f"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "output",
+        "frequency": 7
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 5
+      },
+      {
+        "theme": "scan",
+        "frequency": 4
+      },
+      {
+        "theme": "input",
+        "frequency": 3
+      },
+      {
+        "theme": "reprocess",
+        "frequency": 3
+      },
+      {
+        "theme": "listing",
+        "frequency": 3
+      },
+      {
+        "theme": "plan",
+        "frequency": 3
+      },
+      {
+        "theme": "jsonmd",
+        "frequency": 2
+      },
+      {
+        "theme": "scanner",
+        "frequency": 2
+      },
+      {
+        "theme": "folder",
+        "frequency": 2
+      },
+      {
+        "theme": "ignore",
+        "frequency": 2
+      },
+      {
+        "theme": "select",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "JSONMD Downloads Scanner v1 … Plan Scan Results — ✅ Run Now Cancel Output Listing (latest 50) — Close",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8189612122268d11ee38ecba6aba010f"
+  }
+}

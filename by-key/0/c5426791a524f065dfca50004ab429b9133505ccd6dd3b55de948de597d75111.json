@@ -1,0 +1,83 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:39.962Z",
+    "anchor_id": "c5426791a524f065dfca50004ab429b9133505ccd6dd3b55de948de597d75111",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.552,
+    "contradictions_detected": 1,
+    "word_count": 1171
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "ecosystem",
+        "frequency": 43
+      },
+      {
+        "theme": "data",
+        "frequency": 28
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 23
+      },
+      {
+        "theme": "const",
+        "frequency": 22
+      },
+      {
+        "theme": "artifact",
+        "frequency": 20
+      },
+      {
+        "theme": "system",
+        "frequency": 19
+      },
+      {
+        "theme": "logmessage",
+        "frequency": 19
+      },
+      {
+        "theme": "message",
+        "frequency": 17
+      },
+      {
+        "theme": "event",
+        "frequency": 16
+      },
+      {
+        "theme": "document",
+        "frequency": 16
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "} } catch (e) { console.log('No previous state found'); } }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "ecosystem, data, artifacts, const, artifact"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "offline_ecosystem_demo.html",
+    "relative_path": "offline_ecosystem_demo.html",
+    "size_bytes": 32950,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.72
+  }
+}

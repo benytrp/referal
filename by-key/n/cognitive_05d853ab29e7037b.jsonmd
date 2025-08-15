@@ -1,0 +1,177 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:12.461Z",
+    "source_text_length": 2169,
+    "word_count": 179,
+    "sentence_count": 10,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "05d853ab29e7037b6c7c44aacbd1f182",
+    "entropy_level": 0.935,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_148a107defa95acc297a1bc191b10344.json",
+      "processing_timestamp": "2025-08-11T05:02:12.461Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0447",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0447",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "logic",
+        "frequency": 6,
+        "significance": "0.0335",
+        "examples": [
+          "Logic"
+        ]
+      },
+      {
+        "theme": "engine",
+        "frequency": 6,
+        "significance": "0.0335",
+        "examples": [
+          "Engine.txt\",\n"
+        ]
+      },
+      {
+        "theme": "readme",
+        "frequency": 4,
+        "significance": "0.0223",
+        "examples": [
+          "\"README"
+        ]
+      },
+      {
+        "theme": "python",
+        "frequency": 3,
+        "significance": "0.0168",
+        "examples": [
+          "\"python-based\",\n"
+        ]
+      },
+      {
+        "theme": "based",
+        "frequency": 3,
+        "significance": "0.0168",
+        "examples": [
+          "\"python-based\",\n"
+        ]
+      },
+      {
+        "theme": "loop",
+        "frequency": 3,
+        "significance": "0.0168",
+        "examples": [
+          "\"loop\",\n"
+        ]
+      },
+      {
+        "theme": "noverview",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "Engine\\r\\nOverview\\r\\nThe"
+        ]
+      },
+      {
+        "theme": "nthe",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "implementation",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "implementation"
+        ]
+      },
+      {
+        "theme": "autonomous",
+        "frequency": 2,
+        "significance": "0.0112",
+        "examples": [
+          "Autonomous"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:15...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "txt\",\n      \"bytes\": 1214,\n      \"lastModified\": 1754789547148\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"logic\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"engine\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"entropy\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"mutates\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"complexity\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"readme\",\n        \"frequency\": 1\n      },\n      {\n        \"theme\": \"overview\",\n        \"frequency\": 1\n      },\n      {\n        \"theme\": \"python-based\",\n        \"frequency\": 1\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [\n      \"loop\",\n      \"cycle\",\n      \"recur\"\n    ],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 1,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 1,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"README for <x> Logic Engine\\r\\nOverview\\r\\nThe <x> Logic Engine is a Python-based implementation of the Autonomous Planning Loop, triggered by the <x> directive",
+        "urgency_score": "0.48",
+        "feasibility_score": "0.78"
+      },
+      {
+        "action": " … \\\"}}\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"README for <x> Logic Engine\\r\\nOverview\\r\\nThe <x> Logic Engine is a Python-based implementation of the Autonomous Planning Loop, triggered by the <x> directive",
+        "urgency_score": "0.32",
+        "feasibility_score": "0.68"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.10845,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.59",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "05d853ab29e7037b6c7c44aacbd1f182"
+  }
+}

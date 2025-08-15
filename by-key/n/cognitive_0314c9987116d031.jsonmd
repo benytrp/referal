@@ -1,0 +1,221 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.869Z",
+    "source_text_length": 49258,
+    "word_count": 3850,
+    "sentence_count": 315,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "0314c9987116d031bec1f1a8f8c7e49f",
+    "entropy_level": null,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "enterprise_aeon_interface_working.html",
+      "processing_timestamp": "2025-08-11T05:05:29.869Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 190,
+        "significance": "0.0494",
+        "examples": [
+          "class=\"enterprise-header\">\n"
+        ]
+      },
+      {
+        "theme": "subsystem",
+        "frequency": 79,
+        "significance": "0.0205",
+        "examples": [
+          ".subsystem-panel"
+        ]
+      },
+      {
+        "theme": "analysis",
+        "frequency": 64,
+        "significance": "0.0166",
+        "examples": [
+          ".analysis-input"
+        ]
+      },
+      {
+        "theme": "enterprise",
+        "frequency": 57,
+        "significance": "0.0148",
+        "examples": [
+          "Enterprise"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 55,
+        "significance": "0.0143",
+        "examples": [
+          "--border:"
+        ]
+      },
+      {
+        "theme": "active",
+        "frequency": 45,
+        "significance": "0.0117",
+        "examples": [
+          ".subsystem-card.active"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 43,
+        "significance": "0.0112",
+        "examples": [
+          ".enterprise-status"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 42,
+        "significance": "0.0109",
+        "examples": [
+          ".enterprise-button"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 40,
+        "significance": "0.0104",
+        "examples": [
+          "<span>All"
+        ]
+      },
+      {
+        "theme": "font",
+        "frequency": 30,
+        "significance": "0.0078",
+        "examples": [
+          "font-family:"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 30,
+        "significance": "0.0078",
+        "examples": [
+          "document.querySelectorAll('.tab-content').forEach(tab"
+        ]
+      },
+      {
+        "theme": "1rem",
+        "frequency": 29,
+        "significance": "0.0075",
+        "examples": [
+          "1rem"
+        ]
+      }
+    ],
+    "key_questions": [
+      "Now what?</textarea>\n                    </div>\n                    \n                    <div class=\"button-grid\">\n                        <button class=\"enterprise-button\" onclick=\"executeUltimateAnalysis()\">\n                            🚀 Execute Ultimate Analysis\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"executeStreamingAnalysis()\">\n                            📡 Streaming Analysis\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"executeBatchAnalysis()\">\n                            📦 Batch Processing\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"exportResults()\">\n                            💾 Export Results\n                        </button>\n                    </div>\n                </div>\n            </div>\n\n            <div id=\"resultsTab\" class=\"tab-content\">\n                <div class=\"results-container\" id=\"resultsContainer\">\n                    <div class=\"results-header\">\n                        <div class=\"results-title\">Analysis Results</div>\n                        <div class=\"results-metrics\">\n                            <span class=\"metric\">Processing Time: <span id=\"processingTime\">--</span>ms</span>\n                            <span class=\"metric\">Confidence: <span id=\"confidenceScore\">--</span>%</span>\n                        </div>\n                    </div>\n                    <div class=\"results-content\" id=\"resultsContent\">\n                        No analysis performed yet",
+      "display = show ? 'flex' : 'none';\n        }\n        \n        // Main Functions\n        async function executeUltimateAnalysis() {\n            const inputText = document",
+      "value === 'true' ? 'enabled' : 'disabled'}`);\n        });\n        \n        // Subsystem interaction\n        document"
+    ],
+    "pattern_recognition": [
+      "loop",
+      "repeat",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 52,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>AEON-Bridge Enterprise System - Production Interface</title>\n    <style>\n        :root {\n            --primary: #00ffcc;\n            --secondary: #9966ff;\n            --accent: #ff6b6b;\n            --warning: #ffcc00;\n            --success: #00ff88;\n            --bg-dark: #0a0a0a;\n            --bg-darker: #1a1a1a;\n            --border: #333;\n            --enterprise-blue: #0066cc;\n            --enterprise-gold: #ffd700;\n        }\n        \n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n        \n        body {\n            font-family: 'Segoe UI', 'Roboto', 'Helvetica', monospace;\n            background: linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e);\n            color: var(--primary);\n            overflow-x: hidden;\n            min-height: 100vh;\n        }\n        \n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "</textarea>\n                    </div>\n                    \n                    <div class=\"button-grid\">\n                        <button class=\"enterprise-button\" onclick=\"executeUltimateAnalysis()\">\n                            🚀 Execute Ultimate Analysis\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"executeStreamingAnalysis()\">\n                            📡 Streaming Analysis\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"executeBatchAnalysis()\">\n                            📦 Batch Processing\n                        </button>\n                        <button class=\"enterprise-button\" onclick=\"exportResults()\">\n                            💾 Export Results\n                        </button>\n                    </div>\n                </div>\n            </div>\n\n            <div id=\"resultsTab\" class=\"tab-content\">\n                <div class=\"results-container\" id=\"resultsContainer\">\n                    <div class=\"results-header\">\n                        <div class=\"results-title\">Analysis Results</div>\n                        <div class=\"results-metrics\">\n                            <span class=\"metric\">Processing Time: <span id=\"processingTime\">--</span>ms</span>\n                            <span class=\"metric\">Confidence: <span id=\"confidenceScore\">--</span>%</span>\n                        </div>\n                    </div>\n                    <div class=\"results-content\" id=\"resultsContent\">\n                        No analysis performed yet",
+        "urgency_score": "0.02",
+        "feasibility_score": "0.46"
+      },
+      {
+        "action": " Execute an analysis to see results",
+        "urgency_score": "0.52",
+        "feasibility_score": "0.74"
+      },
+      {
+        "action": "\n                    </div>\n                </div>\n            </div>\n\n            <div id=\"anchorsTab\" class=\"tab-content\">\n                <div class=\"input-group\">\n                    <label class=\"input-label\">Anchor Management</label>\n                    <div class=\"button-grid\">\n                        <button class=\"enterprise-button\" onclick=\"createAnchor()\">⚓ Create Anchor</button>\n                        <button class=\"enterprise-button\" onclick=\"listAnchors()\">📋 List Anchors</button>\n                        <button class=\"enterprise-button\" onclick=\"restoreFromAnchor()\">🔄 Restore State</button>\n                    </div>\n                </div>\n                <div class=\"results-container\" id=\"anchorResults\">\n                    <div class=\"results-content\">Anchor operations will appear here",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "lastAnalysis = null;\n            }\n\n            async executeUltimateContradictionAnalysis(inputText, context = {}) {\n                const startTime = Date",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "createElement('div');\n            logEntry",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.20"
+      },
+      {
+        "action": " 'flex' : 'none';\n        }\n        \n        // Main Functions\n        async function executeUltimateAnalysis() {\n            const inputText = document",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "executeUltimateContradictionAnalysis(inputText, { domain });\n                \n                updateMetrics(analysis);\n                displayResults(analysis);\n                \n                addLogEntry('SUCCESS', `Analysis completed in ${analysis",
+        "urgency_score": "0.71",
+        "feasibility_score": "0.63"
+      },
+      {
+        "action": "message}`);\n                showNotification('Analysis failed - check logs');\n            } finally {\n                showLoading(false);\n            }\n        }\n        \n        async function executeStreamingAnalysis() {\n            showNotification('Streaming analysis mode activated');\n            addLogEntry('INFO', 'Streaming analysis initiated');\n            // Placeholder for streaming functionality\n        }\n        \n        async function executeBatchAnalysis() {\n            showNotification('Batch processing initiated');\n            addLogEntry('INFO', 'Batch analysis mode activated');\n            // Placeholder for batch functionality\n        }\n        \n        async function exportResults() {\n            if (",
+        "urgency_score": "0.08",
+        "feasibility_score": "0.49"
+      },
+      {
+        "action": "createObjectURL(blob);\n            \n            const a = document",
+        "urgency_score": "0.46",
+        "feasibility_score": "0.52"
+      },
+      {
+        "action": "createElement('a');\n            a",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.92"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.8666666666666667,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.47",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "0314c9987116d031bec1f1a8f8c7e49f"
+  }
+}

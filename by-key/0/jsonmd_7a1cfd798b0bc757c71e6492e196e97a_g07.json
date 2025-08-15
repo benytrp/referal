@@ -1,0 +1,375 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:46.919Z",
+    "source_text_length": 370,
+    "word_count": 62,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "7a1cfd798b0bc757c71e6492e196e97a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "plan",
+        "frequency": 2
+      },
+      {
+        "theme": "markdown",
+        "frequency": 2
+      },
+      {
+        "theme": "parse",
+        "frequency": 2
+      },
+      {
+        "theme": "reset",
+        "frequency": 2
+      },
+      {
+        "theme": "enter",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "source",
+        "frequency": 1
+      },
+      {
+        "theme": "steps",
+        "frequency": 1
+      },
+      {
+        "theme": "load",
+        "frequency": 1
+      },
+      {
+        "theme": "demo",
+        "frequency": 1
+      },
+      {
+        "theme": "workspace",
+        "frequency": 1
+      },
+      {
+        "theme": "storage",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "loop",
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Plan Source (Markdown) Parse → Steps Load Demo Plan Reset Workspace Storage: saved … Runner & Audit Log Progress: 0/0 | Loop State: idle ▶ Run All (Auto-check) ✓ Mark All OK ◻ Reset All Status ↻ Restart/Debug Cycle Export JSON Export Markdown 💾 Produce Artifact Select a step, then use Alt+↑/Alt+↓ to move, E to edit, Del to ❌, Enter to ✅",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.149,
+    "cognitive_load_estimate": 0.0185,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.878,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 2,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.757,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 3,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.635,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 4,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.514,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 5,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.392,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 6,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.27,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      },
+      {
+        "generation": 7,
+        "entropy": 0.973,
+        "contradictions": 0,
+        "novelty_index": 0.149,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "loop",
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "plan",
+              "frequency": 2
+            },
+            {
+              "theme": "markdown",
+              "frequency": 2
+            },
+            {
+              "theme": "parse",
+              "frequency": 2
+            },
+            {
+              "theme": "reset",
+              "frequency": 2
+            },
+            {
+              "theme": "enter",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.311
+      }
+    ],
+    "quality_score": 30
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.02,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_studio_code - 2025-08-08T173202.616.html",
+      "bytes": 17415,
+      "lastModified": 1754688723710
+    }
+  }
+}

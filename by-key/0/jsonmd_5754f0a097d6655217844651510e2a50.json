@@ -1,0 +1,108 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:34.364Z",
+    "source_text_length": 512,
+    "word_count": 81,
+    "sentence_count": 12,
+    "entropy_level": 0.986,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_html_chunker (1).html"
+    },
+    "anchor_id": "5754f0a097d6655217844651510e2a50"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 3
+      },
+      {
+        "theme": "files",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "drop",
+        "frequency": 2
+      },
+      {
+        "theme": "jsonl",
+        "frequency": 2
+      },
+      {
+        "theme": "tokens",
+        "frequency": 2
+      },
+      {
+        "theme": "chunk",
+        "frequency": 2
+      },
+      {
+        "theme": "budget",
+        "frequency": 2
+      },
+      {
+        "theme": "process",
+        "frequency": 2
+      },
+      {
+        "theme": "chunker",
+        "frequency": 1
+      },
+      {
+        "theme": "tune",
+        "frequency": 1
+      },
+      {
+        "theme": "chunking",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "htm files here Process Process Downloads Nothing",
+        "statement_b": "Self-contained",
+        "line": 9,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline HTML → LLM Chunker Drop … Stable chunk IDs via in-file FNV-1a-64",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "htm files here Process Process Downloads Nothing vs Self-contained"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5754f0a097d6655217844651510e2a50"
+  }
+}

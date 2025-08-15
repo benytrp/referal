@@ -1,0 +1,219 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:15.705Z",
+    "source_text_length": 70432,
+    "word_count": 7807,
+    "sentence_count": 1885,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "2a6cbc1b45c96ba8c7957703ae221adc",
+    "entropy_level": 0.655,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:05:15.705Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 643,
+        "significance": "0.0824",
+        "examples": [
+          "[2025-08-11T02:45:15.204Z]"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 631,
+        "significance": "0.0808",
+        "examples": [
+          "jsonmd_d57b61456366ce35df51b2012715b355.json\n[2025-08-11T02:45:21.970Z]"
+        ]
+      },
+      {
+        "theme": "11t02",
+        "frequency": 629,
+        "significance": "0.0806",
+        "examples": [
+          "[2025-08-11T02:45:15.204Z]"
+        ]
+      },
+      {
+        "theme": "process",
+        "frequency": 629,
+        "significance": "0.0806",
+        "examples": [
+          "process"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 422,
+        "significance": "0.0541",
+        "examples": [
+          "!DOC.html"
+        ]
+      },
+      {
+        "theme": "ai_studio_code",
+        "frequency": 103,
+        "significance": "0.0132",
+        "examples": [
+          "ai_studio_code"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 28,
+        "significance": "0.0036",
+        "examples": [
+          "AEON"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 20,
+        "significance": "0.0026",
+        "examples": [
+          "AEON-Bridge-1754523771682.md"
+        ]
+      },
+      {
+        "theme": "automation",
+        "frequency": 17,
+        "significance": "0.0022",
+        "examples": [
+          "GrantWriter-Automation/Prompts/budget.txt"
+        ]
+      },
+      {
+        "theme": "grantwriter",
+        "frequency": 16,
+        "significance": "0.0020",
+        "examples": [
+          "GrantWriter-Automation/Prompts/budget.txt"
+        ]
+      },
+      {
+        "theme": "copy",
+        "frequency": 15,
+        "significance": "0.0019",
+        "examples": [
+          "Copy.html"
+        ]
+      },
+      {
+        "theme": "prompts",
+        "frequency": 14,
+        "significance": "0.0018",
+        "examples": [
+          "GrantWriter-Automation/Prompts/budget.txt"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "again",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 4,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T02:45:15 204Z] selected Downloads; outputs at \"scrolls\"\n[2025-08-11T02:45:21...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "978Z] process # Piano Beacon System - Python Implementation_# Ge",
+        "urgency_score": "0.92",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": "945Z] process aeon_self_created_1754359726112",
+        "urgency_score": "0.49",
+        "feasibility_score": "0.02"
+      },
+      {
+        "action": "227Z] process aeon_self_created_1754359752313",
+        "urgency_score": "0.04",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": "506Z] process aeon_self_created_1754359768362",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "942Z] process aeon_self_created_1754359983553",
+        "urgency_score": "1.00",
+        "feasibility_score": "0.58"
+      },
+      {
+        "action": "564Z] process ai_tool_calls_developer_cheatsheet (1)",
+        "urgency_score": "0.99",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": "875Z] process ai_tool_calls_developer_cheatsheet (2)",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": "150Z] process ai_tool_calls_developer_cheatsheet (3)",
+        "urgency_score": "0.43",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "425Z] process ai_tool_calls_developer_cheatsheet",
+        "urgency_score": "0.22",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "589Z] process create image fusion",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.38"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.96",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "2a6cbc1b45c96ba8c7957703ae221adc"
+  }
+}

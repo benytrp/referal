@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:37.384Z",
+    "source_text_length": 6606,
+    "word_count": 673,
+    "entropy_level": 0.912,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "643537de05118511eeee5d037c3c1476",
+    "source": {
+      "path": "command_chaining_guide.md",
+      "bytes": 6684,
+      "lastModified": 1754782074845
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "repl",
+        "frequency": 21
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 19
+      },
+      {
+        "theme": "web_search",
+        "frequency": 13
+      },
+      {
+        "theme": "analysis",
+        "frequency": 10
+      },
+      {
+        "theme": "patterns",
+        "frequency": 10
+      },
+      {
+        "theme": "chaining",
+        "frequency": 9
+      },
+      {
+        "theme": "phase",
+        "frequency": 9
+      },
+      {
+        "theme": "data",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "repeat",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "step);\n}\n```\n\n### **Performance Optimization**\n- **Parallel Processing:** Run independent searches simultaneously\n- **Selective Fetching:** Only fetch full content when needed\n- **Incremental Updates:** Use `artifacts(update)`",
+        "statement_b": "`rewrite`\n\n## 🎪 **Real Example: This Document's Creation**\n\nThis document itself demonstrates function chaining:\n\n1.",
+        "line": 32,
+        "connector": "vs",
+        "tension_type": "versus"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Sub-Functions & Command Chaining Architecture\n\n## 🔗 **Command Sub-Structure Within Functions**\n\n### **1. … ---\n\n**Summary:** Sub-functions provide granular control within each tool, while chaining patterns enable sophisticated workflows that transform raw information into actionable productivity solutions.",
+    "key_insights": [],
+    "action_items": [
+      "`artifacts` Command Parameters**\n```json\n{\n  \"command\": \"create\" | \"update\" | \"rewrite\",\n  \"type\": \"application/vnd.",
+      "`google_drive_search` Query Sub-Commands**\n```json\n{\n  \"api_query\": \"name contains 'project' and fullText contains 'AI'\",\n  \"semantic_query\": \"artificial intelligence research documents\",\n  \"order_by\": \"createdTime desc\" | \"relevance desc\" | \"modifiedTime desc\",\n  \"page_size\": 10,\n  \"request_page_token\": false\n}\n```\n\n**Query Operators:**\n- `contains`, `=`, `!",
+      "log(\"Processing complete:\", results);\n```\n\n## ⛓️ **Function Chaining Patterns**\n\n### **Sequential Workflow Pattern**\n```\nSearch → Analyze → Create\nweb_search → repl → artifacts\n```\n\n**Example Implementation:**\n1.",
+      "**Creation Phase:** `artifacts(create_productivity_tool())`\n\n### **Iterative Refinement Pattern**\n```\nSearch → Fetch → Analyze → Update → Repeat\nweb_search → web_fetch → repl → artifacts(update) → web_search\n```\n\n### **Multi-Source Aggregation Pattern**\n```\nDrive Search + Web Search → Analysis → Synthesis\ngoogle_drive_search + web_search → repl → artifacts\n```\n\n## 🧮 **Advanced Chaining Examples**\n\n### **Research-to-Product Pipeline**\n```yaml\nStep 1: Information Gathering\n  - web_search: \"productivity tools AI\"\n  - google_drive_search: \"project requirements\"\n  - web_fetch: specific_research_papers\n\nStep 2: Data Processing  \n  - repl: analyze_search_results()\n  - repl: extract_patterns()\n  - repl: generate_recommendations()\n\nStep 3: Product Development\n  - artifacts: create_react_component()\n  - artifacts: update_with_features()\n  - artifacts: rewrite_for_optimization()\n```\n\n### **Content Analysis Workflow**\n```yaml\nDiscovery Phase:\n  - google_drive_search: \"fullText contains 'architecture'\"\n  - web_search: \"current AI trends 2025\"\n\nProcessing Phase:\n  - repl: parse_documents()\n  - repl: sentiment_analysis()\n  - repl: extract_key_themes()\n\nSynthesis Phase:\n  - artifacts: create_summary_report()\n  - artifacts: update_recommendations()\n```\n\n## 🔄 **Context Preservation Across Chains**\n\n### **State Management in Chaining**\n- **Search Results** → Stored in function_results\n- **Analysis Outputs** → Logged in repl console\n- **Artifact State** → Maintained across updates\n\n### **Information Flow**\n```\nweb_search(results) → repl(analysis) → artifacts(creation)\n      ↓                    ↓                  ↓\n   Raw Data        Processed Insights    Final Product\n```\n\n## 🎯 **Productivity Tool Implementation Pattern**\n\nBased on the analyzed AI architecture patterns, here's the recommended function chaining:\n\n### **Phase 1: Foundation (RAG + Prompt Engineering)**\n```yaml\nResearch:\n  - web_search: \"RAG implementation patterns\"\n  - google_drive_search: \"existing knowledge base\"\n\nAnalysis:\n  - repl: analyze_content_structure()\n  - repl: optimize_retrieval_strategy()\n\nDevelopment:\n  - artifacts: create_rag_interface()\n  - artifacts: update_prompt_templates()\n```\n\n### **Phase 2: Orchestration (Multi-Agent Coordination)**\n```yaml\nDiscovery:\n  - web_search: \"multi-agent AI systems\"\n  - web_fetch: specific_framework_docs\n\nImplementation:\n  - repl: design_agent_workflows()\n  - artifacts: create_orchestration_dashboard()\n```\n\n### **Phase 3: Scaling (Federated Learning)**\n```yaml\nResearch:\n  - web_search: \"federated learning productivity\"\n  - google_drive_search: \"team collaboration patterns\"\n\nDeployment:\n  - repl: calculate_scaling_metrics()\n  - artifacts: create_federated_interface()\n```\n\n## 🛠️ **Available Sub-Function Libraries**\n\n### **In `repl` Environment:**\n- **Data Processing:** `papaparse`, `sheetjs`, `lodash`\n- **Math/Analysis:** `mathjs`, `d3`\n- **Visualization:** `plotly`, `chart.",
+      "**`artifacts`** → Created this comprehensive guide\n\n**Function Chain Used:**\n```\nweb_search(\"AI architecture patterns\") \n  → repl(analyze_patterns()) \n  → artifacts(create_guide())\n```\n\nThe sub-functions enabled complex orchestration while maintaining modularity and reusability across the entire workflow.",
+      "---\n\n**Summary:** Sub-functions provide granular control within each tool, while chaining patterns enable sophisticated workflows that transform raw information into actionable productivity solutions."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}

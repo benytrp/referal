@@ -1,0 +1,137 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:42.557Z",
+    "anchor_id": "4f07d00771d936142bed95b9252e9c0bdf175219064f495360e848e1a9f69b4c",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.715,
+    "contradictions_detected": 3,
+    "word_count": 1017
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 35
+      },
+      {
+        "theme": "data",
+        "frequency": 32
+      },
+      {
+        "theme": "value",
+        "frequency": 31
+      },
+      {
+        "theme": "document",
+        "frequency": 29
+      },
+      {
+        "theme": "template",
+        "frequency": 24
+      },
+      {
+        "theme": "function",
+        "frequency": 22
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 22
+      },
+      {
+        "theme": "key",
+        "frequency": 17
+      },
+      {
+        "theme": "counter",
+        "frequency": 16
+      },
+      {
+        "theme": "html",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "value) { value = value[key]; } else { return ''; // Token not found, return empty } } return value == null ? '' : Strin"
+      },
+      {
+        "idx": 1,
+        "sample": ".includes(str)) { result[fullKey] = 'yes'; } else if (['ni', 'no', 'false', '0'].includes(str)) { result[fullKey] = 'ni'; }"
+      },
+      {
+        "idx": 2,
+        "sample": "des(str)) { result[fullKey] = 'ni'; } else if (['na', 'n/a', 'none'].includes(str)) { result[fullKey] = 'na'; } }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "return value == null ?",
+      "const fullKey = prefix ?",
+      "Attendance — Correct day and time?",
+      "Hygiene — Participant was appropriately groomed?",
+      "Attitude — Participant exhibited positive attitude?",
+      "Attention Span — adequate span for tasks?",
+      "Task Completion — stayed on task?",
+      "Safety — followed safety procedures?",
+      "if (confirm('Reset to default template?"
+    ],
+    "summary": "const, data, value, document, template"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "was"
+  ],
+  "metadata": {
+    "source_name": "simple_e3_builder.html",
+    "relative_path": "simple_e3_builder.html",
+    "size_bytes": 16654,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 209
+- Complexity score: 54.4
+- Key themes: theme, frequency, value, fullkey, return, result, const, template, html, sample
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of value?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, value
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

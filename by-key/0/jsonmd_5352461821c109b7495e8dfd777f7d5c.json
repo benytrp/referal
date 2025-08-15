@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:10.566Z",
+    "source_text_length": 711,
+    "word_count": 98,
+    "sentence_count": 4,
+    "entropy_level": 0.977,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "e3_daily_eval_form - Copy.html"
+    },
+    "anchor_id": "5352461821c109b7495e8dfd777f7d5c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "itemobservationyesneeds",
+        "frequency": 3
+      },
+      {
+        "theme": "improvementn",
+        "frequency": 3
+      },
+      {
+        "theme": "comments",
+        "frequency": 3
+      },
+      {
+        "theme": "participant",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "units",
+        "frequency": 2
+      },
+      {
+        "theme": "goals",
+        "frequency": 2
+      },
+      {
+        "theme": "staff",
+        "frequency": 2
+      },
+      {
+        "theme": "present",
+        "frequency": 2
+      },
+      {
+        "theme": "daily",
+        "frequency": 1
+      },
+      {
+        "theme": "evaluation",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [
+      "2 Export JSON Import JSON Load Sample Auto‑calc Units Reset Participant Label (de‑identified) Diagnostic Codes (comma‑separated) Program Goals Summary Date Location Instructor ID Assigned Staff ID Time In Time Out Total Units Staff Present Students Present Today's Focus Work Habits ItemObservationYesNeeds ImprovementN/A Comments Preparatory Goals ItemObservationYesNeeds ImprovementN/A Comments Interests / Abilities ItemObservationYesNeeds ImprovementN/A Comments Signed? No Yes Signature Timestamp Signoff Notes JSON keys are embedded via data-key attributes for straightforward AI read/write"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Daily Participant Evaluation AI‑Optimized v1 … Use “Export JSON” to capture a valid payload matching the schema",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5352461821c109b7495e8dfd777f7d5c"
+  }
+}

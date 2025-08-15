@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:50.362Z",
+    "source_text_length": 1200,
+    "word_count": 115,
+    "entropy_level": 0.914,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "3583ca5cedac19cb87f5b412cb5e57d6",
+    "source": {
+      "path": "Nvrstry.cleaned.summary.txt",
+      "bytes": 1200,
+      "lastModified": 1754810938586
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 10
+      },
+      {
+        "theme": "keys",
+        "frequency": 10
+      },
+      {
+        "theme": "cycle_log_entry",
+        "frequency": 6
+      },
+      {
+        "theme": "'cycle'",
+        "frequency": 6
+      },
+      {
+        "theme": "'phase'",
+        "frequency": 6
+      },
+      {
+        "theme": "'op'",
+        "frequency": 6
+      },
+      {
+        "theme": "'output'",
+        "frequency": 6
+      },
+      {
+        "theme": "'contract_ref'",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Found 10 JSON object(s). [01] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']\n[02] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']\n[03] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']\n[04] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']\n[05] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[06] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[07] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[08] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[09] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[10] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}

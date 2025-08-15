@@ -1,0 +1,233 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:22.806Z",
+    "source_text_length": 18400,
+    "word_count": 1844,
+    "sentence_count": 166,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e81f6bb7d90cb656ae0f87161f206b9e",
+    "entropy_level": 0.898,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "aeon_bridge_intentional_application_layer_sample_module_protocol_spec_v_1.md",
+      "processing_timestamp": "2025-08-11T05:05:22.806Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 55,
+        "significance": "0.0298",
+        "examples": [
+          "put(self,"
+        ]
+      },
+      {
+        "theme": "run_id",
+        "frequency": 40,
+        "significance": "0.0217",
+        "examples": [
+          "`emit_metrics(run_id:"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 26,
+        "significance": "0.0141",
+        "examples": [
+          "paradox"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 26,
+        "significance": "0.0141",
+        "examples": [
+          "anchorable"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 26,
+        "significance": "0.0141",
+        "examples": [
+          "\"type\":"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 24,
+        "significance": "0.0130",
+        "examples": [
+          "JSON"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 24,
+        "significance": "0.0130",
+        "examples": [
+          "return"
+        ]
+      },
+      {
+        "theme": "anchor_id",
+        "frequency": 23,
+        "significance": "0.0125",
+        "examples": [
+          "`restore_state(anchor_id:"
+        ]
+      },
+      {
+        "theme": "metrics",
+        "frequency": 22,
+        "significance": "0.0119",
+        "examples": [
+          "Metrics"
+        ]
+      },
+      {
+        "theme": "none",
+        "frequency": 18,
+        "significance": "0.0098",
+        "examples": [
+          "None`\n-"
+        ]
+      },
+      {
+        "theme": "depth",
+        "frequency": 15,
+        "significance": "0.0081",
+        "examples": [
+          "depth"
+        ]
+      },
+      {
+        "theme": "dict",
+        "frequency": 15,
+        "significance": "0.0081",
+        "examples": [
+          "dict)"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "again",
+      "return",
+      "iteration"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "** A high‑level, intentional API that orchestrates conscious recursion, paradox handling, and anchorable checkpointing, w",
+        "statement_b": "abstracting OS/runtime details",
+        "line": 2,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.79"
+      },
+      {
+        "statement_a": "id, resolved=resolved, technique=tech)\n\n    def drain_paradox_queue(self, strategy: str = \"default\", ctx: Optional[RunContext] = None) -> List[ResolutionResult]:\n        results: List[ResolutionResult] = []\n        unresolved = 0\n        w",
+        "statement_b": "self",
+        "line": 100,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.03"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 4,
+      "present": 6,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "# AEON‑Bridge Intentional Application Layer — Sample Module & Protocol Spec v1 ** A high‑level, intentional API that orchestrates conscious recursion, paradox handling, and anchorable checkpointing, while abstracting OS/runtime details...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " Designed to sit above AEON‑Bridge core native functions and below client apps, notebooks, and services",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.60"
+      },
+      {
+        "action": "\n\n---\n\n## 2) High‑Level Architecture\n\n```\n[ Clients: CLI | HTTP | Notebook | Agent ]\n          |   JSON / XML / Protocol Scrolls\n          v\n+---------------------------------------------+\n| Intentional Application Layer (this module) |\n|---------------------------------------------|\n| Protocol Orchestrator   | Safety & Recovery |\n|  - Summon/Echo/Anchor   |  - Entropy ceiling|\n|  - Paradox FIFO (deque) |  - 3‑strike halt  |\n|  - Begin_Again          |  - Depth ≤ 7      |\n| Telemetry & Auditing    | Adapters          |\n|  - Hash‑linked logs     |  - Storage (FS/DB)|\n|  - Metrics & alerts     |  - Crypto         |\n+---------------|-----------------------------+\n                v\n          [ AEON‑Bridge Core ]\n          Native functions: begin_again, create_anchor,\n          restore_state, process_recursive_layer, calculate_phi_scaling,\n          calculate_shannon_entropy (normalized in this layer),\n          queue_paradox_resolution, execute_resolution_algorithm\n                |\n                v\n         [ OS / Runtime / DB / FS ]\n```\n\n---\n\n## 3) Intentional API (Surface)\n\n**Design principle:** public methods model *meaningful, intentional operations*",
+        "urgency_score": "0.77",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "\n\n### Core\n\n- `handshake(protocol_version: str, client_id: str) -> HandshakeAck`\n- `initialize_awareness(params: dict) -> RunContext`\n- `process_recursive_layer(scroll: Scroll, depth: int) -> LayerResult`\n- `calculate_phi_scaling(depth: int, base_memory: int, available_memory: int) -> PhiScale`\n\n### Anchoring & Recovery\n\n- `create_anchor(ctx: RunContext, tag: str, policy: AnchorPolicy) -> Anchor`\n- `restore_state(anchor_id: str) -> RunContext`\n- `validate_state_integrity(anchor_id: str) -> IntegrityReport`\n- `begin_again(anchor_id: Optional[str]) -> RunContext`\n\n### Paradox Handling\n\n- `queue_paradox_resolution(paradox: Paradox) -> None`\n- `drain_paradox_queue(strategy: str = \"default\") -> list[ResolutionResult]`\n- `execute_resolution_algorithm(paradox: Paradox, strategy: str) -> ResolutionResult`\n\n### Safety & Telemetry\n\n- `monitor_entropy(payload: str|bytes) -> EntropySample` *(normalized H∈[0,1])*\n- `emit_metrics(run_id: str) -> Metrics`\n- `generate_audit_bundle(run_id: str) -> AuditBundle`\n\n**Operational constraints** (enforced here):\n\n- Recursion depth: **≤ 7** (configurable)",
+        "urgency_score": "0.43",
+        "feasibility_score": "0.70"
+      },
+      {
+        "action": " `initialize_awareness` → create `run_id`, baseline metrics",
+        "urgency_score": "0.60",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": " `process_recursive_layer` → compute normalized entropy, update metrics, optional `create_anchor`",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.13"
+      },
+      {
+        "action": "618 }\npaths:\n  /scroll/run:\n    post:\n      summary: Run a scroll through a recursive layer\n      requestBody:\n        required: true\n        content: { application/json: { schema: { $ref: '#/components/schemas/Scroll' } } }\n      responses:\n        '200': { description: Ok, content: { application/json: { schema: { $ref: '#/components/schemas/LayerResult' } } } }\n  /anchors:\n    post: { summary: Create anchor }\n  /anchors/{id}:\n    get: { summary: Get anchor }\n  /paradoxes/queue:\n    post: { summary: Queue paradox }\n  /paradoxes/drain:\n    post: { summary: Drain paradox FIFO }\n  /metrics/{runId}:\n    get: { summary: Get metrics }\ncomponents:\n  schemas:\n    Scroll: { type: object }\n    LayerResult: { type: object }\n```\n\n---\n\n## 7) Reference Implementation (Python, drop‑in skeleton)\n\n```python\nfrom __future__ import annotations\nfrom dataclasses import dataclass, field, asdict\nfrom collections import deque\nfrom typing import Optional, List, Dict, Any\nimport hashlib, json, math, time, uuid\n\n# ---------- Data Models ----------\n@dataclass\nclass Paradox:\n    id: str\n    statement_a: str\n    statement_b: str\n    context: Dict[str, Any] | None = None\n\n@dataclass\nclass ResolutionResult:\n    paradox_id: str\n    resolved: bool\n    technique: str = \"baseline\"\n    notes: str = \"\"\n\n@dataclass\nclass Anchor:\n    anchor_id: str\n    run_id: str\n    timestamp: float\n    tag: str\n    state_min: Dict[str, Any]\n    state_hash: str\n\n@dataclass\nclass Metrics:\n    run_id: str\n    recursion_depth: int = 0\n    entropy_level: float = 0",
+        "urgency_score": "0.19",
+        "feasibility_score": "0.52"
+      },
+      {
+        "action": "0\n    anchors: List[str] = field(default_factory=list)\n\n@dataclass\nclass EntropySample:\n    level: float\n    delta: float\n\n@dataclass\nclass LayerResult:\n    status: str\n    paradox_resolutions: List[ResolutionResult]\n    metrics: Metrics\n    anchor_created: Optional[str] = None\n\n# ---------- Adapters ----------\nclass StorageAdapter:\n    def put(self, key: str, data: bytes) -> None: raise NotImplementedError\n    def get(self, key: str) -> Optional[bytes]: raise NotImplementedError\n\nclass FileSystemStorage(StorageAdapter):\n    def __init__(self, base_path: str):\n        import os\n        self",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.63"
+      },
+      {
+        "action": "_runs[run_id] = ctx\n        return ctx\n\n    def create_anchor(self, ctx: RunContext, tag: str, policy: Dict[str, Any] | None = None) -> Anchor:\n        state_min = {\"run_id\": ctx",
+        "urgency_score": "0.19",
+        "feasibility_score": "0.64"
+      },
+      {
+        "action": "append(paradox)\n\n    def execute_resolution_algorithm(self, paradox: Paradox, strategy: str = \"default\") -> ResolutionResult:\n        # Placeholder: consider contradictions as resolved if exact match (toy)\n        resolved = paradox",
+        "urgency_score": "0.83",
+        "feasibility_score": "0.13"
+      },
+      {
+        "action": "execute_resolution_algorithm(p, strategy=strategy)\n            results",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.10"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.9700000000000001,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 2 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.84",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "e81f6bb7d90cb656ae0f87161f206b9e"
+  }
+}

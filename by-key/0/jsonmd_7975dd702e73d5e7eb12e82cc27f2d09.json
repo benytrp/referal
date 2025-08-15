@@ -1,0 +1,85 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:32.004Z",
+    "source_text_length": 248,
+    "word_count": 37,
+    "entropy_level": 0.951,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "7975dd702e73d5e7eb12e82cc27f2d09",
+    "source": {
+      "path": "ai_studio_code (1).html",
+      "bytes": 8712,
+      "lastModified": 1754721246231
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "load",
+        "frequency": 4
+      },
+      {
+        "theme": "file",
+        "frequency": 4
+      },
+      {
+        "theme": "metadata",
+        "frequency": 2
+      },
+      {
+        "theme": "seals",
+        "frequency": 2
+      },
+      {
+        "theme": "thought",
+        "frequency": 2
+      },
+      {
+        "theme": "ledger",
+        "frequency": 2
+      },
+      {
+        "theme": "universal",
+        "frequency": 1
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Universal AEON Bridge Viewer Controls & Verification Load AEON-CoT-Bridgefile. … Thought Ledger Load a file to see the thought ledger.",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

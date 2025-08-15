@@ -1,0 +1,133 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:24.962Z",
+    "source_text_length": 6148,
+    "word_count": 762,
+    "sentence_count": 57,
+    "entropy_level": 0.899,
+    "contradictions_detected": 4,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "i want a full json timeline oif events please.md"
+    },
+    "anchor_id": "88b2b511005dbb9c250b165d148f6bd2"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "details",
+        "frequency": 25
+      },
+      {
+        "theme": "event",
+        "frequency": 24
+      },
+      {
+        "theme": "2025",
+        "frequency": 23
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 23
+      },
+      {
+        "theme": "chris",
+        "frequency": 22
+      },
+      {
+        "theme": "clay",
+        "frequency": 11
+      },
+      {
+        "theme": "requests",
+        "frequency": 9
+      },
+      {
+        "theme": "rachel",
+        "frequency": 9
+      },
+      {
+        "theme": "meeting",
+        "frequency": 9
+      },
+      {
+        "theme": "rights",
+        "frequency": 8
+      },
+      {
+        "theme": "summit",
+        "frequency": 7
+      },
+      {
+        "theme": "pointe",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Chris had not",
+        "statement_b": "filed ADA request",
+        "line": 24,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\n    \"details\": \"Chris states non-consent without accommodations; Clay acknowledges",
+        "statement_b": "proceeds; Rachel signs Prevent2Protect disclosure and IPOS",
+        "line": 30,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\n    \"details\": \"Suggests private interview",
+        "statement_b": "can accommodate parents; defers ADA to compliance",
+        "line": 45,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\n    \"details\": \"Clay explains postponing psychiatric evaluation out of respect for Chris's concerns",
+        "statement_b": "no actual plan changes made",
+        "line": 51,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "<img src=\"https://r2cdn … <div style=\"text-align: center\">⁂</div>",
+    "key_insights": [],
+    "action_items": [
+      "png\" class=\"logo\" width=\"120\"/>\n\n# i want a full json timeline oif events please\n\nHere is a full, structured JSON timeline of key events in your case with Summit Pointe, focusing on parental advocacy, ADA accommodation requests, Recipient Rights actions, and major care/disclosure events:\n\n```json\n[\n  {\n    \"timestamp\": \"2025-03-13T00:00:00Z\",\n    \"event\": \"Ben questioned at school after concerning chat statement involving school shooting threat",
+      "\"\n  },\n  {\n    \"timestamp\": \"2025-04-28T14:52:00Z\",\n    \"event\": \"Chris verbally discloses ADA accommodation need to Jamie Fedor",
+      "- The entries can be supplemented or expanded with new events, meetings, or developments as the case progresses"
+    ],
+    "unresolved_tensions": [
+      "Chris had not vs filed ADA request",
+      "\",\n    \"details\": \"Chris states non-consent without accommodations; Clay acknowledges vs proceeds; Rachel signs Prevent2Protect disclosure and IPOS",
+      "\",\n    \"details\": \"Suggests private interview vs can accommodate parents; defers ADA to compliance",
+      "\",\n    \"details\": \"Clay explains postponing psychiatric evaluation out of respect for Chris's concerns vs no actual plan changes made"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "88b2b511005dbb9c250b165d148f6bd2"
+  }
+}

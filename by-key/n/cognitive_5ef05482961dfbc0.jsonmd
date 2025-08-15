@@ -1,0 +1,167 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:31:04.007Z",
+    "source_text_length": 311,
+    "word_count": 48,
+    "sentence_count": 8,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "5ef05482961dfbc0e8e5427238989e35",
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:31:04.007Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 4,
+        "significance": "0.0833",
+        "examples": [
+          "[2025-08-11T05:30:34.985Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 4,
+        "significance": "0.0833",
+        "examples": [
+          "[2025-08-11T05:30:34.985Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 4,
+        "significance": "0.0833",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 4,
+        "significance": "0.0833",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 3,
+        "significance": "0.0625",
+        "examples": [
+          "session-replication-protocol.html\n[2025-08-11T05:30:36.067Z]"
+        ]
+      },
+      {
+        "theme": "985z",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "[2025-08-11T05:30:34.985Z]"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "session-replication-protocol.html\n[2025-08-11T05:30:36.067Z]"
+        ]
+      },
+      {
+        "theme": "replication",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "session-replication-protocol.html\n[2025-08-11T05:30:36.067Z]"
+        ]
+      },
+      {
+        "theme": "protocol",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "session-replication-protocol.html\n[2025-08-11T05:30:36.067Z]"
+        ]
+      },
+      {
+        "theme": "067z",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "session-replication-protocol.html\n[2025-08-11T05:30:36.067Z]"
+        ]
+      },
+      {
+        "theme": "simple_e3_builder",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "simple_e3_builder.html\n[2025-08-11T05:30:36.216Z]"
+        ]
+      },
+      {
+        "theme": "216z",
+        "frequency": 1,
+        "significance": "0.0208",
+        "examples": [
+          "simple_e3_builder.html\n[2025-08-11T05:30:36.216Z]"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:30:34 985Z] skip(blacklist) session-replication-protocol...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "067Z] skip(blacklist) simple_e3_builder",
+        "urgency_score": "0.95",
+        "feasibility_score": "0.89"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.01555,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.54",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5ef05482961dfbc0e8e5427238989e35"
+  }
+}

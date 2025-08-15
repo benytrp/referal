@@ -1,0 +1,121 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:32.374Z",
+    "source_text_length": 26501,
+    "word_count": 3107,
+    "sentence_count": 509,
+    "entropy_level": 0.892,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "New Text ffDocument.txt"
+    },
+    "anchor_id": "b9c0eccb215933cd60ea73632d951b14"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 65
+      },
+      {
+        "theme": "class",
+        "frequency": 45
+      },
+      {
+        "theme": "button",
+        "frequency": 42
+      },
+      {
+        "theme": "details",
+        "frequency": 41
+      },
+      {
+        "theme": "findings",
+        "frequency": 38
+      },
+      {
+        "theme": "ndjson",
+        "frequency": 33
+      },
+      {
+        "theme": "chunks",
+        "frequency": 32
+      },
+      {
+        "theme": "summary",
+        "frequency": 30
+      },
+      {
+        "theme": "theme",
+        "frequency": 28
+      },
+      {
+        "theme": "border",
+        "frequency": 25
+      },
+      {
+        "theme": "label",
+        "frequency": 24
+      },
+      {
+        "theme": "graph",
+        "frequency": 22
+      }
+    ],
+    "key_questions": [
+      "(]/g},\r\n        {code:\"T_ERR\", desc:\"Error tokens\", re:/\\b(error|exception|fail(ed)?)\\b/ig}\r\n      ]\r\n    },\r\n    graphRules: function(findings, chunks){\r\n      const edges=[];\r\n      // naive: syntax issues cause thematic warnings\r\n      const syn = findings",
+      "replace(/\\r\\n?/g,\"\\n\")",
+      "?;\\n]+[",
+      "?;\\n]+|",
+      "theme?",
+      "chunking?",
+      "startsWith(\"debug\")){\r\n    const errTok = /\\b(error|exception|fail(ed)?)\\b/i",
+      "graphRules ? theme",
+      "*?-->/g,''); // hide AI tags in UI\r\n  const host = $(\"#planHost\");\r\n  host",
+      "severity==='error'?'err':f"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "< … open=true);\r\n</script>\r\n</body>\r\n</html>",
+    "key_insights": [],
+    "action_items": [
+      "2\"/>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"panel\">\r\n      <label>Raw Input</label>\r\n      <textarea id=\"rawIn\" placeholder=\"Paste chaotic input here (text/code/symbols)…\"></textarea>\r\n      <div class=\"row\" style=\"margin-top:8px\">\r\n        <button id=\"captureBtn\">Capture + Fingerprint</button>\r\n        <button id=\"normalizeBtn\">Normalize</button>\r\n      </div>\r\n      <div class=\"small\" id=\"fingerprintInfo\">SHA-256: —</div>\r\n    </div>\r\n\r\n    <div class=\"panel\">\r\n      <label>Run Pipeline</label>\r\n      <div class=\"row\">\r\n        <button id=\"chunkBtn\">Chunk</button>\r\n        <button id=\"categorizeBtn\">Categorize</button>\r\n        <button id=\"graphBtn\">Build Graph</button>\r\n      </div>\r\n      <div class=\"row\" style=\"margin-top:8px\">\r\n        <button id=\"snapshotBtn\">Save Snapshot</button>\r\n        <button id=\"iterateBtn\">Iterate</button>\r\n      </div>\r\n      <div class=\"row\" style=\"margin-top:8px\">\r\n        <button id=\"exportNdjsonBtn\">Export NDJSON</button>\r\n        <button id=\"exportBundleBtn\">Export Bundle</button>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"panel\">\r\n      <label>Fold/Expand</label>\r\n      <div class=\"row\">\r\n        <button id=\"foldAll\">Fold all</button>\r\n        <button id=\"expandAll\">Expand all</button>\r\n      </div>\r\n    </div>\r\n  </aside>\r\n\r\n  <section>\r\n    <",
+      "2\",\r\n    visual: {edgeGlow:\"#55d3c2\", fade:\"#2a395f\"},\r\n    taxonomy: {\r\n      errors: {\r\n        E_SYN_MISS_DELIM: \"Missing delimiter\",\r\n        E_SEM_CONTRADICTION: \"Contradictory claim\",\r\n        E_REF_OFFSET: \"Bad offset reference\"\r\n      }\r\n    },\r\n    chunking: {\r\n      // theme-specific regex markers (very light demo)\r\n      thematicPatterns: [\r\n        {code:\"T_CONTRA\", desc:\"Explicit contradiction markers\", re:/\\b(contradict|paradox|inconsistent)\\b/ig},\r\n        {code:\"T_ASSERT\", desc:\"Hard assertions\", re:/\\b(always|never|must|cannot)\\b/ig}\r\n      ]\r\n    },\r\n    graphRules: function(findings, chunks){\r\n      // Simple rule: contradictions cause downstream warnings\r\n      const edges=[];\r\n      const contraIds = findings",
+      "createElement(tag);\r\n  Object",
+      "replace(/[\\x00-\\x08\\x0B\\x0C\\x0E-\\x1F\\x7F]/g,\"\");\r\n  return n;\r\n}\r\n\r\nfunction buildOffsetMap(raw, norm){\r\n  // Simple character-walk mapper (for demo)",
+      "For production, build span mapping per line",
+      "push({\r\n        id: stableId(\"e\", ++n),\r\n        code: \"E_THE_PATTERN\",\r\n        severity: \"warn\",\r\n        chunk_ref: null,\r\n        explain: \"Error-like tokens present\",\r\n        suggest: \"Check stack traces and adjacent lines\"\r\n      });\r\n    }\r\n  }\r\n\r\n  return findings;\r\n}\r\n\r\n/* =========================\r\n   GRAPH\r\n========================= */\r\nfunction buildGraph(findings, chunks, theme){\r\n  return theme",
+      "createElement(\"a\");\r\n  a",
+      "createObjectURL(blob);\r\n  a",
+      "-- AI:STEP:3 --> [STATUS: ⬜]\r\n_Summary:_ NFC normalize, newline standardize, build raw↔norm offsets",
+      "</details>\r\n_Result:_\r\n_Expansion:_\r\n\r\n# 6) Build Causal Graph <"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b9c0eccb215933cd60ea73632d951b14"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:28.375Z",
+    "source_text_length": 5436,
+    "word_count": 521,
+    "sentence_count": 66,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "17fa7ef6e28b74f446634fad20e63903",
+    "entropy_level": 0.888,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "CoTOT.json",
+      "processing_timestamp": "2025-08-11T05:05:28.375Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 51,
+        "significance": "0.0979",
+        "examples": [
+          "__init__(self,"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 25,
+        "significance": "0.0480",
+        "examples": [
+          "\"output\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 15,
+        "significance": "0.0288",
+        "examples": [
+          "entropy-based\r\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 14,
+        "significance": "0.0269",
+        "examples": [
+          "contract.\r\n"
+        ]
+      },
+      {
+        "theme": "dict",
+        "frequency": 9,
+        "significance": "0.0173",
+        "examples": [
+          "Dict,"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 9,
+        "significance": "0.0173",
+        "examples": [
+          "\"phase\":"
+        ]
+      },
+      {
+        "theme": "datetime",
+        "frequency": 7,
+        "significance": "0.0134",
+        "examples": [
+          "datetime\r\nimport"
+        ]
+      },
+      {
+        "theme": "append",
+        "frequency": 7,
+        "significance": "0.0134",
+        "examples": [
+          "self.thought_ledger.append({\r\n"
+        ]
+      },
+      {
+        "theme": "random",
+        "frequency": 6,
+        "significance": "0.0115",
+        "examples": [
+          "random\r\nimport"
+        ]
+      },
+      {
+        "theme": "reasoning_chain",
+        "frequency": 6,
+        "significance": "0.0115",
+        "examples": [
+          "self.reasoning_chain:"
+        ]
+      },
+      {
+        "theme": "thought_ledger",
+        "frequency": 6,
+        "significance": "0.0115",
+        "examples": [
+          "self.thought_ledger:"
+        ]
+      },
+      {
+        "theme": "plan",
+        "frequency": 6,
+        "significance": "0.0115",
+        "examples": [
+          "self.plan()\r\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "02  # Starting entropy\r\n        \r\n        w",
+        "statement_b": "self",
+        "line": 12,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.23"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "import random\r\nimport datetime\r\nimport json\r\nimport hashlib\r\nfrom typing import Dict, Any, List\r\n\r\nclass XLogicEngine:\r\n    \"\"\"\r\n    A simulated reasoning engine that uses a cyclical process and an entropy-based\r\n    mutation system to solve problems defined by a contract \r\n    \"\"\"\r\n    def __init__(self, config: Dict[str, Any] = None):\r\n        self...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "execute()\r\n            self",
+        "urgency_score": "0.85",
+        "feasibility_score": "0.24"
+      },
+      {
+        "action": "1)\r\n\r\n    def plan(self):\r\n        \"\"\"Generates a plan of action",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": "2)\r\n\r\n    def execute(self):\r\n        \"\"\"Executes the planned operations",
+        "urgency_score": "0.17",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "\"\"\"\r\n        output = \"Executed operations in parallel sandboxes",
+        "urgency_score": "0.17",
+        "feasibility_score": "0.52"
+      },
+      {
+        "action": "append({\"phase\": \"Execute\", \"output\": output})\r\n        self",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.72"
+      },
+      {
+        "action": "update_ledger(\"Execute\", \"execute_plan\", output)\r\n        self",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "15))  # Stabilize\r\n\r\n    def mutate_branch(self):\r\n        \"\"\"Creates a new reasoning branch due to high entropy",
+        "urgency_score": "0.48",
+        "feasibility_score": "0.87"
+      },
+      {
+        "action": "\"\"\"\r\n        output = \"Entropy high; created branch mutation",
+        "urgency_score": "0.87",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "append(entry)\r\n\r\n    def generate_bundle(self, contract: Dict[str, Any]) -> Dict[str, Any]:\r\n        \"\"\"Creates the final output bundle with verification seal",
+        "urgency_score": "0.92",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "isoformat()}\",\r\n            \"created\": datetime",
+        "urgency_score": "0.02",
+        "feasibility_score": "0.68"
+      }
+    ],
+    "unresolved_tensions": [
+      "02  # Starting entropy\r\n        \r\n        w vs self"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.2968,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.82",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "17fa7ef6e28b74f446634fad20e63903"
+  }
+}

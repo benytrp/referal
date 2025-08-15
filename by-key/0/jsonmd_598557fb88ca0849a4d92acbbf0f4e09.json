@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:26.509Z",
+    "source_text_length": 377,
+    "word_count": 63,
+    "sentence_count": 6,
+    "entropy_level": 0.974,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "if_then_therefore_chain_builder_single_file_html_v_1.html"
+    },
+    "anchor_id": "598557fb88ca0849a4d92acbbf0f4e09"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "chain",
+        "frequency": 3
+      },
+      {
+        "theme": "clear",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "then",
+        "frequency": 2
+      },
+      {
+        "theme": "therefore",
+        "frequency": 2
+      },
+      {
+        "theme": "step",
+        "frequency": 2
+      },
+      {
+        "theme": "copy",
+        "frequency": 2
+      },
+      {
+        "theme": "narrative",
+        "frequency": 2
+      },
+      {
+        "theme": "data",
+        "frequency": 2
+      },
+      {
+        "theme": "builder",
+        "frequency": 1
+      },
+      {
+        "theme": "fill",
+        "frequency": 1
+      },
+      {
+        "theme": "three",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "IF–THEN–THEREFORE Chain Builder v1 … Designed for keyboard flow and accessibility",
+    "key_insights": [],
+    "action_items": [
+      "IF–THEN–THEREFORE Chain Builder v1"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "598557fb88ca0849a4d92acbbf0f4e09"
+  }
+}

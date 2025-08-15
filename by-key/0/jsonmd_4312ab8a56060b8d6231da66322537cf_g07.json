@@ -1,0 +1,351 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:19.514Z",
+    "source_text_length": 125,
+    "word_count": 16,
+    "entropy_level": 0.985,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "4312ab8a56060b8d6231da66322537cf"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "aegis",
+        "frequency": 2
+      },
+      {
+        "theme": "inquiry",
+        "frequency": 2
+      },
+      {
+        "theme": "autonomous",
+        "frequency": 1
+      },
+      {
+        "theme": "entity",
+        "frequency": 1
+      },
+      {
+        "theme": "general",
+        "frequency": 1
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 1
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      },
+      {
+        "theme": "process",
+        "frequency": 1
+      },
+      {
+        "theme": "response",
+        "frequency": 1
+      },
+      {
+        "theme": "awaiting",
+        "frequency": 1
+      },
+      {
+        "theme": "user",
+        "frequency": 1
+      },
+      {
+        "theme": "beacon",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEGIS Autonomous Entity for General Inquiry and Synthesis (Offline) Process Inquiry > AEGIS Response: Awaiting user beacon",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.138,
+    "cognitive_load_estimate": 0.00625,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.877,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 2,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.754,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 3,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.631,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 4,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.508,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 5,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.384,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 6,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.261,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 7,
+        "entropy": 0.985,
+        "contradictions": 0,
+        "novelty_index": 0.138,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aegis",
+              "frequency": 2
+            },
+            {
+              "theme": "inquiry",
+              "frequency": 2
+            },
+            {
+              "theme": "autonomous",
+              "frequency": 1
+            },
+            {
+              "theme": "entity",
+              "frequency": 1
+            },
+            {
+              "theme": "general",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.306
+      }
+    ],
+    "quality_score": 30
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.01,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_studio_code (18).html",
+      "bytes": 9557,
+      "lastModified": 1754552434920
+    }
+  }
+}

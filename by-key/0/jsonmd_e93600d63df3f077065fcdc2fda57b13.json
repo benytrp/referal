@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:04.875Z",
+    "source_text_length": 1051,
+    "word_count": 145,
+    "sentence_count": 9,
+    "entropy_level": 0.955,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "chunk_reflector_i_statement_hasher_offline_single_file.html"
+    },
+    "anchor_id": "e93600d63df3f077065fcdc2fda57b13"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "chunk",
+        "frequency": 9
+      },
+      {
+        "theme": "export",
+        "frequency": 5
+      },
+      {
+        "theme": "title",
+        "frequency": 4
+      },
+      {
+        "theme": "text",
+        "frequency": 3
+      },
+      {
+        "theme": "statements",
+        "frequency": 3
+      },
+      {
+        "theme": "hashes",
+        "frequency": 3
+      },
+      {
+        "theme": "bundle",
+        "frequency": 3
+      },
+      {
+        "theme": "index",
+        "frequency": 3
+      },
+      {
+        "theme": "statement",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "behavior",
+        "frequency": 2
+      },
+      {
+        "theme": "hashlist",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Chunk Reflector I‑Statement Hasher Paste text → chunk → auto-generate I‑statements → compute per‑chunk hashes → compose a proof bundle or behavior … hashlist Draft Chunks & I‑Statements #TitlePreviewI‑Statementhash_of_instruction Seals & Export Mobius‑style seal (ordered concat of instruction hashes) – Bundle export Export JSON Bundle Export CSV (index,title,hash)",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e93600d63df3f077065fcdc2fda57b13"
+  }
+}

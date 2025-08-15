@@ -1,0 +1,130 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:38.390Z",
+    "anchor_id": "5c02f9f3cb4724fd9be86a1071977f520881f2223e7247dd8d2ee2a6cb713a29",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.783,
+    "contradictions_detected": 4,
+    "word_count": 1280
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 33
+      },
+      {
+        "theme": "items",
+        "frequency": 24
+      },
+      {
+        "theme": "entropy",
+        "frequency": 22
+      },
+      {
+        "theme": "text",
+        "frequency": 20
+      },
+      {
+        "theme": "contested",
+        "frequency": 19
+      },
+      {
+        "theme": "cycle",
+        "frequency": 18
+      },
+      {
+        "theme": "output",
+        "frequency": 16
+      },
+      {
+        "theme": "function",
+        "frequency": 15
+      },
+      {
+        "theme": "phase",
+        "frequency": 14
+      },
+      {
+        "theme": "textcontent",
+        "frequency": 14
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "NArray(text){ let i = text.indexOf('['); if (i === -1) throw new Error('No JSON array found.'); let depth = 0, inStr = false, esc = false; for ("
+      },
+      {
+        "idx": 1,
+        "sample": "parse(slice); } } } } throw new Error('Unbalanced brackets; could not locate full JSON array.'); } function tryLenient(text){ // Trim lea"
+      },
+      {
+        "idx": 2,
+        "sample": "on parseInput(){ const t = rawEl.value.trim(); if (!t) throw new Error('Nothing to parse. Paste your session data first.'); if ($('#lenient').checke"
+      },
+      {
+        "idx": 3,
+        "sample": "rseInput(); if (!Array.isArray(items)) throw new Error('Parsed payload is not an array.'); // Normalize types and keys items = items.map(x=>({"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getAttribute('data-theme') === 'light' ?",
+      "else if (ch === '[') { if (depth === 0) i = (i === -1 ?",
+      "replace(/^```[a-zA-Z]*\\n?",
+      "cycle ??",
+      "'?",
+      "entropy==='number'?",
+      "contested?",
+      "entropy==='number'?",
+      "contested?",
+      "cycle ??",
+      "'?",
+      "length ?",
+      "__DATA__ = ${data ?",
+      "color = isErr ?",
+      "cycle ??"
+    ],
+    "summary": "const, items, entropy, text, contested"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "iterative_refinement_offline_translator_debugged.html",
+    "relative_path": "iterative_refinement_offline_translator_debugged.html",
+    "size_bytes": 17291,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.8
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.682
+- Word Count: 286
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:29.803Z",
+  "original_file": "5c02f9f3cb4724fd9be86a1071977f520881f2223e7247dd8d2ee2a6cb713a29.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

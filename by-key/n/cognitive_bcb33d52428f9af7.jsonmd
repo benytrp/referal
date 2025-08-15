@@ -1,0 +1,186 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:51.262Z",
+    "source_text_length": 2815,
+    "word_count": 242,
+    "sentence_count": 9,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bcb33d52428f9af7aa4b61e2fdcf7dc8",
+    "entropy_level": 0.957,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_a314d2957c6cc5183f7cdb484c998927.json",
+      "processing_timestamp": "2025-08-11T05:13:51.262Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0331",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0331",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "anchors",
+        "frequency": 5,
+        "significance": "0.0207",
+        "examples": [
+          "\"anchors\",\n"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 4,
+        "significance": "0.0165",
+        "examples": [
+          "\"anchor_id\":"
+        ]
+      },
+      {
+        "theme": "begin_again",
+        "frequency": 4,
+        "significance": "0.0165",
+        "examples": [
+          "\"begin_again\",\n"
+        ]
+      },
+      {
+        "theme": "handshake",
+        "frequency": 4,
+        "significance": "0.0165",
+        "examples": [
+          "\"handshake\",\n"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 3,
+        "significance": "0.0124",
+        "examples": [
+          "\"session_bootstrapper_anchor_protocol_offline_html.html\",\n"
+        ]
+      },
+      {
+        "theme": "recursion",
+        "frequency": 3,
+        "significance": "0.0124",
+        "examples": [
+          "\"recursion\",\n"
+        ]
+      },
+      {
+        "theme": "depth",
+        "frequency": 3,
+        "significance": "0.0124",
+        "examples": [
+          "\"depth\",\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 3,
+        "significance": "0.0124",
+        "examples": [
+          "\"contract\",\n"
+        ]
+      },
+      {
+        "theme": "technical",
+        "frequency": 2,
+        "significance": "0.0083",
+        "examples": [
+          "Technical"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 2,
+        "significance": "0.0083",
+        "examples": [
+          "paradox"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "again",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "… 3) Runbook · Optimal session Emotional handshake: curious + respectful Technical handshake: contract + paradox Policy gate: SHIP / ITERATE / ROLLBACK Scratchpad\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–B",
+        "statement_b": "Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt",
+        "line": 6,
+        "tension_type": "explicit_contradiction",
+        "severity": "1.00"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:54...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … 3) Runbook · Optimal session Emotional handshake: curious + respectful Technical handshake: contract + paradox Policy gate: SHIP / ITERATE / ROLLBACK Scratchpad\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–BUT) Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt",
+        "urgency_score": "0.08",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": "41,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.38"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.16574999999999998,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.09",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "bcb33d52428f9af7aa4b61e2fdcf7dc8"
+  }
+}

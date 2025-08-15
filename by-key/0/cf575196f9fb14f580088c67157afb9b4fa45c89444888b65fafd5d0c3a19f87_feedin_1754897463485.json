@@ -1,0 +1,185 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:39.522Z",
+    "anchor_id": "cf575196f9fb14f580088c67157afb9b4fa45c89444888b65fafd5d0c3a19f87",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.626,
+    "contradictions_detected": 14,
+    "word_count": 3235
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 160
+      },
+      {
+        "theme": "editor",
+        "frequency": 129
+      },
+      {
+        "theme": "document",
+        "frequency": 90
+      },
+      {
+        "theme": "function",
+        "frequency": 78
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 72
+      },
+      {
+        "theme": "content",
+        "frequency": 72
+      },
+      {
+        "theme": "currenttab",
+        "frequency": 70
+      },
+      {
+        "theme": "tabs",
+        "frequency": 46
+      },
+      {
+        "theme": "value",
+        "frequency": 46
+      },
+      {
+        "theme": "length",
+        "frequency": 39
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": ".focus(); document.getElementById('replace-input').style.display = 'none'; } function showReplaceDialog() { document.ge"
+      },
+      {
+        "idx": 1,
+        "sample": "ialog() { document.getElementById('search-dialog').style.display = 'none'; clearSearchHighlight(); } function findNext("
+      },
+      {
+        "idx": 2,
+        "sample": "Status('Found'); } else { updateFileStatus('Not found'); } } } function findPre"
+      },
+      {
+        "idx": 3,
+        "sample": "dateFileStatus('Found'); } else { updateFileStatus('Not found'); } } function replaceNext() {"
+      },
+      {
+        "idx": 4,
+        "sample": "id] || bookmarks[currentTab.id].size === 0) { updateFileStatus('No bookmarks'); return; } const editor"
+      },
+      {
+        "idx": 5,
+        "sample": "bookmarksList.innerHTML = '<div style=\"color: #666; font-style: italic;\">No bookmarks</div>'; return; } const bo"
+      },
+      {
+        "idx": 6,
+        "sample": "functionList.innerHTML = '<div style=\"color: #666; font-style: italic;\">No functions found</div>'; return; } fu"
+      },
+      {
+        "idx": 7,
+        "sample": "!sidebarVisible; sidebar.style.display = sidebarVisible ? 'flex' : 'none'; updateFileStatus(`Sidebar ${sidebarVisible ? 'shown' : 'hidde"
+      },
+      {
+        "idx": 8,
+        "sample": "isible; lineNumbers.style.display = lineNumbersVisible ? 'block' : 'none'; updateFileStatus(`Line numbers ${lineNumbersVisible ? 'shown'"
+      },
+      {
+        "idx": 9,
+        "sample": "minimapVisible; minimap.style.display = minimapVisible ? 'block' : 'none'; updateFileStatus(`Minimap ${minimapVisible ? 'shown' : 'hidde"
+      },
+      {
+        "idx": 10,
+        "sample": "fy(sessionData)); } catch (e) { console.warn('Could not save session to localStorage:', e); } } functio"
+      },
+      {
+        "idx": 11,
+        "sample": "} } catch (e) { console.warn('Could not load session from localStorage:', e); } } // Ut"
+      },
+      {
+        "idx": 12,
+        "sample": "Id); dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; } function closeDropdowns() { docu"
+      },
+      {
+        "idx": 13,
+        "sample": "ll('.dropdown').forEach(dropdown => { dropdown.style.display = 'none'; }); } function updateFileStatus(message) {"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "if (confirm('Reload file?",
+      "Close anyway?",
+      "if (confirm('Close all tabs?",
+      "modified ?",
+      "substring(lineStart, lineEnd === -1 ?",
+      "substring(0, lineEnd === -1 ?",
+      "(lineEnd === -1 ?",
+      "substring(0, lineStart === 0 ?",
+      "(lineEnd === -1 ?",
+      "toUpperCase() ?",
+      "let searchContent = matchCase ?",
+      "let searchFor = matchCase ?",
+      "const regex = new RegExp(searchFor, matchCase ?",
+      "let searchContent = matchCase ?",
+      "let searchFor = matchCase ?"
+    ],
+    "summary": "const, editor, document, function, getelementbyid"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "notepad-plus-clone.html",
+    "relative_path": "notepad-plus-clone.html",
+    "size_bytes": 60544,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.87
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 367
+- Complexity score: 100.0
+- Key themes: sample, style, theme, frequency, function, display, none, updatefilestatus, const, document
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of sample?
+2. How does sample connect to broader patterns?
+3. What are the deeper implications of style?
+4. How does style connect to broader patterns?
+5. What are the deeper implications of theme?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: sample, style, theme
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: sample
+This theme emerges as significant in generation 0. Consider how sample relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: style
+This theme emerges as significant in generation 0. Consider how style relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

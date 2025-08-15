@@ -1,0 +1,161 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:40:10.015Z",
+    "source_text_length": 206,
+    "word_count": 25,
+    "sentence_count": 4,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "968337e0e73e8d39496587b37e4e4dbf",
+    "entropy_level": 0.98,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:40:10.015Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 2,
+        "significance": "0.0800",
+        "examples": [
+          "[2025-08-11T05:39:30.691Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 2,
+        "significance": "0.0800",
+        "examples": [
+          "[2025-08-11T05:39:30.691Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 2,
+        "significance": "0.0800",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 2,
+        "significance": "0.0800",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "691z",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "[2025-08-11T05:39:30.691Z]"
+        ]
+      },
+      {
+        "theme": "x_logic_consciousness_framework_single_file_offline_app_v_1",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "x_logic_consciousness_framework_single_file_offline_app_v_1.html\n[2025-08-11T05:39:31.571Z]"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "x_logic_consciousness_framework_single_file_offline_app_v_1.html\n[2025-08-11T05:39:31.571Z]"
+        ]
+      },
+      {
+        "theme": "571z",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "x_logic_consciousness_framework_single_file_offline_app_v_1.html\n[2025-08-11T05:39:31.571Z]"
+        ]
+      },
+      {
+        "theme": "dual",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "DUAL"
+        ]
+      },
+      {
+        "theme": "super",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "SUPER"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "BRIDGE"
+        ]
+      },
+      {
+        "theme": "protocol_",
+        "frequency": 1,
+        "significance": "0.0400",
+        "examples": [
+          "PROTOCOL_"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:39:30 691Z] skip(blacklist) x_logic_consciousness_framework_single_file_offline_app_v_1...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.0103,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "14 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.40",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "968337e0e73e8d39496587b37e4e4dbf"
+  }
+}

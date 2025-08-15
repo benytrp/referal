@@ -1,0 +1,200 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:35.503Z",
+    "source_text_length": 6947,
+    "word_count": 691,
+    "sentence_count": 61,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "0d21a6888f6e84500e575d0768a67623",
+    "entropy_level": null,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "orca_share_media1754511153204_7358953147935691171 (1).html",
+      "processing_timestamp": "2025-08-11T05:05:35.503Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "color",
+        "frequency": 21,
+        "significance": "0.0304",
+        "examples": [
+          "--border-color:"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 15,
+        "significance": "0.0217",
+        "examples": [
+          "--text-main:"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 13,
+        "significance": "0.0188",
+        "examples": [
+          "--border-color:"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 12,
+        "significance": "0.0174",
+        "examples": [
+          "constructor()"
+        ]
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 10,
+        "significance": "0.0145",
+        "examples": [
+          "contradictions"
+        ]
+      },
+      {
+        "theme": "line",
+        "frequency": 9,
+        "significance": "0.0130",
+        "examples": [
+          ".glyph-line"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 8,
+        "significance": "0.0116",
+        "examples": [
+          "Bridge"
+        ]
+      },
+      {
+        "theme": "panel",
+        "frequency": 8,
+        "significance": "0.0116",
+        "examples": [
+          "--bg-panel:"
+        ]
+      },
+      {
+        "theme": "width",
+        "frequency": 7,
+        "significance": "0.0101",
+        "examples": [
+          "content=\"width=device-width,"
+        ]
+      },
+      {
+        "theme": "main",
+        "frequency": 7,
+        "significance": "0.0101",
+        "examples": [
+          "--bg-main:"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 7,
+        "significance": "0.0101",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "downloadlink",
+        "frequency": 7,
+        "significance": "0.0101",
+        "examples": [
+          "#downloadLink"
+        ]
+      }
+    ],
+    "key_questions": [
+      "calculateEntropy(line, contradictions);\n                    \n                    return {\n                        layer_id: index + 1,\n                        phase: index === 0 ? \"Summon\" : \"Echo\",\n                        timestamp: new Date(Date"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "toFixed(2));\n            }\n\n            detectContradictions(text) {\n                const keywords = /\\b(not|b",
+        "statement_b": "however|yet|paradox|although|vs)\\b/gi;\n                return (text",
+        "line": 51,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.44"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 6,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\" />\n    <title>AEON Bridge Maker v1</title>\n    <style>\n        :root {\n            --bg-main: #0d1117; --bg-panel: #161b22; --text-main: #c9d1d9;\n            --text-accent: #58a6ff; --border-color: #30363d; --glyph-color: #ffd700;\n            --success-color: #3fb950; --error-color: #f85149;\n        }\n        body { font-family: 'Courier New', monospace; background-color: var(--bg-main); color: var(--text-main); margin: 0; padding: 1rem; }\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " The system will transmute it into a structured, recursive bridge file",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.13"
+      },
+      {
+        "action": " Each new line will become a distinct memory layer",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "generateBridge()\">Generate Bridge File</button>\n        </div>\n\n        <div class=\"panel\" id=\"output-panel\">\n            <h2>📤 Output: Generated Bridge Scroll</h2>\n            <textarea id=\"bridgeOutput\" readonly placeholder=\"Your generated json_md_fusion_scroll will appear here",
+        "urgency_score": "0.70",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "now()}`,\n                    format: \"json_md_fusion_scroll\",\n                    created: new Date()",
+        "urgency_score": "0.61",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "createObjectURL(blob);\n                this",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.58"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.37235,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.32",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 5 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0d21a6888f6e84500e575d0768a67623"
+  }
+}

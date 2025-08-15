@@ -1,0 +1,104 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:49.129Z",
+    "source_text_length": 5295,
+    "word_count": 586,
+    "sentence_count": 185,
+    "entropy_level": 0.917,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (53).html"
+    },
+    "anchor_id": "e73fb72b6cf981e80518d13284f9bed9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 15
+      },
+      {
+        "theme": "prompt",
+        "frequency": 12
+      },
+      {
+        "theme": "artifact",
+        "frequency": 10
+      },
+      {
+        "theme": "artifactdiv",
+        "frequency": 10
+      },
+      {
+        "theme": "name",
+        "frequency": 9
+      },
+      {
+        "theme": "self",
+        "frequency": 8
+      },
+      {
+        "theme": "_addtochatlog",
+        "frequency": 7
+      },
+      {
+        "theme": "introspect",
+        "frequency": 6
+      },
+      {
+        "theme": "match",
+        "frequency": 6
+      },
+      {
+        "theme": "functions",
+        "frequency": 6
+      },
+      {
+        "theme": "target",
+        "frequency": 6
+      },
+      {
+        "theme": "window",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [
+      "length > 0 ? results[0]"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "🔬 AEON-PRIME v2 … run(); }; });",
+    "key_insights": [],
+    "action_items": [
+      "createElement('button'); btn",
+      "createElement('div'); artifactDiv"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e73fb72b6cf981e80518d13284f9bed9"
+  }
+}

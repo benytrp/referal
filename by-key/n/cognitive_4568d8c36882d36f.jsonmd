@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:59.179Z",
+    "timestamp": "2025-08-11T05:52:57.766Z",
     "source_text_length": 2127,
     "word_count": 152,
     "sentence_count": 10,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "4568d8c36882d36ff9928f6ad4bb63d2",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "d9191f60d93e35af5357b28dad38a40c5d93675ab86ed63751eed9689c18e877.json",
-      "processing_timestamp": "2025-08-11T15:15:59.179Z",
+      "processing_timestamp": "2025-08-11T05:52:57.766Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -149,8 +149,8 @@
     "action_items": [
       {
         "action": "75,\n    \"contradictions_detected\": 1,\n    \"word_count\": 1377\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"state\",\n        \"frequency\": 49\n      },\n      {\n        \"theme\": \"const\",\n        \"frequency\": 45\n      },\n      {\n        \"theme\": \"div\",\n        \"frequency\": 24\n      },\n      {\n        \"theme\": \"name\",\n        \"frequency\": 19\n      },\n      {\n        \"theme\": \"target\",\n        \"frequency\": 18\n      },\n      {\n        \"theme\": \"timer\",\n        \"frequency\": 16\n      },\n      {\n        \"theme\": \"save\",\n        \"frequency\": 16\n      },\n      {\n        \"theme\": \"session\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"file\",\n        \"frequency\": 14\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"Launcher state persists in localStorage • No network calls • Designed for your offline kit",
-        "urgency_score": "0.47",
-        "feasibility_score": "0.98"
+        "urgency_score": "0.19",
+        "feasibility_score": "0.68"
       }
     ],
     "unresolved_tensions": []
@@ -165,9 +165,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.71",
+    "confidence_level": "0.08",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 1 actions"
     ],

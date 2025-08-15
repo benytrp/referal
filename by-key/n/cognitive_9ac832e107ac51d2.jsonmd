@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:36.048Z",
+    "timestamp": "2025-08-11T05:52:55.714Z",
     "source_text_length": 2899,
     "word_count": 262,
     "sentence_count": 19,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "9ac832e107ac51d26bbc4d7e8c45d515",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "6e692b61ae0cfac8484c0f1c3dd5d272195c8da8f145669da6c24876e50acccb.json",
-      "processing_timestamp": "2025-08-11T15:15:36.048Z",
+      "processing_timestamp": "2025-08-11T05:52:55.714Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -146,13 +146,13 @@
     "action_items": [
       {
         "action": "\"\n    ],\n    \"summary\": \"var, data, key, class, function\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 7,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"unified_e3_builder (2)",
-        "urgency_score": "0.78",
-        "feasibility_score": "0.07"
+        "urgency_score": "0.11",
+        "feasibility_score": "0.63"
       },
       {
         "action": "html\",\n    \"relative_path\": \"unified_e3_builder (2)",
-        "urgency_score": "0.65",
-        "feasibility_score": "0.49"
+        "urgency_score": "0.41",
+        "feasibility_score": "0.37"
       }
     ],
     "unresolved_tensions": []
@@ -167,9 +167,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.68",
+    "confidence_level": "0.24",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 2 actions"
     ],

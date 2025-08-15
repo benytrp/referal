@@ -1,0 +1,367 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:39.920Z",
+    "source_text_length": 563,
+    "word_count": 79,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "580175144096c6e99dc8f6e516f35178"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "mission",
+        "frequency": 3
+      },
+      {
+        "theme": "project",
+        "frequency": 3
+      },
+      {
+        "theme": "letter",
+        "frequency": 2
+      },
+      {
+        "theme": "proposal",
+        "frequency": 2
+      },
+      {
+        "theme": "organization",
+        "frequency": 2
+      },
+      {
+        "theme": "amount",
+        "frequency": 2
+      },
+      {
+        "theme": "funding",
+        "frequency": 2
+      },
+      {
+        "theme": "contact",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "concise",
+        "frequency": 1
+      },
+      {
+        "theme": "cover",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Write a concise cover letter for a grant proposal … Address it as if to a general program officer unless specific contact is known",
+    "key_insights": [],
+    "action_items": [
+      "Use a respectful, professional tone and close with contact info or next steps"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.155,
+    "cognitive_load_estimate": 0.02815,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.879,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 2,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.758,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 3,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.638,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 4,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.517,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 5,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.396,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 6,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.276,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      },
+      {
+        "generation": 7,
+        "entropy": 0.966,
+        "contradictions": 0,
+        "novelty_index": 0.155,
+        "action_items": [
+          "Use a respectful, professional tone and close with contact info or next steps"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "mission",
+              "frequency": 3
+            },
+            {
+              "theme": "project",
+              "frequency": 3
+            },
+            {
+              "theme": "letter",
+              "frequency": 2
+            },
+            {
+              "theme": "proposal",
+              "frequency": 2
+            },
+            {
+              "theme": "organization",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.344
+      }
+    ],
+    "quality_score": 33
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.06,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "GrantWriter-Automation/Prompts/coverletter.txt",
+      "bytes": 565,
+      "lastModified": 1753579495370
+    }
+  }
+}

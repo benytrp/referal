@@ -1,0 +1,62 @@
+{
+  "topic": "llm-training",
+  "recency_days": 7,
+  "limit": 20,
+  "generated_at": "2025-08-11T10:05:38.143Z",
+  "sources": [
+    {
+      "id": "src_1",
+      "title": "Large language model",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language"
+    },
+    {
+      "id": "src_2",
+      "title": "List of large language models",
+      "url": "https://en.wikipedia.org/wiki/List_of_large_language_models",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "language model (LLM) is a type of machine learning model designed for natural language processing tasks such as language generation. LLMs are language models"
+    },
+    {
+      "id": "src_3",
+      "title": "Moonshot AI",
+      "url": "https://en.wikipedia.org/wiki/Moonshot_AI",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "for LLM Training&quot;, the researchers claim to have successfully scaled the Muon optimizer, which was previously known to have strong results in training small"
+    },
+    {
+      "id": "src_4",
+      "title": "Llama (language model)",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "Llama (Large Language Model Meta AI) is a family of large language models (LLMs) released by Meta AI starting in February 2023. The latest version is Llama"
+    },
+    {
+      "id": "src_5",
+      "title": "Machine learning",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "reason to be concerned that the data set used for testing overlaps the LLM training data set, making it possible that the Chinchilla 70B model is only an"
+    },
+    {
+      "id": "src_6",
+      "title": "Wiley (publisher)",
+      "url": "https://en.wikipedia.org/wiki/Wiley_(publisher)",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:05:23.978Z",
+      "query": "LLM Training",
+      "snippet": "purpose of training Large Language Models (LLMs) and that authors would not have the option to &quot;opt out&quot; of including their work in these training data sets"
+    }
+  ]
+}

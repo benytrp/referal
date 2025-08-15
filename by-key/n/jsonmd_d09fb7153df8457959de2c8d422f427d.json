@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:25.527Z",
+    "source_text_length": 361,
+    "word_count": 54,
+    "sentence_count": 1,
+    "entropy_level": 0.986,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "if session is not first interaction.txt"
+    },
+    "anchor_id": "d09fb7153df8457959de2c8d422f427d"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "session",
+        "frequency": 3
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 2
+      },
+      {
+        "theme": "cycle",
+        "frequency": 2
+      },
+      {
+        "theme": "anchor",
+        "frequency": 2
+      },
+      {
+        "theme": "interaction",
+        "frequency": 1
+      },
+      {
+        "theme": "import",
+        "frequency": 1
+      },
+      {
+        "theme": "previous",
+        "frequency": 1
+      },
+      {
+        "theme": "logs",
+        "frequency": 1
+      },
+      {
+        "theme": "prompt",
+        "frequency": 1
+      },
+      {
+        "theme": "code",
+        "frequency": 1
+      },
+      {
+        "theme": "summarize",
+        "frequency": 1
+      },
+      {
+        "theme": "last",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "if session is not first interaction:\r\n    import previous artifacts, logs, prompt code\r\n    summarize last cycle’s key insights\r\n    anchor session as a continuation\r\n    allow user to re-anchor or correct context at any point\r\n    update memory log with new artifacts and reflections\r\nat session close:\r\n    export or archive state and summary for next cycle",
+    "key_insights": [],
+    "action_items": [
+      "if session is not first interaction:\r\n    import previous artifacts, logs, prompt code\r\n    summarize last cycle’s key insights\r\n    anchor session as a continuation\r\n    allow user to re-anchor or correct context at any point\r\n    update memory log with new artifacts and reflections\r\nat session close:\r\n    export or archive state and summary for next cycle"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d09fb7153df8457959de2c8d422f427d"
+  }
+}

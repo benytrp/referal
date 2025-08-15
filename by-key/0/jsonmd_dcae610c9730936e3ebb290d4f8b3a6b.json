@@ -1,0 +1,108 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:24.556Z",
+    "source_text_length": 2588,
+    "word_count": 282,
+    "sentence_count": 39,
+    "entropy_level": 0.934,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon-self-reflector (4).html"
+    },
+    "anchor_id": "dcae610c9730936e3ebb290d4f8b3a6b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function",
+        "frequency": 17
+      },
+      {
+        "theme": "depth",
+        "frequency": 9
+      },
+      {
+        "theme": "const",
+        "frequency": 7
+      },
+      {
+        "theme": "return",
+        "frequency": 7
+      },
+      {
+        "theme": "self",
+        "frequency": 6
+      },
+      {
+        "theme": "functions",
+        "frequency": 5
+      },
+      {
+        "theme": "generatebutton",
+        "frequency": 5
+      },
+      {
+        "theme": "document",
+        "frequency": 4
+      },
+      {
+        "theme": "button",
+        "frequency": 4
+      },
+      {
+        "theme": "buttons",
+        "frequency": 4
+      },
+      {
+        "theme": "wrapper",
+        "frequency": 4
+      },
+      {
+        "theme": "aeon",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "AEON • Self-Identifying Recursive Function Engine ∴ φ ↱ Functions: 0 Generators: 0 Self-Refs: 0 📝 JSON Function Registry { \"aeon_function_registry\": { \"timestamp\": \"2025-08-05T01:10:29 … ∴ ↱ ↰ ∴",
+    "key_insights": [],
+    "action_items": [
+      "674Z\", \"self_identifier\": \"AEON-FUNC-001\", \"functions\": { \"generateButton\": \"function(label, id, action) { const btn = document",
+      "createElement('button'); btn",
+      "onclick = new Function(action); return btn; }\", \"identifyFunctions\": \"function() { const funcs = []; document",
+      "getAttribute('data-function-id'))); return funcs; }\", \"createIdentifier\": \"function(type, index) { return type",
+      "createIdentifier('REC', depth), 'alert(\\\"Recursion depth: ' + depth + '\\\")'); document",
+      "repeat(depth) + '├─ '; }\", \"createFunctionButton\": \"function(funcName, funcBody, id) { const wrapper = document",
+      "createElement('div'); wrapper",
+      "The system will identify all functions, generate buttons for them, and create indented hierarchies showing their relationships"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "dcae610c9730936e3ebb290d4f8b3a6b"
+  }
+}

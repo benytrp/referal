@@ -1,0 +1,153 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.025Z",
+    "source_text_length": 197,
+    "word_count": 19,
+    "sentence_count": 2,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "585e87e13677d64e92ef8702755a1f95",
+    "entropy_level": 0.993,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e3-data-export-BC-2025081005332237.json",
+      "processing_timestamp": "2025-08-11T05:05:29.025Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"BC-2025081005332237\",\n"
+        ]
+      },
+      {
+        "theme": "batchid",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"batchId\":"
+        ]
+      },
+      {
+        "theme": "2025081005332237",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"BC-2025081005332237\",\n"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "10t09",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"2025-08-10T09:35:40.236Z\",\n"
+        ]
+      },
+      {
+        "theme": "236z",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"2025-08-10T09:35:40.236Z\",\n"
+        ]
+      },
+      {
+        "theme": "singledata",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"singleData\":"
+        ]
+      },
+      {
+        "theme": "participant_name",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"participant_name\":"
+        ]
+      },
+      {
+        "theme": "bulkdata",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"bulkData\":"
+        ]
+      },
+      {
+        "theme": "totalrecords",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"totalRecords\":"
+        ]
+      },
+      {
+        "theme": "systementropy",
+        "frequency": 1,
+        "significance": "0.0526",
+        "examples": [
+          "\"systemEntropy\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"batchId\": \"BC-2025081005332237\",\n  \"timestamp\": \"2025-08-10T09:35:40 236Z\",\n  \"singleData\": {\n    \"participant_name\": \"bob\"\n  },\n  \"bulkData\": [],\n  \"totalRecords\": 0,\n  \"systemEntropy\": 0...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.00985,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "11 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.99",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "585e87e13677d64e92ef8702755a1f95"
+  }
+}

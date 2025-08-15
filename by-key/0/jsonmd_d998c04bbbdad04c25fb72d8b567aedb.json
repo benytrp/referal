@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:54.576Z",
+    "source_text_length": 794,
+    "word_count": 115,
+    "sentence_count": 12,
+    "entropy_level": 0.974,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (99).html"
+    },
+    "anchor_id": "d998c04bbbdad04c25fb72d8b567aedb"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "params",
+        "frequency": 4
+      },
+      {
+        "theme": "schema",
+        "frequency": 3
+      },
+      {
+        "theme": "required",
+        "frequency": 3
+      },
+      {
+        "theme": "success",
+        "frequency": 3
+      },
+      {
+        "theme": "criteria",
+        "frequency": 3
+      },
+      {
+        "theme": "optional",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "preview",
+        "frequency": 3
+      },
+      {
+        "theme": "lite",
+        "frequency": 2
+      },
+      {
+        "theme": "strict",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — Bridge Lite v3 ❌ Needs fixes Strict: OFF Schema: lite-1 Strict export Generate Run ID Project / Task Name Task name is required … json) — — — —",
+    "key_insights": [],
+    "action_items": [
+      "max_tokens) Must include sections (chips) Add Preview must match (regex, optional) Preview forbidden (regex, optional) Export Report ("
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d998c04bbbdad04c25fb72d8b567aedb"
+  }
+}

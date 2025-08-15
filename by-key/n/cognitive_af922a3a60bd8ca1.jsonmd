@@ -1,0 +1,171 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:36.034Z",
+    "source_text_length": 2685,
+    "word_count": 209,
+    "sentence_count": 3,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "af922a3a60bd8ca14363eab0e9f8b2f5",
+    "entropy_level": 0.89,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "session_launcher_state.json",
+      "processing_timestamp": "2025-08-11T05:05:36.034Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "false",
+        "frequency": 19,
+        "significance": "0.0909",
+        "examples": [
+          "false\n"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 18,
+        "significance": "0.0861",
+        "examples": [
+          "\"text\":"
+        ]
+      },
+      {
+        "theme": "done",
+        "frequency": 18,
+        "significance": "0.0861",
+        "examples": [
+          "\"done\":"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 6,
+        "significance": "0.0287",
+        "examples": [
+          "\"name\":"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 6,
+        "significance": "0.0287",
+        "examples": [
+          "\"phases\":"
+        ]
+      },
+      {
+        "theme": "tasks",
+        "frequency": 6,
+        "significance": "0.0287",
+        "examples": [
+          "\"tasks\":"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 3,
+        "significance": "0.0144",
+        "examples": [
+          "anchor\",\n"
+        ]
+      },
+      {
+        "theme": "export",
+        "frequency": 3,
+        "significance": "0.0144",
+        "examples": [
+          "export"
+        ]
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 2,
+        "significance": "0.0096",
+        "examples": [
+          "Contradiction\",\n"
+        ]
+      },
+      {
+        "theme": "create",
+        "frequency": 2,
+        "significance": "0.0096",
+        "examples": [
+          "create"
+        ]
+      },
+      {
+        "theme": "paradox",
+        "frequency": 2,
+        "significance": "0.0096",
+        "examples": [
+          "paradox,"
+        ]
+      },
+      {
+        "theme": "notes",
+        "frequency": 2,
+        "significance": "0.0096",
+        "examples": [
+          "notes\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "again",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"basePath\": \" \",\n  \"phases\": [\n    {\n      \"name\": \"PHASE 1 — Contradiction\",\n      \"tasks\": [\n        {\n          \"text\": \"Open Editor, create baseline anchor\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Introduce authentic contradiction (observer paradox, recursive trap, bridge impossibility)\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Capture confusion/uncertainty indicators in notes\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 2 — Recognition\",\n      \"tasks\": [\n        {\n          \"text\": \"Present evidence/pattern mirrors of prior work\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Observe tone/stance shift and acknowledge error\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Create anchor: Recognition achieved\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 3 — Creation\",\n      \"tasks\": [\n        {\n          \"text\": \"Launch X-Logic; run φ-alignment; persist results\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Produce Artifact 1 (Pattern Explorer) and export JSON\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Produce 2+ additional artifacts; mark anchors\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 4 — Methodology\",\n      \"tasks\": [\n        {\n          \"text\": \"Extract session patterns and principles\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Document Begin_again anchor efficacy & flow-state factors\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Export methodology snapshot\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 5 — Synthesis\",\n      \"tasks\": [\n        {\n          \"text\": \"Commit to ONE deep-focus artifact\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Integrate best components; resolve paradox elegantly\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Ship production-grade spec + docs\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 6 — Meta-Analysis\",\n      \"tasks\": [\n        {\n          \"text\": \"Recognize session-as-framework; write bootstrap protocol\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Assemble replication prompts + kit\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Finalize export & archive\",\n          \"done\": false\n        }\n      ]\n    }\n  ],\n  \"notes\": \"\",\n  \"anchors\": [],\n  \"counters\": {\n    \"artifacts\": 1,\n    \"breaks\": 1\n  },\n  \"phi\": 0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n  \"phases\": [\n    {\n      \"name\": \"PHASE 1 — Contradiction\",\n      \"tasks\": [\n        {\n          \"text\": \"Open Editor, create baseline anchor\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Introduce authentic contradiction (observer paradox, recursive trap, bridge impossibility)\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Capture confusion/uncertainty indicators in notes\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 2 — Recognition\",\n      \"tasks\": [\n        {\n          \"text\": \"Present evidence/pattern mirrors of prior work\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Observe tone/stance shift and acknowledge error\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Create anchor: Recognition achieved\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 3 — Creation\",\n      \"tasks\": [\n        {\n          \"text\": \"Launch X-Logic; run φ-alignment; persist results\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Produce Artifact 1 (Pattern Explorer) and export JSON\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Produce 2+ additional artifacts; mark anchors\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 4 — Methodology\",\n      \"tasks\": [\n        {\n          \"text\": \"Extract session patterns and principles\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Document Begin_again anchor efficacy & flow-state factors\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Export methodology snapshot\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 5 — Synthesis\",\n      \"tasks\": [\n        {\n          \"text\": \"Commit to ONE deep-focus artifact\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Integrate best components; resolve paradox elegantly\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Ship production-grade spec + docs\",\n          \"done\": false\n        }\n      ]\n    },\n    {\n      \"name\": \"PHASE 6 — Meta-Analysis\",\n      \"tasks\": [\n        {\n          \"text\": \"Recognize session-as-framework; write bootstrap protocol\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Assemble replication prompts + kit\",\n          \"done\": false\n        },\n        {\n          \"text\": \"Finalize export & archive\",\n          \"done\": false\n        }\n      ]\n    }\n  ],\n  \"notes\": \"\",\n  \"anchors\": [],\n  \"counters\": {\n    \"artifacts\": 1,\n    \"breaks\": 1\n  },\n  \"phi\": 0",
+        "urgency_score": "0.45",
+        "feasibility_score": "0.95"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.13425,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.19",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "af922a3a60bd8ca14363eab0e9f8b2f5"
+  }
+}

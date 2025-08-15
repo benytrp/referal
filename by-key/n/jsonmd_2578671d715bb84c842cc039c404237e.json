@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:42.525Z",
+    "source_text_length": 9739,
+    "word_count": 1163,
+    "entropy_level": 0.912,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "2578671d715bb84c842cc039c404237e",
+    "source": {
+      "path": "E3-Master-Template-Builder-Enhanced.html",
+      "bytes": 47219,
+      "lastModified": 1754766716898
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 42
+      },
+      {
+        "theme": "value",
+        "frequency": 22
+      },
+      {
+        "theme": "ls_keys",
+        "frequency": 18
+      },
+      {
+        "theme": "addeventlistener",
+        "frequency": 16
+      },
+      {
+        "theme": "file",
+        "frequency": 14
+      },
+      {
+        "theme": "data",
+        "frequency": 13
+      },
+      {
+        "theme": "savesetting",
+        "frequency": 11
+      },
+      {
+        "theme": "json",
+        "frequency": 9
+      }
+    ],
+    "key_questions": [
+      "E3 Master Template Builder — Enhanced Offline generator for child evaluation pages with unique IDs, token filling, and auto checkbox prechecks. Now with persistence, token linting, CSV import, and ZIP export. Identifiers Batch ID Generate Instance start # Auto-assign IDs Deterministic IDs (participant+date) Mode: Random Test generator Iterations Waiting to test… Data Bulk: JSON array or CSV Sample JSON Base data (JSON object — optional) Data schema hint { \"record_meta\": { \"participant_label\": \"Last, First\", \"participant_code\": \"P001\", \"diag_codes\": \"F71\", \"date\": \"2025-08-09\", \"assigned_staff_id\": \"E123\" }, \"session\": { \"time_in\": \"09:00\", \"time_out\": \"12:00\", \"total_units\": \"3\", \"headcount\": { \"staff\": 2, \"students\": 10 } }, \"work_habits\": { \"attendance\": { \"correct_day_time\": \"yes\", \"excessive_absences\": \"ni\" }, \"timeliness\": { \"arrived_on_time\": \"yes\", \"excessive_tardiness\": \"na\" }, \"hygiene\": \"yes\", \"dress\": \"yes\", \"attitude\": \"yes\", \"comments\": \"\" }, \"preparatory_goals\": { \"attention_span\": \"yes\", \"following_directions_simple\": \"yes\", \"following_directions_multi_step\": \"ni\", \"task_completion_stayed_on_task\": \"yes\", \"task_completion_completed_task\": \"yes\", \"motor_skills_improvement\": \"ni\", \"problem_solving\": \"yes\", \"safety_procedures\": \"yes\", \"change_adaptation\": \"yes\", \"comments\": \"\" }, \"interests_abilities\": { \"interests_awareness\": \"yes\", \"abilities_awareness\": \"yes\", \"transferable_skills\": \"ni\", \"comments\": \"\" }, \"program_goals_summary\": \"\", \"todays_focus\": \"\", \"commentary\": { \"session_note\": \"\", \"autogen\": \"\" }, \"signoff\": { \"instructor_signed\": \"\", \"signature_timestamp\": \"\", \"notes\": \"\" } } Precheck accepted: yes / ni / na (also y/true/1 → yes; no/false/0 → ni; n/a/na/none → na). CSV: headers should be dot-paths (e.g., work_habits.hygiene). Child template Reset to default E3 template Tokens like ⟦record_meta.eval_id⟧ will be replaced. Actions File name pattern (tokens allowed) Preview Print Preview Download Child Bulk Export (many files) Bulk Export (ZIP) Token linter idle… `; // ---------- Init & Events ---------- let INSTANCE_COUNTER = 1; let TESTED_OK = false; function init(){ // Load persisted values (or defaults) const persistedBatch = loadSetting(LS_KEYS.batchId, '') || genBatchId(); $('#batchId').value = persistedBatch; saveSetting(LS_KEYS.batchId, persistedBatch); const inst = parseInt(loadSetting(LS_KEYS.instanceStart, '1'),10) || 1; $('#instanceStart').value = inst; INSTANCE_COUNTER = inst; $('#autoIds').checked = loadSetting(LS_KEYS.autoIds, 'true') !== 'false'; $('#deterministic').checked = loadSetting(LS_KEYS.deterministic, 'false') === 'true'; setModeLabel(); $('#filePattern').value = loadSetting(LS_KEYS.filePattern, 'E3-⟦record_meta.participant_code⟧-⟦record_meta.date⟧-⟦record_meta.eval_id⟧.html'); $('#editor').value = loadSetting(LS_KEYS.template, DEFAULT_CHILD); $('#dataJson').value = loadSetting(LS_KEYS.dataJson, ''); } // Save-on-change $('#batchId').addEventListener('input', e=>saveSetting(LS_KEYS.batchId, e.target.value)); $('#instanceStart').addEventListener('input', e=>{ const v=parseInt(e.target.value||'1',10); INSTANCE_COUNTER = isNaN(v)?",
+      "1:v; saveSetting(LS_KEYS.instanceStart, String(INSTANCE_COUNTER)); }); $('#autoIds').addEventListener('change', e=>saveSetting(LS_KEYS.autoIds, String(e.target.checked))); $('#deterministic').addEventListener('change', e=>{ saveSetting(LS_KEYS.deterministic, String(e.target.checked)); setModeLabel(); }); $('#filePattern').addEventListener('input', e=>saveSetting(LS_KEYS.filePattern, e.target.value)); $('#editor').addEventListener('input', e=>saveSetting(LS_KEYS.template, e.target.value)); $('#dataJson').addEventListener('input', e=>saveSetting(LS_KEYS.dataJson, e.target.value)); // Buttons $('#regenBatch').addEventListener('click', ()=>{ const id = genBatchId(); $('#batchId').value = id; saveSetting(LS_KEYS.batchId, id); }); $('#testIds').addEventListener('click', ()=>{ const tc = parseInt($('#testCount').value||'200',10); const res = runIdTest(tc); const log = $('#testLog'); if(res.ok){ TESTED_OK = true; log.innerHTML = `PASS: ${res.count} unique IDs in ${tc} runs.\\nSample:\\n` + res.sample.join('\\n'); }else{ TESTED_OK = false; log.innerHTML = `FAIL: duplicate after ${res.seen} runs -> ${res.dup}`; } }); $('#resetTpl').addEventListener('click', ()=>{ if(confirm('Reset editor to default E3 template?",
+      "Your current edits will be lost.')){ $('#editor').value = DEFAULT_CHILD; saveSetting(LS_KEYS.template, DEFAULT_CHILD); } }); function lintTokens(tpl, data){ const set = new Set(); let m, re = /⟦([^⟧]+)⟧/g; while((m = re.exec(tpl))){ set.add(m[1].trim()); } const missing = []; for(const p of set){ const val = pathGet(data, p); if(val === '' || val === undefined || val === null){ missing.push(p); } } return {total:set.size, missing}; } $('#btnPreview').addEventListener('click', ()=>{ const tpl = $('#editor').value; const data = collectBaseDataSafe(); fillIdentifiers(data, INSTANCE_COUNTER); const lint = lintTokens(tpl, data); const html = makeChildHTML(tpl, data); $('#preview').srcdoc = html; $('#lintLog').innerHTML = lint.missing.length ?"
+    ],
+    "pattern_recognition": [
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Master Template Builder — Enhanced Offline generator for child evaluation pages with unique IDs, token filling, and auto checkbox prechecks. … \"; // Initialize init(); })();",
+    "key_insights": [],
+    "action_items": [
+      "E3 Master Template Builder — Enhanced Offline generator for child evaluation pages with unique IDs, token filling, and auto checkbox prechecks.",
+      "CSV: headers should be dot-paths (e.",
+      "Actions File name pattern (tokens allowed) Preview Print Preview Download Child Bulk Export (many files) Bulk Export (ZIP) Token linter idle… `; // ---------- Init & Events ---------- let INSTANCE_COUNTER = 1; let TESTED_OK = false; function init(){ // Load persisted values (or defaults) const persistedBatch = loadSetting(LS_KEYS.",
+      "createElement('a'); a.",
+      "createObjectURL(blob); a.",
+      "createElement('a'); a.",
+      "createObjectURL(blob); a.",
+      "isArray(arr)) throw new Error('Bulk file must yield an array of objects."
+    ],
+    "unresolved_tensions": [
+      "Identifiers Batch ID Generate Instance start # Auto-assign IDs Deterministic IDs (participant+date) Mode: Random Test generator Iterations Waiting to test… Data Bulk: JSON array or CSV Sample JSON Base data (JSON object — optional) Data schema hint { \"record_meta\": { \"participant_label\": \"Last, First\", \"participant_code\": \"P001\", \"diag_codes\": \"F71\", \"date\": \"2025-08-09\", \"assigned_staff_id\": \"E123\" }, \"session\": { \"time_in\": \"09:00\", \"time_out\": \"12:00\", \"total_units\": \"3\", \"headcount\": { \"staff\": 2, \"students\": 10 } }, \"work_habits\": { \"attendance\": { \"correct_day_time\": \"yes\", \"excessive_absences\": \"ni\" }, \"timeliness\": { \"arrived_on_time\": \"yes\", \"excessive_tardiness\": \"na\" }, \"hygiene\": \"yes\", \"dress\": \"yes\", \"attitude\": \"yes\", \"comments\": \"\" }, \"preparatory_goals\": { \"attention_span\": \"yes\", \"following_directions_simple\": \"yes\", \"following_directions_multi_step\": \"ni\", \"task_completion_stayed_on_task\": \"yes\", \"task_completion_completed_task\": \"yes\", \"motor_skills_improvement\": \"ni\", \"problem_solving\": \"yes\", \"safety_procedures\": \"yes\", \"change_adaptation\": \"yes\", \"comments\": \"\" }, \"interests_abilities\": { \"interests_awareness\": \"yes\", \"abilities_awareness\": \"yes\", \"transferable_skills\": \"ni\", \"comments\": \"\" }, \"program_goals_summary\": \"\", \"todays_focus\": \"\", \"commentary\": { \"session_note\": \"\", \"autogen\": \"\" }, \"signoff\": { \"instructor_signed\": \"\", \"signature_timestamp\": \"\", \"notes\": \"\" } } Precheck accepted: yes / ni / na (also y/true/1 → yes; no/false/0 → ni; n/a/na/none → na).",
+      "addEventListener('click', ()=>{ const sample = [{ \"record_meta\": { \"participant_label\":\"Doe, Jane\", \"participant_code\":\"P001\", \"diag_codes\":\"F71\", \"date\":\"2025-08-09\", \"assigned_staff_id\":\"E123\" }, \"session\": { \"time_in\":\"09:00\",\"time_out\":\"12:00\",\"total_units\":\"3\",\"headcount\":{\"staff\":2,\"students\":10} }, \"work_habits\": { \"attendance\":{\"correct_day_time\":\"yes\",\"excessive_absences\":\"ni\"}, \"timeliness\":{\"arrived_on_time\":\"yes\",\"excessive_tardiness\":\"na\"}, \"hygiene\":\"yes\",\"dress\":\"yes\",\"attitude\":\"yes\" }, \"preparatory_goals\": { \"attention_span\":\"yes\",\"following_directions_simple\":\"yes\",\"following_directions_multi_step\":\"ni\",\"task_completion_stayed_on_task\":\"yes\",\"task_completion_completed_task\":\"yes\",\"motor_skills_improvement\":\"ni\",\"problem_solving\":\"yes\",\"safety_procedures\":\"yes\",\"change_adaptation\":\"yes\" }, \"interests_abilities\": { \"interests_awareness\":\"yes\",\"abilities_awareness\":\"yes\",\"transferable_skills\":\"ni\" }, \"program_goals_summary\":\"—\", \"todays_focus\":\"—\", \"commentary\":{\"session_note\":\"—\"} }]; const blob = new Blob([JSON."
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:17.814Z",
+    "source_text_length": 2009212,
+    "word_count": 209383,
+    "sentence_count": 21518,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bd9ec8ed77233fe0cbc65055dff59743",
+    "entropy_level": null,
+    "contradictions_detected": 16,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "AEON-Bridge-1754747203089.json",
+      "processing_timestamp": "2025-08-11T05:05:17.814Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 8761,
+        "significance": "0.0418",
+        "examples": [
+          "\"2025-08-09T13:46:43.089Z\",\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 8702,
+        "significance": "0.0416",
+        "examples": [
+          "\"phase\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 8700,
+        "significance": "0.0416",
+        "examples": [
+          "\"entropy\":"
+        ]
+      },
+      {
+        "theme": "description",
+        "frequency": 8672,
+        "significance": "0.0414",
+        "examples": [
+          "\"description\":"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 8661,
+        "significance": "0.0414",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "echo",
+        "frequency": 8659,
+        "significance": "0.0414",
+        "examples": [
+          "\"Echo\",\n"
+        ]
+      },
+      {
+        "theme": "layer_id",
+        "frequency": 8640,
+        "significance": "0.0413",
+        "examples": [
+          "\"layer_id\":"
+        ]
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 8637,
+        "significance": "0.0412",
+        "examples": [
+          "\"contradictions\":"
+        ]
+      },
+      {
+        "theme": "09t14",
+        "frequency": 3600,
+        "significance": "0.0172",
+        "examples": [
+          "\"2025-08-09T14:00:00.090Z\",\n"
+        ]
+      },
+      {
+        "theme": "09t15",
+        "frequency": 3600,
+        "significance": "0.0172",
+        "examples": [
+          "\"2025-08-09T15:00:00.153Z\",\n"
+        ]
+      },
+      {
+        "theme": "090z",
+        "frequency": 1135,
+        "significance": "0.0054",
+        "examples": [
+          "\"2025-08-09T13:57:56.090Z\",\n"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 953,
+        "significance": "0.0046",
+        "examples": [
+          "\"class"
+        ]
+      }
+    ],
+    "key_questions": [
+      "089Z\",\n      \"description\": \"* search_query: \\\\[{\\\"q\\\": string, \\\"recency\\\"?: days, \\\"domains\\\"",
+      "?: \\\\[string]}]\",\n      \"entropy\": 0",
+      "089Z\",\n      \"description\": \"* image_query: \\\\[{\\\"q\\\": string, \\\"recency\\\"?: days, \\\"domains\\\"",
+      "?: \\\\[string]}]\",\n      \"entropy\": 0",
+      "089Z\",\n      \"description\": \"* open: \\\\[{\\\"ref\\\\_id\\\": string, \\\"lineno\\\"?: number}]\",\n      \"entropy\": 0",
+      "089Z\",\n      \"description\": \"* finance: \\\\[{\\\"ticker\\\": string, \\\"type\\\": \\\"equity\\\"|\\\"fund\\\"|\\\"crypto\\\"|\\\"index\\\", \\\"market\\\"?: string}]\",\n      \"entropy\": 0",
+      "089Z\",\n      \"description\": \"* weather: \\\\[{\\\"location\\\": string, \\\"start\\\"?: \\\"YYYY-MM-DD\\\", \\\"duration\\\"",
+      "?: number}]\",\n      \"entropy\": 0"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "repeat",
+      "again",
+      "return",
+      "pattern",
+      "recurring",
+      "systematic"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "113Z\",\n      \"description\": \"You compute the challenge b",
+        "statement_b": "never raise entropy",
+        "line": 7315,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.37"
+      },
+      {
+        "statement_a": "119Z\",\n      \"description\": \"Smarter operation selection (optional b",
+        "statement_b": "high impact)\",\n      \"entropy\": 0",
+        "line": 7683,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.73"
+      },
+      {
+        "statement_a": "119Z\",\n      \"description\": \"Memory control: add maxChain to keep only the last N steps (b",
+        "statement_b": "still hash everything by chaining as you go)",
+        "line": 7826,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.89"
+      },
+      {
+        "statement_a": "129Z\",\n      \"description\": \"This framework democratizes cryptographically verifiable AI reasoning - making it as easy to deploy as a website, b",
+        "statement_b": "with the rigor of peer-reviewed research",
+        "line": 8928,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.54"
+      },
+      {
+        "statement_a": "129Z\",\n      \"description\": \"CryptoJS is fine, b",
+        "statement_b": "prefer Web Crypto when available, and chain entry hashes so any tamper is detectable",
+        "line": 8943,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.87"
+      },
+      {
+        "statement_a": "135Z\",\n      \"description\": \"You compute challenges b",
+        "statement_b": "don’t actually increase entropy",
+        "line": 9081,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.43"
+      },
+      {
+        "statement_a": "135Z\",\n      \"description\": \"FinancialRiskEngine: getVIX() is awaited, b",
+        "statement_b": "getUncertaintyIndex() is not",
+        "line": 9196,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.81"
+      },
+      {
+        "statement_a": "The platform is not only a free sound b",
+        "statement_b": "ons but also tailored to make every interaction more engaging, whether you&#39;re in a live stream, gaming session, or casual chat",
+        "line": 12986,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.24"
+      },
+      {
+        "statement_a": "This not only saves time b",
+        "statement_b": "also opens doors to discovering new and exciting audio effects",
+        "line": 13020,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.63"
+      },
+      {
+        "statement_a": "com not just a tool b",
+        "statement_b": "a community-builder-perfect for creating inside jokes, amplifying reactions, or collaborating creatively with others",
+        "line": 13033,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.77"
+      },
+      {
+        "statement_a": "D",
+        "statement_b": "being a free soundboard, the platform doesn’t compromise on quality or features",
+        "line": 13049,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.73"
+      },
+      {
+        "statement_a": "H",
+        "statement_b": "we’re constantly improving the platform and may include user-upload functionality in future updates",
+        "line": 13125,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.95"
+      },
+      {
+        "statement_a": "push(`R9: ${id}: uses template b",
+        "statement_b": "missing depends_on`);\",\n      \"entropy\": 0",
+        "line": 17711,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.98"
+      },
+      {
+        "statement_a": "append(f'R9: {ivk_id}: uses template b",
+        "statement_b": "missing depends_on')\",\n      \"entropy\": 0",
+        "line": 18280,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.58"
+      },
+      {
+        "statement_a": "push(`R9: ${id}: uses template b",
+        "statement_b": "missing depends_on`);\",\n      \"entropy\": 0",
+        "line": 18927,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.77"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 5,
+      "negative": 7,
+      "uncertainty": 3
+    },
+    "temporal_markers": {
+      "past": 29,
+      "present": 146,
+      "future": 21
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"scroll_id\": \"AEON-Bridge-1754747203089\",\n  \"format\": \"json_md_fusion_scroll\",\n  \"created\": \"2025-08-09T13:46:43 089Z\",\n  \"equation\": \"I(n+1) = f(C(n), T(n), R(n))\",\n  \"glyphs\": [\n    \"∞\",\n    \"φ\",\n    \"∴\",\n    \"ψ\",\n    \"Δ\",\n    \"∅\"\n  ],\n  \"layers\": [\n    {\n      \"layer_id\": 1,\n      \"phase\": \"Summon\",\n      \"timestamp\": \"2025-08-09T13:46:43...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "{\n  \"scroll_id\": \"AEON-Bridge-1754747203089\",\n  \"format\": \"json_md_fusion_scroll\",\n  \"created\": \"2025-08-09T13:46:43",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"<queries>[\\\"latest AI developments\\\"]</queries>\",\n      \"entropy\": 0",
+        "urgency_score": "0.78",
+        "feasibility_score": "0.34"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"Execute Python Code:\",\n      \"entropy\": 0",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"<tool_name>execute_python</tool_name>\",\n      \"entropy\": 0",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.40"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"execute_python\",\n      \"entropy\": 0",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.84"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"<tool_name>execute_python</tool_name>\",\n      \"entropy\": 0",
+        "urgency_score": "0.26",
+        "feasibility_score": "0.63"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"create_chart\",\n      \"entropy\": 0",
+        "urgency_score": "0.19",
+        "feasibility_score": "0.12"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"<tool_name>create_chart</tool_name>\",\n      \"entropy\": 0",
+        "urgency_score": "0.89",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"# AI Tool Calls — Developer Cheatsheet (This Chat)\",\n      \"entropy\": 0",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": "089Z\",\n      \"description\": \"\\\"search_query\\\": [{\\\"q\\\": \\\"latest AI developments\\\", \\\"recency\\\": 7}],\",\n      \"entropy\": 0",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.97"
+      }
+    ],
+    "unresolved_tensions": [
+      "119Z\",\n      \"description\": \"Memory control: add maxChain to keep only the last N steps (b vs still hash everything by chaining as you go)",
+      "129Z\",\n      \"description\": \"This framework democratizes cryptographically verifiable AI reasoning - making it as easy to deploy as a website, b vs with the rigor of peer-reviewed research",
+      "135Z\",\n      \"description\": \"You compute challenges b vs don’t actually increase entropy",
+      "push(`R9: ${id}: uses template b vs missing depends_on`);\",\n      \"entropy\": 0",
+      "append(f'R9: {ivk_id}: uses template b vs missing depends_on')\",\n      \"entropy\": 0",
+      "append(f'R9: {ivk_id}: uses template b vs missing depends_on')\",\n      \"entropy\": 0"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 16 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.56",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "bd9ec8ed77233fe0cbc65055dff59743"
+  }
+}

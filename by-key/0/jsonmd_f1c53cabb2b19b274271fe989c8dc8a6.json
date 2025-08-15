@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:16.054Z",
+    "source_text_length": 733,
+    "word_count": 121,
+    "sentence_count": 10,
+    "entropy_level": 0.972,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "!DOCTcxncPE html.html"
+    },
+    "anchor_id": "f1c53cabb2b19b274271fe989c8dc8a6"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "plan",
+        "frequency": 4
+      },
+      {
+        "theme": "markdown",
+        "frequency": 3
+      },
+      {
+        "theme": "steps",
+        "frequency": 3
+      },
+      {
+        "theme": "export",
+        "frequency": 3
+      },
+      {
+        "theme": "parse",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "load",
+        "frequency": 2
+      },
+      {
+        "theme": "check",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "single",
+        "frequency": 2
+      },
+      {
+        "theme": "file",
+        "frequency": 2
+      },
+      {
+        "theme": "runner",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Load your “# I …” Markdown plan, run steps, self‑check, and export artifacts … Keyboard ready · Offline capable (single file)",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "f1c53cabb2b19b274271fe989c8dc8a6"
+  }
+}

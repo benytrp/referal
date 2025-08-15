@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:27.263Z",
+    "source_text_length": 5661,
+    "word_count": 734,
+    "sentence_count": 30,
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "index (1).html"
+    },
+    "anchor_id": "ac321636fd2e8a1c81018ac37283af8f"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "model",
+        "frequency": 13
+      },
+      {
+        "theme": "models",
+        "frequency": 10
+      },
+      {
+        "theme": "reproducible",
+        "frequency": 9
+      },
+      {
+        "theme": "parallel",
+        "frequency": 9
+      },
+      {
+        "theme": "human",
+        "frequency": 9
+      },
+      {
+        "theme": "benchmarking",
+        "frequency": 8
+      },
+      {
+        "theme": "variance",
+        "frequency": 8
+      },
+      {
+        "theme": "metrics",
+        "frequency": 7
+      },
+      {
+        "theme": "correlation",
+        "frequency": 7
+      },
+      {
+        "theme": "evaluation",
+        "frequency": 6
+      },
+      {
+        "theme": "analysis",
+        "frequency": 6
+      },
+      {
+        "theme": "automated",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Run Card — Model Evaluation Benchmarking Task: Deploy scalable, reproducible AI benchmarking framework Owner: EvalOps Team Urgency: High Tags: evaluation, benchmarking, reproducibility Constraints: <4h/model, p<0 … 9 } }, \"validators\": { \"response_time_ms_max\": 3000, \"must_include\": [ \"Opening Reflection\", \"Problem Space Analysis\", \"Approach Rationale\", \"Model Context Status\", \"Output Requirements\", \"Risks & Mitigations\", \"Next Steps (24\\u201348h, 1\\u20132w, 1\\u20133m)\" ] } } Guardrail Reminder: Use only approved datasets, pin versions for all artifacts, avoid PII exposure, and require human r",
+    "key_insights": [],
+    "action_items": [
+      "05 significance, <5% variance Validation logs (versioned artifacts, logging system) → reproducibility, compliance Next-step plan (project tracker) → scaling, throughput, human-AI correlation targets Format: Concise bullet Markdown, ready for CI/CD integration Risks & Mitigations Throughput degradation → Optimize parallelism, batch size, data streaming Hardware/config drift → Enforce infra-as-code, baseline hardware specs Non-reproducible runs → Version-lock datasets, code, and environment Correlation drop → Human evaluator calibration, double-blind review Next Steps (with exit criteria) 24–48h: Deploy MVP for 2–3 models; exit on p<0",
+      "9 } }, \"validators\": { \"response_time_ms_max\": 3000, \"must_include\": [ \"Opening Reflection\", \"Problem Space Analysis\", \"Approach Rationale\", \"Model Context Status\", \"Output Requirements\", \"Risks & Mitigations\", \"Next Steps (24\\u201348h, 1\\u20132w, 1\\u20133m)\" ] } } Guardrail Reminder: Use only approved datasets, pin versions for all artifacts, avoid PII exposure, and require human review for any high-impact deployment decisions"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ac321636fd2e8a1c81018ac37283af8f"
+  }
+}

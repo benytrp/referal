@@ -1,0 +1,367 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:51.250Z",
+    "source_text_length": 2505,
+    "word_count": 239,
+    "entropy_level": 0.959,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "9dd02d10f38bd75bf10f6e38c558d688"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "date",
+        "frequency": 7
+      },
+      {
+        "theme": "signature",
+        "frequency": 7
+      },
+      {
+        "theme": "public",
+        "frequency": 5
+      },
+      {
+        "theme": "request",
+        "frequency": 4
+      },
+      {
+        "theme": "email",
+        "frequency": 4
+      },
+      {
+        "theme": "affidavit",
+        "frequency": 4
+      },
+      {
+        "theme": "user",
+        "frequency": 3
+      },
+      {
+        "theme": "copies",
+        "frequency": 3
+      },
+      {
+        "theme": "requestor",
+        "frequency": 3
+      },
+      {
+        "theme": "receiving",
+        "frequency": 3
+      },
+      {
+        "theme": "received",
+        "frequency": 3
+      },
+      {
+        "theme": "waiver",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "tension"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 6,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\r\n  \"foia_request_form\": {\r\n    \"title\": \"FOIA Request for Public Records\",\r\n    \"jurisdiction\": \"Michigan Freedom of Information Act, Public Act 442 of 1976, MCL 15 … \"\r\n  }\r\n}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.161,
+    "cognitive_load_estimate": 0.12525,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.88,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 2,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.76,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 3,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.64,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 4,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.52,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 5,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.401,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 6,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.281,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      },
+      {
+        "generation": 7,
+        "entropy": 0.959,
+        "contradictions": 0,
+        "novelty_index": 0.161,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "date",
+              "frequency": 7
+            },
+            {
+              "theme": "signature",
+              "frequency": 7
+            },
+            {
+              "theme": "public",
+              "frequency": 5
+            },
+            {
+              "theme": "request",
+              "frequency": 4
+            },
+            {
+              "theme": "email",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.316
+      }
+    ],
+    "quality_score": 31
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.02,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "GrantWriter-Automation/Prompts/tuid.txt",
+      "bytes": 2513,
+      "lastModified": 1753919339414
+    }
+  }
+}

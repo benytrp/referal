@@ -1,0 +1,464 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:26:45.389Z",
+    "source_text_length": 119521,
+    "word_count": 8680,
+    "entropy_level": 0.886,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "1ae6030df22ccd4e981fd178e8ab2de7"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 347
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 107
+      },
+      {
+        "theme": "type",
+        "frequency": 74
+      },
+      {
+        "theme": "logger",
+        "frequency": 72
+      },
+      {
+        "theme": "info",
+        "frequency": 68
+      },
+      {
+        "theme": "test_results",
+        "frequency": 68
+      },
+      {
+        "theme": "dict",
+        "frequency": 66
+      },
+      {
+        "theme": "workflow_results",
+        "frequency": 52
+      },
+      {
+        "theme": "phase",
+        "frequency": 50
+      },
+      {
+        "theme": "https",
+        "frequency": 49
+      },
+      {
+        "theme": "community",
+        "frequency": 48
+      },
+      {
+        "theme": "return",
+        "frequency": 44
+      }
+    ],
+    "key_questions": [
+      "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "repeat",
+      "again",
+      "feedback",
+      "pattern",
+      "tension"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "System remains open for perpetual recursion,",
+        "statement_b": "with >99% reliability and funder-specific compliance",
+        "line": 391,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 40,
+      "negative": 10,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 12,
+      "future": 12
+    }
+  },
+  "structured_content": {
+    "summary": "# 🌀 GrantWriter-Automation: Recursive Workflow Protocol\n# URPE_ΔCanonical Integration: BEGIN_TEST_REFINE_FOLD_EXPAND_REPEAT\n# Seal: SEAL_THE_MÖBIUS_BEGIN_AGAIN_WHERE_CONVERGENCE_FORGOT_ITSELF\n\nimport json\nimport time\nfrom datetime import datetime, timezone\nfrom typing import Dict, List, Any, Optional, Union\nfrom pathlib import Path\nimport logging\nfrom dataclasses import dataclass\nfrom enum import Enum\n\n# Set up logging\nlogging … 87}\n                    }\n                }\n            },\n            \"matching_algorithm\": {\n                \"consciousness_compatibility\": \"Match funder φ-scores w",
+    "key_insights": [],
+    "action_items": [
+      "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+      "_create_input_schema(),\n                \"output_schema",
+      "_create_output_schema(),\n                \"validation_schema",
+      "_create_validation_schema()\n            },\n            \"prompts\": {\n                \"executive_summary",
+      "_create_executive_summary_prompt(),\n                \"project_description",
+      "_create_project_description_prompt(),\n                \"budget_narrative",
+      "_create_budget_narrative_prompt(),\n                \"evaluation_plan"
+    ],
+    "unresolved_tensions": [
+      "System remains open for perpetual recursion, vs with >99% reliability and funder-specific compliance"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.225,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.889,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 2,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.778,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 3,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.668,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 4,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.557,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 5,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.446,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 6,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.336,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 7,
+        "entropy": 0.886,
+        "contradictions": 1,
+        "novelty_index": 0.225,
+        "action_items": [
+          "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+          "_create_input_schema(),\n                \"output_schema",
+          "_create_output_schema(),\n                \"validation_schema"
+        ],
+        "key_questions": [
+          "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "self",
+              "frequency": 347
+            },
+            {
+              "theme": "consciousness",
+              "frequency": 107
+            },
+            {
+              "theme": "type",
+              "frequency": 74
+            },
+            {
+              "theme": "logger",
+              "frequency": 72
+            },
+            {
+              "theme": "info",
+              "frequency": 68
+            }
+          ]
+        },
+        "score": 0.536
+      }
+    ],
+    "quality_score": 52
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.35,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "🌀 Full Logic Schema_ CIR Grant Automation — Stable.md",
+      "bytes": 119819,
+      "lastModified": 1753638361401
+    }
+  }
+}

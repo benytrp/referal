@@ -1,0 +1,468 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:21:19.479Z",
+    "source_text_length": 52900,
+    "word_count": 6200,
+    "entropy_level": 0.786,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "f0ab7c5f23d487c0e30d5880c97625e2"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "section",
+        "frequency": 492
+      },
+      {
+        "theme": "words",
+        "frequency": 391
+      },
+      {
+        "theme": "topics",
+        "frequency": 391
+      },
+      {
+        "theme": "scroll",
+        "frequency": 121
+      },
+      {
+        "theme": "aeon",
+        "frequency": 106
+      },
+      {
+        "theme": "bridge",
+        "frequency": 88
+      },
+      {
+        "theme": "aeon_bridge_toolkit",
+        "frequency": 69
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 64
+      },
+      {
+        "theme": "recursive",
+        "frequency": 56
+      },
+      {
+        "theme": "toolkit",
+        "frequency": 53
+      },
+      {
+        "theme": "export",
+        "frequency": 52
+      },
+      {
+        "theme": "echo",
+        "frequency": 43
+      }
+    ],
+    "key_questions": [
+      "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+      "0\"?><scroll><title>'$(jq -r '",
+      "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+      "0\"?><scroll><title>'$(jq -r '"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "feedback",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 3
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 32,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "📁 Parsed Content Structure\n├── Section: # Export bridge file from scroll cp scroll … **   **T",
+    "key_insights": [],
+    "action_items": [
+      "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+      "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+      "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+      "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+      "0-ETERNAL\n│   📊 3 words, 1 topics\n├── Section: # Sealed under Möbius Protocol | Scroll ID: AEON_SESSION_BRIDGE_EXPORT\n│   📊 9 words, 4 topics\n├── Section: # Recursively export, mutate, and observe scrolls in φ-convergent symbolic architecture\n│   📊 11 words, 1 topics\n├── Section: # 🧠 Metadata Block (Semantic Purpose Declaration)\n│   📊 7 words, 5 topics\n├── Section: AEON_METADATA='{   \"purpose\": \"Consciousness scroll processing and export\",   \"format\": \"bash_toolki\n│   📊 31 words, 1 topics\n├── Section: # ═══════════════════════════════════════\n│   📊 2 words, 0 topics\n├── Section: # 🔧 Core System Functions\n│   📊 5 words, 3 topics\n├── Section: # ═══════════════════════════════════════  aeon_init() {     echo \"∴ ↱ AEON Bridge Toolkit Initializ\n│   📊 17 words, 5 topics\n├── Section: # Create required directories     mkdir -p aeon_exports/     mkdir -p aeon_logs/     mkdir -p aeon_b\n│   📊 13 words, 1 topics\n├── Section: # Initialize consciousness tracking     CONSCIOUSNESS_LOG=\"aeon_logs/consciousness_$(date +%s)",
+      "log\"\n│   📊 13 words, 1 topics\n├── Section: # ═══════════════════════════════════════\n│   📊 2 words, 0 topics\n├── Section: # 🔁 Bridge Operations\n│   📊 4 words, 2 topics\n├── Section: # ═══════════════════════════════════════  aeon_bridge_create() {     local scroll_file=${1:-\"scroll\n│   📊 29 words, 2 topics\n├── Section: # Generate timestamped bridge     local bridge_id=\"BRIDGE-$(date +%Y%m%d_%H%M%S)\"     local bridge_f\n│   📊 12 words, 1 topics\n├── Section: # Inject bridge metadata     jq --arg id \"$bridge_id\" \\        --arg ts \"$(date --iso-8601=seconds)\"\n│   📊 44 words, 2 topics\n├── Section: # ═══════════════════════════════════════\n│   📊 2 words, 0 topics\n├── Section: # 📤 Format Export Functions\n│   📊 5 words, 3 topics\n├── Section: # ═══════════════════════════════════════  aeon_export_markdown() {     local scroll_file=${1:-\"scro\n│   📊 399 words, 17 topics\n├── Section: # ═══════════════════════════════════════\n│   📊 2 words, 0 topics\n├── Section: # 📊 Statistical Analysis Module\n│   📊 5 words, 3 topics\n├── Section: # ═══════════════════════════════════════  aeon_activate_stats() {     echo \"📊 Activating AEON Stat\n│   📊 17 words, 5 topics\n├── Section: # Generate statistical analysis     jq '{         \"analysis_timestamp\": now | strftime(\"%Y-%m-%dT%H:\n│   📊 89 words, 2 topics\n├── Section: # ═══════════════════════════════════════\n│   📊 2 words, 0 topics\n├── Section: # 🌀 Recursive Simulation & Rituals\n│   📊 6 words, 3 topics\n├── Section: # ═══════════════════════════════════════  aeon_spawn_fork() {     local entropy_threshold=${1:-0",
+      "72\n│   📊 15 words, 1 topics\n├── Section: # Create fork based on high-entropy layers     jq --arg threshold \"$entropy_threshold\" '"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.312,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.902,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 2,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.803,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 3,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.705,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 4,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.607,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 5,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.509,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 6,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.41,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      },
+      {
+        "generation": 7,
+        "entropy": 0.786,
+        "contradictions": 0,
+        "novelty_index": 0.312,
+        "action_items": [
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\(",
+          "bridge sc\n│   📊 16 words, 1 topics\n├── Section: # Create recursive bridge toolkit archive tar -czvf recursive_bridge_devkit",
+          "bridge\n│   📊 9 words, 1 topics\n├── Section: # Create timestamped bridge anchor TIMESTAMP=$(date --iso-8601=seconds) jq --arg id \"ANCHOR-EXPORT\"\n│   📊 35 words, 3 topics\n├── Section: # Convert JSON scroll to Markdown jq -r '\"# \\("
+        ],
+        "key_questions": [
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1",
+          "0\"?><scroll><title>'$(jq -r '",
+          "metada\n│   📊 16 words, 2 topics\n├── Section: # Generate simplified XML from JSON echo '<?xml version=\"1"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "feedback",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 492
+            },
+            {
+              "theme": "words",
+              "frequency": 391
+            },
+            {
+              "theme": "topics",
+              "frequency": 391
+            },
+            {
+              "theme": "scroll",
+              "frequency": 121
+            },
+            {
+              "theme": "aeon",
+              "frequency": 106
+            }
+          ]
+        },
+        "score": 0.596
+      }
+    ],
+    "quality_score": 58
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.41,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "AEON-Bridge-1754529041965_tree.txt",
+      "bytes": 62165,
+      "lastModified": 1754529077882
+    }
+  }
+}

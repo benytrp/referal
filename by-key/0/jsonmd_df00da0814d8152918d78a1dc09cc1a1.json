@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:39.518Z",
+    "source_text_length": 1080,
+    "word_count": 153,
+    "sentence_count": 16,
+    "entropy_level": 0.971,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "README_AEON_Offline_Replicator.md"
+    },
+    "anchor_id": "df00da0814d8152918d78a1dc09cc1a1"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "chaos",
+        "frequency": 4
+      },
+      {
+        "theme": "chunk",
+        "frequency": 4
+      },
+      {
+        "theme": "offline",
+        "frequency": 3
+      },
+      {
+        "theme": "mode",
+        "frequency": 3
+      },
+      {
+        "theme": "download",
+        "frequency": 3
+      },
+      {
+        "theme": "downloads",
+        "frequency": 3
+      },
+      {
+        "theme": "file",
+        "frequency": 2
+      },
+      {
+        "theme": "orchestrator",
+        "frequency": 2
+      },
+      {
+        "theme": "level",
+        "frequency": 2
+      },
+      {
+        "theme": "replication",
+        "frequency": 2
+      },
+      {
+        "theme": "storms",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "# AEON Offline Replicator — Chaos Mode v2 … - Keep the tab focused to minimize OS-level throttling",
+    "key_insights": [],
+    "action_items": [
+      "**Note on downloads:** The app creates temporary object URLs and clicks them programmatically"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "df00da0814d8152918d78a1dc09cc1a1"
+  }
+}

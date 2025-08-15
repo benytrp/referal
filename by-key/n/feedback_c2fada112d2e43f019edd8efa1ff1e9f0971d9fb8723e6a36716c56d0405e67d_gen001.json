@@ -1,0 +1,118 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:42.223Z",
+    "anchor_id": "c2fada112d2e43f019edd8efa1ff1e9f0971d9fb8723e6a36716c56d0405e67d",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.711,
+    "contradictions_detected": 2,
+    "word_count": 1254
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "var",
+        "frequency": 53
+      },
+      {
+        "theme": "data",
+        "frequency": 32
+      },
+      {
+        "theme": "document",
+        "frequency": 27
+      },
+      {
+        "theme": "value",
+        "frequency": 23
+      },
+      {
+        "theme": "function",
+        "frequency": 22
+      },
+      {
+        "theme": "key",
+        "frequency": 21
+      },
+      {
+        "theme": "template",
+        "frequency": 20
+      },
+      {
+        "theme": "counter",
+        "frequency": 17
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 17
+      },
+      {
+        "theme": "html",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "result[fullKey] = 'yes'; } else if (str === 'ni' || str === 'no' || str === 'false' || str === '0') { result[fullKey] = 'ni';"
+      },
+      {
+        "idx": 1,
+        "sample": "fullKey] = 'ni'; } else if (str === 'na' || str === 'n/a' || str === 'none') { result[fullKey] = 'na'; } } } }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "return current == null ?",
+      "var fullKey = prefix ?",
+      "if (confirm('Reset to default template?",
+      "\\n      \\n      \\n        \\n        \\n        \\n        \\n      \\n    ItemYesNIN/AAttendance — Correct day and time?",
+      "Yes\\n        \\n           NI\\n        \\n           N/A\\n        Hygiene — Participant was appropriately groomed?",
+      "Yes\\n        \\n           NI\\n        \\n           N/A\\n        Attitude — Participant exhibited positive attitude?",
+      "\\n      \\n        \\n        \\n        \\n        \\n      \\n    ItemYesNIN/AAttention Span — adequate span for tasks?",
+      "\\n           Yes\\n        \\n           NI\\n        \\n           N/A\\n        Task Completion — stayed on task?",
+      "\\n           Yes\\n        \\n           NI\\n        \\n           N/A\\n        Safety — followed safety procedures?"
+    ],
+    "summary": "var, data, document, value, function"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "was"
+  ],
+  "metadata": {
+    "source_name": "simple_e3_builder (1).html",
+    "relative_path": "simple_e3_builder (1).html",
+    "size_bytes": 17803,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.407
+- Word Count: 294
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:41.622Z",
+  "original_file": "c2fada112d2e43f019edd8efa1ff1e9f0971d9fb8723e6a36716c56d0405e67d.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

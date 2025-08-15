@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:02.348Z",
+    "source_text_length": 1260,
+    "word_count": 178,
+    "sentence_count": 18,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "bridge_lite_v4 (1).html"
+    },
+    "anchor_id": "c668259cbe3738b5f5daa8f32c2f3bfe"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "download",
+        "frequency": 5
+      },
+      {
+        "theme": "schema",
+        "frequency": 4
+      },
+      {
+        "theme": "params",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "preview",
+        "frequency": 4
+      },
+      {
+        "theme": "prompt",
+        "frequency": 3
+      },
+      {
+        "theme": "bridge",
+        "frequency": 3
+      },
+      {
+        "theme": "task",
+        "frequency": 3
+      },
+      {
+        "theme": "required",
+        "frequency": 3
+      },
+      {
+        "theme": "success",
+        "frequency": 3
+      },
+      {
+        "theme": "criteria",
+        "frequency": 3
+      },
+      {
+        "theme": "optional",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — Bridge Lite v4 ❌ Needs fixes Strict: OFF ⚡ Quick Start Presets 🚀 Quick Start 📊 Data Analysis 🔌 API Integration 🔬 Research Task 🏭 Production Deploy ⚙️ Custom Setup Schema: lite-1 Strict export Generate Run ID Project / Task Name Task name is required … txtTXT — Download TXT Minimal \"Run Card\"Markdown — Download Run Card",
+    "key_insights": [],
+    "action_items": [
+      "max_tokens) Must include sections (chips) Add Preview must match (regex, optional) Preview forbidden (regex, optional) Validator errors will appear here"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c668259cbe3738b5f5daa8f32c2f3bfe"
+  }
+}

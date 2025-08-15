@@ -1,0 +1,367 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:25:05.785Z",
+    "source_text_length": 2471,
+    "word_count": 326,
+    "entropy_level": 0.94,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "d9c54a79a95b2a28ba142f0d4b24c17b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "invoke",
+        "frequency": 12
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 11
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 10
+      },
+      {
+        "theme": "parameters",
+        "frequency": 10
+      },
+      {
+        "theme": "local",
+        "frequency": 7
+      },
+      {
+        "theme": "python",
+        "frequency": 7
+      },
+      {
+        "theme": "offline",
+        "frequency": 6
+      },
+      {
+        "theme": "pyodide",
+        "frequency": 6
+      },
+      {
+        "theme": "calls",
+        "frequency": 4
+      },
+      {
+        "theme": "search_local",
+        "frequency": 4
+      },
+      {
+        "theme": "open_file",
+        "frequency": 4
+      },
+      {
+        "theme": "urls",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run … Without it, run_python falls back to a JavaScript sandbox and warns you",
+    "key_insights": [],
+    "action_items": [
+      "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.177,
+    "cognitive_load_estimate": 0.12355,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.883,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 2,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.765,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 3,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.647,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 4,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.53,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 5,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.413,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 6,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.295,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      },
+      {
+        "generation": 7,
+        "entropy": 0.94,
+        "contradictions": 0,
+        "novelty_index": 0.177,
+        "action_items": [
+          "Offline Tool Calls Single‑file • No Internet Favorites Copy: Quick Local Search Copy: Execute Python Copy: Generate Image Mutated Tools (Offline) search_web → search_local fetch_url → open_file execute_python → run_python create_chart → render_chart generate_image → canvas_image search_files → search_local Paste your <function_calls> snippet and hit Run"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "invoke",
+              "frequency": 12
+            },
+            {
+              "theme": "function_calls",
+              "frequency": 11
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 10
+            },
+            {
+              "theme": "parameters",
+              "frequency": 10
+            },
+            {
+              "theme": "local",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.354
+      }
+    ],
+    "quality_score": 34
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.08,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "offline_perplexity_style_tool_runner_single_file_html - Copy.html",
+      "bytes": 31087,
+      "lastModified": 1754738371091
+    }
+  }
+}

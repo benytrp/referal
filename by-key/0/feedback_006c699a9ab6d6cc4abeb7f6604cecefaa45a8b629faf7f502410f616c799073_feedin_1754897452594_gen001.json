@@ -1,0 +1,153 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:29.143Z",
+    "anchor_id": "006c699a9ab6d6cc4abeb7f6604cecefaa45a8b629faf7f502410f616c799073",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.819,
+    "contradictions_detected": 2,
+    "word_count": 1685
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "state",
+        "frequency": 64
+      },
+      {
+        "theme": "const",
+        "frequency": 50
+      },
+      {
+        "theme": "tags",
+        "frequency": 36
+      },
+      {
+        "theme": "match",
+        "frequency": 31
+      },
+      {
+        "theme": "scroll",
+        "frequency": 30
+      },
+      {
+        "theme": "preset",
+        "frequency": 28
+      },
+      {
+        "theme": "div",
+        "frequency": 26
+      },
+      {
+        "theme": "json",
+        "frequency": 25
+      },
+      {
+        "theme": "null",
+        "frequency": 24
+      },
+      {
+        "theme": "equation",
+        "frequency": 23
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "list.appendChild(div); } if(shown===0) list.innerHTML = '<div class=\"tiny\">No items yet. Use “Choose files”.</div>'; $('selCount').textContent = state.se"
+      },
+      {
+        "idx": 1,
+        "sample": "endChild(div); } if(shown===0) list.innerHTML = '<div class=\"tiny\">No items yet. Use “Choose files”.</div>'; $('selCount').textContent = state.selected.si"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "tags??",
+      "persist ?",
+      "match(/\\{{[\\s\\S]*?",
+      "+?",
+      "\\\"[\\s\\S]*?",
+      "id)?",
+      "created?",
+      "tags??",
+      "confirm('Remove selected from view?",
+      "defaults?"
+    ],
+    "summary": "state, const, tags, match, scroll"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 8
+  },
+  "temporal_markers": [
+    "today",
+    "will"
+  ],
+  "metadata": {
+    "source_name": "AEON_Indexer_Ingest_Presets.html",
+    "relative_path": "AEON_Indexer_Ingest_Presets.html",
+    "size_bytes": 17970,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 174
+- Complexity score: 56.9
+- Key themes: theme, frequency, state, tags, match, list, synthesis, const, scroll, sample
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of state?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, state
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.
+
+
+## Generation 1 Enhancement
+- Entropy Level: 4.812
+- Word Count: 387
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:19.154Z",
+  "original_file": "006c699a9ab6d6cc4abeb7f6604cecefaa45a8b629faf7f502410f616c799073_feedin_1754897452594.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

@@ -1,0 +1,272 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:37.058Z",
+    "source_text_length": 79506,
+    "word_count": 6771,
+    "sentence_count": 518,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "89eb578fd86f75cf584b4056435484a0",
+    "entropy_level": 0.865,
+    "contradictions_detected": 3,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "template_maker_debugged (1).html",
+      "processing_timestamp": "2025-08-11T05:05:37.058Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 145,
+        "significance": "0.0214",
+        "examples": [
+          "class=\"container\">\r\n"
+        ]
+      },
+      {
+        "theme": "error",
+        "frequency": 111,
+        "significance": "0.0164",
+        "examples": [
+          ".status.error"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 99,
+        "significance": "0.0146",
+        "examples": [
+          "id=\"beaconStatus\">Active</span></span>\r\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 93,
+        "significance": "0.0137",
+        "examples": [
+          "value=\"1\""
+        ]
+      },
+      {
+        "theme": "showmessage",
+        "frequency": 80,
+        "significance": "0.0118",
+        "examples": [
+          "showMessage(text,"
+        ]
+      },
+      {
+        "theme": "debuglog_add",
+        "frequency": 77,
+        "significance": "0.0114",
+        "examples": [
+          "debugLog_add(message,"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 75,
+        "significance": "0.0111",
+        "examples": [
+          "attr(data-tooltip);\r\n"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 74,
+        "significance": "0.0109",
+        "examples": [
+          "}\r\n.checkbox-cell"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 70,
+        "significance": "0.0103",
+        "examples": [
+          "Template"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 69,
+        "significance": "0.0102",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 69,
+        "significance": "0.0102",
+        "examples": [
+          "onclick=\"testAllFunctions()\">🧪"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 68,
+        "significance": "0.0100",
+        "examples": [
+          "<span"
+        ]
+      }
+    ],
+    "key_questions": [
+      "innerHTML = `<strong>${isError ? '❌ Error' : '✅ Success'}:</strong> ${text}`;\r\n                status",
+      "className = 'status ' + (isError ? 'error' : 'success');\r\n                status",
+      "display = 'none', 5000);\r\n                updateSystemStatus(isError ? 'Error' : 'Ready');\r\n                \r\n                debugLog_add(text, isError",
+      "? 'ERROR' : 'INFO');\r\n            } catch (error) {\r\n                console",
+      "className = 'status-indicator ' + (status === 'Error' ? 'error' : status === 'Warning'",
+      "? 'warning' : '');\r\n                debugLog_add(`System status updated to: ${status}`, 'DEBUG');\r\n            } catch (error) {\r\n                console",
+      "1);\r\n                debugLog_add(`New batch created: ${batchId}`, 'INFO');\r\n            } catch (error) {\r\n                showMessage('Failed to generate new batch', true);\r\n                debugLog_add('newBatch function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function resetSystem() {\r\n            try {\r\n                const confirmReset = confirm('Are you sure you want to reset the entire system? This will clear all data",
+      "toLocaleDateString()}</h3>\r\n<p><strong>Evaluation ID:</strong> EVAL_ID | <strong>Batch:</strong> BATCH_ID</p>\r\n</div>\r\n\r\n<div class=\"section\">\r\n<h3>Participant Information</h3>\r\n<div class=\"field\"><span class=\"label\">Full Name:</span><span class=\"value\">PARTICIPANT_NAME</span></div>\r\n<div class=\"field\"><span class=\"label\">Participant ID:</span><span class=\"value\">PARTICIPANT_ID</span></div>\r\n<div class=\"field\"><span class=\"label\">Evaluation Date:</span><span class=\"value\">EVAL_DATE</span></div>\r\n<div class=\"field\"><span class=\"label\">Program:</span><span class=\"value\">PROGRAM_NAME</span></div>\r\n<div class=\"field\"><span class=\"label\">Instructor:</span><span class=\"value\">INSTRUCTOR_NAME</span></div>\r\n</div>\r\n\r\n<h3>Work Habits Assessment</h3>\r\n<table>\r\n<tr><th style=\"width: 50%;\">Assessment Criteria</th><th class=\"checkbox-cell\">Yes</th><th class=\"checkbox-cell\">NI</th><th class=\"checkbox-cell\">N/A</th><th>Notes</th></tr>\r\n<tr><td><strong>Attendance</strong> — Correct day and time?</td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_YES></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NI></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NA></td>\r\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\r\n<tr><td><strong>Hygiene</strong> — Appropriately groomed"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "repeat",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "value = template;\r\n                showMessage('Advanced E3 template loaded with enhanced assessment features');\r\n                debugLog_add('Advanced template loaded', 'INFO');\r\n            } catch (error) {\r\n                showMessage('Failed to load advanced template', true);\r\n                debugLog_add('loadAdvancedTemplate function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function loadCustomTemplate() {\r\n            showMessage('Custom template builder coming in future update');\r\n            debugLog_add('Custom template requested (not y",
+        "statement_b": "implemented)', 'INFO');\r\n        }\r\n\r\n        function clearTemplate() {\r\n            try {\r\n                document",
+        "line": 251,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.17"
+      },
+      {
+        "statement_a": "toFixed(4)}) is elevated b",
+        "statement_b": "within acceptable range`, false);\r\n                    debugLog_add('Entropy validation: Elevated but acceptable', 'INFO');\r\n                } else {\r\n                    showMessage(`✅ System entropy (${systemEntropy",
+        "line": 434,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.51"
+      },
+      {
+        "statement_a": "toFixed(4)}) is within optimal range`);\r\n                    debugLog_add('Entropy validation passed', 'INFO');\r\n                }\r\n            } catch (error) {\r\n                showMessage('Failed to validate entropy', true);\r\n                debugLog_add('validateEntropy function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function generateInsight() {\r\n            try {\r\n                const insights = [\r\n                    'Digital transformation preserves human assessment integrity through structured protocols',\r\n                    'Recursive validation enables continuous improvement w",
+        "statement_b": "maintaining evaluation standards',\r\n                    'Battle Creek implementation demonstrates scalable consciousness modeling in practical applications',\r\n                    'Token-based template systems bridge analog intuition with digital precision',\r\n                    'AEON-Bridge architecture facilitates transparent audit trails for participant progress'\r\n                ];\r\n                \r\n                const randomInsight = insights[Math",
+        "line": 435,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.76"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 5,
+      "negative": 4,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 17,
+      "future": 8
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Template Builder - Battle Creek Implementation v5 1</title>\r\n    <style>\r\n        body { \r\n            font-family: Arial, sans-serif; \r\n            margin: 20px; \r\n            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); \r\n            min-height: 100vh;\r\n        }\r\n        ...",
+    "key_insights": [
+      {
+        "insight": " Participant demonstrates consistent performance across all assessed areas",
+        "confidence_level": "0.78",
+        "insight_type": "analytical_insight"
+      },
+      {
+        "insight": "'\r\n            },\r\n            detailed: {\r\n                participant_name: '[To be filled]',\r\n                eval_date: '2025-08-10',\r\n                program_name: 'E3 Achievement Program - Advanced Track',\r\n                work_habits: { attendance: 'yes', hygiene: 'yes', attitude: 'yes' },\r\n                preparatory_goals: { attention_span: 'yes', safety: 'yes', task_completion: 'yes' },\r\n                comments_section: 'Comprehensive evaluation: Participant demonstrates exceptional engagement, consistently follows safety protocols, and shows strong task completion skills",
+        "confidence_level": "0.46",
+        "insight_type": "analytical_insight"
+      },
+      {
+        "insight": " Participant demonstrates strong awareness of safety procedures and workplace hazards",
+        "confidence_level": "0.46",
+        "insight_type": "analytical_insight"
+      },
+      {
+        "insight": "toFixed(4)}) is within optimal range`);\r\n                    debugLog_add('Entropy validation passed', 'INFO');\r\n                }\r\n            } catch (error) {\r\n                showMessage('Failed to validate entropy', true);\r\n                debugLog_add('validateEntropy function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function generateInsight() {\r\n            try {\r\n                const insights = [\r\n                    'Digital transformation preserves human assessment integrity through structured protocols',\r\n                    'Recursive validation enables continuous improvement while maintaining evaluation standards',\r\n                    'Battle Creek implementation demonstrates scalable consciousness modeling in practical applications',\r\n                    'Token-based template systems bridge analog intuition with digital precision',\r\n                    'AEON-Bridge architecture facilitates transparent audit trails for participant progress'\r\n                ];\r\n                \r\n                const randomInsight = insights[Math",
+        "confidence_level": "0.79",
+        "insight_type": "analytical_insight"
+      }
+    ],
+    "action_items": [
+      {
+        "action": "doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Template Builder - Battle Creek Implementation v5",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": "tooltip:hover::after {\r\n            content: attr(data-tooltip);\r\n            position: absolute;\r\n            bottom: 100%;\r\n            left: 50%;\r\n            transform: translateX(-50%);\r\n            background: #333;\r\n            color: white;\r\n            padding: 5px 10px;\r\n            border-radius: 4px;\r\n            font-size: 12px;\r\n            white-space: nowrap;\r\n            z-index: 1000;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <div class=\"header\">\r\n            <h1>🌟 E3 Template Builder - AEON-Bridge Implementation</h1>\r\n            <div class=\"location\">Battle Creek, Michigan (42",
+        "urgency_score": "0.16",
+        "feasibility_score": "0.02"
+      },
+      {
+        "action": "0000</span></span>\r\n                </div>\r\n                <div class=\"metric-item\">\r\n                    <span class=\"status-indicator\" id=\"statusIndicator\"></span>\r\n                    <span>Status: <span id=\"systemStatus\">Initializing</span></span>\r\n                </div>\r\n                <div class=\"metric-item\">\r\n                    <span class=\"status-indicator\" id=\"beaconIndicator\"></span>\r\n                    <span>Lost Child Beacon: <span id=\"beaconStatus\">Active</span></span>\r\n                </div>\r\n                <div class=\"metric-item\">\r\n                    <span>Session: <span id=\"sessionTime\">00:00</span></span>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section\">\r\n            <h3>🔧 System Control Panel</h3>\r\n            <div class=\"form-row\">\r\n                <input type=\"text\" id=\"batchId\" readonly placeholder=\"Batch ID will generate here\" class=\"tooltip\" data-tooltip=\"Unique identifier for this batch of evaluations\">\r\n                <button onclick=\"newBatch()\">🆕 New Batch</button>\r\n                <label>Form Counter:</label>\r\n                <input type=\"number\" id=\"counter\" value=\"1\" min=\"1\" class=\"tooltip\" data-tooltip=\"Sequential form numbering\">\r\n                <button onclick=\"resetSystem()\" class=\"warning\">🔄 Reset System</button>\r\n                <button onclick=\"debugSystemState()\" class=\"danger\">🐛 Debug State</button>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section presets\">\r\n            <h3>🤖 AI-Optimized Evaluation Presets</h3>\r\n            <div class=\"form-row\">\r\n                <select id=\"presetSelect\" class=\"tooltip\" data-tooltip=\"Pre-configured evaluation templates optimized for different assessment types\">\r\n                    <option value=\"\">Select Evaluation Preset</option>\r\n                    <option value=\"standard\">📊 Standard Evaluation (Entropy: 0",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.84"
+      },
+      {
+        "action": "task_completion\">✅ Goals: Task Completion</option>\r\n                    <option value=\"comments_section\">💬 Comments</option>\r\n                </select>\r\n                <input type=\"text\" id=\"valueInput\" placeholder=\"Enter field value\" class=\"tooltip\" data-tooltip=\"Type the value for the selected field\">\r\n                <button onclick=\"addField()\">➕ Add Field</button>\r\n                <button onclick=\"clearSingleData()\">🗑️ Clear</button>\r\n            </div>\r\n            \r\n            <h4>Bulk Data Entry</h4>\r\n            <textarea id=\"bulkInput\" rows=\"6\" placeholder=\"Bulk data entry formats:\r\n\r\nFormat 1 (Key=Value):\r\nparticipant_name=John Doe, participant_id=001, eval_date=2025-08-10, instructor_name=Chris Burdette\r\nparticipant_name=Jane Smith, participant_id=002, eval_date=2025-08-10, instructor_name=Sarah Johnson\r\n\r\nFormat 2 (Column-based - define order below):\r\nJohn Doe,001,2025-08-10,Chris Burdette\r\nJane Smith,002,2025-08-10,Sarah Johnson\" class=\"tooltip\" data-tooltip=\"Paste participant data here - supports both key=value and column formats\"></textarea>\r\n            \r\n            <div class=\"form-row\">\r\n                <input type=\"text\" id=\"columnOrder\" placeholder=\"Column order (for Format 2): participant_name,participant_id,eval_date,instructor_name\" class=\"tooltip\" data-tooltip=\"Define column order for column-based data format\">\r\n                <button onclick=\"validateData()\" class=\"success\">✅ Validate Data</button>\r\n                <button onclick=\"clearAllData()\" class=\"warning\">🗑️ Clear All Data</button>\r\n                <button onclick=\"exportDataAsJSON()\" class=\"success\">📤 Export Data JSON</button>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section\">\r\n            <h3>📄 Template Management System</h3>\r\n            <div class=\"form-row\">\r\n                <button onclick=\"loadDefaultTemplate()\">📝 Load Standard E3 Template</button>\r\n                <button onclick=\"loadAdvancedTemplate()\">📋 Load Advanced Template</button>\r\n                <button onclick=\"loadCustomTemplate()\">🎨 Load Custom Template</button>\r\n                <button onclick=\"clearTemplate()\">🗑️ Clear Template</button>\r\n                <button onclick=\"validateTemplate()\" class=\"success\">✅ Validate Template</button>\r\n            </div>\r\n            <textarea id=\"template\" rows=\"10\" placeholder=\"E3 evaluation template will load here",
+        "urgency_score": "0.61",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "\" class=\"tooltip\" data-tooltip=\"HTML template with token placeholders that will be replaced with actual data\"></textarea>\r\n        </div>\r\n\r\n        <div class=\"section\">\r\n            <h3>⚡ Form Generation & Export</h3>\r\n            <div class=\"form-row\">\r\n                <button onclick=\"previewForm()\" class=\"success\">🔍 Live Preview</button>\r\n                <button onclick=\"downloadSingle()\">📄 Download Single Form</button>\r\n                <button onclick=\"downloadBulk()\">📦 Download Bulk Forms</button>\r\n                <button onclick=\"generateReport()\">📊 Generate Session Report</button>\r\n                <button onclick=\"printPreview()\">🖨️ Print Preview</button>\r\n            </div>\r\n            <iframe id=\"preview\" title=\"Live Form Preview\" class=\"tooltip\" data-tooltip=\"Real-time preview of your generated form\"></iframe>\r\n        </div>\r\n\r\n        <div class=\"section aeon-bridge\">\r\n            <h3>🌀 AEON-Bridge Integration & Consciousness Engine</h3>\r\n            <div class=\"form-row\">\r\n                <button onclick=\"generateBridgeJSON()\">🌉 Export AEON-Bridge JSON</button>\r\n                <button onclick=\"activateBeacon()\">📡 Toggle Lost Child Beacon</button>\r\n                <button onclick=\"processRecursivePattern()\">🔄 Process Recursive Pattern</button>\r\n                <button onclick=\"validateEntropy()\">⚖️ Validate System Entropy</button>\r\n                <button onclick=\"generateInsight()\">💡 Generate Insight</button>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section debug-section\">\r\n            <h3>🔧 Advanced Debugging & System Diagnostics</h3>\r\n            <div class=\"form-row\">\r\n                <button onclick=\"runSystemDiagnostics()\">🔍 Run Full Diagnostics</button>\r\n                <button onclick=\"exportDebugLog()\">📋 Export Debug Log</button>\r\n                <button onclick=\"clearDebugLog()\">🗑️ Clear Debug Log</button>\r\n                <button onclick=\"testAllFunctions()\">🧪 Test All Functions</button>\r\n            </div>\r\n            <textarea id=\"debugOutput\" rows=\"4\" readonly placeholder=\"Debug information will appear here",
+        "urgency_score": "0.39",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "'\r\n            },\r\n            skills_assessment: {\r\n                participant_name: '[To be filled]',\r\n                eval_date: '2025-08-10',\r\n                program_name: 'E3 Achievement Program - Skills Development',\r\n                work_habits: { attendance: 'yes', hygiene: 'yes', attitude: 'yes' },\r\n                preparatory_goals: { attention_span: 'yes', task_completion: 'yes' },\r\n                comments_section: 'Skills assessment: Participant shows strong development in core competencies",
+        "urgency_score": "0.14",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": "1);\r\n                debugLog_add(`New batch created: ${batchId}`, 'INFO');\r\n            } catch (error) {\r\n                showMessage('Failed to generate new batch', true);\r\n                debugLog_add('newBatch function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function resetSystem() {\r\n            try {\r\n                const confirmReset = confirm('Are you sure you want to reset the entire system",
+        "urgency_score": "0.75",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": " This will clear all data",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n                const a = document",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": "createElement('a');\r\n                a",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.91"
+      }
+    ],
+    "unresolved_tensions": [
+      "value = template;\r\n                showMessage('Advanced E3 template loaded with enhanced assessment features');\r\n                debugLog_add('Advanced template loaded', 'INFO');\r\n            } catch (error) {\r\n                showMessage('Failed to load advanced template', true);\r\n                debugLog_add('loadAdvancedTemplate function failed', 'ERROR');\r\n            }\r\n        }\r\n\r\n        function loadCustomTemplate() {\r\n            showMessage('Custom template builder coming in future update');\r\n            debugLog_add('Custom template requested (not y vs implemented)', 'INFO');\r\n        }\r\n\r\n        function clearTemplate() {\r\n            try {\r\n                document"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 3 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.85",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 4 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "89eb578fd86f75cf584b4056435484a0"
+  }
+}

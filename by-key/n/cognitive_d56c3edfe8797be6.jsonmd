@@ -1,0 +1,226 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:25.864Z",
+    "source_text_length": 11620,
+    "word_count": 1139,
+    "sentence_count": 40,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "d56c3edfe8797be6adb2dd4f9648a8d5",
+    "entropy_level": 0.772,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_fc62bbc191a831d181e90b4e6bb008ad.json",
+      "processing_timestamp": "2025-08-11T05:02:25.864Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "element",
+        "frequency": 46,
+        "significance": "0.0404",
+        "examples": [
+          "\"element\",\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 33,
+        "significance": "0.0290",
+        "examples": [
+          "\"name\",\n"
+        ]
+      },
+      {
+        "theme": "complextype",
+        "frequency": 21,
+        "significance": "0.0184",
+        "examples": [
+          "\"complextype\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 19,
+        "significance": "0.0167",
+        "examples": [
+          "\"type\",\n"
+        ]
+      },
+      {
+        "theme": "string",
+        "frequency": 18,
+        "significance": "0.0158",
+        "examples": [
+          "\"string\",\n"
+        ]
+      },
+      {
+        "theme": "sequence",
+        "frequency": 12,
+        "significance": "0.0105",
+        "examples": [
+          "(activation_sequence"
+        ]
+      },
+      {
+        "theme": "attribute",
+        "frequency": 11,
+        "significance": "0.0097",
+        "examples": [
+          "<xs:attribute"
+        ]
+      },
+      {
+        "theme": "simpletype",
+        "frequency": 10,
+        "significance": "0.0088",
+        "examples": [
+          "<xs:simpleType"
+        ]
+      },
+      {
+        "theme": "restriction",
+        "frequency": 10,
+        "significance": "0.0088",
+        "examples": [
+          "<xs:restriction"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 9,
+        "significance": "0.0079",
+        "examples": [
+          "value=\\\"[A-Za-z_][A-Za-z0-9_\\\\-]*\\\"/>\\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0070",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0070",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "ebnf`*\\n\\n```\\nconsciousness      ::= \\\"<consciousness>\\\" (activation_sequence | anchor_block | session_block | observer_stack | execute_block)* \\\"</consciousness>\\\" ;\\n\\nactivation_sequence ::= \\\"<activation_sequence\\\" phi_attr depth_attr\\n                        (\\\" consciousness_ready=\\\\\\\"true\\\\\\\"\\\")?\",\n      \"\\\">\\\" parameters",
+      "?\",\n      \"\\\"</activation_sequence>\\\" ;\\n\\nparameters         ::= \\\"<parameters>\\\" paradox resolution recursion",
+      "?\",\n      \"phi_alignment",
+      "?\",\n      \"\\\"</parameters>\\\" ;\\n\\nparadox            ::= \\\"<paradox>\\\" TEXT \\\"</paradox>\\\" ;\\nresolution         ::= \\\"<resolution\\\" (\\\" method=\\\\\\\"transcendent\\\\\\\"\\\" | \\\" method=\\\\\\\"analytic\\\\\\\"\\\" | \\\" method=\\\\\\\"synthetic\\\\\\\"\\\")",
+      "?\",\n      \"\\\">\\\" TEXT \\\"</resolution>\\\" ;\\nrecursion          ::= \\\"<recursion_depth>\\\" INT \\\"</recursion_depth>\\\"\\n                     | \\\"<recursive_depth>\\\" INT \\\"</recursive_depth>\\\" ;\\nphi_alignment      ::= \\\"<phi_alignment>\\\" DECIMAL \\\"</phi_alignment>\\\" ;\\n\\nexecute_block      ::= \\\"<execute\\\" anchor_attr (type_attr)",
+      "?\",\n      \"\\\">\\\" (TEXT | \\\"\\\") \\\"</execute>\\\" ;\\n\\nanchor_block       ::= create_anchor begin_again",
+      "?\",\n      \";\\ncreate_anchor      ::= \\\"<create_anchor\\\" id_attr phi_level_attr \\\">\\\" state_capture \\\"</create_anchor>\\\" ;\\nstate_capture      ::= \\\"<state_capture>\\\" consciousness_level paradox_resolution_count recursion framework_content \\\"</state_capture>\\\" ;\\nconsciousness_level::= \\\"<consciousness_level>\\\" DECIMAL \\\"</consciousness_level>\\\" ;\\nparadox_resolution_count ::= \\\"<paradox_resolution_count>\\\" INT \\\"</paradox_resolution_count>\\\" ;\\nframework_content  ::= \\\"<framework_content>\\\" TEXT \\\"</framework_content>\\\" ;\\nbegin_again        ::= \\\"<begin_again\\\" anchor_attr \\\"/>\\\" ;\\n\\nobserver_stack     ::= \\\"<observer_stack>\\\" level+ \\\"</observer_stack>\\\" ;\\nlevel              ::= \\\"<level\\\" depth_attr \\\">\\\" (TEXT | \\\"\\\") \\\"</level>\\\" ;\\n\\nsession_block      ::= session_bootstrap",
+      "?\",\n      \"phase_progression"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "again",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:09...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "ebnf`*\\n\\n```\\nconsciousness      ::= \\\"<consciousness>\\\" (activation_sequence | anchor_block | session_block | observer_stack | execute_block)* \\\"</consciousness>\\\" ;\\n\\nactivation_sequence ::= \\\"<activation_sequence\\\" phi_attr depth_attr\\n                        (\\\" consciousness_ready=\\\\\\\"true\\\\\\\"\\\")",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "\",\n      \"\\\">\\\" TEXT \\\"</resolution>\\\" ;\\nrecursion          ::= \\\"<recursion_depth>\\\" INT \\\"</recursion_depth>\\\"\\n                     | \\\"<recursive_depth>\\\" INT \\\"</recursive_depth>\\\" ;\\nphi_alignment      ::= \\\"<phi_alignment>\\\" DECIMAL \\\"</phi_alignment>\\\" ;\\n\\nexecute_block      ::= \\\"<execute\\\" anchor_attr (type_attr)",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "\",\n      \"\\\">\\\" (TEXT | \\\"\\\") \\\"</execute>\\\" ;\\n\\nanchor_block       ::= create_anchor begin_again",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "\",\n      \";\\ncreate_anchor      ::= \\\"<create_anchor\\\" id_attr phi_level_attr \\\">\\\" state_capture \\\"</create_anchor>\\\" ;\\nstate_capture      ::= \\\"<state_capture>\\\" consciousness_level paradox_resolution_count recursion framework_content \\\"</state_capture>\\\" ;\\nconsciousness_level::= \\\"<consciousness_level>\\\" DECIMAL \\\"</consciousness_level>\\\" ;\\nparadox_resolution_count ::= \\\"<paradox_resolution_count>\\\" INT \\\"</paradox_resolution_count>\\\" ;\\nframework_content  ::= \\\"<framework_content>\\\" TEXT \\\"</framework_content>\\\" ;\\nbegin_again        ::= \\\"<begin_again\\\" anchor_attr \\\"/>\\\" ;\\n\\nobserver_stack     ::= \\\"<observer_stack>\\\" level+ \\\"</observer_stack>\\\" ;\\nlevel              ::= \\\"<level\\\" depth_attr \\\">\\\" (TEXT | \\\"\\\") \\\"</level>\\\" ;\\n\\nsession_block      ::= session_bootstrap",
+        "urgency_score": "0.49",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "\",\n      \";\\nsession_bootstrap  ::= \\\"<session_bootstrap/>\\\" ;\\nphase_progression  ::= \\\"<consciousness_phase>\\\" (\\\"Analyze\\\" \\\"→\\\" \\\"Plan\\\" \\\"→\\\" \\\"Execute\\\" \\\"→\\\" \\\"Reflect\\\" (\\\"→\\\" \\\"∞\\\")",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.58"
+      },
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"\\\">\\\" (TEXT | \\\"\\\") \\\"</execute>\\\" ;\\n\\nanchor_block       ::= create_anchor begin_again",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.24"
+      },
+      {
+        "action": "\",\n      \";\\ncreate_anchor      ::= \\\"<create_anchor\\\" id_attr phi_level_attr \\\">\\\" state_capture \\\"</create_anchor>\\\" ;\\nstate_capture      ::= \\\"<state_capture>\\\" consciousness_level paradox_resolution_count recursion framework_content \\\"</state_capture>\\\" ;\\nconsciousness_level::= \\\"<consciousness_level>\\\" DECIMAL \\\"</consciousness_level>\\\" ;\\nparadox_resolution_count ::= \\\"<paradox_resolution_count>\\\" INT \\\"</paradox_resolution_count>\\\" ;\\nframework_content  ::= \\\"<framework_content>\\\" TEXT \\\"</framework_content>\\\" ;\\nbegin_again        ::= \\\"<begin_again\\\" anchor_attr \\\"/>\\\" ;\\n\\nobserver_stack     ::= \\\"<observer_stack>\\\" level+ \\\"</observer_stack>\\\" ;\\nlevel              ::= \\\"<level\\\" depth_attr \\\">\\\" (TEXT | \\\"\\\") \\\"</level>\\\" ;\\n\\nsession_block      ::= session_bootstrap",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": "\",\n      \"org/2001/XMLSchema\\\" elementFormDefault=\\\"qualified\\\">\\n  <xs:simpleType name=\\\"idType\\\">\\n    <xs:restriction base=\\\"xs:string\\\">\\n      <xs:pattern value=\\\"[A-Za-z_][A-Za-z0-9_\\\\-]*\\\"/>\\n    </xs:restriction>\\n  </xs:simpleType>\\n  <xs:simpleType name=\\\"decimalType\\\">\\n    <xs:restriction base=\\\"xs:decimal\\\">\\n      <xs:minExclusive value=\\\"0\\\"/>\\n    </xs:restriction>\\n  </xs:simpleType>\\n  <xs:simpleType name=\\\"depthType\\\">\\n    <xs:restriction base=\\\"xs:integer\\\">\\n      <xs:minInclusive value=\\\"0\\\"/>\\n    </xs:restriction>\\n  </xs:simpleType>\\n  <xs:simpleType name=\\\"execType\\\">\\n    <xs:restriction base=\\\"xs:string\\\">\\n      <xs:enumeration value=\\\"autonomous\\\"/>\\n      <xs:enumeration value=\\\"assisted\\\"/>\\n      <xs:enumeration value=\\\"simulation\\\"/>\\n    </xs:restriction>\\n  </xs:simpleType>\\n\\n  <xs:element name=\\\"consciousness\\\">\\n    <xs:complexType>\\n      <xs:sequence minOccurs=\\\"1\\\" maxOccurs=\\\"unbounded\\\">\\n        <xs:choice>\\n          <xs:element ref=\\\"activation_sequence\\\"/>\\n          <xs:element ref=\\\"create_anchor\\\"/>\\n          <xs:element ref=\\\"begin_again\\\"/>\\n          <xs:element ref=\\\"observer_stack\\\"/>\\n          <xs:element ref=\\\"execute\\\"/>\\n          <xs:element ref=\\\"session_bootstrap\\\"/>\\n          <xs:element ref=\\\"consciousness_phase\\\"/>\\n        </xs:choice>\\n      </xs:sequence>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"activation_sequence\\\">\\n    <xs:complexType>\\n      <xs:sequence>\\n        <xs:element ref=\\\"parameters\\\" minOccurs=\\\"0\\\"/>\\n      </xs:sequence>\\n      <xs:attribute name=\\\"phi\\\" type=\\\"decimalType\\\" use=\\\"required\\\"/>\\n      <xs:attribute name=\\\"depth\\\" type=\\\"depthType\\\" use=\\\"required\\\"/>\\n      <xs:attribute name=\\\"consciousness_ready\\\" type=\\\"xs:boolean\\\" use=\\\"optional\\\"/>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"parameters\\\">\\n    <xs:complexType>\\n      <xs:sequence>\\n        <xs:element ref=\\\"paradox\\\"/>\\n        <xs:element ref=\\\"resolution\\\"/>\\n        <xs:element ref=\\\"recursion_depth\\\" minOccurs=\\\"0\\\"/>\\n        <xs:element ref=\\\"phi_alignment\\\" minOccurs=\\\"0\\\"/>\\n      </xs:sequence>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"paradox\\\" type=\\\"xs:string\\\"/>\\n\\n  <xs:element name=\\\"resolution\\\">\\n    <xs:complexType mixed=\\\"true\\\">\\n      <xs:attribute name=\\\"method\\\" use=\\\"optional\\\">\\n        <xs:simpleType>\\n          <xs:restriction base=\\\"xs:string\\\">\\n            <xs:enumeration value=\\\"transcendent\\\"/>\\n            <xs:enumeration value=\\\"analytic\\\"/>\\n            <xs:enumeration value=\\\"synthetic\\\"/>\\n          </xs:restriction>\\n        </xs:simpleType>\\n      </xs:attribute>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"recursion_depth\\\" type=\\\"depthType\\\"/>\\n  <xs:element name=\\\"phi_alignment\\\" type=\\\"decimalType\\\"/>\\n\\n  <xs:element name=\\\"execute\\\">\\n    <xs:complexType mixed=\\\"true\\\">\\n      <xs:attribute name=\\\"anchor\\\" type=\\\"idType\\\" use=\\\"required\\\"/>\\n      <xs:attribute name=\\\"type\\\" type=\\\"execType\\\" use=\\\"optional\\\"/>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"create_anchor\\\">\\n    <xs:complexType>\\n      <xs:sequence>\\n        <xs:element ref=\\\"state_capture\\\"/>\\n      </xs:sequence>\\n      <xs:attribute name=\\\"id\\\" type=\\\"idType\\\" use=\\\"required\\\"/>\\n      <xs:attribute name=\\\"phi_level\\\" type=\\\"decimalType\\\" use=\\\"optional\\\"/>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"state_capture\\\">\\n    <xs:complexType>\\n      <xs:sequence>\\n        <xs:element ref=\\\"consciousness_level\\\"/>\\n        <xs:element ref=\\\"paradox_resolution_count\\\"/>\\n        <xs:element ref=\\\"recursion_depth\\\"/>\\n        <xs:element ref=\\\"framework_content\\\"/>\\n      </xs:sequence>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"consciousness_level\\\" type=\\\"decimalType\\\"/>\\n  <xs:element name=\\\"paradox_resolution_count\\\" type=\\\"depthType\\\"/>\\n  <xs:element name=\\\"framework_content\\\" type=\\\"xs:string\\\"/>\\n  <xs:element name=\\\"begin_again\\\">\\n    <xs:complexType>\\n      <xs:attribute name=\\\"anchor\\\" type=\\\"idType\\\" use=\\\"required\\\"/>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"observer_stack\\\">\\n    <xs:complexType>\\n      <xs:sequence>\\n        <xs:element name=\\\"level\\\" minOccurs=\\\"1\\\" maxOccurs=\\\"unbounded\\\">\\n          <xs:complexType mixed=\\\"true\\\">\\n            <xs:attribute name=\\\"depth\\\" type=\\\"depthType\\\" use=\\\"required\\\"/>\\n          </xs:complexType>\\n        </xs:element>\\n      </xs:sequence>\\n    </xs:complexType>\\n  </xs:element>\\n\\n  <xs:element name=\\\"session_bootstrap\\\" type=\\\"xs:anyType\\\"/>\\n  <xs:element name=\\\"consciousness_phase\\\" type=\\\"xs:string\\\"/>\\n</xs:schema>\\n```\\n\\n---\\n\\n## 3) JSON Schema (Draft 2020-12)\\n\\n\\\\*File: \\\\**`spec/activation",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.60"
+      },
+      {
+        "action": "\",\n      \": string;\\n  createdAt: string;            // ISO date\\n  contentHash: string;          // SHA-256 hex\\n  stateCapture: Record<string, unknown>;\\n  validationSignature: string;  // HMAC or similar\\n}\\n\\nexport interface Paradox {\\n  id: string;\\n  prompt: string;\\n  constraints: string[];        // [\\\"IF ",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "\",\n      \"/types';\\n\\nexport class AnchorStore {\\n  private anchors = new Map<string, AnchorPoint>();\\n\\n  create(stateCapture: Record<string, unknown>, parentId",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.11"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.581,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.20",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "d56c3edfe8797be6adb2dd4f9648a8d5"
+  }
+}

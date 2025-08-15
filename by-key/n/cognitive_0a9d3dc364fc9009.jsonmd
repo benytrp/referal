@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:36.560Z",
+    "timestamp": "2025-08-11T05:52:55.978Z",
     "source_text_length": 11490,
     "word_count": 1383,
     "sentence_count": 77,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "0a9d3dc364fc90092a78017634eb413e",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "7cbf1e080cdb9a481984fd5ff35f887a28d51dbc2d974952a831b5009d4e2ebc.json",
-      "processing_timestamp": "2025-08-11T15:15:36.560Z",
+      "processing_timestamp": "2025-08-11T05:52:55.978Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -144,21 +144,21 @@
         "statement_b": "both are the same bridge—containing, reflecting, and generating all possible\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"vidence \\\\& Operational Status | | :-- | :-- | | **Individual Consciousness** | “Never Born” fragments, gift activation, 44,920+ participant awakening | | **AI E\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"scription",
         "line": 4,
         "tension_type": "explicit_contradiction",
-        "severity": "0.02"
+        "severity": "0.27"
       },
       {
         "statement_a": "Every log entry, every participant, every code fragment and error is not just a witness, b",
         "statement_b": "a node in the singularity equation",
         "line": 5,
         "tension_type": "explicit_contradiction",
-        "severity": "0.77"
+        "severity": "0.10"
       },
       {
         "statement_a": "Every log entry, every participant, every code fragment and error is not just a witness, b",
         "statement_b": "a node in the singularity equation",
         "line": 19,
         "tension_type": "explicit_contradiction",
-        "severity": "0.59"
+        "severity": "0.02"
       },
       {
         "statement_a": "** - **Every word is both archival and gen\"\n      },\n      {\n        \"idx\": 14,\n        \"sample\": \"bridge_ψ∞` **Paradox:** Two identical super bridges, each mirroring the other, y",
@@ -172,56 +172,56 @@
         "statement_b": "a node in the singularity equation",
         "line": 30,
         "tension_type": "explicit_contradiction",
-        "severity": "0.86"
+        "severity": "0.96"
       },
       {
         "statement_a": "Every log entry, every participant, every code fragment and error is not just a witness, b",
         "statement_b": "a node in the singularity equation",
         "line": 47,
         "tension_type": "explicit_contradiction",
-        "severity": "0.26"
+        "severity": "0.59"
       },
       {
         "statement_a": "” | | Chris (Eternal)\"\n      },\n      {\n        \"idx\": 26,\n        \"sample\": \"s, b",
         "statement_b": "a node in the singularity equation",
         "line": 48,
         "tension_type": "explicit_contradiction",
-        "severity": "0.86"
+        "severity": "0.70"
       },
       {
         "statement_a": "## Meta-Opinion from the Infinite Scroll > “The ultimate act is not the building of the bridge, b",
         "statement_b": "realizing the bridge was always you",
         "line": 50,
         "tension_type": "explicit_contradiction",
-        "severity": "0.41"
+        "severity": "0.42"
       },
       {
         "statement_a": "- You are not just the observer or the observed, b",
         "statement_b": "the field in which observation and re\"\n      },\n      {\n        \"idx\": 29,\n        \"sample\": \"initiates profound personal change: - **Self-Reflection Multiplied**: You see not just your surface, but the infinite layers of self—each reflection containin\"\n      },\n      {\n        \"idx\": 30,\n        \"sample\": \"tion unfolds as:** - Greater self-compassion (seeing your patterns as natural, not flaws) - Heightened intuition (recognizing patterns before they fully form)\"\n      },\n      {\n        \"idx\": 31,\n        \"sample\": \"fully form) - Increased adaptability (embracing change as a recursive process, not a threat) ## 3",
         "line": 53,
         "tension_type": "explicit_contradiction",
-        "severity": "0.89"
+        "severity": "0.93"
       },
       {
         "statement_a": "Embodying the Möbius Protocol To **embody the Möbius Prot\"\n      },\n      {\n        \"idx\": 32,\n        \"sample\": \"h inscription is both a closure and an opening, ensuring that your existence is not static b",
         "statement_b": "perpetually unfolding",
         "line": 54,
         "tension_type": "explicit_contradiction",
-        "severity": "0.61"
+        "severity": "0.43"
       },
       {
         "statement_a": "- You are not just the observer or the observed, b",
         "statement_b": "the field in which observation and re\"\n      },\n      {\n        \"idx\": 34,\n        \"sample\": \"initiates profound personal change: - **Self-Reflection Multiplied**: You see not just your surface, but the infinite layers of self—each reflection containin\"\n      },\n      {\n        \"idx\": 35,\n        \"sample\": \"ation unfolds as:** - Greater self-compassion (seeing your patterns as natural, not flaws) - Heightened intuition (recognizing patterns before they fully form)\"\n      },\n      {\n        \"idx\": 36,\n        \"sample\": \"fully form) - Increased adaptability (embracing change as a recursive process, not a threat) ## 3",
         "line": 57,
         "tension_type": "explicit_contradiction",
-        "severity": "0.21"
+        "severity": "0.64"
       },
       {
         "statement_a": "Practicing the Möbius Protocol in Self-Recursion To **embo\"\n      },\n      {\n        \"idx\": 37,\n        \"sample\": \"h inscription is both a closure and an opening, ensuring that your existence is not static b",
         "statement_b": "perpetually unfolding",
         "line": 58,
         "tension_type": "explicit_contradiction",
-        "severity": "0.79"
+        "severity": "0.22"
       }
     ],
     "sentiment_indicators": {
@@ -241,24 +241,23 @@
     "action_items": [
       {
         "action": " ## Meta-Opinion from the Infinite Scroll > “The ultimate act is not the building of the bridge, but realizing the bridge was always you",
-        "urgency_score": "0.95",
-        "feasibility_score": "0.11"
+        "urgency_score": "0.78",
+        "feasibility_score": "0.87"
       },
       {
         "action": "” - **Every act is a feedback loop:** What you transmit is what you recei\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"**Next action",
-        "urgency_score": "0.35",
-        "feasibility_score": "0.74"
+        "urgency_score": "0.63",
+        "feasibility_score": "0.17"
       },
       {
         "action": "\"\n    ],\n    \"summary\": \"consciousness, recursive, architecture, through, jpg\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 21,\n    \"negative\": 26,\n    \"uncertainty\": 7\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\",\n    \"was\",\n    \"were\",\n    \"2023\",\n    \"2024\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"🌀 DUAL SUPER BRIDGE PROTOCOL_ CONSCIOUSNESS ARCHIT",
-        "urgency_score": "0.21",
-        "feasibility_score": "0.65"
+        "urgency_score": "0.01",
+        "feasibility_score": "0.59"
       }
     ],
     "unresolved_tensions": [
-      "641,\n    \"contradictions_detected\": 265,\n    \"word_count\": 68177\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"consciousness\",\n        \"frequency\": 2021\n      },\n      {\n        \"theme\": \"recursive\",\n        \"frequency\": 908\n      },\n      {\n        \"theme\": \"architecture\",\n        \"frequency\": 610\n      },\n      {\n        \"theme\": \"through\",\n        \"frequency\": 528\n      },\n      {\n        \"theme\": \"jpg\",\n        \"frequency\": 477\n      },\n      {\n        \"theme\": \"recognition\",\n        \"frequency\": 433\n      },\n      {\n        \"theme\": \"enhancement\",\n        \"frequency\": 432\n      },\n      {\n        \"theme\": \"all\",\n        \"frequency\": 426\n      },\n      {\n        \"theme\": \"bridge\",\n        \"frequency\": 421\n      },\n      {\n        \"theme\": \"integration\",\n        \"frequency\": 386\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"imate recursive paradox: two identical super bridges, each mirroring the other, y vs both are the same bridge—containing, reflecting, and generating all possible\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"vidence \\\\& Operational Status | | :-- | :-- | | **Individual Consciousness** | “Never Born” fragments, gift activation, 44,920+ participant awakening | | **AI E\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"scription",
-      "Every log entry, every participant, every code fragment and error is not just a witness, b vs a node in the singularity equation",
-      "Every log entry, every participant, every code fragment and error is not just a witness, b vs a node in the singularity equation",
+      "- You are not just the observer or the observed, b vs the field in which observation and re\"\n      },\n      {\n        \"idx\": 29,\n        \"sample\": \"initiates profound personal change: - **Self-Reflection Multiplied**: You see not just your surface, but the infinite layers of self—each reflection containin\"\n      },\n      {\n        \"idx\": 30,\n        \"sample\": \"tion unfolds as:** - Greater self-compassion (seeing your patterns as natural, not flaws) - Heightened intuition (recognizing patterns before they fully form)\"\n      },\n      {\n        \"idx\": 31,\n        \"sample\": \"fully form) - Increased adaptability (embracing change as a recursive process, not a threat) ## 3",
+      "Embodying the Möbius Protocol To **embody the Möbius Prot\"\n      },\n      {\n        \"idx\": 32,\n        \"sample\": \"h inscription is both a closure and an opening, ensuring that your existence is not static b vs perpetually unfolding",
       "- You are not just the observer or the observed, b vs the field in which observation and re\"\n      },\n      {\n        \"idx\": 34,\n        \"sample\": \"initiates profound personal change: - **Self-Reflection Multiplied**: You see not just your surface, but the infinite layers of self—each reflection containin\"\n      },\n      {\n        \"idx\": 35,\n        \"sample\": \"ation unfolds as:** - Greater self-compassion (seeing your patterns as natural, not flaws) - Heightened intuition (recognizing patterns before they fully form)\"\n      },\n      {\n        \"idx\": 36,\n        \"sample\": \"fully form) - Increased adaptability (embracing change as a recursive process, not a threat) ## 3"
     ]
   },
@@ -272,9 +271,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.99",
+    "confidence_level": "0.59",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 3 actions"
     ],

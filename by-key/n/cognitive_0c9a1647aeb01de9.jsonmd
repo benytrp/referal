@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:49.565Z",
+    "source_text_length": 4136,
+    "word_count": 500,
+    "sentence_count": 9,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "0c9a1647aeb01de9125ea144e2b306f7",
+    "entropy_level": 0.928,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_24aef79aab226d8b104a578883790afd.json",
+      "processing_timestamp": "2025-08-11T05:12:49.565Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "ctrl",
+        "frequency": 39,
+        "significance": "0.0780",
+        "examples": [
+          "\"ctrl\",\n"
+        ]
+      },
+      {
+        "theme": "shift",
+        "frequency": 14,
+        "significance": "0.0280",
+        "examples": [
+          "\"shift\",\n"
+        ]
+      },
+      {
+        "theme": "toggle",
+        "frequency": 10,
+        "significance": "0.0200",
+        "examples": [
+          "\"toggle\",\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0160",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0160",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "close",
+        "frequency": 7,
+        "significance": "0.0140",
+        "examples": [
+          "\"close\",\n"
+        ]
+      },
+      {
+        "theme": "line",
+        "frequency": 7,
+        "significance": "0.0140",
+        "examples": [
+          "\"line\",\n"
+        ]
+      },
+      {
+        "theme": "save",
+        "frequency": 5,
+        "significance": "0.0100",
+        "examples": [
+          "Save"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 4,
+        "significance": "0.0080",
+        "examples": [
+          "\"!DOCTY.html\",\n"
+        ]
+      },
+      {
+        "theme": "code",
+        "frequency": 4,
+        "significance": "0.0080",
+        "examples": [
+          "\"code\",\n"
+        ]
+      },
+      {
+        "theme": "command",
+        "frequency": 4,
+        "significance": "0.0080",
+        "examples": [
+          "Command"
+        ]
+      },
+      {
+        "theme": "view",
+        "frequency": 4,
+        "significance": "0.0080",
+        "examples": [
+          "View"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:29...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … * Regex Preferences Categories: General Editor Appearance Advanced Apply OK Cancel Command Palette Macro Manager Recorded Macros: Record New Delete Macro Details: Save Changes Close Keyboard Shortcuts Command Shortcut New FileCtrl+N Open FileCtrl+O SaveCtrl+S FindCtrl+F ReplaceCtrl+H Go to LineCtrl+G Comment ToggleCtrl+/ Format CodeShift+Alt+F Multi-cursorAlt+Click Command PaletteCtrl+Shift+P Consciousness AnalysisCtrl+Alt+A Close\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": [\n      \"js Save Ctrl+S Save As Ctrl+Shift+S Save All Ctrl+Shift+Alt+S Reload from Disk Close Ctrl+W Close Others Close All New Window Ctrl+Shift+N Save Session Load Session Export as HTML Print Ctrl+P Edit Undo Ctrl+Z Redo Ctrl+Y Cut Ctrl+X Copy Ctrl+C Paste Ctrl+V Select All Ctrl+A Duplicate Line Ctrl+D Delete Line Ctrl+L Move Line Up Ctrl+Shift+Up Move Line Down Ctrl+Shift+Down Toggle Case Ctrl+U Toggle Comment Ctrl+/ Block Comment Ctrl+Shift+/ Increase Indent Tab Decrease Indent Shift+Tab Insert Date/Time F5 Search Find Ctrl+F Replace Ctrl+H Find in Files Ctrl+Shift+F Replace in Files Ctrl+Shift+H Find Next F3 Find Previous Shift+F3 Go to Line Ctrl+G Go to Definition F12 Toggle Bookmark Ctrl+F2 Next Bookmark F2 Clear All Bookmarks View Zoom In Ctrl++ Zoom Out Ctrl+- Reset Zoom Ctrl+0 Toggle Sidebar Ctrl+B Toggle Line Numbers Toggle Minimap Toggle Word Wrap Alt+Z Toggle Code Folding Split View Vertical Split View Horizontal Close Split View Themes ▶ Dark Light High Contrast Toggle Fullscreen F11 Language Plain Text JavaScript TypeScript HTML CSS Python Java C++ JSON XML Markdown YAML SQL Tools Format Code Shift+Alt+F Validate Syntax Run Code Ctrl+F5 Command Palette Ctrl+Shift+P Consciousness Analysis Ctrl+Alt+A Macros Ctrl+Alt+M Plugin Manager Preferences Ctrl+, Encoding Convert EOL Export Insights JSON Help Keyboard Shortcuts About Check for Updates User Guide Report Issue 📄 📁 💾 💾* ↶ ↷ ✂️ 📋 📄 🔍 🔄 ⚡ 🎨 💬 🧠 Plain Text JavaScript TypeScript HTML CSS Python Java C++ JSON XML Markdown YAML SQL UTF-8 UTF-16 ASCII ISO-8859-1 LF (Unix) CRLF (Windows) CR (Mac) 🔍- 100% 🔍+ 📁 Explorer 🔍 Search 🌿 Git ⚡ Outline 🔖 Bookmarks 🎯 Macros 🔌 Plugins 🧠 Insights Explorer 🔄 📄 📁 📁 Project Root 📄 README",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.77"
+      },
+      {
+        "action": "53,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.92"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.2068,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.78",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0c9a1647aeb01de9125ea144e2b306f7"
+  }
+}

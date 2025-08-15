@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:25.392Z",
+    "source_text_length": 12149,
+    "word_count": 2051,
+    "sentence_count": 314,
+    "entropy_level": 0.885,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ID C.2013.0067 25-Apr-2025 Society.txt"
+    },
+    "anchor_id": "5a9fd0d76347e14b52ee5e3ab29251d7"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "problems",
+        "frequency": 45
+      },
+      {
+        "theme": "clinical",
+        "frequency": 31
+      },
+      {
+        "theme": "range",
+        "frequency": 28
+      },
+      {
+        "theme": "benjamin",
+        "frequency": 28
+      },
+      {
+        "theme": "score",
+        "frequency": 23
+      },
+      {
+        "theme": "aseba",
+        "frequency": 20
+      },
+      {
+        "theme": "2025",
+        "frequency": 18
+      },
+      {
+        "theme": "percentile",
+        "frequency": 15
+      },
+      {
+        "theme": "borderline",
+        "frequency": 14
+      },
+      {
+        "theme": "scores",
+        "frequency": 14
+      },
+      {
+        "theme": "prevent2protect",
+        "frequency": 12
+      },
+      {
+        "theme": "normal",
+        "frequency": 11
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "ID: C … org Page 7/7",
+    "key_insights": [],
+    "action_items": [
+      "These results indicate that the DSM should be consulted to determine whether Benjamin meets diagnostic criteria for\r\nDepressive Problems and Anxiety Problems",
+      "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales",
+      "These results indicate that the DSM should be consulted to determine whether Benjamin's meets diagnostic criteria for Obsessive\r\n-Compulsive Problems and Stress Problems"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5a9fd0d76347e14b52ee5e3ab29251d7"
+  }
+}

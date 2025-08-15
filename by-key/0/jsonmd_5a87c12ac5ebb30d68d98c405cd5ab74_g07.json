@@ -1,0 +1,424 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:24:43.446Z",
+    "source_text_length": 3550,
+    "word_count": 415,
+    "entropy_level": 0.937,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "5a87c12ac5ebb30d68d98c405cd5ab74"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "logs",
+        "frequency": 14
+      },
+      {
+        "theme": "const",
+        "frequency": 12
+      },
+      {
+        "theme": "json",
+        "frequency": 11
+      },
+      {
+        "theme": "length",
+        "frequency": 8
+      },
+      {
+        "theme": "memory",
+        "frequency": 8
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 8
+      },
+      {
+        "theme": "stringify",
+        "frequency": 7
+      },
+      {
+        "theme": "document",
+        "frequency": 7
+      },
+      {
+        "theme": "type",
+        "frequency": 6
+      },
+      {
+        "theme": "blob",
+        "frequency": 6
+      },
+      {
+        "theme": "scrolls",
+        "frequency": 6
+      },
+      {
+        "theme": "imported",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [
+      "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+    ],
+    "pattern_recognition": [
+      "recursion",
+      "feedback"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "`; } else if (type === 'json_md') { content = JSON … ∴ ↱ ↰ ∴",
+    "key_insights": [],
+    "action_items": [
+      "createObjectURL(blob); const a = document",
+      "createElement('a'); a",
+      "createElement('a'); link",
+      "createObjectURL(blob); link"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.18,
+    "cognitive_load_estimate": 0.1775,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.883,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 2,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.766,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 3,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.649,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 4,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.531,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 5,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.414,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 6,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.297,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      },
+      {
+        "generation": 7,
+        "entropy": 0.937,
+        "contradictions": 0,
+        "novelty_index": 0.18,
+        "action_items": [
+          "createObjectURL(blob); const a = document",
+          "createElement('a'); a",
+          "createElement('a'); link"
+        ],
+        "key_questions": [
+          "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "logs",
+              "frequency": 14
+            },
+            {
+              "theme": "const",
+              "frequency": 12
+            },
+            {
+              "theme": "json",
+              "frequency": 11
+            },
+            {
+              "theme": "length",
+              "frequency": 8
+            },
+            {
+              "theme": "memory",
+              "frequency": 8
+            }
+          ]
+        },
+        "score": 0.445
+      }
+    ],
+    "quality_score": 43
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.2,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 4 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "jsdtheygh.html",
+      "bytes": 15678,
+      "lastModified": 1754265291409
+    }
+  }
+}

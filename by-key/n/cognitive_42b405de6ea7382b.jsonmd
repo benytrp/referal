@@ -1,0 +1,214 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:36.399Z",
+    "source_text_length": 9518,
+    "word_count": 1229,
+    "sentence_count": 96,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "42b405de6ea7382bb964d0e01d9c2f51",
+    "entropy_level": 0.946,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "strategic_plan_v_1.md",
+      "processing_timestamp": "2025-08-11T05:05:36.399Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "plan",
+        "frequency": 14,
+        "significance": "0.0114",
+        "examples": [
+          "Plan"
+        ]
+      },
+      {
+        "theme": "weekly",
+        "frequency": 12,
+        "significance": "0.0098",
+        "examples": [
+          "weekly"
+        ]
+      },
+      {
+        "theme": "operation",
+        "frequency": 9,
+        "significance": "0.0073",
+        "examples": [
+          "Operation"
+        ]
+      },
+      {
+        "theme": "define",
+        "frequency": 8,
+        "significance": "0.0065",
+        "examples": [
+          "define"
+        ]
+      },
+      {
+        "theme": "metrics",
+        "frequency": 8,
+        "significance": "0.0065",
+        "examples": [
+          "metrics.\n\n---\n\n##"
+        ]
+      },
+      {
+        "theme": "effort",
+        "frequency": 8,
+        "significance": "0.0065",
+        "examples": [
+          "Effort/cost"
+        ]
+      },
+      {
+        "theme": "constraints",
+        "frequency": 7,
+        "significance": "0.0057",
+        "examples": [
+          "\n**Constraints:**"
+        ]
+      },
+      {
+        "theme": "budget",
+        "frequency": 7,
+        "significance": "0.0057",
+        "examples": [
+          "budget."
+        ]
+      },
+      {
+        "theme": "week",
+        "frequency": 7,
+        "significance": "0.0057",
+        "examples": [
+          "12‑week"
+        ]
+      },
+      {
+        "theme": "sponsor",
+        "frequency": 7,
+        "significance": "0.0057",
+        "examples": [
+          "Sponsor/SteerCo"
+        ]
+      },
+      {
+        "theme": "review",
+        "frequency": 7,
+        "significance": "0.0057",
+        "examples": [
+          "review"
+        ]
+      },
+      {
+        "theme": "criteria",
+        "frequency": 6,
+        "significance": "0.0049",
+        "examples": [
+          "criteria:**"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Strategic Plan v1 0 — `<x>` Session\n\n**Contract summary**  \n**Goal:** Develop comprehensive strategic plan with actionable steps...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "0 — `<x>` Session\n\n**Contract summary**  \n**Goal:** Develop comprehensive strategic plan with actionable steps",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "  \n**Success criteria:** Produce an actionable plan; define clear milestones; generate success metrics",
+        "urgency_score": "0.05",
+        "feasibility_score": "0.99"
+      },
+      {
+        "action": "1: Assess current state (comprehensiveness: full)\n**Objectives**  \nCreate a shared understanding of today’s processes, technology, people, risks, and performance",
+        "urgency_score": "0.04",
+        "feasibility_score": "0.19"
+      },
+      {
+        "action": "\n\n**Actions**\n1) Spin up workspace & RACI; confirm decision rights",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "\n\n---\n\n# Phase 3 — Strategy Development (Weeks 4–6)\n\n### Operation 3",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "\n\n**Illustrative strategies (edit to fit):**\n- **S1 (Process):** Lean redesign of top‑volume workflow to cut cycle time 30–40%",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "  \n- **S3 (Data):** Build KPI dashboard with near‑real‑time signals; use for weekly decisions",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.45"
+      },
+      {
+        "action": "\n\n---\n\n# Phase 4 — Implementation Planning (Weeks 6–12)\n\n### Operation 4",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "1: Create action plan (detail: operational)\nFor each selected strategy, define **workstreams → tasks** with: owner, start/end, effort (S/M/L), dependencies, acceptance criteria",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.79"
+      },
+      {
+        "action": "\n\n**Workstream template**\n\n| Strategy | Task | Owner | Start | End | Effort | Dependencies | Acceptance criteria |\n|---|---|---|---|---|---|---|---|\n| S1 | Map current steps | Analyst | W6 | W6 | S | Stakeholder buy‑in | Steps validated by Ops Lead |\n| S1 | Redesign & pilot | Ops Lead | W7 | W8 | M | Map complete | 20% cycle‑time reduction in pilot |\n| S2 | Identify candidates | SME | W6 | W6 | S | — | 3 high‑volume tasks selected |\n| S2 | Build automation | Eng | W7 | W9 | L | Tool access | 25% effort reduction measured |\n| S3 | Define KPIs | PM | W6 | W6 | S | Baseline complete | KPI list approved |\n| S3 | Build dashboard | Analyst | W7 | W8 | M | KPIs defined | Dashboard live, weekly review |\n| S4 | Role charter | PM | W6 | W7 | S | Stakeholder input | RACI published |\n| S4 | Micro‑training | Comms | W8 | W9 | S | Charter done | 80% training completion |\n| S5 | Define gates | PM | W6 | W6 | S | Sponsor input | Gate definitions approved |\n| S5 | Run governance | Sponsor | W7 | W12 | S | Gates defined | <2‑day decision SLA met |\n\n### Operation 4",
+        "urgency_score": "0.85",
+        "feasibility_score": "0.71"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.4759,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.43",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "42b405de6ea7382bb964d0e01d9c2f51"
+  }
+}

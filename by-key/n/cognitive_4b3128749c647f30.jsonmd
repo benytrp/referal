@@ -1,0 +1,253 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:15.625Z",
+    "source_text_length": 83144,
+    "word_count": 8517,
+    "sentence_count": 705,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "4b3128749c647f307aadb7df83557b4e",
+    "entropy_level": 0.828,
+    "contradictions_detected": 3,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "!DOCTY.html",
+      "processing_timestamp": "2025-08-11T05:05:15.625Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 273,
+        "significance": "0.0321",
+        "examples": [
+          "class=\"theme-dark\">\r\n"
+        ]
+      },
+      {
+        "theme": "onclick",
+        "frequency": 175,
+        "significance": "0.0205",
+        "examples": [
+          "onclick=\"toggleDropdown('file-menu',"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 173,
+        "significance": "0.0203",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 163,
+        "significance": "0.0191",
+        "examples": [
+          "<span>Ctrl+N</span></div>\r\n"
+        ]
+      },
+      {
+        "theme": "item",
+        "frequency": 153,
+        "significance": "0.0180",
+        "examples": [
+          ".menu-item"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 130,
+        "significance": "0.0153",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "dropdown",
+        "frequency": 107,
+        "significance": "0.0126",
+        "examples": [
+          ".dropdown"
+        ]
+      },
+      {
+        "theme": "editor",
+        "frequency": 105,
+        "significance": "0.0123",
+        "examples": [
+          ".editor-group"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 104,
+        "significance": "0.0122",
+        "examples": [
+          "content=\"width=device-width,"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 86,
+        "significance": "0.0101",
+        "examples": [
+          ".function"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 79,
+        "significance": "0.0093",
+        "examples": [
+          "document.getElementById('main-editor');\r\n"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 75,
+        "significance": "0.0088",
+        "examples": [
+          "<style>\r\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "key === 'ArrowDown' ? 1 : -1);\r\n          event",
+      "innerHTML = highlightedContent;\r\n    }\r\n\r\n    function highlightJavaScript(code) {\r\n      const keywords = /\\b(function|var|let|const|if|else|for|while|return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\b/g;\r\n      const strings = /([\"'`])(?:(",
+      ")*?\\1/g;\r\n      const comments = /\\/\\/",
+      "*$|\\/\\*[\\s\\S]*?\\*\\//gm;\r\n      const numbers = /\\b\\d+\\",
+      "?\\d*\\b/g;\r\n      const functions = /\\b(\\w+)(",
+      "?=\\s*\\()/g;\r\n\r\n      return code",
+      "replace(functions, '<span class=\"function\">$&</span>');\r\n    }\r\n\r\n    function highlightHTML(code) {\r\n      const tags = /&lt;(\\/?[\\w-]+)([^&gt;]*",
+      "?)&gt;/g;\r\n      const attributes = /(\\w+)=(\"[^\"]*\"|'[^']*')/g;\r\n      const comments = /&lt;"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "repeat",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "innerHTML = highlightedContent;\r\n    }\r\n\r\n    function highlightJavaScript(code) {\r\n      const keywords = /\\b(function|var|let|const|if|else|for|w",
+        "statement_b": "return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\b/g;\r\n      const strings = /([\"'`])(",
+        "line": 263,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.45"
+      },
+      {
+        "statement_a": "replace(values, ': <span class=\"value\">$1</span>');\r\n    }\r\n\r\n    function highlightPython(code) {\r\n      const keywords = /\\b(def|class|import|from|if|elif|else|for|w",
+        "statement_b": "try|except|finally|with|as|return|yield|lambda|and|or|not|in|is|None|True|False|pass|break|continue|global|nonlocal)\\b/g;\r\n      const strings = /([\"']{3}[\\s\\S]*",
+        "line": 285,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.44"
+      },
+      {
+        "statement_a": "1;\r\n        \r\n        // Control structures\r\n        if (/\\b(if|for|w",
+        "statement_b": "switch|try)\\b/",
+        "line": 535,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.71"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 6,
+      "present": 17,
+      "future": 8
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n  <meta charset=\"UTF-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\" />\r\n  <title>Notepad++ Ultimate Clone — Consciousness Enhanced</title>\r\n  <style>\r\n    * { margin:0; padding:0; box-sizing:border-box; }\r\n    body { font-family:'Consolas','Monaco','Courier New',monospace; background:#2d2d30; color:#fff; height:100vh; display:flex; flex-direction:column; overflow:hidden; }\r\n    \r\n    /* Enhanced Menu Bar */\r\n    ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "-- Preference content will be loaded here -->\r\n      </div>\r\n    </div>\r\n    <div class=\"dialog-buttons\">\r\n      <button onclick=\"applyPreferences()\">Apply</button>\r\n      <button onclick=\"savePreferences()\">OK</button>\r\n      <button class=\"secondary\" onclick=\"closeDialog('preferences-dialog')\">Cancel</button>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"dialog\" id=\"command-palette\">\r\n    <h3>Command Palette</h3>\r\n    <input type=\"text\" id=\"command-input\" placeholder=\"Type a command",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "-- Commands will be populated here -->\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"dialog\" id=\"macro-dialog\">\r\n    <h3>Macro Manager</h3>\r\n    <div style=\"display:flex; gap:15px; height:300px;\">\r\n      <div style=\"flex:1;\">\r\n        <strong>Recorded Macros:</strong>\r\n        <div id=\"macro-dialog-list\" style=\"border:1px solid #555; height:200px; overflow-y:auto; margin:10px 0;\"></div>\r\n        <div>\r\n          <button onclick=\"startMacroRecording()\">Record New</button>\r\n          <button onclick=\"deleteMacroDialog()\">Delete</button>\r\n        </div>\r\n      </div>\r\n      <div style=\"flex:1;\">\r\n        <strong>Macro Details:</strong>\r\n        <textarea id=\"macro-details\" style=\"height:200px;\" placeholder=\"Macro commands will appear here",
+        "urgency_score": "0.83",
+        "feasibility_score": "0.66"
+      },
+      {
+        "action": "push(tab);\r\n      fileContent[tabId] = '';\r\n      fileHistory[tabId] = [''];\r\n      redoHistory[tabId] = [];\r\n      \r\n      createTab(tabId, fileName);\r\n      switchToTab(tabs",
+        "urgency_score": "0.50",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "length - 1);\r\n      updateStatusBar('New file created');\r\n    }\r\n\r\n    function openFile() {\r\n      document",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "click();\r\n    }\r\n\r\n    function openFolder() {\r\n      // Simulate folder opening\r\n      updateStatusBar('Folder opened in explorer');\r\n      // In a real implementation, this would use the File System Access API\r\n    }\r\n\r\n    function handleFileLoad(event) {\r\n      const files = Array",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.89"
+      },
+      {
+        "action": "push(tab);\r\n          fileContent[tabId] = content;\r\n          fileHistory[tabId] = [content];\r\n          redoHistory[tabId] = [];\r\n          \r\n          createTab(tabId, file",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": "syntax) {\r\n        validateSyntax();\r\n      }\r\n\r\n      // Record macro action\r\n      if (isRecordingMacro) {\r\n        recordMacroAction('type', { text: content",
+        "urgency_score": "0.50",
+        "feasibility_score": "0.40"
+      },
+      {
+        "action": "createElement('div');\r\n        cursor",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "value;\r\n      const regex = buildSearchRegex(searchTerm);\r\n      \r\n      if (",
+        "urgency_score": "0.21",
+        "feasibility_score": "0.02"
+      },
+      {
+        "action": "length} matches found`;\r\n      \r\n      // Highlight all matches\r\n      highlightSearchResults(matches);\r\n    }\r\n\r\n    function buildSearchRegex(term) {\r\n      const matchCase = document",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.50"
+      }
+    ],
+    "unresolved_tensions": [
+      "innerHTML = highlightedContent;\r\n    }\r\n\r\n    function highlightJavaScript(code) {\r\n      const keywords = /\\b(function|var|let|const|if|else|for|w vs return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\b/g;\r\n      const strings = /([\"'`])("
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 3 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.75",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "4b3128749c647f307aadb7df83557b4e"
+  }
+}

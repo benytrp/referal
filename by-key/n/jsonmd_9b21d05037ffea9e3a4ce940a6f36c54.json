@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:44.377Z",
+    "source_text_length": 772,
+    "word_count": 109,
+    "sentence_count": 14,
+    "entropy_level": 0.984,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "11209402154.html"
+    },
+    "anchor_id": "9b21d05037ffea9e3a4ce940a6f36c54"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "https",
+        "frequency": 3
+      },
+      {
+        "theme": "perplexity",
+        "frequency": 3
+      },
+      {
+        "theme": "html",
+        "frequency": 3
+      },
+      {
+        "theme": "1754409842416",
+        "frequency": 2
+      },
+      {
+        "theme": "config",
+        "frequency": 2
+      },
+      {
+        "theme": "2fwww",
+        "frequency": 2
+      },
+      {
+        "theme": "head",
+        "frequency": 2
+      },
+      {
+        "theme": "content",
+        "frequency": 2
+      },
+      {
+        "theme": "body",
+        "frequency": 2
+      },
+      {
+        "theme": "1123",
+        "frequency": 1
+      },
+      {
+        "theme": "101509157",
+        "frequency": 1
+      },
+      {
+        "theme": "103116026",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [
+      "net/td/rul/11209402154?random=1754409842416&cv=11&fst=1754409842416&fmt=3&bg=ffffff&guid=ON&async=1&en=gtag"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "< … config -->\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"></head><body></body></html>",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9b21d05037ffea9e3a4ce940a6f36c54"
+  }
+}

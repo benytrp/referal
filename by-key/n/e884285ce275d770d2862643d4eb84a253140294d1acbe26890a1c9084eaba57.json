@@ -1,0 +1,138 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:35.336Z",
+    "anchor_id": "e884285ce275d770d2862643d4eb84a253140294d1acbe26890a1c9084eaba57",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.776,
+    "contradictions_detected": 10,
+    "word_count": 4731
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 205
+      },
+      {
+        "theme": "div",
+        "frequency": 156
+      },
+      {
+        "theme": "data",
+        "frequency": 155
+      },
+      {
+        "theme": "label",
+        "frequency": 141
+      },
+      {
+        "theme": "span",
+        "frequency": 121
+      },
+      {
+        "theme": "const",
+        "frequency": 103
+      },
+      {
+        "theme": "yes",
+        "frequency": 78
+      },
+      {
+        "theme": "key",
+        "frequency": 75
+      },
+      {
+        "theme": "input",
+        "frequency": 67
+      },
+      {
+        "theme": "opt",
+        "frequency": 66
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "es\": \"\" } } Precheck accepted: yes / ni / na (also y/true/1 → yes; no/false/0 → ni; n/a/na/none → na). CSV: headers should be dot-paths (e.g., work"
+      },
+      {
+        "idx": 1,
+        "sample": "Precheck accepted: yes / ni / na (also y/true/1 → yes; no/false/0 → ni; n/a/na/none → na). CSV: headers should be dot-paths (e.g., work_habits.hygiene)."
+      },
+      {
+        "idx": 2,
+        "sample": "cksFromData(data){ const allowed = new Set(['yes','ni','na','y','true','1','no','false','0','n/a','na','none']); const out = {}; function walk(prefi"
+      },
+      {
+        "idx": 3,
+        "sample": "allowed = new Set(['yes','ni','na','y','true','1','no','false','0','n/a','na','none']); const out = {}; function walk(prefix, obj){ if(!obj || ty"
+      },
+      {
+        "idx": 4,
+        "sample": "turn o; }); return objs; } // ---------- Simple ZIP (STORE only, no compression) ---------- // CRC32 const CRC32_TABLE = (function(){ con"
+      },
+      {
+        "idx": 5,
+        "sample": "lor:var(--muted)} @media print{ body{margin:0; font-size:12px} .no-print.controls{display:none !important} input[type=\"checkbox\"]{ transfo"
+      },
+      {
+        "idx": 6,
+        "sample": "ia print{ body{margin:0; font-size:12px} .no-print.controls{display:none !important} input[type=\"checkbox\"]{ transform: scale(1.2); } }"
+      },
+      {
+        "idx": 7,
+        "sample": "Focus:</div><div class=\"value\">⟦todays_focus⟧</div></div> <div class=\"legend no-print controls\"> <strong>Selection rule:</strong> choose exactly one box"
+      },
+      {
+        "idx": 8,
+        "sample": "\"yes\":\"yes\",\"y\":\"yes\",\"true\":\"yes\",\"1\":\"yes\", \"ni\":\"ni\",\"no\":\"ni\",\"false\":\"ni\",\"0\":\"ni\", \"n/a\":\"na\",\"na\":\"na\",\"none"
+      },
+      {
+        "idx": 9,
+        "sample": "i\",\"no\":\"ni\",\"false\":\"ni\",\"0\":\"ni\", \"n/a\":\"na\",\"na\":\"na\",\"none\":\"na\" }; return map[s]; } function apply(initial){"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getItem(key) ??",
+      "const date = (data?",
+      "record_meta?",
+      "const pcode = (data?",
+      "record_meta?",
+      "eval_id = deterministic ?",
+      "const id = deterministic ?",
+      "replace(/[\\\\/:*?",
+      "==undefined ?",
+      "o[k] : '', obj) ??",
+      "length-1;i++){ cur[segs[i]] ??",
+      "return (v===undefined || v===null) ?",
+      "const path = prefix ?",
+      "checked ?",
+      "o[key] = r[idx]===undefined ?"
+    ],
+    "summary": "class, div, data, label, span"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 2,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "will",
+    "was",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "E3-Master-Template-Builder-Enhanced.html",
+    "relative_path": "E3-Master-Template-Builder-Enhanced.html",
+    "size_bytes": 47219,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.86
+  }
+}

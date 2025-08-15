@@ -1,0 +1,111 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:20.661Z",
+    "source_text_length": 2260,
+    "word_count": 366,
+    "sentence_count": 28,
+    "entropy_level": 0.943,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "googleaistudio.html"
+    },
+    "anchor_id": "51b4cb8d597dc7ec3e817cecc01ba42e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "beacon",
+        "frequency": 8
+      },
+      {
+        "theme": "session",
+        "frequency": 6
+      },
+      {
+        "theme": "json",
+        "frequency": 5
+      },
+      {
+        "theme": "preview",
+        "frequency": 4
+      },
+      {
+        "theme": "left",
+        "frequency": 3
+      },
+      {
+        "theme": "readable",
+        "frequency": 3
+      },
+      {
+        "theme": "load",
+        "frequency": 3
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2
+      },
+      {
+        "theme": "mirror",
+        "frequency": 2
+      },
+      {
+        "theme": "copy",
+        "frequency": 2
+      },
+      {
+        "theme": "download",
+        "frequency": 2
+      },
+      {
+        "theme": "clear",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "This \"beacon\" can then be ingested by any AI system capable of parsing JSON, allowing you to transfer not just data,",
+        "statement_b": "entire workflows, instructions, and contextual metadata from one system to another",
+        "line": 28,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Session Mirror v2 … This \"beacon\" can then be ingested by any AI system capable of parsing JSON, allowing you to transfer not just data, but entire workflows, instructions, and contextual metadata from one system to another",
+    "key_insights": [],
+    "action_items": [
+      "0 - Manual This tool allows you to create, edit, and export structured \"beacons\" in a `json_md_fusion` format",
+      "Workflow Load or Create: Select a template from the dropdown or start with the default"
+    ],
+    "unresolved_tensions": [
+      "This \"beacon\" can then be ingested by any AI system capable of parsing JSON, allowing you to transfer not just data, vs entire workflows, instructions, and contextual metadata from one system to another"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "51b4cb8d597dc7ec3e817cecc01ba42e"
+  }
+}

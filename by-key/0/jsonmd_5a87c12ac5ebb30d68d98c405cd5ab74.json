@@ -1,0 +1,106 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:27.878Z",
+    "source_text_length": 3550,
+    "word_count": 415,
+    "sentence_count": 95,
+    "entropy_level": 0.937,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsdtheygh.html"
+    },
+    "anchor_id": "5a87c12ac5ebb30d68d98c405cd5ab74"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "logs",
+        "frequency": 14
+      },
+      {
+        "theme": "const",
+        "frequency": 12
+      },
+      {
+        "theme": "json",
+        "frequency": 11
+      },
+      {
+        "theme": "length",
+        "frequency": 8
+      },
+      {
+        "theme": "memory",
+        "frequency": 8
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 8
+      },
+      {
+        "theme": "stringify",
+        "frequency": 7
+      },
+      {
+        "theme": "document",
+        "frequency": 7
+      },
+      {
+        "theme": "type",
+        "frequency": 6
+      },
+      {
+        "theme": "blob",
+        "frequency": 6
+      },
+      {
+        "theme": "scrolls",
+        "frequency": 6
+      },
+      {
+        "theme": "imported",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [
+      "stringify(latestScroll, null, 2); } const blob = new Blob([content], { type: type === 'html' ? 'text/html' : 'application/json' }); const url = URL"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "`; } else if (type === 'json_md') { content = JSON … ∴ ↱ ↰ ∴",
+    "key_insights": [],
+    "action_items": [
+      "createObjectURL(blob); const a = document",
+      "createElement('a'); a",
+      "createElement('a'); link",
+      "createObjectURL(blob); link"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5a87c12ac5ebb30d68d98c405cd5ab74"
+  }
+}

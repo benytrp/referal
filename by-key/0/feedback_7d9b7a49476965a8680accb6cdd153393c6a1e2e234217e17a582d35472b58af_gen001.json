@@ -1,0 +1,136 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:36.848Z",
+    "anchor_id": "7d9b7a49476965a8680accb6cdd153393c6a1e2e234217e17a582d35472b58af",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.762,
+    "contradictions_detected": 5,
+    "word_count": 1971
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "div",
+        "frequency": 114
+      },
+      {
+        "theme": "class",
+        "frequency": 66
+      },
+      {
+        "theme": "const",
+        "frequency": 34
+      },
+      {
+        "theme": "strong",
+        "frequency": 28
+      },
+      {
+        "theme": "html",
+        "frequency": 27
+      },
+      {
+        "theme": "esc",
+        "frequency": 26
+      },
+      {
+        "theme": "daily",
+        "frequency": 25
+      },
+      {
+        "theme": "merged",
+        "frequency": 25
+      },
+      {
+        "theme": "yes",
+        "frequency": 19
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 19
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "h> <th class=\"checkbox-cell\">Yes</th> <th class=\"checkbox-cell\">No</th> </tr> <tr><td><strong>Attendance</strong> — Correct day and"
+      },
+      {
+        "idx": 1,
+        "sample": "ts\": { \"attendance\": { \"correctDayTime\": \"YES\", \"excessiveAbsences\": \"NO\" }, \"timeliness\": { \"arrivedOnTime\": \"YES\", \"excessiveTardiness\": \""
+      },
+      {
+        "idx": 2,
+        "sample": "NO\" }, \"timeliness\": { \"arrivedOnTime\": \"YES\", \"excessiveTardiness\": \"NO\" }, \"hygiene\": { \"appropriatelyGroomed\": \"YES\" }, \"dress\""
+      },
+      {
+        "idx": 3,
+        "sample": "{ const el = $('htmlOutput'); if (!el.value) { show('htmlStatus', 'No HTML to copy.', 'err'); return; } el.select(); document.execCommand('co"
+      },
+      {
+        "idx": 4,
+        "sample": "const html = $('htmlOutput').value; if (!html) { show('htmlStatus', 'No HTML to download.', 'err'); return; } const blob = new Blob([html], { t"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const esc = (s) => String(s ??",
+      "== '') ??",
+      "const s = String(v ??",
+      "const is = (v, target) => String(v ??",
+      "const triCheck = (v, opt) => is(v, opt) ?",
+      "totalUnits ??",
+      "signatures?",
+      "signatures?",
+      "staffing?",
+      "staffPresentNames) ?",
+      "<td class=\"center checkbox-cell\"><input type=\"checkbox\" ${truthy(yesVal) ?",
+      "<td class=\"center checkbox-cell\"><input type=\"checkbox\" ${truthy(yesVal) ?",
+      "<tr><td><strong>Attendance</strong> — Correct day and time?",
+      "</td>${yesNo(wh?",
+      "attendance?"
+    ],
+    "summary": "div, class, const, strong, html"
+  },
+  "sentiment_indicators": {
+    "positive": 3,
+    "negative": 2,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "will",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile.html",
+    "relative_path": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile.html",
+    "size_bytes": 25425,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.8
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.804
+- Word Count: 303
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:35.073Z",
+  "original_file": "7d9b7a49476965a8680accb6cdd153393c6a1e2e234217e17a582d35472b58af.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

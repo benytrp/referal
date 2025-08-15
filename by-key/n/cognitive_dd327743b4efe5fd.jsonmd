@@ -1,0 +1,203 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:37.616Z",
+    "source_text_length": 18535,
+    "word_count": 1971,
+    "sentence_count": 164,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "dd327743b4efe5fd0790c7facb08988a",
+    "entropy_level": 0.878,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "unified_e3_builder.html",
+      "processing_timestamp": "2025-08-11T05:05:37.616Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 50,
+        "significance": "0.0254",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 38,
+        "significance": "0.0193",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 34,
+        "significance": "0.0173",
+        "examples": [
+          "grid-template-columns:"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 29,
+        "significance": "0.0147",
+        "examples": [
+          "document.getElementById('status');\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 28,
+        "significance": "0.0142",
+        "examples": [
+          "onclick=\"showTab('data')\">📝"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 26,
+        "significance": "0.0132",
+        "examples": [
+          "checkboxes:</strong>"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 25,
+        "significance": "0.0127",
+        "examples": [
+          "document.getElementById('quickName').value.trim();\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 24,
+        "significance": "0.0122",
+        "examples": [
+          "name=\"viewport\""
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 23,
+        "significance": "0.0117",
+        "examples": [
+          "document.getElementById('status');\n"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 22,
+        "significance": "0.0112",
+        "examples": [
+          "border-radius:"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 21,
+        "significance": "0.0107",
+        "examples": [
+          "functions\nfunction"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 20,
+        "significance": "0.0101",
+        "examples": [
+          "input"
+        ]
+      }
+    ],
+    "key_questions": [
+      "className = 'status ' + (isError ? 'error' : 'success');\n    status",
+      "instructor) {\n        showStatus('Fill in at least one field', true);\n        return;\n    }\n    \n    var line = '';\n    if (name) line += 'participant_name=' + name;\n    if (id) line += (line ? ', ' : '') + 'participant_id=' + id;\n    if (date) line += (line",
+      "? ', ' : '') + 'eval_date=' + date;\n    if (instructor) line += (line",
+      "? ', ' : '') + 'instructor_name=' + instructor;\n    \n    var bulk = document",
+      "comments { border: 1px dashed #999; padding: 10px; min-height: 40px; }\\n@media print { body { margin: 0; font-size: 12px; } }\\n</style>\\n</head>\\n<body>\\n<h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\\n\\n<div class=\"field\">\\n<span class=\"label\">Name:</span> PARTICIPANT_NAME\\n</div>\\n<div class=\"field\">\\n<span class=\"label\">ID:</span> PARTICIPANT_ID\\n</div>\\n<div class=\"field\">\\n<span class=\"label\">Date:</span> EVAL_DATE\\n</div>\\n<div class=\"field\">\\n<span class=\"label\">Batch ID:</span> BATCH_ID\\n</div>\\n<div class=\"field\">\\n<span class=\"label\">Eval ID:</span> EVAL_ID\\n</div>\\n\\n<h3>Work Habits</h3>\\n<table>\\n<tr><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attendance — Correct day and time?</td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attendance\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attendance\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attendance\"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed",
+      "?</td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"hygiene\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"hygiene\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"hygiene\"></td>\\n</tr>\\n</table>\\n\\n<h3>Preparatory Goals</h3>\\n<table>\\n<tr><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks",
+      "?</td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attention\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attention\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attention\"></td>\\n</tr>\\n<tr>\\n<td>Safety — Followed procedures",
+      "?</td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"safety\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"safety\"></td>\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"safety\"></td>\\n</tr>\\n</table>\\n\\n<h3>Comments</h3>\\n<div class=\"comments\">COMMENTS_SECTION</div>\\n\\n<h3>Signature</h3>\\n<div class=\"field\">\\n<span class=\"label\">Instructor:</span> INSTRUCTOR_NAME\\n</div>\\n\\n<script>\\nvar boxes = document"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 14,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>E3 Unified Builder - Fixed</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background: #f5f5f5;\n            margin: 0;\n            padding: 20px;\n        }\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>E3 Unified Builder - Fixed</title>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.41"
+      },
+      {
+        "action": "counter { background: #e9ecef; padding: 8px 12px; border-radius: 5px; font-family: monospace; }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <h1>🏗️ E3 Unified Builder</h1>\n\n        <div class=\"tabs\">\n            <button class=\"tab active\" onclick=\"showTab('data')\">📝 Data Entry</button>\n            <button class=\"tab\" onclick=\"showTab('template')\">📄 Template</button>\n            <button class=\"tab\" onclick=\"showTab('generate')\">⚡ Generate</button>\n        </div>\n\n        <",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.48"
+      },
+      {
+        "action": "createObjectURL(blob);\n    var a = document",
+        "urgency_score": "0.81",
+        "feasibility_score": "0.24"
+      },
+      {
+        "action": "createElement('a');\n    a",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "createObjectURL(blob);\n                var a = document",
+        "urgency_score": "0.60",
+        "feasibility_score": "0.27"
+      },
+      {
+        "action": "createElement('a');\n                a",
+        "urgency_score": "0.45",
+        "feasibility_score": "0.23"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.92675,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.26",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 6 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "dd327743b4efe5fd0790c7facb08988a"
+  }
+}

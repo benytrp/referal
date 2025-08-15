@@ -1,0 +1,176 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:50.163Z",
+    "source_text_length": 2591,
+    "word_count": 205,
+    "sentence_count": 10,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "5007e989530c4ba571d4b7f82273fe80",
+    "entropy_level": 0.948,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_544dadaee82d795e3b8d801a3802c3e8.json",
+      "processing_timestamp": "2025-08-11T05:13:50.163Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0390",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0390",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 5,
+        "significance": "0.0244",
+        "examples": [
+          "\"session_launcher_complete_replication_protocol_single_file_html"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 4,
+        "significance": "0.0195",
+        "examples": [
+          "\"offline\",\n"
+        ]
+      },
+      {
+        "theme": "open",
+        "frequency": 4,
+        "significance": "0.0195",
+        "examples": [
+          "\"open\",\n"
+        ]
+      },
+      {
+        "theme": "launcher",
+        "frequency": 3,
+        "significance": "0.0146",
+        "examples": [
+          "\"session_launcher_complete_replication_protocol_single_file_html"
+        ]
+      },
+      {
+        "theme": "replication",
+        "frequency": 3,
+        "significance": "0.0146",
+        "examples": [
+          "\"session_launcher_complete_replication_protocol_single_file_html"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 3,
+        "significance": "0.0146",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"SYNTHESIS\",\n"
+        ]
+      },
+      {
+        "theme": "path",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"path\":"
+        ]
+      },
+      {
+        "theme": "complete",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"session_launcher_complete_replication_protocol_single_file_html"
+        ]
+      },
+      {
+        "theme": "explore",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"Explore"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "again",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:54...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … 0 • storage key: csr_session_launcher_v1\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"▶ Start ⏸ Pause ↺ Reset Open Toolslocal, offline Open Core Trio Open All Session State Export JSON Import JSON Quick Counters + Artifact + Breakthrough Φ alignment (manual) Phases & Tasks Anchors • Begin_again ⚓ Create Session Notesauto-saved Generate Replication Prompts Launcher state persists in localStorage • No network calls • Designed for your offline kit",
+        "urgency_score": "0.86",
+        "feasibility_score": "0.76"
+      },
+      {
+        "action": "46,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.30"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.12955,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.23",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5007e989530c4ba571d4b7f82273fe80"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:14.218Z",
+    "source_text_length": 2076,
+    "word_count": 158,
+    "sentence_count": 8,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "3494230d25ffafd277321350d172aafe",
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_315e1bd5835b56b78b19494e1be6475c.json",
+      "processing_timestamp": "2025-08-11T05:02:14.218Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 9,
+        "significance": "0.0570",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0506",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "iterative",
+        "frequency": 4,
+        "significance": "0.0253",
+        "examples": [
+          "\"iterative.html\",\n"
+        ]
+      },
+      {
+        "theme": "markdown",
+        "frequency": 4,
+        "significance": "0.0253",
+        "examples": [
+          "\"markdown\",\n"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 4,
+        "significance": "0.0253",
+        "examples": [
+          "\"offline\",\n"
+        ]
+      },
+      {
+        "theme": "refinement",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"refinement\",\n"
+        ]
+      },
+      {
+        "theme": "translator",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"translator\",\n"
+        ]
+      },
+      {
+        "theme": "paste",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"paste\",\n"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"session\",\n"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 3,
+        "significance": "0.0190",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 2,
+        "significance": "0.0127",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 2,
+        "significance": "0.0127",
+        "examples": [
+          "\"iterative.html\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:13...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … 🌗 Theme 📥 Load Sample 🧹 Clear 1) Paste Raw Session Data 🔎 Parse & Render 📋 Copy Markdown 💾 Download Markdown 🗂️ Download Snapshot HTML 2) Markdown Output Timeline Table Cycle Phase Op Contested Entropy Timestamp Hash\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.38"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1038,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.83",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3494230d25ffafd277321350d172aafe"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:49.913Z",
+    "source_text_length": 3197,
+    "word_count": 298,
+    "sentence_count": 19,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "8fed30511209ea417767d0af7a704b1d",
+    "entropy_level": 0.959,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_42b405de6ea7382bb964d0e01d9c2f51.json",
+      "processing_timestamp": "2025-08-11T05:13:49.913Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0268",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0268",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "plan",
+        "frequency": 5,
+        "significance": "0.0168",
+        "examples": [
+          "\"strategic_plan_v_1.md\",\n"
+        ]
+      },
+      {
+        "theme": "operation",
+        "frequency": 3,
+        "significance": "0.0101",
+        "examples": [
+          "\"operation\",\n"
+        ]
+      },
+      {
+        "theme": "define",
+        "frequency": 3,
+        "significance": "0.0101",
+        "examples": [
+          "\"define\",\n"
+        ]
+      },
+      {
+        "theme": "effort",
+        "frequency": 3,
+        "significance": "0.0101",
+        "examples": [
+          "\"effort\",\n"
+        ]
+      },
+      {
+        "theme": "criteria",
+        "frequency": 3,
+        "significance": "0.0101",
+        "examples": [
+          "criteria:**"
+        ]
+      },
+      {
+        "theme": "weekly",
+        "frequency": 2,
+        "significance": "0.0067",
+        "examples": [
+          "\"weekly\",\n"
+        ]
+      },
+      {
+        "theme": "metrics",
+        "frequency": 2,
+        "significance": "0.0067",
+        "examples": [
+          "\"metrics\",\n"
+        ]
+      },
+      {
+        "theme": "summary",
+        "frequency": 2,
+        "significance": "0.0067",
+        "examples": [
+          "\"summary\":"
+        ]
+      },
+      {
+        "theme": "strategic",
+        "frequency": 2,
+        "significance": "0.0067",
+        "examples": [
+          "\"strategic_plan_v_1.md\",\n"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 2,
+        "significance": "0.0067",
+        "examples": [
+          "Session\\n\\n**Contract"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 4,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:56...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"0 — `<x>` Session\\n\\n**Contract summary**  \\n**Goal:** Develop comprehensive strategic plan with actionable steps",
+        "urgency_score": "0.06",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "\",\n      \"**Success criteria:** Produce an actionable plan; define clear milestones; generate success metrics",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.16"
+      },
+      {
+        "action": "\",\n      \"1: Assess current state (comprehensiveness: full)\\n**Objectives**  \\nCreate a shared understanding of today’s processes, technology, people, risks, and performance",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.16"
+      },
+      {
+        "action": "\",\n      \"**Actions**\\n1) Spin up workspace & RACI; confirm decision rights",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.14"
+      },
+      {
+        "action": "\",\n      \"---\\n\\n# Phase 3 — Strategy Development (Weeks 4–6)\\n\\n### Operation 3",
+        "urgency_score": "0.86",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "\",\n      \"- **S3 (Data):** Build KPI dashboard with near‑real‑time signals; use for weekly decisions",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "\",\n      \"---\\n\\n# Phase 4 — Implementation Planning (Weeks 6–12)\\n\\n### Operation 4",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.45"
+      },
+      {
+        "action": "\",\n      \"1: Create action plan (detail: operational)\\nFor each selected strategy, define **workstreams → tasks** with: owner, start/end, effort (S/M/L), dependencies, acceptance criteria",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.64"
+      },
+      {
+        "action": "53,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"plain\"\n  }\n}",
+        "urgency_score": "0.75",
+        "feasibility_score": "0.68"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.15985,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.25",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 9 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8fed30511209ea417767d0af7a704b1d"
+  }
+}

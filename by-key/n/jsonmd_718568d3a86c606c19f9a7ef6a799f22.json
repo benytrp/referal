@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:43.835Z",
+    "source_text_length": 1193,
+    "word_count": 101,
+    "sentence_count": 18,
+    "entropy_level": 0.972,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "scroll_manifest_20250806_051343.md"
+    },
+    "anchor_id": "718568d3a86c606c19f9a7ef6a799f22"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "anchor",
+        "frequency": 5
+      },
+      {
+        "theme": "glyph",
+        "frequency": 4
+      },
+      {
+        "theme": "scroll",
+        "frequency": 3
+      },
+      {
+        "theme": "bridge",
+        "frequency": 3
+      },
+      {
+        "theme": "mutation",
+        "frequency": 3
+      },
+      {
+        "theme": "export",
+        "frequency": 3
+      },
+      {
+        "theme": "manifest",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2
+      },
+      {
+        "theme": "genetic_scroll_v1",
+        "frequency": 2
+      },
+      {
+        "theme": "trigger",
+        "frequency": 2
+      },
+      {
+        "theme": "paradox",
+        "frequency": 2
+      },
+      {
+        "theme": "emergence",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [
+      "genetic_scroll_v1  \n**Glyph Summary:** ∴, ↱, ⟲, ∞, Δ  \n**Bridge Subclasses:** RecursiveForm, ContradictionTracker, MutatorNode  \n\n## Timeline & Anchors\n\n| Phase  | Anchor/Event        | Glyph      | Mutation Trigger Met? |\n|--------|---------------------|------------|------------------------|\n| 1–9    | ANCHOR-ORIGIN       | ∴          | No                     |\n| 2      | ANCHOR-PARADOX      | ↱          | ent > 0"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Scroll Manifest: aeon … svg + manifest only`",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "718568d3a86c606c19f9a7ef6a799f22"
+  }
+}

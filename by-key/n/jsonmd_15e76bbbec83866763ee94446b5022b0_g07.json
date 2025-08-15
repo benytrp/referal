@@ -1,0 +1,526 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:51.714Z",
+    "source_text_length": 41884,
+    "word_count": 5210,
+    "entropy_level": 0.872,
+    "contradictions_detected": 9,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "15e76bbbec83866763ee94446b5022b0"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 70
+      },
+      {
+        "theme": "summit",
+        "frequency": 58
+      },
+      {
+        "theme": "pointe",
+        "frequency": 58
+      },
+      {
+        "theme": "chris",
+        "frequency": 54
+      },
+      {
+        "theme": "request",
+        "frequency": 52
+      },
+      {
+        "theme": "date",
+        "frequency": 42
+      },
+      {
+        "theme": "burdette",
+        "frequency": 38
+      },
+      {
+        "theme": "email",
+        "frequency": 36
+      },
+      {
+        "theme": "accommodation",
+        "frequency": 36
+      },
+      {
+        "theme": "response",
+        "frequency": 31
+      },
+      {
+        "theme": "plan",
+        "frequency": 28
+      },
+      {
+        "theme": "clay",
+        "frequency": 27
+      }
+    ],
+    "key_questions": [
+      "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+      "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+      "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan",
+      "is there a policy for that before things get signed?\",\r\n        \"response\": \"No specific policy",
+      "if Rachel left early how did they get a full plan from just that?\",\r\n        \"response\": \"A treatment planning meeting was held on 4/15/2025, which was also the initial meeting between the case manager, Rachel and Ben at Rachel’s home",
+      "\"\r\n      },\r\n      {\r\n        \"question\": \"Also wasn’t I already listed as the primary contact before Clay said I wasn’t part of things yet?\",\r\n        \"response\": \"Yes, you were listed as the primary contact",
+      "is that okay or is that something that should have been handled differently?\",\r\n        \"response\": \"The walk-in does count as a contact, and he also reached out to you on 4/28/2025 to set up the initial visit with you at home",
+      "6112\"\r\n    },\r\n    \"to\": null,\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"How many communications have Summit Pointe staff received from him in the past 3 months?\",\r\n        \"response\": {\r\n          \"sender\": \"Respondent (probably Jennifer Myles or Summit Pointe staff)\",\r\n          \"details\": [\r\n            \"Since April 30th: 12 text messages, 5 emails (from 5/2-5/9), 1 phone call (4/29 meeting call, 2",
+      "\"\r\n          ]\r\n        }\r\n      },\r\n      {\r\n        \"question\": \"How many hours devoted to responding to him (approximate)?\",\r\n        \"response\": {\r\n          \"sender\": \"Respondent\",\r\n          \"details\": [\r\n            \"Since initial involvement on 4/29/2025, respondent spent ~4",
+      "\"\r\n          ]\r\n        }\r\n      },\r\n      {\r\n        \"question\": \"What items have already been offered as part of accommodations?\",\r\n        \"response\": {\r\n          \"sender\": \"Respondent\",\r\n          \"details\": [\r\n            \"Joint meetings with both parents at a mutual location"
+    ],
+    "pattern_recognition": [
+      "repeat",
+      "again",
+      "tension"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "I wasn’t invited to the part where they built the plan",
+        "statement_b": "I stayed for the follow-up and signed the releases",
+        "line": 21,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n          \"Since then, he has not requested any disability-specific accommodations that are relevant for our interactions,",
+        "statement_b": "I have addressed some of his questions about the investigation process via email and text so he has those responses in writing",
+        "line": 114,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n      \"Summit Pointe will not interfere with your son’s care,",
+        "statement_b": "you are instructed to limit communications to the times of your son’s visits only",
+        "line": 133,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "com\"\r\n    ],\r\n    \"summary_of_rights_concerns\": [\r\n      \"Exclusion from Treatment Planning and Decisions: Excluded from key planning and decisions for son Ben Burdette,",
+        "statement_b": "joint legal custody and signed releases",
+        "line": 186,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Accepted",
+        "statement_b": "not implemented; author remains unsupported",
+        "line": 188,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\"\r\n      },\r\n      {\r\n        \"date\": \"2025-04-09\",\r\n        \"event\": \"Clay Terry assumes case, works mainly through Rachel, not Chris,",
+        "statement_b": "releases",
+        "line": 203,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\"\r\n        ]\r\n      },\r\n      {\r\n        \"date_range\": \"2025-04-18 to 2025-04-22\",\r\n        \"description\": [\r\n          \"No meaningful updates were provided to Chris regarding Ben’s services",
+        "statement_b": "prior signed releases and active CPS case",
+        "line": 291,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n          \"During the meeting: Clay stated that Rachel had already agreed to psychiatric care; Chris emphasized he needed full information before agreeing to future medication decisions; Clay provided a partially completed treatment plan (signed electronically by himself",
+        "statement_b": "not yet by Rachel); Clay made inappropriate remarks about Chris’s appearance; No official record of this meeting exists in the case file",
+        "line": 294,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "\",\r\n      \"Changes to Treatment Plan\": \"Clay Terry cited the undocumented April 23 meeting as justification for major service changes,",
+        "statement_b": "the lack of a formal record",
+        "line": 304,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 5,
+      "uncertainty": 24
+    },
+    "temporal_markers": {
+      "past": 45,
+      "present": 70,
+      "future": 28
+    }
+  },
+  "structured_content": {
+    "summary": "{\r\n  \"document\": {\r\n    \"title\": \"Yahoo Mail - Responses to your questions from Wednesday 4/30/2025\",\r\n    \"from\": \"Jennifer L … \"\r\n    }\r\n  }\r\n}",
+    "key_insights": [
+      "\",\r\n          \"Also received 1 email from 'Ben Burdette' that I believe to be at least partially written by Chris Burdette",
+      "com\"],\r\n        \"date\": \"2025-05-02T15:48:00-04:00\",\r\n        \"subject\": \"RE: Accommodation Request Response Letter\",\r\n        \"body\": [\r\n          \"Hi Christopher,\",\r\n          \"\",\r\n          \"I believe you all will be working with Jennifer Myles and have made appointments",
+      "While I understand your stated concerns, I believe the accommodations I requested are reasonable and necessary to ensure meaningful involvement, and I am open to discussing alternative solutions"
+    ],
+    "action_items": [
+      "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+      "is that okay or is that something that should have been handled differently",
+      "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025",
+      "\",\r\n            \"Offered to amend the treatment plan developed by Rachel, Ben, and Clay",
+      "\",\r\n      \"You are formally requested to immediately cease and desist from all further email, text, phone, and general communications to Summit Pointe staff as your actions are interfering with Summit Pointe’s operations",
+      "\",\r\n      \"Recent actions include Freedom of Information requests and ADA Accommodations requests, as well as ongoing communications",
+      "\",\r\n      \"You continue to send communications and have suggested legal action due to the denial of accommodation"
+    ],
+    "unresolved_tensions": [
+      "I wasn’t invited to the part where they built the plan vs I stayed for the follow-up and signed the releases",
+      "\",\r\n          \"Since then, he has not requested any disability-specific accommodations that are relevant for our interactions, vs I have addressed some of his questions about the investigation process via email and text so he has those responses in writing",
+      "\",\r\n      \"Summit Pointe will not interfere with your son’s care, vs you are instructed to limit communications to the times of your son’s visits only",
+      "com\"\r\n    ],\r\n    \"summary_of_rights_concerns\": [\r\n      \"Exclusion from Treatment Planning and Decisions: Excluded from key planning and decisions for son Ben Burdette, vs joint legal custody and signed releases",
+      "Accepted vs not implemented; author remains unsupported",
+      "\"\r\n      },\r\n      {\r\n        \"date\": \"2025-04-09\",\r\n        \"event\": \"Clay Terry assumes case, works mainly through Rachel, not Chris, vs releases",
+      "\"\r\n        ]\r\n      },\r\n      {\r\n        \"date_range\": \"2025-04-18 to 2025-04-22\",\r\n        \"description\": [\r\n          \"No meaningful updates were provided to Chris regarding Ben’s services vs prior signed releases and active CPS case",
+      "\",\r\n          \"During the meeting: Clay stated that Rachel had already agreed to psychiatric care; Chris emphasized he needed full information before agreeing to future medication decisions; Clay provided a partially completed treatment plan (signed electronically by himself vs not yet by Rachel); Clay made inappropriate remarks about Chris’s appearance; No official record of this meeting exists in the case file"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.237,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.891,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 2,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.782,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 3,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.673,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 4,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.564,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 5,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.455,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 6,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.346,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      },
+      {
+        "generation": 7,
+        "entropy": 0.872,
+        "contradictions": 9,
+        "novelty_index": 0.237,
+        "action_items": [
+          "However, a family member can request to update/amend the treatment plan (which creates a new plan) at any time",
+          "is that okay or is that something that should have been handled differently",
+          "\",\r\n        \"response\": \"When we reviewed the plan on 4/29/2025, you both were able to hear that the plan had not changed since its development on 4/15/2025"
+        ],
+        "key_questions": [
+          "com\",\r\n    \"date\": \"2025-05-02T15:57:00-04:00\",\r\n    \"questions_responses\": [\r\n      {\r\n        \"question\": \"When Rachel signed the plan at the start of the call was that already finalized or was it something still open?\",\r\n        \"response\": \"A treatment plan is finalized (closed) when the case manager signs it",
+          "does that actually get added into the system or how does that work?\",\r\n        \"response\": \"I had made a note regarding our call on 4/29/2025 and it is indicated in that note that you verbalized not being involved in the treatment planning session",
+          "is the old one actually being taken out or just added to?\",\r\n        \"response\": \"All previous treatment plans remain in the file, however, the most recent treatment plan is always the current and active plan"
+        ],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "again",
+            "tension"
+          ],
+          "themes": [
+            {
+              "theme": "2025",
+              "frequency": 70
+            },
+            {
+              "theme": "summit",
+              "frequency": 58
+            },
+            {
+              "theme": "pointe",
+              "frequency": 58
+            },
+            {
+              "theme": "chris",
+              "frequency": 54
+            },
+            {
+              "theme": "request",
+              "frequency": 52
+            }
+          ]
+        },
+        "score": 0.381
+      }
+    ],
+    "quality_score": 37
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.36,
+    "recommended_next_steps": [
+      "Review 3 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "GrantWriter-Automation/Prompts/{tp.txt",
+      "bytes": 41998,
+      "lastModified": 1753919333410
+    }
+  }
+}

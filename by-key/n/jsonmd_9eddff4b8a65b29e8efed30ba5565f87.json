@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:13.715Z",
+    "source_text_length": 502,
+    "word_count": 54,
+    "sentence_count": 2,
+    "entropy_level": 0.983,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "README.md.txt"
+    },
+    "anchor_id": "9eddff4b8a65b29e8efed30ba5565f87"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "automation",
+        "frequency": 2
+      },
+      {
+        "theme": "engine",
+        "frequency": 2
+      },
+      {
+        "theme": "modular",
+        "frequency": 2
+      },
+      {
+        "theme": "schema",
+        "frequency": 2
+      },
+      {
+        "theme": "validation",
+        "frequency": 2
+      },
+      {
+        "theme": "recursive",
+        "frequency": 2
+      },
+      {
+        "theme": "logic",
+        "frequency": 2
+      },
+      {
+        "theme": "section",
+        "frequency": 2
+      },
+      {
+        "theme": "grantwriter",
+        "frequency": 1
+      },
+      {
+        "theme": "driven",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# GrantWriter Automation Engine 🌀\r\n\r\nA modular, schema-driven grant proposal automation system using LLMs, JSON validation, and recursive feedback logic ## 🔧 Features\r\n\r\n- ✅ JSON‑ms‑json input & output schema enforcement  \r\n- 🧠 Modular prompt templates (section-by-section generation)  \r\n- ⚙️ FastAPI engine with structured LLM orchestration  \r\n- 📏 SMART Goals + Budget validation logic  \r\n- 🔁 Recursive improvement cycle with FAQ/contradiction scaffolding  \r\n\r\n---\r\n\r\n## 📂 File Structure",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9eddff4b8a65b29e8efed30ba5565f87"
+  }
+}

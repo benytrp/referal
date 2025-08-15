@@ -1,0 +1,227 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.389Z",
+    "source_text_length": 36166,
+    "word_count": 4436,
+    "sentence_count": 363,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "8661ab3b93ed59a4c4abf950ae1036b0",
+    "entropy_level": 0.823,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "E3-Master-Template-Builder-AEON.html",
+      "processing_timestamp": "2025-08-11T05:05:29.389Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 220,
+        "significance": "0.0496",
+        "examples": [
+          "class=\"muted\">(+"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 177,
+        "significance": "0.0399",
+        "examples": [
+          "textarea#dataJson{height:160px;"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 153,
+        "significance": "0.0345",
+        "examples": [
+          "label"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 120,
+        "significance": "0.0271",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 74,
+        "significance": "0.0167",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 72,
+        "significance": "0.0162",
+        "examples": [
+          "input[type=\"text\"],"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 71,
+        "significance": "0.0160",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 65,
+        "significance": "0.0147",
+        "examples": [
+          "type=\"checkbox\""
+        ]
+      },
+      {
+        "theme": "chkwrap",
+        "frequency": 59,
+        "significance": "0.0133",
+        "examples": [
+          ".chkwrap{"
+        ]
+      },
+      {
+        "theme": "chkcell",
+        "frequency": 58,
+        "significance": "0.0131",
+        "examples": [
+          ".chkcell{"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 43,
+        "significance": "0.0097",
+        "examples": [
+          "value=\"\""
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 37,
+        "significance": "0.0083",
+        "examples": [
+          "document.querySelectorAll('input[type=\"checkbox\"][data-key=\"'+key+'\"]').forEach(cb=>{"
+        ]
+      }
+    ],
+    "key_questions": [
+      "</div>\n\n  <div class=\"section\">\n    <h2>Work Habits</h2>\n    <table>\n      <colgroup><col class=\"w-40\"/><col/><col/><col/></colgroup>\n      <thead><tr><th>Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr></thead>\n      <tbody>\n        <tr>\n          <td>Attendance — Correct day and time?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "correct_day_time\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Attendance — Excessive absences?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "excessive_absences\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Timeliness — Arrived on time?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "arrived_on_time\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Timeliness — Excessive tardiness?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "excessive_tardiness\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Hygiene — Participant was appropriately groomed?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "hygiene\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Dress — Participant was appropriately dressed?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "dress\" data-opt=\"na\"><span>N/A</span></label></td>\n        </tr>\n        <tr>\n          <td>Attitude — Participant exhibited positive attitude?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"work_habits",
+      "comments⟧</div>\n  </div>\n\n  <div class=\"section\">\n    <h2>Preparatory Goals</h2>\n    <table>\n      <colgroup><col class=\"w-40\"/><col/><col/><col/></colgroup>\n      <thead><tr><th>Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr></thead>\n      <tbody>\n        <tr>\n          <td>Attention Span — adequate span for tasks?</td>\n          <td class=\"chkcell\"><label class=\"chkwrap\"><input type=\"checkbox\" data-key=\"preparatory_goals"
+    ],
+    "pattern_recognition": [
+      "recursion",
+      "cycle",
+      "return",
+      "iteration",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 12,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Template Builder — offline (+ AEON Bridge v1 1)</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <style>\n    :root{--ink:#111;--muted:#586174;--rule:#d8dee9;--accent:#0e7afe;--bg:#fcfdff}\n    *{box-sizing:border-box}\n    body{font:14px/1...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Template Builder — offline (+ AEON Bridge v1",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.48"
+      },
+      {
+        "action": "pill{padding:2px 8px; border:1px solid var(--rule); border-radius:999px; background:#f5f8ff; font-size:12px}\n  </style>\n</head>\n<body>\n  <h1>E3 Master Template Builder <span class=\"muted\">(+ AEON-Bridge v1",
+        "urgency_score": "0.84",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "-- Actions -->\n    <div class=\"card\">\n      <h3>Actions</h3>\n      <label>File name pattern (tokens allowed)<br>\n        <input id=\"filePattern\" type=\"text\" class=\"mono\" value=\"E3-⟦record_meta",
+        "urgency_score": "0.77",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": " The page will keep only one checked per row",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.58"
+      },
+      {
+        "action": "createElement('a');\n    a",
+        "urgency_score": "0.08",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "createObjectURL(blob);\n    a",
+        "urgency_score": "0.95",
+        "feasibility_score": "0.04"
+      },
+      {
+        "action": "stringify(sortKeys(obj), null, 0);\n  }\n  async function buildChecklist({data, html, tpl, fileName, attempt}){\n    const now = new Date()",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.94"
+      },
+      {
+        "action": "0\",\n      artifact_id,\n      created: now,\n      updated: now,\n      description: \"E3 child evaluation artifact (HTML) emitted by offline master builder",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "checked) return;\n    const checklist = await buildChecklist({data, html, tpl, fileName, attempt});\n    const jsonName = fileName",
+        "urgency_score": "0.78",
+        "feasibility_score": "0.52"
+      },
+      {
+        "action": " Your current edits will be lost",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.19"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.43",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "8661ab3b93ed59a4c4abf950ae1036b0"
+  }
+}

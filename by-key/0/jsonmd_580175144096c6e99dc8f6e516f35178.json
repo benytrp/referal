@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:10.987Z",
+    "source_text_length": 563,
+    "word_count": 79,
+    "sentence_count": 8,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "coverletter.txt"
+    },
+    "anchor_id": "580175144096c6e99dc8f6e516f35178"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "mission",
+        "frequency": 3
+      },
+      {
+        "theme": "project",
+        "frequency": 3
+      },
+      {
+        "theme": "letter",
+        "frequency": 2
+      },
+      {
+        "theme": "proposal",
+        "frequency": 2
+      },
+      {
+        "theme": "organization",
+        "frequency": 2
+      },
+      {
+        "theme": "amount",
+        "frequency": 2
+      },
+      {
+        "theme": "funding",
+        "frequency": 2
+      },
+      {
+        "theme": "contact",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "concise",
+        "frequency": 1
+      },
+      {
+        "theme": "cover",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Write a concise cover letter for a grant proposal … Address it as if to a general program officer unless specific contact is known",
+    "key_insights": [],
+    "action_items": [
+      "Use a respectful, professional tone and close with contact info or next steps"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "580175144096c6e99dc8f6e516f35178"
+  }
+}

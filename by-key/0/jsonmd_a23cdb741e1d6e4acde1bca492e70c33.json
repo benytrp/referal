@@ -1,0 +1,90 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:51.621Z",
+    "source_text_length": 1105,
+    "word_count": 161,
+    "entropy_level": 0.932,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "a23cdb741e1d6e4acde1bca492e70c33",
+    "source": {
+      "path": "offline_json_builder_begin_anywhere.html",
+      "bytes": 30641,
+      "lastModified": 1754812093514
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "attach",
+        "frequency": 8
+      },
+      {
+        "theme": "list",
+        "frequency": 8
+      },
+      {
+        "theme": "clear",
+        "frequency": 8
+      },
+      {
+        "theme": "canonical",
+        "frequency": 7
+      },
+      {
+        "theme": "json",
+        "frequency": 6
+      },
+      {
+        "theme": "download",
+        "frequency": 5
+      },
+      {
+        "theme": "nvrstry",
+        "frequency": 3
+      },
+      {
+        "theme": "extract",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Nvrstry JSON Builder offline Extract JSON islands Classify → Bridge/Contract/Cycles Build Canonical Download artifacts ready 1) Ingest → Clean → Extract Load demo strip zero‑widths drop noise lines de‑dupe objects Clean & Extract Open file… Auto‑assign sections Import canonical… Download Nvrstry. … Tip: press Ctrl+S anytime to save the page itself after edits (browser default).",
+    "key_insights": [],
+    "action_items": [
+      "Nvrstry JSON Builder offline Extract JSON islands Classify → Bridge/Contract/Cycles Build Canonical Download artifacts ready 1) Ingest → Clean → Extract Load demo strip zero‑widths drop noise lines de‑dupe objects Clean & Extract Open file… Auto‑assign sections Import canonical… Download Nvrstry.",
+      "json Download summary 2) Extracted Objects 3) Assign to Sections (edit as needed) Project Metadata Attach from list Clear Story Elements Attach from list Clear Technical Details Attach from list Clear Version Control Attach from list Clear Contract Attach from list Clear Phases Attach from list Clear Run Metadata Attach from list Clear Cycle Log (array) Attach from list Clear 4) Build & Export Build Canonical Copy canonical JSON Download Nvrstry."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

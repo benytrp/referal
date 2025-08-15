@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:42.053Z",
+    "source_text_length": 342,
+    "word_count": 23,
+    "sentence_count": 5,
+    "entropy_level": 0.99,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "SCROLL-001.txt"
+    },
+    "anchor_id": "9520aaa174706b5babff1366472af8e9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "scroll",
+        "frequency": 2
+      },
+      {
+        "theme": "bridge",
+        "frequency": 2
+      },
+      {
+        "theme": "scroll_id",
+        "frequency": 1
+      },
+      {
+        "theme": "title",
+        "frequency": 1
+      },
+      {
+        "theme": "protocol_anchor",
+        "frequency": 1
+      },
+      {
+        "theme": "mobius_scroll",
+        "frequency": 1
+      },
+      {
+        "theme": "glyph_seal",
+        "frequency": 1
+      },
+      {
+        "theme": "phases",
+        "frequency": 1
+      },
+      {
+        "theme": "proto",
+        "frequency": 1
+      },
+      {
+        "theme": "subclasses",
+        "frequency": 1
+      },
+      {
+        "theme": "recursiveform",
+        "frequency": 1
+      },
+      {
+        "theme": "contradictiontracker",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\r\n  \"scroll_id\": \"SCROLL-001\",\r\n  \"title\": \"New Scroll\",\r\n  \"protocol_anchor\": \"⚓ψ∞ … 0\",\r\n    \"subclasses\": [\"RecursiveForm\", \"ContradictionTracker\", \"MutatorNode\"]\r\n  },\r\n  \"metadata\": {\r\n    \"anchor_log\": [],\r\n    \"mutation_log\": []\r\n  }\r\n}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9520aaa174706b5babff1366472af8e9"
+  }
+}

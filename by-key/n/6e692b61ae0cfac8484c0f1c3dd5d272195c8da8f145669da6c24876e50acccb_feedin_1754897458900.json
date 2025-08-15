@@ -1,0 +1,134 @@
+# Content Evolution - Generation 0
+
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:44.282Z",
+    "anchor_id": "6e692b61ae0cfac8484c0f1c3dd5d272195c8da8f145669da6c24876e50acccb",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.644,
+    "contradictions_detected": 4,
+    "word_count": 1644
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "var",
+        "frequency": 62
+      },
+      {
+        "theme": "data",
+        "frequency": 37
+      },
+      {
+        "theme": "key",
+        "frequency": 33
+      },
+      {
+        "theme": "class",
+        "frequency": 28
+      },
+      {
+        "theme": "function",
+        "frequency": 24
+      },
+      {
+        "theme": "length",
+        "frequency": 24
+      },
+      {
+        "theme": "name",
+        "frequency": 22
+      },
+      {
+        "theme": "lines",
+        "frequency": 21
+      },
+      {
+        "theme": "parseddata",
+        "frequency": 21
+      },
+      {
+        "theme": "return",
+        "frequency": 21
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "k'; setTimeout(function() { status.style.display = 'none'; }, 4000); } function makeId() {"
+      },
+      {
+        "idx": 1,
+        "sample": "e = ''; document.getElementById('detectedSection').style.display = 'none'; document.getElementById('generateSection').style.display = 'n"
+      },
+      {
+        "idx": 2,
+        "sample": "'none'; document.getElementById('generateSection').style.display = 'none'; window.parsedData = []; showStatus('All cleared -"
+      },
+      {
+        "idx": 3,
+        "sample": "if (parsedData.length === 0) { showStatus('Could not parse data - try a different format', 'error'); return;"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "<th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\n<tr>\\\\n<td>Attendance — Correct day and time?",
+      "=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n<tr>\\\\n<td>Hygiene — Appropriately groomed?",
+      "h style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\\\n<tr>\\\\n<td>Attention Span — Adequate for tasks?",
+      "ype=\"checkbox\"></td>\\\\n<td class=\"center\"><input type=\"checkbox\"></td>\\\\n</tr>\\\\n<tr>\\\\n<td>Safety — Followed procedures?"
+    ],
+    "summary": "var, data, key, class, function"
+  },
+  "sentiment_indicators": {
+    "positive": 7,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today"
+  ],
+  "metadata": {
+    "source_name": "unified_e3_builder (2).html",
+    "relative_path": "unified_e3_builder (2).html",
+    "size_bytes": 21729,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 262
+- Complexity score: 47.2
+- Key themes: theme, frequency, style, class, function, sample, display, none, checkbox, data
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of style?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, style
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

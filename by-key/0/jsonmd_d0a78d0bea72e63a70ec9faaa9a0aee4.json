@@ -1,0 +1,107 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:20.381Z",
+    "source_text_length": 5679,
+    "word_count": 636,
+    "sentence_count": 52,
+    "entropy_level": 0.943,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "gfhjhtgfdjdfjhdgj.html"
+    },
+    "anchor_id": "d0a78d0bea72e63a70ec9faaa9a0aee4"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "task",
+        "frequency": 9
+      },
+      {
+        "theme": "data",
+        "frequency": 8
+      },
+      {
+        "theme": "interfaces",
+        "frequency": 7
+      },
+      {
+        "theme": "temperature",
+        "frequency": 7
+      },
+      {
+        "theme": "prompt",
+        "frequency": 6
+      },
+      {
+        "theme": "title",
+        "frequency": 6
+      },
+      {
+        "theme": "objective",
+        "frequency": 6
+      },
+      {
+        "theme": "constraints",
+        "frequency": 6
+      },
+      {
+        "theme": "success_criteria",
+        "frequency": 6
+      },
+      {
+        "theme": "params",
+        "frequency": 6
+      },
+      {
+        "theme": "top_p",
+        "frequency": 6
+      },
+      {
+        "theme": "max_tokens",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{ \"bridge_version\": \"lite-1\", \"generated_at\": \"\", \"presets\": [ { \"id\": \"prompt-architecture-optimization\", \"title\": \"Prompt Architecture Optimization\", \"task\": \"Optimize prompt scaffolds for reliability and cost … 8, \"max_tokens\": 600 }, \"validators\": { \"response_time_ms_max\": 5000, \"must_include\": [\"Tool Catalog\", \"Policies\", \"State Diagram\", \"Safety Intercepts\", \"Rollback Modes\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"medium\", \"tags\": [\"agents\", \"tools\", \"orchestration\"] } } ] }",
+    "key_insights": [],
+    "action_items": [
+      "9, \"max_tokens\": 800 }, \"validators\": { \"response_time_ms_max\": 1500, \"must_include\": [ \"Opening Reflection\", \"Problem Space Analysis\", \"Approach Rationale\", \"Model Context Status\", \"Deliverables\", \"Risks & Mitigations\", \"Next Steps\" ], \"forbidden\": [\"unverifiable claims\", \"PII\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"high\", \"tags\": [\"prompt-eng\", \"optimization\", \"eval\"] } }, { \"id\": \"llm-model-evaluation\", \"title\": \"LLM Model Evaluation Framework\", \"task\": \"Run head-to-head evals across candidate models",
+      "0, \"max_tokens\": 512 }, \"validators\": { \"response_time_ms_max\": 3000, \"must_include\": [\"Methodology\", \"Metrics Table\", \"Significance\", \"Decision\"], \"tables_required\": [\"aggregate_scores\", \"per_category\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"medium\", \"tags\": [\"evaluation\", \"benchmarking\"] } }, { \"id\": \"fine-tuning-pipeline\", \"title\": \"LLM Fine-tuning Pipeline\", \"task\": \"Prepare data and plan a supervised fine-tune",
+      "95, \"max_tokens\": 256 }, \"validators\": { \"response_time_ms_max\": 4000, \"must_include\": [\"Data Audit\", \"Curriculum\", \"Training Spec\", \"Safety Checks\", \"Rollback Plan\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"high\", \"tags\": [\"fine-tune\", \"data\", \"training\"] } }, { \"id\": \"ai-safety-validation\", \"title\": \"AI Safety & Red-Team Validation\", \"task\": \"Design & run safety probes; document mitigations",
+      "9, \"max_tokens\": 400 }, \"validators\": { \"response_time_ms_max\": 2500, \"must_include\": [\"Threat Model\", \"Findings\", \"Mitigations\", \"Residual Risk\", \"Sign-off\"], \"require_sections_ordered\": true }, \"extras\": { \"owner\": \"\", \"urgency\": \"high\", \"tags\": [\"safety\", \"red-team\", \"policy\"] } }, { \"id\": \"multimodal-integration\", \"title\": \"Multimodal AI Integration\", \"task\": \"Plan/validate image+text (or audio) pipeline",
+      "9, \"max_tokens\": 700 }, \"validators\": { \"response_time_ms_max\": 3500, \"must_include\": [\"Interfaces\", \"Fusion Logic\", \"Edge Cases\", \"Load Test Plan\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"medium\", \"tags\": [\"multimodal\", \"systems\"] } }, { \"id\": \"agent-orchestration-tools\", \"title\": \"Agent Orchestration & Tools\", \"task\": \"Design an agent with tool-use, memory, and guardrails",
+      "\", \"constraints\": [ \"At-most 5 tools active\", \"Tool calls must be idempotent\", \"Hard time limit: 45s/episode\" ], \"interfaces\": [ \"Tool schema: tools/*",
+      "8, \"max_tokens\": 600 }, \"validators\": { \"response_time_ms_max\": 5000, \"must_include\": [\"Tool Catalog\", \"Policies\", \"State Diagram\", \"Safety Intercepts\", \"Rollback Modes\"] }, \"extras\": { \"owner\": \"\", \"urgency\": \"medium\", \"tags\": [\"agents\", \"tools\", \"orchestration\"] } } ] }"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d0a78d0bea72e63a70ec9faaa9a0aee4"
+  }
+}

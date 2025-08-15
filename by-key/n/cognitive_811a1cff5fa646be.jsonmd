@@ -1,0 +1,170 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:21.398Z",
+    "source_text_length": 1937,
+    "word_count": 141,
+    "sentence_count": 8,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "811a1cff5fa646bec1325cbcfb7720fe",
+    "entropy_level": 0.934,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_ac96a73ad0a08d55546d63f393e28fdc.json",
+      "processing_timestamp": "2025-08-11T05:02:21.398Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0567",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0567",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 6,
+        "significance": "0.0426",
+        "examples": [
+          "\"bridge\",\n"
+        ]
+      },
+      {
+        "theme": "file",
+        "frequency": 3,
+        "significance": "0.0213",
+        "examples": [
+          "\"file\",\n"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 3,
+        "significance": "0.0213",
+        "examples": [
+          "\"aeon\",\n"
+        ]
+      },
+      {
+        "theme": "maker",
+        "frequency": 3,
+        "significance": "0.0213",
+        "examples": [
+          "\"maker\",\n"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 3,
+        "significance": "0.0213",
+        "examples": [
+          "\"session\",\n"
+        ]
+      },
+      {
+        "theme": "feed",
+        "frequency": 2,
+        "significance": "0.0142",
+        "examples": [
+          "\"feed\",\n"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 2,
+        "significance": "0.0142",
+        "examples": [
+          "\"source_text_length\":"
+        ]
+      },
+      {
+        "theme": "below",
+        "frequency": 2,
+        "significance": "0.0142",
+        "examples": [
+          "\"below\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0071",
+        "examples": [
+          "\"2025-08-11T04:23:14.946Z\",\n"
+        ]
+      },
+      {
+        "theme": "6980",
+        "frequency": 1,
+        "significance": "0.0071",
+        "examples": [
+          "6980,\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:14...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … 📝 Input: Raw Session Data Generate Bridge File 📤 Output: Generated Bridge Scroll Download Bridge File\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.69"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.09685,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.14",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "811a1cff5fa646bec1325cbcfb7720fe"
+  }
+}

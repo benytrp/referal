@@ -1,0 +1,112 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:53.427Z",
+    "source_text_length": 1213,
+    "word_count": 160,
+    "entropy_level": 0.975,
+    "contradictions_detected": 1,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "148a107defa95acc297a1bc191b10344",
+    "source": {
+      "path": "README for x Logic Engine.txt",
+      "bytes": 1214,
+      "lastModified": 1754789547148
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "logic",
+        "frequency": 3
+      },
+      {
+        "theme": "engine",
+        "frequency": 3
+      },
+      {
+        "theme": "entropy",
+        "frequency": 2
+      },
+      {
+        "theme": "mutates",
+        "frequency": 2
+      },
+      {
+        "theme": "complexity",
+        "frequency": 2
+      },
+      {
+        "theme": "readme",
+        "frequency": 1
+      },
+      {
+        "theme": "overview",
+        "frequency": 1
+      },
+      {
+        "theme": "python-based",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "loop",
+      "cycle",
+      "recur"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "README for <x> Logic Engine\r\nOverview\r\nThe <x> Logic Engine is a Python-based implementation of the Autonomous Planning Loop, triggered by the <x> directive. … \"}}",
+    "key_insights": [],
+    "action_items": [
+      "README for <x> Logic Engine\r\nOverview\r\nThe <x> Logic Engine is a Python-based implementation of the Autonomous Planning Loop, triggered by the <x> directive."
+    ],
+    "unresolved_tensions": [
+      "Extensions\r\nAdd custom operations via subclassing."
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.46,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.618
+- Word Count: 218
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:44:05.761Z",
+  "original_file": "jsonmd_148a107defa95acc297a1bc191b10344.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

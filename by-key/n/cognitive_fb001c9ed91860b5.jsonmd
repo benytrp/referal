@@ -1,0 +1,167 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:23.001Z",
+    "source_text_length": 241,
+    "word_count": 38,
+    "sentence_count": 4,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "fb001c9ed91860b5bfe4c48ad10684f1",
+    "entropy_level": 0.988,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "AEON-Bridge-Report-BC-202508100522918.txt",
+      "processing_timestamp": "2025-08-11T05:05:23.001Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "generated",
+        "frequency": 2,
+        "significance": "0.0526",
+        "examples": [
+          "Report\nGenerated:"
+        ]
+      },
+      {
+        "theme": "2000",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "0.2000\nLost"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "2025-08-10T09:24:33.553Z\nLocation:"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "AEON-Bridge"
+        ]
+      },
+      {
+        "theme": "bridge",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "AEON-Bridge"
+        ]
+      },
+      {
+        "theme": "implementation",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "Implementation"
+        ]
+      },
+      {
+        "theme": "report",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "Report\nGenerated:"
+        ]
+      },
+      {
+        "theme": "10t09",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "2025-08-10T09:24:33.553Z\nLocation:"
+        ]
+      },
+      {
+        "theme": "553z",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "2025-08-10T09:24:33.553Z\nLocation:"
+        ]
+      },
+      {
+        "theme": "location",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "2025-08-10T09:24:33.553Z\nLocation:"
+        ]
+      },
+      {
+        "theme": "battle",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "Battle"
+        ]
+      },
+      {
+        "theme": "creek",
+        "frequency": 1,
+        "significance": "0.0263",
+        "examples": [
+          "Creek,"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON-Bridge E3 Implementation Report\nGenerated: 2025-08-10T09:24:33 553Z\nLocation: Battle Creek, Michigan (42...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "AEON-Bridge E3 Implementation Report\nGenerated: 2025-08-10T09:24:33",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.08"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.01205,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.37",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "fb001c9ed91860b5bfe4c48ad10684f1"
+  }
+}

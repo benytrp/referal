@@ -1,0 +1,124 @@
+# Content Evolution - Generation 0
+
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:33.367Z",
+    "source_text_length": 4894,
+    "word_count": 575,
+    "entropy_level": 0.919,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "dfb4a033a8e8958ff1d322949ab8c149",
+    "source": {
+      "path": "ai_studio_code (3).html",
+      "bytes": 12074,
+      "lastModified": 1754740338314
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "invoke",
+        "frequency": 26
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 24
+      },
+      {
+        "theme": "parameters",
+        "frequency": 24
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 21
+      },
+      {
+        "theme": "copy",
+        "frequency": 10
+      },
+      {
+        "theme": "queries",
+        "frequency": 7
+      },
+      {
+        "theme": "video",
+        "frequency": 7
+      },
+      {
+        "theme": "ivk_1",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "repeat",
+      "loop"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Perplexity AI — Tool Calls Cheatsheet (Standalone) A compact, copy-pasteable reference for invoking Perplexity-style tools via the XML-like <function_calls> syntax. … top_urls(3) }}</parameters> </invoke> </function_calls>",
+    "key_insights": [],
+    "action_items": [
+      "Favorites Quick Web Search Copy<function_calls> <invoke> <tool_name>search_web</tool_name> <parameters> <queries>[\"latest AI developments\"]</queries> </parameters> </invoke> </function_calls> Execute Python Code Copy<function_calls> <invoke> <tool_name>execute_python</tool_name> <parameters> <code>import math; print(math."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 190
+- Complexity score: 24.5
+- Key themes: theme, frequency, invoke, parameters, copy, queries, perplexity, code, math, explore
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of theme?
+2. How does theme connect to broader patterns?
+3. What are the deeper implications of frequency?
+4. How does frequency connect to broader patterns?
+5. What are the deeper implications of invoke?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: theme, frequency, invoke
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: theme
+This theme emerges as significant in generation 0. Consider how theme relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: frequency
+This theme emerges as significant in generation 0. Consider how frequency relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

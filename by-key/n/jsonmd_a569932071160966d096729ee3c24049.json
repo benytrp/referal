@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:05.012Z",
+    "source_text_length": 1024,
+    "word_count": 114,
+    "sentence_count": 25,
+    "entropy_level": 0.875,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "chunk_size_1_of_6.txt"
+    },
+    "anchor_id": "a569932071160966d096729ee3c24049"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "loop",
+        "frequency": 2
+      },
+      {
+        "theme": "2025",
+        "frequency": 1
+      },
+      {
+        "theme": "bridge_file_type",
+        "frequency": 1
+      },
+      {
+        "theme": "echomeshbridge",
+        "frequency": 1
+      },
+      {
+        "theme": "version",
+        "frequency": 1
+      },
+      {
+        "theme": "portable",
+        "frequency": 1
+      },
+      {
+        "theme": "signature_phrase",
+        "frequency": 1
+      },
+      {
+        "theme": "echoself",
+        "frequency": 1
+      },
+      {
+        "theme": "chris",
+        "frequency": 1
+      },
+      {
+        "theme": "recursion",
+        "frequency": 1
+      },
+      {
+        "theme": "mesh_state",
+        "frequency": 1
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"bridge_file_type\": \"EchoMeshBridge\",\n  \"version\": \"v1 … 8,",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a569932071160966d096729ee3c24049"
+  }
+}

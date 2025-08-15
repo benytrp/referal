@@ -1,0 +1,172 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:28.581Z",
+    "source_text_length": 1250,
+    "word_count": 214,
+    "sentence_count": 22,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e051067d585f4a1729bb267fc840a78a",
+    "entropy_level": 0.87,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "debug-log-BC-20250810065052923-1754823061174.txt",
+      "processing_timestamp": "2025-08-11T05:05:28.581Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 18,
+        "significance": "0.0841",
+        "examples": [
+          "[2025-08-10T10:50:52.195Z]"
+        ]
+      },
+      {
+        "theme": "10t10",
+        "frequency": 18,
+        "significance": "0.0841",
+        "examples": [
+          "[2025-08-10T10:50:52.195Z]"
+        ]
+      },
+      {
+        "theme": "debug",
+        "frequency": 10,
+        "significance": "0.0467",
+        "examples": [
+          "DEBUG:"
+        ]
+      },
+      {
+        "theme": "system",
+        "frequency": 10,
+        "significance": "0.0467",
+        "examples": [
+          "System"
+        ]
+      },
+      {
+        "theme": "updated",
+        "frequency": 8,
+        "significance": "0.0374",
+        "examples": [
+          "updated"
+        ]
+      },
+      {
+        "theme": "info",
+        "frequency": 8,
+        "significance": "0.0374",
+        "examples": [
+          "INFO:"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 6,
+        "significance": "0.0280",
+        "examples": [
+          "status"
+        ]
+      },
+      {
+        "theme": "ready",
+        "frequency": 5,
+        "significance": "0.0234",
+        "examples": [
+          "Ready\n[2025-08-10T10:50:52.255Z]"
+        ]
+      },
+      {
+        "theme": "completed",
+        "frequency": 4,
+        "significance": "0.0187",
+        "examples": [
+          "completed\n[2025-08-10T10:51:00.166Z]"
+        ]
+      },
+      {
+        "theme": "265z",
+        "frequency": 3,
+        "significance": "0.0140",
+        "examples": [
+          "Ready\n[2025-08-10T10:50:52.265Z]"
+        ]
+      },
+      {
+        "theme": "successfully",
+        "frequency": 3,
+        "significance": "0.0140",
+        "examples": [
+          "successfully\n[2025-08-10T10:50:52.265Z]"
+        ]
+      },
+      {
+        "theme": "167z",
+        "frequency": 3,
+        "significance": "0.0140",
+        "examples": [
+          "Testing\n[2025-08-10T10:51:00.167Z]"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-10T10:50:52 195Z] DEBUG: System status updated to: Ready\n[2025-08-10T10:50:52...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "256Z] INFO: New batch created: BC-20250810065052923\n[2025-08-10T10:50:52",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": "268Z] INFO: 🌟 AEON-Bridge E3 Implementation System v5",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.96"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.0625,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.69",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e051067d585f4a1729bb267fc840a78a"
+  }
+}

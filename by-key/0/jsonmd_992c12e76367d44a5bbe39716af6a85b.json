@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:48.786Z",
+    "source_text_length": 613,
+    "word_count": 85,
+    "sentence_count": 4,
+    "entropy_level": 0.981,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "New Text Docu.html"
+    },
+    "anchor_id": "992c12e76367d44a5bbe39716af6a85b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "file",
+        "frequency": 3
+      },
+      {
+        "theme": "folder",
+        "frequency": 3
+      },
+      {
+        "theme": "stage",
+        "frequency": 3
+      },
+      {
+        "theme": "step",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "root",
+        "frequency": 2
+      },
+      {
+        "theme": "plan",
+        "frequency": 2
+      },
+      {
+        "theme": "auto",
+        "frequency": 2
+      },
+      {
+        "theme": "cooldown",
+        "frequency": 2
+      },
+      {
+        "theme": "config",
+        "frequency": 2
+      },
+      {
+        "theme": "output",
+        "frequency": 2
+      },
+      {
+        "theme": "20_enriched",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "RecPipe Offline Studio Single-file • File System Access • IndexedDB • WebCrypto Controls ① Connect Root Folder Init Stage Tree ② Scan & Plan ③ Process Selected Auto: Off Root: — Plan • Candidates File Stage Iter Idempotency Near-Dupe Cooldown Reason Step Config Step Name Step Version Config JSON {\"temperature\":0 … Offline-first",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "992c12e76367d44a5bbe39716af6a85b"
+  }
+}

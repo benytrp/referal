@@ -1,0 +1,170 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:15.361Z",
+    "source_text_length": 1281,
+    "word_count": 95,
+    "sentence_count": 5,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "13ac53a4de2a935479434a47d5ea56f8",
+    "entropy_level": 0.965,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_4c1df46bda6717843f45fe69f21f769e.json",
+      "processing_timestamp": "2025-08-11T05:02:15.361Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "autonomous",
+        "frequency": 3,
+        "significance": "0.0316",
+        "examples": [
+          "Autonomous"
+        ]
+      },
+      {
+        "theme": "logic",
+        "frequency": 2,
+        "significance": "0.0211",
+        "examples": [
+          "\"X-Logic"
+        ]
+      },
+      {
+        "theme": "executor",
+        "frequency": 2,
+        "significance": "0.0211",
+        "examples": [
+          "\"x_executor_engine.html\",\n"
+        ]
+      },
+      {
+        "theme": "engine",
+        "frequency": 2,
+        "significance": "0.0211",
+        "examples": [
+          "\"x_executor_engine.html\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"2025-08-11T04:15:09.209Z\",\n"
+        ]
+      },
+      {
+        "theme": "24141",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "24141,\n"
+        ]
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "version",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"version\":"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "11t04",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"2025-08-11T04:15:09.209Z\",\n"
+        ]
+      },
+      {
+        "theme": "209z",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"2025-08-11T04:15:09.209Z\",\n"
+        ]
+      },
+      {
+        "theme": "source_text_length",
+        "frequency": 1,
+        "significance": "0.0105",
+        "examples": [
+          "\"source_text_length\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:15:09...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 24141,\n      \"lastModified\": 1754806490482\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"X-Logic Autonomous Executor Engine X-Logic Autonomous Executor Engine Real-time Consciousness Simulation | Schema-Driven Autonomous Execution Execute &lt;x&gt; …\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Browser offline scan\",\n    \"confidence_level\": 1,\n    \"recommended_next_steps\": [],\n    \"recursive_potential\": \"n/a\"\n  }\n}",
+        "urgency_score": "0.93",
+        "feasibility_score": "0.71"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.06405,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.97",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "13ac53a4de2a935479434a47d5ea56f8"
+  }
+}

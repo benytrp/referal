@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:59.145Z",
+    "source_text_length": 1363,
+    "word_count": 130,
+    "sentence_count": 16,
+    "entropy_level": 0.974,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "controller-with-preconnect-b4de5dbfa7b4066168700c1afa067445.html"
+    },
+    "anchor_id": "f4ca9c349aa5cd38c244c529ad46acf1"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 5
+      },
+      {
+        "theme": "script",
+        "frequency": 4
+      },
+      {
+        "theme": "defer",
+        "frequency": 4
+      },
+      {
+        "theme": "https",
+        "frequency": 3
+      },
+      {
+        "theme": "preconnect",
+        "frequency": 3
+      },
+      {
+        "theme": "mids",
+        "frequency": 3
+      },
+      {
+        "theme": "content",
+        "frequency": 3
+      },
+      {
+        "theme": "stripe",
+        "frequency": 2
+      },
+      {
+        "theme": "controller",
+        "frequency": 2
+      },
+      {
+        "theme": "basil",
+        "frequency": 2
+      },
+      {
+        "theme": "false",
+        "frequency": 2
+      },
+      {
+        "theme": "head",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "< … download\"></script></head><body></body></html>",
+    "key_insights": [],
+    "action_items": [
+      "basil&stripeJsId=883922c8-98aa-452a-849b-71fa865026e8&stripeObjId=sobj-c3a7b7a6-e6c2-4996-aa1c-cb92f4cedf14&firstStripeInstanceCreatedLatency=5&controllerCount=1&isCheckout=false&stripeJsLoadTime=1754356356587&manualBrowserDeprecationRollout=false&mids[guid]=NA&mids[muid]=7f975321-f2a9-4db4-ad6a-36580338eceb802d4e&mids[sid]=NA&referrer=https%3A%2F%2Fclaude"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "f4ca9c349aa5cd38c244c529ad46acf1"
+  }
+}

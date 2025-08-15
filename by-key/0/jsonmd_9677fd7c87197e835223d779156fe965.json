@@ -1,0 +1,104 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:34.983Z",
+    "source_text_length": 2280,
+    "word_count": 341,
+    "sentence_count": 30,
+    "entropy_level": 0.94,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_plan_runner_20250808-213551.html"
+    },
+    "anchor_id": "9677fd7c87197e835223d779156fe965"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "export",
+        "frequency": 8
+      },
+      {
+        "theme": "json",
+        "frequency": 5
+      },
+      {
+        "theme": "status",
+        "frequency": 5
+      },
+      {
+        "theme": "_result",
+        "frequency": 5
+      },
+      {
+        "theme": "then",
+        "frequency": 5
+      },
+      {
+        "theme": "therefore",
+        "frequency": 5
+      },
+      {
+        "theme": "offline",
+        "frequency": 4
+      },
+      {
+        "theme": "single",
+        "frequency": 4
+      },
+      {
+        "theme": "file",
+        "frequency": 4
+      },
+      {
+        "theme": "self",
+        "frequency": 4
+      },
+      {
+        "theme": "check",
+        "frequency": 4
+      },
+      {
+        "theme": "markdown",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Plan Runner (Offline, Single File) Self-check: All checks passed Download Markdown Export Download JSON Export Parsed Plan (with AI tags) < … -- AI:END_PLAN --> IF–THEN–THEREFORE Builder IF THEN Add THEREFORE IFTHENTHEREFOREActions Audit & Self-Check",
+    "key_insights": [],
+    "action_items": [
+      "The artifact must run locally in any modern browser with **no external assets**, and it must preserve the AI tags and step headings in exports",
+      "# I decide whether I am building a static HTML template or an interactive tool that constructs IF–THEN–THEREFORE chains",
+      "[STATUS: ✅] _Result:_ **Spec (v1):** The artifact must: - Be a single HTML file (inline CSS/JS) and work offline",
+      "-- AI:END_PLAN --> IF–THEN–THEREFORE Builder IF THEN Add THEREFORE IFTHENTHEREFOREActions Audit & Self-Check"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9677fd7c87197e835223d779156fe965"
+  }
+}

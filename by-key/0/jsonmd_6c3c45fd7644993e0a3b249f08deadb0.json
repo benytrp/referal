@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:48.310Z",
+    "source_text_length": 779,
+    "word_count": 111,
+    "entropy_level": 0.974,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "6c3c45fd7644993e0a3b249f08deadb0",
+    "source": {
+      "path": "jsonmd_downloads_scanner_v_1_2 (1).html",
+      "bytes": 25163,
+      "lastModified": 1754881288700
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "downloads",
+        "frequency": 5
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 4
+      },
+      {
+        "theme": "scrolls",
+        "frequency": 3
+      },
+      {
+        "theme": "plan",
+        "frequency": 3
+      },
+      {
+        "theme": "scan",
+        "frequency": 3
+      },
+      {
+        "theme": "output",
+        "frequency": 3
+      },
+      {
+        "theme": "jsonmd",
+        "frequency": 2
+      },
+      {
+        "theme": "subfolders",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recur"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "JSONMD Downloads Scanner v1. … Plan Scan Results — ✅ Run Now Cancel Output Listing (latest 50) — Close",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

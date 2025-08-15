@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad++ Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            background: #2d2d30;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-bar {
+            background: #3c3c3c;
+            border-bottom: 1px solid #555;
+            padding: 5px 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .menu-item:hover {
+            background: #555;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #3c3c3c;
+            border: 1px solid #555;
+            border-radius: 3px;
+            min-width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .dropdown-item {
+            padding: 8px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+        }
+
+        .dropdown-item:hover {
+            background: #555;
+        }
+
+        .toolbar {
+            background: #404040;
+            padding: 8px;
+            border-bottom: 1px solid #555;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .toolbar button {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .toolbar button:hover {
+            background: #666;
+        }
+
+        .toolbar input {
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #252526;
+            border-right: 1px solid #555;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-header {
+            background: #3c3c3c;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .file-tree, .function-list, .bookmarks-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 10px;
+        }
+
+        .tree-item, .function-item, .bookmark-item {
+            padding: 4px 8px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .tree-item:hover, .function-item:hover, .bookmark-item:hover {
+            background: #444;
+        }
+
+        .editor-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tab-bar {
+            background: #2d2d30;
+            border-bottom: 1px solid #555;
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .tab {
+            background: #404040;
+            color: #ccc;
+            padding: 10px 20px;
+            border-right: 1px solid #555;
+            cursor: pointer;
+            min-width: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tab.active {
+            background: #2d2d30;
+            color: white;
+        }
+
+        .tab-close {
+            margin-left: 10px;
+            padding: 2px 6px;
+            background: #666;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+
+        .tab-close:hover {
+            background: #888;
+        }
+
+        .editor-area {
+            flex: 1;
+            display: flex;
+            position: relative;
+        }
+
+        .line-numbers {
+            background: #1e1e1e;
+            color: #858585;
+            padding: 10px 5px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: right;
+            min-width: 50px;
+            border-right: 1px solid #555;
+            user-select: none;
+        }
+
+        .editor {
+            flex: 1;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            font-size: 14px;
+            line-height: 1.5;
+            padding: 10px;
+            border: none;
+            outline: none;
+            resize: none;
+            font-family: inherit;
+            white-space: nowrap;
+            overflow: auto;
+        }
+
+        .status-bar {
+            background: #007acc;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search-dialog {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background: #3c3c3c;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 20px;
+            display: none;
+            z-index: 1000;
+            min-width: 400px;
+        }
+
+        .search-dialog input {
+            width: 100%;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+
+        .search-dialog button {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .search-dialog button:hover {
+            background: #005a9e;
+        }
+
+        .dialog-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .highlighted {
+            background: #ff0;
+            color: #000;
+        }
+
+        .syntax-javascript .keyword { color: #569cd6; }
+        .syntax-javascript .string { color: #ce9178; }
+        .syntax-javascript .comment { color: #6a9955; }
+        .syntax-javascript .number { color: #b5cea8; }
+        .syntax-javascript .function { color: #dcdcaa; }
+
+        .syntax-html .tag { color: #569cd6; }
+        .syntax-html .attribute { color: #92c5f7; }
+        .syntax-html .string { color: #ce9178; }
+        .syntax-html .comment { color: #6a9955; }
+
+        .syntax-css .property { color: #9cdcfe; }
+        .syntax-css .value { color: #ce9178; }
+        .syntax-css .selector { color: #d7ba7d; }
+        .syntax-css .comment { color: #6a9955; }
+
+        .fold-marker {
+            cursor: pointer;
+            user-select: none;
+            color: #858585;
+            margin-right: 5px;
+        }
+
+        .fold-marker:hover {
+            color: #fff;
+        }
+
+        .folded {
+            display: none;
+        }
+
+        .sidebar-tab {
+            background: #404040;
+            color: #ccc;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #555;
+            font-size: 12px;
+        }
+
+        .sidebar-tab.active {
+            background: #252526;
+            color: white;
+        }
+
+        .sidebar-content {
+            display: none;
+        }
+
+        .sidebar-content.active {
+            display: block;
+        }
+
+        .zoom-controls {
+            display: flex;
+            gap: 5px;
+        }
+
+        .minimap {
+            width: 100px;
+            background: #1e1e1e;
+            border-left: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .minimap-content {
+            font-size: 2px;
+            line-height: 1;
+            color: #666;
+            padding: 2px;
+            transform-origin: top left;
+            transform: scale(0.1);
+            width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-item" onclick="toggleDropdown('file-menu')">
+            File
+            <div class="dropdown" id="file-menu">
+                <div class="dropdown-item" onclick="newFile()">New (Ctrl+N)</div>
+                <div class="dropdown-item" onclick="openFile()">Open (Ctrl+O)</div>
+                <div class="dropdown-item" onclick="saveFile()">Save (Ctrl+S)</div>
+                <div class="dropdown-item" onclick="saveAsFile()">Save As (Ctrl+Shift+S)</div>
+                <div class="dropdown-item" onclick="saveAllFiles()">Save All</div>
+                <div class="dropdown-item" onclick="reloadFile()">Reload from Disk</div>
+                <div class="dropdown-item" onclick="closeCurrentTab()">Close (Ctrl+W)</div>
+                <div class="dropdown-item" onclick="closeAllTabs()">Close All</div>
+                <div class="dropdown-item" onclick="saveSession()">Save Session</div>
+                <div class="dropdown-item" onclick="loadSession()">Load Session</div>
+            </div>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown('edit-menu')">
+            Edit
+            <div class="dropdown" id="edit-menu">
+                <div class="dropdown-item" onclick="undo()">Undo (Ctrl+Z)</div>
+                <div class="dropdown-item" onclick="redo()">Redo (Ctrl+Y)</div>
+                <div class="dropdown-item" onclick="cut()">Cut (Ctrl+X)</div>
+                <div class="dropdown-item" onclick="copy()">Copy (Ctrl+C)</div>
+                <div class="dropdown-item" onclick="paste()">Paste (Ctrl+V)</div>
+                <div class="dropdown-item" onclick="selectAll()">Select All (Ctrl+A)</div>
+                <div class="dropdown-item" onclick="duplicateLine()">Duplicate Line (Ctrl+D)</div>
+                <div class="dropdown-item" onclick="deleteLine()">Delete Line (Ctrl+L)</div>
+                <div class="dropdown-item" onclick="moveLineUp()">Move Line Up (Ctrl+Shift+Up)</div>
+                <div class="dropdown-item" onclick="moveLineDown()">Move Line Down (Ctrl+Shift+Down)</div>
+                <div class="dropdown-item" onclick="toggleCase()">Toggle Case</div>
+            </div>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown('search-menu')">
+            Search
+            <div class="dropdown" id="search-menu">
+                <div class="dropdown-item" onclick="showFindDialog()">Find (Ctrl+F)</div>
+                <div class="dropdown-item" onclick="showReplaceDialog()">Replace (Ctrl+H)</div>
+                <div class="dropdown-item" onclick="findNext()">Find Next (F3)</div>
+                <div class="dropdown-item" onclick="findPrevious()">Find Previous (Shift+F3)</div>
+                <div class="dropdown-item" onclick="goToLine()">Go to Line (Ctrl+G)</div>
+                <div class="dropdown-item" onclick="toggleBookmark()">Toggle Bookmark (Ctrl+F2)</div>
+                <div class="dropdown-item" onclick="nextBookmark()">Next Bookmark (F2)</div>
+            </div>
+        </div>
+        <div class="menu-item" onclick="toggleDropdown('view-menu')">
+            View
+            <div class="dropdown" id="view-menu">
+                <div class="dropdown-item" onclick="zoomIn()">Zoom In (Ctrl++)</div>
+                <div class="dropdown-item" onclick="zoomOut()">Zoom Out (Ctrl+-)</div>
+                <div class="dropdown-item" onclick="resetZoom()">Reset Zoom (Ctrl+0)</div>
+                <div class="dropdown-item" onclick="toggleSidebar()">Toggle Sidebar</div>
+                <div class="dropdown-item" onclick="toggleLineNumbers()">Toggle Line Numbers</div>
+                <div class="dropdown-item" onclick="toggleMinimap()">Toggle Minimap</div>
+                <div class="dropdown-item" onclick="toggleWordWrap()">Toggle Word Wrap</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <button onclick="newFile()">New</button>
+        <button onclick="openFile()">Open</button>
+        <button onclick="saveFile()">Save</button>
+        <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+        <span>|</span>
+        <button onclick="showFindDialog()">Find</button>
+        <button onclick="showReplaceDialog()">Replace</button>
+        <span>|</span>
+        <div class="zoom-controls">
+            <button onclick="zoomOut()">-</button>
+            <span id="zoom-level">100%</span>
+            <button onclick="zoomIn()">+</button>
+        </div>
+        <span>|</span>
+        <select id="syntax-mode" onchange="changeSyntaxMode()">
+            <option value="text">Plain Text</option>
+            <option value="javascript">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="python">Python</option>
+            <option value="json">JSON</option>
+        </select>
+        <span>|</span>
+        <select id="encoding">
+            <option value="utf-8">UTF-8</option>
+            <option value="ascii">ASCII</option>
+        </select>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-tab active" onclick="switchSidebarTab('explorer')">Explorer</div>
+            <div class="sidebar-tab" onclick="switchSidebarTab('functions')">Functions</div>
+            <div class="sidebar-tab" onclick="switchSidebarTab('bookmarks')">Bookmarks</div>
+            
+            <div class="sidebar-content active" id="explorer-content">
+                <div class="sidebar-header">File Explorer</div>
+                <div class="file-tree" id="file-tree">
+                    <div class="tree-item">📁 Project Files</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-content" id="functions-content">
+                <div class="sidebar-header">Function List</div>
+                <div class="function-list" id="function-list">
+                    <!-- Functions will be populated here -->
+                </div>
+            </div>
+            
+            <div class="sidebar-content" id="bookmarks-content">
+                <div class="sidebar-header">Bookmarks</div>
+                <div class="bookmarks-list" id="bookmarks-list">
+                    <!-- Bookmarks will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-container">
+            <div class="tab-bar" id="tab-bar">
+                <!-- Tabs will be added dynamically -->
+            </div>
+            <div class="editor-area">
+                <div class="line-numbers" id="line-numbers">1</div>
+                <textarea class="editor" id="main-editor" placeholder="Start typing..."></textarea>
+                <div class="minimap" id="minimap">
+                    <div class="minimap-content" id="minimap-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div>
+            <span id="file-status">Ready</span> | 
+            <span id="cursor-position">Ln 1, Col 1</span> | 
+            <span id="selection-info">Sel 0</span>
+        </div>
+        <div>
+            <span id="encoding-status">UTF-8</span> | 
+            <span id="syntax-status">Plain Text</span> | 
+            <span id="zoom-status">100%</span>
+        </div>
+    </div>
+
+    <div class="search-dialog" id="search-dialog">
+        <h3>Find and Replace</h3>
+        <input type="text" id="search-input" placeholder="Find what...">
+        <input type="text" id="replace-input" placeholder="Replace with...">
+        <div>
+            <label><input type="checkbox" id="match-case"> Match case</label>
+            <label><input type="checkbox" id="whole-word"> Whole word</label>
+            <label><input type="checkbox" id="regex-mode"> Regular expression</label>
+        </div>
+        <div class="dialog-buttons">
+            <button onclick="findNext()">Find Next</button>
+            <button onclick="findPrevious()">Find Previous</button>
+            <button onclick="replaceNext()">Replace</button>
+            <button onclick="replaceAll()">Replace All</button>
+            <button onclick="closeSearchDialog()">Close</button>
+        </div>
+    </div>
+
+    <input type="file" id="file-input" style="display: none;" multiple accept="*/*">
+
+    <script>
+        // Global state
+        let tabs = [];
+        let activeTabIndex = 0;
+        let fileContent = {};
+        let fileHistory = {};
+        let bookmarks = {};
+        let currentZoom = 100;
+        let sidebarVisible = true;
+        let minimapVisible = true;
+        let lineNumbersVisible = true;
+        let wordWrapEnabled = false;
+        let lastSearchResults = [];
+        let currentSearchIndex = 0;
+
+        // Initialize the application
+        function init() {
+            // Create initial tab
+            newFile();
+            
+            // Set up event listeners
+            setupEventListeners();
+            
+            // Load session if available
+            loadSessionFromStorage();
+        }
+
+        function setupEventListeners() {
+            const editor = document.getElementById('main-editor');
+            const fileInput = document.getElementById('file-input');
+
+            // Editor events
+            editor.addEventListener('input', handleEditorChange);
+            editor.addEventListener('scroll', updateMinimap);
+            editor.addEventListener('click', updateCursorPosition);
+            editor.addEventListener('keyup', updateCursorPosition);
+            editor.addEventListener('select', updateSelection);
+
+            // File input
+            fileInput.addEventListener('change', handleFileLoad);
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', handleKeyboardShortcuts);
+
+            // Click outside to close dropdowns
+            document.addEventListener('click', closeDropdowns);
+
+            // Window beforeunload
+            window.addEventListener('beforeunload', handleBeforeUnload);
+        }
+
+        function handleKeyboardShortcuts(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'n':
+                        e.preventDefault();
+                        newFile();
+                        break;
+                    case 'o':
+                        e.preventDefault();
+                        openFile();
+                        break;
+                    case 's':
+                        e.preventDefault();
+                        if (e.shiftKey) {
+                            saveAsFile();
+                        } else {
+                            saveFile();
+                        }
+                        break;
+                    case 'w':
+                        e.preventDefault();
+                        closeCurrentTab();
+                        break;
+                    case 'f':
+                        e.preventDefault();
+                        showFindDialog();
+                        break;
+                    case 'h':
+                        e.preventDefault();
+                        showReplaceDialog();
+                        break;
+                    case 'g':
+                        e.preventDefault();
+                        goToLine();
+                        break;
+                    case 'z':
+                        e.preventDefault();
+                        undo();
+                        break;
+                    case 'y':
+                        e.preventDefault();
+                        redo();
+                        break;
+                    case 'd':
+                        e.preventDefault();
+                        duplicateLine();
+                        break;
+                    case 'l':
+                        e.preventDefault();
+                        deleteLine();
+                        break;
+                    case '=':
+                    case '+':
+                        e.preventDefault();
+                        zoomIn();
+                        break;
+                    case '-':
+                        e.preventDefault();
+                        zoomOut();
+                        break;
+                    case '0':
+                        e.preventDefault();
+                        resetZoom();
+                        break;
+                }
+
+                if (e.shiftKey) {
+                    switch(e.key) {
+                        case 'ArrowUp':
+                            e.preventDefault();
+                            moveLineUp();
+                            break;
+                        case 'ArrowDown':
+                            e.preventDefault();
+                            moveLineDown();
+                            break;
+                    }
+                }
+            }
+
+            // Function keys
+            switch(e.key) {
+                case 'F2':
+                    e.preventDefault();
+                    if (e.ctrlKey) {
+                        toggleBookmark();
+                    } else {
+                        nextBookmark();
+                    }
+                    break;
+                case 'F3':
+                    e.preventDefault();
+                    if (e.shiftKey) {
+                        findPrevious();
+                    } else {
+                        findNext();
+                    }
+                    break;
+            }
+        }
+
+        // File Management
+        function newFile() {
+            const tabId = 'tab-' + Date.now();
+            const fileName = `Untitled-${tabs.length + 1}`;
+            
+            tabs.push({
+                id: tabId,
+                name: fileName,
+                filePath: null,
+                content: '',
+                modified: false,
+                syntaxMode: 'text'
+            });
+
+            fileContent[tabId] = '';
+            fileHistory[tabId] = [''];
+            
+            createTab(tabId, fileName);
+            switchToTab(tabs.length - 1);
+            updateFileStatus('New file created');
+        }
+
+        function openFile() {
+            document.getElementById('file-input').click();
+        }
+
+        function handleFileLoad(e) {
+            const files = Array.from(e.target.files);
+            
+            files.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    const content = event.target.result;
+                    const tabId = 'tab-' + Date.now();
+                    
+                    tabs.push({
+                        id: tabId,
+                        name: file.name,
+                        filePath: file.name,
+                        content: content,
+                        modified: false,
+                        syntaxMode: detectSyntaxMode(file.name)
+                    });
+
+                    fileContent[tabId] = content;
+                    fileHistory[tabId] = [content];
+                    
+                    createTab(tabId, file.name);
+                    switchToTab(tabs.length - 1);
+                    updateFileStatus(`Opened ${file.name}`);
+                    
+                    // Auto-detect and set syntax mode
+                    document.getElementById('syntax-mode').value = tabs[activeTabIndex].syntaxMode;
+                    applySyntaxHighlighting();
+                    updateFunctionList();
+                };
+                reader.readAsText(file);
+            });
+        }
+
+        function saveFile() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const content = document.getElementById('main-editor').value;
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = currentTab.filePath || currentTab.name + '.txt';
+            a.click();
+            
+            URL.revokeObjectURL(url);
+            
+            currentTab.modified = false;
+            updateTabModifiedState();
+            updateFileStatus(`Saved ${currentTab.name}`);
+        }
+
+        function saveAsFile() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const fileName = prompt('Save as:', currentTab.name);
+            if (fileName) {
+                currentTab.name = fileName;
+                currentTab.filePath = fileName;
+                saveFile();
+                updateTabName();
+            }
+        }
+
+        function saveAllFiles() {
+            tabs.forEach((tab, index) => {
+                if (tab.modified) {
+                    const prevIndex = activeTabIndex;
+                    switchToTab(index);
+                    saveFile();
+                    switchToTab(prevIndex);
+                }
+            });
+            updateFileStatus('All files saved');
+        }
+
+        function reloadFile() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab || !currentTab.filePath) return;
+
+            if (confirm('Reload file? Any unsaved changes will be lost.')) {
+                // In a real application, this would reload from the actual file
+                updateFileStatus(`Reloaded ${currentTab.name}`);
+            }
+        }
+
+        function closeCurrentTab() {
+            if (tabs.length <= 1) return;
+
+            const currentTab = tabs[activeTabIndex];
+            if (currentTab.modified) {
+                const result = confirm(`${currentTab.name} has unsaved changes. Close anyway?`);
+                if (!result) return;
+            }
+
+            const tabElement = document.querySelector(`[data-tab-id="${currentTab.id}"]`);
+            if (tabElement) {
+                tabElement.remove();
+            }
+
+            delete fileContent[currentTab.id];
+            delete fileHistory[currentTab.id];
+            delete bookmarks[currentTab.id];
+
+            tabs.splice(activeTabIndex, 1);
+
+            if (activeTabIndex >= tabs.length) {
+                activeTabIndex = tabs.length - 1;
+            }
+
+            if (tabs.length > 0) {
+                switchToTab(activeTabIndex);
+            } else {
+                newFile();
+            }
+        }
+
+        function closeAllTabs() {
+            if (confirm('Close all tabs? Any unsaved changes will be lost.')) {
+                while (tabs.length > 1) {
+                    closeCurrentTab();
+                }
+            }
+        }
+
+        // Tab Management
+        function createTab(tabId, fileName) {
+            const tabBar = document.getElementById('tab-bar');
+            const tab = document.createElement('div');
+            tab.className = 'tab';
+            tab.dataset.tabId = tabId;
+            tab.innerHTML = `
+                <span class="tab-name">${fileName}</span>
+                <span class="tab-close" onclick="closeTab('${tabId}')">&times;</span>
+            `;
+            tab.onclick = () => switchToTab(tabs.findIndex(t => t.id === tabId));
+            tabBar.appendChild(tab);
+        }
+
+        function switchToTab(index) {
+            if (index < 0 || index >= tabs.length) return;
+
+            // Save current tab content
+            if (tabs[activeTabIndex]) {
+                const currentContent = document.getElementById('main-editor').value;
+                fileContent[tabs[activeTabIndex].id] = currentContent;
+                tabs[activeTabIndex].content = currentContent;
+            }
+
+            activeTabIndex = index;
+            const currentTab = tabs[activeTabIndex];
+
+            // Update UI
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelector(`[data-tab-id="${currentTab.id}"]`).classList.add('active');
+
+            // Load tab content
+            document.getElementById('main-editor').value = fileContent[currentTab.id] || '';
+            document.getElementById('syntax-mode').value = currentTab.syntaxMode;
+
+            updateLineNumbers();
+            updateCursorPosition();
+            applySyntaxHighlighting();
+            updateFunctionList();
+            updateBookmarksList();
+            updateMinimap();
+        }
+
+        function updateTabModifiedState() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const tabElement = document.querySelector(`[data-tab-id="${currentTab.id}"]`);
+            const tabName = tabElement.querySelector('.tab-name');
+            
+            if (currentTab.modified) {
+                if (!tabName.textContent.endsWith('*')) {
+                    tabName.textContent += '*';
+                }
+            } else {
+                tabName.textContent = tabName.textContent.replace('*', '');
+            }
+        }
+
+        function updateTabName() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const tabElement = document.querySelector(`[data-tab-id="${currentTab.id}"]`);
+            const tabName = tabElement.querySelector('.tab-name');
+            tabName.textContent = currentTab.name + (currentTab.modified ? '*' : '');
+        }
+
+        // Editor Functions
+        function handleEditorChange() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const content = document.getElementById('main-editor').value;
+            fileContent[currentTab.id] = content;
+            
+            if (content !== currentTab.content) {
+                currentTab.modified = true;
+                updateTabModifiedState();
+            }
+
+            updateLineNumbers();
+            updateCursorPosition();
+            updateFunctionList();
+            updateMinimap();
+            
+            // Add to history for undo/redo
+            const history = fileHistory[currentTab.id];
+            if (history[history.length - 1] !== content) {
+                history.push(content);
+                if (history.length > 100) {
+                    history.shift();
+                }
+            }
+        }
+
+        function updateLineNumbers() {
+            const editor = document.getElementById('main-editor');
+            const lineNumbers = document.getElementById('line-numbers');
+            const content = editor.value;
+            const lines = content.split('\n');
+            
+            let lineNumbersHtml = '';
+            for (let i = 1; i <= lines.length; i++) {
+                lineNumbersHtml += i + '\n';
+            }
+            lineNumbers.textContent = lineNumbersHtml.slice(0, -1);
+        }
+
+        function updateCursorPosition() {
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const position = editor.selectionStart;
+            
+            const lines = content.substring(0, position).split('\n');
+            const line = lines.length;
+            const column = lines[lines.length - 1].length + 1;
+            
+            document.getElementById('cursor-position').textContent = `Ln ${line}, Col ${column}`;
+        }
+
+        function updateSelection() {
+            const editor = document.getElementById('main-editor');
+            const selectionLength = editor.selectionEnd - editor.selectionStart;
+            document.getElementById('selection-info').textContent = `Sel ${selectionLength}`;
+        }
+
+        // Edit Operations
+        function undo() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const history = fileHistory[currentTab.id];
+            if (history.length > 1) {
+                history.pop();
+                const content = history[history.length - 1];
+                document.getElementById('main-editor').value = content;
+                fileContent[currentTab.id] = content;
+                updateLineNumbers();
+                updateFileStatus('Undo');
+            }
+        }
+
+        function redo() {
+            // Simplified redo - in a full implementation, you'd maintain separate undo/redo stacks
+            updateFileStatus('Redo');
+        }
+
+        function cut() {
+            document.execCommand('cut');
+            updateFileStatus('Cut');
+        }
+
+        function copy() {
+            document.execCommand('copy');
+            updateFileStatus('Copy');
+        }
+
+        function paste() {
+            document.execCommand('paste');
+            updateFileStatus('Paste');
+        }
+
+        function selectAll() {
+            document.getElementById('main-editor').select();
+            updateSelection();
+        }
+
+        function duplicateLine() {
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const position = editor.selectionStart;
+            
+            const lines = content.split('\n');
+            const lineStart = content.lastIndexOf('\n', position - 1) + 1;
+            const lineEnd = content.indexOf('\n', position);
+            const currentLine = content.substring(lineStart, lineEnd === -1 ? content.length : lineEnd);
+            
+            const newContent = content.substring(0, lineEnd === -1 ? content.length : lineEnd) + 
+                              '\n' + currentLine + 
+                              (lineEnd === -1 ? '' : content.substring(lineEnd));
+            
+            editor.value = newContent;
+            handleEditorChange();
+            updateFileStatus('Line duplicated');
+        }
+
+        function deleteLine() {
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const position = editor.selectionStart;
+            
+            const lineStart = content.lastIndexOf('\n', position - 1) + 1;
+            const lineEnd = content.indexOf('\n', position);
+            
+            const newContent = content.substring(0, lineStart === 0 ? 0 : lineStart - 1) + 
+                              (lineEnd === -1 ? '' : content.substring(lineEnd));
+            
+            editor.value = newContent;
+            editor.selectionStart = editor.selectionEnd = Math.max(0, lineStart - 1);
+            handleEditorChange();
+            updateFileStatus('Line deleted');
+        }
+
+        function moveLineUp() {
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const position = editor.selectionStart;
+            const lines = content.split('\n');
+            
+            const currentLineIndex = content.substring(0, position).split('\n').length - 1;
+            
+            if (currentLineIndex > 0) {
+                [lines[currentLineIndex - 1], lines[currentLineIndex]] = 
+                [lines[currentLineIndex], lines[currentLineIndex - 1]];
+                
+                editor.value = lines.join('\n');
+                handleEditorChange();
+                updateFileStatus('Line moved up');
+            }
+        }
+
+        function moveLineDown() {
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const position = editor.selectionStart;
+            const lines = content.split('\n');
+            
+            const currentLineIndex = content.substring(0, position).split('\n').length - 1;
+            
+            if (currentLineIndex < lines.length - 1) {
+                [lines[currentLineIndex], lines[currentLineIndex + 1]] = 
+                [lines[currentLineIndex + 1], lines[currentLineIndex]];
+                
+                editor.value = lines.join('\n');
+                handleEditorChange();
+                updateFileStatus('Line moved down');
+            }
+        }
+
+        function toggleCase() {
+            const editor = document.getElementById('main-editor');
+            const start = editor.selectionStart;
+            const end = editor.selectionEnd;
+            
+            if (start !== end) {
+                const selectedText = editor.value.substring(start, end);
+                const newText = selectedText === selectedText.toUpperCase() ? 
+                               selectedText.toLowerCase() : selectedText.toUpperCase();
+                
+                editor.value = editor.value.substring(0, start) + newText + editor.value.substring(end);
+                editor.selectionStart = start;
+                editor.selectionEnd = end;
+                handleEditorChange();
+            }
+        }
+
+        // Search and Replace
+        function showFindDialog() {
+            document.getElementById('search-dialog').style.display = 'block';
+            document.getElementById('search-input').focus();
+            document.getElementById('replace-input').style.display = 'none';
+        }
+
+        function showReplaceDialog() {
+            document.getElementById('search-dialog').style.display = 'block';
+            document.getElementById('search-input').focus();
+            document.getElementById('replace-input').style.display = 'block';
+        }
+
+        function closeSearchDialog() {
+            document.getElementById('search-dialog').style.display = 'none';
+            clearSearchHighlight();
+        }
+
+        function findNext() {
+            const searchTerm = document.getElementById('search-input').value;
+            if (!searchTerm) return;
+
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const matchCase = document.getElementById('match-case').checked;
+            const wholeWord = document.getElementById('whole-word').checked;
+            const regexMode = document.getElementById('regex-mode').checked;
+
+            let searchContent = matchCase ? content : content.toLowerCase();
+            let searchFor = matchCase ? searchTerm : searchTerm.toLowerCase();
+
+            if (regexMode) {
+                try {
+                    const regex = new RegExp(searchFor, matchCase ? 'g' : 'gi');
+                    const matches = [...content.matchAll(regex)];
+                    
+                    if (matches.length > 0) {
+                        currentSearchIndex = (currentSearchIndex + 1) % matches.length;
+                        const match = matches[currentSearchIndex];
+                        editor.selectionStart = match.index;
+                        editor.selectionEnd = match.index + match[0].length;
+                        editor.focus();
+                        updateFileStatus(`Found ${matches.length} matches`);
+                    }
+                } catch (e) {
+                    updateFileStatus('Invalid regular expression');
+                }
+            } else {
+                let startPos = editor.selectionEnd;
+                let foundIndex = searchContent.indexOf(searchFor, startPos);
+                
+                if (foundIndex === -1) {
+                    foundIndex = searchContent.indexOf(searchFor, 0);
+                }
+                
+                if (foundIndex !== -1) {
+                    editor.selectionStart = foundIndex;
+                    editor.selectionEnd = foundIndex + searchTerm.length;
+                    editor.focus();
+                    updateFileStatus('Found');
+                } else {
+                    updateFileStatus('Not found');
+                }
+            }
+        }
+
+        function findPrevious() {
+            const searchTerm = document.getElementById('search-input').value;
+            if (!searchTerm) return;
+
+            const editor = document.getElementById('main-editor');
+            const content = editor.value;
+            const matchCase = document.getElementById('match-case').checked;
+
+            let searchContent = matchCase ? content : content.toLowerCase();
+            let searchFor = matchCase ? searchTerm : searchTerm.toLowerCase();
+
+            let startPos = Math.max(0, editor.selectionStart - 1);
+            let foundIndex = searchContent.lastIndexOf(searchFor, startPos);
+            
+            if (foundIndex === -1) {
+                foundIndex = searchContent.lastIndexOf(searchFor);
+            }
+            
+            if (foundIndex !== -1) {
+                editor.selectionStart = foundIndex;
+                editor.selectionEnd = foundIndex + searchTerm.length;
+                editor.focus();
+                updateFileStatus('Found');
+            } else {
+                updateFileStatus('Not found');
+            }
+        }
+
+        function replaceNext() {
+            const editor = document.getElementById('main-editor');
+            const searchTerm = document.getElementById('search-input').value;
+            const replaceTerm = document.getElementById('replace-input').value;
+            
+            if (editor.selectionStart !== editor.selectionEnd) {
+                const selectedText = editor.value.substring(editor.selectionStart, editor.selectionEnd);
+                const matchCase = document.getElementById('match-case').checked;
+                
+                if ((matchCase && selectedText === searchTerm) || 
+                    (!matchCase && selectedText.toLowerCase() === searchTerm.toLowerCase())) {
+                    
+                    editor.value = editor.value.substring(0, editor.selectionStart) + 
+                                  replaceTerm + 
+                                  editor.value.substring(editor.selectionEnd);
+                    
+                    editor.selectionStart = editor.selectionStart + replaceTerm.length;
+                    editor.selectionEnd = editor.selectionStart;
+                    handleEditorChange();
+                    updateFileStatus('Replaced');
+                }
+            }
+            
+            findNext();
+        }
+
+        function replaceAll() {
+            const editor = document.getElementById('main-editor');
+            const searchTerm = document.getElementById('search-input').value;
+            const replaceTerm = document.getElementById('replace-input').value;
+            const matchCase = document.getElementById('match-case').checked;
+            const regexMode = document.getElementById('regex-mode').checked;
+            
+            if (!searchTerm) return;
+
+            let content = editor.value;
+            let count = 0;
+
+            if (regexMode) {
+                try {
+                    const regex = new RegExp(searchTerm, matchCase ? 'g' : 'gi');
+                    const matches = content.match(regex);
+                    count = matches ? matches.length : 0;
+                    content = content.replace(regex, replaceTerm);
+                } catch (e) {
+                    updateFileStatus('Invalid regular expression');
+                    return;
+                }
+            } else {
+                const flags = matchCase ? 'g' : 'gi';
+                const regex = new RegExp(searchTerm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), flags);
+                const matches = content.match(regex);
+                count = matches ? matches.length : 0;
+                content = content.replace(regex, replaceTerm);
+            }
+
+            editor.value = content;
+            handleEditorChange();
+            updateFileStatus(`Replaced ${count} occurrences`);
+        }
+
+        function clearSearchHighlight() {
+            // Remove any search highlighting
+            lastSearchResults = [];
+            currentSearchIndex = 0;
+        }
+
+        function goToLine() {
+            const lineNumber = prompt('Go to line:');
+            if (lineNumber && !isNaN(lineNumber)) {
+                const editor = document.getElementById('main-editor');
+                const lines = editor.value.split('\n');
+                const targetLine = Math.max(1, Math.min(parseInt(lineNumber), lines.length));
+                
+                let position = 0;
+                for (let i = 0; i < targetLine - 1; i++) {
+                    position += lines[i].length + 1; // +1 for newline
+                }
+                
+                editor.selectionStart = editor.selectionEnd = position;
+                editor.focus();
+                updateCursorPosition();
+                updateFileStatus(`Went to line ${targetLine}`);
+            }
+        }
+
+        // Bookmarks
+        function toggleBookmark() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const editor = document.getElementById('main-editor');
+            const position = editor.selectionStart;
+            const content = editor.value;
+            const lineNumber = content.substring(0, position).split('\n').length;
+
+            if (!bookmarks[currentTab.id]) {
+                bookmarks[currentTab.id] = new Set();
+            }
+
+            const bookmarkSet = bookmarks[currentTab.id];
+            
+            if (bookmarkSet.has(lineNumber)) {
+                bookmarkSet.delete(lineNumber);
+                updateFileStatus(`Bookmark removed from line ${lineNumber}`);
+            } else {
+                bookmarkSet.add(lineNumber);
+                updateFileStatus(`Bookmark added to line ${lineNumber}`);
+            }
+
+            updateBookmarksList();
+        }
+
+        function nextBookmark() {
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab || !bookmarks[currentTab.id] || bookmarks[currentTab.id].size === 0) {
+                updateFileStatus('No bookmarks');
+                return;
+            }
+
+            const editor = document.getElementById('main-editor');
+            const position = editor.selectionStart;
+            const content = editor.value;
+            const currentLine = content.substring(0, position).split('\n').length;
+
+            const bookmarkArray = Array.from(bookmarks[currentTab.id]).sort((a, b) => a - b);
+            let nextBookmark = bookmarkArray.find(line => line > currentLine);
+            
+            if (!nextBookmark) {
+                nextBookmark = bookmarkArray[0]; // Wrap to first bookmark
+            }
+
+            goToLineNumber(nextBookmark);
+            updateFileStatus(`Jumped to bookmark at line ${nextBookmark}`);
+        }
+
+        function goToLineNumber(lineNumber) {
+            const editor = document.getElementById('main-editor');
+            const lines = editor.value.split('\n');
+            
+            let position = 0;
+            for (let i = 0; i < lineNumber - 1 && i < lines.length; i++) {
+                position += lines[i].length + 1;
+            }
+            
+            editor.selectionStart = editor.selectionEnd = position;
+            editor.focus();
+            updateCursorPosition();
+        }
+
+        function updateBookmarksList() {
+            const currentTab = tabs[activeTabIndex];
+            const bookmarksList = document.getElementById('bookmarks-list');
+            
+            if (!currentTab || !bookmarks[currentTab.id] || bookmarks[currentTab.id].size === 0) {
+                bookmarksList.innerHTML = '<div style="color: #666; font-style: italic;">No bookmarks</div>';
+                return;
+            }
+
+            const bookmarkArray = Array.from(bookmarks[currentTab.id]).sort((a, b) => a - b);
+            bookmarksList.innerHTML = bookmarkArray.map(line => 
+                `<div class="bookmark-item" onclick="goToLineNumber(${line})">Line ${line}</div>`
+            ).join('');
+        }
+
+        // Syntax Highlighting
+        function detectSyntaxMode(fileName) {
+            const extension = fileName.split('.').pop().toLowerCase();
+            const extensionMap = {
+                'js': 'javascript',
+                'ts': 'javascript',
+                'html': 'html',
+                'htm': 'html',
+                'css': 'css',
+                'scss': 'css',
+                'sass': 'css',
+                'py': 'python',
+                'json': 'json',
+                'xml': 'html',
+                'php': 'javascript',
+                'c': 'javascript',
+                'cpp': 'javascript',
+                'java': 'javascript'
+            };
+            return extensionMap[extension] || 'text';
+        }
+
+        function changeSyntaxMode() {
+            const syntaxMode = document.getElementById('syntax-mode').value;
+            const currentTab = tabs[activeTabIndex];
+            if (currentTab) {
+                currentTab.syntaxMode = syntaxMode;
+                applySyntaxHighlighting();
+                updateFunctionList();
+                document.getElementById('syntax-status').textContent = syntaxMode;
+            }
+        }
+
+        function applySyntaxHighlighting() {
+            // This is a simplified version - real syntax highlighting would be much more complex
+            const currentTab = tabs[activeTabIndex];
+            if (!currentTab) return;
+
+            const editor = document.getElementById('main-editor');
+            editor.className = `editor syntax-${currentTab.syntaxMode}`;
+            
+            updateFileStatus(`Syntax: ${currentTab.syntaxMode}`);
+        }
+
+        // Function List
+        function updateFunctionList() {
+            const currentTab = tabs[activeTabIndex];
+            const functionList = document.getElementById('function-list');
+            
+            if (!currentTab) {
+                functionList.innerHTML = '';
+                return;
+            }
+
+            const content = document.getElementById('main-editor').value;
+            const functions = extractFunctions(content, currentTab.syntaxMode);
+
+            if (functions.length === 0) {
+                functionList.innerHTML = '<div style="color: #666; font-style: italic;">No functions found</div>';
+                return;
+            }
+
+            functionList.innerHTML = functions.map(func => 
+                `<div class="function-item" onclick="goToLineNumber(${func.line})">${func.name}</div>`
+            ).join('');
+        }
+
+        function extractFunctions(content, syntaxMode) {
+            const lines = content.split('\n');
+            const functions = [];
+
+            lines.forEach((line, index) => {
+                let match;
+                
+                switch (syntaxMode) {
+                    case 'javascript':
+                        match = line.match(/function\s+(\w+)\s*\(/) || 
+                               line.match(/const\s+(\w+)\s*=\s*\(/) ||
+                               line.match(/(\w+)\s*:\s*function/) ||
+                               line.match(/(\w+)\s*\([^)]*\)\s*=>/);
+                        break;
+                    case 'python':
+                        match = line.match(/def\s+(\w+)\s*\(/);
+                        break;
+                    case 'css':
+                        match = line.match(/([.#]?[\w-]+)\s*\{/);
+                        break;
+                    case 'html':
+                        match = line.match(/<(\w+)[^>]*id\s*=\s*["']([^"']+)["']/);
+                        break;
+                }
+
+                if (match) {
+                    functions.push({
+                        name: match[1] || match[2],
+                        line: index + 1
+                    });
+                }
+            });
+
+            return functions;
+        }
+
+        // View Controls
+        function zoomIn() {
+            currentZoom = Math.min(300, currentZoom + 10);
+            applyZoom();
+        }
+
+        function zoomOut() {
+            currentZoom = Math.max(50, currentZoom - 10);
+            applyZoom();
+        }
+
+        function resetZoom() {
+            currentZoom = 100;
+            applyZoom();
+        }
+
+        function applyZoom() {
+            const editor = document.getElementById('main-editor');
+            const lineNumbers = document.getElementById('line-numbers');
+            
+            editor.style.fontSize = `${14 * currentZoom / 100}px`;
+            lineNumbers.style.fontSize = `${14 * currentZoom / 100}px`;
+            
+            document.getElementById('zoom-level').textContent = `${currentZoom}%`;
+            document.getElementById('zoom-status').textContent = `${currentZoom}%`;
+            
+            updateLineNumbers();
+            updateMinimap();
+        }
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebarVisible = !sidebarVisible;
+            sidebar.style.display = sidebarVisible ? 'flex' : 'none';
+            updateFileStatus(`Sidebar ${sidebarVisible ? 'shown' : 'hidden'}`);
+        }
+
+        function toggleLineNumbers() {
+            const lineNumbers = document.getElementById('line-numbers');
+            lineNumbersVisible = !lineNumbersVisible;
+            lineNumbers.style.display = lineNumbersVisible ? 'block' : 'none';
+            updateFileStatus(`Line numbers ${lineNumbersVisible ? 'shown' : 'hidden'}`);
+        }
+
+        function toggleMinimap() {
+            const minimap = document.getElementById('minimap');
+            minimapVisible = !minimapVisible;
+            minimap.style.display = minimapVisible ? 'block' : 'none';
+            updateFileStatus(`Minimap ${minimapVisible ? 'shown' : 'hidden'}`);
+        }
+
+        function toggleWordWrap() {
+            const editor = document.getElementById('main-editor');
+            wordWrapEnabled = !wordWrapEnabled;
+            editor.style.whiteSpace = wordWrapEnabled ? 'pre-wrap' : 'nowrap';
+            updateFileStatus(`Word wrap ${wordWrapEnabled ? 'enabled' : 'disabled'}`);
+        }
+
+        // Minimap
+        function updateMinimap() {
+            if (!minimapVisible) return;
+
+            const editor = document.getElementById('main-editor');
+            const minimapContent = document.getElementById('minimap-content');
+            
+            minimapContent.textContent = editor.value;
+        }
+
+        // Sidebar
+        function switchSidebarTab(tabName) {
+            document.querySelectorAll('.sidebar-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.sidebar-content').forEach(content => content.classList.remove('active'));
+            
+            document.querySelector(`.sidebar-tab:nth-child(${
+                tabName === 'explorer' ? 1 : tabName === 'functions' ? 2 : 3
+            })`).classList.add('active');
+            
+            document.getElementById(`${tabName}-content`).classList.add('active');
+        }
+
+        // Session Management
+        function saveSession() {
+            const sessionData = {
+                tabs: tabs,
+                activeTabIndex: activeTabIndex,
+                fileContent: fileContent,
+                bookmarks: Object.fromEntries(
+                    Object.entries(bookmarks).map(([key, value]) => [key, Array.from(value)])
+                )
+            };
+            
+            const blob = new Blob([JSON.stringify(sessionData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'notepad-session.json';
+            a.click();
+            
+            URL.revokeObjectURL(url);
+            updateFileStatus('Session saved');
+        }
+
+        function loadSession() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    try {
+                        const sessionData = JSON.parse(event.target.result);
+                        restoreSession(sessionData);
+                        updateFileStatus('Session loaded');
+                    } catch (error) {
+                        alert('Error loading session: ' + error.message);
+                    }
+                };
+                reader.readAsText(file);
+            };
+            
+            input.click();
+        }
+
+        function restoreSession(sessionData) {
+            // Clear current session
+            tabs = [];
+            document.getElementById('tab-bar').innerHTML = '';
+            
+            // Restore session data
+            tabs = sessionData.tabs || [];
+            activeTabIndex = sessionData.activeTabIndex || 0;
+            fileContent = sessionData.fileContent || {};
+            
+            // Restore bookmarks
+            bookmarks = {};
+            if (sessionData.bookmarks) {
+                Object.entries(sessionData.bookmarks).forEach(([key, value]) => {
+                    bookmarks[key] = new Set(value);
+                });
+            }
+
+            // Recreate tabs
+            tabs.forEach(tab => {
+                createTab(tab.id, tab.name);
+            });
+
+            // Switch to active tab
+            if (tabs.length > 0) {
+                switchToTab(activeTabIndex);
+            } else {
+                newFile();
+            }
+        }
+
+        function saveSessionToStorage() {
+            const sessionData = {
+                tabs: tabs,
+                activeTabIndex: activeTabIndex,
+                fileContent: fileContent,
+                currentZoom: currentZoom,
+                sidebarVisible: sidebarVisible,
+                minimapVisible: minimapVisible,
+                lineNumbersVisible: lineNumbersVisible,
+                wordWrapEnabled: wordWrapEnabled
+            };
+            
+            try {
+                localStorage.setItem('notepad-session', JSON.stringify(sessionData));
+            } catch (e) {
+                console.warn('Could not save session to localStorage:', e);
+            }
+        }
+
+        function loadSessionFromStorage() {
+            try {
+                const sessionData = localStorage.getItem('notepad-session');
+                if (sessionData) {
+                    const data = JSON.parse(sessionData);
+                    
+                    // Restore settings
+                    currentZoom = data.currentZoom || 100;
+                    sidebarVisible = data.sidebarVisible !== false;
+                    minimapVisible = data.minimapVisible !== false;
+                    lineNumbersVisible = data.lineNumbersVisible !== false;
+                    wordWrapEnabled = data.wordWrapEnabled || false;
+                    
+                    // Apply settings
+                    applyZoom();
+                    if (!sidebarVisible) toggleSidebar();
+                    if (!minimapVisible) toggleMinimap();
+                    if (!lineNumbersVisible) toggleLineNumbers();
+                    if (wordWrapEnabled) toggleWordWrap();
+                }
+            } catch (e) {
+                console.warn('Could not load session from localStorage:', e);
+            }
+        }
+
+        // Utility Functions
+        function toggleDropdown(dropdownId) {
+            closeDropdowns();
+            const dropdown = document.getElementById(dropdownId);
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeDropdowns() {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                dropdown.style.display = 'none';
+            });
+        }
+
+        function updateFileStatus(message) {
+            document.getElementById('file-status').textContent = message;
+            setTimeout(() => {
+                document.getElementById('file-status').textContent = 'Ready';
+            }, 3000);
+        }
+
+        function handleBeforeUnload(e) {
+            const hasUnsavedChanges = tabs.some(tab => tab.modified);
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = '';
+                return '';
+            }
+            
+            // Save session before closing
+            saveSessionToStorage();
+        }
+
+        // Initialize the application when the page loads
+        window.addEventListener('load', init);
+
+        // Auto-save session periodically
+        setInterval(saveSessionToStorage, 30000); // Save every 30 seconds
+    </script>
+</body>
+</html>

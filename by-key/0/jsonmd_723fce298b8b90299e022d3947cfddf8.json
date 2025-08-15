@@ -1,0 +1,85 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:57.670Z",
+    "source_text_length": 112,
+    "word_count": 17,
+    "entropy_level": 0.992,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "723fce298b8b90299e022d3947cfddf8",
+    "source": {
+      "path": "translate.html",
+      "bytes": 9161,
+      "lastModified": 1754774927886
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "processor",
+        "frequency": 1
+      },
+      {
+        "theme": "iterative",
+        "frequency": 1
+      },
+      {
+        "theme": "style",
+        "frequency": 1
+      },
+      {
+        "theme": "input",
+        "frequency": 1
+      },
+      {
+        "theme": "process",
+        "frequency": 1
+      },
+      {
+        "theme": "clear",
+        "frequency": 1
+      },
+      {
+        "theme": "formatted",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "JSON Processor - Iterative Style JSON Input Process Clear Formatted Output Waiting for data. … Copy to Clipboard",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.5,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

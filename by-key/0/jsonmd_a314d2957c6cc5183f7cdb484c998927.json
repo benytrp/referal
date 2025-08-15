@@ -1,0 +1,90 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:54.216Z",
+    "source_text_length": 898,
+    "word_count": 119,
+    "entropy_level": 0.98,
+    "contradictions_detected": 2,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "a314d2957c6cc5183f7cdb484c998927",
+    "source": {
+      "path": "session_bootstrapper_anchor_protocol_offline_html.html",
+      "bytes": 15861,
+      "lastModified": 1754863235020
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "anchors",
+        "frequency": 4
+      },
+      {
+        "theme": "anchor",
+        "frequency": 3
+      },
+      {
+        "theme": "begin_again",
+        "frequency": 3
+      },
+      {
+        "theme": "handshake",
+        "frequency": 3
+      },
+      {
+        "theme": "session",
+        "frequency": 2
+      },
+      {
+        "theme": "recursion",
+        "frequency": 2
+      },
+      {
+        "theme": "depth",
+        "frequency": 2
+      },
+      {
+        "theme": "contract",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "again",
+      "recur"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Session Bootstrapper · Anchor Protocol v1. … 3) Runbook · Optimal session Emotional handshake: curious + respectful Technical handshake: contract + paradox Policy gate: SHIP / ITERATE / ROLLBACK Scratchpad",
+    "key_insights": [],
+    "action_items": [
+      "618 Recursion depth ≤ 7 Begin_again ready 1) Handshake · Contract (perfect opening) Goal Success criteria Constraints Scenario focus Tone enthusiastic calm technical playful Mode Deep-focus (1 artifact, polished) Rapid iteration (3 artifacts max) φ alignment Recursion depth Safety: max artifacts (rapid) Paradox (IF–THEN–BUT) Resolution (THEREFORE) Generate Opening Prompts (P0–P3) Copy All Prompts 2) Anchors · Begin_again Create anchor from current config List anchors Begin_again (restore latest) Export anchors Import anchors Tip: After the AI ships an artifact, click Create anchor, then ask for a refinement using the generated P3 prompt."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.41,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:45.790Z",
+    "source_text_length": 421,
+    "word_count": 50,
+    "entropy_level": 0.965,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "6e2dfb41313bb108865342c74ede2e84",
+    "source": {
+      "path": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile (1).html",
+      "bytes": 35191,
+      "lastModified": 1754826763331
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "html",
+        "frequency": 4
+      },
+      {
+        "theme": "preview",
+        "frequency": 3
+      },
+      {
+        "theme": "e3participantprofile",
+        "frequency": 2
+      },
+      {
+        "theme": "e3dailyevaluation",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "recordtype",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "🔧 E3 Offline Template Editor (Compatible) Paste your E3ParticipantProfile + E3DailyEvaluation JSON, then generate a printable HTML document. … docx) 👁️ Live Preview Refresh Preview",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

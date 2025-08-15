@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:35.722Z",
+    "timestamp": "2025-08-11T05:52:55.510Z",
     "source_text_length": 2484,
     "word_count": 194,
     "sentence_count": 12,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "b11d0f9e432263067f2cc253249e88dd",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "69336dfc49670765ccbcf3ad7cd2fe6ce10798363fd0a48462a16e51097091a6.json",
-      "processing_timestamp": "2025-08-11T15:15:35.722Z",
+      "processing_timestamp": "2025-08-11T05:52:55.510Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -131,28 +131,28 @@
         "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
         "line": 4,
         "tension_type": "explicit_contradiction",
-        "severity": "0.98"
+        "severity": "0.39"
       },
       {
         "statement_a": "matc\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b",
         "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
         "line": 5,
         "tension_type": "explicit_contradiction",
-        "severity": "0.11"
+        "severity": "0.86"
       },
       {
         "statement_a": "match(keywor\"\n      },\n      {\n        \"idx\": 2,\n        \"sample\": \"tectContradictions(text) { const keywords = /\\\\b(not|b",
         "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
         "line": 6,
         "tension_type": "explicit_contradiction",
-        "severity": "0.89"
+        "severity": "0.10"
       },
       {
         "statement_a": "match(keywords) || [\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"ctions(text) { const keywords = /\\\\b(not|b",
         "statement_b": "however|yet|paradox|although|vs)\\\\b/gi; return (text",
         "line": 7,
         "tension_type": "explicit_contradiction",
-        "severity": "0.12"
+        "severity": "0.28"
       }
     ],
     "sentiment_indicators": {
@@ -172,12 +172,12 @@
     "action_items": [
       {
         "action": "\"\n    ],\n    \"summary\": \"const, contradictions, bridge, text, scroll\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"orca_share_media1754511153204_7358953147935691171",
-        "urgency_score": "0.62",
-        "feasibility_score": "0.83"
+        "urgency_score": "0.96",
+        "feasibility_score": "0.07"
       }
     ],
     "unresolved_tensions": [
-      "matc\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"detectContradictions(text) { const keywords = /\\\\b(not|b vs however|yet|paradox|although|vs)\\\\b/gi; return (text"
+      "match(keywords) || [\"\n      },\n      {\n        \"idx\": 3,\n        \"sample\": \"ctions(text) { const keywords = /\\\\b(not|b vs however|yet|paradox|although|vs)\\\\b/gi; return (text"
     ]
   },
   "cognitive_analysis": {
@@ -190,9 +190,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.36",
+    "confidence_level": "0.18",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 1 actions"
     ],

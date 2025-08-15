@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:35.376Z",
+    "timestamp": "2025-08-11T05:52:55.355Z",
     "source_text_length": 2057,
     "word_count": 154,
     "sentence_count": 11,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "0296458f1841d3b6397eecf08d85f5b6",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "65951f25024090b4dbc437cb79380c438e93f50dc4b429ce44593919efaf7dfa.json",
-      "processing_timestamp": "2025-08-11T15:15:35.376Z",
+      "processing_timestamp": "2025-08-11T05:52:55.355Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -149,9 +149,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.52",
+    "confidence_level": "0.80",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 0 actions"
     ],

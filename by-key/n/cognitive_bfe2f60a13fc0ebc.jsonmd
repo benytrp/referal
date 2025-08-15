@@ -1,0 +1,169 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:33.766Z",
+    "source_text_length": 6255,
+    "word_count": 307,
+    "sentence_count": 2,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bfe2f60a13fc0ebc2173d90b5909285f",
+    "entropy_level": 0.788,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "Nvrstry.canonical.schema (1).json",
+      "processing_timestamp": "2025-08-11T05:05:33.766Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 62,
+        "significance": "0.2020",
+        "examples": [
+          "\"type\":"
+        ]
+      },
+      {
+        "theme": "string",
+        "frequency": 35,
+        "significance": "0.1140",
+        "examples": [
+          "\"string\",\n"
+        ]
+      },
+      {
+        "theme": "object",
+        "frequency": 16,
+        "significance": "0.0521",
+        "examples": [
+          "\"object\",\n"
+        ]
+      },
+      {
+        "theme": "properties",
+        "frequency": 15,
+        "significance": "0.0489",
+        "examples": [
+          "\"properties\":"
+        ]
+      },
+      {
+        "theme": "additionalproperties",
+        "frequency": 15,
+        "significance": "0.0489",
+        "examples": [
+          "\"additionalProperties\":"
+        ]
+      },
+      {
+        "theme": "true",
+        "frequency": 15,
+        "significance": "0.0489",
+        "examples": [
+          "true,\n"
+        ]
+      },
+      {
+        "theme": "defs",
+        "frequency": 9,
+        "significance": "0.0293",
+        "examples": [
+          "\"#/$defs/ProjectMetadata\"\n"
+        ]
+      },
+      {
+        "theme": "array",
+        "frequency": 7,
+        "significance": "0.0228",
+        "examples": [
+          "\"array\",\n"
+        ]
+      },
+      {
+        "theme": "items",
+        "frequency": 7,
+        "significance": "0.0228",
+        "examples": [
+          "\"items\":"
+        ]
+      },
+      {
+        "theme": "null",
+        "frequency": 5,
+        "significance": "0.0163",
+        "examples": [
+          "\"null\"\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 4,
+        "significance": "0.0130",
+        "examples": [
+          "\"phases\":"
+        ]
+      },
+      {
+        "theme": "schema",
+        "frequency": 3,
+        "significance": "0.0098",
+        "examples": [
+          "\"$schema\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"$schema\": \"https://json-schema org/draft/2020-12/schema\",\n  \"title\": \"Nvrstry Canonical Artifact\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"project_metadata\": {\n      \"$ref\": \"#/$defs/ProjectMetadata\"\n    },\n    \"story_elements\": {\n      \"$ref\": \"#/$defs/StoryElements\"\n    },\n    \"technical_details\": {\n      \"$ref\": \"#/$defs/TechnicalDetails\"\n    },\n    \"version_control\": {\n      \"$ref\": \"#/$defs/VersionControl\"\n    },\n    \"trigger\": {\n      \"type\": [\n        \"string\",\n        \"null\"\n      ]\n    },\n    \"contract\": {\n      \"$ref\": \"#/$defs/Contract\"\n    },\n    \"phases\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"$ref\": \"#/$defs/Phase\"\n      }\n    },\n    \"metadata\": {\n      \"$ref\": \"#/$defs/Metadata\"\n    },\n    \"cycle_log\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"$ref\": \"#/$defs/CycleLogEntry\"\n      }\n    }\n  },\n  \"additionalProperties\": true,\n  \"$defs\": {\n    \"ProjectMetadata\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"title\": {\n          \"type\": \"string\"\n        },\n        \"logline\": {\n          \"type\": \"string\"\n        },\n        \"project_id\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"StoryElements\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"genre\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"themes\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"setting\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"primary_location\": {\n              \"type\": \"string\"\n            },\n            \"time_period\": {\n              \"type\": \"string\"\n            }\n          },\n          \"additionalProperties\": true\n        },\n        \"characters\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"protagonist\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"arc\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"additionalProperties\": true\n            },\n            \"antagonist\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"additionalProperties\": true\n            }\n          },\n          \"additionalProperties\": true\n        },\n        \"plot\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"inciting_incident\": {\n              \"type\": \"string\"\n            },\n            \"climax\": {\n              \"type\": \"string\"\n            },\n            \"resolution\": {\n              \"type\": \"string\"\n            }\n          },\n          \"additionalProperties\": true\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"TechnicalDetails\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"medium\": {\n          \"type\": \"string\"\n        },\n        \"word_count_target\": {\n          \"type\": [\n            \"string\",\n            \"number\"\n          ]\n        },\n        \"status\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"VersionControl\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"last_edited_by\": {\n          \"type\": \"string\"\n        },\n        \"version\": {\n          \"type\": \"string\"\n        },\n        \"timestamp\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"Contract\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"goal\": {\n          \"type\": \"string\"\n        },\n        \"constraints\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"success_criteria\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"Phase\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"phase_name\": {\n          \"type\": \"string\"\n        },\n        \"operations\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"op\": {\n                \"type\": \"string\"\n              },\n              \"parameters\": {\n                \"type\": \"object\"\n              }\n            },\n            \"required\": [\n              \"op\"\n            ],\n            \"additionalProperties\": true\n          }\n        },\n        \"parallel_sandboxes\": {\n          \"type\": \"boolean\"\n        },\n        \"entropy\": {\n          \"type\": \"number\",\n          \"minimum\": 0,\n          \"maximum\": 1\n        }\n      },\n      \"required\": [\n        \"phase_name\"\n      ],\n      \"additionalProperties\": true\n    },\n    \"Metadata\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"created\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        },\n        \"complexity_level\": {\n          \"type\": \"string\"\n        },\n        \"risk_tolerance\": {\n          \"type\": \"string\"\n        },\n        \"generator\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"CycleLogEntry\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cycle\": {\n          \"type\": [\n            \"integer\",\n            \"string\"\n          ]\n        },\n        \"phase\": {\n          \"type\": \"string\"\n        },\n        \"op\": {\n          \"type\": \"string\"\n        },\n        \"output\": {},\n        \"contract_ref\": {\n          \"type\": [\n            \"string\",\n            \"null\"\n          ]\n        },\n        \"timestamp\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        },\n        \"entropy\": {\n          \"type\": [\n            \"number\",\n            \"null\"\n          ]\n        },\n        \"contested\": {\n          \"type\": [\n            \"boolean\",\n            \"null\"\n          ]\n        },\n        \"hash_of_entry\": {\n          \"type\": [\n            \"string\",\n            \"null\"\n          ]\n        }\n      },\n      \"required\": [\n        \"cycle\",\n        \"phase\",\n        \"op\",\n        \"output\",\n        \"timestamp\"\n      ],\n      \"additionalProperties\": true\n    }\n  }\n}...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "org/draft/2020-12/schema\",\n  \"title\": \"Nvrstry Canonical Artifact\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"project_metadata\": {\n      \"$ref\": \"#/$defs/ProjectMetadata\"\n    },\n    \"story_elements\": {\n      \"$ref\": \"#/$defs/StoryElements\"\n    },\n    \"technical_details\": {\n      \"$ref\": \"#/$defs/TechnicalDetails\"\n    },\n    \"version_control\": {\n      \"$ref\": \"#/$defs/VersionControl\"\n    },\n    \"trigger\": {\n      \"type\": [\n        \"string\",\n        \"null\"\n      ]\n    },\n    \"contract\": {\n      \"$ref\": \"#/$defs/Contract\"\n    },\n    \"phases\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"$ref\": \"#/$defs/Phase\"\n      }\n    },\n    \"metadata\": {\n      \"$ref\": \"#/$defs/Metadata\"\n    },\n    \"cycle_log\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"$ref\": \"#/$defs/CycleLogEntry\"\n      }\n    }\n  },\n  \"additionalProperties\": true,\n  \"$defs\": {\n    \"ProjectMetadata\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"title\": {\n          \"type\": \"string\"\n        },\n        \"logline\": {\n          \"type\": \"string\"\n        },\n        \"project_id\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"StoryElements\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"genre\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"themes\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"setting\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"primary_location\": {\n              \"type\": \"string\"\n            },\n            \"time_period\": {\n              \"type\": \"string\"\n            }\n          },\n          \"additionalProperties\": true\n        },\n        \"characters\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"protagonist\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                },\n                \"arc\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"additionalProperties\": true\n            },\n            \"antagonist\": {\n              \"type\": \"object\",\n              \"properties\": {\n                \"name\": {\n                  \"type\": \"string\"\n                }\n              },\n              \"additionalProperties\": true\n            }\n          },\n          \"additionalProperties\": true\n        },\n        \"plot\": {\n          \"type\": \"object\",\n          \"properties\": {\n            \"inciting_incident\": {\n              \"type\": \"string\"\n            },\n            \"climax\": {\n              \"type\": \"string\"\n            },\n            \"resolution\": {\n              \"type\": \"string\"\n            }\n          },\n          \"additionalProperties\": true\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"TechnicalDetails\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"medium\": {\n          \"type\": \"string\"\n        },\n        \"word_count_target\": {\n          \"type\": [\n            \"string\",\n            \"number\"\n          ]\n        },\n        \"status\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"VersionControl\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"last_edited_by\": {\n          \"type\": \"string\"\n        },\n        \"version\": {\n          \"type\": \"string\"\n        },\n        \"timestamp\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"Contract\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"goal\": {\n          \"type\": \"string\"\n        },\n        \"constraints\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"success_criteria\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"Phase\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"phase_name\": {\n          \"type\": \"string\"\n        },\n        \"operations\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"op\": {\n                \"type\": \"string\"\n              },\n              \"parameters\": {\n                \"type\": \"object\"\n              }\n            },\n            \"required\": [\n              \"op\"\n            ],\n            \"additionalProperties\": true\n          }\n        },\n        \"parallel_sandboxes\": {\n          \"type\": \"boolean\"\n        },\n        \"entropy\": {\n          \"type\": \"number\",\n          \"minimum\": 0,\n          \"maximum\": 1\n        }\n      },\n      \"required\": [\n        \"phase_name\"\n      ],\n      \"additionalProperties\": true\n    },\n    \"Metadata\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"created\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        },\n        \"complexity_level\": {\n          \"type\": \"string\"\n        },\n        \"risk_tolerance\": {\n          \"type\": \"string\"\n        },\n        \"generator\": {\n          \"type\": \"string\"\n        }\n      },\n      \"additionalProperties\": true\n    },\n    \"CycleLogEntry\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"cycle\": {\n          \"type\": [\n            \"integer\",\n            \"string\"\n          ]\n        },\n        \"phase\": {\n          \"type\": \"string\"\n        },\n        \"op\": {\n          \"type\": \"string\"\n        },\n        \"output\": {},\n        \"contract_ref\": {\n          \"type\": [\n            \"string\",\n            \"null\"\n          ]\n        },\n        \"timestamp\": {\n          \"type\": \"string\",\n          \"format\": \"date-time\"\n        },\n        \"entropy\": {\n          \"type\": [\n            \"number\",\n            \"null\"\n          ]\n        },\n        \"contested\": {\n          \"type\": [\n            \"boolean\",\n            \"null\"\n          ]\n        },\n        \"hash_of_entry\": {\n          \"type\": [\n            \"string\",\n            \"null\"\n          ]\n        }\n      },\n      \"required\": [\n        \"cycle\",\n        \"phase\",\n        \"op\",\n        \"output\",\n        \"timestamp\"\n      ],\n      \"additionalProperties\": true\n    }\n  }\n}",
+        "urgency_score": "0.37",
+        "feasibility_score": "0.43"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.31275,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.43",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bfe2f60a13fc0ebc2173d90b5909285f"
+  }
+}

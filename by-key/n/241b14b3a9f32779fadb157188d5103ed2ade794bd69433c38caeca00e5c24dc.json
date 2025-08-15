@@ -1,0 +1,91 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:42.389Z",
+    "anchor_id": "241b14b3a9f32779fadb157188d5103ed2ade794bd69433c38caeca00e5c24dc",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.826,
+    "contradictions_detected": 0,
+    "word_count": 865
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 33
+      },
+      {
+        "theme": "html",
+        "frequency": 24
+      },
+      {
+        "theme": "center",
+        "frequency": 21
+      },
+      {
+        "theme": "var",
+        "frequency": 20
+      },
+      {
+        "theme": "type",
+        "frequency": 19
+      },
+      {
+        "theme": "input",
+        "frequency": 18
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 18
+      },
+      {
+        "theme": "div",
+        "frequency": 16
+      },
+      {
+        "theme": "span",
+        "frequency": 15
+      },
+      {
+        "theme": "document",
+        "frequency": 14
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "getMonth() + 1 < 10 ?",
+      "getDate() < 10 ?",
+      "getHours() < 10 ?",
+      "getMinutes() < 10 ?",
+      "yle=\"width: 50%;\">Item</th>\\n<th>Yes</th>\\n<th>NI</th>\\n<th>N/A</th>\\n</tr>\\n<tr>\\n<td>Attendance — Correct day and time?",
+      "type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed?",
+      "ut type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Attitude — Positive attitude?",
+      "e=\"width: 50%;\">Item</th>\\n<th>Yes</th>\\n<th>NI</th>\\n<th>N/A</th>\\n</tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks?",
+      "ype=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Task Completion — Stayed on task?",
+      "ut type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Safety — Followed procedures?",
+      "getMonth() + 1 < 10 ?",
+      "getDate() < 10 ?"
+    ],
+    "summary": "class, html, center, var, type"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "simple_e3_builder (2).html",
+    "relative_path": "simple_e3_builder (2).html",
+    "size_bytes": 7279,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

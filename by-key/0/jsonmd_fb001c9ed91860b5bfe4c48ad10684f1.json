@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:29.988Z",
+    "source_text_length": 241,
+    "word_count": 34,
+    "entropy_level": 0.987,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "fb001c9ed91860b5bfe4c48ad10684f1",
+    "source": {
+      "path": "AEON-Bridge-Report-BC-202508100522918.txt",
+      "bytes": 241,
+      "lastModified": 1754817873680
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "generated",
+        "frequency": 2
+      },
+      {
+        "theme": "2000",
+        "frequency": 1
+      },
+      {
+        "theme": "aeon-bridge",
+        "frequency": 1
+      },
+      {
+        "theme": "implementation",
+        "frequency": 1
+      },
+      {
+        "theme": "report",
+        "frequency": 1
+      },
+      {
+        "theme": "2025-08-10t09",
+        "frequency": 1
+      },
+      {
+        "theme": "553z",
+        "frequency": 1
+      },
+      {
+        "theme": "location",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON-Bridge E3 Implementation Report\nGenerated: 2025-08-10T09:24:33. … 2000\nLost Child Beacon: Active\nForms Generated: 0",
+    "key_insights": [],
+    "action_items": [
+      "AEON-Bridge E3 Implementation Report\nGenerated: 2025-08-10T09:24:33."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}

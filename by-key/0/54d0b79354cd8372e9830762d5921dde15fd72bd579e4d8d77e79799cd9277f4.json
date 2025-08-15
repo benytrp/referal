@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:31.624Z",
+    "anchor_id": "54d0b79354cd8372e9830762d5921dde15fd72bd579e4d8d77e79799cd9277f4",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.752,
+    "contradictions_detected": 0,
+    "word_count": 847
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "system",
+        "frequency": 15
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 15
+      },
+      {
+        "theme": "type",
+        "frequency": 15
+      },
+      {
+        "theme": "name",
+        "frequency": 15
+      },
+      {
+        "theme": "summary",
+        "frequency": 15
+      },
+      {
+        "theme": "layer",
+        "frequency": 14
+      },
+      {
+        "theme": "glyph",
+        "frequency": 14
+      },
+      {
+        "theme": "final",
+        "frequency": 13
+      },
+      {
+        "theme": "const",
+        "frequency": 10
+      },
+      {
+        "theme": "cycle",
+        "frequency": 9
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "system, timestamp, type, name, summary"
+  },
+  "sentiment_indicators": {
+    "positive": 4,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (6).html",
+    "relative_path": "ai_studio_code (6).html",
+    "size_bytes": 10666,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.75
+  }
+}

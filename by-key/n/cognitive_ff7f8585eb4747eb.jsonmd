@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:15.716Z",
+    "source_text_length": 2108,
+    "word_count": 176,
+    "sentence_count": 9,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ff7f8585eb4747ebc32581cfc06cb304",
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_530d2cfede56ddec21ff2fcd7ebcc958.json",
+      "processing_timestamp": "2025-08-11T05:02:15.716Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0455",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0455",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 8,
+        "significance": "0.0455",
+        "examples": [
+          "\"data\",\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 7,
+        "significance": "0.0398",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "format",
+        "frequency": 6,
+        "significance": "0.0341",
+        "examples": [
+          "\"format\":"
+        ]
+      },
+      {
+        "theme": "translator",
+        "frequency": 5,
+        "significance": "0.0284",
+        "examples": [
+          "\"translator\",\n"
+        ]
+      },
+      {
+        "theme": "bulk",
+        "frequency": 3,
+        "significance": "0.0170",
+        "examples": [
+          "\"bulk\",\n"
+        ]
+      },
+      {
+        "theme": "entry",
+        "frequency": 2,
+        "significance": "0.0114",
+        "examples": [
+          "\"entry\",\n"
+        ]
+      },
+      {
+        "theme": "tool",
+        "frequency": 2,
+        "significance": "0.0114",
+        "examples": [
+          "tool"
+        ]
+      },
+      {
+        "theme": "converts",
+        "frequency": 2,
+        "significance": "0.0114",
+        "examples": [
+          "converts"
+        ]
+      },
+      {
+        "theme": "needed",
+        "frequency": 2,
+        "significance": "0.0114",
+        "examples": [
+          "needed"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 2,
+        "significance": "0.0114",
+        "examples": [
+          "Template"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:09...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 17168,\n      \"lastModified\": 1754769763658\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"work_habits\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"preparatory_goals\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"data\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"entry\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"bulk\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"translator\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"format\",\n        \"frequency\": 2\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"Data Translator to JSON Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.43"
+      },
+      {
+        "action": " … Bulk Data Entry Paste multiple `key=value` pairs below (one record per line): Translate Bulk to JSON Copy to Clipboard JSON Output:\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"Data Translator to JSON Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.13"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.1054,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.88",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ff7f8585eb4747ebc32581cfc06cb304"
+  }
+}

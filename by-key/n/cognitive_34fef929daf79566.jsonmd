@@ -1,0 +1,220 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:33.177Z",
+    "source_text_length": 17422,
+    "word_count": 1403,
+    "sentence_count": 148,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "34fef929daf7956699faff68e294d783",
+    "entropy_level": 0.917,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "meta2.html",
+      "processing_timestamp": "2025-08-11T05:05:33.177Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "layer",
+        "frequency": 26,
+        "significance": "0.0185",
+        "examples": [
+          "<title>Five-Layer"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 20,
+        "significance": "0.0143",
+        "examples": [
+          "class=\"floating-particles\""
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 19,
+        "significance": "0.0135",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 18,
+        "significance": "0.0128",
+        "examples": [
+          ".json-output"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 17,
+        "significance": "0.0121",
+        "examples": [
+          "name=\"viewport\""
+        ]
+      },
+      {
+        "theme": "layers",
+        "frequency": 17,
+        "significance": "0.0121",
+        "examples": [
+          "\"layers\":"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 16,
+        "significance": "0.0114",
+        "examples": [
+          "documented"
+        ]
+      },
+      {
+        "theme": "purpose",
+        "frequency": 15,
+        "significance": "0.0107",
+        "examples": [
+          "\"purpose\":"
+        ]
+      },
+      {
+        "theme": "margin",
+        "frequency": 13,
+        "significance": "0.0093",
+        "examples": [
+          "margin:"
+        ]
+      },
+      {
+        "theme": "background",
+        "frequency": 13,
+        "significance": "0.0093",
+        "examples": [
+          "background:"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 13,
+        "significance": "0.0093",
+        "examples": [
+          ".data-visualization"
+        ]
+      },
+      {
+        "theme": "iteration",
+        "frequency": 12,
+        "significance": "0.0086",
+        "examples": [
+          "Iteration"
+        ]
+      }
+    ],
+    "key_questions": [
+      "*?\\\\)/g, '')"
+    ],
+    "pattern_recognition": [
+      "repeat",
+      "return",
+      "iteration",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 3,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\r\n    <title>Five-Layer Architecture Generator - Iteration 3</title>\r\n    <style>\r\n        * {\r\n            margin: 0;\r\n            padding: 0;\r\n            box-sizing: border-box;\r\n        }\r\n\r\n        body {\r\n            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;\r\n            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);\r\n            color: #00ff88;\r\n            min-height: 100vh;\r\n            overflow-x: hidden;\r\n        }\r\n\r\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "particle {\r\n            position: absolute;\r\n            width: 2px;\r\n            height: 2px;\r\n            background: #00ff88;\r\n            animation: float 10s infinite linear;\r\n        }\r\n\r\n        @keyframes float {\r\n            0% { transform: translateY(100vh) translateX(0); opacity: 0; }\r\n            10% { opacity: 1; }\r\n            90% { opacity: 1; }\r\n            100% { transform: translateY(-10vh) translateX(100px); opacity: 0; }\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"floating-particles\" id=\"particles\"></div>\r\n    \r\n    <div class=\"container\">\r\n        <div class=\"header\">\r\n            <h1 class=\"title\">Five-Layer Architecture Generator</h1>\r\n            <div class=\"iteration-counter\">Iteration: <span id=\"iterationCount\">1</span></div>\r\n            <div class=\"progress-bar\">\r\n                <div class=\"progress-fill\" id=\"progressFill\"></div>\r\n            </div>\r\n        </div>\r\n        \r\n        <div class=\"control-panel\">\r\n            <textarea id=\"inputData\" placeholder=\"Paste your architectural data here in JSON format\" style=\"height: 150px;\"></textarea>\r\n            <button class=\"btn\" onclick=\"processData()\">Process Architecture</button>\r\n            <button class=\"btn\" onclick=\"generateCode()\">Generate Code</button>\r\n            <button class=\"btn\" onclick=\"createNextIteration()\">Next Iteration</button>\r\n            <button class=\"btn\" onclick=\"exportArtifact()\">Export Artifact</button>\r\n        </div>\r\n\r\n        <div class=\"data-visualization\" id=\"dataViz\"></div>\r\n\r\n        <div class=\"layer-grid\" id=\"layerGrid\"></div>\r\n\r\n        <div class=\"generated-code\" id=\"generatedCode\">\r\n// Generated Java Integration Code will appear here",
+        "urgency_score": "0.33",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": " We consolidated conceptual architecture, concrete implementation, operational flow, and strategic value into a single unified blueprint, culminating in the design of a portable, self-verifying, presentation-native system with an executable CLI harness",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "\"\r\n                            },\r\n                            {\r\n                                \"name\": \"Presentation Abstraction (Multi-Audience Output)\",\r\n                                \"purpose\": \"Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "\"\r\n                            }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        };\r\n\r\n        function createParticles() {\r\n            const container = document",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "createElement('div');\r\n                particle",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.28"
+      },
+      {
+        "action": "createElement('div');\r\n                card",
+        "urgency_score": "0.90",
+        "feasibility_score": "0.43"
+      },
+      {
+        "action": "createElement('div');\r\n                node",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "toString());\r\n        return json;\r\n    }\r\n}`;\r\n        }\r\n\r\n        function createNextIteration() {\r\n            currentIteration++;\r\n            document",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n            const a = document",
+        "urgency_score": "0.33",
+        "feasibility_score": "0.70"
+      },
+      {
+        "action": "createElement('a');\r\n            a",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.83"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.8711,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.68",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "34fef929daf7956699faff68e294d783"
+  }
+}

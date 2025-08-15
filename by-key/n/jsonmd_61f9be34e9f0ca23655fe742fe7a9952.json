@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:42.181Z",
+    "source_text_length": 8147,
+    "word_count": 985,
+    "entropy_level": 0.906,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "61f9be34e9f0ca23655fe742fe7a9952",
+    "source": {
+      "path": "E3-Master-Template-Builder-AEON.html",
+      "bytes": 36347,
+      "lastModified": 1754767368001
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 41
+      },
+      {
+        "theme": "data",
+        "frequency": 36
+      },
+      {
+        "theme": "document",
+        "frequency": 30
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 28
+      },
+      {
+        "theme": "html",
+        "frequency": 20
+      },
+      {
+        "theme": "value",
+        "frequency": 15
+      },
+      {
+        "theme": "return",
+        "frequency": 14
+      },
+      {
+        "theme": "json",
+        "frequency": 13
+      }
+    ],
+    "key_questions": [
+      "E3 Master Template Builder (+ AEON-Bridge v1.1) Generate child evaluation pages (offline). Master assigns unique identifiers; child pages pre-check boxes from your data. Optionally emit an AEON-Bridge v1.1 checklist JSON (sealed). Identifiers Batch ID Generate Instance start # Auto-assign IDs per child Test iterations Test generator Waiting to test… Data Bulk: JSON array Base data (JSON object — optional) During bulk export, each row overlays this base data. Allowed precheck values: yes/ni/na (also y/true/1 → yes; no/false/0 → ni; n/a/na → na). Child template Reset to default E3 template Actions File name pattern (tokens allowed) Preview Download Child Bulk Export Emit AEON-Bridge v1.1 checklist JSON with each child `; if(/<\\/body>/i.test(html)){ return html.replace(/<\\/body>/i, script + \"\\n\"); } return html + script; } function makeChildHTML(tpl, data){ const checks = gleanChecksFromData(data); let html = replaceTokens(tpl, data); html = injectPrecheckScript(html, checks); return html; } function collectBaseData(){ let obj = {}; const raw = $('#dataJson').value.trim(); if(raw){ try{ obj = JSON.parse(raw); }catch(e){ alert('Base data JSON is invalid.'); throw e; } } return obj; } function download(name, content, type='text/html'){ const blob = new Blob([content], {type}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 800); } function replaceFilePattern(pattern, data){ const safe = replaceTokens(pattern, data) || 'E3-Child.html'; return sanitizeFilename(safe); } // ---------- AEON-Bridge v1.1 helpers ---------- async function sha256Hex(str){ const enc = new TextEncoder().encode(str); const buf = await crypto.subtle.digest('SHA-256', enc); return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join(''); } function stableStringify(obj){ function sortKeys(x){ if(Array.isArray(x)) return x.map(sortKeys); if(x && typeof x === 'object'){ const out = {}; Object.keys(x).sort().forEach(k=>{ out[k] = sortKeys(x[k]); }); return out; } return x; } return JSON.stringify(sortKeys(obj), null, 0); } async function buildChecklist({data, html, tpl, fileName, attempt}){ const now = new Date().toISOString(); const artifact_id = crypto.randomUUID(); const artifact_sha = await sha256Hex(html); const plan_sha = await sha256Hex(tpl); const cycle_mobius_seal = await sha256Hex(plan_sha + '.' + artifact_sha); const base = { version: \"1.1.0\", artifact_id, created: now, updated: now, description: \"E3 child evaluation artifact (HTML) emitted by offline master builder.\", phases: { summon: \"IDs + token overlay\", echo: \"Child HTML emission + seals\" }, glyphs: { infinity:\"∞\", phi:\"φ\", therefore:\"∴\", psi:\"ψ\", delta:\"Δ\", emptyset:\"∅\" }, steps: [{ step_id: crypto.randomUUID(), phase: \"echo\", glyph: \"∴\", title: \"Emit child and attach cryptographic seals\", timestamp: now, entropy: 0.65, contested: false, tags: [\"e3\",\"child\",\"html\",\"seal\"], status: \"completed\", result: \"ok\", recursion_depth: 0, validation_history: [{ cycle: 1, entropy: 0.65, contested: false, disagreement: 0 }] }], seal: { algo: \"sha256\", hash: \"\", timestamp: now }, final_mobius_seal: \"\", cycles: [{ attempt: attempt, timestamp: now, plan_sha, artifact_sha, cycle_mobius_seal, metrics: {}, reflection: {} }], canonicalization: \"UTF-8, sort_keys=true, separators=(',',':'), ensure_ascii=false. Excl. seals.\", metadata: { file_name: fileName, file_pattern: document.getElementById('filePattern').value, batch_id: (data && data.record_meta && data.record_meta.batch_id) || \"\", eval_id: (data && data.record_meta && data.record_meta.eval_id) || \"\", instance_seq: (data && data.record_meta && data.record_meta.instance_seq) || \"\", participant_code: (data && data.record_meta && data.record_meta.participant_code) || \"\", date: (data && data.record_meta && data.record_meta.date) || \"\" } }; // Compute final_mobius_seal on canonicalized copy excluding seals const copyForSeal = JSON.parse(JSON.stringify(base)); delete copyForSeal.seal; delete copyForSeal.final_mobius_seal; const canonical = stableStringify(copyForSeal); const final_mobius_seal = await sha256Hex(canonical); // Bind primary seal to both final_mobius_seal and artifact_sha const primarySeal = await sha256Hex(final_mobius_seal + '.' + artifact_sha); base.final_mobius_seal = final_mobius_seal; base.seal.hash = primarySeal; return base; } async function maybeEmitChecklist({data, html, tpl, fileName, attempt}){ if(!document.getElementById('emitChecklist').checked) return; const checklist = await buildChecklist({data, html, tpl, fileName, attempt}); const jsonName = fileName.replace(/\\.html?",
+      "$/i,'') + '.aeon.json'; download(jsonName, JSON.stringify(checklist, null, 2), 'application/json'); } // ---------- Init ---------- function init(){ const def = document.getElementById('defaultChild').textContent; document.getElementById('editor').value = def.trim(); BATCH_ID = sessionStorage.getItem('e3_batch_id') || genBatchId(); sessionStorage.setItem('e3_batch_id', BATCH_ID); document.getElementById('batchId').value = BATCH_ID; INSTANCE_COUNTER = parseInt(document.getElementById('instanceStart').value||'1',10); } // ---------- Events ---------- document.getElementById('regenBatch').addEventListener('click', ()=>{ BATCH_ID = genBatchId(); sessionStorage.setItem('e3_batch_id', BATCH_ID); document.getElementById('batchId').value = BATCH_ID; }); document.getElementById('instanceStart').addEventListener('input', ()=>{ const v = parseInt(document.getElementById('instanceStart').value||'1',10); INSTANCE_COUNTER = isNaN(v)?",
+      "1:v; }); document.getElementById('testIds').addEventListener('click', ()=>{ const tc = parseInt(document.getElementById('testCount').value||'200',10); const res = runIdTest(tc); const log = document.getElementById('testLog'); if(res.ok){ TESTED_OK = true; log.textContent = `PASS: ${res.count} unique IDs in ${tc} runs. Sample:\\n` + res.sample.join('\\n'); }else{ TESTED_OK = false; log.textContent = `FAIL: duplicate after ${res.seen} runs -> ${res.dup}`; } }); document.getElementById('resetTpl').addEventListener('click', ()=>{ if(confirm('Reset editor to default child template?"
+    ],
+    "pattern_recognition": [
+      "cycle",
+      "pattern",
+      "recur"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Master Template Builder (+ AEON-Bridge v1. … value||'1',10); let count = 0; for(let i=0;i",
+    "key_insights": [],
+    "action_items": [
+      "E3 Master Template Builder (+ AEON-Bridge v1.",
+      "Child template Reset to default E3 template Actions File name pattern (tokens allowed) Preview Download Child Bulk Export Emit AEON-Bridge v1.",
+      "createElement('a'); a.",
+      "createObjectURL(blob); a.",
+      "stringify(sortKeys(obj), null, 0); } async function buildChecklist({data, html, tpl, fileName, attempt}){ const now = new Date().",
+      "0\", artifact_id, created: now, updated: now, description: \"E3 child evaluation artifact (HTML) emitted by offline master builder.",
+      "checked) return; const checklist = await buildChecklist({data, html, tpl, fileName, attempt}); const jsonName = fileName.",
+      "isArray(arr)) throw new Error('Bulk JSON must be an array."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:52.312Z",
+    "source_text_length": 299,
+    "word_count": 39,
+    "entropy_level": 0.962,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "41245263400c370c6e32a39a2c2e386a",
+    "source": {
+      "path": "offline_template_editor.html",
+      "bytes": 23414,
+      "lastModified": 1754824035500
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "configuration",
+        "frequency": 3
+      },
+      {
+        "theme": "example",
+        "frequency": 3
+      },
+      {
+        "theme": "preview",
+        "frequency": 3
+      },
+      {
+        "theme": "template",
+        "frequency": 2
+      },
+      {
+        "theme": "load",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "🔧 Offline Template Editor Create dynamic HTML templates using JSON configuration 📋 JSON Configuration Load Example Generate Template Clear All Example JSON Structure: Click \"Load Example\" to see a complete configuration 🎨 Generated HTML Copy HTML Download Preview 👁️ Live Preview Refresh Preview",
+    "key_insights": [],
+    "action_items": [
+      "🔧 Offline Template Editor Create dynamic HTML templates using JSON configuration 📋 JSON Configuration Load Example Generate Template Clear All Example JSON Structure: Click \"Load Example\" to see a complete configuration 🎨 Generated HTML Copy HTML Download Preview 👁️ Live Preview Refresh Preview"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

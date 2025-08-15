@@ -1,0 +1,113 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:41.094Z",
+    "source_text_length": 14655,
+    "word_count": 1512,
+    "sentence_count": 128,
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_system_architecture.md"
+    },
+    "anchor_id": "ca7436279539db8b2b5b71515f2b52ad"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridge",
+        "frequency": 20
+      },
+      {
+        "theme": "json",
+        "frequency": 20
+      },
+      {
+        "theme": "contested",
+        "frequency": 19
+      },
+      {
+        "theme": "entropy",
+        "frequency": 18
+      },
+      {
+        "theme": "context",
+        "frequency": 17
+      },
+      {
+        "theme": "aeon",
+        "frequency": 16
+      },
+      {
+        "theme": "layer",
+        "frequency": 16
+      },
+      {
+        "theme": "node",
+        "frequency": 15
+      },
+      {
+        "theme": "phase",
+        "frequency": 14
+      },
+      {
+        "theme": "html",
+        "frequency": 12
+      },
+      {
+        "theme": "output",
+        "frequency": 12
+      },
+      {
+        "theme": "ledger",
+        "frequency": 10
+      }
+    ],
+    "key_questions": [
+      "append(\"contradictions_present\")\n    if \"?\" in layer",
+      "entropy?",
+      "contested ? ' | ⚠️ CONTESTED' : ''}\n                    <br>\n                    <strong>Context:</strong> ${node"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "# AEON Bridge System: Architecture & Implementation Guide\n\n## Executive Summary\n\nThe AEON Bridge System represents a comprehensive AI dialogue infrastructure designed for processing, tracking, and auditing AI interactions with cryptographic integrity, entropy analysis, and contradiction detection … *",
+    "key_insights": [],
+    "action_items": [
+      "# AEON Bridge System: Architecture & Implementation Guide\n\n## Executive Summary\n\nThe AEON Bridge System represents a comprehensive AI dialogue infrastructure designed for processing, tracking, and auditing AI interactions with cryptographic integrity, entropy analysis, and contradiction detection",
+      "html)\n- **Capabilities**: Timeline navigation, filtering, governance review\n- **Deployment**: Self-contained, portable, browser-based\n\n---\n\n## Data Structures & Schema\n\n### AEON-Bridge File Structure\n\n```json\n{\n  \"scroll_id\": \"AEON-Bridge-{timestamp}\",\n  \"format\": \"json_md_fusion_scroll\",\n  \"created\": \"2025-08-09T02:17:14",
+      "json\"\n}\n```\n\n### Master Bridgefile Schema\n\n```json\n{\n  \"scroll_id\": \"AEON-Master-Bridge-CoT\",\n  \"format\": \"json_md_fusion_scroll_cot\",\n  \"created\": \"timestamp\",\n  \"equation\": \"I(n+1) = f(C(n), T(n), R(n))\",\n  \"glyphs\": [\"∞\", \"φ\", \"∴\", \"ψ\", \"Δ\", \"∅\"],\n  \"manifest\": {\n    \"total_files\": 0,\n    \"total_layers\": 0,\n    \"total_cycles\": 0,\n    \"contested_count\": 0,\n    \"avg_entropy\": 0",
+      "0,\n    \"files_included\": []\n  },\n  \"thought_ledger\": [],\n  \"attachments\": {},\n  \"mobius_seal\": \"SHA-256-hash\"\n}\n```\n\n---\n\n## Phase Semantics & State Transitions\n\n### **Summon Phase**\n- **Purpose**: Context establishment and intent declaration\n- **Behavior**: Sets context, initializes reasoning chain\n- **Data Flow**: `context = description`, `output = \"\"`\n- **Symbol**: ∅ (initialization) or Δ (change initiation)\n\n### **Echo Phase** \n- **Purpose**: Response generation and reasoning execution\n- **Behavior**: Processes context into actionable output\n- **Data Flow**: `context = last_summon_context`, `output = description`\n- **Symbol**: ∴ (logical progression) or φ (balanced reasoning)\n\n### **State Transition Logic**\n1",
+      "append(\"question_mark\")\n    return (len(reasons) > 0, reasons)\n```\n\n---\n\n## Implementation Guide\n\n### Step 1: Environment Setup\n\n```python\nimport os\nimport json\nimport hashlib\nimport gzip\nimport base64\nfrom datetime import datetime\nfrom pathlib import Path\n\nBASE = \"/mnt/data\"  # Working directory\nALL_BRIDGE_FILES = []\n```\n\n### Step 2: Bridge File Discovery\n\n```python\ndef discover_bridge_files():\n    if not os",
+      "get(\"description\", \"\")\n    \n    # Contestation analysis\n    contested, reasons = contested_heuristic(layer)\n    \n    # Build node\n    return {\n        \"cycle\": cycle_id,\n        \"phase\": layer",
+      "createElement('div');\n                nodeEl",
+      "json\")\n}\n```\n\n---\n\n## Troubleshooting & FAQ\n\n### Common Issues\n\n**Q: Mobius seal validation fails after editing**\nA: Recompute the seal after any changes using `generate_mobius_seal()`\n\n**Q: High entropy layers trigger too many alerts**\nA: Adjust contestation thresholds in `contested_heuristic()` function\n\n**Q: HTML viewer shows \"Failed to load bridge file\"**\nA: Ensure both JSON and HTML files are in the same directory\n\n**Q: Processing fails on malformed input**\nA: Check source bridge files for valid JSON and required fields\n\n### Performance Optimization\n\n- **Streaming**: Process large files incrementally to reduce memory usage\n- **Caching**: Store intermediate results during multi-stage processing\n- **Parallel Processing**: Handle multiple bridge files concurrently\n\n---\n\n## Conclusion\n\nThe AEON Bridge System provides a robust foundation for AI dialogue infrastructure with:\n\n✅ **Comprehensive Tracking**: Full provenance from raw input to final output  \n✅ **Cryptographic Integrity**: Tamper-evident seals and verification  \n✅ **Interactive Audit**: Zero-dependency browser-based exploration  \n✅ **Governance Ready**: Built-in quality metrics and contestation flagging  \n✅ **Enterprise Scale**: Portable, deterministic, and version-controlled  \n\nThis system is production-ready for organizational deployment, research analysis, and regulatory compliance scenarios requiring full auditability of AI interactions",
+      "---\n\n*For implementation support, additional features, or integration assistance, refer to the attached code samples and schema documentation"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ca7436279539db8b2b5b71515f2b52ad"
+  }
+}

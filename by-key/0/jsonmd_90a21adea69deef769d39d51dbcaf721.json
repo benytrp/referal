@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:54.933Z",
+    "source_text_length": 363,
+    "word_count": 65,
+    "entropy_level": 0.96,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "90a21adea69deef769d39d51dbcaf721",
+    "source": {
+      "path": "shgfdeh.html",
+      "bytes": 9989,
+      "lastModified": 1754769427036
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "data",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "entry",
+        "frequency": 3
+      },
+      {
+        "theme": "bulk",
+        "frequency": 3
+      },
+      {
+        "theme": "format",
+        "frequency": 2
+      },
+      {
+        "theme": "form",
+        "frequency": 2
+      },
+      {
+        "theme": "single",
+        "frequency": 2
+      },
+      {
+        "theme": "record",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder. … Bulk Data Entry Paste multiple `key=value` pairs below (one record per line): Translate Bulk to JSON Copy to Clipboard JSON Output:",
+    "key_insights": [],
+    "action_items": [
+      "Data Format Translator This tool converts your data into the JSON format needed for the E3 Template Builder."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

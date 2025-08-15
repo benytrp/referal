@@ -1,0 +1,201 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:53.243Z",
+    "source_text_length": 3863,
+    "word_count": 301,
+    "sentence_count": 15,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "2aabf9a85ec14716c48c287c114c071f",
+    "entropy_level": 0.886,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_ecbca820764cdca17f781e4578d2ee83.json",
+      "processing_timestamp": "2025-08-11T05:12:53.243Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0266",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0266",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 7,
+        "significance": "0.0233",
+        "examples": [
+          "\"aeon\",\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 6,
+        "significance": "0.0199",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 5,
+        "significance": "0.0166",
+        "examples": [
+          "\"cycle\",\n"
+        ]
+      },
+      {
+        "theme": "layer",
+        "frequency": 5,
+        "significance": "0.0166",
+        "examples": [
+          "\"layer\",\n"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 4,
+        "significance": "0.0133",
+        "examples": [
+          "\"output\",\n"
+        ]
+      },
+      {
+        "theme": "functions",
+        "frequency": 4,
+        "significance": "0.0133",
+        "examples": [
+          "\"functions\",\n"
+        ]
+      },
+      {
+        "theme": "composition",
+        "frequency": 3,
+        "significance": "0.0100",
+        "examples": [
+          "\"composition\",\n"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 3,
+        "significance": "0.0100",
+        "examples": [
+          "\"entropy_level\":"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 2,
+        "significance": "0.0066",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 2,
+        "significance": "0.0066",
+        "examples": [
+          "\\\"@type\\\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:33...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … \\\"\\n  }\\n}\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"\\\",\\n    \\\"glyphMeaning\\\": \\\"Lambda (λ) symbolizing an anonymous, dynamically created function",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": "\",\n      \"\\\",\\n    \\\"contradictionType\\\": \\\"A process that must define itself before it can execute",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "\",\n      \"\\\"\\n  },\\n  \\\"recursiveReference\\\": [\\n    {\\n      \\\"@id\\\": \\\"urn:aeon:layer:1806_DESIGN_DOC\\\",\\n      \\\"relationship\\\": \\\"aeon:evolvesFrom\\\"\\n    }\\n  ],\\n  \\\"sessionLogicComposition\\\": {\\n    \\\"status\\\": \\\"EXECUTED\\\",\\n    \\\"approved_by\\\": \\\"User\\\",\\n    \\\"thought_ledger_proof\\\": [\\n      {\\n        \\\"cycle\\\": 1,\\n        \\\"phase\\\": \\\"Identify\\\",\\n        \\\"op\\\": \\\"identify_base_functions\\\",\\n        \\\"output\\\": \\\"Isolated foundational functions: create_json_structure, calculate_entropy, generate_glyph, update_phi_sequence",
+        "urgency_score": "0.44",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": "\",\n      \"\\\"\\n      },\\n      {\\n        \\\"cycle\\\": 2,\\n        \\\"phase\\\": \\\"Mutate\\\",\\n        \\\"op\\\": \\\"mutate_for_meta_function\\\",\\n        \\\"output\\\": \\\"Created temporary functions: create_meta_layer_structure(), calculate_equilibrium_entropy(), generate_lambda_glyph()",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.70"
+      },
+      {
+        "action": "\",\n      \"\\\"\\n      },\\n      {\\n        \\\"cycle\\\": 3,\\n        \\\"phase\\\": \\\"Create\\\",\\n        \\\"op\\\": \\\"define_session_logic\\\",\\n        \\\"output\\\": \\\"Combined mutated functions into a new sequence to generate this very layer",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "\",\n      \"\\\",\\n    \\\"contradictionType\\\": \\\"A process that must define itself before it can execute",
+        "urgency_score": "0.15",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": "51,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"plain\"\n  }\n}",
+        "urgency_score": "0.45",
+        "feasibility_score": "0.65"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.19315,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.97",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 7 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "2aabf9a85ec14716c48c287c114c071f"
+  }
+}

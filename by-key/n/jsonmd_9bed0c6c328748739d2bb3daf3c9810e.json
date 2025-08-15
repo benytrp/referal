@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:25.942Z",
+    "source_text_length": 454,
+    "word_count": 63,
+    "sentence_count": 2,
+    "entropy_level": 0.978,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "if_then_therefore_bridgefile_runner_single_file_html.html"
+    },
+    "anchor_id": "9bed0c6c328748739d2bb3daf3c9810e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "mode",
+        "frequency": 4
+      },
+      {
+        "theme": "bridgefile",
+        "frequency": 3
+      },
+      {
+        "theme": "localhost",
+        "frequency": 3
+      },
+      {
+        "theme": "model",
+        "frequency": 2
+      },
+      {
+        "theme": "direct",
+        "frequency": 2
+      },
+      {
+        "theme": "results",
+        "frequency": 2
+      },
+      {
+        "theme": "then",
+        "frequency": 1
+      },
+      {
+        "theme": "therefore",
+        "frequency": 1
+      },
+      {
+        "theme": "runner",
+        "frequency": 1
+      },
+      {
+        "theme": "single",
+        "frequency": 1
+      },
+      {
+        "theme": "file",
+        "frequency": 1
+      },
+      {
+        "theme": "connector",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "IF–THEN–THEREFORE • Bridgefile Runner single‑file Connector Endpoint Ollama (localhost) llama cpp server (localhost) Mistral Together OpenRouter API Key (blank for localhost) Model Override (optional) Mode Direct Mode Function‑Calling Mode Run Bridgefile Online Quick Model Ping Bridgefile Load Example Validate JSON Copy Download Clear Validation: n/a State & Results Steps: 0 Mode: Direct LLM Summary — Results (tools, adapters, responses) — Log Ready",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9bed0c6c328748739d2bb3daf3c9810e"
+  }
+}

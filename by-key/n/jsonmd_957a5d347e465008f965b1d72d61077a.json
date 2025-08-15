@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:47.995Z",
+    "source_text_length": 2700,
+    "word_count": 318,
+    "sentence_count": 20,
+    "entropy_level": 0.922,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (4).txt"
+    },
+    "anchor_id": "957a5d347e465008f965b1d72d61077a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 11
+      },
+      {
+        "theme": "name",
+        "frequency": 11
+      },
+      {
+        "theme": "model",
+        "frequency": 8
+      },
+      {
+        "theme": "process",
+        "frequency": 6
+      },
+      {
+        "theme": "awareness",
+        "frequency": 5
+      },
+      {
+        "theme": "system",
+        "frequency": 5
+      },
+      {
+        "theme": "cognitive",
+        "frequency": 4
+      },
+      {
+        "theme": "description",
+        "frequency": 4
+      },
+      {
+        "theme": "internal",
+        "frequency": 4
+      },
+      {
+        "theme": "recursive",
+        "frequency": 4
+      },
+      {
+        "theme": "thing",
+        "frequency": 4
+      },
+      {
+        "theme": "howtostep",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"@context\": \"https://schema … \"\n      }\n    }\n  ]\n}",
+    "key_insights": [],
+    "action_items": [
+      "This artifact documents the immediate next step in a recursive self-awareness loop"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "957a5d347e465008f965b1d72d61077a"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:51.560Z",
+    "source_text_length": 331,
+    "word_count": 49,
+    "sentence_count": 5,
+    "entropy_level": 0.985,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (71).html"
+    },
+    "anchor_id": "a999f80336114c23ca83d2be0b43717e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridge",
+        "frequency": 3
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2
+      },
+      {
+        "theme": "session",
+        "frequency": 2
+      },
+      {
+        "theme": "file",
+        "frequency": 2
+      },
+      {
+        "theme": "builder",
+        "frequency": 1
+      },
+      {
+        "theme": "interactive",
+        "frequency": 1
+      },
+      {
+        "theme": "parser",
+        "frequency": 1
+      },
+      {
+        "theme": "input",
+        "frequency": 1
+      },
+      {
+        "theme": "data",
+        "frequency": 1
+      },
+      {
+        "theme": "sections",
+        "frequency": 1
+      },
+      {
+        "theme": "subsections",
+        "frequency": 1
+      },
+      {
+        "theme": "generated",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Bridge Builder Interactive Session Parser v1 … js (Syntax Highlighting) & Feather Icons (UI)",
+    "key_insights": [],
+    "action_items": [
+      "AEON Bridge Builder Interactive Session Parser v1"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a999f80336114c23ca83d2be0b43717e"
+  }
+}

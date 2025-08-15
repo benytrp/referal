@@ -1,0 +1,458 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:24:14.677Z",
+    "source_text_length": 22741,
+    "word_count": 2716,
+    "entropy_level": 0.897,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "c8f295d5dff84ec02c063b0ee0ddbbe2"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 52
+      },
+      {
+        "theme": "return",
+        "frequency": 44
+      },
+      {
+        "theme": "string",
+        "frequency": 41
+      },
+      {
+        "theme": "tool",
+        "frequency": 36
+      },
+      {
+        "theme": "errors",
+        "frequency": 34
+      },
+      {
+        "theme": "catalog",
+        "frequency": 33
+      },
+      {
+        "theme": "params",
+        "frequency": 31
+      },
+      {
+        "theme": "opts",
+        "frequency": 27
+      },
+      {
+        "theme": "invoke",
+        "frequency": 24
+      },
+      {
+        "theme": "append",
+        "frequency": 24
+      },
+      {
+        "theme": "steps",
+        "frequency": 23
+      },
+      {
+        "theme": "parameters",
+        "frequency": 20
+      }
+    ],
+    "key_questions": [
+      "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+      "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+      "? cache",
+      "? depends",
+      "? digest",
+      "? \">\" tool_name parameters expect",
+      "? \"</invoke>\"\nid              ::= ' id=\"ivk_' INT '\"'\ntimeout         ::= ' timeout_ms=\"' INT '\"'\nretry           ::= ' retry=\"' (\"0\"|\"1\") '\"'\ncache           ::= ' cache_key=\"' TEXT '\"'\ndepends         ::= ' depends_on=\"ivk_' INT '\"'\ndigest          ::= ' invocation_digest=\"sha256:' HEX '\"'\ntool_name       ::= \"<tool_name>\" NAME \"</tool_name>\"\nparameters      ::= \"<parameters>\" ( JSON | PARAMS ) \"</parameters>\"\nexpect          ::= \"<expect>\" TEXT \"</expect>\"\n```\n\n> The linters below **don’t parse EBNF** directly; they enforce the rules implied by it",
+      "* }} with JSON using helpers\n * - helpers: top_urls, extract, canonicalJson, sha256, parseInvokes\n */\n\n// ---------- Types ----------\nexport type ToolSpec = {\n  required_params?: string[];\n  optional_params",
+      "?: string[];\n  defaults",
+      "?: Record<string, unknown>;\n  max_timeout_ms"
+    ],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "push(`R9: ${id}: uses template",
+        "statement_b": "missing depends_on`);\n    if (dep && ids",
+        "line": 147,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "append(f'R9: {ivk_id}: uses template",
+        "statement_b": "missing depends_on')\n        if dep and ivk_id and ids",
+        "line": 309,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 4
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1 … a version with templates resolved using the provided mock context",
+    "key_insights": [],
+    "action_items": [
+      "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+      "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+      ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id",
+      "stringify(stable(v));\n}\n\nimport { createHash } from 'crypto';\nfunction sha256(text: string): string {\n  return createHash('sha256')",
+      "` ${k}=\"${v}\"` : ''; }\n\n// ---------- Planner (toy) ----------\nfunction planTasks(intent: string, catalog: ToolCatalog, opts: BuildOpts) {\n  const steps: { tool: string; params: any; depends_on",
+      "max_invokes || 3);\n}\n\n// ---------- Builder ----------\nexport function buildFunctionCalls(intent: string, catalog: ToolCatalog, opts: BuildOpts = {}): string {\n  const steps = planTasks(intent, catalog, opts);\n  const session_id = opts",
+      "push(`R5: ${id}: depends_on must reference a prior invoke`);\n  });\n\n  // R5: DAG — check cycles (simple)\n  // For tiny N, we can get edges and detect back references\n  const edges = invokeBlocks"
+    ],
+    "unresolved_tensions": [
+      "push(`R9: ${id}: uses template vs missing depends_on`);\n    if (dep && ids",
+      "append(f'R9: {ivk_id}: uses template vs missing depends_on')\n        if dep and ivk_id and ids"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.215,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.888,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 2,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.776,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 3,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.664,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 4,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.551,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 5,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.439,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 6,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.327,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      },
+      {
+        "generation": 7,
+        "entropy": 0.897,
+        "contradictions": 2,
+        "novelty_index": 0.215,
+        "action_items": [
+          "# Function-Calls v2 — Tiny Reference Implementation (TypeScript & Python)\n\nThis bundle contains:\n\n1",
+          "---\n\n## TypeScript (Node or Deno)\n\nSave as ``\n\n```ts\n/*\n * Function-Calls v2 — TS reference\n * - buildFunctionCalls: compose XML for ≤3 invokes\n * - lintFunctionCalls: EBNF-guided static checks\n * - resolveTemplates: replace {{ ivk_x",
+          ": number;\n};\nexport type ToolCatalog = Record<string, ToolSpec>;\n\nexport type BuildOpts = {\n  session_id"
+        ],
+        "key_questions": [
+          "---\n\n## EBNF (spec reference used by both linters)\n\n```ebnf\nfunction_calls  ::= \"<function_calls\" version_attr session? turn",
+          "? \">\" invoke+ \"</function_calls>\"\nversion_attr    ::= ' version=\"2\"'\nsession         ::= ' session_id=\"' ID '\"'\nturn            ::= ' turn_id=\"' ID '\"'\ninvoke          ::= \"<invoke\" id timeout retry",
+          "? cache"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 52
+            },
+            {
+              "theme": "return",
+              "frequency": 44
+            },
+            {
+              "theme": "string",
+              "frequency": 41
+            },
+            {
+              "theme": "tool",
+              "frequency": 36
+            },
+            {
+              "theme": "errors",
+              "frequency": 34
+            }
+          ]
+        },
+        "score": 0.511
+      }
+    ],
+    "quality_score": 50
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.34,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "function_calls_v_2_tiny_reference_implementation_ts_python.md",
+      "bytes": 22757,
+      "lastModified": 1754739030479
+    }
+  }
+}

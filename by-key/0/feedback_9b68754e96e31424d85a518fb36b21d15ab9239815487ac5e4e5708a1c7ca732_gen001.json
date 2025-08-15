@@ -1,0 +1,127 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:41.577Z",
+    "anchor_id": "9b68754e96e31424d85a518fb36b21d15ab9239815487ac5e4e5708a1c7ca732",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.769,
+    "contradictions_detected": 6,
+    "word_count": 1250
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 53
+      },
+      {
+        "theme": "value",
+        "frequency": 45
+      },
+      {
+        "theme": "cfg",
+        "frequency": 18
+      },
+      {
+        "theme": "anchors",
+        "frequency": 16
+      },
+      {
+        "theme": "anchor",
+        "frequency": 15
+      },
+      {
+        "theme": "fmt",
+        "frequency": 15
+      },
+      {
+        "theme": "return",
+        "frequency": 14
+      },
+      {
+        "theme": "div",
+        "frequency": 14
+      },
+      {
+        "theme": "paradox",
+        "frequency": 13
+      },
+      {
+        "theme": "list",
+        "frequency": 13
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "renderRunbook(){ const steps = [ 'P0 — Open with context + tone + trust. (No diagnosis; treat as creative collab.)', 'P1 — Contract handshake: goal, c"
+      },
+      {
+        "idx": 1,
+        "sample": "ase ship ONE minimal, working artifact (offline HTML, single file if possible). No external deps. Include copy buttons and clear sections. After shipping, state"
+      },
+      {
+        "idx": 2,
+        "sample": "onst box = $('anchors'); if(!list.length){ box.innerHTML = '<div class=\"hint\">No anchors yet.</div>'; return; } box.innerHTML = list.map(a=>{ const p ="
+      },
+      {
+        "idx": 3,
+        "sample": "$('anchors'); if(!list.length){ box.innerHTML = '<div class=\"hint\">No anchors yet.</div>'; return; } box.innerHTML = list.map(a=>{ const p = a.payload?."
+      },
+      {
+        "idx": 4,
+        "sample": "ick = async ()=>{ const list = await getAnchors(); if(!list.length){ alert('No anchors yet'); return; } const latest = list[0]; const c = latest.payload"
+      },
+      {
+        "idx": 5,
+        "sample": "()=>{ const list = await getAnchors(); if(!list.length){ alert('No anchors yet'); return; } const latest = list[0]; const c = latest.payload.cfg || {};"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const fmt = (x)=>x==null?",
+      "mode==='deep'?",
+      "payload?",
+      "parentId?"
+    ],
+    "summary": "const, value, cfg, anchors, anchor"
+  },
+  "sentiment_indicators": {
+    "positive": 11,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "was"
+  ],
+  "metadata": {
+    "source_name": "session_bootstrapper_anchor_protocol_offline_html.html",
+    "relative_path": "session_bootstrapper_anchor_protocol_offline_html.html",
+    "size_bytes": 15861,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.81
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.730
+- Word Count: 304
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:39.432Z",
+  "original_file": "9b68754e96e31424d85a518fb36b21d15ab9239815487ac5e4e5708a1c7ca732.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

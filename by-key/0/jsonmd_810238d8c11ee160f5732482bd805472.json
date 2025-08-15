@@ -1,0 +1,92 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:45.465Z",
+    "source_text_length": 683,
+    "word_count": 101,
+    "entropy_level": 0.985,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "810238d8c11ee160f5732482bd805472",
+    "source": {
+      "path": "e_3_master_template_builder_offline.html",
+      "bytes": 32796,
+      "lastModified": 1754749095115
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "child",
+        "frequency": 3
+      },
+      {
+        "theme": "time",
+        "frequency": 3
+      },
+      {
+        "theme": "comments",
+        "frequency": 3
+      },
+      {
+        "theme": "template",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "tokens",
+        "frequency": 2
+      },
+      {
+        "theme": "name",
+        "frequency": 2
+      },
+      {
+        "theme": "staff",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "every",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Master Template Builder (Offline) No deps • Works offline Spawns downloadable child HTML files Fill tokens Name ID # Diag. … No network needed.",
+    "key_insights": [],
+    "action_items": [
+      "E3 Master Template Builder (Offline) No deps • Works offline Spawns downloadable child HTML files Fill tokens Name ID # Diag.",
+      "Keys should match token paths (e.",
+      "Bulk Export Template source Reset to default Save locally Load saved Actions Preview Child Download Child Preview Tip: Everything runs in your browser."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

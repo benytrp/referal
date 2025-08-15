@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:58.611Z",
+    "source_text_length": 602,
+    "word_count": 80,
+    "sentence_count": 24,
+    "entropy_level": 0.927,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "bash_button_grid.html"
+    },
+    "anchor_id": "99838814d44c4390c82641eb2d034f1c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "scroll",
+        "frequency": 7
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 6
+      },
+      {
+        "theme": "json",
+        "frequency": 6
+      },
+      {
+        "theme": "trigger",
+        "frequency": 6
+      },
+      {
+        "theme": "date",
+        "frequency": 3
+      },
+      {
+        "theme": "metadata",
+        "frequency": 3
+      },
+      {
+        "theme": "anchor_log",
+        "frequency": 3
+      },
+      {
+        "theme": "8601",
+        "frequency": 1
+      },
+      {
+        "theme": "seconds",
+        "frequency": 1
+      },
+      {
+        "theme": "scroll_backup_",
+        "frequency": 1
+      },
+      {
+        "theme": "event",
+        "frequency": 1
+      },
+      {
+        "theme": "history",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "TIMESTAMP=$(date --iso-8601=seconds) cp scroll … md",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "99838814d44c4390c82641eb2d034f1c"
+  }
+}

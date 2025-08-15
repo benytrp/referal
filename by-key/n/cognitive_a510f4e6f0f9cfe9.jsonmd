@@ -1,0 +1,170 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:25.275Z",
+    "source_text_length": 2130,
+    "word_count": 171,
+    "sentence_count": 8,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "a510f4e6f0f9cfe9f7f9bf48c53c7701",
+    "entropy_level": 0.936,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_f0a58c8d04597684aad701eb2f1b1f11.json",
+      "processing_timestamp": "2025-08-11T05:02:25.275Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0468",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0468",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "project",
+        "frequency": 6,
+        "significance": "0.0351",
+        "examples": [
+          "\"project\",\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 5,
+        "significance": "0.0292",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "selected",
+        "frequency": 4,
+        "significance": "0.0234",
+        "examples": [
+          "\"selected\",\n"
+        ]
+      },
+      {
+        "theme": "download",
+        "frequency": 4,
+        "significance": "0.0234",
+        "examples": [
+          "\"download\",\n"
+        ]
+      },
+      {
+        "theme": "preset",
+        "frequency": 4,
+        "significance": "0.0234",
+        "examples": [
+          "\"AEON_Indexer_Ingest_Presets.html\",\n"
+        ]
+      },
+      {
+        "theme": "aeon",
+        "frequency": 3,
+        "significance": "0.0175",
+        "examples": [
+          "\"AEON_Indexer_Ingest_Presets.html\",\n"
+        ]
+      },
+      {
+        "theme": "indexer",
+        "frequency": 3,
+        "significance": "0.0175",
+        "examples": [
+          "\"AEON_Indexer_Ingest_Presets.html\",\n"
+        ]
+      },
+      {
+        "theme": "ingest",
+        "frequency": 3,
+        "significance": "0.0175",
+        "examples": [
+          "\"AEON_Indexer_Ingest_Presets.html\",\n"
+        ]
+      },
+      {
+        "theme": "ready",
+        "frequency": 3,
+        "significance": "0.0175",
+        "examples": [
+          "\"preset-ready\",\n"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 3,
+        "significance": "0.0175",
+        "examples": [
+          "Offline)"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:06...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " csv\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.54"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1065,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.42",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a510f4e6f0f9cfe9f7f9bf48c53c7701"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:02.497Z",
+    "source_text_length": 1488,
+    "word_count": 200,
+    "sentence_count": 18,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "bridge_lite_v4 (3).html"
+    },
+    "anchor_id": "d6c052e104d9306493293e07c2fb8e38"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "prompt",
+        "frequency": 5
+      },
+      {
+        "theme": "download",
+        "frequency": 5
+      },
+      {
+        "theme": "schema",
+        "frequency": 4
+      },
+      {
+        "theme": "params",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "preview",
+        "frequency": 4
+      },
+      {
+        "theme": "bridge",
+        "frequency": 3
+      },
+      {
+        "theme": "required",
+        "frequency": 3
+      },
+      {
+        "theme": "success",
+        "frequency": 3
+      },
+      {
+        "theme": "criteria",
+        "frequency": 3
+      },
+      {
+        "theme": "optional",
+        "frequency": 3
+      },
+      {
+        "theme": "perfect",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — AI-Optimized Bridge Generator ❌ Needs fixes Strict: OFF 🤖 AI Engineering Presets 🔬 Prompt Architecture Systematic prompt optimization 📊 Model Evaluation Benchmark & validation framework 🤖 Agent Orchestration Multi-agent coordination system 🛡️ AI Safety Protocol Safety & alignment validation 🔗 Multimodal Pipeline Vision + text + audio integration ⚙️ Custom Setup Blank slate configuration Schema: lite-1 Strict export Generate Run ID Project / Task Name Task name is required … txtTXT — Download TXT Minimal \"Run Card\"Markdown — Download Run Card",
+    "key_insights": [],
+    "action_items": [
+      "max_tokens) Must include sections (chips) Add Preview must match (regex, optional) Preview forbidden (regex, optional) Validator errors will appear here"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d6c052e104d9306493293e07c2fb8e38"
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:03.337Z",
+    "source_text_length": 62372,
+    "word_count": 12686,
+    "sentence_count": 1313,
+    "entropy_level": 0.77,
+    "contradictions_detected": 32,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "call_2025-04-29_13-40-54_IN_2698327430 (1).txt"
+    },
+    "anchor_id": "56ccc66967299dda2554a262f4aaf898"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "okay",
+        "frequency": 110
+      },
+      {
+        "theme": "going",
+        "frequency": 68
+      },
+      {
+        "theme": "right",
+        "frequency": 55
+      },
+      {
+        "theme": "then",
+        "frequency": 49
+      },
+      {
+        "theme": "want",
+        "frequency": 49
+      },
+      {
+        "theme": "need",
+        "frequency": 41
+      },
+      {
+        "theme": "chris",
+        "frequency": 40
+      },
+      {
+        "theme": "make",
+        "frequency": 38
+      },
+      {
+        "theme": "things",
+        "frequency": 35
+      },
+      {
+        "theme": "yeah",
+        "frequency": 34
+      },
+      {
+        "theme": "meeting",
+        "frequency": 33
+      },
+      {
+        "theme": "saying",
+        "frequency": 32
+      }
+    ],
+    "key_questions": [
+      "Any questions?\nHow are you",
+      "?\nI'm good",
+      "How are you?\nI'm making it",
+      "Did you see Rachel?\nI didn't hear her",
+      "Why is he not taking notes of meetings?\nWhy is he bypassing me",
+      "?\nAnd how come he is educating for Rachel and Matt then",
+      "?\nI hear you, Chris",
+      "When you guys met with Maggie?\nNo",
+      "And what are the things that are keeping him alive?\nWell, he loves his cat",
+      "I mean, if he reported all that to you, Chris, did you, did you call CPS on that?\nSo CPS had an active investigation"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "And then after I'm taken out of it, and Ben has disclosed to me and I recorded it,\nand I know he can't use that or whatever,",
+        "statement_b": "he's disclosed to me that she threatened him with her dying,\nbecause of her condition",
+        "line": 101,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I don't know,",
+        "statement_b": "I am someone that is dangerous,\nand it's not being disclosed why, but his behavior clearly demonstrates to me\nthat this is not about protecting Ben,\nit's about maybe protecting Ben and Rachel from me",
+        "line": 126,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I appreciate that,",
+        "statement_b": "Clay has to understand I'm not the bad guy,\nand I don't see that it doesn't seem to be because when I agreed to that\nand she was really quiet, he leaned forward and said,\nboth these individuals work, or both these parents work,\nshe has a very, very lax job",
+        "line": 139,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Yeah,",
+        "statement_b": "I didn't understand because like one of the things was voided out and then there was a\nmedication review and then there was an authorization",
+        "line": 161,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I feel like there was a little over that,",
+        "statement_b": "maybe not",
+        "line": 168,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I was like, okay,",
+        "statement_b": "what do I do with this now",
+        "line": 210,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So,",
+        "statement_b": "I like I am his supervisor",
+        "line": 232,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Like in that case, you know, I mean, like not your peer support,",
+        "statement_b": "like, I don't know if you guys can do any kind of like",
+        "line": 274,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "No,",
+        "statement_b": "I really think it's like I'm not sure how long the prevent to protect program",
+        "line": 291,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Because I, you know, problem with being one to reach out,",
+        "statement_b": "I don't want to",
+        "line": 331,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Um, I know that Chris has scheduled a little bit different than mine,",
+        "statement_b": "I can make whatever work",
+        "line": 350,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Technically,",
+        "statement_b": "you know, if I have, if I have some sort of",
+        "line": 359,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He's like, I want to not race to see how fast I can get it done,",
+        "statement_b": "see how quickly",
+        "line": 385,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I think I'm okay,",
+        "statement_b": "I mean, like, if we need to",
+        "line": 398,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "It's not that I disagree with it,",
+        "statement_b": "just some of these I'm just curious where they were originated from and what behavior exactly was observed that being addressed",
+        "line": 418,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "The professional guy there,",
+        "statement_b": "he's putting things together without, not only without my input where I saw that",
+        "line": 437,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "At this point, you know, I don't, I'm sorry to continue,",
+        "statement_b": "like, this whole thing, like, why can't we meet together and allow me to, again, hold something in my hand, see something, understand something",
+        "line": 449,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So he needs to be addressing that he has entered in some sort of program,",
+        "statement_b": "we asked for his questions, whatever",
+        "line": 455,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I know, I don't know what, I wish I knew what he talked to you about Rachel,",
+        "statement_b": "I don't",
+        "line": 463,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "From, I know that people have been busy and put them in the hours,",
+        "statement_b": "at this point, tear it down and start over",
+        "line": 468,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Now, and we can go through and go forward with what you got right now,",
+        "statement_b": "I am telling you that is the only thing that I see is someone being able to understand that both parents need to be involved from the beginning",
+        "line": 470,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Is like it, however,",
+        "statement_b": "you come into some point",
+        "line": 572,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So, there's the initial psychosocial assessment, which you're saying you took into,",
+        "statement_b": "you allowed him to answer all the questions with the clinician",
+        "line": 606,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So that's where like Benjamin's recommendation was home based,",
+        "statement_b": "we have a wait list for home based",
+        "line": 654,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So I can give suggestions and collaborations and whatnot,",
+        "statement_b": "I'm not in a position to lock down a bunch of a bunch of stuff and have the confidence to",
+        "line": 740,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So whatever you guys want to move forward with, I do want to hold in my hand still,",
+        "statement_b": "with a caveat saying, you know, this is not something that I was involved with",
+        "line": 753,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So we can read that and I don't disagree to services,",
+        "statement_b": "I disagreeing to the evaluations that led to the conclusion of the suggestion",
+        "line": 755,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "They can say I would recommend that",
+        "statement_b": "that does not mean that we have to do that",
+        "line": 775,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So like I don't know if it's because you have more face time or what,",
+        "statement_b": "like I'm not saying that you get this to me",
+        "line": 811,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "So, yeah,",
+        "statement_b": "like I just need to know what time it is",
+        "line": 915,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I mean, I would like to have an opportunity to be in my space with my son and have the same thing that had been extended to Rachel,",
+        "statement_b": "it would sound like that's possible anymore",
+        "line": 934,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Not being possible,",
+        "statement_b": "we did agree that we would be better off",
+        "line": 937,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 4,
+      "uncertainty": 3
+    },
+    "temporal_markers": {
+      "past": 6,
+      "present": 6,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "Hello … Bye",
+    "key_insights": [
+      "He did it as a new patient and I think Ben was previously",
+      "Yeah, I think, you know what, Chris, I got it buddy",
+      "So I think we'll probably be set on that",
+      "I think I'm okay, but I mean, like, if we need to",
+      "I think it's clear what my intent is",
+      "So as we go through this list, and I think, what are we talking about",
+      "I think it's probably helpful",
+      "I think both of us have written documentation and verbal documentation today that we both disagree on medication and I don't know what being a therapist"
+    ],
+    "action_items": [
+      "I need to connect Rachel and I haven't done that",
+      "I have to call her",
+      "So her job, according to my communications with her, is that she doesn't have to work\nfrom home mostly",
+      "She doesn't have to be up there",
+      "I need to go back to the meeting",
+      "I need to know why Clay bypassing me",
+      "I feel like a better place than you need to meet",
+      "But I need to know",
+      "I need to know that there's someone who's listening, that he was my concern",
+      "Let's get the services rolling\nso that you don't have to keep doing that because we continue to hit\nmonths in the road"
+    ],
+    "unresolved_tensions": [
+      "And then after I'm taken out of it, and Ben has disclosed to me and I recorded it,\nand I know he can't use that or whatever, vs he's disclosed to me that she threatened him with her dying,\nbecause of her condition",
+      "I don't know, vs I am someone that is dangerous,\nand it's not being disclosed why, but his behavior clearly demonstrates to me\nthat this is not about protecting Ben,\nit's about maybe protecting Ben and Rachel from me",
+      "I appreciate that, vs Clay has to understand I'm not the bad guy,\nand I don't see that it doesn't seem to be because when I agreed to that\nand she was really quiet, he leaned forward and said,\nboth these individuals work, or both these parents work,\nshe has a very, very lax job",
+      "Yeah, vs I didn't understand because like one of the things was voided out and then there was a\nmedication review and then there was an authorization",
+      "I feel like there was a little over that, vs maybe not",
+      "I was like, okay, vs what do I do with this now"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.61,
+    "recommended_next_steps": [
+      "Review 8 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "56ccc66967299dda2554a262f4aaf898"
+  }
+}

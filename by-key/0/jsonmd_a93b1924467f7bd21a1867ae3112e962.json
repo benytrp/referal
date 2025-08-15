@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:55.581Z",
+    "source_text_length": 366,
+    "word_count": 61,
+    "sentence_count": 3,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code - 2025-08-08T173535.858.html"
+    },
+    "anchor_id": "a93b1924467f7bd21a1867ae3112e962"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "plan",
+        "frequency": 2
+      },
+      {
+        "theme": "markdown",
+        "frequency": 2
+      },
+      {
+        "theme": "parse",
+        "frequency": 2
+      },
+      {
+        "theme": "reset",
+        "frequency": 2
+      },
+      {
+        "theme": "enter",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "source",
+        "frequency": 1
+      },
+      {
+        "theme": "steps",
+        "frequency": 1
+      },
+      {
+        "theme": "load",
+        "frequency": 1
+      },
+      {
+        "theme": "demo",
+        "frequency": 1
+      },
+      {
+        "theme": "workspace",
+        "frequency": 1
+      },
+      {
+        "theme": "storage",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Plan Source (Markdown) Parse → Steps Load Demo Plan Reset Workspace Storage: saved … Runner & Audit Log Progress: 0/0 | Loop State: idle ▶ Run All (Auto-check) ✓ Mark All OK ◻ Reset All Status ↻ Restart/Debug Cycle Export JSON Export Markdown 💾 Produce Artifact Select a step, then use Alt+↑/↓ to move, E to edit, Del to ❌, Enter to ✅",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a93b1924467f7bd21a1867ae3112e962"
+  }
+}

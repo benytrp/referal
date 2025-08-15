@@ -1,0 +1,88 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:55.647Z",
+    "source_text_length": 281,
+    "word_count": 43,
+    "entropy_level": 0.985,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "8587fd25627b97f45c4b63b29bcf52ec",
+    "source": {
+      "path": "simple_e3_builder (2).html",
+      "bytes": 7279,
+      "lastModified": 1754768837708
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "template",
+        "frequency": 2
+      },
+      {
+        "theme": "preview",
+        "frequency": 2
+      },
+      {
+        "theme": "builder",
+        "frequency": 1
+      },
+      {
+        "theme": "working",
+        "frequency": 1
+      },
+      {
+        "theme": "version",
+        "frequency": 1
+      },
+      {
+        "theme": "batch",
+        "frequency": 1
+      },
+      {
+        "theme": "generate",
+        "frequency": 1
+      },
+      {
+        "theme": "load",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Builder - Working Version 1. … Preview",
+    "key_insights": [],
+    "action_items": [
+      "E3 Builder - Working Version 1.",
+      "Actions Make Preview Download HTML 5."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

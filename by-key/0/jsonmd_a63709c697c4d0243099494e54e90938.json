@@ -1,0 +1,112 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:49.317Z",
+    "source_text_length": 2815,
+    "word_count": 498,
+    "sentence_count": 50,
+    "entropy_level": 0.917,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "philosophical_loops_learning.html"
+    },
+    "anchor_id": "a63709c697c4d0243099494e54e90938"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "loop",
+        "frequency": 14
+      },
+      {
+        "theme": "count",
+        "frequency": 14
+      },
+      {
+        "theme": "code",
+        "frequency": 12
+      },
+      {
+        "theme": "console",
+        "frequency": 10
+      },
+      {
+        "theme": "happens",
+        "frequency": 8
+      },
+      {
+        "theme": "list",
+        "frequency": 7
+      },
+      {
+        "theme": "fruits",
+        "frequency": 7
+      },
+      {
+        "theme": "change",
+        "frequency": 6
+      },
+      {
+        "theme": "loops",
+        "frequency": 5
+      },
+      {
+        "theme": "number",
+        "frequency": 4
+      },
+      {
+        "theme": "times",
+        "frequency": 4
+      },
+      {
+        "theme": "condition",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [
+      "What does each part do? // A for loop has three parts: start, condition, increment for (let i = 0; i < 5; i++) { console",
+      "Think about it: • What happens if you change the 5 to a 3? • What if you change i++ to i += 2",
+      "? • Can you make it count backwards",
+      "? 2",
+      "Think about it: • What happens if you forget the count++ line? • What if you change the condition to count < 7",
+      "? • Can you make it count by 2s instead of 1s",
+      "? 3",
+      "Think about it: • Can you add more fruits to the list? • What if you change \"fruits\" to \"colors\" and add color names",
+      "? • Try adding numbers to the list - what happens",
+      "? 🎯 Practice: Create Your Own Loop Challenge: Use what you learned to create a loop that prints your name 3 times, or counts from 10 down to 1, or lists your favorite foods"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "JavaScript Loops: Learn by Doing Learning Goal: By the end of this, you'll understand how JavaScript loops work by modifying and running real code … // Some ideas: // - Print your name 3 times // - Count from 10 down to 1 // - List your favorite foods ▶️ Try Your Code 🧹 Clear Write some code above and click \"Try Your Code\"",
+    "key_insights": [],
+    "action_items": [
+      "🎯 Practice: Create Your Own Loop Challenge: Use what you learned to create a loop that prints your name 3 times, or counts from 10 down to 1, or lists your favorite foods"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a63709c697c4d0243099494e54e90938"
+  }
+}

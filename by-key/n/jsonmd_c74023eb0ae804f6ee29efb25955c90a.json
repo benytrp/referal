@@ -1,0 +1,119 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:04.472Z",
+    "source_text_length": 32554,
+    "word_count": 4743,
+    "sentence_count": 319,
+    "entropy_level": 0.86,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "Case ID C.2013.0067.txt"
+    },
+    "anchor_id": "c74023eb0ae804f6ee29efb25955c90a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "school",
+        "frequency": 65
+      },
+      {
+        "theme": "score",
+        "frequency": 61
+      },
+      {
+        "theme": "range",
+        "frequency": 61
+      },
+      {
+        "theme": "social",
+        "frequency": 44
+      },
+      {
+        "theme": "problems",
+        "frequency": 44
+      },
+      {
+        "theme": "percentile",
+        "frequency": 32
+      },
+      {
+        "theme": "average",
+        "frequency": 30
+      },
+      {
+        "theme": "activities",
+        "frequency": 29
+      },
+      {
+        "theme": "scale",
+        "frequency": 29
+      },
+      {
+        "theme": "case",
+        "frequency": 28
+      },
+      {
+        "theme": "above",
+        "frequency": 27
+      },
+      {
+        "theme": "clinical",
+        "frequency": 27
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Prevent 2\r\nProtect does not provide direct treatment or therapy,",
+        "statement_b": "instead offers case management,\r\nintensive mentoring, systems navigation, and technical assistance to promote early intervention\r\nand reduce the threat of violence in school communities",
+        "line": 319,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 2,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "Case ID: C … Prevent 2\r\nProtect does not provide direct treatment or therapy, but instead offers case management,\r\nintensive mentoring, systems navigation, and technical assistance to promote early intervention\r\nand reduce the threat of violence in school communities",
+    "key_insights": [],
+    "action_items": [
+      "Specifically,\r\nExcessive checking, Repetitive or ritualistic\r\nactions, Scrupulosity (i",
+      "Further evaluation of\r\nneurodivergent symptoms/ASD is needed when\r\ndeveloping strategies to address current\r\nsymptoms and behaviors",
+      "Further workup\r\nmay be needed should Ben continue to have\r\nepisodes of syncope or near-syncope",
+      "Parents\r\nworking together to meet Ben's needs, obtain\r\nservices in the school and medical setting will\r\nhelp Ben build a sense of security through\r\nconsistency in all environments",
+      "Wants to engage with peers and desires positive peer interactions\r\n3",
+      "Perceives himself as different from his peers, does not feel like he fits in and longs to belong\r\nSafety Considerations\r\nSafety Plan – Area of Concern and Recommendation\r\n• No access to weapons\r\n• Weapons secured properly All knives and guns should be secured when\r\nnot in supervised use\r\n• No access to ammo\r\n• Close parental supervision 24/7 - all environments\r\n• Close school supervision monitor daily - backpack checks\r\n• Monitoring social media Parental monitoring listed social media\r\naccounts - explore video game genres\r\n• Psychoeducation regarding risk and need\r\nto seek emergency attention Safety plan constructed with team, see below\r\n• Access to ES or ED Local emergency rooms/ES as indicated\r\n• Ability and understanding when to call\r\n911\r\nIf SI/HI develops, the patient should be\r\nevaluated immediately, and if has active SI/HI,\r\nintent or plan he should be taken to the\r\nemergency department or emergency services\r\n(if can be transported safely) if there is any\r\nquestion 911 should be called immediately",
+      "Due to the nature of the participant’s risk and current needs, the\r\nparticipant should NOT have access to weapons, ammo or explosive devices or other means to\r\nharm to self or others",
+      "Should the\r\nparticipant develop a change in behavior, agitation, suicidal ideation, homicidal ideation, intention,\r\nor plan to injure self or others (or increase thereof), the parent/guardian/participant is to call 911 or\r\ngo (if safe to transport) directly to the emergency department/emergency services for emergency\r\nevaluation",
+      "Name of Parent/Guardian (1) who signed Rachel Renee\r\nOstrander 7/22/2025\r\nName of Parent/Guardian (2) who signed\r\nName of Participant who signed Benjamin D'Artagnan\r\nBurdette 7/22/2025\r\nMonitoring – Strategy and Instructions\r\nMentor daily check-in X\r\nSocial Media X\r\nAttendance/Truancy X\r\nDaily progress report\r\nHome visits X\r\nCollaboration with PO\r\nCollaboration with SRO\r\nIncreased parent supervision\r\nIncreased school supervision X\r\nLaw Enforcement collaboration X\r\nNeed to notify authorities/detain\r\n10\r\nCase ID: C",
+      "Ben's online activities should be monitored, social media and internet searches should be\r\nmonitored"
+    ],
+    "unresolved_tensions": [
+      "Prevent 2\r\nProtect does not provide direct treatment or therapy, vs instead offers case management,\r\nintensive mentoring, systems navigation, and technical assistance to promote early intervention\r\nand reduce the threat of violence in school communities"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.57,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c74023eb0ae804f6ee29efb25955c90a"
+  }
+}

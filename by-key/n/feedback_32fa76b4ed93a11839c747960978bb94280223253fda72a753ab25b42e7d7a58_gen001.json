@@ -1,0 +1,121 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:44.131Z",
+    "anchor_id": "32fa76b4ed93a11839c747960978bb94280223253fda72a753ab25b42e7d7a58",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.736,
+    "contradictions_detected": 3,
+    "word_count": 1180
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "var",
+        "frequency": 50
+      },
+      {
+        "theme": "template",
+        "frequency": 27
+      },
+      {
+        "theme": "document",
+        "frequency": 27
+      },
+      {
+        "theme": "value",
+        "frequency": 25
+      },
+      {
+        "theme": "class",
+        "frequency": 25
+      },
+      {
+        "theme": "data",
+        "frequency": 24
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 24
+      },
+      {
+        "theme": "function",
+        "frequency": 19
+      },
+      {
+        "theme": "showmessage",
+        "frequency": 18
+      },
+      {
+        "theme": "datalist",
+        "frequency": 16
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": ".display = 'block'; setTimeout(function() { status.style.display = 'none'; }, 3000); } function makeId() { var d = new Date(); var time"
+      },
+      {
+        "idx": 1,
+        "sample": "getElementById('bulkInput').value.trim(); if (!bulk) { showMessage('No data to validate', true); return; } var lines = bulk.spl"
+      },
+      {
+        "idx": 2,
+        "sample": "} } } if (dataList.length === 0) { showMessage('No valid data found', true); return; } showMessage('Validat"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "getMonth() + 1 < 10 ?",
+      "getDate() < 10 ?",
+      "getHours() < 10 ?",
+      "getMinutes() < 10 ?",
+      "if (id) line += (line ?",
+      "if (date) line += (line ?",
+      "if (instructor) line += (line ?",
+      "r><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attendance — Correct day and time?",
+      "type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed?",
+      "<th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks?",
+      "ut type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Safety — Followed procedures?"
+    ],
+    "summary": "var, template, document, value, class"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "unified_e3_builder (1).html",
+    "relative_path": "unified_e3_builder (1).html",
+    "size_bytes": 14937,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.865
+- Word Count: 275
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:24.004Z",
+  "original_file": "32fa76b4ed93a11839c747960978bb94280223253fda72a753ab25b42e7d7a58.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

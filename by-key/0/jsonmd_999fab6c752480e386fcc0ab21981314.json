@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:49.611Z",
+    "source_text_length": 313,
+    "word_count": 47,
+    "sentence_count": 6,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "quick_web_search_router_demo_validator_html.html"
+    },
+    "anchor_id": "999fab6c752480e386fcc0ab21981314"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "freshness",
+        "frequency": 2
+      },
+      {
+        "theme": "breadth",
+        "frequency": 2
+      },
+      {
+        "theme": "tests",
+        "frequency": 2
+      },
+      {
+        "theme": "quick",
+        "frequency": 1
+      },
+      {
+        "theme": "search",
+        "frequency": 1
+      },
+      {
+        "theme": "router",
+        "frequency": 1
+      },
+      {
+        "theme": "demo",
+        "frequency": 1
+      },
+      {
+        "theme": "validator",
+        "frequency": 1
+      },
+      {
+        "theme": "input",
+        "frequency": 1
+      },
+      {
+        "theme": "routing",
+        "frequency": 1
+      },
+      {
+        "theme": "query",
+        "frequency": 1
+      },
+      {
+        "theme": "recency",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Quick Web Search Router — Demo & Validator Input & Routing Query Recency (days) Domains (comma‑separated, optional) Choose Route Copy web … run Parameters Config · Thresholds Freshness threshold Breadth max Run Built‑in Tests Run Tests",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "999fab6c752480e386fcc0ab21981314"
+  }
+}

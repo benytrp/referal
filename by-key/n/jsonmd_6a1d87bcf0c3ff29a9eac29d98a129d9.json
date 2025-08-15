@@ -1,0 +1,95 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:51.951Z",
+    "source_text_length": 5333,
+    "word_count": 596,
+    "entropy_level": 0.924,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "6a1d87bcf0c3ff29a9eac29d98a129d9",
+    "source": {
+      "path": "offline_template_builder.html",
+      "bytes": 40276,
+      "lastModified": 1754772868237
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "template",
+        "frequency": 21
+      },
+      {
+        "theme": "html",
+        "frequency": 19
+      },
+      {
+        "theme": "const",
+        "frequency": 18
+      },
+      {
+        "theme": "exportcontent",
+        "frequency": 14
+      },
+      {
+        "theme": "function",
+        "frequency": 11
+      },
+      {
+        "theme": "value",
+        "frequency": 11
+      },
+      {
+        "theme": "return",
+        "frequency": 11
+      },
+      {
+        "theme": "form",
+        "frequency": 10
+      }
+    ],
+    "key_questions": [
+      "🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below. Form Action URL Form Fields Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Add Field Advanced Options Enable Client-side Validation Responsive Design Color Scheme Blue Green Purple Dark ⚡ Custom Template Builder Template Name Template Type HTML Document Form Template Report Template Email Template Reusable Component Custom HTML Structure <div class=\"container\"> <h1>{{title}}</h1> <p>{{content}}</p> </div> Template Variables (one per line) title=My Custom Template content=This is a custom template with variables author=Template Builder Custom CSS .container { max-width: 800px; margin: 0 auto; padding: 20px; } 📊 Survey Template Builder Survey Title Survey Instructions Please take a few minutes to complete this survey. Your feedback is valuable to us. 👁️ Live Preview Refresh Preview 📦 Export Template 🌐 HTML File Standalone HTML 📋 JSON Config Configuration file 📝 WordPress Plugin ready ⚛️ React Component JSX component 🐘 PHP Template Server-side ready 📧 Email HTML Email client ready Select an export format to see the generated code... ` : ''} `; } function generateCustomTemplate() { const name = document.getElementById('custom-name').value || 'Custom Template'; const html = document.getElementById('custom-html').value || 'Custom Template'; const css = document.getElementById('custom-css').value || ''; const variablesText = document.getElementById('custom-variables').value || ''; // Parse variables const variables = {}; variablesText.split('\\n').forEach(line => { const [key, value] = line.split('='); if (key && value) { variables[key.trim()] = value.trim(); } }); // Replace variables in HTML let processedHTML = html; Object.keys(variables).forEach(key => { const regex = new RegExp(`{{${key}}}`, 'g'); processedHTML = processedHTML.replace(regex, variables[key]); }); return ` ${name} ${processedHTML} `; } function generateSurveyTemplate() { const title = document.getElementById('survey-title').value || 'Survey'; const instructions = document.getElementById('survey-instructions').value || ''; return ` ${title} ${title} ${instructions} 1. How satisfied are you with our service?",
+      "Very Satisfied Satisfied Neutral Dissatisfied Very Dissatisfied 2. Additional Comments Submit Survey `; } function exportTemplate(format) { const generator = getTemplateGenerator(currentTemplate); if (!generator) return; const baseHTML = generator(); let exportContent = ''; switch(format) { case 'html': exportContent = baseHTML; downloadFile(`${currentTemplate}-template.html`, exportContent); break; case 'json': const config = extractTemplateConfig(); exportContent = JSON.stringify(config, null, 2); downloadFile(`${currentTemplate}-config.json`, exportContent); break; case 'wordpress': exportContent = generateWordPressPlugin(baseHTML); downloadFile(`${currentTemplate}-wordpress-plugin.php`, exportContent); break; case 'react': exportContent = generateReactComponent(baseHTML); downloadFile(`${currentTemplate}-component.jsx`, exportContent); break; case 'php': exportContent = generatePHPTemplate(baseHTML); downloadFile(`${currentTemplate}-template.php`, exportContent); break; case 'email': exportContent = generateEmailHTML(baseHTML); downloadFile(`${currentTemplate}-email.html`, exportContent); break; } document.getElementById('export-preview').textContent = exportContent; } function extractTemplateConfig() { // Extract current template configuration return { template_type: currentTemplate, created: new Date().toISOString(), version: \"1.0.0\", settings: { // Template-specific settings would be extracted here } }; } function generateWordPressPlugin(html) { return ``; } function generateReactComponent(html) { const componentName = currentTemplate.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1) ).join(''); return `import React from 'react'; const ${componentName} = () => { return ( ); }; export default ${componentName};`; } function generatePHPTemplate(html) { return ` $value) { $html = str_replace('{{' . $key . '}}', $value, $html); } return $html; } ?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below. … args); }; clearTimeout(timeout); timeout = setTimeout(later, wait); }; }",
+    "key_insights": [],
+    "action_items": [
+      "🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below.",
+      "Form Action URL Form Fields Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Add Field Advanced Options Enable Client-side Validation Responsive Design Color Scheme Blue Green Purple Dark ⚡ Custom Template Builder Template Name Template Type HTML Document Form Template Report Template Email Template Reusable Component Custom HTML Structure <div class=\"container\"> <h1>{{title}}</h1> <p>{{content}}</p> </div> Template Variables (one per line) title=My Custom Template content=This is a custom template with variables author=Template Builder Custom CSS .",
+      "container { max-width: 800px; margin: 0 auto; padding: 20px; } 📊 Survey Template Builder Survey Title Survey Instructions Please take a few minutes to complete this survey.",
+      "textContent = exportContent; } function extractTemplateConfig() { // Extract current template configuration return { template_type: currentTemplate, created: new Date().",
+      "createObjectURL(blob); const a = document.",
+      "createElement('a'); a."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:38.631Z",
+    "timestamp": "2025-08-11T05:52:56.941Z",
     "source_text_length": 3305,
     "word_count": 233,
     "sentence_count": 42,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "f5b486df028341f6288b52864410393f",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "ac431b4ab79b0d916d3dcb1a63de937f50b101c2ec54e82f1111380cd279e7fc.json",
-      "processing_timestamp": "2025-08-11T15:15:38.631Z",
+      "processing_timestamp": "2025-08-11T05:52:56.941Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -150,33 +150,33 @@
     "action_items": [
       {
         "action": "getElementById('executeSpinner')",
-        "urgency_score": "0.51",
-        "feasibility_score": "0.10"
+        "urgency_score": "0.05",
+        "feasibility_score": "0.82"
       },
       {
         "action": "getElementById('executeText')",
-        "urgency_score": "0.53",
-        "feasibility_score": "0.27"
+        "urgency_score": "0.80",
+        "feasibility_score": "0.22"
       },
       {
         "action": "getElementById('executeSpinner')",
-        "urgency_score": "0.70",
-        "feasibility_score": "0.06"
+        "urgency_score": "0.60",
+        "feasibility_score": "0.58"
       },
       {
         "action": "getElementById('executeText')",
-        "urgency_score": "0.35",
-        "feasibility_score": "0.00"
+        "urgency_score": "0.33",
+        "feasibility_score": "0.62"
       },
       {
         "action": "\",\n      \"onSandboxCreated",
         "urgency_score": "0.03",
-        "feasibility_score": "0.73"
+        "feasibility_score": "0.40"
       },
       {
         "action": "\"\n    ],\n    \"summary\": \"document, phase, getelementbyid, const, entropy\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 12,\n    \"negative\": 1,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"xlogic_executor",
-        "urgency_score": "0.47",
-        "feasibility_score": "0.80"
+        "urgency_score": "0.34",
+        "feasibility_score": "0.03"
       }
     ],
     "unresolved_tensions": []
@@ -191,9 +191,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.03",
+    "confidence_level": "0.14",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 6 actions"
     ],

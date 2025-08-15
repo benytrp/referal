@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:28.849Z",
+    "anchor_id": "fb001c9ed91860b5bfe4c48ad10684f174852d72b08a0211e8f260425f55e4f4",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.906,
+    "contradictions_detected": 0,
+    "word_count": 38
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "generated",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      },
+      {
+        "theme": "bridge",
+        "frequency": 1
+      },
+      {
+        "theme": "implementation",
+        "frequency": 1
+      },
+      {
+        "theme": "report",
+        "frequency": 1
+      },
+      {
+        "theme": "location",
+        "frequency": 1
+      },
+      {
+        "theme": "battle",
+        "frequency": 1
+      },
+      {
+        "theme": "creek",
+        "frequency": 1
+      },
+      {
+        "theme": "michigan",
+        "frequency": 1
+      },
+      {
+        "theme": "batch",
+        "frequency": 1
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "generated, aeon, bridge, implementation, report"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "AEON-Bridge-Report-BC-202508100522918.txt",
+    "relative_path": "AEON-Bridge-Report-BC-202508100522918.txt",
+    "size_bytes": 241,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:02.078Z",
+    "source_text_length": 931,
+    "word_count": 133,
+    "sentence_count": 6,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "bridgefile_runner_single_file_html_with_connector_ping_strict_validation_direct_function_modes (3).html"
+    },
+    "anchor_id": "be4d205ae72566f6edcdf4fb1d902041"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridgefile",
+        "frequency": 5
+      },
+      {
+        "theme": "mode",
+        "frequency": 5
+      },
+      {
+        "theme": "direct",
+        "frequency": 3
+      },
+      {
+        "theme": "function",
+        "frequency": 3
+      },
+      {
+        "theme": "calling",
+        "frequency": 3
+      },
+      {
+        "theme": "openai",
+        "frequency": 3
+      },
+      {
+        "theme": "model",
+        "frequency": 3
+      },
+      {
+        "theme": "compatible",
+        "frequency": 2
+      },
+      {
+        "theme": "checksums",
+        "frequency": 2
+      },
+      {
+        "theme": "endpoint",
+        "frequency": 2
+      },
+      {
+        "theme": "ping",
+        "frequency": 2
+      },
+      {
+        "theme": "empty",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [
+      "cpp server Custom Endpoint Base URL Model Requires API Key? toggle off for local servers API Key (kept in browser only) Ping Save Config Mode & Run Direct Mode Function‑Calling Mode Execute Locally (no model) Let model decide tool calls (requires proper schemas) Validate Bridgefile Normalize + Recompute Checksums Run Bridgefile JSON Load Empty Sample Copy Download Paste or edit your Bridgefile here: Result Logs Anchors & Zero Node Paste anchors JSON (expects keys: chronological_grid, zero_node_summary): Validate Render Summary Export CSV"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Bridgefile Runner Direct & Function‑Calling • OpenAI‑compatible Drop‑in, single file … toggle off for local servers API Key (kept in browser only) Ping Save Config Mode & Run Direct Mode Function‑Calling Mode Execute Locally (no model) Let model decide tool calls (requires proper schemas) Validate Bridgefile Normalize + Recompute Checksums Run Bridgefile JSON Load Empty Sample Copy Download Paste or edit your Bridgefile here: Result Logs Anchors & Zero Node Paste anchors JSON (expects keys: chronological_grid, zero_node_summary): Validate Render Summary Export CSV",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "be4d205ae72566f6edcdf4fb1d902041"
+  }
+}

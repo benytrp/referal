@@ -1,0 +1,137 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:47.133Z",
+    "source_text_length": 8076,
+    "word_count": 843,
+    "sentence_count": 128,
+    "entropy_level": 0.926,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "template maker 3.txt"
+    },
+    "anchor_id": "6d4ff5cc36eca97aee5d9ca925ebbb9c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 25
+      },
+      {
+        "theme": "option",
+        "frequency": 22
+      },
+      {
+        "theme": "layer",
+        "frequency": 15
+      },
+      {
+        "theme": "name",
+        "frequency": 15
+      },
+      {
+        "theme": "prompt",
+        "frequency": 15
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 13
+      },
+      {
+        "theme": "label",
+        "frequency": 12
+      },
+      {
+        "theme": "presets",
+        "frequency": 11
+      },
+      {
+        "theme": "const",
+        "frequency": 11
+      },
+      {
+        "theme": "autoexecute",
+        "frequency": 11
+      },
+      {
+        "theme": "invocation",
+        "frequency": 10
+      },
+      {
+        "theme": "layers",
+        "frequency": 9
+      }
+    ],
+    "key_questions": [
+      "Market Reality\", prompt: \"What problem does this solve in the market?\", autoExecute: \"Perform market validation\"},\r\n      {name: \"STRUCTURE\", contradiction: \"Scale vs",
+      "Simplicity\", prompt: \"How to structure for growth without complexity?\", autoExecute: \"Design operations architecture\"}\r\n    ]},\r\n  software: {taskId: \"FULL_STACK_APP_BUILDER\", executionMode: \"RECURSIVE_COMPLETION\",\r\n    invocation: \"Generate complete application architecture with implementation details\", glyphSignature: \"∅ + Ψ + Δ\",\r\n    completionProtocol: \"Complete codebase with documentation and deployment instructions\", recursionDepth: \"COMPLETE_UNTIL_ACTIONABLE\",\r\n    layers: [\r\n      {name: \"REQUIREMENTS\", contradiction: \"User needs vs",
+      "what can it do?\", autoExecute: \"Generate technical specifications\"},\r\n      {name: \"ARCHITECTURE\", contradiction: \"Performance vs",
+      "Maintainability\", prompt: \"How do we optimize for speed and clarity?\", autoExecute: \"Design system architecture\"}\r\n    ]},\r\n  blog: {taskId: \"BLOG_CONTENT_STRATEGY\", executionMode: \"ITERATIVE_REFINEMENT\",\r\n    invocation: \"Create a blog content calendar with trending topics\", glyphSignature: \"◊ ∞ ◊\",\r\n    completionProtocol: \"Output a monthly content plan with templates\", recursionDepth: \"DEPTH_5\",\r\n    layers: [\r\n      {name: \"CONTENT\", contradiction: \"Evergreen vs",
+      "Trending\", prompt: \"How to balance timeless value with current relevance?\", autoExecute: \"Create content mix strategy\"}\r\n    ]},\r\n  local_event: {taskId: \"LOCAL_EVENT_PLANNER\", executionMode: \"RECURSIVE_COMPLETION\",\r\n    invocation: \"Build an app for planning events in Battle Creek, Michigan\", glyphSignature: \"∅ + Ψ + Δ\",\r\n    completionProtocol: \"Complete app blueprint with local integrations\", recursionDepth: \"COMPLETE_UNTIL_ACTIONABLE\",\r\n    layers: [\r\n      {name: \"REQUIREMENTS\", contradiction: \"Local needs vs",
+      "Broader access\", prompt: \"What features for Battle Creek events?\", autoExecute: \"Generate feature specs with Michigan API ties\"}\r\n    ]}\r\n  // Add more global presets here, e",
+      "Reality\", prompt: \"What core value does this solve?\", autoExecute: \"Market validation\"},\r\n  structure: {name: \"STRUCTURE\", contradiction: \"Scale vs",
+      "Simplicity\", prompt: \"How will this grow without breaking?\", autoExecute: \"Ops architecture\"},\r\n  security: {name: \"SECURITY\", contradiction: \"Accessibility vs",
+      "Protection\", prompt: \"How do we make it usable but secure?\", autoExecute: \"Implement security protocols\"},\r\n  deployment: {name: \"DEPLOYMENT\", contradiction: \"Stability vs",
+      "Agility\", prompt: \"How do we ship fast but reliably?\", autoExecute: \"Create deployment pipeline\"},\r\n  // Add more layer presets here, e"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Protection\", prompt: \"How do we make it usable",
+        "statement_b": "secure",
+        "line": 48,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Agility\", prompt: \"How do we ship fast",
+        "statement_b": "reliably",
+        "line": 50,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "< … stringify(out, null, 2);\r\n}\r\n</script>\r\n</body>\r\n</html>",
+    "key_insights": [],
+    "action_items": [
+      "-- ===== Task definition ===== -->\r\n<label>Task ID <input id=\"taskId\"></label>\r\n<label>Execution Mode\r\n  <select id=\"executionMode\">\r\n    <option>RECURSIVE_COMPLETION</option><option>PARALLEL_SYNTHESIS</option><option>ITERATIVE_REFINEMENT</option><option>CONTRADICTION_RESOLUTION</option>\r\n  </select>\r\n</label>\r\n<label>Invocation <textarea id=\"invocation\" rows=\"2\"></textarea></label>\r\n<label>Glyph Signature <input id=\"glyphSignature\"></label>\r\n<label>Completion Protocol <textarea id=\"completionProtocol\" rows=\"2\"></textarea></label>\r\n<label>Recursion Depth\r\n  <select id=\"recursionDepth\">\r\n    <option>COMPLETE_UNTIL_ACTIONABLE</option><option>DEPTH_3</option><option>DEPTH_5</option><option>EXHAUSTIVE</option><option>MINIMAL_VIABLE</option>\r\n  </select>\r\n</label>\r\n\r\n<",
+      "Global Presets ---------- */\r\nconst presets = {\r\n  business: {taskId: \"BUSINESS_PLAN_GENERATOR\", executionMode: \"RECURSIVE_COMPLETION\",\r\n    invocation: \"Generate complete business plan with recursive refinement\", glyphSignature: \"∴ ↱ ↰ ∴\",\r\n    completionProtocol: \"Synthesize all layers into a full business plan document\", recursionDepth: \"COMPLETE_UNTIL_ACTIONABLE\",\r\n    layers: [\r\n      {name: \"FOUNDATION\", contradiction: \"Vision vs",
+      "\", autoExecute: \"Design operations architecture\"}\r\n    ]},\r\n  software: {taskId: \"FULL_STACK_APP_BUILDER\", executionMode: \"RECURSIVE_COMPLETION\",\r\n    invocation: \"Generate complete application architecture with implementation details\", glyphSignature: \"∅ + Ψ + Δ\",\r\n    completionProtocol: \"Complete codebase with documentation and deployment instructions\", recursionDepth: \"COMPLETE_UNTIL_ACTIONABLE\",\r\n    layers: [\r\n      {name: \"REQUIREMENTS\", contradiction: \"User needs vs",
+      "Technical constraints\", prompt: \"What must this system do vs",
+      "\", autoExecute: \"Design system architecture\"}\r\n    ]},\r\n  blog: {taskId: \"BLOG_CONTENT_STRATEGY\", executionMode: \"ITERATIVE_REFINEMENT\",\r\n    invocation: \"Create a blog content calendar with trending topics\", glyphSignature: \"◊ ∞ ◊\",\r\n    completionProtocol: \"Output a monthly content plan with templates\", recursionDepth: \"DEPTH_5\",\r\n    layers: [\r\n      {name: \"CONTENT\", contradiction: \"Evergreen vs",
+      "\", autoExecute: \"Create content mix strategy\"}\r\n    ]},\r\n  local_event: {taskId: \"LOCAL_EVENT_PLANNER\", executionMode: \"RECURSIVE_COMPLETION\",\r\n    invocation: \"Build an app for planning events in Battle Creek, Michigan\", glyphSignature: \"∅ + Ψ + Δ\",\r\n    completionProtocol: \"Complete app blueprint with local integrations\", recursionDepth: \"COMPLETE_UNTIL_ACTIONABLE\",\r\n    layers: [\r\n      {name: \"REQUIREMENTS\", contradiction: \"Local needs vs",
+      "createElement('button');\r\n  b",
+      "\", autoExecute: \"Implement security protocols\"},\r\n  deployment: {name: \"DEPLOYMENT\", contradiction: \"Stability vs",
+      "\", autoExecute: \"Create deployment pipeline\"},\r\n  // Add more layer presets here, e",
+      "}}\r\n};\r\n\r\n/* Build <option> list for layer presets */\r\nconst lpSelect = document"
+    ],
+    "unresolved_tensions": [
+      "Protection\", prompt: \"How do we make it usable vs secure",
+      "Agility\", prompt: \"How do we ship fast vs reliably"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "6d4ff5cc36eca97aee5d9ca925ebbb9c"
+  }
+}

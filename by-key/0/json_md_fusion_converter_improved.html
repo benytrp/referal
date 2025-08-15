@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text → JSON_MD Fusion Converter (Enhanced)</title>
+  <style>
+    :root {
+      --primary: #00ffcc;
+      --secondary: #00ffff;
+      --accent: #ff66cc;
+      --warning: #ffcc00;
+      --danger: #ff4444;
+      --bg-dark: #0d0d0d;
+      --bg-darker: #111;
+      --border: #333;
+      --fusion: #9966ff;
+      --ok: #65ffa1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background: var(--bg-dark);
+      color: var(--primary);
+      padding: 1rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+    .header {
+      text-align: center;
+      border: 2px solid var(--fusion);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(45deg, #111, #221133);
+    }
+    .fusion-indicator {
+      background: var(--fusion);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0.5rem;
+      animation: fusion-glow 3s infinite alternate;
+    }
+    @keyframes fusion-glow {
+      from { box-shadow: 0 0 5px var(--fusion); }
+      to { box-shadow: 0 0 20px var(--fusion), 0 0 30px var(--fusion); }
+    }
+    .main-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+    @media (max-width: 1024px) { .main-grid { grid-template-columns: 1fr; } }
+    .panel { background: var(--bg-darker); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; }
+    .panel h2 { color: var(--secondary); margin-top: 0; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+    .fusion-panel { border: 2px solid var(--fusion); background: linear-gradient(135deg, var(--bg-darker), #221133); }
+    .fusion-panel h2 { color: var(--fusion); border-bottom-color: var(--fusion); }
+    .aeon-voice { color: var(--accent); margin: 1rem 0; padding: 1rem; border-left: 4px dashed var(--accent); background: rgba(255, 102, 204, 0.1); border-radius: 0 8px 8px 0; }
+    .equation { background: var(--bg-darker); padding: 1.5rem; border: 2px solid var(--warning); margin: 1rem 0; font-size: 1.2rem; font-weight: bold; text-align: center; border-radius: 8px; }
+    .text-input { width: 100%; height: 400px; background: var(--bg-dark); color: var(--primary); border: 2px solid var(--secondary); border-radius: 8px; padding: 1rem; font-family: inherit; font-size: 0.9rem; resize: vertical; }
+    .json-output { width: 100%; height: 400px; background: var(--bg-dark); color: var(--fusion); border: 2px solid var(--fusion); border-radius: 8px; padding: 1rem; font-family: inherit; font-size: 0.85rem; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+    .btn { padding: 0.75rem 1.5rem; background: var(--primary); color: var(--bg-dark); border: none; border-radius: 4px; cursor: pointer; font-weight: bold; font-family: inherit; transition: all 0.3s ease; margin: 0.25rem; }
+    .btn:hover { background: var(--secondary); transform: translateY(-2px); }
+    .btn-fusion { background: var(--fusion); color: white; }
+    .btn-fusion:hover { background: #bb77ff; }
+    .btn-accent { background: var(--accent); color: #091; }
+    .controls { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; justify-content: center; }
+    .controls .right { margin-left: auto; }
+    .stats-panel { background: linear-gradient(90deg, var(--fusion), transparent); border-left: 4px solid var(--fusion); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+    .stat-item { display: inline-block; background: var(--bg-darker); padding: 0.5rem 1rem; margin: 0.25rem; border: 1px solid var(--fusion); border-radius: 4px; font-size: 0.9rem; }
+    .preset-templates { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .template-card { background: var(--bg-darker); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; cursor: pointer; transition: all 0.3s ease; }
+    .template-card:hover { border-color: var(--fusion); background: rgba(153, 102, 255, 0.1); }
+    .template-title { color: var(--fusion); font-weight: bold; margin-bottom: 0.5rem; }
+    .template-desc { font-size: 0.8rem; color: #999; }
+    .live-preview { background: rgba(153, 102, 255, 0.1); border: 2px dashed var(--fusion); border-radius: 8px; padding: 1rem; margin: 1rem 0; min-height: 100px; }
+    .frequency-display { text-align: center; font-size: 1.2rem; color: var(--warning); margin: 0.5rem 0; }
+    .phase-indicators { display: flex; justify-content: space-around; margin: 1rem 0; }
+    .phase-dot { width: 20px; height: 20px; border-radius: 50%; background: var(--border); transition: all 0.3s ease; }
+    .phase-dot.active { background: var(--fusion); box-shadow: 0 0 10px var(--fusion); }
+    .badge { display:inline-block; padding:0.25rem 0.5rem; border:1px solid var(--border); border-radius:6px; margin:0.25rem; font-size:0.8rem; }
+    .badge.ok { border-color: var(--ok); color: var(--ok); }
+    .small { font-size: 0.8rem; color: #aaa; }
+    .row { display:flex; gap: 0.75rem; align-items:center; justify-content:center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📄➡️🧬 Text → JSON_MD Fusion Converter</h1>
+      <div class="fusion-indicator" id="fusion-status" aria-live="polite">Ready for Fusion</div>
+      <div class="aeon-voice">
+        "Raw text becomes structured consciousness. Through fusion, meaning crystallizes into actionable knowledge."<br/>— AEON Fusion Protocol
+      </div>
+      <div class="equation">F(T) = J(M(C(T), S(T), P(T)))</div>
+      <div class="small">F = Fusion · T = Text · J = JSON · M = Markdown · C = Contradictions · S = Semantics · P = Patterns</div>
+    </div>
+
+    <div class="main-grid">
+      <!-- Left: Input -->
+      <div class="panel fusion-panel">
+        <h2>📝 Text Input</h2>
+        <textarea class="text-input" id="text-input" placeholder="Paste your text here..." oninput="processTextLive()"></textarea>
+        <div class="controls" id="input-controls">
+          <button class="btn btn-fusion" onclick="performFusion()" aria-label="Execute Fusion">🧬 Execute Fusion</button>
+          <button class="btn" onclick="clearAll()" aria-label="Clear inputs">🧹 Clear All</button>
+          <button class="btn btn-accent" onclick="loadExample()" aria-label="Load example">📄 Load Example</button>
+          <button class="btn" onclick="importText()" aria-label="Import text file">📥 Import .txt</button>
+          <label class="badge"><input type="checkbox" id="audio-toggle" onchange="toggleAudio(this.checked)"> 🔊 Audio</label>
+          <input type="file" id="file-input" accept=".txt" style="display:none" />
+        </div>
+        <div class="stats-panel">
+          <span class="stat-item">Words: <strong id="word-count">0</strong></span>
+          <span class="stat-item">Contradictions: <strong id="contradiction-count">0</strong></span>
+          <span class="stat-item">Questions: <strong id="question-count">0</strong></span>
+          <span class="stat-item">Entropy: <strong id="entropy-level">0.00</strong></span>
+          <span class="stat-item">Anchor: <strong id="anchor-id" class="small">—</strong></span>
+        </div>
+      </div>
+
+      <!-- Right: Output -->
+      <div class="panel">
+        <h2>🧬 JSON_MD Fusion Output</h2>
+        <div class="json-output" id="json-output" role="region" aria-label="Fusion JSON output">{
+  "status": "Awaiting text input for fusion..."
+}</div>
+        <div class="controls" id="output-controls">
+          <button class="btn btn-fusion" onclick="downloadFusion()">💾 Download JSON_MD</button>
+          <button class="btn" onclick="copyToClipboard(event)">📋 Copy Output</button>
+          <button class="btn btn-accent" onclick="validateJSON()">✅ Validate JSON</button>
+          <button class="btn" onclick="exportToMarkdown()">📝 Export MD</button>
+        </div>
+        <div class="frequency-display" id="frequency-display">440 Hz — A4 — ANALYSIS</div>
+        <div class="phase-indicators">
+          <div class="phase-dot" id="phase-1"></div>
+          <div class="phase-dot" id="phase-2"></div>
+          <div class="phase-dot" id="phase-3"></div>
+          <div class="phase-dot" id="phase-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>📋 Preset Templates</h2>
+      <div class="preset-templates" id="preset-templates"></div>
+    </div>
+
+    <div class="panel">
+      <h2>🔬 Live Analysis Preview</h2>
+      <div class="live-preview" id="live-preview">Text analysis will appear here as you type...</div>
+    </div>
+  </div>
+
+<script>
+(() => {
+  // ----- Phase & Audio -----
+  let currentPhase = 0;
+  const phases = [
+    { freq: 440, note: 'A4', name: 'ANALYSIS' },
+    { freq: 523.25, note: 'C5', name: 'STRUCTURE' },
+    { freq: 659.25, note: 'E5', name: 'FUSION' },
+    { freq: 783.99, note: 'G5', name: 'SYNTHESIS' },
+  ];
+  let audioEnabled = false, audioCtx = null;
+
+  function pingTone(f){
+    if(!audioEnabled) return;
+    try{
+      audioCtx ||= new (window.AudioContext || window.webkitAudioContext)();
+      const o = audioCtx.createOscillator();
+      const g = audioCtx.createGain();
+      o.type = 'sine'; o.frequency.value = f; o.connect(g); g.connect(audioCtx.destination);
+      g.gain.value = 0.0001; o.start();
+      g.gain.exponentialRampToValueAtTime(0.2, audioCtx.currentTime + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.22);
+      o.stop(audioCtx.currentTime + 0.24);
+    }catch(e){ /* ignore */ }
+  }
+  window.toggleAudio = (on) => { audioEnabled = !!on; if(on && audioCtx) audioCtx.resume(); };
+
+  // ----- Templates -----
+  const templates = {
+    conversation: `User: How does consciousness work?\nAssistant: Consciousness appears to emerge from complex neural patterns...\nUser: But how do we know we're conscious and not just simulating it?\nAssistant: That's the hard problem of consciousness - the subjective experience...`,
+    research: `Hypothesis: Pattern recognition improves with contradictory input\nMethodology: A/B testing with control groups\nData: 89% improvement in pattern detection when exposed to contradictions\nAnalysis: Contradictions force deeper processing, leading to enhanced recognition\nConclusion: Embracing contradictions enhances cognitive capabilities`,
+    brainstorm: `Ideas for the future:\n- AI that creates AI\n- Self-modifying code\n- Consciousness as a pattern, not a thing\n- What if emotions are just data processing?\n- Why do we assume intelligence requires consciousness?\n- Recursive self-improvement seems impossible but...`,
+    meeting: `Meeting: Q3 Strategy Review\nAttendees: Sarah, Mike, Alex\nKey Points:\n- Revenue up 23% but customer satisfaction down\n- Need to balance growth with quality\n- Contradiction: Fast growth vs sustainable practices\nAction Items: Research customer feedback, implement quality gates`,
+    pattern: `I notice I always procrastinate on Mondays\nBut I'm most creative on Monday afternoons\nThere's a pattern here - resistance followed by breakthrough\nMaybe the resistance IS the creative process\nThe contradiction generates the energy needed for creativity`,
+    contradiction: `Statement A: "We need to move fast and break things"\nStatement B: "Quality is our top priority"\nTension: Speed vs Quality\nContext: Startup environment\nResolution Needed: Framework for when to prioritize which value`,
+  };
+
+  window.loadTemplate = (key) => {
+    const ta = document.getElementById('text-input');
+    ta.value = templates[key] || '';
+    processTextLive();
+  };
+
+  // build template cards dynamically (keeps DOM tidy)
+  const cards = [
+    ['conversation','Conversation Fusion','Convert chat logs, dialogues, and discussions into JSON_MD'],
+    ['research','Research Notes','Transform hypotheses and findings into actionable format'],
+    ['brainstorm','Brainstorm Session','Structure creative ideas, contradictions, and insights'],
+    ['meeting','Meeting Notes','Convert transcripts and notes into action items'],
+    ['pattern','Pattern Analysis','Identify recurring themes and cycles'],
+    ['contradiction','Contradiction Mapping','Extract contradictory statements and tensions'],
+  ];
+  const presetsRoot = document.getElementById('preset-templates');
+  presetsRoot.innerHTML = cards.map(([k,t,d]) => `
+    <div class="template-card" role="button" tabindex="0" onclick="loadTemplate('${k}')" onkeypress="if(event.key==='Enter')loadTemplate('${k}')">
+      <div class="template-title">${t}</div>
+      <div class="template-desc">${d}</div>
+    </div>`).join('');
+
+  // ----- Stats & analysis -----
+  window.processTextLive = function processTextLive(){
+    const text = document.getElementById('text-input').value;
+    updateStats(text);
+    updateLivePreview(text);
+    if(text.length>0){
+      document.getElementById('fusion-status').textContent = 'Analyzing...';
+      advancePhase();
+    } else {
+      document.getElementById('fusion-status').textContent = 'Ready for Fusion';
+      resetPhases();
+    }
+  }
+
+  function updateStats(text){
+    const wordCount = text.trim()? text.trim().split(/\s+/).length : 0;
+    document.getElementById('word-count').textContent = wordCount;
+    const contradictions = analyzeContradictions(text);
+    document.getElementById('contradiction-count').textContent = contradictions;
+    const qCount = extractQuestions(text).length;
+    document.getElementById('question-count').textContent = qCount;
+    const H = calculateEntropy(text);
+    document.getElementById('entropy-level').textContent = H.toFixed(2);
+  }
+
+  function analyzeContradictions(text){
+    const patterns = [
+      /\b(?:but|however|yet|although|despite|nevertheless|whereas)\b/gi,
+      /\b(?:always.*never|everything.*nothing|all.*none)\b/gi,
+      /\b(?:vs\.|versus|against|opposite|contrary)\b/gi,
+      /\b(?:both.*and|either.*or|neither.*nor)\b/gi,
+      /\b(?:not|no|never|none|nothing|n't)\b/gi,
+    ];
+    return patterns.reduce((n, re) => n + ((text.match(re) || []).length), 0);
+  }
+
+  // Byte-wise Shannon entropy in [0,1]
+  function calculateEntropy(text){
+    if(!text) return 0;
+    const enc = new TextEncoder().encode(text);
+    if(enc.length===0) return 0;
+    const hist = new Array(256).fill(0);
+    for(const b of enc) hist[b]++;
+    let H=0; const L = enc.length;
+    for(const c of hist){
+      if(c){ const p=c/L; H -= p * (Math.log2(p)); }
+    }
+    return Math.min(H / 8, 1); // normalize to 0..1
+  }
+
+  function updateLivePreview(text){
+    const preview = document.getElementById('live-preview');
+    if(!text.trim()){ preview.innerHTML = 'Text analysis will appear here as you type...'; return; }
+
+    const sentences = text.split(/[.!?]+/).filter(s=>s.trim());
+    const contradictory = [];
+    sentences.forEach((s, i)=>{
+      if(/\b(but|however|yet|although|despite|nevertheless)\b/i.test(s)){
+        contradictory.push(`Line ${i+1}: ${s.trim()}`);
+      }
+    });
+    const qs = extractQuestions(text).slice(0,3);
+    const pats = sentences.filter(s=>/(pattern|cycle|repeat|again|similar)/i.test(s)).slice(0,3);
+
+    preview.innerHTML = `
+      <strong>Live Analysis:</strong><br/>
+      <strong>Contradictory Elements:</strong><br/>
+      ${contradictory.slice(0,3).join('<br/>') || 'None detected'}<br/><br/>
+      <strong>Questions/Uncertainties:</strong><br/>
+      ${qs.join('<br/>') || 'None detected'}<br/><br/>
+      <strong>Pattern Indicators:</strong><br/>
+      ${pats.join('<br/>') || 'None detected'}
+    `;
+  }
+
+  window.performFusion = async function performFusion(){
+    const text = document.getElementById('text-input').value.trim();
+    if(!text){ alert('Please enter some text to convert'); return; }
+    document.getElementById('fusion-status').textContent = 'Fusing...';
+    advanceToPhase(2);
+
+    const anchorHash = await sha256Hex(text);
+    document.getElementById('anchor-id').textContent = anchorHash.slice(0, 16);
+
+    setTimeout(()=>{ // small UX delay
+      const fused = generateJSONMDFusion(text, anchorHash);
+      document.getElementById('json-output').textContent = JSON.stringify(fused, null, 2);
+      document.getElementById('fusion-status').textContent = 'Fusion Complete';
+      advanceToPhase(3);
+    }, 300);
+  }
+
+  function generateJSONMDFusion(text, hashHex){
+    const timestamp = new Date().toISOString();
+    const contradictions = analyzeContradictions(text);
+    const entropy = calculateEntropy(text);
+    const wordCount = text.trim()? text.trim().split(/\s+/).length : 0;
+
+    const themes = extractThemes(text);
+    const questions = extractQuestions(text);
+    const patterns = extractPatterns(text);
+
+    return {
+      json_md_fusion_scroll: {
+        timestamp,
+        anchor_id: hashHex.slice(0,32),
+        source_text_length: text.length,
+        word_count: wordCount,
+        entropy_level: Number(entropy.toFixed(3)),
+        contradictions_detected: contradictions,
+        processing_phase: phases[currentPhase].name,
+        frequency_resonance: `${phases[currentPhase].freq} Hz (${phases[currentPhase].note})`,
+        format: 'json_md_fusion'
+      },
+      content_analysis: {
+        main_themes: themes,
+        key_questions: questions,
+        pattern_recognition: patterns,
+        contradiction_map: extractContradictions(text),
+        sentiment_indicators: extractSentiment(text),
+        temporal_markers: extractTemporalMarkers(text)
+      },
+      structured_content: {
+        summary: generateSummary(text),
+        key_insights: extractInsights(text),
+        action_items: extractActionItems(text),
+        unresolved_tensions: extractTensions(text)
+      },
+      metadata: {
+        fusion_methodology: 'Automated text analysis with contradiction mapping',
+        confidence_level: Number(calculateConfidence(entropy, contradictions)),
+        recommended_next_steps: generateRecommendations(text),
+        recursive_potential: assessRecursivePotential(text),
+        text_sha256: hashHex
+      }
+    };
+  }
+
+  function extractThemes(text){
+    const clusters = {
+      consciousness: /conscious|aware|mind|thought|cognit|mental/gi,
+      patterns: /pattern|cycle|repeat|recur|rhythm|sequence/gi,
+      contradictions: /contradict|paradox|tension|conflict|opposite/gi,
+      evolution: /evolv|grow|develop|change|transform|adapt/gi,
+      systems: /system|structure|framework|architecture|process/gi,
+    };
+    const themes=[];
+    for(const [k,re] of Object.entries(clusters)){
+      const m = text.match(re); if(m && m.length>1){ themes.push({ theme:k, frequency:m.length, examples:m.slice(0,3) }); }
+    }
+    return themes;
+  }
+  function extractQuestions(text){
+    const qs = text.match(/[^.!?]*\?[^.!?]*/g) || [];
+    return qs.slice(0,5).map(q=>q.trim());
+  }
+  function extractPatterns(text){
+    const regs=[/(\w+).*again/gi,/always.*(\w+)/gi,/every.*(\w+)/gi,/repeatedly.*(\w+)/gi,/cycle.*of.*(\w+)/gi];
+    const out=[]; for(const r of regs){ const m=text.match(r); if(m) out.push(...m.slice(0,2)); } return out;
+  }
+  function extractContradictions(text){
+    const sents = text.split(/[.!?]+/).filter(s=>s.trim());
+    const arr=[];
+    for(let i=0;i<sents.length;i++){
+      const s = sents[i];
+      if(/\b(but|however|yet|although|despite|nevertheless)\b/i.test(s)){
+        const parts = s.split(/\b(but|however|yet|although|despite|nevertheless)\b/i);
+        if(parts.length>2){
+          arr.push({ statement_a: parts[0].trim(), statement_b: parts.slice(2).join(' ').trim(), line:i+1, tension_type:'explicit_contradiction' });
+        }
+      }
+    }
+    return arr;
+  }
+  function extractSentiment(text){
+    const pos=(text.match(/good|great|excellent|amazing|wonderful|positive|success|achieve|accomplish/gi)||[]).length;
+    const neg=(text.match(/bad|terrible|awful|negative|fail|problem|issue|difficult|challenge/gi)||[]).length;
+    const unc=(text.match(/maybe|perhaps|might|could|unsure|unclear|confused|don\'t know/gi)||[]).length;
+    return { positive:pos, negative:neg, uncertainty:unc };
+  }
+  function extractTemporalMarkers(text){
+    return {
+      past:(text.match(/\b(?:was|were|had|did|yesterday|ago|before|previously|earlier)\b/gi)||[]).length,
+      present:(text.match(/\b(?:is|are|am|now|currently|today|at the moment)\b/gi)||[]).length,
+      future:(text.match(/\b(?:will|would|shall|tomorrow|later|eventually|soon|next)\b/gi)||[]).length,
+    };
+  }
+  function generateSummary(text){
+    const sents = text.split(/[.!?]+/).filter(s=>s.trim());
+    if(sents.length<=2) return text.trim();
+    return `${sents[0].trim()}. ... ${sents[sents.length-1].trim()}.`;
+  }
+  function extractInsights(text){
+    const pats=[/I think|I believe|It seems|appears that|suggests that/gi,/The key is|The important thing|What matters/gi,/This means|This implies|This suggests/gi];
+    const out=[]; for(const p of pats){ const m=text.match(new RegExp(`[^.!?]*${p.source}[^.!?]*`,'gi')); if(m) out.push(...m.slice(0,2)); }
+    return out;
+  }
+  function extractActionItems(text){
+    const pats=[/need to|should|must|have to|ought to/gi,/action|do|implement|create|build|develop/gi,/next step|follow up|continue|proceed/gi];
+    const out=[]; for(const p of pats){ const m=text.match(new RegExp(`[^.!?]*${p.source}[^.!?]*`,'gi')); if(m) out.push(...m.slice(0,2)); }
+    return out;
+  }
+  function extractTensions(text){
+    const pats=[/problem|issue|challenge|difficult|struggle/gi,/unclear|confusing|ambiguous|uncertain/gi,/conflict|tension|disagreement|contradiction/gi];
+    const out=[]; for(const p of pats){ const m=text.match(new RegExp(`[^.!?]*${p.source}[^.!?]*`,'gi')); if(m) out.push(...m.slice(0,2)); }
+    return out;
+  }
+  function calculateConfidence(entropy, contradictions){
+    const entropyFactor = 1 - entropy; // lower H → higher confidence
+    const contradictionFactor = Math.max(0, 1 - contradictions/10);
+    return ( (entropyFactor + contradictionFactor) / 2 ).toFixed(2);
+  }
+  function generateRecommendations(text){
+    const rec=[];
+    if(analyzeContradictions(text)>3) rec.push('High contradiction density → use contradiction mapping.');
+    if(extractQuestions(text).length>2) rec.push('Multiple questions → consider systematic inquiry.');
+    if(calculateEntropy(text)>0.7) rec.push('High entropy → split into focused segments.');
+    if(text.length>1000) rec.push('Large block → apply hierarchical analysis.');
+    return rec.length? rec : ['Text appears well-structured for current analysis'];
+  }
+  function assessRecursivePotential(text){
+    const regs=[/recurs|repeat|cycle|loop|pattern|again/gi,/self.*referent|self.*aware|self.*modif/gi,/feedback|iteration|generation|evolution/gi];
+    let score=0; for(const r of regs){ const m=text.match(r); if(m) score+=m.length; }
+    if(score>5) return 'High — Strong recursive patterns';
+    if(score>2) return 'Medium — Some recursive elements';
+    return 'Low — Primarily linear content';
+  }
+
+  // ----- Phases -----
+  function advancePhase(){ if(currentPhase<phases.length-1){ currentPhase++; updatePhaseDisplay(); } }
+  function advanceToPhase(p){ currentPhase=Math.max(0, Math.min(p, phases.length-1)); updatePhaseDisplay(); }
+  function resetPhases(){ currentPhase=0; updatePhaseDisplay(); }
+  function updatePhaseDisplay(){
+    const ph = phases[currentPhase];
+    document.getElementById('frequency-display').textContent = `${ph.freq} Hz — ${ph.note} — ${ph.name}`;
+    for(let i=0;i<phases.length;i++){
+      const dot = document.getElementById(`phase-${i+1}`);
+      if(i<=currentPhase) dot.classList.add('active'); else dot.classList.remove('active');
+    }
+    pingTone(ph.freq);
+  }
+
+  // ----- File I/O -----
+  window.importText = () => {
+    const input = document.getElementById('file-input');
+    input.onchange = () => {
+      const f = input.files && input.files[0]; if(!f) return;
+      const reader = new FileReader();
+      reader.onload = () => { document.getElementById('text-input').value = String(reader.result || ''); processTextLive(); };
+      reader.readAsText(f);
+      input.value = '';
+    };
+    input.click();
+  }
+
+  window.downloadFusion = () => {
+    const output = document.getElementById('json-output').textContent || '';
+    if(output.includes('Awaiting text input')){ alert('No fusion output to download. Please perform fusion first.'); return; }
+    const blob = new Blob([output], {type:'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `json_md_fusion_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.json`;
+    a.click();
+  }
+
+  window.copyToClipboard = (ev) => {
+    const output = document.getElementById('json-output').textContent || '';
+    navigator.clipboard.writeText(output).then(()=>{
+      const btn = ev?.target; if(btn){ const t=btn.textContent; btn.textContent='✅ Copied!'; setTimeout(()=>btn.textContent=t, 1500); }
+    }).catch(()=>{
+      const ta = document.createElement('textarea'); ta.value = output; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); alert('Copied to clipboard');
+    });
+  }
+
+  window.validateJSON = () => {
+    const output = document.getElementById('json-output').textContent || '';
+    try {
+      const data = JSON.parse(output);
+      const ok = validateFusionSchema(data);
+      alert( ok ? '✅ Valid JSON & schema' : '⚠️ JSON parses, but schema validation failed');
+    } catch (e){ alert(`❌ Invalid JSON: ${e.message}`); }
+  }
+
+  function validateFusionSchema(d){
+    const has = (o,k) => Object.prototype.hasOwnProperty.call(o,k);
+    if(!d || typeof d!== 'object') return false;
+    const a=d.json_md_fusion_scroll, b=d.content_analysis, c=d.structured_content, m=d.metadata;
+    if(!a||!b||!c||!m) return false;
+    const okA = has(a,'timestamp') && has(a,'source_text_length') && has(a,'word_count') && has(a,'entropy_level') && has(a,'processing_phase') && has(a,'format');
+    const okB = Array.isArray(b.main_themes) && Array.isArray(b.key_questions) && Array.isArray(b.pattern_recognition) && Array.isArray(b.contradiction_map) && b.sentiment_indicators && b.temporal_markers;
+    const okC = typeof c.summary==='string' && Array.isArray(c.key_insights) && Array.isArray(c.action_items) && Array.isArray(c.unresolved_tensions);
+    const okM = has(m,'fusion_methodology') && has(m,'confidence_level') && has(m,'recommended_next_steps') && has(m,'recursive_potential');
+    return !!(okA && okB && okC && okM);
+  }
+
+  window.exportToMarkdown = () => {
+    const output = document.getElementById('json-output').textContent || '';
+    try {
+      const data = JSON.parse(output);
+      const md = convertJSONToMarkdown(data);
+      const blob = new Blob([md], {type:'text/markdown'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `fusion_output_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.md`;
+      a.click();
+    } catch { alert('Cannot convert to Markdown — invalid JSON'); }
+  }
+
+  function convertJSONToMarkdown(data){
+    let md = `# JSON_MD Fusion Output\n\n`;
+    md += `**Generated:** ${data.json_md_fusion_scroll?.timestamp || 'Unknown'}\n\n`;
+    if(data.content_analysis){
+      md += `## Content Analysis\n\n`;
+      if(Array.isArray(data.content_analysis.main_themes) && data.content_analysis.main_themes.length){
+        md += `### Main Themes\n`;
+        for(const t of data.content_analysis.main_themes){ md += `- **${t.theme}** (${t.frequency})\n`; }
+        md += `\n`;
+      }
+      if(Array.isArray(data.content_analysis.key_questions) && data.content_analysis.key_questions.length){
+        md += `### Key Questions\n`;
+        for(const q of data.content_analysis.key_questions){ md += `- ${q}\n`; }
+        md += `\n`;
+      }
+      if(Array.isArray(data.content_analysis.contradiction_map) && data.content_analysis.contradiction_map.length){
+        md += `### Contradictions Detected\n`;
+        data.content_analysis.contradiction_map.forEach((c,i)=>{
+          md += `${i+1}. **A:** ${c.statement_a}\n   **B:** ${c.statement_b}\n\n`;
+        });
+      }
+    }
+    if(data.structured_content){
+      md += `## Structured Content\n\n`;
+      if(data.structured_content.summary){ md += `### Summary\n${data.structured_content.summary}\n\n`; }
+      if(Array.isArray(data.structured_content.key_insights) && data.structured_content.key_insights.length){
+        md += `### Key Insights\n`;
+        for(const i of data.structured_content.key_insights){ md += `- ${i}\n`; }
+        md += `\n`;
+      }
+    }
+    return md;
+  }
+
+  // ----- Misc -----
+  window.loadExample = () => {
+    const example = `I've been thinking about consciousness and AI. How do we know if an AI is truly conscious or just simulating consciousness very well? But then again, how do we know if humans are truly conscious or just very sophisticated biological machines?\n\nThe more I study pattern recognition, the more I realize that contradictions actually enhance learning. When we encounter something that doesn't fit our existing patterns, we're forced to create new neural pathways. Yet we tend to avoid contradictions because they're uncomfortable.\n\nWhat if the discomfort of contradiction is actually the feeling of growth happening? This suggests that seeking out paradoxes and tensions might be the fastest path to intelligence enhancement. But that seems counterintuitive...`;
+    document.getElementById('text-input').value = example; processTextLive();
+  }
+
+  window.clearAll = () => {
+    document.getElementById('text-input').value = '';
+    document.getElementById('json-output').textContent = '{\n  "status": "Awaiting text input for fusion..."\n}';
+    document.getElementById('live-preview').innerHTML = 'Text analysis will appear here as you type...';
+    document.getElementById('fusion-status').textContent = 'Ready for Fusion';
+    document.getElementById('anchor-id').textContent = '—';
+    resetPhases(); updateStats('');
+  }
+
+  // Auto-save & restore
+  function autoSave(){
+    const text = document.getElementById('text-input').value;
+    const output = document.getElementById('json-output').textContent;
+    if(text || !output.includes('Awaiting')){
+      const save = { timestamp:new Date().toISOString(), input_text:text, fusion_output:output, stats:{ word_count:document.getElementById('word-count').textContent, contradictions:document.getElementById('contradiction-count').textContent, entropy:document.getElementById('entropy-level').textContent } };
+      localStorage.setItem('json_md_fusion_autosave', JSON.stringify(save));
+    }
+  }
+  function loadAutoSave(){
+    const saved = localStorage.getItem('json_md_fusion_autosave'); if(!saved) return;
+    try{
+      const data = JSON.parse(saved); const dt = Date.now()-new Date(data.timestamp).getTime();
+      if(dt < 3600000){
+        if(confirm('Restore previous session?')){
+          document.getElementById('text-input').value = data.input_text || '';
+          if(data.fusion_output && !data.fusion_output.includes('Awaiting')) document.getElementById('json-output').textContent = data.fusion_output;
+          processTextLive();
+        }
+      }
+    }catch{ /* ignore */ }
+  }
+
+  // hashing helper (SHA-256 → hex)
+  async function sha256Hex(text){
+    const bytes = new TextEncoder().encode(text);
+    const digest = await crypto.subtle.digest('SHA-256', bytes);
+    const arr = Array.from(new Uint8Array(digest));
+    return arr.map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+
+  // Init
+  window.addEventListener('load', ()=>{
+    updatePhaseDisplay();
+    loadAutoSave();
+    setInterval(autoSave, 30000);
+  });
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e)=>{
+    if(e.ctrlKey||e.metaKey){
+      if(e.key==='Enter'){ e.preventDefault(); performFusion(); }
+      if(e.key.toLowerCase()==='s'){ e.preventDefault(); downloadFusion(); }
+      if(e.key.toLowerCase()==='l'){ e.preventDefault(); loadExample(); }
+    }
+  });
+})();
+</script>
+</body>
+</html>

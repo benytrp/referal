@@ -1,0 +1,96 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:57.363Z",
+    "source_text_length": 2855,
+    "word_count": 416,
+    "entropy_level": 0.919,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "6b40ad2360dadff38d229d88fdf83968",
+    "source": {
+      "path": "The Universal Session Framework (US.txt",
+      "bytes": 2855,
+      "lastModified": 1754801982225
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "layer",
+        "frequency": 5
+      },
+      {
+        "theme": "framework",
+        "frequency": 4
+      },
+      {
+        "theme": "python",
+        "frequency": 4
+      },
+      {
+        "theme": "core",
+        "frequency": 4
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "save",
+        "frequency": 4
+      },
+      {
+        "theme": "session",
+        "frequency": 3
+      },
+      {
+        "theme": "five-layer",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "every",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 9,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "The Universal Session Framework (USF) v2. … py demo\r\n\r\nThis will run a full simulation, including chunking a sample HTML document, processing the chunks through the multi-model orchestrator, and generating a final report.",
+    "key_insights": [],
+    "action_items": [
+      "0\r\nThe Universal Session Framework (USF) is a production-grade Python framework for building and operating multi-model AI infrastructure.",
+      "Core Concept: CoT Logic and Portable Artifacts\r\nThe USF operates on a Chain of Thought (CoT) logic model, where every decision and action is transparently documented in a portable JSON artifact.",
+      "The Five-Layer Architecture in Action\r\nThe USF is structured around five core layers that guide a task from a problem statement to a final, validated output.",
+      "Presentation Abstraction: The final outputs are formatted for various audiences."
+    ],
+    "unresolved_tensions": [
+      "The Five-Layer Architecture in Action\r\nThe USF is structured around five core layers that guide a task from a problem statement to a final, validated output.",
+      "Problem Definition: This layer is powered by a Prompt Optimization Bridge that systematically analyzes content and selects the most effective AI prompt from a predefined library."
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}

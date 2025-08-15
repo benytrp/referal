@@ -1,0 +1,97 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:23.521Z",
+    "source_text_length": 94,
+    "word_count": 13,
+    "sentence_count": 1,
+    "entropy_level": 0.981,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "html_json_bridge_builder (1).html"
+    },
+    "anchor_id": "f879bb712fc73363aafb28f20e40c61b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "bridge",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      },
+      {
+        "theme": "builder",
+        "frequency": 1
+      },
+      {
+        "theme": "session",
+        "frequency": 1
+      },
+      {
+        "theme": "input",
+        "frequency": 1
+      },
+      {
+        "theme": "html",
+        "frequency": 1
+      },
+      {
+        "theme": "implementation",
+        "frequency": 1
+      },
+      {
+        "theme": "output",
+        "frequency": 1
+      },
+      {
+        "theme": "file",
+        "frequency": 1
+      },
+      {
+        "theme": "generate",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline JSON Bridge Builder Session Input HTML Implementation Output JSON Bridge File Generate",
+    "key_insights": [],
+    "action_items": [
+      "Offline JSON Bridge Builder Session Input HTML Implementation Output JSON Bridge File Generate"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "f879bb712fc73363aafb28f20e40c61b"
+  }
+}

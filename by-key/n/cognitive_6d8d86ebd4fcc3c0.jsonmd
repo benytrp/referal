@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:37.888Z",
+    "timestamp": "2025-08-11T05:52:56.607Z",
     "source_text_length": 4186,
     "word_count": 420,
     "sentence_count": 29,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "6d8d86ebd4fcc3c0f455210d712a620e",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "9700935ddde763556b0b516df34668b0ea57a6976bba2178fe82129f114cc829.json",
-      "processing_timestamp": "2025-08-11T15:15:37.888Z",
+      "processing_timestamp": "2025-08-11T05:52:56.607Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -150,13 +150,13 @@
     "action_items": [
       {
         "action": "\"\n    ],\n    \"summary\": \"class, data, div, label, span\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 1,\n    \"negative\": 2,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\",\n    \"was\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"E3-Master-Template-Builder-AEON",
-        "urgency_score": "0.56",
-        "feasibility_score": "0.05"
+        "urgency_score": "0.01",
+        "feasibility_score": "0.15"
       },
       {
         "action": "html\",\n    \"relative_path\": \"E3-Master-Template-Builder-AEON",
-        "urgency_score": "1.00",
-        "feasibility_score": "0.34"
+        "urgency_score": "0.65",
+        "feasibility_score": "0.12"
       }
     ],
     "unresolved_tensions": []
@@ -171,9 +171,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.48",
+    "confidence_level": "0.68",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 2 actions"
     ],

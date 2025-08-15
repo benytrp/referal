@@ -1,0 +1,63 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:29.804Z",
+    "source_text_length": 25,
+    "word_count": 3,
+    "sentence_count": 2,
+    "entropy_level": 1,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "mobius_node_chatbot.html"
+    },
+    "anchor_id": "9ab14b03e28250af29ca0af2a4c4f593"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "status",
+        "frequency": 1
+      },
+      {
+        "theme": "checking",
+        "frequency": 1
+      },
+      {
+        "theme": "speak",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Status: Checking Speak",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.5,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9ab14b03e28250af29ca0af2a4c4f593"
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:49.478Z",
+    "source_text_length": 6237,
+    "word_count": 678,
+    "entropy_level": 0.859,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "da7961c47009691bbb5680aba00322d9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function_calls",
+        "frequency": 48
+      },
+      {
+        "theme": "invoke",
+        "frequency": 47
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 47
+      },
+      {
+        "theme": "parameters",
+        "frequency": 47
+      },
+      {
+        "theme": "canmore",
+        "frequency": 7
+      },
+      {
+        "theme": "automations",
+        "frequency": 7
+      },
+      {
+        "theme": "exec",
+        "frequency": 7
+      },
+      {
+        "theme": "container",
+        "frequency": 6
+      },
+      {
+        "theme": "vevent",
+        "frequency": 5
+      },
+      {
+        "theme": "update",
+        "frequency": 5
+      },
+      {
+        "theme": "python",
+        "frequency": 5
+      },
+      {
+        "theme": "tool",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "repeat",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax … - For automations: keep **titles** short/imperative, **prompts** phrased as if user is speaking, and **schedules** in iCal VEVENT",
+    "key_insights": [],
+    "action_items": [
+      "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+      "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+      "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me",
+      "run\n\nMulti‑action web commands",
+      "create\\_textdoc\n\nNew side‑panel doc",
+      "create_textdoc</tool_name><parameters>{\"name\":\"Title\",\"type\":\"document\",\"content\":\"# Content\"}</parameters></invoke></function_calls>\n```\n\n### canmore",
+      "create\n\nSchedule tasks"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.248,
+    "cognitive_load_estimate": 0.31185,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.893,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 2,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.785,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 3,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.678,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 4,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.571,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 5,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.463,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 6,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.356,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      },
+      {
+        "generation": 7,
+        "entropy": 0.859,
+        "contradictions": 0,
+        "novelty_index": 0.248,
+        "action_items": [
+          "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+          "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+          "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "function_calls",
+              "frequency": 48
+            },
+            {
+              "theme": "invoke",
+              "frequency": 47
+            },
+            {
+              "theme": "tool_name",
+              "frequency": 47
+            },
+            {
+              "theme": "parameters",
+              "frequency": 47
+            },
+            {
+              "theme": "canmore",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.566
+      }
+    ],
+    "quality_score": 55
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.36,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_tool_calls_developer_cheatsheet (2).md",
+      "bytes": 6255,
+      "lastModified": 1754713237590
+    }
+  }
+}

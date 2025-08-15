@@ -1,0 +1,163 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:33.963Z",
+    "source_text_length": 1200,
+    "word_count": 115,
+    "sentence_count": 2,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "3583ca5cedac19cb87f5b412cb5e57d6",
+    "entropy_level": 0.914,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "Nvrstry.cleaned.summary.txt",
+      "processing_timestamp": "2025-08-11T05:05:33.963Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 10,
+        "significance": "0.0870",
+        "examples": [
+          "type=bridgefile"
+        ]
+      },
+      {
+        "theme": "keys",
+        "frequency": 10,
+        "significance": "0.0870",
+        "examples": [
+          "keys=['project_metadata',"
+        ]
+      },
+      {
+        "theme": "cycle_log_entry",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "type=cycle_log_entry"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "type=cycle_log_entry"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'phases',"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'output',"
+        ]
+      },
+      {
+        "theme": "contract_ref",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'contract_ref',"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'timestamp',"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'entropy',"
+        ]
+      },
+      {
+        "theme": "contested",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'contested',"
+        ]
+      },
+      {
+        "theme": "hash_of_entry",
+        "frequency": 6,
+        "significance": "0.0522",
+        "examples": [
+          "'hash_of_entry']\n[06]"
+        ]
+      },
+      {
+        "theme": "bridgefile",
+        "frequency": 2,
+        "significance": "0.0174",
+        "examples": [
+          "type=bridgefile"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Found 10 JSON object(s) \n[01] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']\n[02] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']\n[03] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']\n[04] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']\n[05] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[06] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[07] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[08] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[09] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']\n[10] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.06,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.07",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3583ca5cedac19cb87f5b412cb5e57d6"
+  }
+}

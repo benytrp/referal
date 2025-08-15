@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:46.127Z",
+    "source_text_length": 589,
+    "word_count": 86,
+    "sentence_count": 13,
+    "entropy_level": 0.98,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_web_seed_integrated_local_pipeline_router_html (1).html"
+    },
+    "anchor_id": "bd5b750cc9a7959afabc734338073123"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "seed",
+        "frequency": 3
+      },
+      {
+        "theme": "query",
+        "frequency": 3
+      },
+      {
+        "theme": "search",
+        "frequency": 3
+      },
+      {
+        "theme": "local",
+        "frequency": 2
+      },
+      {
+        "theme": "folder",
+        "frequency": 2
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "route",
+        "frequency": 2
+      },
+      {
+        "theme": "extension",
+        "frequency": 2
+      },
+      {
+        "theme": "save",
+        "frequency": 2
+      },
+      {
+        "theme": "self",
+        "frequency": 2
+      },
+      {
+        "theme": "tests",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Web Seed — Integrated Local Pipeline Router Seed & Query Builder Pick Seed Folder Scan & Propose Query no folder This reads local artifacts (e … Diagnostics & Self-Tests extension: unknown Mock mode (simulate QUICK_SEARCH) Run Self-Tests —",
+    "key_insights": [],
+    "action_items": [
+      "AEON Web Seed — Integrated Local Pipeline Router Seed & Query Builder Pick Seed Folder Scan & Propose Query no folder This reads local artifacts (e"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bd5b750cc9a7959afabc734338073123"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:46.369Z",
+    "source_text_length": 1350,
+    "word_count": 196,
+    "sentence_count": 13,
+    "entropy_level": 0.971,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "author (1) - Copy.html"
+    },
+    "anchor_id": "5a49348e88183c2c0fbcb18275d54181"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "mailbox",
+        "frequency": 5
+      },
+      {
+        "theme": "_usf",
+        "frequency": 4
+      },
+      {
+        "theme": "runner",
+        "frequency": 4
+      },
+      {
+        "theme": "file",
+        "frequency": 3
+      },
+      {
+        "theme": "access",
+        "frequency": 3
+      },
+      {
+        "theme": "plan",
+        "frequency": 3
+      },
+      {
+        "theme": "commit",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "oplog",
+        "frequency": 3
+      },
+      {
+        "theme": "preview",
+        "frequency": 3
+      },
+      {
+        "theme": "save",
+        "frequency": 3
+      },
+      {
+        "theme": "comma",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Author · Philosophical Console (offline, File System Access API) INTENT · PLAN · COMMIT · DIALOGUE · RETROSPECT — all as ΦC-DSL speech‑acts, persisted to the shared _usf/ folder … json, consume commits from mailbox/, produce RUN/OBSERVE/REVISE/DECLARE, and honor success_tests",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "5a49348e88183c2c0fbcb18275d54181"
+  }
+}

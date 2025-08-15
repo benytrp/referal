@@ -1,0 +1,387 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:21:10.274Z",
+    "source_text_length": 3461,
+    "word_count": 406,
+    "entropy_level": 0.889,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "08e341228771ce36f83aa9d3de0b83a1"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "section",
+        "frequency": 29
+      },
+      {
+        "theme": "topics",
+        "frequency": 29
+      },
+      {
+        "theme": "words",
+        "frequency": 27
+      },
+      {
+        "theme": "boundaries",
+        "frequency": 9
+      },
+      {
+        "theme": "structure",
+        "frequency": 7
+      },
+      {
+        "theme": "self",
+        "frequency": 5
+      },
+      {
+        "theme": "line",
+        "frequency": 5
+      },
+      {
+        "theme": "detect",
+        "frequency": 4
+      },
+      {
+        "theme": "raw_text",
+        "frequency": 4
+      },
+      {
+        "theme": "sections",
+        "frequency": 4
+      },
+      {
+        "theme": "content",
+        "frequency": 3
+      },
+      {
+        "theme": "headers",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "📁 Parsed Content Structure\n├── Section: \"INPUT_FILE=\\\"$1\\\"\",\n│   📊 1 words, 0 topics\n├── Section: \"OUTPUT_FILE=\\\"$2\\\"\",     \"\",     \"if [ … dump(structured_output,\n    📊 2993 words, 256 topics",
+    "key_insights": [],
+    "action_items": [
+      "Create intelligent sections         sections = self",
+      "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+      "Build information tree         tree = self",
+      "build_tree(labeled_sections)                  return\n│   📊 46 words, 3 topics\n├── Section: # Detect headers (# ## ###, or ALL CAPS lines)             if re",
+      "sort(key=lambda x: x['line'])\n│   📊 9 words, 1 topics\n├── Section: # Create sections between boundaries         for i in range(len(boundaries)):             start_line\n│   📊 60 words, 4 topics\n├── Section: # Extract named entities and noun phrases         topics = []\n│   📊 10 words, 1 topics\n├── Section: # Named entities         for ent in doc",
+      "strip()\n│   📊 48 words, 6 topics\n├── Section: # Use first meaningful sentence or topic                     first_topic = section['topics'][0] if s\n│   📊 89 words, 6 topics\n├── Section: # Handle nesting based on levels             target_level = node['level']\n│   📊 9 words, 1 topics\n├── Section: # Adjust stack to match current level             while len(level_stack) > target_level:\n│   📊 22 words, 1 topics\n├── Section: # If this node can have children, add it to stack             if node['level'] < 3:  # Max depth\n│   📊 76 words, 3 topics\n├── Section: # Usage def main():     builder = SessionTreeBuilder()\n│   📊 7 words, 1 topics\n├── Section: # Read input     with open('input_session",
+      "read()\n│   📊 11 words, 1 topics\n├── Section: # Process     structured_output = builder"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.222,
+    "cognitive_load_estimate": 0.17305,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.889,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 2,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.778,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 3,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.667,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 4,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.555,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 5,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.444,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 6,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.333,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      },
+      {
+        "generation": 7,
+        "entropy": 0.889,
+        "contradictions": 0,
+        "novelty_index": 0.222,
+        "action_items": [
+          "Create intelligent sections         sections = self",
+          "create_sections(raw_text, structure)\n│   📊 9 words, 1 topics\n├── Section: # 3",
+          "Build information tree         tree = self"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "section",
+              "frequency": 29
+            },
+            {
+              "theme": "topics",
+              "frequency": 29
+            },
+            {
+              "theme": "words",
+              "frequency": 27
+            },
+            {
+              "theme": "boundaries",
+              "frequency": 9
+            },
+            {
+              "theme": "structure",
+              "frequency": 7
+            }
+          ]
+        },
+        "score": 0.554
+      }
+    ],
+    "quality_score": 54
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.35,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "AEON-Bridge-1754524433022_tree.txt",
+      "bytes": 3733,
+      "lastModified": 1754524441744
+    }
+  }
+}

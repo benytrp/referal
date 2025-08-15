@@ -1,0 +1,233 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:38.764Z",
+    "source_text_length": 41160,
+    "word_count": 3187,
+    "sentence_count": 294,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "3bb3284d019cb3dbc96028108e2f75d9",
+    "entropy_level": null,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "workflow_orchestrator.html",
+      "processing_timestamp": "2025-08-11T05:05:38.764Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 166,
+        "significance": "0.0521",
+        "examples": [
+          "class=\"orchestrator-container\">\n"
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 62,
+        "significance": "0.0195",
+        "examples": [
+          "Contract"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 51,
+        "significance": "0.0160",
+        "examples": [
+          ".entropy-meter"
+        ]
+      },
+      {
+        "theme": "operation",
+        "frequency": 47,
+        "significance": "0.0147",
+        "examples": [
+          ".operation"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 42,
+        "significance": "0.0132",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 39,
+        "significance": "0.0122",
+        "examples": [
+          ".phase-container"
+        ]
+      },
+      {
+        "theme": "background",
+        "frequency": 38,
+        "significance": "0.0119",
+        "examples": [
+          "background:"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 33,
+        "significance": "0.0104",
+        "examples": [
+          ".contract-status"
+        ]
+      },
+      {
+        "theme": "artifact",
+        "frequency": 33,
+        "significance": "0.0104",
+        "examples": [
+          ".artifact-connection"
+        ]
+      },
+      {
+        "theme": "progress",
+        "frequency": 28,
+        "significance": "0.0088",
+        "examples": [
+          ".operation-progress"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 28,
+        "significance": "0.0088",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "orchestrator",
+        "frequency": 26,
+        "significance": "0.0082",
+        "examples": [
+          "Orchestrator"
+        ]
+      }
+    ],
+    "key_questions": [
+      "currentPhase - 1]?",
+      "1 ? 1 : 0;\n                document",
+      "3 ? 'entropy-low' : \n                         this",
+      "6 ? 'entropy-medium' : 'entropy-high');\n                }\n            }\n            \n            updateUI() {\n                // Update execution status\n                document"
+    ],
+    "pattern_recognition": [
+      "loop",
+      "cycle",
+      "return",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "scrollHeight;\n                    \n                    // Keep only last 20 entries\n                    w",
+        "statement_b": "(log",
+        "line": 183,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.35"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 27,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Workflow Orchestrator - Contract Execution Engine</title>\n    <style>\n        * { box-sizing: border-box; margin: 0; padding: 0; }\n        \n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);\n            color: white;\n            height: 100vh;\n            overflow: hidden;\n        }\n        \n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "3</span>\n                </div>\n            </div>\n        </header>\n        \n        <aside class=\"sidebar\">\n            <h3>Contract Definition</h3>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Goal</div>\n                <div class=\"contract-detail\">Perform systematic data analysis and generate actionable insights</div>\n            </div>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Constraints</div>\n                <div class=\"contract-detail\">• Entropy below 0",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": "8</div>\n                <div class=\"contract-detail\">• Complete within 8 cycles</div>\n                <div class=\"contract-detail\">• Validate all data sources</div>\n            </div>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Success Criteria</div>\n                <div class=\"contract-detail\">• Generate comprehensive analysis</div>\n                <div class=\"contract-detail\">• Identify key patterns</div>\n                <div class=\"contract-detail\">• Provide actionable recommendations</div>\n            </div>\n            \n            <div class=\"entropy-meter\">\n                <div class=\"entropy-title\">Current Entropy</div>\n                <div class=\"entropy-bar\">\n                    <div class=\"entropy-fill entropy-medium\" id=\"entropy-fill\" style=\"width: 30%\">0",
+        "urgency_score": "0.21",
+        "feasibility_score": "0.99"
+      },
+      {
+        "action": "3</div>\n                </div>\n            </div>\n            \n            <div class=\"controls\">\n                <button class=\"btn primary\" onclick=\"executeContract()\">Execute Contract</button>\n                <button class=\"btn\" onclick=\"pauseExecution()\">Pause</button>\n                <button class=\"btn warning\" onclick=\"resetContract()\">Reset</button>\n            </div>\n        </aside>\n        \n        <main class=\"main-content\">\n            <div class=\"tabs\">\n                <button class=\"tab active\" onclick=\"switchTab('workflow')\">Workflow</button>\n                <button class=\"tab\" onclick=\"switchTab('execution')\">Execution</button>\n                <button class=\"tab\" onclick=\"switchTab('artifacts')\">Artifacts</button>\n            </div>\n            \n            <",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "-- Artifacts Tab -->\n            <div class=\"tab-content\" id=\"artifacts\">\n                <div class=\"artifact-connection\">\n                    <div class=\"artifact-name\">\n                        <span class=\"connection-indicator connected\"></span>\n                        Nvrstry JSON Builder\n                    </div>\n                    <div class=\"artifact-status\">Processing schema validation for data sources</div>\n                </div>\n                \n                <div class=\"artifact-connection\">\n                    <div class=\"artifact-name\">\n                        <span class=\"connection-indicator processing\"></span>\n                        Pattern Recognition Engine\n                    </div>\n                    <div class=\"artifact-status\">Analyzing data patterns in parallel sandbox</div>\n                </div>\n                \n                <div class=\"artifact-connection\">\n                    <div class=\"artifact-name\">\n                        <span class=\"connection-indicator connected\"></span>\n                        Data Visualization Engine\n                    </div>\n                    <div class=\"artifact-status\">Preparing charts for synthesis phase</div>\n                </div>\n                \n                <div class=\"artifact-connection\">\n                    <div class=\"artifact-name\">\n                        <span class=\"connection-indicator disconnected\"></span>\n                        Report Generator\n                    </div>\n                    <div class=\"artifact-status\">Awaiting synthesis completion</div>\n                </div>\n                \n                <div class=\"artifact-connection\">\n                    <div class=\"artifact-name\">\n                        <span class=\"connection-indicator connected\"></span>\n                        Consciousness Framework Editor\n                    </div>\n                    <div class=\"artifact-status\">Monitoring contract execution patterns</div>\n                </div>\n                \n                <div class=\"controls\">\n                    <button class=\"btn primary\" onclick=\"connectAllArtifacts()\">Connect All</button>\n                    <button class=\"btn\" onclick=\"checkArtifactHealth()\">Health Check</button>\n                    <button class=\"btn\" onclick=\"redistributeLoad()\">Redistribute Load</button>\n                </div>\n            </div>\n        </main>\n        \n        <aside class=\"sidebar\">\n            <h3>System State</h3>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Contract Metadata</div>\n                <div class=\"contract-detail\">Created: 2025-08-10T21:54:17Z</div>\n                <div class=\"contract-detail\">Generator: X-Logic Schema Builder</div>\n                <div class=\"contract-detail\">Complexity: Moderate</div>\n                <div class=\"contract-detail\">Risk Tolerance: Conservative</div>\n            </div>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Communication Bridge</div>\n                <div class=\"contract-detail\">Active Channels: 5</div>\n                <div class=\"contract-detail\">Message Queue: 12 pending</div>\n                <div class=\"contract-detail\">Sync Status: Real-time</div>\n                <div class=\"contract-detail\">Last Heartbeat: 2s ago</div>\n            </div>\n            \n            <div class=\"contract-panel\">\n                <div class=\"contract-title\">Performance</div>\n                <div class=\"contract-detail\">Memory Usage: 45MB</div>\n                <div class=\"contract-detail\">CPU Load: 23%</div>\n                <div class=\"contract-detail\">Network I/O: 12KB/s</div>\n                <div class=\"contract-detail\">Storage: 2",
+        "urgency_score": "0.19",
+        "feasibility_score": "0.93"
+      },
+      {
+        "action": "contract = {\n                    \"trigger\": \"<x>\",\n                    \"contract\": {\n                        \"goal\": \"Perform systematic data analysis and generate actionable insights\",\n                        \"constraints\": [\n                            \"Maintain entropy below 0",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.38"
+      },
+      {
+        "action": "8\",\n                            \"Complete within 8 cycles\",\n                            \"Validate all data sources\"\n                        ],\n                        \"success_criteria\": [\n                            \"Generate comprehensive analysis report\",\n                            \"Identify key patterns and trends\",\n                            \"Provide actionable recommendations\"\n                        ]\n                    },\n                    \"phases\": [\n                        {\n                            \"phase_name\": \"Data Collection\",\n                            \"operations\": [\n                                { \"op\": \"gather_data\", \"parameters\": {} },\n                                { \"op\": \"validate_sources\", \"parameters\": {} }\n                            ],\n                            \"entropy\": 0",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.10"
+      },
+      {
+        "action": "registerArtifact('nvrstry-builder', 'Nvrstry JSON Builder', 'connected');\n                this",
+        "urgency_score": "0.22",
+        "feasibility_score": "0.60"
+      },
+      {
+        "action": "createElement('div');\n                    entry",
+        "urgency_score": "0.92",
+        "feasibility_score": "0.22"
+      },
+      {
+        "action": "status = 'disconnected';\n                    }\n                });\n            }\n            \n            // Public methods for UI interactions\n            executeContract() {\n                this",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": "add('active');\n        }\n        \n        function executeContract() {\n            orchestrator",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.47"
+      }
+    ],
+    "unresolved_tensions": [
+      "scrollHeight;\n                    \n                    // Keep only last 20 entries\n                    w vs (log"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "3bb3284d019cb3dbc96028108e2f75d9"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:49.877Z",
+    "source_text_length": 627,
+    "word_count": 92,
+    "sentence_count": 2,
+    "entropy_level": 0.955,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "sdfg.html"
+    },
+    "anchor_id": "ea62f89d4bfcb22969720b51fc2ec3f0"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridge",
+        "frequency": 6
+      },
+      {
+        "theme": "import",
+        "frequency": 5
+      },
+      {
+        "theme": "json",
+        "frequency": 4
+      },
+      {
+        "theme": "directory",
+        "frequency": 4
+      },
+      {
+        "theme": "fusion",
+        "frequency": 3
+      },
+      {
+        "theme": "export",
+        "frequency": 3
+      },
+      {
+        "theme": "output",
+        "frequency": 3
+      },
+      {
+        "theme": "scanner",
+        "frequency": 2
+      },
+      {
+        "theme": "input",
+        "frequency": 2
+      },
+      {
+        "theme": "status",
+        "frequency": 2
+      },
+      {
+        "theme": "idle",
+        "frequency": 2
+      },
+      {
+        "theme": "select",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Bridge: Fully Integrated Pipeline Offline system integrating fusion, scanner, bridge import/export, and bridge-pass validation Input Text Editor Execute Fusion Clear Load Example Save to Output Status: Idle Fusion Output Download JSON Copy JSON Validate JSON Directory Scanner and 7-Cycle Processor Select Input Directory Select Output Directory Scan Once Run 7 Cycles Stop Recurse subdirectories Max file size (MB): Status: Idle Progress: Processed: 0 Bridge Import / Export Import Files Import Directory Import from Extension Export Bridge Files JSON JSONMD Bridge Format (brsx) CSV Imported: 0 | Exported: 0 | Queue: 0",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ea62f89d4bfcb22969720b51fc2ec3f0"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:23.084Z",
+    "source_text_length": 17950,
+    "word_count": 2242,
+    "sentence_count": 249,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "fa5704bca005a09737839bfa57b9152b",
+    "entropy_level": 0.894,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "AEON_Indexer_Ingest_Presets.html",
+      "processing_timestamp": "2025-08-11T05:05:23.084Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 51,
+        "significance": "0.0227",
+        "examples": [
+          "class=\"muted\">Preset-ready"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 50,
+        "significance": "0.0223",
+        "examples": [
+          "</section>\n</main>\n\n<script>\nconst"
+        ]
+      },
+      {
+        "theme": "match",
+        "frequency": 31,
+        "significance": "0.0138",
+        "examples": [
+          "[{\"match\":"
+        ]
+      },
+      {
+        "theme": "scroll_id",
+        "frequency": 26,
+        "significance": "0.0116",
+        "examples": [
+          "\"scroll_id\":"
+        ]
+      },
+      {
+        "theme": "preset",
+        "frequency": 25,
+        "significance": "0.0112",
+        "examples": [
+          "(Preset-Ready,"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 25,
+        "significance": "0.0112",
+        "examples": [
+          "id=\"loadJSON\">Open"
+        ]
+      },
+      {
+        "theme": "null",
+        "frequency": 24,
+        "significance": "0.0107",
+        "examples": [
+          "Null"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 23,
+        "significance": "0.0103",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "equation",
+        "frequency": 23,
+        "significance": "0.0103",
+        "examples": [
+          "\"equation\":"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 22,
+        "significance": "0.0098",
+        "examples": [
+          "input[type=\"text\"],"
+        ]
+      },
+      {
+        "theme": "add_tags",
+        "frequency": 19,
+        "significance": "0.0085",
+        "examples": [
+          "\"add_tags\":"
+        ]
+      },
+      {
+        "theme": "items",
+        "frequency": 17,
+        "significance": "0.0076",
+        "examples": [
+          "var(--line);display:flex;gap:10px;align-items:center;flex-wrap:wrap}\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "persist ? 'ON' : 'OFF');\n}\n\nfunction saveIfNeeded(){\n  if(",
+      "match(/\\{{[\\s\\S]*?\\\"scroll_id\\\"\\s*:\\s*\\\"",
+      "+?\\\"[\\s\\S]*",
+      "?\\}}/); if(m){ try{ const maybe=JSON",
+      "id)?'checked':''}> <b>${esc(it",
+      "created?esc(it",
+      "confirm('Remove selected from view?')) return; state"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "repeat",
+      "again",
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<title>AEON Indexer + Ingest (Preset-Ready, Offline)</title>\n<style>\n  :root { --bg:#0b0f14; --fg:#e6edf3; --muted:#9fb3c8; --accent:#7cc4ff; --card:#111827; --line:#1f2937; }\n  body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}\n  header{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;flex-wrap:wrap}\n  header h1{font-size:18px;margin:0}\n   muted{color:var(--muted);font-size:13px}\n  main{padding:16px;display:grid;grid-template-columns:360px 1fr;gap:14px}\n  @media (max-width: 980px){ main{grid-template-columns:1fr} }\n  ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "createElement('button'); b",
+        "urgency_score": "0.52",
+        "feasibility_score": "0.67"
+      },
+      {
+        "action": "parse(text); }catch(e){}\n  let created=null, scroll_id=null, equation=null, glyphs=null;\n  if(obj && (obj",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.18"
+      },
+      {
+        "action": "scroll_id)){ created = obj",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.77"
+      },
+      {
+        "action": "created||null; scroll_id=obj",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.28"
+      },
+      {
+        "action": "parse(m[0]); created=maybe",
+        "urgency_score": "0.41",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": "created||null; scroll_id=maybe",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "name, hash, created, scroll_id, equation, glyphs, text: text",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.85"
+      },
+      {
+        "action": "createElement('div'); div",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": "created):''}</div>\n      </div>\n      <div class=\"tiny\">hash: ${it",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "scroll_id||'(unknown)', created: it",
+        "urgency_score": "0.36",
+        "feasibility_score": "0.80"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.8975,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.41",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "fa5704bca005a09737839bfa57b9152b"
+  }
+}

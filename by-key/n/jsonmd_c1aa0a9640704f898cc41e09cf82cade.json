@@ -1,0 +1,114 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:42.280Z",
+    "source_text_length": 6963,
+    "word_count": 833,
+    "sentence_count": 115,
+    "entropy_level": 0.934,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "scrollshell_v0.7.py.md"
+    },
+    "anchor_id": "c1aa0a9640704f898cc41e09cf82cade"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "https",
+        "frequency": 21
+      },
+      {
+        "theme": "exclude",
+        "frequency": 13
+      },
+      {
+        "theme": "context",
+        "frequency": 13
+      },
+      {
+        "theme": "scan",
+        "frequency": 12
+      },
+      {
+        "theme": "scroll",
+        "frequency": 11
+      },
+      {
+        "theme": "output",
+        "frequency": 10
+      },
+      {
+        "theme": "clause",
+        "frequency": 9
+      },
+      {
+        "theme": "strip",
+        "frequency": 8
+      },
+      {
+        "theme": "command",
+        "frequency": 7
+      },
+      {
+        "theme": "chain",
+        "frequency": 6
+      },
+      {
+        "theme": "args",
+        "frequency": 6
+      },
+      {
+        "theme": "parts",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [
+      "*?)\\)\"\n    pattern_exclude = r\"∆EXCLUDE\\((",
+      "*?)\\)\"\n    pattern_output = r\"∴OUTPUT\\((",
+      "*?)\\)\"\n    pattern_chain = r\"∴CHAIN\\((",
+      "*?)\\)\"\n\n    scan_args = re",
+      "*?\\)\", clause_text)\n        chain_clauses",
+      "com/questions/tagged/scroll?tab=active\\&page=3\n\n[^5]: https://stackoverflow",
+      "com/questions/tagged/scroll?tab=newest\\&page=427\n\n[^6]: https://www",
+      "com/watch?v=J1ysuX4lIhc\n\n[^9]: https://chromium",
+      "com/questions/tagged/scrollbar?tab=votes\\&page=28\n\n[^17]: https://github",
+      "co/datasets/iohadrubin/codeparrot-train-v2-near-dedup-safe/viewer/iohadrubin--codeparrot-train-v2-near-dedup-safe/train?p=2\n\n[^22]: https://github"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "<img src=\"https://r2cdn … com/scroll-tech/scroll-sc-tools",
+    "key_insights": [],
+    "action_items": [
+      "The code below is a stable, audit-ready release implementing compositional, multi-stage symbolic chains for robust filesystem insight pipelines",
+      "strip(\"' \\\"\")\n\n    return context\n\n# --- Step 3: Bash Command Builder ---\ndef generate_bash_command(scan, exclude):\n    filetype = scan",
+      "com/questions/24691655/scrolling-in-any-place-of-application-should-cause-scrolling-in-last-used-combob\n\n[^14]: https://stackoverflow"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c1aa0a9640704f898cc41e09cf82cade"
+  }
+}

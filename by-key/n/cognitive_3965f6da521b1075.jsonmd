@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:36.176Z",
+    "timestamp": "2025-08-11T05:52:55.788Z",
     "source_text_length": 2038,
     "word_count": 156,
     "sentence_count": 9,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "3965f6da521b107545e362c12a1c7859",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "75e988df035ca2b61723f25dd89bda322029d580c2fa9184ec9c14d3c27a6013.json",
-      "processing_timestamp": "2025-08-11T15:15:36.176Z",
+      "processing_timestamp": "2025-08-11T05:52:55.788Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -141,23 +141,23 @@
     "action_items": [
       {
         "action": "677,\n    \"contradictions_detected\": 2,\n    \"word_count\": 595\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"will\",\n        \"frequency\": 30\n      },\n      {\n        \"theme\": \"execution\",\n        \"frequency\": 13\n      },\n      {\n        \"theme\": \"type\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"details\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"actions\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"tool\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"layer\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"phase\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"step\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"description\",\n        \"frequency\": 10\n      }\n    ],\n    \"contradiction_map\": [\n      {\n        \"idx\": 0,\n        \"sample\": \"ls\\\": { \\\"actions\\\": [ \\\"I will log unreadable files as warnings, not fatal errors",
-        "urgency_score": "0.36",
-        "feasibility_score": "0.46"
+        "urgency_score": "0.93",
+        "feasibility_score": "0.00"
       },
       {
         "action": "\\\", \\\"I will check query syntax and report issues clear\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"ta for traceability",
-        "urgency_score": "0.97",
-        "feasibility_score": "0.96"
+        "urgency_score": "0.98",
+        "feasibility_score": "0.15"
       },
       {
         "action": "\\\", \\\"I will return a well-formed empty result when no matches are found",
-        "urgency_score": "0.62",
-        "feasibility_score": "0.20"
+        "urgency_score": "0.12",
+        "feasibility_score": "0.50"
       },
       {
         "action": "\\\" ], \\\"keywords\\\": [ \\\"consistent fo\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [],\n    \"summary\": \"will, execution, type, details, actions\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 0,\n    \"negative\": 0,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"ai_studio_code (1)",
-        "urgency_score": "0.17",
-        "feasibility_score": "0.57"
+        "urgency_score": "0.28",
+        "feasibility_score": "0.87"
       }
     ],
     "unresolved_tensions": []
@@ -172,9 +172,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.56",
+    "confidence_level": "0.61",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 4 actions"
     ],

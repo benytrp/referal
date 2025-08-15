@@ -1,0 +1,186 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:19.362Z",
+    "source_text_length": 2539,
+    "word_count": 225,
+    "sentence_count": 12,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "8225c304dafd00c5fe7819088103fd15",
+    "entropy_level": 0.934,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_88c5387d83b0d05ea4551336af8d230e.json",
+      "processing_timestamp": "2025-08-11T05:02:19.362Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0356",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0356",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 5,
+        "significance": "0.0222",
+        "examples": [
+          "\"function_calls\",\n"
+        ]
+      },
+      {
+        "theme": "tool",
+        "frequency": 5,
+        "significance": "0.0222",
+        "examples": [
+          "\"tool\",\n"
+        ]
+      },
+      {
+        "theme": "calls",
+        "frequency": 5,
+        "significance": "0.0222",
+        "examples": [
+          "\"function_calls\",\n"
+        ]
+      },
+      {
+        "theme": "chat",
+        "frequency": 5,
+        "significance": "0.0222",
+        "examples": [
+          "\"chat\",\n"
+        ]
+      },
+      {
+        "theme": "cheatsheet",
+        "frequency": 4,
+        "significance": "0.0178",
+        "examples": [
+          "Cheatsheet"
+        ]
+      },
+      {
+        "theme": "invoke",
+        "frequency": 3,
+        "significance": "0.0133",
+        "examples": [
+          "\"invoke\",\n"
+        ]
+      },
+      {
+        "theme": "parameters",
+        "frequency": 3,
+        "significance": "0.0133",
+        "examples": [
+          "\"parameters\",\n"
+        ]
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 3,
+        "significance": "0.0133",
+        "examples": [
+          "\"tool_name\",\n"
+        ]
+      },
+      {
+        "theme": "copy",
+        "frequency": 3,
+        "significance": "0.0133",
+        "examples": [
+          "copy-pasteable"
+        ]
+      },
+      {
+        "theme": "developer",
+        "frequency": 2,
+        "significance": "0.0089",
+        "examples": [
+          "Developer"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "repeat",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:07...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 7629,\n      \"lastModified\": 1754740156491\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"function_calls\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"invoke\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"parameters\",\n        \"frequency\": 7\n      },\n      {\n        \"theme\": \"tool\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"tool_name\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"calls\",\n        \"frequency\": 4\n      },\n      {\n        \"theme\": \"chat\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"cite\",\n        \"frequency\": 3\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [\n      \"repeat\"\n    ],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 3,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"AI Tool Calls Cheatsheet AI Tool Calls — Developer Cheatsheet (This Chat) A compact, copy-pasteable reference for invoking this chat’s tools via the XML-like &lt;function_calls&gt; syntax",
+        "urgency_score": "0.81",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"AI Tool Calls Cheatsheet AI Tool Calls — Developer Cheatsheet (This Chat) A compact, copy-pasteable reference for invoking this chat’s tools via the XML-like &lt;function_calls&gt; syntax",
+        "urgency_score": "0.69",
+        "feasibility_score": "0.61"
+      },
+      {
+        "action": "\",\n      \"run&lt;/tool_name&gt; &lt;parameters&gt;{ \\\"search_query\\\": [{\\\"q\\\": \\\"latest AI developments\\\", \\\"recency\\\": 7}], \\\"response_length\\\": \\\"short\\\" }&lt;/parameters&gt; &lt;/invoke&gt; &lt;/function_calls&gt; Execute Python Code Copy &lt;function_calls&gt; &lt;invoke&gt; &lt;tool_name&gt;python",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": "\",\n      \"create_chart python_user_visible",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.73"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.12695,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.14",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 4 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8225c304dafd00c5fe7819088103fd15"
+  }
+}

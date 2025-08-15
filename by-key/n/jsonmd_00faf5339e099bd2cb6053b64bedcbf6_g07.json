@@ -1,0 +1,351 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:16.741Z",
+    "source_text_length": 354,
+    "word_count": 18,
+    "entropy_level": 1,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "00faf5339e099bd2cb6053b64bedcbf6"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "1234",
+        "frequency": 1
+      },
+      {
+        "theme": "packet_id",
+        "frequency": 1
+      },
+      {
+        "theme": "unique_uuid_for_this_packet",
+        "frequency": 1
+      },
+      {
+        "theme": "parent_session_id",
+        "frequency": 1
+      },
+      {
+        "theme": "id_of_the_source_session",
+        "frequency": 1
+      },
+      {
+        "theme": "classification",
+        "frequency": 1
+      },
+      {
+        "theme": "the_reason_it_was_chunked",
+        "frequency": 1
+      },
+      {
+        "theme": "executive_summary",
+        "frequency": 1
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1
+      },
+      {
+        "theme": "utc_timestamp_of_creation",
+        "frequency": 1
+      },
+      {
+        "theme": "data",
+        "frequency": 1
+      },
+      {
+        "theme": "the_actual_data_chunk",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"packet_id\": \"unique_uuid_for_this_packet\",\n  \"parent_session_id\": \"id_of_the_source_session\",\n  \"classification\": \"The_Reason_It_Was_Chunked (e … },\n  \"metadata\": {\n    \"size_bytes\": 1234,\n    \"sha256_hash\": \"hash_of_the_data_chunk\"\n  }\n}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.125,
+    "cognitive_load_estimate": 0.0177,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.875,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 2,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.75,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 3,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.625,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 4,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.5,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 5,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.375,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 6,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.25,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      },
+      {
+        "generation": 7,
+        "entropy": 1,
+        "contradictions": 0,
+        "novelty_index": 0.125,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "1234",
+              "frequency": 1
+            },
+            {
+              "theme": "packet_id",
+              "frequency": 1
+            },
+            {
+              "theme": "unique_uuid_for_this_packet",
+              "frequency": 1
+            },
+            {
+              "theme": "parent_session_id",
+              "frequency": 1
+            },
+            {
+              "theme": "id_of_the_source_session",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.3
+      }
+    ],
+    "quality_score": 29
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_studio_code (15).txt",
+      "bytes": 354,
+      "lastModified": 1754625059301
+    }
+  }
+}

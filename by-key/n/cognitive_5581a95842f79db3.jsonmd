@@ -1,0 +1,217 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:31.839Z",
+    "source_text_length": 17247,
+    "word_count": 2111,
+    "sentence_count": 223,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "5581a95842f79db3d4567b1d1e51b30d",
+    "entropy_level": 0.909,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "iterative_refinement_offline_translator_debugged.html",
+      "processing_timestamp": "2025-08-11T05:05:31.839Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 33,
+        "significance": "0.0156",
+        "examples": [
+          "class=\"wrap"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 33,
+        "significance": "0.0156",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 27,
+        "significance": "0.0128",
+        "examples": [
+          "--text:#eaf0ff;"
+        ]
+      },
+      {
+        "theme": "items",
+        "frequency": 26,
+        "significance": "0.0123",
+        "examples": [
+          "align-items:center;"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 25,
+        "significance": "0.0118",
+        "examples": [
+          "--border:#1f2530;"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 22,
+        "significance": "0.0104",
+        "examples": [
+          "\"entropy\":"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 21,
+        "significance": "0.0099",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "contested",
+        "frequency": 19,
+        "significance": "0.0090",
+        "examples": [
+          "\"contested\":"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 18,
+        "significance": "0.0085",
+        "examples": [
+          "<style>\n"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 18,
+        "significance": "0.0085",
+        "examples": [
+          "id=\"sortByCycle\""
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 16,
+        "significance": "0.0076",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 15,
+        "significance": "0.0071",
+        "examples": [
+          "</section>\n</main>\n\n<script>\n(function(){\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "getAttribute('data-theme') === 'light' ? 'dark' : 'light');\n  });\n\n  // SAMPLE DATA\n  const sample = [\n    { \"cycle\": 1, \"phase\": \"Summon\", \"op\": \"analyze_goal\", \"output\": \"Interpret the primary goal: \\\"Co-write a short story about 'meta-cognition' and 'recursive loops'",
+      "length; j++){\n      const ch = text[j];\n      if (inStr){\n        if (esc){ esc = false; }\n        else if (ch === '\\\\'){ esc = true; }\n        else if (ch === '\"'){ inStr = false; }\n      } else {\n        if (ch === '\"') { inStr = true; }\n        else if (ch === '[') { if (depth === 0) i = (i === -1 ? j : i); depth++; }\n        else if (ch === ']') { depth--; if (depth === 0){ const slice = text",
+      "replace(/^```[a-zA-Z]*\\n?|```$/g, '');\n    // Replace smart quotes with straight quotes",
+      "?'} — ${escapeHtml(x",
+      "entropy==='number'?x",
+      "contested?'<span class=\"badge err\">contested</span>':''}</div>\n        <div>${escapeHtml(x",
+      "entropy==='number'?x",
+      "contested? 'true' : 'false'}</td>\n      <td>${escapeHtml(String(x"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "again",
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 4,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\" data-theme=\"dark\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Iterative Refinement — Offline Translator (Debugged)</title>\n  <style>\n    :root{\n      --bg:#0b0d10; --panel:#12151a; --muted:#7b8496; --text:#eaf0ff; --accent:#7aa2ff; --accent-2:#9dffb0; --warn:#ffcf6b; --danger:#ff7a90;\n      --border:#1f2530; --card:#121720; --shadow:0 8px 24px rgba(0,0,0, 35);\n      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n      --round: 16px;\n    }\n    [data-theme=\"light\"]{\n      --bg:#f7f9fc; --panel:#ffffff; --muted:#5b6372; --text:#0b0d10; --accent:#2a64ff; --accent-2:#0aa86f; --warn:#b17a00; --danger:#b81c36;\n      --border:#e7ebf3; --card:#fbfcff; --shadow:0 8px 24px rgba(0,0,0,...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "8fr} }\n  </style>\n</head>\n<body>\n<header>\n  <div class=\"wrap row\">\n    <strong>Iterative Refinement — Offline Translator</strong>\n    <span class=\"badge\">debugged build</span>\n    <span style=\"flex:1\"></span>\n    <button class=\"btn\" id=\"themeBtn\" type=\"button\" title=\"Toggle theme\">🌓 Theme</button>\n  </div>\n</header>\n\n<main class=\"wrap grid g-2\">\n  <section class=\"panel\" style=\"padding:16px\">\n    <div class=\"row\" style=\"justify-content:space-between\">\n      <h3 style=\"margin:6px 0\">Input</h3>\n      <div class=\"row\">\n        <label class=\"row\" style=\"gap:6px\"><input type=\"checkbox\" id=\"lenient\"/> <span class=\"muted\">Lenient parse</span></label>\n        <label class=\"row\" style=\"gap:6px\"><input type=\"checkbox\" id=\"sortByCycle\" checked/> <span class=\"muted\">Sort by cycle</span></label>\n        <label class=\"row\" style=\"gap:6px\"><input type=\"checkbox\" id=\"dedupe\" checked/> <span class=\"muted\">De‑dupe by hash</span></label>\n      </div>\n    </div>\n    <textarea id=\"raw\" placeholder=\"Paste your raw session data here — the tool will extract the first JSON array automatically",
+        "urgency_score": "0.21",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": "7483837662038213, \"contested\": false, \"hash_of_entry\": \"702304c83ab1a0ee63f70e7bcb1c2bae4be1e607798941b44feffac11f48005f\" },\n    { \"cycle\": 3, \"phase\": \"Processing\", \"op\": \"formulate_plan\", \"output\": \"Develop a high-level execution strategy",
+        "urgency_score": "0.58",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "3840690466304232, \"contested\": false, \"hash_of_entry\": \"bd3b941c0546fdfe81dadbc8f84c4721f99286c85623b206f9ad856c1f83662f\" },\n    { \"cycle\": 4, \"phase\": \"Processing\", \"op\": \"develop_characters\", \"output\": \"Flesh out the motivations for The Courier and The Architect",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.19"
+      },
+      {
+        "action": "items = [];\n  });\n\n  // Robust extraction: finds the first JSON array, ignoring brackets inside strings/escapes",
+        "urgency_score": "0.26",
+        "feasibility_score": "0.94"
+      },
+      {
+        "action": "replace(/[‘’]/g,\"'\");\n    // Attempt extraction; if it fails, last resort: locate substring between first '[' and last ']'",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.52"
+      },
+      {
+        "action": "createElement('textarea');\n        ta",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.58"
+      },
+      {
+        "action": "createElement('a');\n    a",
+        "urgency_score": "0.20",
+        "feasibility_score": "0.68"
+      },
+      {
+        "action": "createObjectURL(blob);\n    a",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.56"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.86235,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.64",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 8 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "5581a95842f79db3d4567b1d1e51b30d"
+  }
+}

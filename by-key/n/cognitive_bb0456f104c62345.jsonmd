@@ -1,0 +1,170 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:13.532Z",
+    "source_text_length": 2173,
+    "word_count": 154,
+    "sentence_count": 8,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bb0456f104c62345e830d57319fec327",
+    "entropy_level": 0.936,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_270f16311a7633c255eeb9cf6f23e495.json",
+      "processing_timestamp": "2025-08-11T05:02:13.532Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0519",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0519",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 6,
+        "significance": "0.0390",
+        "examples": [
+          "\"e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile.html\",\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 5,
+        "significance": "0.0325",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "preview",
+        "frequency": 4,
+        "significance": "0.0260",
+        "examples": [
+          "\"preview\",\n"
+        ]
+      },
+      {
+        "theme": "e3participantprofile",
+        "frequency": 3,
+        "significance": "0.0195",
+        "examples": [
+          "\"e3participantprofile\",\n"
+        ]
+      },
+      {
+        "theme": "e3dailyevaluation",
+        "frequency": 3,
+        "significance": "0.0195",
+        "examples": [
+          "\"e3dailyevaluation\",\n"
+        ]
+      },
+      {
+        "theme": "generate",
+        "frequency": 3,
+        "significance": "0.0195",
+        "examples": [
+          "\"generate\",\n"
+        ]
+      },
+      {
+        "theme": "recordtype",
+        "frequency": 3,
+        "significance": "0.0195",
+        "examples": [
+          "\"recordtype\",\n"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 3,
+        "significance": "0.0195",
+        "examples": [
+          "\"e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile.html\",\n"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0065",
+        "examples": [
+          "\"2025-08-11T04:32:39.058Z\",\n"
+        ]
+      },
+      {
+        "theme": "25425",
+        "frequency": 1,
+        "significance": "0.0065",
+        "examples": [
+          "25425,\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:32:39...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " 📁 JSON Inputs Load Examples Generate HTML Clear All Student Profile JSON (recordType: E3ParticipantProfile) Daily Evaluation JSON (recordType: E3DailyEvaluation) 🎨 Generated HTML Copy HTML Download Preview 👁️ Live Preview Refresh Preview\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.48"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.10865,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.03",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bb0456f104c62345e830d57319fec327"
+  }
+}

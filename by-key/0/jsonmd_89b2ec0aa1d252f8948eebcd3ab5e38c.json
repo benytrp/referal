@@ -1,0 +1,106 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:49.669Z",
+    "source_text_length": 4389,
+    "word_count": 534,
+    "sentence_count": 105,
+    "entropy_level": null,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (58).html"
+    },
+    "anchor_id": "89b2ec0aa1d252f8948eebcd3ab5e38c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 11
+      },
+      {
+        "theme": "prompt",
+        "frequency": 10
+      },
+      {
+        "theme": "code",
+        "frequency": 7
+      },
+      {
+        "theme": "functions",
+        "frequency": 6
+      },
+      {
+        "theme": "targetlabel",
+        "frequency": 6
+      },
+      {
+        "theme": "content",
+        "frequency": 6
+      },
+      {
+        "theme": "match",
+        "frequency": 5
+      },
+      {
+        "theme": "result",
+        "frequency": 5
+      },
+      {
+        "theme": "self",
+        "frequency": 4
+      },
+      {
+        "theme": "node",
+        "frequency": 4
+      },
+      {
+        "theme": "user",
+        "frequency": 4
+      },
+      {
+        "theme": "thread",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [
+      "match(/<script>([\\s\\S]*)<\\/script>/); targetCode = scriptMatch ? scriptMatch[1] : ''; targetLabel = `Last Artifact (ID: ${lastArtifactMsg"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON-PRIME v2 … appendChild(resultDiv); }",
+    "key_insights": [],
+    "action_items": [
+      "Every user interaction is a raw thread fed into this loom",
+      "It determines *what* must be analyzed (`self` or `last`) and retrieves the correct source code for the engine",
+      "The Scribe: _renderIntrospectionResult() The abstract, structured understanding from the AST engine must be made manifest",
+      "createElement('div'); resultDiv"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": null,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "89b2ec0aa1d252f8948eebcd3ab5e38c"
+  }
+}

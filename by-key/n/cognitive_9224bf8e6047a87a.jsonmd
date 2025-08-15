@@ -1,0 +1,215 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:22.196Z",
+    "source_text_length": 38399,
+    "word_count": 2883,
+    "sentence_count": 324,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9224bf8e6047a87aa5edd22e2d3850f3",
+    "entropy_level": 0.705,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_blacklist_v1.json",
+      "processing_timestamp": "2025-08-11T05:02:22.196Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 162,
+        "significance": "0.0562",
+        "examples": [
+          "\"2025-08-11T04:32:50.101Z\",\n"
+        ]
+      },
+      {
+        "theme": "11t04",
+        "frequency": 162,
+        "significance": "0.0562",
+        "examples": [
+          "\"2025-08-11T04:32:50.101Z\",\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 162,
+        "significance": "0.0562",
+        "examples": [
+          "\"name\":"
+        ]
+      },
+      {
+        "theme": "anchor_id",
+        "frequency": 161,
+        "significance": "0.0558",
+        "examples": [
+          "\"anchor_id\":"
+        ]
+      },
+      {
+        "theme": "relpath",
+        "frequency": 161,
+        "significance": "0.0558",
+        "examples": [
+          "\"relPath\":"
+        ]
+      },
+      {
+        "theme": "bytes",
+        "frequency": 161,
+        "significance": "0.0558",
+        "examples": [
+          "\"bytes\":"
+        ]
+      },
+      {
+        "theme": "lastmodified",
+        "frequency": 161,
+        "significance": "0.0558",
+        "examples": [
+          "\"lastModified\":"
+        ]
+      },
+      {
+        "theme": "saved",
+        "frequency": 161,
+        "significance": "0.0558",
+        "examples": [
+          "\"saved\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 136,
+        "significance": "0.0472",
+        "examples": [
+          "\"!DOCTY.html\",\n"
+        ]
+      },
+      {
+        "theme": "ai_studio_code",
+        "frequency": 20,
+        "significance": "0.0069",
+        "examples": [
+          "\"ai_studio_code"
+        ]
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 7,
+        "significance": "0.0024",
+        "examples": [
+          "\"consciousness-editor-optimized.html\",\n"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 6,
+        "significance": "0.0021",
+        "examples": [
+          "\"E3-Master-Template-Builder-AEON.html\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"version\": 1,\n  \"updated\": \"2025-08-11T04:32:50 101Z\",\n  \"items\": [\n    {\n      \"anchor_id\": \"4c42c0966ba0d511a75318850e8f3f26\",\n      \"name\": \"...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "646Z\"\n    },\n    {\n      \"anchor_id\": \"537d607a1e5c8ecb7dc96979a4b1703b\",\n      \"name\": \"E3-Master-Template-Builder-AEON",
+        "urgency_score": "0.54",
+        "feasibility_score": "0.40"
+      },
+      {
+        "action": "793Z\"\n    },\n    {\n      \"anchor_id\": \"fe0bef4e149c779c23735f7d0247a54e\",\n      \"name\": \"E3-Master-Template-Builder-Enhanced",
+        "urgency_score": "0.92",
+        "feasibility_score": "0.49"
+      },
+      {
+        "action": "457Z\"\n    },\n    {\n      \"anchor_id\": \"85c52b2296f711834f5d544a068da48b\",\n      \"name\": \"e_3_master_template_builder_offline",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "393Z\"\n    },\n    {\n      \"anchor_id\": \"e7ba6df36e58f2f1a711941af1cda908\",\n      \"name\": \"offline_json_builder_begin_anywhere (1)",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": "517Z\"\n    },\n    {\n      \"anchor_id\": \"d5078573395439cac6ff0837a291452f\",\n      \"name\": \"offline_json_builder_begin_anywhere",
+        "urgency_score": "0.93",
+        "feasibility_score": "0.04"
+      },
+      {
+        "action": "644Z\"\n    },\n    {\n      \"anchor_id\": \"6ca0169d72a245a39769da451dfc9c14\",\n      \"name\": \"offline_template_builder",
+        "urgency_score": "0.14",
+        "feasibility_score": "0.34"
+      },
+      {
+        "action": "737Z\"\n    },\n    {\n      \"anchor_id\": \"7b445dbdba51ac6f69de840a0d84cf4f\",\n      \"name\": \"simple_e3_builder (1)",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.12"
+      },
+      {
+        "action": "872Z\"\n    },\n    {\n      \"anchor_id\": \"8534115206469708c4ba48a9ac3cb548\",\n      \"name\": \"simple_e3_builder (2)",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.56"
+      },
+      {
+        "action": "992Z\"\n    },\n    {\n      \"anchor_id\": \"99b6e3549d0156d94d868cc06b42214a\",\n      \"name\": \"simple_e3_builder",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": "829Z\"\n    },\n    {\n      \"anchor_id\": \"241d03b608182baad825025d580f4ace\",\n      \"name\": \"unified_e3_builder (1)",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.91"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.93",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9224bf8e6047a87aa5edd22e2d3850f3"
+  }
+}

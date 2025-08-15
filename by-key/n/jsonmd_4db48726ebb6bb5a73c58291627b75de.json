@@ -1,0 +1,105 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:56.424Z",
+    "source_text_length": 3452,
+    "word_count": 409,
+    "sentence_count": 52,
+    "entropy_level": 0.883,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_tool_calls_developer_cheatsheet (1).md"
+    },
+    "anchor_id": "4db48726ebb6bb5a73c58291627b75de"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "purpose",
+        "frequency": 18
+      },
+      {
+        "theme": "params",
+        "frequency": 18
+      },
+      {
+        "theme": "template",
+        "frequency": 18
+      },
+      {
+        "theme": "before",
+        "frequency": 18
+      },
+      {
+        "theme": "function_calls",
+        "frequency": 12
+      },
+      {
+        "theme": "invoke",
+        "frequency": 11
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 11
+      },
+      {
+        "theme": "parameters",
+        "frequency": 11
+      },
+      {
+        "theme": "canmore",
+        "frequency": 4
+      },
+      {
+        "theme": "automations",
+        "frequency": 4
+      },
+      {
+        "theme": "exec",
+        "frequency": 4
+      },
+      {
+        "theme": "tool",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax … - For automations: keep **titles** short/imperative, **prompts** phrased as if the user is speaking, and **schedules** in iCal VEVENT",
+    "key_insights": [],
+    "action_items": [
+      "# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+      "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+      "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me",
+      "create_textdoc`\n\nPurpose, params, and template as before",
+      "create`\n\nPurpose, params, and template as before"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "4db48726ebb6bb5a73c58291627b75de"
+  }
+}

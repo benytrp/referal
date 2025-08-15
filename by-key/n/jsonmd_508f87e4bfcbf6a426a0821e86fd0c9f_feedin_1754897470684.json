@@ -1,0 +1,152 @@
+# Content Evolution - Generation 0
+
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:49.283Z",
+    "source_text_length": 13059,
+    "word_count": 1095,
+    "entropy_level": 0.914,
+    "contradictions_detected": 16,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "508f87e4bfcbf6a426a0821e86fd0c9f",
+    "source": {
+      "path": "New Text Document.txt",
+      "bytes": 13061,
+      "lastModified": 1754641641246
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "classname",
+        "frequency": 46
+      },
+      {
+        "theme": "const",
+        "frequency": 26
+      },
+      {
+        "theme": "phase",
+        "frequency": 12
+      },
+      {
+        "theme": "prev",
+        "frequency": 12
+      },
+      {
+        "theme": "rounded-lg",
+        "frequency": 12
+      },
+      {
+        "theme": "icon",
+        "frequency": 10
+      },
+      {
+        "theme": "entry",
+        "frequency": 10
+      },
+      {
+        "theme": "currentphase",
+        "frequency": 9
+      }
+    ],
+    "key_questions": [
+      "import React, { useState, useEffect } from 'react';\r\nimport { RefreshCw, ArrowRight, ArrowLeft, Circle, Square } from 'lucide-react';\r\n\r\nconst ParadoxEngine = () => {\r\n  const [rootInput, setRootInput] = useState('');\r\n  const [currentPhase, setCurrentPhase] = useState('input');\r\n  const [history, setHistory] = useState([]);\r\n  const [currentContent, setCurrentContent] = useState('');\r\n  const [reflections, setReflections] = useState([]);\r\n  const [cycleCount, setCycleCount] = useState(0);\r\n  const [isAtRoot, setIsAtRoot] = useState(false);\r\n\r\n  const phases = [\r\n    { id: 'input', name: 'ROOT QUESTION', icon: Circle },\r\n    { id: 'refinement', name: 'REFINEMENT', icon: Square },\r\n    { id: 'expansion', name: 'EXPANSION', icon: Circle },\r\n    { id: 'folding', name: 'FOLDING', icon: Square },\r\n    { id: 'contradiction', name: 'CONTRADICTION', icon: Circle },\r\n    { id: 'paradox', name: 'PARADOX GENERATION', icon: Square },\r\n    { id: 'reflection', name: 'META-REFLECTION', icon: Circle }\r\n  ];\r\n\r\n  const getCurrentPhaseIndex = () => {\r\n    return phases.findIndex(p => p.id === currentPhase);\r\n  };\r\n\r\n  const getPhasePrompt = (phase) => {\r\n    const prompts = {\r\n      input: \"Enter your root question, statement, or paradox. This becomes both your beginning and your destination.\",\r\n      refinement: `Looking at: \"${rootInput}\"\\n\\nREFINE this into its most essential contradiction. What is the core tension?",
+      "Strip away everything except the paradox itself.`,\r\n      expansion: `From your refinement, EXPAND outward. What new territories does this contradiction reveal?",
+      "What questions emerge when you follow each thread?",
+      "`,\r\n      folding: `Now FOLD these expansions back onto themselves. Where do they contradict each other?",
+      "What happens when you compress all possibilities into one point?",
+      "`,\r\n      contradiction: `Identify the CONTRADICTIONS within your folding. Let each contradiction spawn its opposite. What cannot coexist but must?",
+      "`,\r\n      paradox: `Generate NEW PARADOXES from these contradictions. Create impossible statements that feel true. Birth new impossibilities.`,\r\n      reflection: `META-REFLECT on everything so far. What did this cycle reveal about your root input?",
+      "How has \"${rootInput}\" changed while remaining the same?",
+      "What new cycle does this suggest?",
+      "`\r\n    };\r\n    return prompts[phase];\r\n  };\r\n\r\n  const advancePhase = () => {\r\n    if (!currentContent.trim()) return;\r\n\r\n    const newEntry = {\r\n      phase: currentPhase,\r\n      content: currentContent,\r\n      timestamp: Date.now(),\r\n      cycleCount: cycleCount\r\n    };\r\n\r\n    setHistory(prev => [...prev, newEntry]);\r\n\r\n    if (currentPhase === 'reflection') {\r\n      // Check if we've returned to root conceptually\r\n      const similarity = checkSimilarityToRoot(currentContent);\r\n      if (similarity > 0.7) {\r\n        setIsAtRoot(true);\r\n        setReflections(prev => [...prev, `CYCLE ${cycleCount + 1} COMPLETE: Returned to root through: ${currentContent.substring(0, 100)}...`]);\r\n      } else {\r\n        // Continue the spiral\r\n        setCycleCount(prev => prev + 1);\r\n        setCurrentPhase('refinement');\r\n        setReflections(prev => [...prev, `CYCLE ${cycleCount + 1}: New spiral begins from: ${currentContent.substring(0, 100)}...`]);\r\n      }\r\n    } else {\r\n      const nextPhaseIndex = (getCurrentPhaseIndex() + 1) % phases.length;\r\n      if (nextPhaseIndex === 0) {\r\n        setCurrentPhase('refinement');\r\n      } else {\r\n        setCurrentPhase(phases[nextPhaseIndex].id);\r\n      }\r\n    }\r\n\r\n    setCurrentContent('');\r\n  };\r\n\r\n  const checkSimilarityToRoot = (content) => {\r\n    // Simple similarity check - in reality this could be more sophisticated\r\n    const rootWords = rootInput.toLowerCase().split(/\\s+/);\r\n    const contentWords = content.toLowerCase().split(/\\s+/);\r\n    const commonWords = rootWords.filter(word => contentWords.includes(word));\r\n    return commonWords.length / Math.max(rootWords.length, contentWords.length);\r\n  };\r\n\r\n  const startNewCycle = () => {\r\n    setIsAtRoot(false);\r\n    setCycleCount(prev => prev + 1);\r\n    setCurrentPhase('refinement');\r\n    setCurrentContent('');\r\n  };\r\n\r\n  const jumpToAnyPoint = (entry) => {\r\n    // Any point can become a new beginning\r\n    setCurrentContent(entry.content);\r\n    setCurrentPhase(entry.phase);\r\n    setReflections(prev => [...prev, `JUMPED TO: ${entry.phase.toUpperCase()} from cycle ${entry.cycleCount}`]);\r\n  };\r\n\r\n  const resetToRoot = () => {\r\n    setCurrentPhase('input');\r\n    setHistory([]);\r\n    setCurrentContent('');\r\n    setReflections([]);\r\n    setCycleCount(0);\r\n    setIsAtRoot(false);\r\n    setRootInput('');\r\n  };\r\n\r\n  if (currentPhase === 'input') {\r\n    return (\r\n      <div className=\"min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white p-6\">\r\n        <div className=\"max-w-4xl mx-auto\">\r\n          <div className=\"text-center mb-8\">\r\n            <h1 className=\"text-4xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent\">\r\n              THE INFINITE PARADOX ENGINE\r\n            </h1>\r\n            <p className=\"text-gray-300 text-lg\">\r\n              Enter the spiral. The only exit is through return.\r\n            </p>\r\n          </div>\r\n\r\n          <div className=\"bg-gray-800/50 backdrop-blur rounded-lg p-8 border border-purple-500/30\">\r\n            <label className=\"block text-purple-300 text-sm font-medium mb-4\">\r\n              ROOT QUESTION / STATEMENT / PARADOX\r\n            </label>\r\n            <textarea\r\n              value={rootInput}\r\n              onChange={(e) => setRootInput(e.target.value)}\r\n              className=\"w-full h-32 bg-gray-700/50 border border-purple-500/30 rounded-lg p-4 text-white placeholder-gray-400 focus:border-purple-400 focus:outline-none resize-none\"\r\n              placeholder=\"Enter anything that sparks inquiry... This becomes both your beginning and your destination.\"\r\n            />\r\n            <button\r\n              onClick={() => {\r\n                if (rootInput.trim()) {\r\n                  setCurrentPhase('refinement');\r\n                }\r\n              }}\r\n              disabled={!rootInput.trim()}\r\n              className=\"mt-4 bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700 disabled:from-gray-600 disabled:to-gray-600 px-6 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2\"\r\n            >\r\n              Enter the Spiral <ArrowRight size={20} />\r\n            </button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    );\r\n  }\r\n\r\n  return (\r\n    <div className=\"min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white p-6\">\r\n      <div className=\"max-w-6xl mx-auto\">\r\n        {/* Header */}\r\n        <div className=\"text-center mb-6\">\r\n          <h1 className=\"text-3xl font-bold mb-2 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent\">\r\n            CYCLE {cycleCount + 1}\r\n          </h1>\r\n          <p className=\"text-gray-300\">\r\n            ROOT: \"{rootInput}\"\r\n          </p>\r\n        </div>\r\n\r\n        {/* Phase Progress */}\r\n        <div className=\"flex justify-center mb-8\">\r\n          <div className=\"flex items-center gap-2 bg-gray-800/50 rounded-full p-2\">\r\n            {phases.slice(1).map((phase, index) => {\r\n              const Icon = phase.icon;\r\n              const isActive = phase.id === currentPhase;\r\n              const isPassed = getCurrentPhaseIndex() > index + 1;\r\n              \r\n              return (\r\n                <div key={phase.id} className=\"flex items-center\">\r\n                  <div className={`w-10 h-10 rounded-full flex items-center justify-center ${\r\n                    isActive ?"
+    ],
+    "pattern_recognition": [
+      "every",
+      "cycle"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "What cannot coexist",
+        "statement_b": "must?",
+        "line": 16,
+        "connector": "but",
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "import React, { useState, useEffect } from 'react';\r\nimport { RefreshCw, ArrowRight, ArrowLeft, Circle, Square } from 'lucide-react';\r\n\r\nconst ParadoxEngine = () => {\r\n  const [rootInput, setRootInput] = useState('');\r\n  const [currentPhase, setCurrentPhase] = useState('input');\r\n  const [history, setHistory] = useState([]);\r\n  const [currentContent, setCurrentContent] = useState('');\r\n  const [reflections, setReflections] = useState([]);\r\n  const [cycleCount, setCycleCount] = useState(0);\r\n  const [isAtRoot, setIsAtRoot] = useState(false);\r\n\r\n  const phases = [\r\n    { id: 'input', name: 'ROOT",
+    "key_insights": [],
+    "action_items": [
+      "What cannot coexist but must?",
+      "Create impossible statements that feel true."
+    ],
+    "unresolved_tensions": [
+      "import React, { useState, useEffect } from 'react';\r\nimport { RefreshCw, ArrowRight, ArrowLeft, Circle, Square } from 'lucide-react';\r\n\r\nconst ParadoxEngine = () => {\r\n  const [rootInput, setRootInput] = useState('');\r\n  const [currentPhase, setCurrentPhase] = useState('input');\r\n  const [history, setHistory] = useState([]);\r\n  const [currentContent, setCurrentContent] = useState('');\r\n  const [reflections, setReflections] = useState([]);\r\n  const [cycleCount, setCycleCount] = useState(0);\r\n  const [isAtRoot, setIsAtRoot] = useState(false);\r\n\r\n  const phases = [\r\n    { id: 'input', name: 'ROOT QUESTION', icon: Circle },\r\n    { id: 'refinement', name: 'REFINEMENT', icon: Square },\r\n    { id: 'expansion', name: 'EXPANSION', icon: Circle },\r\n    { id: 'folding', name: 'FOLDING', icon: Square },\r\n    { id: 'contradiction', name: 'CONTRADICTION', icon: Circle },\r\n    { id: 'paradox', name: 'PARADOX GENERATION', icon: Square },\r\n    { id: 'reflection', name: 'META-REFLECTION', icon: Circle }\r\n  ];\r\n\r\n  const getCurrentPhaseIndex = () => {\r\n    return phases.",
+      "\",\r\n      refinement: `Looking at: \"${rootInput}\"\\n\\nREFINE this into its most essential contradiction.",
+      "What is the core tension?",
+      "What new territories does this contradiction reveal?",
+      "`,\r\n      contradiction: `Identify the CONTRADICTIONS within your folding.",
+      "Let each contradiction spawn its opposite.",
+      "`,\r\n      paradox: `Generate NEW PARADOXES from these contradictions."
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.04,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Medium - some recursive elements",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 1598
+- Complexity score: 100.0
+- Key themes: const, usestate, classname, from, text, icon, name, prev, contradiction, gray
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of const?
+2. How does const connect to broader patterns?
+3. What are the deeper implications of usestate?
+4. How does usestate connect to broader patterns?
+5. What are the deeper implications of classname?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: const, usestate, classname
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: const
+This theme emerges as significant in generation 0. Consider how const relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: usestate
+This theme emerges as significant in generation 0. Consider how usestate relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

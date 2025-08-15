@@ -1,0 +1,110 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:59:13.228Z",
+    "source_text_length": 2023,
+    "word_count": 221,
+    "sentence_count": 13,
+    "entropy_level": 0.942,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsonmd_4b1e74868338c6be401fb64a74855313.json"
+    },
+    "anchor_id": "cf95758f8ffcfa90d98f5a2f749bcb7a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "happens",
+        "frequency": 4
+      },
+      {
+        "theme": "change",
+        "frequency": 4
+      },
+      {
+        "theme": "count",
+        "frequency": 4
+      },
+      {
+        "theme": "javascript",
+        "frequency": 3
+      },
+      {
+        "theme": "loops",
+        "frequency": 3
+      },
+      {
+        "theme": "condition",
+        "frequency": 2
+      },
+      {
+        "theme": "code",
+        "frequency": 2
+      },
+      {
+        "theme": "make",
+        "frequency": 2
+      },
+      {
+        "theme": "fruits",
+        "frequency": 2
+      },
+      {
+        "theme": "list",
+        "frequency": 2
+      },
+      {
+        "theme": "learn",
+        "frequency": 2
+      },
+      {
+        "theme": "doing",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [
+      "html\",\n      \"bytes\": 12151,\n      \"lastModified\": 1754896562575\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [],\n    \"key_questions\": [\n      \" What does each part do? // A for loop has three parts: start, condition, increment for (let i = 0; i ▶️ Run This Code ↺ Reset Click \\\"Run This Code\\\" to see what happens\",\n      \" Think about it: • What happens if you change the 5 to a 3",
+      "? • What if you change i++ to i += 2\",\n      \"",
+      "? • Can you make it count backwards\",\n      \"",
+      "? 2\",\n      \" Think about it: • What happens if you forget the count++ line",
+      "? • What if you change the condition to count • Can you make it count by 2s instead of 1s\",\n      \"",
+      "? 3\",\n      \" Think about it: • Can you add more fruits to the list",
+      "? • What if you change \\\"fruits\\\" to \\\"colors\\\" and add color names\",\n      \"",
+      "? • Try adding numbers to the list - what happens\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"JavaScript Loops - Learn by Doing JavaScript Loops: Learn by Doing Learning Goal: By the end of this, you'll understand how JavaScript loops work by modifying a…\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Browser offline scan (Downloads folder)\",\n    \"confidence_level\": 1,\n    \"recommended_next_steps\": [],\n    \"recursive_potential\": \"n/a\"\n  }\n}"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 … • Try adding numbers to the list - what happens\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"JavaScript Loops - Learn by Doing JavaScript Loops: Learn by Doing Learning Goal: By the end of this, you'll understand how JavaScript loops work by modifying a…\",\n    \"key_insights\": [],\n    \"acti",
+    "key_insights": [],
+    "action_items": [
+      "• Try adding numbers to the list - what happens\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"JavaScript Loops - Learn by Doing JavaScript Loops: Learn by Doing Learning Goal: By the end of this, you'll understand how JavaScript loops work by modifying a…\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Browser offline scan (Downloads folder)\",\n    \"confidence_level\": 1,\n    \"recommended_next_steps\": [],\n    \"recursive_potential\": \"n/a\"\n  }\n}"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "cf95758f8ffcfa90d98f5a2f749bcb7a"
+  }
+}

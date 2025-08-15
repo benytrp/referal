@@ -1,0 +1,211 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:38.065Z",
+    "source_text_length": 1083641,
+    "word_count": 186619,
+    "sentence_count": 51859,
+    "entropy_level": null,
+    "contradictions_detected": 13,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "PS CUsersChris ,d.e(shared~loader.D.txt"
+    },
+    "anchor_id": "c5768bbd8450b5917753623202995837"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "loader",
+        "frequency": 6464
+      },
+      {
+        "theme": "return",
+        "frequency": 3439
+      },
+      {
+        "theme": "ondemand",
+        "frequency": 3429
+      },
+      {
+        "theme": "function",
+        "frequency": 2621
+      },
+      {
+        "theme": "shared",
+        "frequency": 2319
+      },
+      {
+        "theme": "dmdrawer",
+        "frequency": 1536
+      },
+      {
+        "theme": "const",
+        "frequency": 1493
+      },
+      {
+        "theme": "dashmenu",
+        "frequency": 1471
+      },
+      {
+        "theme": "bundle",
+        "frequency": 1412
+      },
+      {
+        "theme": "dashmodal",
+        "frequency": 1218
+      },
+      {
+        "theme": "audiodock",
+        "frequency": 1209
+      },
+      {
+        "theme": "inlineplayer",
+        "frequency": 1075
+      }
+    ],
+    "key_questions": [
+      "state?",
+      "p?d",
+      "state):D&&p||m?d",
+      "(h||c&&u)||w||y?i&&(D||b)||D&&t||d",
+      "d(a,{$F:()=>C,A2:()=>ie,A4:()=>ge,BP:()=>H,BV:()=>Z,Cq:()=>X,Cy:()=>M,DY:()=>F,Do:()=>L,EB:()=>g,EE:()=>c,FA:()=>me,Fj:()=>Ie,G7:()=>Q,HO:()=>w,Hr:()=>se,I$:()=>G,I2:()=>m,JD:()=>ve,Jf:()=>u,Jr:()=>ye,Jv:()=>V,KC:()=>Ae,Lt:()=>U,O:()=>_,Og:()=>ue,Q7:()=>b,Sj:()=>ne,Tk:()=>R,UE:()=>p,UI:()=>Pe,UZ:()=>De,W4:()=>Y,Wq:()=>s,Xj:()=>I,_N:()=>v,_Q:()=>x,aD:()=>h,bY:()=>P,bm:()=>i,c$:()=>B,cD:()=>D,dh:()=>ke,fH:()=>de,fP:()=>O,fW:()=>re,gC:()=>S,hU:()=>f,hv:()=>Me,i5:()=>ce,i_:()=>oe,jp:()=>le,k5:()=>j,kM:()=>k,mL:()=>be,mT:()=>z,mt:()=>te,nM:()=>$,oF:()=>ae,oQ:()=>K,pn:()=>q,qX:()=>J,rj:()=>W,sA:()=>y,tH:()=>A,u0:()=>N,uO:()=>fe,v$:()=>he,vr:()=>E,wG:()=>T,wx:()=>pe,xS:()=>we,xv:()=>Se,yf:()=>_e,yx:()=>ee});var o=d(395067),r=d(150236),n=d(363895),l=d(152469);const s={alias:\"[a-zA-Z0-9_-]+\",base64:\"[a-zA-Z0-9%]+\",bookmarkFolderId:\"[0-9]+\",broadcastId:\"[a-zA-Z0-9]+\",creatorSubscriptionsSubroute:\"subscribers|subscriptions\",digit:\"[0-9]\",dmConversationId:\"e?[0-9-]+\",emailLinkSecret:\"[0-9A-H]+-[0-9A-H]+-[0-9]+\",followersSubroute:\"superfollowers|followers_you_follow|followers|following|verified_followers\",gifCategoryId:\"[a-z0-9_]+\",grokMediaId:\"[0-9-]+\",grokShareId:\"[a-zA-Z0-9]{25}\",id:\"\\\\d{1,20}\",impressionId:\"[a-z0-9]+\",integer:\"-",
+      "?\\\\d{1,10}\",jfRoute:\"",
+      "]+\",tweetEngagementsSubroute:\"likes|retweets|quotes\",unsafeString:\"[^/]+\",videoContentId:\"[0-9_]+\",xChatConversationId:\"g?[0-9-]+\",xChatInfoSubTab:\"edit-group\",xChatInfoTab:\"info|vanishing-mode|participants|group-invite\",xChatInviteToken:\"[a-zA-Z0-9]+\",xChatPinMode:\"new|recovery|forgot|verify\",xprofileType:\"richtext|work_history|about|work_experience\"},t=(e,a)=>`:${e}(${a})`,i=t(\"alias\",s",
+      "hC)(\"subscriptions_stripe_testing\")?o",
+      "promotions?",
+      "forEach((e=>{e?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "n(o);const n=e=>(r()(\"string\"==typeof e,`url must be a string",
+        "statement_b": "got ${e}`),l()",
+        "line": 27784,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "com\")}const s=e=>(r()(\"string\"==typeof e,`url must be a string",
+        "statement_b": "got ${e}`),l()",
+        "line": 27795,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "com\");if(r()(\"string\"==typeof e,`url must be a string",
+        "statement_b": "got ${e}`),r()(\"boolean\"==typeof d,\"isX must be provided when running on the server",
+        "line": 37104,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "length-1]:o[0])+\"",
+        "statement_b": "\"+(a",
+        "line": 47279,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "name+'\" to not repeat,",
+        "statement_b": "received `'+JSON",
+        "line": 47950,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "pattern+'\",",
+        "statement_b": "received `'+JSON",
+        "line": 47959,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "pattern+'\",",
+        "statement_b": "received \"'+c+'\"');n+=u",
+        "line": 47974,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "length)throw new TypeError(\"1 argument required,",
+        "statement_b": "only 0 present",
+        "line": 48413,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "length)throw new TypeError(\"1 argument required,",
+        "statement_b": "only 0 present",
+        "line": 48429,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "length)throw new TypeError(\"1 argument required,",
+        "statement_b": "only 0 present",
+        "line": 48480,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "warn(\"accessing an object -",
+        "statement_b": "returnObjects options is not enabled",
+        "line": 49528,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "join(\", \")}\" won't get resolved as namespace \"${s}\" was not",
+        "statement_b": "loaded`,\"This means something IS WRONG in your setup",
+        "line": 49704,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "warn(`did not save key \"${d}\" as the namespace \"${a}\" was not",
+        "statement_b": "loaded`,\"This means something IS WRONG in your setup",
+        "line": 50453,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 3,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "PS C:\\Users\\Chris> ,d … tive,\",",
+    "key_insights": [
+      "warn(`It seems you are nesting recursively key: ${e[0]} in key: ${a[0]}`),null)),d)),d",
+      "join(\", \")}\" won't get resolved as namespace \"${s}\" was not yet loaded`,\"This means something IS WRONG in your setup",
+      "warn(`did not save key \"${d}\" as the namespace \"${a}\" was not yet loaded`,\"This means something IS WRONG in your setup"
+    ],
+    "action_items": [
+      "bind(d,934410))),{shouldMigrateToX:",
+      "bind(d,51011))),{shouldMigrateToX:",
+      "bind(d,317897))),{shouldMigrateToX:",
+      "bind(d,722847))),{shouldMigrateToX:",
+      "bind(d,721617))),{shouldMigrateToX:",
+      "bind(d,185439))),{shouldMigrateToX:",
+      "bind(d,633525))),{shouldMigrateToX:",
+      "bind(d,980633))),{shouldMigrateToX:",
+      "bind(d,945018))),{shouldMigrateToX:",
+      "bind(d,840907))),{shouldMigrateToX:"
+    ],
+    "unresolved_tensions": [
+      "n(o);const n=e=>(r()(\"string\"==typeof e,`url must be a string vs got ${e}`),l()",
+      "com\")}const s=e=>(r()(\"string\"==typeof e,`url must be a string vs got ${e}`),l()",
+      "com\");if(r()(\"string\"==typeof e,`url must be a string vs got ${e}`),r()(\"boolean\"==typeof d,\"isX must be provided when running on the server",
+      "length-1]:o[0])+\" vs \"+(a",
+      "name+'\" to not repeat, vs received `'+JSON",
+      "pattern+'\", vs received `'+JSON"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": null,
+    "recommended_next_steps": [
+      "Review 3 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "c5768bbd8450b5917753623202995837"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:28.215Z",
+    "source_text_length": 2706,
+    "word_count": 161,
+    "sentence_count": 7,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "03b21a9dea000e6a479cc91b51a4184f",
+    "entropy_level": 0.937,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "contract-execution-data.json",
+      "processing_timestamp": "2025-08-11T05:05:28.215Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "parameters",
+        "frequency": 8,
+        "significance": "0.0497",
+        "examples": [
+          "\"parameters\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 6,
+        "significance": "0.0373",
+        "examples": [
+          "entropy"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "data"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "\"phase_name\":"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "\"status\":"
+        ]
+      },
+      {
+        "theme": "lastseen",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "\"lastSeen\":"
+        ]
+      },
+      {
+        "theme": "1754863120457",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "1754863120457,\n"
+        ]
+      },
+      {
+        "theme": "assignedoperations",
+        "frequency": 5,
+        "significance": "0.0311",
+        "examples": [
+          "\"assignedOperations\":"
+        ]
+      },
+      {
+        "theme": "phase_name",
+        "frequency": 4,
+        "significance": "0.0248",
+        "examples": [
+          "\"phase_name\":"
+        ]
+      },
+      {
+        "theme": "operations",
+        "frequency": 4,
+        "significance": "0.0248",
+        "examples": [
+          "\"operations\":"
+        ]
+      },
+      {
+        "theme": "analysis",
+        "frequency": 3,
+        "significance": "0.0186",
+        "examples": [
+          "analysis"
+        ]
+      },
+      {
+        "theme": "report",
+        "frequency": 3,
+        "significance": "0.0186",
+        "examples": [
+          "report\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"contract\": {\n    \"trigger\": \"<x>\",\n    \"contract\": {\n      \"goal\": \"Perform systematic data analysis and generate actionable insights\",\n      \"constraints\": [\n        \"Maintain entropy below 0 8\",\n        \"Complete within 8 cycles\",\n        \"Validate all data sources\"\n      ],\n      \"success_criteria\": [\n        \"Generate comprehensive analysis report\",\n        \"Identify key patterns and trends\",\n        \"Provide actionable recommendations\"\n      ]\n    },\n    \"phases\": [\n      {\n        \"phase_name\": \"Data Collection\",\n        \"operations\": [\n          {\n            \"op\": \"gather_data\",\n            \"parameters\": {}\n          },\n          {\n            \"op\": \"validate_sources\",\n            \"parameters\": {}\n          }\n        ],\n        \"entropy\": 0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "{\n  \"contract\": {\n    \"trigger\": \"<x>\",\n    \"contract\": {\n      \"goal\": \"Perform systematic data analysis and generate actionable insights\",\n      \"constraints\": [\n        \"Maintain entropy below 0",
+        "urgency_score": "0.78",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "8\",\n        \"Complete within 8 cycles\",\n        \"Validate all data sources\"\n      ],\n      \"success_criteria\": [\n        \"Generate comprehensive analysis report\",\n        \"Identify key patterns and trends\",\n        \"Provide actionable recommendations\"\n      ]\n    },\n    \"phases\": [\n      {\n        \"phase_name\": \"Data Collection\",\n        \"operations\": [\n          {\n            \"op\": \"gather_data\",\n            \"parameters\": {}\n          },\n          {\n            \"op\": \"validate_sources\",\n            \"parameters\": {}\n          }\n        ],\n        \"entropy\": 0",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.57"
+      },
+      {
+        "action": "18470798837435343,\n  \"operationsCompleted\": 4,\n  \"cycleCount\": 3,\n  \"artifacts\": [\n    {\n      \"id\": \"nvrstry-builder\",\n      \"name\": \"Nvrstry JSON Builder\",\n      \"status\": \"connected\",\n      \"lastSeen\": 1754863120457,\n      \"assignedOperations\": []\n    },\n    {\n      \"id\": \"pattern-engine\",\n      \"name\": \"Pattern Recognition Engine\",\n      \"status\": \"processing\",\n      \"lastSeen\": 1754863120457,\n      \"assignedOperations\": []\n    },\n    {\n      \"id\": \"data-viz\",\n      \"name\": \"Data Visualization Engine\",\n      \"status\": \"connected\",\n      \"lastSeen\": 1754863120457,\n      \"assignedOperations\": []\n    },\n    {\n      \"id\": \"report-gen\",\n      \"name\": \"Report Generator\",\n      \"status\": \"disconnected\",\n      \"lastSeen\": 1754863120457,\n      \"assignedOperations\": []\n    },\n    {\n      \"id\": \"consciousness-editor\",\n      \"name\": \"Consciousness Framework Editor\",\n      \"status\": \"connected\",\n      \"lastSeen\": 1754863120457,\n      \"assignedOperations\": []\n    }\n  ],\n  \"timestamp\": 1754863128516\n}",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.50"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.8666666666666667,
+    "cognitive_load_estimate": 0.1353,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.86",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "03b21a9dea000e6a479cc91b51a4184f"
+  }
+}

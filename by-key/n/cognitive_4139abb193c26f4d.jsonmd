@@ -1,0 +1,228 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:39.579Z",
+    "source_text_length": 58338,
+    "word_count": 4726,
+    "sentence_count": 443,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "4139abb193c26f4d8beb9c5fe76dd664",
+    "entropy_level": 0.86,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "xlogic_schema_builder.html",
+      "processing_timestamp": "2025-08-11T05:05:39.579Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 143,
+        "significance": "0.0303",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 68,
+        "significance": "0.0144",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 64,
+        "significance": "0.0135",
+        "examples": [
+          "constraints"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 64,
+        "significance": "0.0135",
+        "examples": [
+          "documentation</div>\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 55,
+        "significance": "0.0116",
+        "examples": [
+          "value=\"simple\">Simple"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 48,
+        "significance": "0.0102",
+        "examples": [
+          "label"
+        ]
+      },
+      {
+        "theme": "preset",
+        "frequency": 48,
+        "significance": "0.0102",
+        "examples": [
+          ".preset-grid"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 48,
+        "significance": "0.0102",
+        "examples": [
+          "document.getElementById('goalInput').value"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 41,
+        "significance": "0.0087",
+        "examples": [
+          ".phase-builder"
+        ]
+      },
+      {
+        "theme": "phases",
+        "frequency": 41,
+        "significance": "0.0087",
+        "examples": [
+          "onclick=\"switchTab('phases')\">Phases</button>\n"
+        ]
+      },
+      {
+        "theme": "margin",
+        "frequency": 40,
+        "significance": "0.0085",
+        "examples": [
+          "margin:"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 40,
+        "significance": "0.0085",
+        "examples": [
+          "<button"
+        ]
+      }
+    ],
+    "key_questions": [
+      "-- Contract Tab -->\n            <div class=\"tab-content active\" id=\"contract-tab\">\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"goalInput\">Primary Goal</label>\n                        <div class=\"help-icon\" data-help=\"The main objective the system should achieve\">?</div>\n                    </div>\n                    <textarea id=\"goalInput\" rows=\"3\" placeholder=\"Describe what you want the X-Logic system to accomplish",
+      "\"></textarea>\n                </div>\n\n                <div class=\"form-row\">\n                    <div class=\"form-group\">\n                        <div class=\"label-with-help\">\n                            <label for=\"complexityLevel\">Complexity Level</label>\n                            <div class=\"help-icon\" data-help=\"Determines default constraints and phase structure\">?</div>\n                        </div>\n                        <select id=\"complexityLevel\" onchange=\"updateComplexitySuggestions()\">\n                            <option value=\"simple\">Simple (1-3 cycles)</option>\n                            <option value=\"moderate\">Moderate (3-7 cycles)</option>\n                            <option value=\"complex\">Complex (5-15 cycles)</option>\n                            <option value=\"adaptive\">Adaptive (No fixed limit)</option>\n                        </select>\n                    </div>\n                    <div class=\"form-group\">\n                        <div class=\"label-with-help\">\n                            <label for=\"riskTolerance\">Risk Tolerance</label>\n                            <div class=\"help-icon\" data-help=\"How much constraint violation is acceptable\">",
+      "?</div>\n                        </div>\n                        <select id=\"riskTolerance\">\n                            <option value=\"conservative\">Conservative (Strict limits)</option>\n                            <option value=\"balanced\">Balanced (Some flexibility)</option>\n                            <option value=\"aggressive\">Aggressive (Adaptive limits)</option>\n                        </select>\n                    </div>\n                </div>\n\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"constraintsInput\">Constraints</label>\n                        <div class=\"help-icon\" data-help=\"Limits and boundaries for system operation\">",
+      "?</div>\n                    </div>\n                    <textarea id=\"constraintsInput\" rows=\"3\" placeholder=\"Enter constraints, one per line",
+      "\"></textarea>\n                </div>\n\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"successCriteriaInput\">Success Criteria</label>\n                        <div class=\"help-icon\" data-help=\"How to measure if the goal was achieved\">?</div>\n                    </div>\n                    <textarea id=\"successCriteriaInput\" rows=\"3\" placeholder=\"Enter success criteria, one per line",
+      "-- Advanced Tab -->\n            <div class=\"tab-content\" id=\"advanced-tab\">\n                <div class=\"form-row\">\n                    <div class=\"form-group\">\n                        <div class=\"label-with-help\">\n                            <label for=\"entropyThreshold\">Entropy Threshold</label>\n                            <div class=\"help-icon\" data-help=\"Maximum entropy before system adaptation\">?</div>\n                        </div>\n                        <input type=\"number\" id=\"entropyThreshold\" value=\"0",
+      "0\">\n                    </div>\n                    <div class=\"form-group\">\n                        <div class=\"label-with-help\">\n                            <label for=\"maxCycles\">Maximum Cycles</label>\n                            <div class=\"help-icon\" data-help=\"Safety limit for execution cycles\">?</div>\n                        </div>\n                        <input type=\"number\" id=\"maxCycles\" value=\"10\" min=\"1\" max=\"50\">\n                    </div>\n                </div>\n\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"parallelSandboxes\">Enable Parallel Sandboxes</label>\n                        <div class=\"help-icon\" data-help=\"Allow system to create parallel processing environments\">",
+      "?</div>\n                    </div>\n                    <select id=\"parallelSandboxes\">\n                        <option value=\"auto\">Auto (Based on complexity)</option>\n                        <option value=\"enabled\">Always Enabled</option>\n                        <option value=\"disabled\">Disabled</option>\n                    </select>\n                </div>\n\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"customTrigger\">Custom Trigger</label>\n                        <div class=\"help-icon\" data-help=\"Override default <x> trigger\">"
+    ],
+    "pattern_recognition": [
+      "cycle",
+      "repeat",
+      "return",
+      "iteration",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 29,
+      "future": 6
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>X-Logic Schema Builder</title>\n    <style>\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        \n        body {\n            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;\n            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);\n            color: #e2e8f0;\n            min-height: 100vh;\n            overflow-x: hidden;\n        }\n\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "0\">\n    <title>X-Logic Schema Builder</title>\n    <style>\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        \n        body {\n            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;\n            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);\n            color: #e2e8f0;\n            min-height: 100vh;\n            overflow-x: hidden;\n        }\n\n        ",
+        "urgency_score": "0.79",
+        "feasibility_score": "0.78"
+      },
+      {
+        "action": "phase-builder {\n            background: rgba(15, 23, 42, 0",
+        "urgency_score": "0.14",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "preset-grid {\n                grid-template-columns: 1fr;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>🔧 X-Logic Schema Builder</h1>\n            <p class=\"subtitle\">Create, customize, and manage autonomous consciousness engine schemas</p>\n        </div>\n\n        <",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "-- Left Panel: Schema Builder -->\n        <div class=\"panel\">\n            <h2 class=\"section-title\">\n                🎯 Schema Builder\n            </h2>\n\n            <",
+        "urgency_score": "0.93",
+        "feasibility_score": "0.25"
+      },
+      {
+        "action": "9rem;\">Choose a template below or start from scratch to build your custom X-Logic schema",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.15"
+      },
+      {
+        "action": "-- Contract Tab -->\n            <div class=\"tab-content active\" id=\"contract-tab\">\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"goalInput\">Primary Goal</label>\n                        <div class=\"help-icon\" data-help=\"The main objective the system should achieve\">",
+        "urgency_score": "0.70",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": "-- Phases will be dynamically added here -->\n                </div>\n\n                <div class=\"suggestions-panel\">\n                    <h4 style=\"color: #10b981; margin-bottom: 0",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "5rem;\">🔄 Common Phase Patterns</h4>\n                    <div class=\"suggestion-item\">\n                        <span class=\"suggestion-icon\">📥</span>\n                        <span><strong>Input → Process → Output:</strong> Linear workflow for straightforward tasks</span>\n                    </div>\n                    <div class=\"suggestion-item\">\n                        <span class=\"suggestion-icon\">🔄</span>\n                        <span><strong>Analyze → Plan → Execute → Reflect:</strong> Iterative improvement cycle</span>\n                    </div>\n                    <div class=\"suggestion-item\">\n                        <span class=\"suggestion-icon\">🎯</span>\n                        <span><strong>Research → Synthesize → Validate:</strong> Knowledge-focused workflow</span>\n                    </div>\n                </div>\n            </div>\n\n            <",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.20"
+      },
+      {
+        "action": "</div>\n                        </div>\n                        <input type=\"number\" id=\"maxCycles\" value=\"10\" min=\"1\" max=\"50\">\n                    </div>\n                </div>\n\n                <div class=\"form-group\">\n                    <div class=\"label-with-help\">\n                        <label for=\"parallelSandboxes\">Enable Parallel Sandboxes</label>\n                        <div class=\"help-icon\" data-help=\"Allow system to create parallel processing environments\">",
+        "urgency_score": "0.70",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "-- Right Panel: Preview & Export -->\n        <div class=\"panel\">\n            <h2 class=\"section-title\">\n                👁️ Schema Preview & Export\n            </h2>\n\n            <div class=\"form-group\">\n                <label>Generated Schema</label>\n                <div class=\"schema-preview\" id=\"schemaPreview\">\n                    <button class=\"copy-btn\" onclick=\"copySchema()\">📋 Copy</button>\n                    <div id=\"schemaContent\">Select a preset or build your schema to see the preview",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.88"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.22",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "4139abb193c26f4d8beb9c5fe76dd664"
+  }
+}

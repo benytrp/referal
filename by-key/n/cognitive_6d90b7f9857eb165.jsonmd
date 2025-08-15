@@ -1,0 +1,226 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:34.222Z",
+    "source_text_length": 36961,
+    "word_count": 4119,
+    "sentence_count": 408,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "6d90b7f9857eb1656df02ff0dbbad8c2",
+    "entropy_level": 0.878,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "offline_json_builder_begin_anywhere (1).html",
+      "processing_timestamp": "2025-08-11T05:05:34.222Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 92,
+        "significance": "0.0223",
+        "examples": [
+          "class=\"bar\">\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 92,
+        "significance": "0.0223",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 77,
+        "significance": "0.0187",
+        "examples": [
+          "<!DOCTYPE"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 70,
+        "significance": "0.0170",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 60,
+        "significance": "0.0146",
+        "examples": [
+          "root=document)"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 53,
+        "significance": "0.0129",
+        "examples": [
+          "JSON"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 52,
+        "significance": "0.0126",
+        "examples": [
+          "data-section=\"project_metadata\">\n"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 48,
+        "significance": "0.0117",
+        "examples": [
+          "document.getElementById('status');"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 41,
+        "significance": "0.0100",
+        "examples": [
+          "return"
+        ]
+      },
+      {
+        "theme": "string",
+        "frequency": 40,
+        "significance": "0.0097",
+        "examples": [
+          "strings;"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 36,
+        "significance": "0.0087",
+        "examples": [
+          "value=\"0.70\""
+        ]
+      },
+      {
+        "theme": "contract",
+        "frequency": 33,
+        "significance": "0.0080",
+        "examples": [
+          "Bridge/Contract/Cycles</span>\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "split(/\\r?\\n/)",
+      "getElementById(id)?",
+      "getElementById('chkAutosave')?",
+      "isArray(obj)? `array[${obj",
+      "isArray(o)? `array[${o",
+      "project_metadata?",
+      "includes('if-then-therefore')) ? 2 : 1; }\n  function autoAssignFromExtracted(){\n    const bridge = extracted",
+      "');\n      const idx = prompt(`Assign which object # to ${target}? (1"
+    ],
+    "pattern_recognition": [
+      "cycle",
+      "return",
+      "circular",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 4,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 4,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Nvrstry JSON Builder — Offline</title>\n  <style>\n    :root{\n      --bg:#0f1115; --panel:#141821; --muted:#1b2030; --ink:#e9eef9; --ink-dim:#b9c2d3;\n      --accent:#6ee7ff; --accent-2:#a78bfa; --accent-3:#34d399; --warn:#f59e0b; --danger:#ef4444;\n      --shadow:0 10px 30px rgba(0,0,0, 4);\n      --radius:16px;\n      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, \"Apple Color Emoji\",\"Segoe UI Emoji\";\n    }\n    *{box-sizing:border-box}\n    body{margin:0; background:linear-gradient(180deg,#0c0f14,#0f1115 15%); color:var(--ink); font-family:var(--sans);}\n    header{position:sticky; top:0; z-index:5; backdrop-filter:saturate(1...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>Nvrstry JSON Builder — Offline</title>\n  <style>\n    :root{\n      --bg:#0f1115; --panel:#141821; --muted:#1b2030; --ink:#e9eef9; --ink-dim:#b9c2d3;\n      --accent:#6ee7ff; --accent-2:#a78bfa; --accent-3:#34d399; --warn:#f59e0b; --danger:#ef4444;\n      --shadow:0 10px 30px rgba(0,0,0,",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.85"
+      },
+      {
+        "action": "spacer{height:8px}\n  </style>\n</head>\n<body>\n<header>\n  <div class=\"bar\">\n    <div class=\"title\">Nvrstry JSON Builder <span class=\"pill\">offline</span></div>\n    <div class=\"chips\">\n      <span class=\"chip\">Extract JSON islands</span>\n      <span class=\"chip\">Classify → Bridge/Contract/Cycles</span>\n      <span class=\"chip\">Build Canonical</span>\n      <span class=\"chip\">Download artifacts</span>\n    </div>\n    <div style=\"margin-left:auto\" class=\"status\" id=\"status\">ready</div>\n  </div>\n</header>\n\n<main>\n  <section class=\"panel\" id=\"ingest\">\n    <h2>1) Ingest → Clean → Extract</h2>\n    <div class=\"content\">\n      <div class=\"controls\">\n        <button class=\"ghost\" id=\"btnLoadDemo\" title=\"Load small demo text\">Load demo</button>\n        <label class=\"badge\"><input type=\"checkbox\" id=\"chkStripInvis\" checked /> strip zero‑widths</label>\n        <label class=\"badge\"><input type=\"checkbox\" id=\"chkDropNoise\" checked /> drop noise lines</label>\n        <label class=\"badge\"><input type=\"checkbox\" id=\"chkDedupe\" checked /> de‑dupe objects</label>\n      </div>\n      <textarea id=\"raw\" placeholder=\"Paste raw transcript or CMD output here…\"></textarea>\n      <div class=\"controls\">\n        <button class=\"primary\" id=\"btnExtract\">Clean & Extract</button>\n        <button id=\"btnOpenFile\">Open file…</button>\n        <button id=\"btnAutoAssign\">Auto‑assign sections</button>\n        <button id=\"btnImportCanonical\">Import canonical…</button>\n        <button id=\"btnSaveCleaned\">Download Nvrstry",
+        "urgency_score": "0.44",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "}}'></textarea>\n      <div class=\"controls\">\n        <button class=\"success\" id=\"btnRunSchema\">Run Schema → Report</button>\n        <button id=\"btnCopyReport\">Copy report</button>\n      </div>\n      <details open>\n        <summary>Executor report</summary>\n        <pre id=\"schema_report\"></pre>\n      </details>\n    </div>\n  </section>\n\n  <section class=\"panel\" style=\"grid-column:1 / -1\">\n    <h2>5) Build & Export</h2>\n    <div class=\"content\">\n      <div class=\"controls\">\n        <button class=\"success\" id=\"btnBuild\">Build Canonical</button>\n        <button id=\"btnCopyCanonical\">Copy canonical JSON</button>\n        <button id=\"btnSaveCanonical\">Download Nvrstry",
+        "urgency_score": "0.95",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "createElement('div'); t",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.87"
+      },
+      {
+        "action": "stringify(x);\n    }\n    return sort(obj);\n  }\n\n  const INVIS = [\"\\u200b\",\"\\u200c\",\"\\u200d\",\"\\ufeff\",\"ㅤ\"];\n  const NOISE_PREFIXES = [\n    'You said:', 'ChatGPT said:', 'Thought', 'Images created', 'Share',\n    'Process','Clear','Formatted Output','Cycle:','Operation:','Output:',\n    'Microsoft (R)','Destination is not a directory:','Reading documents'\n  ];\n  const DROP_PATTERNS = [\n    /",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.64"
+      },
+      {
+        "action": "length && typeof o[0]==='object' && 'cycle' in o[0]) return 'cycle_log_array';\n    }\n    return 'unknown';\n  }\n\n  // ---------- state ----------\n  let extracted = [];\n  const storeKey = 'nvrstry_builder_state_v1';\n  function serializeSections(){\n    const ids=['project_metadata','story_elements','technical_details','version_control','contract','phases','metadata','cycle_log'];\n    const o={}; ids",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "createElement('div'); item",
+        "urgency_score": "0.77",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": "replace(/[&<>]/g, c=>({\"&\":\"&amp;\",\"<\":\"&lt;\",\">\":\"&gt;\"}[c]));\n  }\n\n  // ---------- actions ----------\n  document",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "createElement('input'); inp",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "createElement('input'); inp",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.21"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.11",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "6d90b7f9857eb1656df02ff0dbbad8c2"
+  }
+}

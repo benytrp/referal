@@ -1,0 +1,11 @@
+Found 10 JSON object(s).
+[01] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']
+[02] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']
+[03] type=bridgefile keys=['project_metadata', 'story_elements', 'technical_details', 'version_control']
+[04] type=contract_spec keys=['trigger', 'contract', 'phases', 'metadata']
+[05] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']
+[06] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']
+[07] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']
+[08] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']
+[09] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']
+[10] type=cycle_log_entry keys=['cycle', 'phase', 'op', 'output', 'contract_ref', 'timestamp', 'entropy', 'contested', 'hash_of_entry']

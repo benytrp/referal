@@ -1,0 +1,109 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:56.687Z",
+    "source_text_length": 7281,
+    "word_count": 780,
+    "sentence_count": 81,
+    "entropy_level": 0.869,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_tool_calls_developer_cheatsheet (3).md"
+    },
+    "anchor_id": "d63875d74ad628ca8a63051167054e41"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function_calls",
+        "frequency": 48
+      },
+      {
+        "theme": "parameters",
+        "frequency": 47
+      },
+      {
+        "theme": "invoke",
+        "frequency": 47
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 47
+      },
+      {
+        "theme": "purpose",
+        "frequency": 20
+      },
+      {
+        "theme": "params",
+        "frequency": 10
+      },
+      {
+        "theme": "canmore",
+        "frequency": 7
+      },
+      {
+        "theme": "automations",
+        "frequency": 7
+      },
+      {
+        "theme": "exec",
+        "frequency": 7
+      },
+      {
+        "theme": "container",
+        "frequency": 6
+      },
+      {
+        "theme": "search",
+        "frequency": 5
+      },
+      {
+        "theme": "content",
+        "frequency": 5
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Here’s your **AI Tool Calls – Developer Cheatsheet** fully merged with Favorites, detailed purpose, parameters, and templates from the PDF version … - For automations: keep titles short/imperative, prompts phrased as if user is speaking, and schedules in iCal VEVENT",
+    "key_insights": [],
+    "action_items": [
+      "Here’s your **AI Tool Calls – Developer Cheatsheet** fully merged with Favorites, detailed purpose, parameters, and templates from the PDF version",
+      "---\n\n# AI Tool Calls – Developer Cheatsheet (with Favorites)\n\nA compact, copy‑pasteable reference for invoking tools via the XML‑like `<function_calls>` syntax",
+      "create_textdoc</tool_name><parameters>{\"name\":\"New Spec Draft\",\"type\":\"document\",\"content\":\"# Draft\\n…\"}</parameters></invoke></function_calls>\n```\n\n**Daily Reminder:**\n\n```xml\n<function_calls><invoke><tool_name>automations",
+      "create</tool_name><parameters>{\"title\":\"Check Updates\",\"prompt\":\"Search for system changes and notify me",
+      "run\n\n**Purpose:** Multi‑action web commands",
+      "create\\_textdoc\n\n**Purpose:** Create a new side‑panel doc",
+      "create_textdoc</tool_name><parameters>{\"name\":\"Title\",\"type\":\"document\",\"content\":\"# Content\"}</parameters></invoke></function_calls>\n```\n\n### canmore",
+      "create\n\n**Purpose:** Schedule tasks",
+      "create</tool_name><parameters>{\"title\":\"Task\",\"prompt\":\"Do something\",\"schedule\":\"BEGIN:VEVENT\\nRRULE:FREQ=DAILY;BYHOUR=9;BYMINUTE=0;BYSECOND=0\\nEND:VEVENT\"}</parameters></invoke></function_calls>\n```\n\n### automations"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.57,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d63875d74ad628ca8a63051167054e41"
+  }
+}

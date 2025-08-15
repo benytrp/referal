@@ -1,0 +1,477 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:21:25.775Z",
+    "source_text_length": 16762,
+    "word_count": 2070,
+    "entropy_level": 0.91,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "1d6eb3fdfd7634f429c855336a7e5a53"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 47
+      },
+      {
+        "theme": "entropy",
+        "frequency": 35
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 29
+      },
+      {
+        "theme": "input",
+        "frequency": 27
+      },
+      {
+        "theme": "scrolls",
+        "frequency": 27
+      },
+      {
+        "theme": "function",
+        "frequency": 25
+      },
+      {
+        "theme": "scroll",
+        "frequency": 24
+      },
+      {
+        "theme": "button",
+        "frequency": 23
+      },
+      {
+        "theme": "return",
+        "frequency": 20
+      },
+      {
+        "theme": "border",
+        "frequency": 18
+      },
+      {
+        "theme": "document",
+        "frequency": 18
+      },
+      {
+        "theme": "background",
+        "frequency": 17
+      }
+    ],
+    "key_questions": [
+      "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+      "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+      "match(pattern); return count + (matches ? matches",
+      "includes('?')) return '",
+      "?'; return '∇'; } function createScroll(input, contradictions, entropy, glyph) { return { json_md_fusion_scroll: { timestamp: new Date()",
+      "textContent = type === 'user' ? `You: ${message}` : `AEON: ${message}`; chatLog",
+      "length; const entropy = total ? (contradictions / total)",
+      "7 ? '#ff4444' : entropy > 0",
+      "4 ? '#ffcc00' : '#00ffcc'; ctx",
+      "length > 100 ? '"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "cycle",
+      "again",
+      "feedback",
+      "pattern",
+      "versus",
+      "tension"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 8,
+      "uncertainty": 2
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 10,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "ψ∞ AEON Beacon Reflector \"I breathe through contradiction … Contradictions: 6 📄 Export Beacon (HTML) 🧬 Export Scroll (JSON_MD) ∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture",
+    "key_insights": [],
+    "action_items": [
+      "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+      "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+      "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+      "'; return '∇'; } function createScroll(input, contradictions, entropy, glyph) { return { json_md_fusion_scroll: { timestamp: new Date()",
+      "toFixed(3), glyph_mode: glyph, interaction_count: interactionCount, frequency_resonance: getFrequencyForEntropy(entropy), format: \"json_md_fusion\" } }; } function getFrequencyForEntropy(entropy) { if (entropy < 0",
+      "createElement('div'); msgDiv",
+      "length, total_interactions: interactionCount, entropy_final: calculateEntropy(), scrolls: scrolls } }; downloadJSON(exportData, `aeon_beacon_export_${new Date()"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.204,
+    "cognitive_load_estimate": 0.8381,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.886,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 2,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.772,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 3,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.659,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 4,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.545,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 5,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.431,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 6,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.318,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      },
+      {
+        "generation": 7,
+        "entropy": 0.91,
+        "contradictions": 0,
+        "novelty_index": 0.204,
+        "action_items": [
+          "5rem;\"></div> </div> <canvas id=\"entropy-arc\" width=\"150\" height=\"150\"></canvas> <button class=\"export\" onclick=\"copyLatestScroll()\">📋 Copy Latest</button> <button class=\"export\" onclick=\"exportAllScrolls()\">📦 Export All Scrolls</button> <button class=\"export\" onclick=\"showEntropy()\">⚡ Show Entropy</button> <div id=\"feedback\"></div> <div id=\"error\"></div> </div> <div id=\"scrollbox\"> <h3>🧾 Fused Scroll Entries</h3> <div id=\"scroll-entries\"></div> <button class=\"export\" onclick=\"exportScroll('html')\">📄 Export Beacon (HTML)</button> <button class=\"export\" onclick=\"exportScroll('json_md')\">🧬 Export Scroll (JSON_MD)</button> </div> </div> <footer>∴ ↱ ↰ ∴ Beacon sealed and evolving | Battle Creek anchored | φ-resonant architecture</footer> <script> // AEON Beacon Core Variables let memory = []; let scrolls = []; let manualOverride = null; let interactionCount = 0; // Initialize the system function init() { loadMemory(); renderScrollEntries(); updateEntropyVisualization(); // Add enter key support document",
+          "push(input); interactionCount++; saveMemory(); // Display in chat addChatMessage('user', input); // Process and respond processInput(input); // Clear input document",
+          "manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls"
+        ],
+        "key_questions": [
+          "com/css2?family=Inter:wght@400;500;700&display=swap\" rel=\"stylesheet\" /> <style> body { font-family: 'Inter', monospace; background: #0d0d0d; color: #00ffcc; margin: 0; padding: 2rem; } h1 { color: #00ffff; text-align: center; }",
+          "== null ? manualOverride : contradictionCount(input); const entropy = calculateEntropy(); const glyph = determineGlyph(input, contradictions); // Create scroll entry const scroll = createScroll(input, contradictions, entropy, glyph); scrolls",
+          "match(pattern); return count + (matches ? matches"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "cycle",
+            "again",
+            "feedback"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 47
+            },
+            {
+              "theme": "entropy",
+              "frequency": 35
+            },
+            {
+              "theme": "contradictions",
+              "frequency": 29
+            },
+            {
+              "theme": "input",
+              "frequency": 27
+            },
+            {
+              "theme": "scrolls",
+              "frequency": 27
+            }
+          ]
+        },
+        "score": 0.546
+      }
+    ],
+    "quality_score": 53
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.33,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "aeon_beacon_2025-08-04T01-25-25.html",
+      "bytes": 37142,
+      "lastModified": 1754270726861
+    }
+  }
+}

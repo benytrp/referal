@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JSONMD Downloads Scanner v1.2</title>
+<style>
+  :root{--primary:#00ffcc;--secondary:#00ffff;--accent:#ff66cc;--warning:#ffcc00;--danger:#ff4444;--bg:#0d0d0d;--bg2:#111;--border:#333;--fusion:#9966ff}
+  *{box-sizing:border-box}
+  body{margin:0;padding:2rem;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New",monospace;background:var(--bg);color:var(--primary);line-height:1.5}
+  .wrap{max-width:1200px;margin:0 auto}
+  .card{background:linear-gradient(135deg,var(--bg2),#1a1124);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1rem}
+  h1{margin:0 0 .25rem 0;font-size:1.6rem;color:var(--secondary)}
+  h2{margin:.25rem 0 1rem;color:var(--fusion);font-size:1.1rem}
+  .muted{opacity:.8}
+  .controls{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.5rem 0}
+  .btn{padding:.6rem 1rem;border:none;border-radius:8px;background:var(--primary);color:#111;font-weight:700;cursor:pointer;transition:transform .2s,filter .2s}
+  .btn:hover{transform:translateY(-1px);filter:brightness(1.1)}
+  .btn-fusion{background:var(--fusion);color:#fff}
+  .btn-danger{background:var(--danger);color:#fff}
+  .btn-ghost{background:transparent;border:1px solid var(--border);color:var(--secondary)}
+  .row{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+  .col-12{grid-column:span 12}
+  .col-6{grid-column:span 6}
+  @media(max-width:900px){.col-6{grid-column:span 12}}
+  label.inline{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .5rem;border:1px dashed var(--border);border-radius:8px}
+  input[type=number]{width:6rem;padding:.4rem;border-radius:6px;border:1px solid var(--border);background:#000;color:var(--secondary)}
+  input[type=checkbox]{transform:scale(1.1)}
+  .status{padding:.5rem .75rem;border-radius:8px;background:rgba(153,102,255,.08);border:1px solid var(--fusion)}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  pre.log{white-space:pre-wrap;background:#000;border:1px solid var(--border);padding:.75rem;border-radius:8px;max-height:260px;overflow:auto}
+  .badge{display:inline-block;padding:.25rem .5rem;border-radius:999px;border:1px solid var(--border);background:#000;color:#aaa;font-size:.8rem}
+  .ok{color:#9cff9c}
+  .warn{color:#ffd27a}
+  .err{color:#ff9c9c}
+  .kbd{padding:.15rem .35rem;border:1px solid var(--border);border-bottom-width:2px;border-right-width:2px;border-radius:6px;background:#000;color:#aaa}
+  .pill{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .6rem;border-radius:999px;background:#000;border:1px solid var(--border)}
+  dialog{border:1px solid var(--fusion);border-radius:12px;padding:1rem 1.25rem;background:#0b0b12;color:#dff}
+  dialog::backdrop{background:rgba(0,0,0,.6)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>JSONMD Downloads Scanner <span class="badge">v1.2</span></h1>
+    <div class="muted">Scans your <strong>Downloads</strong> (optionally subfolders), fuses new text/markdown/HTML into JSONMD, saves to <code>Downloads/scrolls</code>, and remembers what it processed (blacklist) to avoid duplicates.</div>
+  </div>
+
+  <div class="card">
+    <h2>Controls</h2>
+    <div class="controls">
+      <button class="btn" id="btnSelect">📁 Select Downloads</button>
+      <button class="btn" id="btnPlan">🧪 Plan Scan (dry-run)</button>
+      <button class="btn btn-fusion" id="btnStart">🕒 Start Scan</button>
+      <button class="btn btn-ghost" id="btnRescan">🔁 Rescan Now</button>
+      <button class="btn btn-danger" id="btnStop">⏹ Stop</button>
+      <button class="btn btn-ghost" id="btnOpenOut">📂 Open Output Listing</button>
+      <button class="btn btn-ghost" id="btnLogDownload">📥 Download Today’s Log</button>
+    </div>
+
+    <div class="controls">
+      <label class="inline">⏱ Interval (min)
+        <input id="dl-interval-min" type="number" min="0.1" step="0.1" value="1">
+      </label>
+      <label class="inline">📦 Max size (MB)
+        <input id="dl-max-mb" type="number" min="0.1" step="0.1" value="5">
+      </label>
+      <label class="inline">📁🔁 Recurse subfolders
+        <input id="dl-recurse" type="checkbox" checked>
+      </label>
+    </div>
+
+    <div class="grid-2">
+      <div class="status" id="statusBox">
+        <div>Output: <code>Downloads/scrolls</code></div>
+        <div id="dl-status">idle</div>
+        <div class="muted" style="margin-top:.25rem">Tips: Start (<span class="kbd">Ctrl</span>+<span class="kbd">Enter</span>), Plan (<span class="kbd">Ctrl</span>+<span class="kbd">P</span>), Stop (<span class="kbd">Esc</span>)</div>
+      </div>
+      <div class="status">
+        <div class="pill">Anchors in blacklist: <span id="countAnchors">0</span></div>
+        <div class="pill">Last tick: <span id="lastTick">—</span></div>
+        <div class="pill">Avg tick (5): <span id="avgTick">—</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Recent Activity</h2>
+    <pre class="log" id="activityLog"></pre>
+  </div>
+
+  <div class="card">
+    <h2>Reprocess (ignore blacklist once)</h2>
+    <div class="controls">
+      <button class="btn" id="btnReprocess">🎯 Pick File to Reprocess</button>
+      <span class="muted">Writes into <code>scrolls/_reprocessed/</code> with a timestamped filename, does not touch the blacklist.</span>
+    </div>
+  </div>
+</div>
+
+<dialog id="planDialog">
+  <h3>Plan Scan Results</h3>
+  <div id="planSummary" class="muted">—</div>
+  <div class="controls" style="margin-top:1rem">
+    <button class="btn btn-fusion" id="planRunBtn">✅ Run Now</button>
+    <button class="btn" id="planCloseBtn">Cancel</button>
+  </div>
+</dialog>
+
+<dialog id="outListDialog">
+  <h3>Output Listing (latest 50)</h3>
+  <div id="outList" class="muted">—</div>
+  <div class="controls" style="margin-top:1rem">
+    <button class="btn" id="outCloseBtn">Close</button>
+  </div>
+</dialog>
+
+<script>
+(() => {
+  // ---------- State & Config ----------
+  const OUTPUT_DIR_NAME = "scrolls";                   // Downloads/scrolls
+  const BLACKLIST_FILE  = "jsonmd_blacklist_v1.json";  // stored in scrolls/
+  const LOGS_DIR_NAME   = "logs";                      // scrolls/logs/
+  const ERR_DIR_NAME    = "_errors";                   // invalid schema outputs
+  const REPROC_DIR_NAME = "_reprocessed";              // reprocess outputs
+  const ALLOWED = /\.(txt|md|markdown|html?|TXT|MD)$/i;
+  const SKIP_SUFFIX = /\.(crdownload|part|tmp)$/i;
+  const SKIP_NAMES = /^(Thumbs\.db|\.DS_Store)$/i;
+
+  const settingsKey = "jsonmd_dl_settings_v12";
+  const tickDurations = [];
+
+  let dlHandle = null;          // Downloads dir chosen by user
+  let outHandle = null;         // Downloads/scrolls
+  let logsDirHandle = null;     // Downloads/scrolls/logs
+  let errDirHandle = null;      // Downloads/scrolls/_errors
+  let reprocDirHandle = null;   // Downloads/scrolls/_reprocessed
+  let blacklistHandle = null;   // scrolls/jsonmd_blacklist_v1.json
+  let blacklist = { version: 1, updated: null, items: [] };
+  let blacklistSet = new Set();
+  let dlTimer = null;
+  let runningTick = false;
+
+  // ---------- DOM helpers ----------
+  const $ = (id) => document.getElementById(id);
+  const logEl = $("activityLog");
+
+  function log(line, cls) {
+    const ts = new Date().toISOString();
+    const row = `[${ts}] ${line}`;
+    logEl.textContent = (row + "\n" + logEl.textContent).slice(0, 20000);
+    if (cls) logEl.className = `log ${cls}`; else logEl.className = "log";
+    appendLogLine(row).catch(()=>{});
+  }
+
+  function status(msg){ $("dl-status").textContent = msg; }
+  function setAnchorCount(){ $("countAnchors").textContent = blacklist.items?.length || 0; }
+  function setLastTick(ms){ $("lastTick").textContent = ms ? (ms + " ms") : "—"; }
+  function setAvgTick(){
+    if (!tickDurations.length) { $("avgTick").textContent = "—"; return; }
+    const n = Math.min(5, tickDurations.length);
+    const avg = Math.round(tickDurations.slice(-n).reduce((a,b)=>a+b,0)/n);
+    $("avgTick").textContent = avg + " ms";
+  }
+
+  // ---------- Settings ----------
+  function loadSettings(){
+    try{
+      const s = JSON.parse(localStorage.getItem(settingsKey) || '{}');
+      if (s.intervalMin) $("dl-interval-min").value = s.intervalMin;
+      if (s.maxMB) $("dl-max-mb").value = s.maxMB;
+      if (typeof s.recurse === 'boolean') $("dl-recurse").checked = s.recurse;
+    }catch{}
+  }
+  function saveSettings(){
+    const intervalMin = Number($("dl-interval-min").value || 1);
+    const maxMB = Number($("dl-max-mb").value || 5);
+    const recurse = !!$("dl-recurse").checked;
+    localStorage.setItem(settingsKey, JSON.stringify({ intervalMin, maxMB, recurse }));
+  }
+  ["dl-interval-min","dl-max-mb","dl-recurse"].forEach(id=>{
+    const el = $(id); if(el) el.addEventListener('change', saveSettings);
+  });
+
+  // ---------- FS Helpers ----------
+  async function ensureSubdir(parentHandle, name){
+    return await parentHandle.getDirectoryHandle(name, { create:true });
+  }
+
+  async function atomicWriteJSON(dirHandle, fileName, obj){
+    const fh = await dirHandle.getFileHandle(fileName, { create:true });
+    const ws = await fh.createWritable();
+    try{
+      await ws.write(new Blob([JSON.stringify(obj, null, 2)], { type:"application/json" }));
+      await ws.close();
+    }catch(e){ try{ await ws.abort(); }catch(_){} throw e; }
+  }
+
+  async function appendLogLine(line){
+    try{
+      if (!logsDirHandle) logsDirHandle = await ensureSubdir(outHandle, LOGS_DIR_NAME);
+      const fname = new Date().toISOString().slice(0,10) + ".log";
+      const fh = await logsDirHandle.getFileHandle(fname, { create:true });
+      let cur = "";
+      try{ cur = await (await fh.getFile()).text(); }catch{}
+      const ws = await fh.createWritable();
+      await ws.write(new Blob([cur + line + "\n"], { type:"text/plain" }));
+      await ws.close();
+    }catch(e){ /* non-fatal */ }
+  }
+
+  async function downloadTodaysLog(){
+    try{
+      if (!logsDirHandle) logsDirHandle = await ensureSubdir(outHandle, LOGS_DIR_NAME);
+      const fname = new Date().toISOString().slice(0,10) + ".log";
+      const fh = await logsDirHandle.getFileHandle(fname, { create:true });
+      const file = await fh.getFile();
+      const blob = new Blob([await file.text()], { type:"text/plain" });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = fname;
+      a.click();
+    }catch(e){ alert("No log available yet."); }
+  }
+
+  async function loadBlacklist(){
+    try{
+      const f = await blacklistHandle.getFile();
+      const raw = await f.text();
+      if (!raw) throw new Error("empty blacklist");
+      try{ blacklist = JSON.parse(raw); }
+      catch(parseErr){
+        // backup corrupted content
+        const bakName = BLACKLIST_FILE.replace(/\.json$/i, '') + ".bak-" + tsStamp() + ".json";
+        await atomicWriteJSON(outHandle, bakName, { corrupted:true, raw });
+        blacklist = { version:1, updated:new Date().toISOString(), items:[] };
+        await saveBlacklist();
+      }
+    }catch{
+      // init fresh
+      blacklist = { version:1, updated:new Date().toISOString(), items:[] };
+      await saveBlacklist();
+    }
+    blacklistSet = new Set((blacklist.items||[]).map(x => x.anchor_id));
+    setAnchorCount();
+  }
+
+  async function saveBlacklist(){
+    try{
+      blacklist.updated = new Date().toISOString();
+      await atomicWriteJSON(outHandle, BLACKLIST_FILE, blacklist);
+    }catch(e){
+      // recovery write
+      try{ await atomicWriteJSON(outHandle, BLACKLIST_FILE + ".recovery.json", blacklist); }
+      catch(e2){ log("ERROR saving blacklist: " + e2.message, 'err'); }
+    }
+  }
+
+  function tsStamp(){
+    const d = new Date();
+    const pad = (n)=> String(n).padStart(2,'0');
+    return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+"-"+pad(d.getHours())+pad(d.getMinutes())+pad(d.getSeconds());
+  }
+
+  // ---------- Content Helpers ----------
+  async function readTextSmart(file){
+    if (SKIP_SUFFIX.test(file.name) || SKIP_NAMES.test(file.name)) return null;
+    const ext = (file.name.split(".").pop()||"").toLowerCase();
+    let txt = await file.text();
+    if (ext === "html" || ext === "htm"){
+      txt = txt.replace(/<script[\s\S]*?<\/script>/gi,"")
+               .replace(/<style[\s\S]*?<\/style>/gi, "")
+               .replace(/<[^>]+>/g, " ")
+               .replace(/&nbsp;/g," ")
+               .replace(/&amp;/g,"&")
+               .replace(/\s+/g," ")
+               .trim();
+    }
+    return txt;
+  }
+
+  async function digestId(text){
+    const enc = new TextEncoder().encode(text);
+    const d = await crypto.subtle.digest("SHA-256", enc);
+    return [...new Uint8Array(d)].map(b=>b.toString(16).padStart(2,'0')).join('').slice(0,32);
+  }
+
+  // Fallback JSONMD if host page lacks generateJSONMDFusion()
+  function fallbackFusion(text){
+    const questions = (text.match(/[^.!?]*\?[^.!?]*/g) || []).slice(0,8);
+    const words = text.trim()? text.trim().split(/\s+/).length : 0;
+    // Minimal helpers (optional)
+    const contradictions = (text.match(/\b(but|however|yet|although|despite|nevertheless|whereas)\b/gi)||[]).length;
+    return {
+      json_md_fusion_scroll: {
+        version: "1.0", timestamp: new Date().toISOString(),
+        source_text_length: text.length, word_count: words,
+        entropy_level: 0, contradictions_detected: contradictions,
+        processing_phase: "SYNTHESIS", frequency_resonance: "659.25 Hz (E5)", format: "json_md_fusion"
+      },
+      content_analysis: {
+        main_themes: [], key_questions: questions, pattern_recognition: [], contradiction_map: [],
+        sentiment_indicators: {positive:0,negative:0,uncertainty:0}, temporal_markers: {past:0,present:0,future:0}
+      },
+      structured_content: {
+        summary: text.slice(0,160) + (text.length>160?"…":""), key_insights: [], action_items: [], unresolved_tensions: []
+      },
+      metadata: {
+        fusion_methodology: "Browser offline scan (Downloads folder)", confidence_level: 1.0,
+        recommended_next_steps: [], recursive_potential: "n/a"
+      }
+    };
+  }
+
+  // Tiny structural validator (best-effort)
+  function validateJSONMD(obj){
+    const errors = [];
+    const must = (cond,msg)=>{ if(!cond) errors.push(msg); };
+    must(!!obj && typeof obj === 'object', 'root must be object');
+    const s = obj.json_md_fusion_scroll||{};
+    must(typeof s === 'object', 'json_md_fusion_scroll missing');
+    ['version','timestamp','format'].forEach(k=> must(k in s, `scroll.${k} missing`));
+    const ca = obj.content_analysis||{}; must(typeof ca==='object','content_analysis missing');
+    const sc = obj.structured_content||{}; must(typeof sc==='object','structured_content missing');
+    const md = obj.metadata||{}; must(typeof md==='object','metadata missing');
+    return { ok: errors.length===0, errors };
+  }
+
+  // ---------- Core Scanning ----------
+  async function scanDir(dirHandle, relPath, opts){
+    // never re-enter output directory
+    if (dirHandle.name?.toLowerCase && dirHandle.name.toLowerCase() === OUTPUT_DIR_NAME.toLowerCase()) return;
+    for await (const [name, entry] of dirHandle.entries()){
+      if (entry.kind === 'file'){
+        await handleFile(entry, relPath, name, opts);
+      } else if (entry.kind === 'directory'){
+        if (!opts.recurse) continue;
+        if (name.toLowerCase() === OUTPUT_DIR_NAME.toLowerCase()) continue;
+        await scanDir(entry, joinRel(relPath, name), opts);
+      }
+    }
+  }
+
+  function joinRel(rel, name){ return rel ? `${rel}/${name}` : name; }
+
+  async function handleFile(entry, relPath, name, opts){
+    opts.stats.files++;
+    if (!ALLOWED.test(name) || SKIP_SUFFIX.test(name) || SKIP_NAMES.test(name)) { opts.stats.skipped++; return; }
+
+    const file = await entry.getFile();
+    if (file.size > opts.maxBytes) { opts.stats.skipped++; log(`skip(size) ${joinRel(relPath,name)} (${Math.round(file.size/1024)} KB)`, 'warn'); return; }
+
+    const text = await readTextSmart(file);
+    if (text == null || text === '') { opts.stats.skipped++; return; }
+
+    const anchor = await digestId(text);
+    if (!opts.ignoreBlacklist && blacklistSet.has(anchor)) { opts.stats.skipped++; return; }
+
+    // Build JSONMD using host generator if available
+    const fused = (typeof window.generateJSONMDFusion === 'function') ? window.generateJSONMDFusion(text) : fallbackFusion(text);
+    fused.json_md_fusion_scroll = fused.json_md_fusion_scroll || {};
+    fused.json_md_fusion_scroll.anchor_id = anchor;
+    fused.json_md_fusion_scroll.source = { path: joinRel(relPath,name), bytes: file.size, lastModified: file.lastModified };
+
+    // Validate
+    const v = validateJSONMD(fused);
+    if (!v.ok){
+      if (!errDirHandle) errDirHandle = await ensureSubdir(outHandle, ERR_DIR_NAME);
+      await atomicWriteJSON(errDirHandle, `jsonmd_${anchor}.json`, { error: v.errors, payload: fused });
+      log(`error(schema) ${joinRel(relPath,name)} → ${ERR_DIR_NAME}/jsonmd_${anchor}.json`, 'err');
+      opts.stats.skipped++; // do not blacklist invalid
+      return;
+    }
+
+    // Write output
+    if (opts.ignoreBlacklist){
+      if (!reprocDirHandle) reprocDirHandle = await ensureSubdir(outHandle, REPROC_DIR_NAME);
+      const ts = tsStamp();
+      await atomicWriteJSON(reprocDirHandle, `jsonmd_${anchor}_${ts}.json`, fused);
+      log(`reprocess ${joinRel(relPath,name)} → ${REPROC_DIR_NAME}/jsonmd_${anchor}_${ts}.json`, 'ok');
+    } else {
+      await atomicWriteJSON(outHandle, `jsonmd_${anchor}.json`, fused);
+      // Update blacklist
+      blacklist.items.push({ anchor_id: anchor, name, relPath, bytes: file.size, lastModified: file.lastModified, saved: new Date().toISOString() });
+      blacklistSet.add(anchor);
+      await saveBlacklist();
+      setAnchorCount();
+      log(`process ${joinRel(relPath,name)} → jsonmd_${anchor}.json`, 'ok');
+      opts.stats.processed++;
+    }
+
+    // Progress heartbeat
+    if (opts.stats.files % 50 === 0){ status(`scanning… (${opts.stats.files} files seen)`); }
+  }
+
+  // ---------- Plan Scan (dry-run) ----------
+  async function planScan(){
+    if (!dlHandle || !outHandle){ alert('Select Downloads first.'); return; }
+    const opts = { recurse: getRecurse(), maxBytes: getMaxBytes(), stats: { files:0, processed:0, skipped:0 }, ignoreBlacklist:false, plan:true };
+    const counts = { candidates:0, skipExt:0, skipSize:0, skipAnchor:0, toProcess:0 };
+
+    async function planDir(dir){
+      if (dir.name?.toLowerCase?.() === OUTPUT_DIR_NAME.toLowerCase()) return;
+      for await (const [name, entry] of dir.entries()){
+        if (entry.kind === 'file'){
+          if (!ALLOWED.test(name) || SKIP_SUFFIX.test(name) || SKIP_NAMES.test(name)) { counts.skipExt++; continue; }
+          const file = await entry.getFile();
+          if (file.size > opts.maxBytes){ counts.skipSize++; continue; }
+          const text = await readTextSmart(file); if (!text){ counts.skipExt++; continue; }
+          const anchor = await digestId(text);
+          if (blacklistSet.has(anchor)) counts.skipAnchor++; else counts.toProcess++;
+          counts.candidates++;
+        } else if (entry.kind === 'directory'){
+          if (!getRecurse()) continue; if (name.toLowerCase() === OUTPUT_DIR_NAME.toLowerCase()) continue;
+          await planDir(entry);
+        }
+      }
+    }
+    await planDir(dlHandle);
+
+    const sumEl = $("planSummary");
+    sumEl.innerHTML = `Candidates: <b>${counts.candidates}</b><br>`+
+      `Skip (ext/tmp): <b>${counts.skipExt}</b> · Skip (size): <b>${counts.skipSize}</b> · Skip (blacklist): <b>${counts.skipAnchor}</b><br>`+
+      `To process now: <b>${counts.toProcess}</b>`;
+
+    const dlg = $("planDialog");
+    dlg.showModal();
+    $("planRunBtn").onclick = () => { dlg.close(); rescanNow(); };
+    $("planCloseBtn").onclick = () => dlg.close();
+  }
+
+  // ---------- Timer ticks ----------
+  function getIntervalMs(){ return Math.max(0.1, Number($("dl-interval-min").value||1)) * 60 * 1000; }
+  function getMaxBytes(){ return Math.max(0.1, Number($("dl-max-mb").value||5)) * 1024 * 1024; }
+  function getRecurse(){ return !!$("dl-recurse").checked; }
+
+  async function tick(){
+    if (runningTick) return; // prevent overlap
+    runningTick = true;
+    const t0 = performance.now();
+    try{
+      status("scanning…");
+      const stats = { files:0, processed:0, skipped:0 };
+      await scanDir(dlHandle, "", { recurse:getRecurse(), maxBytes:getMaxBytes(), stats, ignoreBlacklist:false });
+      const took = Math.round(performance.now()-t0);
+      tickDurations.push(took); setAvgTick(); setLastTick(took);
+      status(`tick: files ${stats.files}, processed ${stats.processed}, skipped ${stats.skipped} in ${took} ms — ${new Date().toLocaleTimeString()}`);
+    }catch(e){
+      log("ERROR tick: "+e.message, 'err');
+      status("scan error (see log)");
+    }finally{ runningTick = false; }
+  }
+
+  async function rescanNow(){ if (!dlHandle || !outHandle){ alert('Select Downloads first.'); return; } await tick(); }
+
+  function startTimer(){
+    if (!dlHandle || !outHandle){ alert('Select Downloads first.'); return; }
+    const ms = getIntervalMs();
+    if (dlTimer) clearInterval(dlTimer);
+    rescanNow();
+    dlTimer = setInterval(tick, ms);
+  }
+
+  function stopTimer(){ if (dlTimer) clearInterval(dlTimer); dlTimer = null; status('stopped'); }
+
+  // ---------- Output listing ----------
+  async function openOutputListing(){
+    try{
+      if (!outHandle){ alert('Select Downloads first.'); return; }
+      const items = [];
+      for await (const [name, entry] of outHandle.entries()){
+        if (entry.kind === 'file' && name.startsWith('jsonmd_') && name.endsWith('.json')) items.push(name);
+      }
+      items.sort().reverse();
+      const list = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.';
+      $("outList").innerHTML = list;
+      $("outListDialog").showModal();
+    }catch(e){ alert('Cannot enumerate output.'); }
+  }
+
+  // ---------- Reprocess (ignore blacklist once) ----------
+  async function reprocessOnce(){
+    if (!outHandle){ alert('Select Downloads first.'); return; }
+    try{
+      const [fileHandle] = await window.showOpenFilePicker({ types:[{ description:'Text/Markdown/HTML', accept:{ 'text/plain':['.txt','.md','.markdown','.html','.htm'] }}]});
+      const file = await fileHandle.getFile();
+      const text = await readTextSmart(file);
+      const anchor = await digestId(text);
+      const fused = (typeof window.generateJSONMDFusion === 'function') ? window.generateJSONMDFusion(text) : fallbackFusion(text);
+      fused.json_md_fusion_scroll = fused.json_md_fusion_scroll || {};
+      fused.json_md_fusion_scroll.anchor_id = anchor;
+      fused.json_md_fusion_scroll.source = { path: file.name, bytes: file.size, lastModified: file.lastModified };
+
+      const v = validateJSONMD(fused);
+      if (!v.ok){
+        if (!errDirHandle) errDirHandle = await ensureSubdir(outHandle, ERR_DIR_NAME);
+        await atomicWriteJSON(errDirHandle, `jsonmd_${anchor}.json`, { error:v.errors, payload:fused });
+        log(`reprocess error(schema) ${file.name} → ${ERR_DIR_NAME}/jsonmd_${anchor}.json`, 'err');
+        return;
+      }
+
+      if (!reprocDirHandle) reprocDirHandle = await ensureSubdir(outHandle, REPROC_DIR_NAME);
+      const ts = tsStamp();
+      await atomicWriteJSON(reprocDirHandle, `jsonmd_${anchor}_${ts}.json`, fused);
+      log(`reprocess ${file.name} → ${REPROC_DIR_NAME}/jsonmd_${anchor}_${ts}.json`, 'ok');
+    }catch(e){ if (e && e.name !== 'AbortError') log('reprocess cancelled/failed', 'warn'); }
+  }
+
+  // ---------- Event wiring ----------
+  $("btnSelect").onclick = async () => {
+    try{
+      dlHandle = await window.showDirectoryPicker({ id:'downloads-dir' });
+      outHandle = await ensureSubdir(dlHandle, OUTPUT_DIR_NAME);
+      logsDirHandle = await ensureSubdir(outHandle, LOGS_DIR_NAME);
+      errDirHandle = await ensureSubdir(outHandle, ERR_DIR_NAME);
+      reprocDirHandle = await ensureSubdir(outHandle, REPROC_DIR_NAME);
+      blacklistHandle = await outHandle.getFileHandle(BLACKLIST_FILE, { create:true });
+      await loadBlacklist();
+      status('downloads selected ✓');
+      log('selected Downloads; outputs at "scrolls"');
+    }catch(e){ status('selection cancelled'); }
+  };
+  $("btnPlan").onclick = planScan;
+  $("btnStart").onclick = startTimer;
+  $("btnRescan").onclick = rescanNow;
+  $("btnStop").onclick = stopTimer;
+  $("btnOpenOut").onclick = openOutputListing;
+  $("btnLogDownload").onclick = downloadTodaysLog;
+  $("btnReprocess").onclick = reprocessOnce;
+  $("outCloseBtn").onclick = ()=> $("outListDialog").close();
+
+  window.addEventListener('beforeunload', () => { if (dlTimer) clearInterval(dlTimer); });
+  document.addEventListener('keydown', (e)=>{
+    if (e.ctrlKey||e.metaKey){ if (e.key.toLowerCase()==='enter'){ e.preventDefault(); startTimer(); } if (e.key.toLowerCase()==='p'){ e.preventDefault(); planScan(); } }
+    if (e.key==='Escape'){ stopTimer(); }
+  });
+
+  loadSettings();
+})();
+</script>
+</body>
+</html>

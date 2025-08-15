@@ -1,0 +1,360 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:25:04.668Z",
+    "source_text_length": 512,
+    "word_count": 81,
+    "entropy_level": 0.986,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "5754f0a097d6655217844651510e2a50"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 3
+      },
+      {
+        "theme": "files",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "drop",
+        "frequency": 2
+      },
+      {
+        "theme": "jsonl",
+        "frequency": 2
+      },
+      {
+        "theme": "tokens",
+        "frequency": 2
+      },
+      {
+        "theme": "chunk",
+        "frequency": 2
+      },
+      {
+        "theme": "budget",
+        "frequency": 2
+      },
+      {
+        "theme": "process",
+        "frequency": 2
+      },
+      {
+        "theme": "chunker",
+        "frequency": 1
+      },
+      {
+        "theme": "tune",
+        "frequency": 1
+      },
+      {
+        "theme": "chunking",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "htm files here Process Process Downloads Nothing",
+        "statement_b": "Self-contained",
+        "line": 9,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline HTML → LLM Chunker Drop … Stable chunk IDs via in-file FNV-1a-64",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "htm files here Process Process Downloads Nothing vs Self-contained"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.137,
+    "cognitive_load_estimate": 0.050600000000000006,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.877,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 2,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.754,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 3,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.63,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 4,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.507,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 5,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.384,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 6,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.26,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      },
+      {
+        "generation": 7,
+        "entropy": 0.986,
+        "contradictions": 1,
+        "novelty_index": 0.137,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "html",
+              "frequency": 3
+            },
+            {
+              "theme": "files",
+              "frequency": 3
+            },
+            {
+              "theme": "offline",
+              "frequency": 2
+            },
+            {
+              "theme": "drop",
+              "frequency": 2
+            },
+            {
+              "theme": "jsonl",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.286
+      }
+    ],
+    "quality_score": 28
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.01,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "offline_html_chunker (1).html",
+      "bytes": 17428,
+      "lastModified": 1754639672471
+    }
+  }
+}

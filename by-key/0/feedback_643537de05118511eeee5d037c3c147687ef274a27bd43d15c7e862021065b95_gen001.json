@@ -1,0 +1,103 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:33.017Z",
+    "anchor_id": "643537de05118511eeee5d037c3c147687ef274a27bd43d15c7e862021065b95",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.774,
+    "contradictions_detected": 1,
+    "word_count": 641
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "search",
+        "frequency": 28
+      },
+      {
+        "theme": "repl",
+        "frequency": 21
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 19
+      },
+      {
+        "theme": "web",
+        "frequency": 17
+      },
+      {
+        "theme": "patterns",
+        "frequency": 12
+      },
+      {
+        "theme": "analysis",
+        "frequency": 11
+      },
+      {
+        "theme": "chaining",
+        "frequency": 9
+      },
+      {
+        "theme": "create",
+        "frequency": 9
+      },
+      {
+        "theme": "update",
+        "frequency": 9
+      },
+      {
+        "theme": "results",
+        "frequency": 9
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Operators:** - `contains`, `=`, `!=`, `<`, `<=`, `>`, `>=`, `in`, `and`, `or`, `not`, `has` - `fullText contains 'search term'` - `mimeType = 'application/vnd.g"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "search, repl, artifacts, web, patterns"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2024",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "command_chaining_guide.md",
+    "relative_path": "command_chaining_guide.md",
+    "size_bytes": 6684,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.563
+- Word Count: 164
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:31.006Z",
+  "original_file": "643537de05118511eeee5d037c3c147687ef274a27bd43d15c7e862021065b95.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

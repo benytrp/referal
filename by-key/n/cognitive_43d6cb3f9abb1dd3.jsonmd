@@ -1,0 +1,224 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:34.132Z",
+    "source_text_length": 32923,
+    "word_count": 2531,
+    "sentence_count": 252,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "43d6cb3f9abb1dd309f64cb3d6ee99e7",
+    "entropy_level": null,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "offline_ecosystem_demo.html",
+      "processing_timestamp": "2025-08-11T05:05:34.132Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 112,
+        "significance": "0.0443",
+        "examples": [
+          "class=\"hub-container\">\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 62,
+        "significance": "0.0245",
+        "examples": [
+          "<span>5"
+        ]
+      },
+      {
+        "theme": "artifact",
+        "frequency": 43,
+        "significance": "0.0170",
+        "examples": [
+          ".artifact-card"
+        ]
+      },
+      {
+        "theme": "ecosystem",
+        "frequency": 42,
+        "significance": "0.0166",
+        "examples": [
+          "Ecosystem"
+        ]
+      },
+      {
+        "theme": "message",
+        "frequency": 36,
+        "significance": "0.0142",
+        "examples": [
+          ".message-log"
+        ]
+      },
+      {
+        "theme": "flow",
+        "frequency": 32,
+        "significance": "0.0126",
+        "examples": [
+          "overflow:"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 31,
+        "significance": "0.0122",
+        "examples": [
+          ".data-flow"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 28,
+        "significance": "0.0111",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "system",
+        "frequency": 25,
+        "significance": "0.0099",
+        "examples": [
+          "Ecosystem"
+        ]
+      },
+      {
+        "theme": "background",
+        "frequency": 22,
+        "significance": "0.0087",
+        "examples": [
+          "background:"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 22,
+        "significance": "0.0087",
+        "examples": [
+          "constructor()"
+        ]
+      },
+      {
+        "theme": "rgba",
+        "frequency": 21,
+        "significance": "0.0083",
+        "examples": [
+          "rgba(255,255,255,0.1);\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "scrollHeight;\n                \n                // Keep only last 50 messages\n                w",
+        "statement_b": "(log",
+        "line": 152,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.37"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 30,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Offline Ecosystem Hub</title>\n    <style>\n        * { box-sizing: border-box; margin: 0; padding: 0; }\n        \n        body {\n            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            color: white;\n            height: 100vh;\n            overflow: hidden;\n        }\n        \n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "4);\n            border-radius: 5px;\n            padding: 10px;\n            font-family: monospace;\n            font-size: 11px;\n            max-height: 200px;\n            overflow-y: auto;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"hub-container\">\n        <header class=\"header\">\n            <h1>Offline Ecosystem Hub</h1>\n            <div class=\"ecosystem-status\">\n                <div class=\"status-indicator\">\n                    <div class=\"status-dot\"></div>\n                    <span>5 Artifacts Online</span>\n                </div>\n                <div class=\"status-indicator\">\n                    <div class=\"status-dot\"></div>\n                    <span>P2P Bridge Active</span>\n                </div>\n                <div class=\"status-indicator\">\n                    <div class=\"status-dot\"></div>\n                    <span>Data Sync: Real-time</span>\n                </div>\n            </div>\n        </header>\n        \n        <aside class=\"sidebar\">\n            <h3>Connected Artifacts</h3>\n            \n            <div class=\"artifact-card\" onclick=\"launchArtifact('consciousness-editor')\">\n                <div class=\"artifact-title\">Consciousness Framework Editor</div>\n                <div class=\"artifact-desc\">Advanced consciousness development IDE with φ-ratio analysis</div>\n                <div class=\"artifact-status\">● Online | Port: 3001</div>\n            </div>\n            \n            <div class=\"artifact-card\" onclick=\"launchArtifact('nvrstry-builder')\">\n                <div class=\"artifact-title\">Nvrstry JSON Builder</div>\n                <div class=\"artifact-desc\">Data extraction and canonical structure builder</div>\n                <div class=\"artifact-status\">● Online | Port: 3002</div>\n            </div>\n            \n            <div class=\"artifact-card\" onclick=\"launchArtifact('pattern-detector')\">\n                <div class=\"artifact-title\">Pattern Recognition Engine</div>\n                <div class=\"artifact-desc\">ML-powered pattern detection and analysis</div>\n                <div class=\"artifact-status\">● Online | Port: 3003</div>\n            </div>\n            \n            <div class=\"artifact-card\" onclick=\"launchArtifact('data-visualizer')\">\n                <div class=\"artifact-title\">Real-time Data Visualizer</div>\n                <div class=\"artifact-desc\">Interactive charts and consciousness metrics</div>\n                <div class=\"artifact-status\">● Online | Port: 3004</div>\n            </div>\n            \n            <div class=\"artifact-card\" onclick=\"launchArtifact('ai-interface')\">\n                <div class=\"artifact-title\">AI Communication Interface</div>\n                <div class=\"artifact-desc\">Bridge for AI-assisted development</div>\n                <div class=\"artifact-status\">● Online | Port: 3005</div>\n            </div>\n            \n            <div class=\"controls\">\n                <button class=\"btn primary\" onclick=\"deployNewArtifact()\">Deploy New</button>\n                <button class=\"btn\" onclick=\"scanNetwork()\">Scan Network</button>\n            </div>\n        </aside>\n        \n        <main class=\"main-content\">\n            <div class=\"tabs\">\n                <button class=\"tab active\" onclick=\"switchTab('communication')\">Communication</button>\n                <button class=\"tab\" onclick=\"switchTab('data-flow')\">Data Flow</button>\n                <button class=\"tab\" onclick=\"switchTab('network')\">Network</button>\n                <button class=\"tab\" onclick=\"switchTab('control')\">Control</button>\n            </div>\n            \n            <",
+        "urgency_score": "0.44",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "618</div>\n                        <div class=\"message sent\">[HUB] Requesting pattern analysis</div>\n                        <div class=\"message received\">[NVRSTRY] JSON structure validated and canonicalized</div>\n                        <div class=\"message received\">[PATTERN] Recursive patterns detected in consciousness framework</div>\n                        <div class=\"message sent\">[HUB] Broadcasting data update to all clients</div>\n                        <div class=\"message system\">[SYS] Sync checkpoint created</div>\n                    </div>\n                    \n                    <div class=\"input-group\">\n                        <label>Broadcast Message</label>\n                        <textarea id=\"broadcastMessage\" placeholder=\"Send message to all artifacts",
+        "urgency_score": "0.71",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "-- Data Flow Tab -->\n            <div class=\"tab-content\" id=\"data-flow\">\n                <div class=\"data-flow\">\n                    <h4>Real-time Data Pipeline</h4>\n                    \n                    <div class=\"flow-item\">\n                        <span>Consciousness Editor</span>\n                        <span class=\"flow-arrow\">→</span>\n                        <span>Pattern Recognition</span>\n                        <span class=\"flow-arrow\">→</span>\n                        <span>Data Visualizer</span>\n                    </div>\n                    \n                    <div class=\"flow-item\">\n                        <span>Nvrstry Builder</span>\n                        <span class=\"flow-arrow\">→</span>\n                        <span>JSON Validation</span>\n                        <span class=\"flow-arrow\">→</span>\n                        <span>Storage Layer</span>\n                    </div>\n                    \n                    <div class=\"flow-item\">\n                        <span>AI Interface</span>\n                        <span class=\"flow-arrow\">↔</span>\n                        <span>All Artifacts</span>\n                        <span class=\"flow-arrow\">→</span>\n                        <span>Enhanced Processing</span>\n                    </div>\n                    \n                    <h4>Current Data State</h4>\n                    <div class=\"json-viewer\" id=\"dataState\">\n{\n  \"consciousness_metrics\": {\n    \"phi_alignment\": 0",
+        "urgency_score": "0.31",
+        "feasibility_score": "0.41"
+      },
+      {
+        "action": "-- Control Tab -->\n            <div class=\"tab-content\" id=\"control\">\n                <div class=\"communication-panel\">\n                    <h4>Ecosystem Control</h4>\n                    \n                    <div class=\"input-group\">\n                        <label>Deploy New Artifact</label>\n                        <select id=\"artifactType\">\n                            <option>Consciousness Framework</option>\n                            <option>Data Processor</option>\n                            <option>Visualization Engine</option>\n                            <option>AI Assistant</option>\n                            <option>Custom Application</option>\n                        </select>\n                    </div>\n                    \n                    <div class=\"input-group\">\n                        <label>Configuration</label>\n                        <textarea id=\"artifactConfig\" placeholder='{\"name\": \"custom-app\", \"port\": 3006, \"features\": []}'></textarea>\n                    </div>\n                    \n                    <div class=\"controls\">\n                        <button class=\"btn primary\" onclick=\"deployArtifact()\">Deploy</button>\n                        <button class=\"btn\" onclick=\"saveConfig()\">Save Config</button>\n                        <button class=\"btn\" onclick=\"exportSystem()\">Export System</button>\n                    </div>\n                </div>\n                \n                <div class=\"communication-panel\">\n                    <h4>AI Enhancement</h4>\n                    <div class=\"input-group\">\n                        <label>AI Assistance Request</label>\n                        <textarea id=\"aiRequest\" placeholder=\"Describe what you'd like the AI to help create or improve",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.31"
+      },
+      {
+        "action": "1MB</span>\n                </div>\n            </div>\n            \n            <div class=\"communication-panel\">\n                <h4>Recent Events</h4>\n                <div class=\"message-log\" style=\"height: 150px;\">\n                    <div class=\"message system\">15:30 - System checkpoint</div>\n                    <div class=\"message received\">15:29 - Consciousness analysis complete</div>\n                    <div class=\"message sent\">15:28 - Data sync initiated</div>\n                    <div class=\"message received\">15:27 - Pattern update received</div>\n                    <div class=\"message system\">15:26 - Artifact deployed</div>\n                </div>\n            </div>\n            \n            <div class=\"controls\">\n                <button class=\"btn\" onclick=\"createBackup()\">Backup</button>\n                <button class=\"btn\" onclick=\"systemHealth()\">Health Check</button>\n            </div>\n        </aside>\n        \n        <footer class=\"footer\">\n            <div>Offline Ecosystem v1",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.76"
+      },
+      {
+        "action": "action) {\n                    case 'register_artifact':\n                        this",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": "get(artifactId);\n                if (artifact) {\n                    // In a real implementation, this would open the artifact\n                    window",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.65"
+      },
+      {
+        "action": "broadcast({\n                    type: 'ecosystem',\n                    action: 'data_sync',\n                    payload: data,\n                    timestamp: Date",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.77"
+      },
+      {
+        "action": "action}`, 'sent');\n            }\n            \n            broadcastHeartbeat() {\n                this",
+        "urgency_score": "0.41",
+        "feasibility_score": "0.15"
+      },
+      {
+        "action": "broadcast({\n                    type: 'ecosystem',\n                    action: 'heartbeat',\n                    payload: {\n                        hub_status: 'active',\n                        artifacts_count: this",
+        "urgency_score": "0.84",
+        "feasibility_score": "0.05"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.8666666666666667,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.45",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "43d6cb3f9abb1dd309f64cb3d6ee99e7"
+  }
+}

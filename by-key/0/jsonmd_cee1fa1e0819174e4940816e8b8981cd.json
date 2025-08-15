@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:43.031Z",
+    "source_text_length": 336,
+    "word_count": 50,
+    "sentence_count": 8,
+    "entropy_level": 0.98,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (11).html"
+    },
+    "anchor_id": "cee1fa1e0819174e4940816e8b8981cd"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bash",
+        "frequency": 3
+      },
+      {
+        "theme": "library",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "name",
+        "frequency": 2
+      },
+      {
+        "theme": "author",
+        "frequency": 2
+      },
+      {
+        "theme": "generator",
+        "frequency": 1
+      },
+      {
+        "theme": "tool",
+        "frequency": 1
+      },
+      {
+        "theme": "generates",
+        "frequency": 1
+      },
+      {
+        "theme": "complete",
+        "frequency": 1
+      },
+      {
+        "theme": "structured",
+        "frequency": 1
+      },
+      {
+        "theme": "command",
+        "frequency": 1
+      },
+      {
+        "theme": "based",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline Bash Library Generator This tool generates a complete, structured bash command library based on the provided blueprint … zip",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "cee1fa1e0819174e4940816e8b8981cd"
+  }
+}

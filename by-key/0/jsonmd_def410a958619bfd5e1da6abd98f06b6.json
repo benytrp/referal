@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:54.958Z",
+    "source_text_length": 677,
+    "word_count": 93,
+    "sentence_count": 7,
+    "entropy_level": 0.981,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code - 2025-08-08T021843.768.html"
+    },
+    "anchor_id": "def410a958619bfd5e1da6abd98f06b6"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "required",
+        "frequency": 3
+      },
+      {
+        "theme": "success",
+        "frequency": 3
+      },
+      {
+        "theme": "criteria",
+        "frequency": 3
+      },
+      {
+        "theme": "perfect",
+        "frequency": 2
+      },
+      {
+        "theme": "prompt",
+        "frequency": 2
+      },
+      {
+        "theme": "logic",
+        "frequency": 2
+      },
+      {
+        "theme": "strict",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "task",
+        "frequency": 2
+      },
+      {
+        "theme": "name",
+        "frequency": 2
+      },
+      {
+        "theme": "objective",
+        "frequency": 2
+      },
+      {
+        "theme": "params",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — AI-Optimized Bridge Generator ❌ Needs fixes Strict: OFF 🤖 AI Engineering Presets Schema: lite-1 Strict export Generate Run ID Project / Task Name Task name is required … zip) ⚙️ Advanced Validators (click to expand) Require non-empty Success Criteria Max response time (ms) Max tokens Must include sections (chips) Add Perfect Prompt Logic (preview)Markdown —",
+    "key_insights": [],
+    "action_items": [
+      "zip) ⚙️ Advanced Validators (click to expand) Require non-empty Success Criteria Max response time (ms) Max tokens Must include sections (chips) Add Perfect Prompt Logic (preview)Markdown —"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "def410a958619bfd5e1da6abd98f06b6"
+  }
+}

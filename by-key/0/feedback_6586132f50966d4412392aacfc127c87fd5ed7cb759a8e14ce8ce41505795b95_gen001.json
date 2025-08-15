@@ -1,0 +1,110 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:36.082Z",
+    "anchor_id": "6586132f50966d4412392aacfc127c87fd5ed7cb759a8e14ce8ce41505795b95",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.645,
+    "contradictions_detected": 3,
+    "word_count": 699
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 45
+      },
+      {
+        "theme": "const",
+        "frequency": 32
+      },
+      {
+        "theme": "option",
+        "frequency": 32
+      },
+      {
+        "theme": "document",
+        "frequency": 18
+      },
+      {
+        "theme": "key",
+        "frequency": 16
+      },
+      {
+        "theme": "work",
+        "frequency": 15
+      },
+      {
+        "theme": "habits",
+        "frequency": 15
+      },
+      {
+        "theme": "preparatory",
+        "frequency": 15
+      },
+      {
+        "theme": "goals",
+        "frequency": 15
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 13
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "if (Object.keys(obj).length === 0) { showStatus('No data entered in the form.', true); outputJsonEl.value = '"
+      },
+      {
+        "idx": 1,
+        "sample": "if (parsedData.length === 0) { showStatus('No valid data found.', true); outputJsonEl.value = '';"
+      },
+      {
+        "idx": 2,
+        "sample": "Copied to clipboard!', false); } else { showStatus('Nothing to copy.', true); } }); function showStatus"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = isError ?"
+    ],
+    "summary": "value, const, option, document, key"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "e3temp.html",
+    "relative_path": "e3temp.html",
+    "size_bytes": 17232,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.582
+- Word Count: 196
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:31.172Z",
+  "original_file": "6586132f50966d4412392aacfc127c87fd5ed7cb759a8e14ce8ce41505795b95.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

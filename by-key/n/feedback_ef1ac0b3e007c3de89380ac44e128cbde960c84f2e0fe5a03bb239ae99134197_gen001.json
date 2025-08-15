@@ -1,0 +1,119 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:44.441Z",
+    "anchor_id": "ef1ac0b3e007c3de89380ac44e128cbde960c84f2e0fe5a03bb239ae99134197",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.715,
+    "contradictions_detected": 3,
+    "word_count": 1321
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "var",
+        "frequency": 51
+      },
+      {
+        "theme": "name",
+        "frequency": 30
+      },
+      {
+        "theme": "document",
+        "frequency": 29
+      },
+      {
+        "theme": "template",
+        "frequency": 27
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 26
+      },
+      {
+        "theme": "data",
+        "frequency": 25
+      },
+      {
+        "theme": "value",
+        "frequency": 25
+      },
+      {
+        "theme": "class",
+        "frequency": 25
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 23
+      },
+      {
+        "theme": "function",
+        "frequency": 21
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "us.style.display = 'block'; setTimeout(function() { status.style.display = 'none'; }, 3000); } function makeId() { var now = new Date(); return now"
+      },
+      {
+        "idx": 1,
+        "sample": ".getElementById('bulkInput').value.trim(); if (!bulk) { showStatus('No data to validate', true); return; } var lines = bulk.spl"
+      },
+      {
+        "idx": 2,
+        "sample": "ata); } } if (formData.length === 0) { showStatus('No valid data found', true); return; } showStatus('Validate"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "if (id) line += (line ?",
+      "if (date) line += (line ?",
+      "if (instructor) line += (line ?",
+      "r><th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attendance — Correct day and time?",
+      "d class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attendance\"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed?",
+      "<th style=\"width: 60%;\">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks?",
+      "\\n<td class=\"checkbox-cell\"><input type=\"checkbox\" name=\"attention\"></td>\\n</tr>\\n<tr>\\n<td>Safety — Followed procedures?"
+    ],
+    "summary": "var, name, document, template, checkbox"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "unified_e3_builder.html",
+    "relative_path": "unified_e3_builder.html",
+    "size_bytes": 18585,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.851
+- Word Count: 258
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:50.097Z",
+  "original_file": "ef1ac0b3e007c3de89380ac44e128cbde960c84f2e0fe5a03bb239ae99134197.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

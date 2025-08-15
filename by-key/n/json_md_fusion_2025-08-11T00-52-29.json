@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T00:52:26.154Z",
+    "source_text_length": 24637,
+    "word_count": 3992,
+    "entropy_level": "0.704",
+    "contradictions_detected": 20,
+    "processing_phase": "STRUCTURE",
+    "frequency_resonance": "523.25 Hz (C5)",
+    "format": "json_md_fusion"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "patterns",
+        "frequency": 19,
+        "examples": [
+          "Repeat",
+          "repeat",
+          "pattern"
+        ]
+      },
+      {
+        "theme": "evolution",
+        "frequency": 9,
+        "examples": [
+          "change",
+          "Change",
+          "Change"
+        ]
+      },
+      {
+        "theme": "systems",
+        "frequency": 7,
+        "examples": [
+          "structure",
+          "structure",
+          "structure"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "always logged in. We use your browser's local storage to save tools' input. It stays on your computer",
+      "every word in the given text",
+      "every sentence in the given text"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "All tools are free for personal use",
+        "statement_b": "to use them for commercial purposes, you need to get a premium plan",
+        "line": 336,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 14,
+      "present": 48,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "All Text Tools\nSearch\n\nSplit Text\nQuickly split text into chunks. ... com.",
+    "key_insights": [],
+    "action_items": [
+      " All tools are free for personal use but to use them for commercial purposes, you need to",
+      "do",
+      "do"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Automated text analysis with contradiction mapping",
+    "confidence_level": "0.15",
+    "recommended_next_steps": [
+      "High contradiction density detected - consider contradiction mapping exercise",
+      "High entropy - consider breaking into smaller, focused segments",
+      "Large text block - consider hierarchical analysis"
+    ],
+    "recursive_potential": "High - Text exhibits strong recursive patterns"
+  }
+}

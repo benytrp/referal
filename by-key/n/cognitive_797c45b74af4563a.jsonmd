@@ -1,0 +1,213 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:36.247Z",
+    "source_text_length": 7267,
+    "word_count": 1039,
+    "sentence_count": 86,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "797c45b74af4563af5d876918fa282a1",
+    "entropy_level": 0.857,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "simple_e3_builder (2).html",
+      "processing_timestamp": "2025-08-11T05:05:36.247Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 38,
+        "significance": "0.0366",
+        "examples": [
+          "class=\"box\">\n"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 27,
+        "significance": "0.0260",
+        "examples": [
+          "html>\n<html>\n<head>\n"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 21,
+        "significance": "0.0202",
+        "examples": [
+          "}\\n.center"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 20,
+        "significance": "0.0192",
+        "examples": [
+          "input,"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 20,
+        "significance": "0.0192",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 18,
+        "significance": "0.0173",
+        "examples": [
+          "type=\"checkbox\"></td>\\n<td"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 15,
+        "significance": "0.0144",
+        "examples": [
+          "class=\"row\">\\n<span"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 14,
+        "significance": "0.0135",
+        "examples": [
+          "document.getElementById('batch').value"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 13,
+        "significance": "0.0125",
+        "examples": [
+          "document.getElementById('batch').value"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 12,
+        "significance": "0.0115",
+        "examples": [
+          "#data"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 11,
+        "significance": "0.0106",
+        "examples": [
+          "#template"
+        ]
+      },
+      {
+        "theme": "replace",
+        "frequency": 10,
+        "significance": "0.0096",
+        "examples": [
+          "parts[0].replace(/\\s/g,"
+        ]
+      }
+    ],
+    "key_questions": [
+      "getMonth() + 1 < 10 ? '0' : '') + (d",
+      "getDate() < 10 ? '0' : '') + d",
+      "getHours() < 10 ? '0' : '') + d",
+      "getMinutes() < 10 ? '0' : '') + d",
+      "comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }\\n</style>\\n</head>\\n<body>\\n<h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\\n\\n<div class=\"row\">\\n<span class=\"label\">Name:</span> PARTICIPANT_NAME\\n</div>\\n\\n<div class=\"row\">\\n<span class=\"label\">ID:</span> PARTICIPANT_ID\\n</div>\\n\\n<div class=\"row\">\\n<span class=\"label\">Date:</span> EVAL_DATE\\n</div>\\n\\n<div class=\"row\">\\n<span class=\"label\">Batch ID:</span> BATCH_ID\\n</div>\\n\\n<div class=\"row\">\\n<span class=\"label\">Eval ID:</span> EVAL_ID\\n</div>\\n\\n<h3>Work Habits</h3>\\n<table>\\n<tr>\\n<th style=\"width: 50%;\">Item</th>\\n<th>Yes</th>\\n<th>NI</th>\\n<th>N/A</th>\\n</tr>\\n<tr>\\n<td>Attendance — Correct day and time?</td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed",
+      "?</td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Attitude — Positive attitude",
+      "?</td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n</table>\\n\\n<h3>Preparatory Goals</h3>\\n<table>\\n<tr>\\n<th style=\"width: 50%;\">Item</th>\\n<th>Yes</th>\\n<th>NI</th>\\n<th>N/A</th>\\n</tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks",
+      "?</td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n<td class=\"center\"><input type=\"checkbox\"></td>\\n</tr>\\n<tr>\\n<td>Task Completion — Stayed on task"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Builder - Working Version</title>\n  <style>\n    body { font-family: Arial, sans-serif; margin: 20px; }\n     box { border: 1px solid #ccc; padding: 15px; margin: 15px 0; background: #f9f9f9; }\n    input, textarea { padding: 8px; margin: 5px; border: 1px solid #ccc; }\n    button { background: #007bff; color: white; border: none; padding: 10px 15px; margin: 5px; cursor: pointer; }\n    textarea { width: 95%; font-family: monospace; font-size: 12px; }\n    #template { height: 150px; }\n    #data { height: 80px; }\n    #preview { width: 100%; height: 300px; border: 1px solid #ccc; }\n    ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Builder - Working Version</title>\n  <style>\n    body { font-family: Arial, sans-serif; margin: 20px; }\n    ",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "status { padding: 10px; margin: 10px 0; background: #d4edda; color: #155724; }\n  </style>\n</head>\n<body>\n  <h1>E3 Builder - Working Version</h1>\n  \n  <div class=\"box\">\n    <h3>1",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.38"
+      },
+      {
+        "action": " Actions</h3>\n    <button onclick=\"makePreview()\">Make Preview</button>\n    <button onclick=\"downloadFile()\">Download HTML</button>\n    <div id=\"status\"></div>\n  </div>\n\n  <div class=\"box\">\n    <h3>5",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "innerHTML = 'Batch ID created: ' + id;\n}\n\nfunction loadTemplate() {\n  var t = '<",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.59"
+      },
+      {
+        "action": "innerHTML = 'Preview created successfully';\n}\n\nfunction downloadFile() {\n  if (",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.24"
+      },
+      {
+        "action": "innerHTML = 'ERROR: Create preview first';\n    return;\n  }\n  \n  var blob = new Blob([window",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.64"
+      },
+      {
+        "action": "createObjectURL(blob);\n  var a = document",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "createElement('a');\n  a",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.28"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.36335,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.86",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 8 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "797c45b74af4563af5d876918fa282a1"
+  }
+}

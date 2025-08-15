@@ -1,0 +1,391 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:24:50.472Z",
+    "source_text_length": 6893,
+    "word_count": 834,
+    "entropy_level": 0.927,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "6ab990089dbd1f1ed00e63acd1f2976c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 19
+      },
+      {
+        "theme": "white",
+        "frequency": 19
+      },
+      {
+        "theme": "prompt",
+        "frequency": 17
+      },
+      {
+        "theme": "settings",
+        "frequency": 16
+      },
+      {
+        "theme": "focus",
+        "frequency": 16
+      },
+      {
+        "theme": "style",
+        "frequency": 11
+      },
+      {
+        "theme": "text",
+        "frequency": 11
+      },
+      {
+        "theme": "mood",
+        "frequency": 10
+      },
+      {
+        "theme": "complexity",
+        "frequency": 10
+      },
+      {
+        "theme": "border",
+        "frequency": 10
+      },
+      {
+        "theme": "ring",
+        "frequency": 10
+      },
+      {
+        "theme": "medium",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [
+      "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+      "? 'Generating"
+    ],
+    "pattern_recognition": [
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "import React, { useState, useCallback } from 'react'; import { Wand2, Copy, RefreshCw, Palette, Sparkles, Camera, Brush, Settings } from 'lucide-react'; const ArtPromptGenerator = () => { const [generatedPrompt, setGeneratedPrompt] = useState(''); const [isGenerating, setIsGenerating] = useState(false); const [promptHistory, setPromptHistory] = useState([]); const [settings, setSettings] = useState({ style: 'any', mood: 'any', complexity: 'medium', artMedium: 'any', colorScheme: 'any' }); const styles = [ 'any', 'photorealistic', 'impressionist', 'surreal', 'minimalist', 'abstract', 'cyberpunk",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.189,
+    "cognitive_load_estimate": 0.34465,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.884,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 2,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.768,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 3,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.652,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 4,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.536,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 5,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.421,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 6,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.305,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      },
+      {
+        "generation": 7,
+        "entropy": 0.927,
+        "contradictions": 0,
+        "novelty_index": 0.189,
+        "action_items": [],
+        "key_questions": [
+          "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+          "? 'Generating"
+        ],
+        "meta": {
+          "patterns": [
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "const",
+              "frequency": 19
+            },
+            {
+              "theme": "white",
+              "frequency": 19
+            },
+            {
+              "theme": "prompt",
+              "frequency": 17
+            },
+            {
+              "theme": "settings",
+              "frequency": 16
+            },
+            {
+              "theme": "focus",
+              "frequency": 16
+            }
+          ]
+        },
+        "score": 0.329
+      }
+    ],
+    "quality_score": 32
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.04,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "new 1.html",
+      "bytes": 15118,
+      "lastModified": 1754186455694
+    }
+  }
+}

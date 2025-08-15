@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:35.653Z",
+    "timestamp": "2025-08-11T05:52:55.582Z",
     "source_text_length": 8910,
     "word_count": 867,
     "sentence_count": 68,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "1d9d897b2cfe311a1022db4f58dfdd9e",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "675ca2f422cc130a3bb32a7c948617b0a1fca34ffe3e753afc30167855905424.json",
-      "processing_timestamp": "2025-08-11T15:15:35.653Z",
+      "processing_timestamp": "2025-08-11T05:52:55.582Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -146,13 +146,13 @@
     "action_items": [
       {
         "action": "error(f\\\"Failed to create {model_name}: {e}\\\") if not models: raise RuntimeError(\\\"No models could be initialized\\\")\"\n      },\n      {\n        \"idx\": 17,\n        \"sample\": \"eate {model_name}: {e}\\\") if not models: raise RuntimeError(\\\"No models could be initialized\\\") # Create orchestration configuration\"\n      },\n      {\n        \"idx\": 18,\n        \"sample\": \"secutive_failures = 0 self",
-        "urgency_score": "0.50",
-        "feasibility_score": "0.07"
+        "urgency_score": "0.41",
+        "feasibility_score": "0.13"
       },
       {
         "action": "\"\n    ],\n    \"summary\": \"self, model, config, str, name\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 25,\n    \"negative\": 11,\n    \"uncertainty\": 11\n  },\n  \"temporal_markers\": [\n    \"will\",\n    \"was\",\n    \"2024\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"Universalarch",
-        "urgency_score": "0.71",
-        "feasibility_score": "0.35"
+        "urgency_score": "0.52",
+        "feasibility_score": "0.04"
       }
     ],
     "unresolved_tensions": []
@@ -167,9 +167,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.82",
+    "confidence_level": "0.48",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 2 actions"
     ],

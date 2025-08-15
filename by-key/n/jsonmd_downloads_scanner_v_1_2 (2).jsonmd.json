@@ -1,0 +1,147 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:20.912Z",
+    "anchor_id": "ef76c99fe64fdc2ab3a9614bf197cbf4fe1ce023d7b05f01ae4e1008e7e4cc6e",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.758,
+    "contradictions_detected": 13,
+    "word_count": 2077
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 77
+      },
+      {
+        "theme": "await",
+        "frequency": 62
+      },
+      {
+        "theme": "name",
+        "frequency": 60
+      },
+      {
+        "theme": "file",
+        "frequency": 34
+      },
+      {
+        "theme": "function",
+        "frequency": 34
+      },
+      {
+        "theme": "text",
+        "frequency": 33
+      },
+      {
+        "theme": "json",
+        "frequency": 33
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 27
+      },
+      {
+        "theme": "dir",
+        "frequency": 27
+      },
+      {
+        "theme": "return",
+        "frequency": 26
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "ocess Writes into scrolls/_reprocessed/ with a timestamped filename, does not touch the blacklist. Plan Scan Results — ✅ Run Now"
+      },
+      {
+        "idx": 1,
+        "sample": "jectURL(blob); a.download = fname; a.click(); }catch(e){ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{"
+      },
+      {
+        "idx": 2,
+        "sample": "a.download = fname; a.click(); }catch(e){ alert(\"No log available yet.\"); } } async function loadBlacklist(){ try{ const f = await"
+      },
+      {
+        "idx": 3,
+        "sample": "// Minimal helpers (optional) const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return"
+      },
+      {
+        "idx": 4,
+        "sample": "nimal helpers (optional) const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return {"
+      },
+      {
+        "idx": 5,
+        "sample": "l helpers (optional) const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { jso"
+      },
+      {
+        "idx": 6,
+        "sample": "(optional) const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusi"
+      },
+      {
+        "idx": 7,
+        "sample": "al) const contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scrol"
+      },
+      {
+        "idx": 8,
+        "sample": "contradictions = (text.match(/\\b(but|however|yet|although|despite|nevertheless|whereas)\\b/gi)||[]).length; return { json_md_fusion_scroll: {"
+      },
+      {
+        "idx": 9,
+        "sample": "Scanning ---------- async function scanDir(dirHandle, relPath, opts){ // never re-enter output directory if (dirHandle.name?.toLowerCase && dirHandle"
+      },
+      {
+        "idx": 10,
+        "sample": "ERR_DIR_NAME}/jsonmd_${anchor}.json`, 'err'); opts.stats.skipped++; // do not blacklist invalid return; } // Write output if (opts.igno"
+      },
+      {
+        "idx": 11,
+        "sample": "verse(); const list = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outList\").innerHTML = list; $(\"outListDialog\")."
+      },
+      {
+        "idx": 12,
+        "sample": "const list = items.slice(0,50).map(n=>`• ${n}`).join('<br>') || 'No outputs yet.'; $(\"outList\").innerHTML = list; $(\"outListDialog\").showModal()"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "(txt|md|markdown|html?",
+      "items?",
+      "textContent = ms ?",
+      "replace(/<script[\\s\\S]*?",
+      "replace(/<style[\\s\\S]*?",
+      "?",
+      "]*\\?",
+      "?",
+      "trim()?",
+      "length>160?",
+      "name?",
+      "function joinRel(rel, name){ return rel ?",
+      "generateJSONMDFusion === 'function') ?",
+      "name?",
+      "toLowerCase?"
+    ],
+    "summary": "const, await, name, file, function"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today"
+  ],
+  "metadata": {
+    "source_name": "jsonmd_downloads_scanner_v_1_2 (2).html",
+    "relative_path": "jsonmd_downloads_scanner_v_1_2 (2).html",
+    "size_bytes": 25163,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.88
+  }
+}

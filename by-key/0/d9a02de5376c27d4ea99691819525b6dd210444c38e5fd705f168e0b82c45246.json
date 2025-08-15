@@ -1,0 +1,94 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:36.384Z",
+    "anchor_id": "d9a02de5376c27d4ea99691819525b6dd210444c38e5fd705f168e0b82c45246",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.597,
+    "contradictions_detected": 2,
+    "word_count": 651
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "entropy",
+        "frequency": 23
+      },
+      {
+        "theme": "entry",
+        "frequency": 21
+      },
+      {
+        "theme": "div",
+        "frequency": 20
+      },
+      {
+        "theme": "contested",
+        "frequency": 16
+      },
+      {
+        "theme": "phase",
+        "frequency": 13
+      },
+      {
+        "theme": "cycle",
+        "frequency": 12
+      },
+      {
+        "theme": "execution",
+        "frequency": 11
+      },
+      {
+        "theme": "hash",
+        "frequency": 11
+      },
+      {
+        "theme": "output",
+        "frequency": 10
+      },
+      {
+        "theme": "content",
+        "frequency": 9
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "plete efficiently\"], \"success_criteria\": [\"Goal achieved\", \"No critical errors\"] } }, \"execution_log"
+      },
+      {
+        "idx": 1,
+        "sample": "ed all 8 cycles autonomously, demonstrating genuine self-directed behavior with no human intervention.\" }, {"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "3 ?",
+      "7 ?",
+      "contested ?",
+      "contested ?"
+    ],
+    "summary": "entropy, entry, div, contested, phase"
+  },
+  "sentiment_indicators": {
+    "positive": 4,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "was",
+    "were",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "execution_log_analysis.html",
+    "relative_path": "execution_log_analysis.html",
+    "size_bytes": 17963,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.74
+  }
+}

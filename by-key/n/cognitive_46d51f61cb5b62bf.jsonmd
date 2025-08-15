@@ -1,0 +1,239 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:28.896Z",
+    "source_text_length": 27492,
+    "word_count": 2448,
+    "sentence_count": 223,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "46d51f61cb5b62bf4295d95fe796c16f",
+    "entropy_level": 0.889,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "dtgjht.html",
+      "processing_timestamp": "2025-08-11T05:05:28.896Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 58,
+        "significance": "0.0237",
+        "examples": [
+          "class=\"container\">\r\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 56,
+        "significance": "0.0229",
+        "examples": [
+          "value=\"1\""
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 49,
+        "significance": "0.0200",
+        "examples": [
+          "id=\"beaconStatus\">Active</span></span>\r\n"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 40,
+        "significance": "0.0163",
+        "examples": [
+          "button"
+        ]
+      },
+      {
+        "theme": "option",
+        "frequency": 36,
+        "significance": "0.0147",
+        "examples": [
+          "<option"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 34,
+        "significance": "0.0139",
+        "examples": [
+          "Template"
+        ]
+      },
+      {
+        "theme": "data",
+        "frequency": 33,
+        "significance": "0.0135",
+        "examples": [
+          "onclick=\"loadSampleData()\">Load"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 33,
+        "significance": "0.0135",
+        "examples": [
+          "document.getElementById('status');\r\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 32,
+        "significance": "0.0131",
+        "examples": [
+          "<span>Entropy:"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 29,
+        "significance": "0.0118",
+        "examples": [
+          "document.getElementById('status');\r\n"
+        ]
+      },
+      {
+        "theme": "showmessage",
+        "frequency": 28,
+        "significance": "0.0114",
+        "examples": [
+          "showMessage(text,"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 25,
+        "significance": "0.0102",
+        "examples": [
+          "<!doctype"
+        ]
+      }
+    ],
+    "key_questions": [
+      "className = 'status ' + (isError ? 'error' : 'success');\r\n            status",
+      "display = 'none', 4000);\r\n            updateSystemStatus(isError ? 'Error' : 'Ready');\r\n        }\r\n\r\n        function updateSystemStatus(status) {\r\n            document",
+      "presets[selectedPreset] };\r\n            updateEntropy(selectedPreset === 'detailed' ? 0",
+      "45 : selectedPreset === 'brief' ? 0",
+      "toLocaleDateString()}</p>\r\n</div>\r\n\r\n<div class=\"field\"><span class=\"label\">Name:</span> PARTICIPANT_NAME</div>\r\n<div class=\"field\"><span class=\"label\">ID:</span> PARTICIPANT_ID</div>\r\n<div class=\"field\"><span class=\"label\">Date:</span> EVAL_DATE</div>\r\n<div class=\"field\"><span class=\"label\">Program:</span> PROGRAM_NAME</div>\r\n<div class=\"field\"><span class=\"label\">Batch ID:</span> BATCH_ID</div>\r\n<div class=\"field\"><span class=\"label\">Eval ID:</span> EVAL_ID</div>\r\n\r\n<h3>Work Habits Assessment</h3>\r\n<table>\r\n<tr><th style=\"width: 60%;\">Criteria</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\r\n<tr><td>Attendance — Correct day and time?</td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_YES></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NI></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NA></td></tr>\r\n<tr><td>Hygiene — Appropriately groomed",
+      "?</td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_YES></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_NI></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_NA></td></tr>\r\n<tr><td>Attitude — Cooperative and engaged",
+      "?</td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_YES></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_NI></td>\r\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_NA></td></tr>\r\n</table>\r\n\r\n<h3>Preparatory Goals</h3>\r\n<table>\r\n<tr><th style=\"width: 60%;\">Criteria</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\r\n<tr><td>Attention Span — Adequate for tasks",
+      "?</td>\r\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_YES></td>\r\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_NI></td>\r\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_NA></td></tr>\r\n<tr><td>Safety — Followed all procedures"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "'checked>' : '>';\r\n                        });\r\n                    }\r\n                } else {\r\n                    w",
+        "statement_b": "(result",
+        "line": 133,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.60"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 4,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Template Builder - Battle Creek Implementation</title>\r\n    <style>\r\n        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }\r\n         container { max-width: 1000px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0...",
+    "key_insights": [
+      {
+        "insight": "'\r\n            },\r\n            detailed: {\r\n                participant_name: '[To be filled]',\r\n                eval_date: '2025-08-10',\r\n                program_name: 'E3 Achievement Program',\r\n                work_habits: { attendance: 'yes', hygiene: 'yes', attitude: 'yes' },\r\n                preparatory_goals: { attention_span: 'yes', safety: 'yes' },\r\n                comments_section: 'Detailed evaluation: Participant demonstrates consistent engagement and follows all safety protocols",
+        "confidence_level": "0.27",
+        "insight_type": "analytical_insight"
+      }
+    ],
+    "action_items": [
+      {
+        "action": "doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Template Builder - Battle Creek Implementation</title>\r\n    <style>\r\n        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }\r\n        ",
+        "urgency_score": "0.02",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "aeon-bridge { background: #f0fff0; }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <div class=\"header\">\r\n            <h1>🌟 E3 Template Builder - AEON-Bridge Implementation</h1>\r\n            <div class=\"location\">Battle Creek, Michigan (42",
+        "urgency_score": "0.26",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "0000</span></span>\r\n                <span>Status: <span id=\"systemStatus\">Ready</span></span>\r\n                <span>Lost Child Beacon: <span id=\"beaconStatus\">Active</span></span>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section\">\r\n            <h3>🔧 System Control</h3>\r\n            <div class=\"form-row\">\r\n                <input type=\"text\" id=\"batchId\" readonly placeholder=\"Batch ID will generate here\">\r\n                <button onclick=\"newBatch()\">New Batch</button>\r\n                <label>Counter:</label>\r\n                <input type=\"number\" id=\"counter\" value=\"1\" min=\"1\">\r\n                <button onclick=\"resetSystem()\" class=\"warning\">Reset System</button>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section presets\">\r\n            <h3>🤖 AI-Optimized Presets</h3>\r\n            <div class=\"form-row\">\r\n                <select id=\"presetSelect\">\r\n                    <option value=\"\">Select Preset</option>\r\n                    <option value=\"standard\">Standard Evaluation (Entropy: 0",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "safety\">Goals: Safety</option>\r\n                    <option value=\"comments_section\">Comments</option>\r\n                </select>\r\n                <input type=\"text\" id=\"valueInput\" placeholder=\"Enter value\">\r\n                <button onclick=\"addField()\">Add Field</button>\r\n            </div>\r\n            \r\n            <textarea id=\"bulkInput\" rows=\"6\" placeholder=\"Bulk data entry:\r\nparticipant_name=John Doe, participant_id=001, eval_date=2025-08-10\r\nparticipant_name=Jane Smith, participant_id=002, eval_date=2025-08-10\"></textarea>\r\n            \r\n            <div class=\"form-row\">\r\n                <input type=\"text\" id=\"columnOrder\" placeholder=\"Column order: participant_name,participant_id,eval_date\">\r\n                <button onclick=\"validateData()\" class=\"success\">Validate Data</button>\r\n                <button onclick=\"clearAllData()\" class=\"warning\">Clear All</button>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"section\">\r\n            <h3>📄 Template Management</h3>\r\n            <div class=\"form-row\">\r\n                <button onclick=\"loadDefaultTemplate()\">Load Default E3 Template</button>\r\n                <button onclick=\"loadAdvancedTemplate()\">Load Advanced Template</button>\r\n                <button onclick=\"clearTemplate()\">Clear Template</button>\r\n            </div>\r\n            <textarea id=\"template\" rows=\"8\" placeholder=\"Template will load here",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.56"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n            const a = document",
+        "urgency_score": "0.82",
+        "feasibility_score": "0.26"
+      },
+      {
+        "action": "createElement('a');\r\n            a",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.95"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n                    const a = document",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "createElement('a');\r\n                    a",
+        "urgency_score": "0.61",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": " 'Active' : 'Inactive',\r\n                formsGenerated: counter - 1\r\n            };\r\n            \r\n            const reportText = `AEON-Bridge E3 Implementation Report\r\nGenerated: ${report",
+        "urgency_score": "0.08",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n            const a = document",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.40"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.79",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 1 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "46d51f61cb5b62bf4295d95fe796c16f"
+  }
+}

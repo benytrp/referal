@@ -1,0 +1,167 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:46:09.999Z",
+    "source_text_length": 307,
+    "word_count": 49,
+    "sentence_count": 8,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "c9928aea9815554ad2f80d14fa067d27",
+    "entropy_level": 0.944,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:46:09.999Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 4,
+        "significance": "0.0816",
+        "examples": [
+          "[2025-08-11T05:44:34.000Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 4,
+        "significance": "0.0816",
+        "examples": [
+          "[2025-08-11T05:44:34.000Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 4,
+        "significance": "0.0816",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 4,
+        "significance": "0.0816",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 2,
+        "significance": "0.0408",
+        "examples": [
+          "(2).html\n[2025-08-11T05:44:34.601Z]"
+        ]
+      },
+      {
+        "theme": "000z",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "[2025-08-11T05:44:34.000Z]"
+        ]
+      },
+      {
+        "theme": "unified_e3_builder",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "unified_e3_builder"
+        ]
+      },
+      {
+        "theme": "601z",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "(2).html\n[2025-08-11T05:44:34.601Z]"
+        ]
+      },
+      {
+        "theme": "x_logic_processor",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "x_logic_processor"
+        ]
+      },
+      {
+        "theme": "968z",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "(3).html\n[2025-08-11T05:45:34.968Z]"
+        ]
+      },
+      {
+        "theme": "universal",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "Universal"
+        ]
+      },
+      {
+        "theme": "session",
+        "frequency": 1,
+        "significance": "0.0204",
+        "examples": [
+          "Session"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:44:34 000Z] skip(blacklist) unified_e3_builder (2)...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "000Z] skip(blacklist) unified_e3_builder (2)",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.04"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.01535,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.98",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c9928aea9815554ad2f80d14fa067d27"
+  }
+}

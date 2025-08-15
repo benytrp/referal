@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:46.011Z",
+    "source_text_length": 183,
+    "word_count": 31,
+    "sentence_count": 1,
+    "entropy_level": 0.965,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_offline_analyzer_updated_i_o_export_fallback.html"
+    },
+    "anchor_id": "c244ccea12aff041c728bcc5180ac0fe"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "files",
+        "frequency": 3
+      },
+      {
+        "theme": "folder",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      },
+      {
+        "theme": "analyzer",
+        "frequency": 1
+      },
+      {
+        "theme": "single",
+        "frequency": 1
+      },
+      {
+        "theme": "file",
+        "frequency": 1
+      },
+      {
+        "theme": "tool",
+        "frequency": 1
+      },
+      {
+        "theme": "legacy",
+        "frequency": 1
+      },
+      {
+        "theme": "fallbacks",
+        "frequency": 1
+      },
+      {
+        "theme": "output",
+        "frequency": 1
+      },
+      {
+        "theme": "export",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Offline Analyzer Single-file offline tool with legacy fallbacks Add Files Add Folder Set Output Folder Export — 0 files No folder Progress Drop files here to add to inputs Search",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c244ccea12aff041c728bcc5180ac0fe"
+  }
+}

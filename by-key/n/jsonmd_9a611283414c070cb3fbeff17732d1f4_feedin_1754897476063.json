@@ -1,0 +1,137 @@
+# Content Evolution - Generation 0
+
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:43.574Z",
+    "source_text_length": 27369,
+    "word_count": 2293,
+    "entropy_level": 0.885,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "9a611283414c070cb3fbeff17732d1f4",
+    "source": {
+      "path": "e3cmbo,html.txt",
+      "bytes": 27381,
+      "lastModified": 1754770369600
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 66
+      },
+      {
+        "theme": "const",
+        "frequency": 63
+      },
+      {
+        "theme": "option",
+        "frequency": 58
+      },
+      {
+        "theme": "class",
+        "frequency": 44
+      },
+      {
+        "theme": "document",
+        "frequency": 37
+      },
+      {
+        "theme": "type",
+        "frequency": 29
+      },
+      {
+        "theme": "input",
+        "frequency": 28
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 28
+      }
+    ],
+    "key_questions": [
+      "<!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title>E3 Master Template Manager</title>\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <style>\r\n        body {\r\n            font-family: 'Inter', sans-serif;\r\n            background-color: #f3f4f6;\r\n            color: #1f2937;\r\n            margin: 0;\r\n            padding: 2rem;\r\n            display: flex;\r\n            justify-content: center;\r\n            min-height: 100vh;\r\n        }\r\n        .container {\r\n            max-width: 900px;\r\n            width: 100%;\r\n            background-color: #ffffff;\r\n            border-radius: 1rem;\r\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n            padding: 2rem;\r\n        }\r\n        h1 {\r\n            font-size: 1.5rem;\r\n            font-weight: 700;\r\n            margin-bottom: 1rem;\r\n            color: #111827;\r\n            text-align: center;\r\n        }\r\n        p {\r\n            font-size: 1rem;\r\n            color: #4b5563;\r\n            margin-bottom: 1.5rem;\r\n            text-align: center;\r\n        }\r\n        h2 {\r\n            font-size: 1.25rem;\r\n            font-weight: 600;\r\n            margin-top: 2rem;\r\n            margin-bottom: 1rem;\r\n            color: #111827;\r\n            border-bottom: 2px solid #e5e7eb;\r\n            padding-bottom: 0.5rem;\r\n        }\r\n        label {\r\n            display: block;\r\n            font-weight: 600;\r\n            margin-bottom: 0.5rem;\r\n            color: #374151;\r\n        }\r\n        textarea, select, input[type=\"text\"] {\r\n            width: 100%;\r\n            padding: 0.75rem;\r\n            border: 1px solid #d1d5db;\r\n            border-radius: 0.5rem;\r\n            font-family: 'Inter', sans-serif;\r\n            font-size: 0.875rem;\r\n            background-color: #f9fafb;\r\n            resize: vertical;\r\n        }\r\n        textarea {\r\n            min-height: 150px;\r\n            font-family: monospace;\r\n        }\r\n        .form-row {\r\n            display: flex;\r\n            gap: 1rem;\r\n            margin-bottom: 1rem;\r\n            align-items: center;\r\n        }\r\n        .form-row input[type=\"text\"], .form-row select {\r\n            flex: 1;\r\n        }\r\n        .button-group {\r\n            display: flex;\r\n            gap: 1rem;\r\n            margin-top: 1.5rem;\r\n        }\r\n        button {\r\n            flex: 1;\r\n            padding: 0.75rem 1.5rem;\r\n            border: none;\r\n            border-radius: 0.5rem;\r\n            font-weight: 600;\r\n            cursor: pointer;\r\n            transition: background-color 0.2s, box-shadow 0.2s;\r\n        }\r\n        #addBtn {\r\n            flex: none;\r\n            width: auto;\r\n            background-color: #10b981;\r\n            color: #ffffff;\r\n        }\r\n        #addBtn:hover {\r\n            background-color: #059669;\r\n        }\r\n        #generateFormBtn, #generateBulkBtn {\r\n            background-color: #4f46e5;\r\n            color: #ffffff;\r\n            font-size: 1rem;\r\n        }\r\n        #generateFormBtn:hover, #generateBulkBtn:hover {\r\n            background-color: #4338ca;\r\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n        }\r\n        #copyBtn {\r\n            background-color: #6b7280;\r\n            color: #ffffff;\r\n            font-size: 1rem;\r\n        }\r\n        #copyBtn:hover {\r\n            background-color: #4b5563;\r\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n        }\r\n        .status {\r\n            margin-top: 1rem;\r\n            padding: 0.75rem;\r\n            border-radius: 0.5rem;\r\n            font-size: 0.875rem;\r\n            text-align: center;\r\n            display: none;\r\n        }\r\n        .status.success {\r\n            background-color: #d1fae5;\r\n            color: #065f46;\r\n        }\r\n        .status.error {\r\n            background-color: #fee2e2;\r\n            color: #991b1b;\r\n        }\r\n        #formFields {\r\n            border: 1px solid #e5e7eb;\r\n            border-radius: 0.5rem;\r\n            padding: 1rem;\r\n            margin-top: 1rem;\r\n        }\r\n        #preview {\r\n            width: 100%;\r\n            height: 400px;\r\n            border: 1px solid #ccc;\r\n            border-radius: 0.5rem;\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n    <div class=\"container\">\r\n        <h1>E3 Master Template Manager</h1>\r\n        <p>This all-in-one tool generates E3 evaluation forms with unique identifiers from your data. Use the form for single entries or the text area for bulk data, then generate and download your forms.</p>\r\n\r\n        <h2>1. Batch Setup</h2>\r\n        <div class=\"form-row\">\r\n            <div>\r\n                <label>Batch ID</label>\r\n                <input type=\"text\" id=\"batchId\" readonly>\r\n            </div>\r\n            <div>\r\n                <button id=\"newBatchBtn\">New Batch</button>\r\n            </div>\r\n        </div>\r\n        \r\n        <h2>2. Data Input</h2>\r\n        <p>Use the form below for a single record, or the text area for bulk records.</p>\r\n        <div id=\"formFields\">\r\n            <div class=\"form-row\">\r\n                <select class=\"key-select\">\r\n                    <option value=\"\">Select a Key</option>\r\n                    <optgroup label=\"Form Fields\">\r\n                        <option value=\"participant_name\">participant_name</option>\r\n                        <option value=\"participant_id\">participant_id</option>\r\n                        <option value=\"eval_date\">eval_date</option>\r\n                        <option value=\"instructor_name\">instructor_name</option>\r\n                        <option value=\"signature_date\">signature_date</option>\r\n                        <option value=\"comments_section\">comments_section</option>\r\n                    </optgroup>\r\n                    <optgroup label=\"Checkbox Fields\">\r\n                        <option value=\"work_habits.attendance\">work_habits.attendance</option>\r\n                        <option value=\"work_habits.hygiene\">work_habits.hygiene</option>\r\n                        <option value=\"work_habits.attitude\">work_habits.attitude</option>\r\n                        <option value=\"preparatory_goals.attention_span\">preparatory_goals.attention_span</option>\r\n                        <option value=\"preparatory_goals.task_completion\">preparatory_goals.task_completion</option>\r\n                        <option value=\"preparatory_goals.safety\">preparatory_goals.safety</option>\r\n                    </optgroup>\r\n                </select>\r\n                <div class=\"value-container\">\r\n                    <input type=\"text\" class=\"value-input\" placeholder=\"Enter Value\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"button-group\" style=\"justify-content: flex-start;\">\r\n            <button id=\"addBtn\">Add Field</button>\r\n            <button id=\"generateFormBtn\">Generate from Form</button>\r\n        </div>\r\n\r\n        <label for=\"inputData\" style=\"margin-top: 2rem;\">Bulk Data (paste `key=value` pairs, one record per line):</label>\r\n        <textarea id=\"inputData\" placeholder=\"Example:\r\nparticipant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09\r\nparticipant_name=John Smith, participant_id=P002, eval_date=2025-08-09\"></textarea>\r\n        <button id=\"generateBulkBtn\" style=\"width: 100%;\">Generate Bulk from Text</button>\r\n\r\n        <h2>3. Template & Actions</h2>\r\n        <label for=\"template\">Child Template HTML (use ALL_CAPS for placeholders)</label>\r\n        <textarea id=\"template\"></textarea>\r\n        <div class=\"button-group\">\r\n            <button id=\"previewBtn\">Preview</button>\r\n            <button id=\"downloadOneBtn\">Download Single Form</button>\r\n            <div>\r\n                <label for=\"bulkFile\" style=\"text-align: center;\">Bulk File Export</label>\r\n                <input type=\"file\" id=\"bulkFile\" accept=\".json\">\r\n            </div>\r\n            <button id=\"bulkExportBtn\">Bulk Export</button>\r\n        </div>\r\n\r\n        <div id=\"status\" class=\"status\"></div>\r\n\r\n        <h2>4. Preview</h2>\r\n        <iframe id=\"preview\"></iframe>\r\n    </div>\r\n\r\n    <script>\r\n        const checkboxKeys = [\r\n            'work_habits.attendance',\r\n            'work_habits.hygiene',\r\n            'work_habits.attitude',\r\n            'preparatory_goals.attention_span',\r\n            'preparatory_goals.task_completion',\r\n            'preparatory_goals.safety'\r\n        ];\r\n\r\n        let batchId = '';\r\n        let counter = 1;\r\n\r\n        const DEFAULT_TEMPLATE = `<!doctype html>\r\n<html>\r\n<head>\r\n    <title>E3 Achievement Daily Participant Evaluation</title>\r\n    <style>\r\n        body { font: 14px Arial, sans-serif; margin: 20px; }\r\n        .row { margin: 10px 0; padding: 5px; border-bottom: 1px solid #ccc; }\r\n        .label { font-weight: bold; color: #666; }\r\n        table { width: 100%; border-collapse: collapse; margin: 10px 0; }\r\n        th, td { border: 1px solid #ccc; padding: 5px; }\r\n        th { background: #f0f0f0; }\r\n        .center { text-align: center; }\r\n        .comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }\r\n        @media print { body { margin: 0; font-size: 12px; } }\r\n    </style>\r\n</head>\r\n<body>\r\n    <h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Name:</span> PARTICIPANT_NAME\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">ID:</span> PARTICIPANT_ID\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Date:</span> EVAL_DATE\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Batch ID:</span> BATCH_ID\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n        <span class=\"label\">Eval ID:</span> EVAL_ID\r\n    </div>\r\n\r\n    <h3>Work Habits</h3>\r\n    <table>\r\n    <tr>\r\n    <th style=\"width: 50%;\">Item</th>\r\n    <th>Yes</th>\r\n    <th>NI</th>\r\n    <th>N/A</th>\r\n    </tr>\r\n    <tr>\r\n    <td>Attendance — Correct day and time?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attendance\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attendance\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attendance\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Hygiene — Appropriately groomed?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.hygiene\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.hygiene\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.hygiene\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Attitude — Positive attitude?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attitude\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attitude\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"work_habits.attitude\" data-opt=\"na\"></td>\r\n    </tr>\r\n    </table>\r\n\r\n    <h3>Preparatory Goals</h3>\r\n    <table>\r\n    <tr>\r\n    <th style=\"width: 50%;\">Item</th>\r\n    <th>Yes</th>\r\n    <th>NI</th>\r\n    <th>N/A</th>\r\n    </tr>\r\n    <tr>\r\n    <td>Attention Span — Adequate for tasks?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.attention_span\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.attention_span\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.attention_span\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Task Completion — Stayed on task?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.task_completion\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.task_completion\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.task_completion\" data-opt=\"na\"></td>\r\n    </tr>\r\n    <tr>\r\n    <td>Safety — Followed procedures?",
+      "</td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.safety\" data-opt=\"yes\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.safety\" data-opt=\"ni\"></td>\r\n    <td class=\"center\"><input type=\"checkbox\" data-key=\"preparatory_goals.safety\" data-opt=\"na\"></td>\r\n    </tr>\r\n    </table>\r\n\r\n    <h3>Comments</h3>\r\n    <div class=\"comment-box\">COMMENTS_SECTION</div>\r\n\r\n    <h3>Signature</h3>\r\n    <div class=\"row\">\r\n    <span class=\"label\">Instructor:</span> INSTRUCTOR_NAME\r\n    </div>\r\n\r\n    <div class=\"row\">\r\n    <span class=\"label\">Signature Date:</span> SIGNATURE_DATE\r\n    </div>\r\n\r\n</body>\r\n</html>`;\r\n        \r\n        function makeId() {\r\n            const now = new Date();\r\n            const date = now.getFullYear() + String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0');\r\n            const time = String(now.getHours()).padStart(2, '0') + String(now.getMinutes()).padStart(2, '0') + String(now.getSeconds()).padStart(2, '0');\r\n            const random = Math.random().toString(36).substr(2, 4);\r\n            return date + time + random;\r\n        }\r\n\r\n        function showStatus(message, isError) {\r\n            const statusEl = document.getElementById('status');\r\n            statusEl.textContent = message;\r\n            statusEl.className = isError ?",
+      "'status error' : 'status success';\r\n            statusEl.style.display = 'block';\r\n        }\r\n\r\n        function replaceTokens(template, data) {\r\n            let html = template;\r\n            const tokenMap = {};\r\n\r\n            // Add system data\r\n            tokenMap.batch_id = batchId;\r\n            tokenMap.eval_id = 'E3-' + makeId();\r\n            tokenMap.eval_date = new Date().toISOString().slice(0, 10);\r\n            \r\n            // Merge custom data\r\n            Object.assign(tokenMap, data);\r\n\r\n            // Replace all tokens\r\n            Object.keys(tokenMap).forEach(key => {\r\n                const value = tokenMap[key] !== undefined ?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "<! … value = 'yes';\r\n        });\r\n\r\n    </script>\r\n</body>\r\n</html>",
+    "key_insights": [],
+    "action_items": [
+      "Template & Actions</h2>\r\n        <label for=\"template\">Child Template HTML (use ALL_CAPS for placeholders)</label>\r\n        <textarea id=\"template\"></textarea>\r\n        <div class=\"button-group\">\r\n            <button id=\"previewBtn\">Preview</button>\r\n            <button id=\"downloadOneBtn\">Download Single Form</button>\r\n            <div>\r\n                <label for=\"bulkFile\" style=\"text-align: center;\">Bulk File Export</label>\r\n                <input type=\"file\" id=\"bulkFile\" accept=\".",
+      "createObjectURL(blob);\r\n            const a = document.",
+      "createElement('a');\r\n            a.",
+      "revokeObjectURL(url);\r\n        }\r\n\r\n        function createValueInput(key) {\r\n            const container = document.",
+      "createElement('div');\r\n            container.",
+      "innerHTML = `<input type=\"text\" class=\"value-input\" placeholder=\"Enter Value\">`;\r\n            }\r\n            return container;\r\n        }\r\n\r\n        function createFormRow() {\r\n            const formFields = document.",
+      "createElement('div');\r\n            newRow.",
+      "createElement('select');\r\n            keySelect."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "plain"
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 2443
+- Complexity score: 100.0
+- Key themes: class, data, input, center, option, type, color, label, button, value
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of class?
+2. How does class connect to broader patterns?
+3. What are the deeper implications of data?
+4. How does data connect to broader patterns?
+5. What are the deeper implications of input?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: class, data, input
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: class
+This theme emerges as significant in generation 0. Consider how class relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: data
+This theme emerges as significant in generation 0. Consider how data relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

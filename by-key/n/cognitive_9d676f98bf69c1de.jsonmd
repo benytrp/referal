@@ -1,0 +1,223 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:36.174Z",
+    "source_text_length": 17741,
+    "word_count": 2088,
+    "sentence_count": 168,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9d676f98bf69c1de38d39ca3decc450f",
+    "entropy_level": 0.84,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "simple_e3_builder (1).html",
+      "processing_timestamp": "2025-08-11T05:05:36.174Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "data",
+        "frequency": 68,
+        "significance": "0.0326",
+        "examples": [
+          "#baseData"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 66,
+        "significance": "0.0316",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 44,
+        "significance": "0.0211",
+        "examples": [
+          "findCheckboxValues(data)"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 32,
+        "significance": "0.0153",
+        "examples": [
+          "value=\"1\""
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 30,
+        "significance": "0.0144",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 27,
+        "significance": "0.0129",
+        "examples": [
+          "input,"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 27,
+        "significance": "0.0129",
+        "examples": [
+          "document.getElementById('status');\n"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 22,
+        "significance": "0.0105",
+        "examples": [
+          "#template"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 22,
+        "significance": "0.0105",
+        "examples": [
+          "functions\nfunction"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 21,
+        "significance": "0.0101",
+        "examples": [
+          "html>\n<html"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 20,
+        "significance": "0.0096",
+        "examples": [
+          "label"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 19,
+        "significance": "0.0091",
+        "examples": [
+          "button"
+        ]
+      }
+    ],
+    "key_questions": [
+      "className = 'status ' + (isError ? 'error' : 'success');\n}\n\nfunction getValue(obj, path) {\n  var keys = path",
+      "length; i++) {\n    if (current && typeof current === 'object' && keys[i] in current) {\n      current = current[keys[i]];\n    } else {\n      return '';\n    }\n  }\n  \n  return current == null ? '' : String(current);\n}\n\nfunction replaceTokens(template, data) {\n  return template",
+      "hasOwnProperty(key)) {\n        var fullKey = prefix ? prefix + '",
+      "value = batchId;\n  showStatus('New batch ID generated');\n}\n\nfunction resetTemplate() {\n  if (confirm('Reset to default template? Your changes will be lost",
+      "instance_seq⟧</div>\\n    </div>\\n  </div>\\n\\n  <div class=\"section\">\\n    <h3>Work Habits</h3>\\n    <table>\\n      <tr>\\n        <th style=\"width: 50%;\">Item</th>\\n        <th>Yes</th>\\n        <th>NI</th>\\n        <th>N/A</th>\\n      </tr>\\n      <tr>\\n        <td>Attendance — Correct day and time?</td>\\n        <td class=\"checkbox-cell\">\\n          <input type=\"checkbox\" data-key=\"work_habits",
+      "correct_day_time\" data-opt=\"na\"> N/A\\n        </td>\\n      </tr>\\n      <tr>\\n        <td>Hygiene — Participant was appropriately groomed?</td>\\n        <td class=\"checkbox-cell\">\\n          <input type=\"checkbox\" data-key=\"work_habits",
+      "hygiene\" data-opt=\"na\"> N/A\\n        </td>\\n      </tr>\\n      <tr>\\n        <td>Attitude — Participant exhibited positive attitude?</td>\\n        <td class=\"checkbox-cell\">\\n          <input type=\"checkbox\" data-key=\"work_habits",
+      "comments⟧</div>\\n  </div>\\n\\n  <div class=\"section\">\\n    <h3>Preparatory Goals</h3>\\n    <table>\\n      <tr>\\n        <th style=\"width: 50%;\">Item</th>\\n        <th>Yes</th>\\n        <th>NI</th>\\n        <th>N/A</th>\\n      </tr>\\n      <tr>\\n        <td>Attention Span — adequate span for tasks?</td>\\n        <td class=\"checkbox-cell\">\\n          <input type=\"checkbox\" data-key=\"preparatory_goals"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 8,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Builder - Fixed</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <style>\n    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1 container { max-width: 900px; margin: 0 auto; }\n    ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>E3 Master Builder - Fixed</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <style>\n    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.81"
+      },
+      {
+        "action": "mono { font-family: monospace; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <h1>E3 Master Builder - Fixed</h1>\n    \n    <div class=\"section\">\n      <h3>Step 1: Setup</h3>\n      <div class=\"form-row\">\n        <div>\n          <label>Batch ID</label>\n          <input type=\"text\" id=\"batchId\" class=\"mono\" readonly>\n        </div>\n        <div>\n          <button type=\"button\" onclick=\"newBatch()\">New Batch</button>\n        </div>\n        <div>\n          <label>Counter</label>\n          <input type=\"number\" id=\"counter\" value=\"1\" min=\"1\">\n        </div>\n      </div>\n    </div>\n\n    <div class=\"section\">\n      <h3>Step 2: Base Data (Optional)</h3>\n      <label>JSON data to merge into all children</label>\n      <textarea id=\"baseData\" class=\"code\" placeholder='{\"record_meta\": {\"date\": \"2025-08-09\"}}'></textarea>\n    </div>\n\n    <div class=\"section\">\n      <h3>Step 3: Template</h3>\n      <div class=\"form-row\">\n        <button type=\"button\" onclick=\"resetTemplate()\" class=\"secondary\">Load Default E3 Template</button>\n      </div>\n      <label>Child Template (use ⟦token⟧ syntax)</label>\n      <textarea id=\"template\" class=\"code\"></textarea>\n    </div>\n\n    <div class=\"section\">\n      <h3>Step 4: Actions</h3>\n      <div class=\"form-row\">\n        <button type=\"button\" onclick=\"previewChild()\">Preview</button>\n        <button type=\"button\" onclick=\"downloadOne()\">Download Single</button>\n      </div>\n      <div class=\"form-row\">\n        <input type=\"file\" id=\"bulkFile\" accept=\"",
+        "urgency_score": "0.37",
+        "feasibility_score": "0.98"
+      },
+      {
+        "action": "trim();\n          if (str === 'yes' || str === 'y' || str === 'true' || str === '1') {\n            result[fullKey] = 'yes';\n          } else if (str === 'ni' || str === 'no' || str === 'false' || str === '0') {\n            result[fullKey] = 'ni';\n          } else if (str === 'na' || str === 'n/a' || str === 'none') {\n            result[fullKey] = 'na';\n          }\n        }\n      }\n    }\n  }\n  \n  scan(data, '');\n  return result;\n}\n\nfunction buildChild(template, data) {\n  // Add system data\n  if (",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.85"
+      },
+      {
+        "action": "createObjectURL(blob);\n  var a = document",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.56"
+      },
+      {
+        "action": "createElement('a');\n  a",
+        "urgency_score": "0.49",
+        "feasibility_score": "0.76"
+      },
+      {
+        "action": " Your changes will be lost",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "parse(baseDataText);\n    }\n    \n    var html = buildChild(template, data);\n    document",
+        "urgency_score": "0.60",
+        "feasibility_score": "0.60"
+      },
+      {
+        "action": "parse(baseDataText);\n    }\n    \n    var html = buildChild(template, data);\n    var filename = 'E3-Child-' + counter + '",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": "isArray(bulkData)) {\n        showStatus('File must contain a JSON array', true);\n        return;\n      }\n      \n      var template = document",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.76"
+      },
+      {
+        "action": "length - 1]] = rowData[key];\n                } else {\n                  data[key] = rowData[key];\n                }\n              }\n            }\n            \n            var html = buildChild(template, data);\n            var filename = 'E3-Child-' + (counter + index) + '",
+        "urgency_score": "0.11",
+        "feasibility_score": "0.10"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 0.88705,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.45",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "9d676f98bf69c1de38d39ca3decc450f"
+  }
+}

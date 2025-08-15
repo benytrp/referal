@@ -1,0 +1,131 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:37.155Z",
+    "anchor_id": "6640fb3d11fc20be9aac67b3c0789712cad91dd6cf8ee8b342ff8d2beb94fbb7",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.676,
+    "contradictions_detected": 5,
+    "word_count": 1317
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "entry",
+        "frequency": 65
+      },
+      {
+        "theme": "const",
+        "frequency": 30
+      },
+      {
+        "theme": "index",
+        "frequency": 26
+      },
+      {
+        "theme": "document",
+        "frequency": 25
+      },
+      {
+        "theme": "div",
+        "frequency": 25
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 21
+      },
+      {
+        "theme": "entropy",
+        "frequency": 21
+      },
+      {
+        "theme": "enhanceddata",
+        "frequency": 20
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 20
+      },
+      {
+        "theme": "execution",
+        "frequency": 16
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "g\", \"op\": \"list_constraints\", \"output\": \"Acknowledge constraints: [\\\"Do not modify original script.\\\",\\\"Categorize findings by severity.\\\"]\", \"contr"
+      },
+      {
+        "idx": 1,
+        "sample": "ontainer || !enhancedContainer) { console.error('Log containers not found'); return; } orig"
+      },
+      {
+        "idx": 2,
+        "sample": "tBridge() { if (enhancedData.length === 0) { alert('No processed data to export'); return; }"
+      },
+      {
+        "idx": 3,
+        "sample": "ortJSON() { if (enhancedData.length === 0) { alert('No processed data to export'); return; }"
+      },
+      {
+        "idx": 4,
+        "sample": "nalysis() { if (enhancedData.length === 0) { alert('No processed data to export'); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "contested ?",
+      "contested ?",
+      "contested ?",
+      "contested ?",
+      "${isEnhanced ?",
+      "contested ?",
+      "<div><strong>Output:</strong> ${isEnhanced ?",
+      "${isEnhanced ?",
+      "phi_resonance?",
+      "observer_loop?",
+      "observer_loop?",
+      "phi_resonance?"
+    ],
+    "summary": "entry, const, index, document, div"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "hybrid_consciousness_processor (1).html",
+    "relative_path": "hybrid_consciousness_processor (1).html",
+    "size_bytes": 25237,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.600
+- Word Count: 252
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:31.887Z",
+  "original_file": "6640fb3d11fc20be9aac67b3c0789712cad91dd6cf8ee8b342ff8d2beb94fbb7.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

@@ -1,0 +1,253 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:39.397Z",
+    "source_text_length": 59798,
+    "word_count": 4467,
+    "sentence_count": 626,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ea632db4d030b0623ad8d757c44d1fc5",
+    "entropy_level": null,
+    "contradictions_detected": 3,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "xlogic_executor (1).html",
+      "processing_timestamp": "2025-08-11T05:05:39.397Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "document",
+        "frequency": 80,
+        "significance": "0.0179",
+        "examples": [
+          "document.getElementById('executionMode').value;\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 69,
+        "significance": "0.0154",
+        "examples": [
+          ".phase-progress"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 67,
+        "significance": "0.0150",
+        "examples": [
+          "document.getElementById('executionMode').value;\n"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 63,
+        "significance": "0.0141",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "results",
+        "frequency": 60,
+        "significance": "0.0134",
+        "examples": [
+          ".results-panel"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 58,
+        "significance": "0.0130",
+        "examples": [
+          "constructor(schema,"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 56,
+        "significance": "0.0125",
+        "examples": [
+          ".execution-status"
+        ]
+      },
+      {
+        "theme": "schema",
+        "frequency": 51,
+        "significance": "0.0114",
+        "examples": [
+          "Schema"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 51,
+        "significance": "0.0114",
+        "examples": [
+          ".entropy-meter"
+        ]
+      },
+      {
+        "theme": "color",
+        "frequency": 43,
+        "significance": "0.0096",
+        "examples": [
+          "color:"
+        ]
+      },
+      {
+        "theme": "operation",
+        "frequency": 42,
+        "significance": "0.0094",
+        "examples": [
+          ".operation-tracker"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 40,
+        "significance": "0.0090",
+        "examples": [
+          "border-box;"
+        ]
+      }
+    ],
+    "key_questions": [
+      "onCycleComplete?",
+      "onComplete?",
+      "onPhaseStart?",
+      "onPhaseComplete?",
+      "onOperationStart?",
+      "onOperationComplete?",
+      "onOperationError?",
+      "onSandboxCreated?"
+    ],
+    "pattern_recognition": [
+      "loop",
+      "cycle",
+      "repeat",
+      "again",
+      "return",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "goal}`);\n                \n                let concluded = false;\n                w",
+        "statement_b": "(",
+        "line": 175,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.38"
+      },
+      {
+        "statement_a": "isPaused) {\n                        w",
+        "statement_b": "(this",
+        "line": 195,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.42"
+      },
+      {
+        "statement_a": "isPaused) {\n                        w",
+        "statement_b": "(this",
+        "line": 209,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.26"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 19,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>X-Logic Schema Executor</title>\n    <style>\n        * { margin: 0; padding: 0; box-sizing: border-box; }\n        \n        body {\n            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;\n            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);\n            color: #e2e8f0;\n            min-height: 100vh;\n            overflow-x: hidden;\n        }\n\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "quick-actions {\n            display: flex;\n            gap: 0",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.45"
+      },
+      {
+        "action": "phase-item {\n                margin: 0;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>⚡ X-Logic Schema Executor</h1>\n            <p class=\"subtitle\">Execute autonomous consciousness engine schemas with real-time monitoring</p>\n        </div>\n\n        <",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.31"
+      },
+      {
+        "action": "5rem;\">📊 Schema Overview</h4>\n                <div id=\"schemaDetails\"></div>\n            </div>\n\n            <div class=\"execution-status\">\n                <h4 style=\"color: #3b82f6; margin-bottom: 1rem;\">🔧 Execution Control</h4>\n                \n                <div class=\"quick-actions\">\n                    <button class=\"btn\" id=\"executeBtn\" disabled>\n                        <span id=\"executeText\">🚀 Execute Schema</span>\n                        <div class=\"loading-spinner\" id=\"executeSpinner\" style=\"display: none;\"></div>\n                    </button>\n                    <button class=\"btn btn-warning\" id=\"pauseBtn\" disabled>⏸️ Pause</button>\n                    <button class=\"btn btn-danger\" id=\"stopBtn\" disabled>⏹️ Stop</button>\n                </div>\n\n                <div class=\"status-grid\">\n                    <div class=\"status-card\">\n                        <div class=\"status-value\" id=\"currentCycle\">0</div>\n                        <div class=\"status-label\">Current Cycle</div>\n                    </div>\n                    <div class=\"status-card\">\n                        <div class=\"status-value\" id=\"completedOps\">0</div>\n                        <div class=\"status-label\">Operations</div>\n                    </div>\n                    <div class=\"status-card\">\n                        <div class=\"status-value\" id=\"activeSandboxes\">0</div>\n                        <div class=\"status-label\">Sandboxes</div>\n                    </div>\n                </div>\n\n                <div class=\"entropy-meter\">\n                    <label style=\"display: flex; justify-content: space-between; margin-bottom: 0",
+        "urgency_score": "0.45",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "buildOperationsList();\n            }\n\n            buildOperationsList() {\n                this",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.44"
+      },
+      {
+        "action": "parallel_sandboxes,\n                            status: 'pending'\n                        });\n                    });\n                });\n            }\n\n            async execute(trigger = \"<x>\") {\n                this",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "executePhaseLoop();\n                    this",
+        "urgency_score": "0.63",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "(verification);\n                \n                return verification;\n            }\n\n            async executePhaseLoop() {\n                const phases = this",
+        "urgency_score": "0.43",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": "phases;\n                let shouldConclude = false;\n\n                for (let i = 0; i < phases",
+        "urgency_score": "0.24",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "executePhase(phase, i);\n                    \n                    this",
+        "urgency_score": "0.29",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": "status === \"CONCLUSION\") {\n                        shouldConclude = true;\n                        break;\n                    }\n                    \n                    this",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.11"
+      }
+    ],
+    "unresolved_tensions": [
+      "goal}`);\n                \n                let concluded = false;\n                w vs ("
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 3 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.34",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "ea632db4d030b0623ad8d757c44d1fc5"
+  }
+}

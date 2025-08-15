@@ -1,0 +1,161 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:19:53.025Z",
+    "source_text_length": 613,
+    "word_count": 89,
+    "sentence_count": 16,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "76b3ff2bf687ac23fde1339828b84d59",
+    "entropy_level": 0.889,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:19:53.025Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 8,
+        "significance": "0.0899",
+        "examples": [
+          "[2025-08-11T05:17:30.798Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 8,
+        "significance": "0.0899",
+        "examples": [
+          "[2025-08-11T05:17:30.798Z]"
+        ]
+      },
+      {
+        "theme": "skip",
+        "frequency": 8,
+        "significance": "0.0899",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 8,
+        "significance": "0.0899",
+        "examples": [
+          "skip(blacklist)"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 4,
+        "significance": "0.0449",
+        "examples": [
+          "AEON_Indexer_Ingest_Presets.html\n[2025-08-11T05:18:30.011Z]"
+        ]
+      },
+      {
+        "theme": "798z",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "[2025-08-11T05:17:30.798Z]"
+        ]
+      },
+      {
+        "theme": "001433",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "001433"
+        ]
+      },
+      {
+        "theme": "speaker_01",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "Speaker_01"
+        ]
+      },
+      {
+        "theme": "concerns",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "Concerns"
+        ]
+      },
+      {
+        "theme": "751z",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "ab.txt\n[2025-08-11T05:18:29.751Z]"
+        ]
+      },
+      {
+        "theme": "aeon_indexer_ingest_presets",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "AEON_Indexer_Ingest_Presets.html\n[2025-08-11T05:18:30.011Z]"
+        ]
+      },
+      {
+        "theme": "011z",
+        "frequency": 1,
+        "significance": "0.0112",
+        "examples": [
+          "AEON_Indexer_Ingest_Presets.html\n[2025-08-11T05:18:30.011Z]"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:17:30 798Z] skip(blacklist) [ ] 001433 — Speaker_01 Concerns ab...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.03065,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.20",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "76b3ff2bf687ac23fde1339828b84d59"
+  }
+}

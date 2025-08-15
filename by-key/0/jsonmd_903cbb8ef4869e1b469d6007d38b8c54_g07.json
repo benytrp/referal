@@ -1,0 +1,360 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:40.265Z",
+    "source_text_length": 541,
+    "word_count": 67,
+    "entropy_level": 0.968,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "903cbb8ef4869e1b469d6007d38b8c54"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "organization",
+        "frequency": 2
+      },
+      {
+        "theme": "requested",
+        "frequency": 2
+      },
+      {
+        "theme": "funderrequirements",
+        "frequency": 2
+      },
+      {
+        "theme": "deadline",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "executive",
+        "frequency": 1
+      },
+      {
+        "theme": "summary",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      },
+      {
+        "theme": "proposal",
+        "frequency": 1
+      },
+      {
+        "theme": "name",
+        "frequency": 1
+      },
+      {
+        "theme": "project",
+        "frequency": 1
+      },
+      {
+        "theme": "goal",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Ensure the tone is confident",
+        "statement_b": "not overstated",
+        "line": 6,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Write an executive summary for the grant proposal … Ensure the tone is confident but not overstated",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "Ensure the tone is confident vs not overstated"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.153,
+    "cognitive_load_estimate": 0.05205,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.879,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 2,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.758,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 3,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.637,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 4,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.516,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 5,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.395,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 6,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.274,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      },
+      {
+        "generation": 7,
+        "entropy": 0.968,
+        "contradictions": 1,
+        "novelty_index": 0.153,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "organization",
+              "frequency": 2
+            },
+            {
+              "theme": "requested",
+              "frequency": 2
+            },
+            {
+              "theme": "funderrequirements",
+              "frequency": 2
+            },
+            {
+              "theme": "deadline",
+              "frequency": 2
+            },
+            {
+              "theme": "write",
+              "frequency": 1
+            }
+          ]
+        },
+        "score": 0.293
+      }
+    ],
+    "quality_score": 28
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.02,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "GrantWriter-Automation/Prompts/executive_summary.txt",
+      "bytes": 543,
+      "lastModified": 1753638361269
+    }
+  }
+}

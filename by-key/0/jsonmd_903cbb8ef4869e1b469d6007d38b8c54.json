@@ -1,0 +1,108 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:11.791Z",
+    "source_text_length": 541,
+    "word_count": 67,
+    "sentence_count": 6,
+    "entropy_level": 0.968,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "executive_summary.txt"
+    },
+    "anchor_id": "903cbb8ef4869e1b469d6007d38b8c54"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "organization",
+        "frequency": 2
+      },
+      {
+        "theme": "requested",
+        "frequency": 2
+      },
+      {
+        "theme": "funderrequirements",
+        "frequency": 2
+      },
+      {
+        "theme": "deadline",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "executive",
+        "frequency": 1
+      },
+      {
+        "theme": "summary",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      },
+      {
+        "theme": "proposal",
+        "frequency": 1
+      },
+      {
+        "theme": "name",
+        "frequency": 1
+      },
+      {
+        "theme": "project",
+        "frequency": 1
+      },
+      {
+        "theme": "goal",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Ensure the tone is confident",
+        "statement_b": "not overstated",
+        "line": 6,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Write an executive summary for the grant proposal … Ensure the tone is confident but not overstated",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "Ensure the tone is confident vs not overstated"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "903cbb8ef4869e1b469d6007d38b8c54"
+  }
+}

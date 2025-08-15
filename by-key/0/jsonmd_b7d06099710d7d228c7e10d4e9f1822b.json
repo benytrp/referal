@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:06.702Z",
+    "source_text_length": 158,
+    "word_count": 25,
+    "sentence_count": 2,
+    "entropy_level": 0.988,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "clipboard_export_tool (1).html"
+    },
+    "anchor_id": "b7d06099710d7d228c7e10d4e9f1822b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "clipboard",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "text",
+        "frequency": 2
+      },
+      {
+        "theme": "module",
+        "frequency": 1
+      },
+      {
+        "theme": "embedded",
+        "frequency": 1
+      },
+      {
+        "theme": "content",
+        "frequency": 1
+      },
+      {
+        "theme": "copy",
+        "frequency": 1
+      },
+      {
+        "theme": "image",
+        "frequency": 1
+      },
+      {
+        "theme": "html",
+        "frequency": 1
+      },
+      {
+        "theme": "toggle",
+        "frequency": 1
+      },
+      {
+        "theme": "dark",
+        "frequency": 1
+      },
+      {
+        "theme": "mode",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "📋 Clipboard Export Module This is the embedded clipboard text content 📋 Copy Text + Image 💾 Export as HTML 🌓 Toggle Dark Mode Paste here to test (Ctrl+V)",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b7d06099710d7d228c7e10d4e9f1822b"
+  }
+}

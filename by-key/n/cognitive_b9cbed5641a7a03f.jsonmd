@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:49.845Z",
+    "source_text_length": 2499,
+    "word_count": 204,
+    "sentence_count": 7,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b9cbed5641a7a03fd8cd181cc8f9e270",
+    "entropy_level": 0.929,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_41245263400c370c6e32a39a2c2e386a.json",
+      "processing_timestamp": "2025-08-11T05:13:49.845Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 8,
+        "significance": "0.0392",
+        "examples": [
+          "\"offline_template_editor.html\",\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0392",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0392",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 7,
+        "significance": "0.0343",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "configuration",
+        "frequency": 7,
+        "significance": "0.0343",
+        "examples": [
+          "\"configuration\",\n"
+        ]
+      },
+      {
+        "theme": "example",
+        "frequency": 7,
+        "significance": "0.0343",
+        "examples": [
+          "\"example\",\n"
+        ]
+      },
+      {
+        "theme": "preview",
+        "frequency": 7,
+        "significance": "0.0343",
+        "examples": [
+          "\"preview\",\n"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 5,
+        "significance": "0.0245",
+        "examples": [
+          "\"offline_template_editor.html\",\n"
+        ]
+      },
+      {
+        "theme": "load",
+        "frequency": 5,
+        "significance": "0.0245",
+        "examples": [
+          "\"load\",\n"
+        ]
+      },
+      {
+        "theme": "offline",
+        "frequency": 4,
+        "significance": "0.0196",
+        "examples": [
+          "\"offline_template_editor.html\",\n"
+        ]
+      },
+      {
+        "theme": "editor",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"offline_template_editor.html\",\n"
+        ]
+      },
+      {
+        "theme": "create",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "Create"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:52...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "html\",\n      \"bytes\": 23414,\n      \"lastModified\": 1754824035500\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"html\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"json\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"configuration\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"example\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"preview\",\n        \"frequency\": 3\n      },\n      {\n        \"theme\": \"template\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"load\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"offline\",\n        \"frequency\": 1\n      }\n    ],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"🔧 Offline Template Editor Create dynamic HTML templates using JSON configuration 📋 JSON Configuration Load Example Generate Template Clear All Example JSON Structure: Click \\\"Load Example\\\" to see a complete configuration 🎨 Generated HTML Copy HTML Download Preview 👁️ Live Preview Refresh Preview\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"🔧 Offline Template Editor Create dynamic HTML templates using JSON configuration 📋 JSON Configuration Load Example Generate Template Clear All Example JSON Structure: Click \\\"Load Example\\\" to see a complete configuration 🎨 Generated HTML Copy HTML Download Preview 👁️ Live Preview Refresh Preview\"\n    ],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "52,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.20"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.12495,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.69",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b9cbed5641a7a03fd8cd181cc8f9e270"
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:38.465Z",
+    "source_text_length": 2250,
+    "word_count": 320,
+    "entropy_level": 0.897,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "6bb90cda6ab8f19b3fa4cfb051b64431"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "record_meta",
+        "frequency": 6
+      },
+      {
+        "theme": "comments",
+        "frequency": 6
+      },
+      {
+        "theme": "participant",
+        "frequency": 5
+      },
+      {
+        "theme": "session",
+        "frequency": 5
+      },
+      {
+        "theme": "task",
+        "frequency": 4
+      },
+      {
+        "theme": "signoff",
+        "frequency": 4
+      },
+      {
+        "theme": "date",
+        "frequency": 3
+      },
+      {
+        "theme": "staff",
+        "frequency": 3
+      },
+      {
+        "theme": "goals",
+        "frequency": 3
+      },
+      {
+        "theme": "itemyesnin",
+        "frequency": 3
+      },
+      {
+        "theme": "followed",
+        "frequency": 3
+      },
+      {
+        "theme": "skills",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [
+      "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+      "? Yes NI N/A Timeliness — Arrived on time",
+      "? Yes NI N/A Timeliness — Excessive tardiness",
+      "? Yes NI N/A Hygiene — Participant was appropriately groomed",
+      "? Yes NI N/A Dress — Participant was appropriately dressed",
+      "? Yes NI N/A Attitude — Participant exhibited positive attitude",
+      "? Yes NI N/A Comments: ⟦work_habits",
+      "comments⟧ Preparatory Goals ItemYesNIN/A Attention Span — adequate span for tasks? Yes NI N/A Following Directions — followed simple instructions",
+      "? Yes NI N/A Following Directions — followed multi-step instructions",
+      "? Yes NI N/A Task Completion — stayed on task"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Achievement Daily Participant Evaluation Name:⟦record_meta … students⟧",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.215,
+    "cognitive_load_estimate": 0.1125,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.888,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 2,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.776,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 3,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.664,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 4,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.551,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 5,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.439,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 6,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.327,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      },
+      {
+        "generation": 7,
+        "entropy": 0.897,
+        "contradictions": 0,
+        "novelty_index": 0.215,
+        "action_items": [],
+        "key_questions": [
+          "Work Habits ItemYesNIN/A Attendance — Correct day and time? Yes NI N/A Attendance — Excessive absences",
+          "? Yes NI N/A Timeliness — Arrived on time",
+          "? Yes NI N/A Timeliness — Excessive tardiness"
+        ],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "record_meta",
+              "frequency": 6
+            },
+            {
+              "theme": "comments",
+              "frequency": 6
+            },
+            {
+              "theme": "participant",
+              "frequency": 5
+            },
+            {
+              "theme": "session",
+              "frequency": 5
+            },
+            {
+              "theme": "task",
+              "frequency": 4
+            }
+          ]
+        },
+        "score": 0.341
+      }
+    ],
+    "quality_score": 33
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.06,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "E3_Daily_Eval_Template_Checkboxes.html",
+      "bytes": 18680,
+      "lastModified": 1754743981904
+    }
+  }
+}

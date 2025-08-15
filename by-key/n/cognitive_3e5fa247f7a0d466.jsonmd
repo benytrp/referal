@@ -1,0 +1,179 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:38.982Z",
+    "source_text_length": 1899,
+    "word_count": 121,
+    "sentence_count": 7,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "3e5fa247f7a0d46650b7cddd7c2e0170",
+    "entropy_level": 0.939,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "x-logic-schema-1754808005196.json",
+      "processing_timestamp": "2025-08-11T05:05:38.982Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "parameters",
+        "frequency": 8,
+        "significance": "0.0661",
+        "examples": [
+          "\"parameters\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 5,
+        "significance": "0.0413",
+        "examples": [
+          "entropy"
+        ]
+      },
+      {
+        "theme": "creative",
+        "frequency": 4,
+        "significance": "0.0331",
+        "examples": [
+          "creative"
+        ]
+      },
+      {
+        "theme": "phase_name",
+        "frequency": 4,
+        "significance": "0.0331",
+        "examples": [
+          "\"phase_name\":"
+        ]
+      },
+      {
+        "theme": "operations",
+        "frequency": 4,
+        "significance": "0.0331",
+        "examples": [
+          "\"operations\":"
+        ]
+      },
+      {
+        "theme": "parallel_sandboxes",
+        "frequency": 4,
+        "significance": "0.0331",
+        "examples": [
+          "\"parallel_sandboxes\":"
+        ]
+      },
+      {
+        "theme": "original",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "original"
+        ]
+      },
+      {
+        "theme": "iterative",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "iterative"
+        ]
+      },
+      {
+        "theme": "ideation",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "ideation"
+        ]
+      },
+      {
+        "theme": "refinement",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "refinement\",\n"
+        ]
+      },
+      {
+        "theme": "maintain",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "\"Maintain"
+        ]
+      },
+      {
+        "theme": "complete",
+        "frequency": 2,
+        "significance": "0.0165",
+        "examples": [
+          "\"Complete"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"trigger\": \"<x>\",\n  \"contract\": {\n    \"goal\": \"Generate original creative content through iterative ideation and refinement\",\n    \"constraints\": [\n      \"Maintain creative coherence\",\n      \"Explore multiple perspectives\",\n      \"Complete within 8 cycles\",\n      \"Maintain entropy below 0 9\",\n      \"Complete within 15 cycles\"\n    ],\n    \"success_criteria\": [\n      \"Produce original creative output\",\n      \"Demonstrate iterative improvement\",\n      \"Achieve desired creative goals\"\n    ]\n  },\n  \"phases\": [\n    {\n      \"phase_name\": \"Ideation\",\n      \"operations\": [\n        {\n          \"op\": \"brainstorm_concepts\",\n          \"parameters\": {}\n        },\n        {\n          \"op\": \"explore_themes\",\n          \"parameters\": {}\n        }\n      ],\n      \"parallel_sandboxes\": true,\n      \"entropy\": 0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "4\n    },\n    {\n      \"phase_name\": \"Development\",\n      \"operations\": [\n        {\n          \"op\": \"expand_ideas\",\n          \"parameters\": {}\n        },\n        {\n          \"op\": \"create_variations\",\n          \"parameters\": {}\n        }\n      ],\n      \"parallel_sandboxes\": true,\n      \"entropy\": 0",
+        "urgency_score": "0.50",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": "2\n    }\n  ],\n  \"metadata\": {\n    \"created\": \"2025-08-10T06:40:02",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.33"
+      },
+      {
+        "action": "653Z\",\n    \"complexity_level\": \"complex\",\n    \"risk_tolerance\": \"balanced\",\n    \"generator\": \"X-Logic Schema Builder v1",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.22"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.09495,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.15",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3e5fa247f7a0d46650b7cddd7c2e0170"
+  }
+}

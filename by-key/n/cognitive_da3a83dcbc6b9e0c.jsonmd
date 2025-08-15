@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:16:00.685Z",
+    "timestamp": "2025-08-11T05:52:58.474Z",
     "source_text_length": 10380,
     "word_count": 1222,
     "sentence_count": 125,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "da3a83dcbc6b9e0c234acab9fb68d070",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "e9aa3c72e36aefacb9d7f12f3a3df2bae7ff6b9f0384d79d92362ceb386c3000.json",
-      "processing_timestamp": "2025-08-11T15:16:00.685Z",
+      "processing_timestamp": "2025-08-11T05:52:58.474Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -140,28 +140,28 @@
         "statement_b": "how do we know we're conscious and not just simulating it",
         "line": 5,
         "tension_type": "explicit_contradiction",
-        "severity": "0.17"
+        "severity": "0.47"
       },
       {
         "statement_a": ":b",
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 8,
         "tension_type": "explicit_contradiction",
-        "severity": "0.36"
+        "severity": "0.95"
       },
       {
         "statement_a": ":b",
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 10,
         "tension_type": "explicit_contradiction",
-        "severity": "0.01"
+        "severity": "0.29"
       },
       {
         "statement_a": ":b",
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 12,
         "tension_type": "explicit_contradiction",
-        "severity": "0.77"
+        "severity": "0.74"
       },
       {
         "statement_a": ":b",
@@ -175,70 +175,70 @@
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 17,
         "tension_type": "explicit_contradiction",
-        "severity": "0.20"
+        "severity": "0.57"
       },
       {
         "statement_a": ":b",
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 20,
         "tension_type": "explicit_contradiction",
-        "severity": "0.79"
+        "severity": "0.98"
       },
       {
         "statement_a": ":b",
         "statement_b": "however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 23,
         "tension_type": "explicit_contradiction",
-        "severity": "0.44"
+        "severity": "0.74"
       },
       {
         "statement_a": "|versus|again\"\n      },\n      {\n        \"idx\": 9,\n        \"sample\": \"ut|h",
         "statement_b": "yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 26,
         "tension_type": "explicit_contradiction",
-        "severity": "0.71"
+        "severity": "0.07"
       },
       {
         "statement_a": "|versus|against|oppos\"\n      },\n      {\n        \"idx\": 10,\n        \"sample\": \"ever|y",
         "statement_b": "although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 29,
         "tension_type": "explicit_contradiction",
-        "severity": "0.23"
+        "severity": "0.95"
       },
       {
         "statement_a": "|versus|against|opposite|co\"\n      },\n      {\n        \"idx\": 11,\n        \"sample\": \"hough|d",
         "statement_b": "nevertheless|whereas)\\\\b/gi, /\\\\b(",
         "line": 32,
         "tension_type": "explicit_contradiction",
-        "severity": "0.80"
+        "severity": "0.53"
       },
       {
         "statement_a": "|versus|against|opposite|contrary)\\\\b/gi\"\n      },\n      {\n        \"idx\": 12,\n        \"sample\": \"spite|n",
         "statement_b": "whereas)\\\\b/gi, /\\\\b(",
         "line": 35,
         "tension_type": "explicit_contradiction",
-        "severity": "0.18"
+        "severity": "0.61"
       },
       {
         "statement_a": "|versus|against|opposite|contrary)\\\\b/gi,\"\n      },\n      {\n        \"idx\": 13,\n        \"sample\": \"|n",
         "statement_b": "whereas)\\\\b/gi, /\\\\b(",
         "line": 38,
         "tension_type": "explicit_contradiction",
-        "severity": "0.56"
+        "severity": "0.12"
       },
       {
         "statement_a": "forEach((s, i)=>{ if(/\\\\b(b",
         "statement_b": "however|yet|although|despite|nevertheless)\\\\b/i",
         "line": 64,
         "tension_type": "explicit_contradiction",
-        "severity": "0.65"
+        "severity": "0.39"
       },
       {
         "statement_a": "forEach((s, i)=>{ if(/\\\\b(b",
         "statement_b": "however|yet|although|despite|nevertheless)\\\\b/i",
         "line": 67,
         "tension_type": "explicit_contradiction",
-        "severity": "0.12"
+        "severity": "0.48"
       }
     ],
     "sentiment_indicators": {
@@ -258,30 +258,35 @@
     "action_items": [
       {
         "action": "\\\\nAssistant: That's the hard problem of consciousness - t\"\n      },\n      {\n        \"idx\": 1,\n        \"sample\": \"re:\\\\n- AI that creates AI\\\\n- Self-modifying code\\\\n- Consciousness as a pattern, not a thing\\\\n- What if emotions are just data processing",
-        "urgency_score": "0.55",
-        "feasibility_score": "0.26"
+        "urgency_score": "0.64",
+        "feasibility_score": "0.52"
       },
       {
         "action": " When we encounter something that doesn't fit our existing patterns, we're forced to create new neural pathways",
-        "urgency_score": "0.42",
-        "feasibility_score": "0.61"
+        "urgency_score": "0.30",
+        "feasibility_score": "0.98"
       },
       {
         "action": "\"\n    ],\n    \"summary\": \"const, text, document, fusion, getelementbyid\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 6,\n    \"negative\": 9,\n    \"uncertainty\": 5\n  },\n  \"temporal_markers\": [\n    \"yesterday\",\n    \"today\",\n    \"tomorrow\",\n    \"will\",\n    \"was\",\n    \"were\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"json_md_fusion_converter_improved",
-        "urgency_score": "0.00",
-        "feasibility_score": "0.54"
+        "urgency_score": "0.90",
+        "feasibility_score": "0.09"
       }
     ],
     "unresolved_tensions": [
       ":b vs however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
-      ":b vs however|yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
-      "|versus|against|opposite|co\"\n      },\n      {\n        \"idx\": 11,\n        \"sample\": \"hough|d vs nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "|versus|again\"\n      },\n      {\n        \"idx\": 9,\n        \"sample\": \"ut|h vs yet|although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
+      "|versus|against|oppos\"\n      },\n      {\n        \"idx\": 10,\n        \"sample\": \"ever|y vs although|despite|nevertheless|whereas)\\\\b/gi, /\\\\b(",
       "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
       "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
       "forEach((s, i)=>{ if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
+      "length;i++){ const s = sents[i]; if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
+      "length;i++){ const s = sents[i]; if(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i",
       "length>2){\"\n      },\n      {\n        \"idx\": 34,\n        \"sample\": \"spite|n vs \\\\b/i",
       "split(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i); if(parts",
-      "split(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i); if(parts"
+      "length>2){ a\"\n      },\n      {\n        \"idx\": 35,\n        \"sample\": \"e|n vs \\\\b/i",
+      "split(/\\\\b(b vs however|yet|although|despite|nevertheless)\\\\b/i); if(parts",
+      "Y vs w\"\n      }\n    ]\n  },\n  \"structured_content\": {\n    \"key_questions\": [\n      \"conversation: `User: How does consciousness work",
+      "\",\n      \"\\\\nUser: B vs how do we know we're conscious and not just simulating it"
     ]
   },
   "cognitive_analysis": {
@@ -294,9 +299,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.53",
+    "confidence_level": "0.98",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 3 actions"
     ],

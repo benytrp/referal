@@ -1,0 +1,220 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:50.490Z",
+    "source_text_length": 8710,
+    "word_count": 907,
+    "sentence_count": 56,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "9eb689a45b243cd996449cc9a113aee2",
+    "entropy_level": 0.911,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_6a1d87bcf0c3ff29a9eac29d98a129d9.json",
+      "processing_timestamp": "2025-08-11T05:13:50.490Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "template",
+        "frequency": 53,
+        "significance": "0.0584",
+        "examples": [
+          "\"offline_template_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "form",
+        "frequency": 25,
+        "significance": "0.0276",
+        "examples": [
+          "\"format\":"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 22,
+        "significance": "0.0243",
+        "examples": [
+          "\"offline_template_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "custom",
+        "frequency": 22,
+        "significance": "0.0243",
+        "examples": [
+          "Custom"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 16,
+        "significance": "0.0176",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "exportcontent",
+        "frequency": 16,
+        "significance": "0.0176",
+        "examples": [
+          "\"exportcontent\",\n"
+        ]
+      },
+      {
+        "theme": "survey",
+        "frequency": 15,
+        "significance": "0.0165",
+        "examples": [
+          "Survey"
+        ]
+      },
+      {
+        "theme": "title",
+        "frequency": 13,
+        "significance": "0.0143",
+        "examples": [
+          "Title"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 12,
+        "significance": "0.0132",
+        "examples": [
+          "\"value\",\n"
+        ]
+      },
+      {
+        "theme": "builder",
+        "frequency": 12,
+        "significance": "0.0132",
+        "examples": [
+          "\"offline_template_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "email",
+        "frequency": 12,
+        "significance": "0.0132",
+        "examples": [
+          "Email"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 11,
+        "significance": "0.0121",
+        "examples": [
+          "\"return\",\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "How satisfied are you with our service?\",\n      \"Very Satisfied Satisfied Neutral Dissatisfied Very Dissatisfied 2",
+      "'}}', $value, $html); } return $html; } ?\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 3,\n      \"future\": 2\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "return",
+      "feedback",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 5,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:51...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "924,\n    \"contradictions_detected\": 0,\n    \"processing_phase\": \"SYNTHESIS\",\n    \"frequency_resonance\": \"440 Hz (A4)\",\n    \"format\": \"json_md_fusion\",\n    \"anchor_id\": \"6a1d87bcf0c3ff29a9eac29d98a129d9\",\n    \"source\": {\n      \"path\": \"offline_template_builder",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "html\",\n      \"bytes\": 40276,\n      \"lastModified\": 1754772868237\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"template\",\n        \"frequency\": 21\n      },\n      {\n        \"theme\": \"html\",\n        \"frequency\": 19\n      },\n      {\n        \"theme\": \"const\",\n        \"frequency\": 18\n      },\n      {\n        \"theme\": \"exportcontent\",\n        \"frequency\": 14\n      },\n      {\n        \"theme\": \"function\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"value\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"return\",\n        \"frequency\": 11\n      },\n      {\n        \"theme\": \"form\",\n        \"frequency\": 10\n      }\n    ],\n    \"key_questions\": [\n      \"🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.40"
+      },
+      {
+        "action": " Form Action URL Form Fields Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Add Field Advanced Options Enable Client-side Validation Responsive Design Color Scheme Blue Green Purple Dark ⚡ Custom Template Builder Template Name Template Type HTML Document Form Template Report Template Email Template Reusable Component Custom HTML Structure <div class=\\\"container\\\"> <h1>{{title}}</h1> <p>{{content}}</p> </div> Template Variables (one per line) title=My Custom Template content=This is a custom template with variables author=Template Builder Custom CSS ",
+        "urgency_score": "0.44",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "container { max-width: 800px; margin: 0 auto; padding: 20px; } 📊 Survey Template Builder Survey Title Survey Instructions Please take a few minutes to complete this survey",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.16"
+      },
+      {
+        "action": "textContent = exportContent; } function extractTemplateConfig() { // Extract current template configuration return { template_type: currentTemplate, created: new Date()",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 3,\n      \"future\": 2\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.85"
+      },
+      {
+        "action": " … args); }; clearTimeout(timeout); timeout = setTimeout(later, wait); }; }\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"🔧 Offline Template Builder Create professional templates that work completely offline - no dependencies required 📝 Forms & Data 📋 Contact Form 📊 Survey Template ⭐ Evaluation Form 🎫 Registration Form 📄 Documents 💰 Invoice Template 📈 Report Template 👤 Resume Template 🎯 Project Proposal 🌐 Web Pages 🚀 Landing Page 🎨 Portfolio Page ✍️ Blog Template 🔧 Custom ⚡ Custom Template 📋 Contact Form Builder Form Title Description Get in touch with us using the form below",
+        "urgency_score": "0.40",
+        "feasibility_score": "0.07"
+      },
+      {
+        "action": "\",\n      \"Form Action URL Form Fields Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Text Email Phone Textarea Dropdown Checkbox Radio Remove Add Field Advanced Options Enable Client-side Validation Responsive Design Color Scheme Blue Green Purple Dark ⚡ Custom Template Builder Template Name Template Type HTML Document Form Template Report Template Email Template Reusable Component Custom HTML Structure <div class=\\\"container\\\"> <h1>{{title}}</h1> <p>{{content}}</p> </div> Template Variables (one per line) title=My Custom Template content=This is a custom template with variables author=Template Builder Custom CSS ",
+        "urgency_score": "0.39",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "\",\n      \"container { max-width: 800px; margin: 0 auto; padding: 20px; } 📊 Survey Template Builder Survey Title Survey Instructions Please take a few minutes to complete this survey",
+        "urgency_score": "0.06",
+        "feasibility_score": "0.28"
+      },
+      {
+        "action": "\",\n      \"textContent = exportContent; } function extractTemplateConfig() { // Extract current template configuration return { template_type: currentTemplate, created: new Date()",
+        "urgency_score": "0.90",
+        "feasibility_score": "0.62"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.4355,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.94",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "9eb689a45b243cd996449cc9a113aee2"
+  }
+}

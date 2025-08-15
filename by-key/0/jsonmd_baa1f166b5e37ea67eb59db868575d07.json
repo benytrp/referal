@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:47.161Z",
+    "source_text_length": 372,
+    "word_count": 53,
+    "entropy_level": 0.987,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "baa1f166b5e37ea67eb59db868575d07",
+    "source": {
+      "path": "iterative.html",
+      "bytes": 19606,
+      "lastModified": 1754798707540
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "markdown",
+        "frequency": 3
+      },
+      {
+        "theme": "paste",
+        "frequency": 2
+      },
+      {
+        "theme": "session",
+        "frequency": 2
+      },
+      {
+        "theme": "data",
+        "frequency": 2
+      },
+      {
+        "theme": "download",
+        "frequency": 2
+      },
+      {
+        "theme": "iterative",
+        "frequency": 1
+      },
+      {
+        "theme": "refinement",
+        "frequency": 1
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Iterative Refinement — Offline Translator Paste raw session data (with or without extra text). … 🌗 Theme 📥 Load Sample 🧹 Clear 1) Paste Raw Session Data 🔎 Parse & Render 📋 Copy Markdown 💾 Download Markdown 🗂️ Download Snapshot HTML 2) Markdown Output Timeline Table Cycle Phase Op Contested Entropy Timestamp Hash",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

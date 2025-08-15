@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:16.296Z",
+    "source_text_length": 523,
+    "word_count": 74,
+    "sentence_count": 6,
+    "entropy_level": 0.971,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "fdgs.html"
+    },
+    "anchor_id": "f00c77deb637affe24efea81f901439a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "prompt",
+        "frequency": 4
+      },
+      {
+        "theme": "download",
+        "frequency": 4
+      },
+      {
+        "theme": "bridge",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "perfect",
+        "frequency": 2
+      },
+      {
+        "theme": "logic",
+        "frequency": 2
+      },
+      {
+        "theme": "markdown",
+        "frequency": 2
+      },
+      {
+        "theme": "card",
+        "frequency": 2
+      },
+      {
+        "theme": "lite",
+        "frequency": 1
+      },
+      {
+        "theme": "project",
+        "frequency": 1
+      },
+      {
+        "theme": "task",
+        "frequency": 1
+      },
+      {
+        "theme": "name",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — Bridge Lite Project / Task Name Objective (1–2 sentences) Owner Urgency low medium high critical Tags (comma-separated) Key Constraints Interfaces / Inputs Success Criteria Generate Clear All exports are static text files — portable for CI, notebooks, or orchestration UIs … txt (system prompt) TXT — Download TXT Minimal “Run Card” Markdown — Download Run Card",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "f00c77deb637affe24efea81f901439a"
+  }
+}

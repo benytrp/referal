@@ -1,0 +1,75 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:41.898Z",
+    "source_text_length": 103,
+    "word_count": 10,
+    "sentence_count": 5,
+    "entropy_level": 0.898,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_checklist_plan.md"
+    },
+    "anchor_id": "d1ee5149b3d6f4702c428d19f23ffd5c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "begin_plan",
+        "frequency": 1
+      },
+      {
+        "theme": "mode",
+        "frequency": 1
+      },
+      {
+        "theme": "sequential",
+        "frequency": 1
+      },
+      {
+        "theme": "self_check",
+        "frequency": 1
+      },
+      {
+        "theme": "enabled",
+        "frequency": 1
+      },
+      {
+        "theme": "end_plan",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "< … -- AI:END_PLAN -->",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "d1ee5149b3d6f4702c428d19f23ffd5c"
+  }
+}

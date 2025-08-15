@@ -1,11 +1,11 @@
 {
   "json_md_fusion_scroll": {
     "version": "cognitive-2.0",
-    "timestamp": "2025-08-11T15:15:36.696Z",
+    "timestamp": "2025-08-11T05:52:56.040Z",
     "source_text_length": 3405,
     "word_count": 265,
     "sentence_count": 27,
-    "cognitive_mode": "unified",
+    "cognitive_mode": "resolve",
     "processing_depth": "standard",
     "analysis_threshold": 0.6,
     "anchor_id": "3ccffa071272ead9c2f065eed85ec5c3",
@@ -16,7 +16,7 @@
     "format": "cognitive_jsonmd_fusion",
     "source_metadata": {
       "filename": "7d9b7a49476965a8680accb6cdd153393c6a1e2e234217e17a582d35472b58af.json",
-      "processing_timestamp": "2025-08-11T15:15:36.696Z",
+      "processing_timestamp": "2025-08-11T05:52:56.040Z",
       "scanner_version": "Cognitive JSONMD Working Edition"
     }
   },
@@ -150,8 +150,8 @@
     "action_items": [
       {
         "action": "\"\n    ],\n    \"summary\": \"div, class, const, strong, html\"\n  },\n  \"sentiment_indicators\": {\n    \"positive\": 3,\n    \"negative\": 2,\n    \"uncertainty\": 0\n  },\n  \"temporal_markers\": [\n    \"today\",\n    \"will\",\n    \"2025\"\n  ],\n  \"metadata\": {\n    \"source_name\": \"e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile",
-        "urgency_score": "0.55",
-        "feasibility_score": "0.46"
+        "urgency_score": "0.79",
+        "feasibility_score": "0.56"
       }
     ],
     "unresolved_tensions": []
@@ -166,9 +166,9 @@
   },
   "metadata": {
     "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
-    "confidence_level": "0.87",
+    "confidence_level": "0.31",
     "recommended_next_steps": [
-      "Continue unified analysis",
+      "Continue resolve analysis",
       "Review 0 insights",
       "Execute 1 actions"
     ],

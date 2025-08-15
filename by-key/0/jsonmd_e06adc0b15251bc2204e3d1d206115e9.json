@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:43.283Z",
+    "source_text_length": 324,
+    "word_count": 50,
+    "sentence_count": 6,
+    "entropy_level": 0.976,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (12).html"
+    },
+    "anchor_id": "e06adc0b15251bc2204e3d1d206115e9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "command",
+        "frequency": 4
+      },
+      {
+        "theme": "complex",
+        "frequency": 2
+      },
+      {
+        "theme": "generated",
+        "frequency": 2
+      },
+      {
+        "theme": "select",
+        "frequency": 2
+      },
+      {
+        "theme": "tool",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      },
+      {
+        "theme": "generator",
+        "frequency": 1
+      },
+      {
+        "theme": "build",
+        "frequency": 1
+      },
+      {
+        "theme": "line",
+        "frequency": 1
+      },
+      {
+        "theme": "strings",
+        "frequency": 1
+      },
+      {
+        "theme": "selecting",
+        "frequency": 1
+      },
+      {
+        "theme": "knowledge",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline Complex Command Generator Build complex command-line strings by selecting from a knowledge base of popular open-source tools … Configure Options & Arguments Reset Builder Generated Command Copy",
+    "key_insights": [],
+    "action_items": [
+      "Offline Complex Command Generator Build complex command-line strings by selecting from a knowledge base of popular open-source tools",
+      "Select an Action (Subcommand) 3",
+      "Configure Options & Arguments Reset Builder Generated Command Copy"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e06adc0b15251bc2204e3d1d206115e9"
+  }
+}

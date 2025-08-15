@@ -1,0 +1,305 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:38.806Z",
+    "source_text_length": 61235,
+    "word_count": 9975,
+    "sentence_count": 598,
+    "entropy_level": 0.829,
+    "contradictions_detected": 29,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "PSYCHIATRIC EVALUATION Date of Eval.txt"
+    },
+    "anchor_id": "863d181346a8f62c57ca0265b891363d"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "benjamin",
+        "frequency": 91
+      },
+      {
+        "theme": "problems",
+        "frequency": 84
+      },
+      {
+        "theme": "school",
+        "frequency": 79
+      },
+      {
+        "theme": "score",
+        "frequency": 71
+      },
+      {
+        "theme": "range",
+        "frequency": 57
+      },
+      {
+        "theme": "social",
+        "frequency": 41
+      },
+      {
+        "theme": "history",
+        "frequency": 37
+      },
+      {
+        "theme": "scale",
+        "frequency": 35
+      },
+      {
+        "theme": "percentile",
+        "frequency": 31
+      },
+      {
+        "theme": "burdette",
+        "frequency": 30
+      },
+      {
+        "theme": "does",
+        "frequency": 28
+      },
+      {
+        "theme": "parents",
+        "frequency": 27
+      }
+    ],
+    "key_questions": [
+      "”\r\nWhen asked if the school did get him some help, Ben said, “Well I’m here, aren’t I?” States they let him\r\ndo online school for the rest of the year, which he does think helps",
+      "” “Well, I’ve been gone for what, like 6 months? That’s\r\ncertainly gonna strike a conversation with some of the kids…’hey, where have you been",
+      "?’ or whatever",
+      "What if there’s an afterlife, what if there isn’t?” When asked\r\nwhat he thinks happens after you die, Ben states, “I think there’s a doorway for each religion",
+      "When asked why\r\nhe felt it was it a mistake to make the threat, Ben said, “This is going to be on my permanent record,\r\nno?",
+      "” When\r\nasked if he had changed his mind about the military, he stated, “Why wouldn’t I?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "The \"Hit List\" was not seen by school staff",
+        "statement_b": "the information was\r\ncorroborated through the interview process",
+        "line": 38,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Staff have observed that Benjamin not only\r\nexpresses these beliefs in writing",
+        "statement_b": "also encourages other students to adopt similar attitudes toward\r\nviolence",
+        "line": 49,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He would babble and\r\nsound like he was trying to say things, and could say words,",
+        "statement_b": "wouldn’t string together sentences",
+        "line": 93,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He did like his stuffed animals, would line them up",
+        "statement_b": "wouldn’t act out\r\nscenarios with them, did not engage in pretend or imaginative play",
+        "line": 99,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Parents did not think much of the\r\nbehavior at the time,",
+        "statement_b": "do not think he would not have noticed another’s emotions or recognized if\r\nmom was hurt or upset",
+        "line": 100,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "“Ben doesn’t get angry, he just\r\ndoesn’t,",
+        "statement_b": "he does get frustrated with misunderstandings",
+        "line": 102,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Ben has peers at school that he would describe as friends,",
+        "statement_b": "Rachel does not feel that they are good\r\ninfluences",
+        "line": 121,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He is not involved in any prosocial activities,",
+        "statement_b": "he would like to get into theatre",
+        "line": 122,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He had\r\nbeen practicing for an audition and was learning the script,",
+        "statement_b": "dad did not take him to the audition",
+        "line": 123,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "She does note variations in\r\nsleep schedule,",
+        "statement_b": "attributes this more to different sleep schedules between parental homes",
+        "line": 126,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Denies obsessions, compulsions, repetitiveness,\r\nCONDUCT/ODD: Mother reports Ben does not defies authority,",
+        "statement_b": "he is easily annoyed, and sometimes\r\nannoys others",
+        "line": 140,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "FIREARMS: Ben's father, Chris, has a CPL (Concealed Pistol License)",
+        "statement_b": "reports that he does not own a\r\ngun",
+        "line": 156,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Ben’s parents reported concerns about his development in language; when Ben first spoke\r\nsingle words, he as about 1 year old,",
+        "statement_b": "did not speak in sentences until he was 3",
+        "line": 195,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He has been described as intentionally provoking or\r\ndisturbing others,",
+        "statement_b": "this may be a maladaptive response to his own victimization",
+        "line": 214,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Ben does not have an Individualized Education Plan, nor a 504 plan at school,",
+        "statement_b": "his parents had\r\nrequested that the school begin the 504 process about a year ago, and had brought up the 504 plan\r\nprocess again to Penfield School District during the investigation of Ben’s threat",
+        "line": 215,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Ben was reported to\r\ndisplay learning difficulties",
+        "statement_b": "has not been evaluated or tested for these at school",
+        "line": 216,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "LEGAL HISTORY: At the time of the assessment, Ben has not been had not been charged with a crime for\r\nthe threat made at school,",
+        "statement_b": "the court demanded that he participate in P2P or charges could be\r\npressed",
+        "line": 228,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "At first he was nervous and suspicious,",
+        "statement_b": "withing several minutes he acclimated to the\r\ninterview setting and became comfortable offering information spontaneously and asking questions",
+        "line": 239,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Other kids were “talking crap”,",
+        "statement_b": "he doesn’t remember what\r\nthey said, said he barely remembers their names",
+        "line": 263,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "XX called Ben and a friend of his gay because they ‘side hugged’,",
+        "statement_b": "both\r\nidentify as straight",
+        "line": 273,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Ben says it hurt him at the time,",
+        "statement_b": "he “thinks it’s kind of funny now",
+        "line": 278,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "March was a low point for his mood,",
+        "statement_b": "states was not the lowest point",
+        "line": 323,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "” He believes in Christianity,",
+        "statement_b": "does not know what happens after you die",
+        "line": 337,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "” He does worry\r\nabout going to Hell",
+        "statement_b": "“not that much",
+        "line": 359,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He was supposed to wear a patch\r\nwhen he was younger to help with correction",
+        "statement_b": "did not",
+        "line": 362,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "He states that there is\r\na history of Ehler’s Danlos in his family (mom’s side),",
+        "statement_b": "his doctor said he only has hyper flexibility",
+        "line": 365,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Three wishes:\r\n• World peace – no war, no famine, no homelessness “sure there’s probably a reason that it’s\r\nthere,",
+        "statement_b": "just because it’s there doesn’t mean we can’t fix it”\r\no Also that Hitler never existed",
+        "line": 366,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Note: The child endorsed the item “I think about killing myself",
+        "statement_b": "would not do it",
+        "line": 378,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Prevent 2 Protect does not\r\nprovide direct treatment or therapy,",
+        "statement_b": "instead offers case management, intensive mentoring,\r\nsystems navigation and technical assistance to promote early intervention and reduce the threat of\r\nviolence in school communities",
+        "line": 595,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 5,
+      "uncertainty": 3
+    },
+    "temporal_markers": {
+      "past": 5,
+      "present": 4,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "PSYCHIATRIC EVALUATION Date of Eval: 7/22/25\r\nName: Benjamin Burdette PID: C … , FACN\r\nChild and Adolescent Psychiatrist\r\nDiplomate of the American Board of Psychiatry and Neurology\r\nDirector Prevent 2 Protect: The Adolescent Targeted Violence Prevention Project\r\nAssociate Professor-Department of Psychiatry\r\nMichigan State University",
+    "key_insights": [
+      "I think he said something really dumb; he has no\r\nway of acting out",
+      "Depends on what you see when you read what I\r\ndid and think that I need to figure out what I need help with…I think I’ve been doing fine so far",
+      "” When asked\r\nwhat he thinks happens after you die, Ben states, “I think there’s a doorway for each religion",
+      "“I think people that are neo nazis shouldn’t exist",
+      "Note: The child endorsed the item “I think about killing myself but would not do it"
+    ],
+    "action_items": [
+      "CC: Ben: “I need to figure out what I need-I was not in the right mental space",
+      "Following the discovery, a behavioral threat assessment was conducted by the building principal and\r\nschool counselor, resulting in a Level 3 Threat Behavior classification",
+      "ASD: History of developmental delay",
+      "Some of the concerning search results include, \"Okay to Say,\" which is a platform for\r\nreporting anonymous crimes; \"Wolfstein Nazi War Games;\" a map of \"How flammable is napalm;\" \"How\r\nsharp would a pencil have to be to impale someone;\" \"How flammable is gasoline;\" \"How to turn off\r\nLightspeed,\" which is a filtering system uses for all laptops; \"Does blood getting darker mean you`re\r\ndead;\" \"How to pour acid on yourself;\" \"Abandoned places near me;\" \"Mental condition that makes you\r\nthink you`re dead;\" \"Real self-defense;\" and \"Columbine High School massacre",
+      "MEDICATIONS: None ALLERGIES: NKDA\r\nDEVELOPMENTAL HISTORY: Rachel did not use alcohol, tobacco, illicit drugs and did not take\r\nmedication while pregnant with Ben",
+      "Ben’s parents reported concerns about his development in language; when Ben first spoke\r\nsingle words, he as about 1 year old, but did not speak in sentences until he was 3",
+      "Ben demonstrates a lack of social reciprocity, unusual eye contact,\r\nlacked imaginative play, played with toys in a peculiar way (lining them up) and struggled with peer\r\ninteraction",
+      "He has significant difficulty with interpreting abstraction, nuances and\r\nmetaphoric speech",
+      "Depends on what you see when you read what I\r\ndid and think that I need to figure out what I need help with…I think I’ve been doing fine so far",
+      "He was able to list three specific kids; States he would\r\nhave to check yearbook for other names, thinks there were 6-7 total, that they were all friends with\r\neach other"
+    ],
+    "unresolved_tensions": [
+      "The \"Hit List\" was not seen by school staff vs the information was\r\ncorroborated through the interview process",
+      "Staff have observed that Benjamin not only\r\nexpresses these beliefs in writing vs also encourages other students to adopt similar attitudes toward\r\nviolence",
+      "He would babble and\r\nsound like he was trying to say things, and could say words, vs wouldn’t string together sentences",
+      "He did like his stuffed animals, would line them up vs wouldn’t act out\r\nscenarios with them, did not engage in pretend or imaginative play",
+      "Parents did not think much of the\r\nbehavior at the time, vs do not think he would not have noticed another’s emotions or recognized if\r\nmom was hurt or upset",
+      "“Ben doesn’t get angry, he just\r\ndoesn’t, vs he does get frustrated with misunderstandings"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.59,
+    "recommended_next_steps": [
+      "Review 5 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "863d181346a8f62c57ca0265b891363d"
+  }
+}

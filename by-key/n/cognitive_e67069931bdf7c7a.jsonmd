@@ -1,0 +1,234 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:30.945Z",
+    "source_text_length": 19554,
+    "word_count": 2280,
+    "sentence_count": 266,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "e67069931bdf7c7a7a5162d11da0c9c8",
+    "entropy_level": 0.907,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "iterative.html",
+      "processing_timestamp": "2025-08-11T05:05:30.945Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 60,
+        "significance": "0.0263",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 34,
+        "significance": "0.0149",
+        "examples": [
+          "--border:#1f2530;"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 30,
+        "significance": "0.0132",
+        "examples": [
+          "class=\"wrap\">\r\n"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 28,
+        "significance": "0.0123",
+        "examples": [
+          "document.documentElement;\r\n"
+        ]
+      },
+      {
+        "theme": "rows",
+        "frequency": 25,
+        "significance": "0.0110",
+        "examples": [
+          "summaryStats(rows){\r\n"
+        ]
+      },
+      {
+        "theme": "contested",
+        "frequency": 21,
+        "significance": "0.0092",
+        "examples": [
+          "<th>Contested</th>\r\n"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 19,
+        "significance": "0.0083",
+        "examples": [
+          "--text:#eaf0ff;"
+        ]
+      },
+      {
+        "theme": "12px",
+        "frequency": 19,
+        "significance": "0.0083",
+        "examples": [
+          "border-radius:12px;"
+        ]
+      },
+      {
+        "theme": "cycle",
+        "frequency": 19,
+        "significance": "0.0083",
+        "examples": [
+          "cycles.</small>\r\n"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 19,
+        "significance": "0.0083",
+        "examples": [
+          "<th>Timestamp</th>\r\n"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 17,
+        "significance": "0.0075",
+        "examples": [
+          "<th>Entropy</th>\r\n"
+        ]
+      },
+      {
+        "theme": "return",
+        "frequency": 16,
+        "significance": "0.0070",
+        "examples": [
+          "return"
+        ]
+      }
+    ],
+    "key_questions": [
+      "getAttribute('data-theme') === 'dark' ? 'light' : 'dark';\r\n        html",
+      "length ? {\r\n        min: Math",
+      "length ? new Date(Math",
+      "length ? new Date(Math",
+      "end) ? `${stats",
+      "? (idx+1)} — ${r",
+      "? 'Unknown'} / ${r",
+      "? 'op'}**`;\r\n        lines"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "length) throw new Error('Found a JSON array, b",
+        "statement_b": "it does not contain recognizable cycle objects",
+        "line": 236,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.24"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 2,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\r\n<html lang=\"en\" data-theme=\"dark\">\r\n<head>\r\n  <meta charset=\"utf-8\" />\r\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\r\n  <title>Iterative Refinement — Offline Translator</title>\r\n  <style>\r\n    :root{\r\n      --bg:#0b0d10; --panel:#12151a; --muted:#7b8496; --text:#eaf0ff; --accent:#7aa2ff; --accent-2:#9dffb0; --warn:#ffcf6b; --danger:#ff7a90;\r\n      --border:#1f2530; --card:#121720; --shadow:0 8px 24px rgba(0,0,0, 35);\r\n      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\r\n      --round: 16px;\r\n    }\r\n    [data-theme=\"light\"]{\r\n      --bg:#f7f9fc; --panel:#ffffff; --muted:#5b6372; --text:#0b0d10; --accent:#2a64ff; --accent-2:#0aa86f; --warn:#b17a00; --danger:#b81c36;\r\n      --border:#e7ebf3; --card:#fbfcff; --shadow:0 8px 24px rgba(0,0,0,...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "7483837662038213, \"contested\": false, \"hash_of_entry\": \"702304c83ab1a0ee63f70e7bcb1c2bae4be1e607798941b44feffac11f48005f\" },\r\n  { \"cycle\": 3, \"phase\": \"Processing\", \"op\": \"formulate_plan\", \"output\": \"Develop a high-level execution strategy",
+        "urgency_score": "0.53",
+        "feasibility_score": "0.38"
+      },
+      {
+        "action": "3840690466304232, \"contested\": false, \"hash_of_entry\": \"bd3b941c0546fdfe81dadbc8f84c4721f99286c85623b206f9ad856c1f83662f\" },\r\n  { \"cycle\": 4, \"phase\": \"Processing\", \"op\": \"develop_characters\", \"output\": \"Flesh out the motivations for The Courier and The Architect",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.43"
+      },
+      {
+        "action": "createElement('div'); el",
+        "urgency_score": "0.02",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "createElement('div'); dot",
+        "urgency_score": "0.08",
+        "feasibility_score": "0.98"
+      },
+      {
+        "action": "createElement('div'); body",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": "createElement('tr');\r\n        const tds = [r",
+        "urgency_score": "0.90",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "createElement('td'); td",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.17"
+      },
+      {
+        "action": "createElement('div'); d",
+        "urgency_score": "0.26",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "createElement('textarea'); ta",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "createObjectURL(blob);\r\n      const a = document",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.87"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.24",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "e67069931bdf7c7a7a5162d11da0c9c8"
+  }
+}

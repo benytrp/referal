@@ -1,0 +1,233 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:33.356Z",
+    "source_text_length": 60542,
+    "word_count": 4645,
+    "sentence_count": 618,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b65c62f30a5d4cedc069792e10621a4e",
+    "entropy_level": 0.859,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "notepad-plus-clone.html",
+      "processing_timestamp": "2025-08-11T05:05:33.356Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 160,
+        "significance": "0.0344",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "editor",
+        "frequency": 136,
+        "significance": "0.0293",
+        "examples": [
+          ".editor-container"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 90,
+        "significance": "0.0194",
+        "examples": [
+          "document.getElementById('main-editor');\n"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 87,
+        "significance": "0.0187",
+        "examples": [
+          "content=\"width=device-width,"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 84,
+        "significance": "0.0181",
+        "examples": [
+          ".function-list,"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 75,
+        "significance": "0.0161",
+        "examples": [
+          "class=\"menu-bar\">\n"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 72,
+        "significance": "0.0155",
+        "examples": [
+          "document.getElementById('main-editor');\n"
+        ]
+      },
+      {
+        "theme": "currenttab",
+        "frequency": 70,
+        "significance": "0.0151",
+        "examples": [
+          "onclick=\"closeCurrentTab()\">Close"
+        ]
+      },
+      {
+        "theme": "onclick",
+        "frequency": 60,
+        "significance": "0.0129",
+        "examples": [
+          "onclick=\"toggleDropdown('file-menu')\">\n"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 55,
+        "significance": "0.0118",
+        "examples": [
+          ".value"
+        ]
+      },
+      {
+        "theme": "item",
+        "frequency": 52,
+        "significance": "0.0112",
+        "examples": [
+          ".menu-item"
+        ]
+      },
+      {
+        "theme": "dropdown",
+        "frequency": 48,
+        "significance": "0.0103",
+        "examples": [
+          ".dropdown"
+        ]
+      }
+    ],
+    "key_questions": [
+      "filePath) return;\n\n            if (confirm('Reload file? Any unsaved changes will be lost",
+      "Close anyway?`);\n                if (",
+      "length > 0) {\n                switchToTab(activeTabIndex);\n            } else {\n                newFile();\n            }\n        }\n\n        function closeAllTabs() {\n            if (confirm('Close all tabs? Any unsaved changes will be lost",
+      "modified ? '*' : '');\n        }\n\n        // Editor Functions\n        function handleEditorChange() {\n            const currentTab = tabs[activeTabIndex];\n            if (",
+      "substring(lineStart, lineEnd === -1 ? content",
+      "substring(0, lineEnd === -1 ? content",
+      "length : lineEnd) + \n                              '\\n' + currentLine + \n                              (lineEnd === -1 ? '' : content",
+      "substring(0, lineStart === 0 ? 0 : lineStart - 1) + \n                              (lineEnd === -1"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "')) {\n                w",
+        "statement_b": "(tabs",
+        "line": 174,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.10"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 15,
+      "future": 10
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Notepad++ Clone</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;\n            background: #2d2d30;\n            color: #ffffff;\n            height: 100vh;\n            display: flex;\n            flex-direction: column;\n        }\n\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "-- Functions will be populated here -->\n                </div>\n            </div>\n            \n            <div class=\"sidebar-content\" id=\"bookmarks-content\">\n                <div class=\"sidebar-header\">Bookmarks</div>\n                <div class=\"bookmarks-list\" id=\"bookmarks-list\">\n                    <",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "-- Bookmarks will be populated here -->\n                </div>\n            </div>\n        </div>\n\n        <div class=\"editor-container\">\n            <div class=\"tab-bar\" id=\"tab-bar\">\n                <",
+        "urgency_score": "0.71",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": "-- Tabs will be added dynamically -->\n            </div>\n            <div class=\"editor-area\">\n                <div class=\"line-numbers\" id=\"line-numbers\">1</div>\n                <textarea class=\"editor\" id=\"main-editor\" placeholder=\"Start typing",
+        "urgency_score": "0.46",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": "\">\n        <div>\n            <label><input type=\"checkbox\" id=\"match-case\"> Match case</label>\n            <label><input type=\"checkbox\" id=\"whole-word\"> Whole word</label>\n            <label><input type=\"checkbox\" id=\"regex-mode\"> Regular expression</label>\n        </div>\n        <div class=\"dialog-buttons\">\n            <button onclick=\"findNext()\">Find Next</button>\n            <button onclick=\"findPrevious()\">Find Previous</button>\n            <button onclick=\"replaceNext()\">Replace</button>\n            <button onclick=\"replaceAll()\">Replace All</button>\n            <button onclick=\"closeSearchDialog()\">Close</button>\n        </div>\n    </div>\n\n    <input type=\"file\" id=\"file-input\" style=\"display: none;\" multiple accept=\"*/*\">\n\n    <script>\n        // Global state\n        let tabs = [];\n        let activeTabIndex = 0;\n        let fileContent = {};\n        let fileHistory = {};\n        let bookmarks = {};\n        let currentZoom = 100;\n        let sidebarVisible = true;\n        let minimapVisible = true;\n        let lineNumbersVisible = true;\n        let wordWrapEnabled = false;\n        let lastSearchResults = [];\n        let currentSearchIndex = 0;\n\n        // Initialize the application\n        function init() {\n            // Create initial tab\n            newFile();\n            \n            // Set up event listeners\n            setupEventListeners();\n            \n            // Load session if available\n            loadSessionFromStorage();\n        }\n\n        function setupEventListeners() {\n            const editor = document",
+        "urgency_score": "0.64",
+        "feasibility_score": "0.71"
+      },
+      {
+        "action": "push({\n                id: tabId,\n                name: fileName,\n                filePath: null,\n                content: '',\n                modified: false,\n                syntaxMode: 'text'\n            });\n\n            fileContent[tabId] = '';\n            fileHistory[tabId] = [''];\n            \n            createTab(tabId, fileName);\n            switchToTab(tabs",
+        "urgency_score": "0.47",
+        "feasibility_score": "0.73"
+      },
+      {
+        "action": "length - 1);\n            updateFileStatus('New file created');\n        }\n\n        function openFile() {\n            document",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.43"
+      },
+      {
+        "action": "name)\n                    });\n\n                    fileContent[tabId] = content;\n                    fileHistory[tabId] = [content];\n                    \n                    createTab(tabId, file",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.06"
+      },
+      {
+        "action": "createObjectURL(blob);\n            \n            const a = document",
+        "urgency_score": "0.99",
+        "feasibility_score": "0.08"
+      },
+      {
+        "action": "createElement('a');\n            a",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.49"
+      },
+      {
+        "action": " Any unsaved changes will be lost",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.41"
+      }
+    ],
+    "unresolved_tensions": [
+      "')) {\n                w vs (tabs"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.21",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b65c62f30a5d4cedc069792e10621a4e"
+  }
+}

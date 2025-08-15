@@ -1,0 +1,174 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.170Z",
+    "source_text_length": 5661,
+    "word_count": 772,
+    "sentence_count": 19,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "acf55928f47b1d29c3027b5b537bd885",
+    "entropy_level": 0.854,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "E3-Form-bob-1-.html",
+      "processing_timestamp": "2025-08-11T05:05:29.170Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 46,
+        "significance": "0.0596",
+        "examples": [
+          "class=\"header\">\n<h1>E3"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 25,
+        "significance": "0.0324",
+        "examples": [
+          "}\n.checkbox-cell"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 24,
+        "significance": "0.0311",
+        "examples": [
+          "center;"
+        ]
+      },
+      {
+        "theme": "strong",
+        "frequency": 24,
+        "significance": "0.0311",
+        "examples": [
+          "8/10/2025</h3>\n<p><strong>Evaluation"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 21,
+        "significance": "0.0272",
+        "examples": [
+          "class=\"field\"><span"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 18,
+        "significance": "0.0233",
+        "examples": [
+          "class=\"center\"><input"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 18,
+        "significance": "0.0233",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 15,
+        "significance": "0.0194",
+        "examples": [
+          "border-bottom:"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 11,
+        "significance": "0.0142",
+        "examples": [
+          "Evaluation</title>\n<style>\nbody"
+        ]
+      },
+      {
+        "theme": "20px",
+        "frequency": 11,
+        "significance": "0.0142",
+        "examples": [
+          "20px;"
+        ]
+      },
+      {
+        "theme": "bottom",
+        "frequency": 11,
+        "significance": "0.0142",
+        "examples": [
+          "margin-bottom:"
+        ]
+      },
+      {
+        "theme": "height",
+        "frequency": 10,
+        "significance": "0.0130",
+        "examples": [
+          "line-height:"
+        ]
+      }
+    ],
+    "key_questions": [
+      "header { page-break-after: avoid; }\n    table { page-break-inside: avoid; }\n}\n</style>\n</head><body>\n<div class=\"header\">\n<h1>E3 Achievement Daily Participant Evaluation</h1>\n<h3>Battle Creek, Michigan | Generated: 8/10/2025</h3>\n<p><strong>Evaluation ID:</strong> E3-BC-20250810053802795 | <strong>Batch:</strong> </p>\n</div>\n\n<div class=\"section\">\n<h3>Participant Information</h3>\n<div class=\"field\"><span class=\"label\">Full Name:</span><span class=\"value\">bob</span></div>\n<div class=\"field\"><span class=\"label\">Participant ID:</span><span class=\"value\">4</span></div>\n<div class=\"field\"><span class=\"label\">Evaluation Date:</span><span class=\"value\">4</span></div>\n<div class=\"field\"><span class=\"label\">Program:</span><span class=\"value\">4</span></div>\n<div class=\"field\"><span class=\"label\">Instructor:</span><span class=\"value\">4</span></div>\n</div>\n\n<h3>Work Habits Assessment</h3>\n<table>\n<tr><th style=\"width: 50%;\">Assessment Criteria</th><th class=\"checkbox-cell\">Yes</th><th class=\"checkbox-cell\">NI</th><th class=\"checkbox-cell\">N/A</th><th>Notes</th></tr>\n<tr><td><strong>Attendance</strong> — Correct day and time?</td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_YES></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NI></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTENDANCE_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n<tr><td><strong>Hygiene</strong> — Appropriately groomed",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_YES></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_NI></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_HYGIENE_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n<tr><td><strong>Attitude</strong> — Cooperative and engaged",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_YES></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_NI></td>\n<td class=\"center\"><input type=\"checkbox\" WORK_HABITS_ATTITUDE_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n</table>\n\n<h3>Preparatory Goals Assessment</h3>\n<table>\n<tr><th style=\"width: 50%;\">Skills & Objectives</th><th class=\"checkbox-cell\">Yes</th><th class=\"checkbox-cell\">NI</th><th class=\"checkbox-cell\">N/A</th><th>Notes</th></tr>\n<tr><td><strong>Attention Span</strong> — Adequate for assigned tasks",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_YES></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_NI></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_ATTENTION_SPAN_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n<tr><td><strong>Safety</strong> — Followed all procedures correctly",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_SAFETY_YES></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_SAFETY_NI></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_SAFETY_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n<tr><td><strong>Task Completion</strong> — Finished assigned work",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_YES></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_NI></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n</table>\n\n<h3>Comments and Detailed Observations</h3>\n<div class=\"comments\">\n<strong>Instructor Comments:</strong><br><br>\nCOMMENTS_SECTION\n<br><br>\n<strong>Recommendations for Next Session:</strong><br>\n<div style=\"border-top: 1px dotted #999; padding-top: 10px; margin-top: 15px; min-height: 30px;\">\n</div>\n</div>\n\n<div class=\"signature\">\n<div class=\"signature-box\">\n<strong>Instructor Signature</strong><br><br>\n_______________________<br>\n4<br>\nDate: ___________\n</div>\n<div class=\"signature-box\">\n<strong>Supervisor Review</strong><br><br>\n_______________________<br>\nSupervisor Name<br>\nDate: ___________\n</div>\n</div>\n\n<div class=\"footer\">\nGenerated by AEON-Bridge E3 Implementation System | Battle Creek, Michigan<br>\nDocument ID: E3-BC-20250810053802795 | Batch:  | Generated: 2025-08-10T09:37:54"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html><head>\n<title>E3 Achievement Daily Participant Evaluation</title>\n<style>\nbody { font: 14px Arial, sans-serif; margin: 20px; max-width: 900px; line-height: 1 header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #007bff; padding-bottom: 15px; }\n...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "</td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_YES></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_NI></td>\n<td class=\"center\"><input type=\"checkbox\" PREPARATORY_GOALS_TASK_COMPLETION_NA></td>\n<td style=\"border-bottom: 1px dotted #999; min-height: 20px;\"></td></tr>\n</table>\n\n<h3>Comments and Detailed Observations</h3>\n<div class=\"comments\">\n<strong>Instructor Comments:</strong><br><br>\nCOMMENTS_SECTION\n<br><br>\n<strong>Recommendations for Next Session:</strong><br>\n<div style=\"border-top: 1px dotted #999; padding-top: 10px; margin-top: 15px; min-height: 30px;\">\n</div>\n</div>\n\n<div class=\"signature\">\n<div class=\"signature-box\">\n<strong>Instructor Signature</strong><br><br>\n_______________________<br>\n4<br>\nDate: ___________\n</div>\n<div class=\"signature-box\">\n<strong>Supervisor Review</strong><br><br>\n_______________________<br>\nSupervisor Name<br>\nDate: ___________\n</div>\n</div>\n\n<div class=\"footer\">\nGenerated by AEON-Bridge E3 Implementation System | Battle Creek, Michigan<br>\nDocument ID: E3-BC-20250810053802795 | Batch:  | Generated: 2025-08-10T09:37:54",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.51"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.28305,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.23",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "acf55928f47b1d29c3027b5b537bd885"
+  }
+}

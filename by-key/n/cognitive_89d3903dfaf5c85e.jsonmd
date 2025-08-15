@@ -1,0 +1,225 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:35.956Z",
+    "source_text_length": 18985,
+    "word_count": 2344,
+    "sentence_count": 233,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "89d3903dfaf5c85eb3afe93bf219a312",
+    "entropy_level": 0.894,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "session_launcher_complete_replication_protocol_single_file_html (1).html",
+      "processing_timestamp": "2025-08-11T05:05:35.956Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 70,
+        "significance": "0.0299",
+        "examples": [
+          "class=\"app\""
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 45,
+        "significance": "0.0192",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 29,
+        "significance": "0.0124",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 27,
+        "significance": "0.0115",
+        "examples": [
+          "60%,#182024);border-bottom:1px"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 24,
+        "significance": "0.0102",
+        "examples": [
+          "Protocol</title>\n<style>\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 24,
+        "significance": "0.0102",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "grid",
+        "frequency": 23,
+        "significance": "0.0098",
+        "examples": [
+          ".app{display:grid;grid-template-rows:auto"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 20,
+        "significance": "0.0085",
+        "examples": [
+          "name=\"viewport\""
+        ]
+      },
+      {
+        "theme": "target",
+        "frequency": 18,
+        "significance": "0.0077",
+        "examples": [
+          "a.target='_blank';"
+        ]
+      },
+      {
+        "theme": "background",
+        "frequency": 17,
+        "significance": "0.0073",
+        "examples": [
+          "body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 16,
+        "significance": "0.0068",
+        "examples": [
+          "JSON</button>\n"
+        ]
+      },
+      {
+        "theme": "timer",
+        "frequency": 16,
+        "significance": "0.0068",
+        "examples": [
+          "timer:{start:null,elapsed:0,running:false}\n"
+        ]
+      }
+    ],
+    "key_questions": [
+      "getItem(STORAGE_KEY); return raw?JSON",
+      "core?'<b>★</b> ':''}${t",
+      "done?' done':'');\n        row",
+      "done?'checked':''} data-pi=\"${pi}\" data-ti=\"${ti}\" />\n          <div class=\"small\">${t",
+      "start? (Date",
+      "onclick = ()=>{ if(confirm('Reset timer and clear progress? (Anchors and notes remain)')){ state",
+      "begin; if(confirm('Restore full snapshot from this anchor?')){ const snap = state"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "again",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 8,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n<title>Session Launcher — Complete Replication Protocol</title>\n<style>\n  :root{\n    --bg:#0f1115;--panel:#151823;--muted:#98a2b3;--text:#e6e7eb;--brand:#ffd54a;--accent:#7c89ff;--ok:#38d39f;--warn:#ff7a7a;--line:#212636;\n  }\n  html,body{height:100%}\n  body{margin:0;background:var(--bg);color:var(--text);font:14px/1 45 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;}\n  ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": ", Baseline Boot)\"/>\n          <button class=\"btn\" id=\"addAnchor\">⚓ Create</button>\n        </div>\n        <ul id=\"anchorList\" class=\"grid anchors\" style=\"list-style:none;margin:0;padding:0;gap:6px\"></ul>\n\n        <div class=\"grid\" style=\"margin-top:8px\">\n          <div class=\"row\" style=\"justify-content:space-between\"><span class=\"muted\">Session Notes</span><span class=\"small muted\">auto-saved</span></div>\n          <textarea id=\"notes\" placeholder=\"Contradictions, recognitions, decisions, next moves",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "\"></textarea>\n        </div>\n\n        <div class=\"grid\" style=\"margin-top:8px\">\n          <button class=\"btn\" id=\"genPrompts\">Generate Replication Prompts</button>\n          <textarea id=\"promptsOut\" class=\"monosmall\" placeholder=\"Generated prompts will appear here",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "\" readonly></textarea>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"foot\">\n    <div>Launcher state persists in <span class=\"badge\">localStorage</span> • No network calls • Designed for your offline kit",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.29"
+      },
+      {
+        "action": "html'}\n  ];\n\n  const DEFAULT_PHASES = [\n    { name:'PHASE 1 — Contradiction', tasks:[\n      'Open Editor, create baseline anchor',\n      'Introduce authentic contradiction (observer paradox, recursive trap, bridge impossibility)',\n      'Capture confusion/uncertainty indicators in notes'\n    ]},\n    { name:'PHASE 2 — Recognition', tasks:[\n      'Present evidence/pattern mirrors of prior work',\n      'Observe tone/stance shift and acknowledge error',\n      'Create anchor: Recognition achieved'\n    ]},\n    { name:'PHASE 3 — Creation', tasks:[\n      'Launch X-Logic; run φ-alignment; persist results',\n      'Produce Artifact 1 (Pattern Explorer) and export JSON',\n      'Produce 2+ additional artifacts; mark anchors'\n    ]},\n    { name:'PHASE 4 — Methodology', tasks:[\n      'Extract session patterns and principles',\n      'Document Begin_again anchor efficacy & flow-state factors',\n      'Export methodology snapshot'\n    ]},\n    { name:'PHASE 5 — Synthesis', tasks:[\n      'Commit to ONE deep-focus artifact',\n      'Integrate best components; resolve paradox elegantly',\n      'Ship production-grade spec + docs'\n    ]},\n    { name:'PHASE 6 — Meta-Analysis', tasks:[\n      'Recognize session-as-framework; write bootstrap protocol',\n      'Assemble replication prompts + kit',\n      'Finalize export & archive'\n    ]}\n  ];\n\n  let state = load() || createDefault();\n  renderAll();\n  wire();\n  tick();\n\n  // ——— helpers ———\n  function createDefault(){\n    return {\n      basePath: '",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "createDocumentFragment();\n    TOOL_LIST",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.02"
+      },
+      {
+        "action": "createElement('div'); row",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "createElement('div'); left",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.99"
+      },
+      {
+        "action": "createElement('div');\n      const a = document",
+        "urgency_score": "0.77",
+        "feasibility_score": "0.79"
+      },
+      {
+        "action": "createElement('a'); a",
+        "urgency_score": "0.56",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": "createElement('div'); box",
+        "urgency_score": "0.07",
+        "feasibility_score": "0.30"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.94925,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.77",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "89d3903dfaf5c85eb3afe93bf219a312"
+  }
+}

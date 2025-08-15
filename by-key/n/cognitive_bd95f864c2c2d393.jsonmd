@@ -1,0 +1,180 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:51.969Z",
+    "source_text_length": 2410,
+    "word_count": 192,
+    "sentence_count": 11,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "bd95f864c2c2d393960b077e8f11973d",
+    "entropy_level": 0.943,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_9b246c7567c080eebb1c9f9784c68775.json",
+      "processing_timestamp": "2025-08-11T05:12:51.969Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0417",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0417",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "fusion",
+        "frequency": 7,
+        "significance": "0.0365",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 5,
+        "significance": "0.0260",
+        "examples": [
+          "\"source_text_length\":"
+        ]
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 3,
+        "significance": "0.0156",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      },
+      {
+        "theme": "json_md",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"input\",\n"
+        ]
+      },
+      {
+        "theme": "questions",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"key_questions\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"entropy_level\":"
+        ]
+      },
+      {
+        "theme": "explore",
+        "frequency": 2,
+        "significance": "0.0104",
+        "examples": [
+          "\"Explore"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0052",
+        "examples": [
+          "\"2025-08-11T05:12:48.713Z\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:48...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"Through fusion, meaning crystallizes into actionable knowledge",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.75"
+      },
+      {
+        "action": "\"\n    ],\n    \"unresolved_tensions\": [\n      \"\\\"— AEON Fusion Protocol F(T) = J(M(C(T), S(T), P(T))) F = Fusion · T = Text · J = JSON · M = Markdown · C = Contradictions · S = Semantics · P = Patterns 📝 Text Input 🧬 Execute Fusion 🧹 Clear All 📄 Load Example 📥 Import ",
+        "urgency_score": "0.62",
+        "feasibility_score": "0.98"
+      },
+      {
+        "action": "43,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.90",
+        "feasibility_score": "0.04"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1205,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.99",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "bd95f864c2c2d393960b077e8f11973d"
+  }
+}

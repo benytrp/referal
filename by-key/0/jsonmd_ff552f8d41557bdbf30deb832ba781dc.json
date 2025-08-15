@@ -1,0 +1,110 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:10.447Z",
+    "source_text_length": 5150,
+    "word_count": 519,
+    "sentence_count": 238,
+    "entropy_level": 0.857,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "E3_Daily_Eval_Blank.html"
+    },
+    "anchor_id": "ff552f8d41557bdbf30deb832ba781dc"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "preparatory_goals",
+        "frequency": 31
+      },
+      {
+        "theme": "work_habits",
+        "frequency": 25
+      },
+      {
+        "theme": "commentary",
+        "frequency": 16
+      },
+      {
+        "theme": "interests_abilities",
+        "frequency": 13
+      },
+      {
+        "theme": "attendance",
+        "frequency": 8
+      },
+      {
+        "theme": "timeliness",
+        "frequency": 8
+      },
+      {
+        "theme": "record_meta",
+        "frequency": 6
+      },
+      {
+        "theme": "comments",
+        "frequency": 6
+      },
+      {
+        "theme": "participant",
+        "frequency": 5
+      },
+      {
+        "theme": "session",
+        "frequency": 5
+      },
+      {
+        "theme": "attitude",
+        "frequency": 5
+      },
+      {
+        "theme": "hygiene",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [
+      "assigned_staff_id⟧ Goals:⟦program_goals_summary⟧ Today's Focus:⟦todays_focus⟧ Work Habits ItemYesNIN/A Attendance — Correct day and time? ⟦chk",
+      "na⟧ Attendance — Excessive absences? ⟦chk",
+      "na⟧ Timeliness — Arrived on time? ⟦chk",
+      "na⟧ Timeliness — Excessive tardiness? ⟦chk",
+      "na⟧ Hygiene — Participant was appropriately groomed? ⟦chk",
+      "na⟧ Dress — Participant was appropriately dressed? ⟦chk",
+      "na⟧ Attitude — Participant exhibited positive attitude? ⟦chk",
+      "comments⟧ Preparatory Goals ItemYesNIN/A Attention Span — adequate span for tasks? ⟦chk",
+      "na⟧ Following Directions — followed simple instructions? ⟦chk",
+      "na⟧ Following Directions — followed multi-step instructions? ⟦chk"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Achievement Daily Participant Evaluation Name:⟦record_meta … Rendered by your merge logic",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.57,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ff552f8d41557bdbf30deb832ba781dc"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:16.425Z",
+    "source_text_length": 2057,
+    "word_count": 154,
+    "sentence_count": 10,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "189fad534c431d45d65f338875245263",
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_5b6d5c7b0e2a80c9c414dbb697460436.json",
+      "processing_timestamp": "2025-08-11T05:02:16.425Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0519",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0519",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "self",
+        "frequency": 4,
+        "significance": "0.0260",
+        "examples": [
+          "\"self\",\n"
+        ]
+      },
+      {
+        "theme": "4571",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "4571,\n"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "\"class"
+        ]
+      },
+      {
+        "theme": "xlogicengine",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "XLogicEngine.txt\",\n"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "\"output\",\n"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "\"entropy_level\":"
+        ]
+      },
+      {
+        "theme": "dict",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      },
+      {
+        "theme": "created",
+        "frequency": 2,
+        "significance": "0.0130",
+        "examples": [
+          "created"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0065",
+        "examples": [
+          "\"2025-08-11T04:23:08.878Z\",\n"
+        ]
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 1,
+        "significance": "0.0065",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:08...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … dumps(result, indent=2))\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"15))  # Stabilize\\r\\n\\r\\n    def mutate_branch(self):\\r\\n        output = \\\\\\\"Entropy high; created branch mutation",
+        "urgency_score": "0.60",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": "\",\n      \"isoformat()}\\\\\\\",\\r\\n            \\\\\\\"created\\\\\\\": datetime",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.29"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.10285,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.09",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "189fad534c431d45d65f338875245263"
+  }
+}

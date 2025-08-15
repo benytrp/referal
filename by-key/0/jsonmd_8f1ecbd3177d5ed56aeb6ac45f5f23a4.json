@@ -1,0 +1,77 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:33.891Z",
+    "source_text_length": 82,
+    "word_count": 15,
+    "sentence_count": 4,
+    "entropy_level": 0.978,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_chatbot.html"
+    },
+    "anchor_id": "8f1ecbd3177d5ed56aeb6ac45f5f23a4"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "chatbot",
+        "frequency": 2
+      },
+      {
+        "theme": "hello",
+        "frequency": 1
+      },
+      {
+        "theme": "help",
+        "frequency": 1
+      },
+      {
+        "theme": "today",
+        "frequency": 1
+      },
+      {
+        "theme": "send",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [
+      "How can I help you today? Send"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "🤖 Offline Chatbot Hello … Send",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8f1ecbd3177d5ed56aeb6ac45f5f23a4"
+  }
+}

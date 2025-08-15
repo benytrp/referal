@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:51.183Z",
+    "source_text_length": 914,
+    "word_count": 137,
+    "sentence_count": 28,
+    "entropy_level": 0.935,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (7).html"
+    },
+    "anchor_id": "beffbe2fd50b18ca74249a9f9977f1d0"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "scroll",
+        "frequency": 12
+      },
+      {
+        "theme": "json",
+        "frequency": 9
+      },
+      {
+        "theme": "date",
+        "frequency": 4
+      },
+      {
+        "theme": "event",
+        "frequency": 4
+      },
+      {
+        "theme": "metadata",
+        "frequency": 3
+      },
+      {
+        "theme": "anchor_log",
+        "frequency": 3
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 3
+      },
+      {
+        "theme": "trigger",
+        "frequency": 3
+      },
+      {
+        "theme": "8601",
+        "frequency": 2
+      },
+      {
+        "theme": "command",
+        "frequency": 2
+      },
+      {
+        "theme": "anchor",
+        "frequency": 2
+      },
+      {
+        "theme": "scroll_event_",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "📜 Scroll Ritual Command Palette Click any command to copy it to the clipboard … json",
+    "key_insights": [],
+    "action_items": [
+      "Create a timestamped backup cp scroll"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "beffbe2fd50b18ca74249a9f9977f1d0"
+  }
+}

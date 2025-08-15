@@ -1,0 +1,351 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:16.803Z",
+    "source_text_length": 1051,
+    "word_count": 145,
+    "entropy_level": 0.955,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "e93600d63df3f077065fcdc2fda57b13"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "chunk",
+        "frequency": 9
+      },
+      {
+        "theme": "export",
+        "frequency": 5
+      },
+      {
+        "theme": "title",
+        "frequency": 4
+      },
+      {
+        "theme": "text",
+        "frequency": 3
+      },
+      {
+        "theme": "statements",
+        "frequency": 3
+      },
+      {
+        "theme": "hashes",
+        "frequency": 3
+      },
+      {
+        "theme": "bundle",
+        "frequency": 3
+      },
+      {
+        "theme": "index",
+        "frequency": 3
+      },
+      {
+        "theme": "statement",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "behavior",
+        "frequency": 2
+      },
+      {
+        "theme": "hashlist",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Chunk Reflector I‑Statement Hasher Paste text → chunk → auto-generate I‑statements → compute per‑chunk hashes → compose a proof bundle or behavior … hashlist Draft Chunks & I‑Statements #TitlePreviewI‑Statementhash_of_instruction Seals & Export Mobius‑style seal (ordered concat of instruction hashes) – Bundle export Export JSON Bundle Export CSV (index,title,hash)",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.164,
+    "cognitive_load_estimate": 0.05255,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.881,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 2,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.761,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 3,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.642,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 4,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.522,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 5,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.403,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 6,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.284,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      },
+      {
+        "generation": 7,
+        "entropy": 0.955,
+        "contradictions": 0,
+        "novelty_index": 0.164,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "chunk",
+              "frequency": 9
+            },
+            {
+              "theme": "export",
+              "frequency": 5
+            },
+            {
+              "theme": "title",
+              "frequency": 4
+            },
+            {
+              "theme": "text",
+              "frequency": 3
+            },
+            {
+              "theme": "statements",
+              "frequency": 3
+            }
+          ]
+        },
+        "score": 0.318
+      }
+    ],
+    "quality_score": 31
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.03,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "chunk_reflector_i_statement_hasher_offline_single_file.html",
+      "bytes": 14636,
+      "lastModified": 1754700589691
+    }
+  }
+}

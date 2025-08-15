@@ -1,0 +1,225 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:35.371Z",
+    "source_text_length": 40214,
+    "word_count": 3206,
+    "sentence_count": 235,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "74b8fcdd49dc5aa81c6e164a34034147",
+    "entropy_level": 0.859,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "offline_template_builder.html",
+      "processing_timestamp": "2025-08-11T05:05:35.371Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "option",
+        "frequency": 92,
+        "significance": "0.0287",
+        "examples": [
+          ".export-options"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 90,
+        "significance": "0.0281",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "template",
+        "frequency": 85,
+        "significance": "0.0265",
+        "examples": [
+          "Template"
+        ]
+      },
+      {
+        "theme": "value",
+        "frequency": 78,
+        "significance": "0.0243",
+        "examples": [
+          "value=\"Contact"
+        ]
+      },
+      {
+        "theme": "form",
+        "frequency": 51,
+        "significance": "0.0159",
+        "examples": [
+          "text-transform:"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 48,
+        "significance": "0.0150",
+        "examples": [
+          "label"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 45,
+        "significance": "0.0140",
+        "examples": [
+          "html>\n<html"
+        ]
+      },
+      {
+        "theme": "button",
+        "frequency": 43,
+        "significance": "0.0134",
+        "examples": [
+          "<button"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 42,
+        "significance": "0.0131",
+        "examples": [
+          "name=\"viewport\""
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 41,
+        "significance": "0.0128",
+        "examples": [
+          "border-box;\n"
+        ]
+      },
+      {
+        "theme": "field",
+        "frequency": 39,
+        "significance": "0.0122",
+        "examples": [
+          ".dynamic-fields"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 38,
+        "significance": "0.0119",
+        "examples": [
+          "<!DOCTYPE"
+        ]
+      }
+    ],
+    "key_questions": [
+      "name}\" rows=\"4\" ${validation ? 'required' : ''}></textarea>`;\n                        break;\n                    case 'select':\n                        fieldElement = `<select name=\"${field",
+      "name}\" ${validation ? 'required' : ''}>\n                            <option value=\"\">Please select",
+      "name}\" ${validation ? 'required' : ''}>`;\n                }\n\n                return `\n                    <div class=\"form-group\">\n                        <label for=\"${field",
+      "submit-btn:hover {\n            background: ${themes[theme]}dd;\n            transform: translateY(-2px);\n        }\n        ${responsive ? `\n        @media (max-width: 768px) {",
+      "form-container { padding: 20px; margin: 10px; }\n        }` : ''}\n    </style>\n</head>\n<body>\n    <div class=\"form-container\">\n        <h1>${title}</h1>\n        ${description ? `<p class=\"description\">${description}</p>` : ''}\n        \n        <form action=\"${action}\" method=\"POST\" ${validation",
+      "? 'novalidate' : ''}>\n            ${fieldHTML}\n            \n            <button type=\"submit\" class=\"submit-btn\">Submit</button>\n        </form>\n    </div>\n\n    ${validation",
+      "? `\n    <script>\n        document",
+      "How satisfied are you with our service?</h3>\n            <label><input type=\"radio\" name=\"satisfaction\" value=\"very-satisfied\"> Very Satisfied</label><br>\n            <label><input type=\"radio\" name=\"satisfaction\" value=\"satisfied\"> Satisfied</label><br>\n            <label><input type=\"radio\" name=\"satisfaction\" value=\"neutral\"> Neutral</label><br>\n            <label><input type=\"radio\" name=\"satisfaction\" value=\"dissatisfied\"> Dissatisfied</label><br>\n            <label><input type=\"radio\" name=\"satisfaction\" value=\"very-dissatisfied\"> Very Dissatisfied</label>\n        </div>\n        \n        <div class=\"question\">\n            <h3>2"
+    ],
+    "pattern_recognition": [
+      "repeat",
+      "return",
+      "feedback"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 8,
+      "future": 3
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Offline Template Builder</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            min-height: 100vh;\n            padding: 20px;\n        }\n\n        ...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "0\">\n    <title>Offline Template Builder</title>\n    <style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        body {\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n            min-height: 100vh;\n            padding: 20px;\n        }\n\n        ",
+        "urgency_score": "0.40",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": "builder-section {\n            margin-bottom: 30px;\n        }\n\n        ",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.38"
+      },
+      {
+        "action": "sidebar {\n                border-right: none;\n                border-bottom: 1px solid #e9ecef;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class=\"container\">\n        <div class=\"header\">\n            <h1>🔧 Offline Template Builder</h1>\n            <p>Create professional templates that work completely offline - no dependencies required</p>\n        </div>\n\n        <div class=\"main-content\">\n            <div class=\"sidebar\">\n                <div class=\"template-category\">\n                    <div class=\"category-title\">📝 Forms & Data</div>\n                    <button class=\"template-btn active\" data-template=\"contact-form\">\n                        📋 Contact Form\n                    </button>\n                    <button class=\"template-btn\" data-template=\"survey\">\n                        📊 Survey Template\n                    </button>\n                    <button class=\"template-btn\" data-template=\"evaluation\">\n                        ⭐ Evaluation Form\n                    </button>\n                    <button class=\"template-btn\" data-template=\"registration\">\n                        🎫 Registration Form\n                    </button>\n                </div>\n\n                <div class=\"template-category\">\n                    <div class=\"category-title\">📄 Documents</div>\n                    <button class=\"template-btn\" data-template=\"invoice\">\n                        💰 Invoice Template\n                    </button>\n                    <button class=\"template-btn\" data-template=\"report\">\n                        📈 Report Template\n                    </button>\n                    <button class=\"template-btn\" data-template=\"resume\">\n                        👤 Resume Template\n                    </button>\n                    <button class=\"template-btn\" data-template=\"proposal\">\n                        🎯 Project Proposal\n                    </button>\n                </div>\n\n                <div class=\"template-category\">\n                    <div class=\"category-title\">🌐 Web Pages</div>\n                    <button class=\"template-btn\" data-template=\"landing\">\n                        🚀 Landing Page\n                    </button>\n                    <button class=\"template-btn\" data-template=\"portfolio\">\n                        🎨 Portfolio Page\n                    </button>\n                    <button class=\"template-btn\" data-template=\"blog\">\n                        ✍️ Blog Template\n                    </button>\n                </div>\n\n                <div class=\"template-category\">\n                    <div class=\"category-title\">🔧 Custom</div>\n                    <button class=\"template-btn\" data-template=\"custom\">\n                        ⚡ Custom Template\n                    </button>\n                </div>\n            </div>\n\n            <div class=\"content-area\">\n                <",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "-- Contact Form Template -->\n                <div id=\"contact-form\" class=\"template-builder\">\n                    <div class=\"builder-section\">\n                        <h2 class=\"section-title\">📋 Contact Form Builder</h2>\n                        \n                        <div class=\"form-group\">\n                            <label>Form Title</label>\n                            <input type=\"text\" id=\"cf-title\" value=\"Contact Us\" placeholder=\"Enter form title\">\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Description</label>\n                            <textarea id=\"cf-description\" placeholder=\"Form description or instructions\">Get in touch with us using the form below",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.42"
+      },
+      {
+        "action": "</textarea>\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Form Action URL</label>\n                            <input type=\"text\" id=\"cf-action\" placeholder=\"https://example",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.14"
+      },
+      {
+        "action": "com/submit\" value=\"\">\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Form Fields</label>\n                            <div class=\"dynamic-fields\" id=\"cf-fields\">\n                                <div class=\"field-item\">\n                                    <input type=\"text\" placeholder=\"Field Label\" value=\"Full Name\">\n                                    <select class=\"field-type-selector\">\n                                        <option value=\"text\">Text</option>\n                                        <option value=\"email\">Email</option>\n                                        <option value=\"tel\">Phone</option>\n                                        <option value=\"textarea\">Textarea</option>\n                                        <option value=\"select\">Dropdown</option>\n                                        <option value=\"checkbox\">Checkbox</option>\n                                        <option value=\"radio\">Radio</option>\n                                    </select>\n                                    <input type=\"text\" placeholder=\"Field Name\" value=\"fullname\">\n                                    <button class=\"btn btn-danger btn-small\" onclick=\"removeField(this)\">Remove</button>\n                                </div>\n                                <div class=\"field-item\">\n                                    <input type=\"text\" placeholder=\"Field Label\" value=\"Email Address\">\n                                    <select class=\"field-type-selector\">\n                                        <option value=\"text\">Text</option>\n                                        <option value=\"email\" selected>Email</option>\n                                        <option value=\"tel\">Phone</option>\n                                        <option value=\"textarea\">Textarea</option>\n                                        <option value=\"select\">Dropdown</option>\n                                        <option value=\"checkbox\">Checkbox</option>\n                                        <option value=\"radio\">Radio</option>\n                                    </select>\n                                    <input type=\"text\" placeholder=\"Field Name\" value=\"email\">\n                                    <button class=\"btn btn-danger btn-small\" onclick=\"removeField(this)\">Remove</button>\n                                </div>\n                                <div class=\"field-item\">\n                                    <input type=\"text\" placeholder=\"Field Label\" value=\"Message\">\n                                    <select class=\"field-type-selector\">\n                                        <option value=\"text\">Text</option>\n                                        <option value=\"email\">Email</option>\n                                        <option value=\"tel\">Phone</option>\n                                        <option value=\"textarea\" selected>Textarea</option>\n                                        <option value=\"select\">Dropdown</option>\n                                        <option value=\"checkbox\">Checkbox</option>\n                                        <option value=\"radio\">Radio</option>\n                                    </select>\n                                    <input type=\"text\" placeholder=\"Field Name\" value=\"message\">\n                                    <button class=\"btn btn-danger btn-small\" onclick=\"removeField(this)\">Remove</button>\n                                </div>\n                            </div>\n                            <button class=\"btn btn-secondary btn-small\" onclick=\"addField('cf-fields')\">Add Field</button>\n                        </div>\n\n                        <div class=\"advanced-options\">\n                            <h4>Advanced Options</h4>\n                            <div class=\"form-group\">\n                                <label>\n                                    <input type=\"checkbox\" id=\"cf-validation\"> Enable Client-side Validation\n                                </label>\n                            </div>\n                            <div class=\"form-group\">\n                                <label>\n                                    <input type=\"checkbox\" id=\"cf-responsive\" checked> Responsive Design\n                                </label>\n                            </div>\n                            <div class=\"form-group\">\n                                <label>Color Scheme</label>\n                                <select id=\"cf-theme\">\n                                    <option value=\"blue\">Blue</option>\n                                    <option value=\"green\">Green</option>\n                                    <option value=\"purple\">Purple</option>\n                                    <option value=\"dark\">Dark</option>\n                                </select>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n\n                <",
+        "urgency_score": "0.89",
+        "feasibility_score": "0.82"
+      },
+      {
+        "action": "-- Custom Template Builder -->\n                <div id=\"custom\" class=\"template-builder template-hidden\">\n                    <div class=\"builder-section\">\n                        <h2 class=\"section-title\">⚡ Custom Template Builder</h2>\n                        \n                        <div class=\"form-group\">\n                            <label>Template Name</label>\n                            <input type=\"text\" id=\"custom-name\" placeholder=\"My Custom Template\">\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Template Type</label>\n                            <select id=\"custom-type\">\n                                <option value=\"html\">HTML Document</option>\n                                <option value=\"form\">Form Template</option>\n                                <option value=\"report\">Report Template</option>\n                                <option value=\"email\">Email Template</option>\n                                <option value=\"component\">Reusable Component</option>\n                            </select>\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Custom HTML Structure</label>\n                            <textarea id=\"custom-html\" rows=\"10\" placeholder=\"Enter your custom HTML",
+        "urgency_score": "0.16",
+        "feasibility_score": "0.34"
+      },
+      {
+        "action": "\">\n<div class=\"container\">\n    <h1>{{title}}</h1>\n    <p>{{content}}</p>\n</div>\n                            </textarea>\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Template Variables (one per line)</label>\n                            <textarea id=\"custom-variables\" placeholder=\"title=Default Title&#10;content=Default content&#10;author=Author Name\">title=My Custom Template\ncontent=This is a custom template with variables\nauthor=Template Builder</textarea>\n                        </div>\n\n                        <div class=\"form-group\">\n                            <label>Custom CSS</label>\n                            <textarea id=\"custom-css\" rows=\"6\" placeholder=\"Enter custom CSS",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "-- Add other template builders here (survey, invoice, etc",
+        "urgency_score": "0.84",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": ") -->\n                <div id=\"survey\" class=\"template-builder template-hidden\">\n                    <div class=\"builder-section\">\n                        <h2 class=\"section-title\">📊 Survey Template Builder</h2>\n                        <div class=\"form-group\">\n                            <label>Survey Title</label>\n                            <input type=\"text\" id=\"survey-title\" value=\"Customer Satisfaction Survey\">\n                        </div>\n                        <div class=\"form-group\">\n                            <label>Survey Instructions</label>\n                            <textarea id=\"survey-instructions\">Please take a few minutes to complete this survey",
+        "urgency_score": "0.79",
+        "feasibility_score": "0.36"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.24",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "74b8fcdd49dc5aa81c6e164a34034147"
+  }
+}

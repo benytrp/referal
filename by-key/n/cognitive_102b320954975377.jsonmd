@@ -1,0 +1,186 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:32.920Z",
+    "source_text_length": 2383,
+    "word_count": 204,
+    "sentence_count": 8,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "102b3209549753779fab1e2d98e55d62",
+    "entropy_level": 0.966,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "json_md_fusion_2025-08-11T00-52-29.json",
+      "processing_timestamp": "2025-08-11T05:05:32.920Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "text",
+        "frequency": 8,
+        "significance": "0.0392",
+        "examples": [
+          "\"source_text_length\":"
+        ]
+      },
+      {
+        "theme": "structure",
+        "frequency": 4,
+        "significance": "0.0196",
+        "examples": [
+          "\"STRUCTURE\",\n"
+        ]
+      },
+      {
+        "theme": "tools",
+        "frequency": 4,
+        "significance": "0.0196",
+        "examples": [
+          "tools'"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "examples",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"examples\":"
+        ]
+      },
+      {
+        "theme": "change",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"change\",\n"
+        ]
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"contradictions_detected\":"
+        ]
+      },
+      {
+        "theme": "high",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "\"High"
+        ]
+      },
+      {
+        "theme": "consider",
+        "frequency": 3,
+        "significance": "0.0147",
+        "examples": [
+          "consider"
+        ]
+      },
+      {
+        "theme": "patterns",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"patterns\",\n"
+        ]
+      },
+      {
+        "theme": "repeat",
+        "frequency": 2,
+        "significance": "0.0098",
+        "examples": [
+          "\"Repeat\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "repeat",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \" All tools are free for personal use b",
+        "statement_b": "to use them for commercial purposes, you need to\",\n      \"do\",\n      \"do\"\n    ],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Automated text analysis with contradiction mapping\",\n    \"confidence_level\": \"0",
+        "line": 7,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.01"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"timestamp\": \"2025-08-11T00:52:26 154Z\",\n    \"source_text_length\": 24637,\n    \"word_count\": 3992,\n    \"entropy_level\": \"0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " It stays on your computer\",\n      \"every word in the given text\",\n      \"every sentence in the given text\"\n    ],\n    \"contradiction_map\": [\n      {\n        \"statement_a\": \"All tools are free for personal use\",\n        \"statement_b\": \"to use them for commercial purposes, you need to get a premium plan\",\n        \"line\": 336,\n        \"tension_type\": \"explicit_contradiction\"\n      }\n    ],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 2,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 14,\n      \"present\": 48,\n      \"future\": 3\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"All Text Tools\\nSearch\\n\\nSplit Text\\nQuickly split text into chunks",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.53"
+      },
+      {
+        "action": "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \" All tools are free for personal use but to use them for commercial purposes, you need to\",\n      \"do\",\n      \"do\"\n    ],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Automated text analysis with contradiction mapping\",\n    \"confidence_level\": \"0",
+        "urgency_score": "0.83",
+        "feasibility_score": "0.11"
+      }
+    ],
+    "unresolved_tensions": [
+      "\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \" All tools are free for personal use b vs to use them for commercial purposes, you need to\",\n      \"do\",\n      \"do\"\n    ],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Automated text analysis with contradiction mapping\",\n    \"confidence_level\": \"0"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.14415,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.97",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "102b3209549753779fab1e2d98e55d62"
+  }
+}

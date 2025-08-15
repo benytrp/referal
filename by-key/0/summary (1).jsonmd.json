@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:20.426Z",
+    "anchor_id": "b2883fde9dcbda8c484246b40acfc8c9f8b70ff092e067d4d1d7b4009bc5ddba",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.912,
+    "contradictions_detected": 0,
+    "word_count": 24
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "topic",
+        "frequency": 2
+      },
+      {
+        "theme": "bridge",
+        "frequency": 1
+      },
+      {
+        "theme": "summary",
+        "frequency": 1
+      },
+      {
+        "theme": "file",
+        "frequency": 1
+      },
+      {
+        "theme": "manifest",
+        "frequency": 1
+      },
+      {
+        "theme": "anchor",
+        "frequency": 1
+      },
+      {
+        "theme": "dbeb",
+        "frequency": 1
+      },
+      {
+        "theme": "cycles",
+        "frequency": 1
+      },
+      {
+        "theme": "generated",
+        "frequency": 1
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "json, topic, bridge, summary, file"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "summary (1).md",
+    "relative_path": "scrolls/Documents/Notes/summary (1).md",
+    "size_bytes": 236,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

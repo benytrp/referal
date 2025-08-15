@@ -1,0 +1,443 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:25:57.061Z",
+    "source_text_length": 9866,
+    "word_count": 982,
+    "entropy_level": 0.903,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "8b3eca9664d759c6efdd05cdef3f998f"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "config",
+        "frequency": 42
+      },
+      {
+        "theme": "name",
+        "frequency": 32
+      },
+      {
+        "theme": "const",
+        "frequency": 26
+      },
+      {
+        "theme": "color",
+        "frequency": 26
+      },
+      {
+        "theme": "tone",
+        "frequency": 24
+      },
+      {
+        "theme": "frequencies",
+        "frequency": 18
+      },
+      {
+        "theme": "index",
+        "frequency": 14
+      },
+      {
+        "theme": "colors",
+        "frequency": 13
+      },
+      {
+        "theme": "json",
+        "frequency": 12
+      },
+      {
+        "theme": "harmonic",
+        "frequency": 8
+      },
+      {
+        "theme": "motion_pattern",
+        "frequency": 8
+      },
+      {
+        "theme": "activepreset",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [
+      "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+      "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+      "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+    ],
+    "pattern_recognition": [
+      "recursion",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "import React, { useState, useRef, useEffect } from 'react'; import { Download, Play, Pause, Volume2, VolumeX, Eye, Film, Palette } from 'lucide-react'; const ColorToneGenerator = () => { const [activePreset, setActivePreset] = useState('harmonic'); const [customConfig, setCustomConfig] = useState({}); const [generatedPrompts, setGeneratedPrompts] = useState({}); const [isPlaying, setIsPlaying] = useState(false); const [isMuted, setIsMuted] = useState(false); const audioContextRef = useRef(null); const oscillatorsRef = useRef([]); const colorTonePresets = { harmonic: { name: \"φ-Harmonic Spectru",
+    "key_insights": [],
+    "action_items": [
+      "The image should convey ${config",
+      "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+      "Colors should pulse, flow and morph in harmony: ${config",
+      "The motion should be hypnotic, meditative, and mathematically precise, with each color change corresponding to its harmonic frequency",
+      "length} harmonic layers ## Implementation Notes 1",
+      "Implement cross-modal sensory resonance`; return { json: jsonPayload, markdown: markdownPrompt }; }; const playColorTones = (preset) => { if (",
+      "createOscillator(); const gainNode = ctx"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.21,
+    "cognitive_load_estimate": 0.4933,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.887,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 2,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.774,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 3,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.661,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 4,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.548,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 5,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.436,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 6,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.323,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      },
+      {
+        "generation": 7,
+        "entropy": 0.903,
+        "contradictions": 0,
+        "novelty_index": 0.21,
+        "action_items": [
+          "The image should convey ${config",
+          "motion_pattern, \"transitions\": \"smooth_morphing_between_frequency_states\", \"effects\": [ \"color_frequency_synchronization\", \"harmonic_resonance_ripples\", \"luminance_breathing_at_fundamental_frequency\" ], \"prompt_text\": `Create a 30-second video of ${config",
+          "Colors should pulse, flow and morph in harmony: ${config"
+        ],
+        "key_questions": [
+          "map(key => ( setActivePreset(key)} className={`p-4 rounded-lg border-2 transition-all ${ activePreset === key ? 'border-cyan-400 bg-cyan-400/10' : 'border-gray-600 hover:border-gray-400' }`} > {colorTonePresets[key]",
+          "hex} ))} playColorTones(activePreset)} className=\"flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-colors\" > {isPlaying ? : } {isPlaying",
+          "? 'Stop' : 'Play'} Color Tones Download JSON {/* Generated Prompts Display */} {/* JSON Output */} JSON Multimedia Prompt {generatedPrompts"
+        ],
+        "meta": {
+          "patterns": [
+            "recursion",
+            "pattern"
+          ],
+          "themes": [
+            {
+              "theme": "config",
+              "frequency": 42
+            },
+            {
+              "theme": "name",
+              "frequency": 32
+            },
+            {
+              "theme": "const",
+              "frequency": 26
+            },
+            {
+              "theme": "color",
+              "frequency": 26
+            },
+            {
+              "theme": "tone",
+              "frequency": 24
+            }
+          ]
+        },
+        "score": 0.549
+      }
+    ],
+    "quality_score": 53
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.34,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "tonal.html",
+      "bytes": 15765,
+      "lastModified": 1754190048524
+    }
+  }
+}

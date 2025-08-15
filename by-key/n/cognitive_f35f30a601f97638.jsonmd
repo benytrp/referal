@@ -1,0 +1,168 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:29.236Z",
+    "source_text_length": 2618,
+    "word_count": 398,
+    "sentence_count": 11,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "f35f30a601f976387a2eb25b3530e68a",
+    "entropy_level": 0.824,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "E3-Form.html",
+      "processing_timestamp": "2025-08-11T05:05:29.236Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 33,
+        "significance": "0.0829",
+        "examples": [
+          "class=\"row\">\n<span"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 21,
+        "significance": "0.0528",
+        "examples": [
+          "}\n.center"
+        ]
+      },
+      {
+        "theme": "input",
+        "frequency": 18,
+        "significance": "0.0452",
+        "examples": [
+          "class=\"center\"><input"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 18,
+        "significance": "0.0452",
+        "examples": [
+          "<!doctype"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 18,
+        "significance": "0.0452",
+        "examples": [
+          "type=\"checkbox\"></td>\n<td"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 15,
+        "significance": "0.0377",
+        "examples": [
+          "class=\"row\">\n<span"
+        ]
+      },
+      {
+        "theme": "label",
+        "frequency": 8,
+        "significance": "0.0201",
+        "examples": [
+          "}\n.label"
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 5,
+        "significance": "0.0126",
+        "examples": [
+          "Form</title>\n<style>\nbody"
+        ]
+      },
+      {
+        "theme": "table",
+        "frequency": 5,
+        "significance": "0.0126",
+        "examples": [
+          "}\ntable"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 4,
+        "significance": "0.0101",
+        "examples": [
+          "border-bottom:"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 3,
+        "significance": "0.0075",
+        "examples": [
+          "html>\n<html>\n<head>\n<title>E3"
+        ]
+      },
+      {
+        "theme": "body",
+        "frequency": 3,
+        "significance": "0.0075",
+        "examples": [
+          "Form</title>\n<style>\nbody"
+        ]
+      }
+    ],
+    "key_questions": [
+      "comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }\n</style>\n</head>\n<body>\n<h1 style=\"text-align: center;\">E3 Achievement Daily Participant Evaluation</h1>\n\n<div class=\"row\">\n<span class=\"label\">Name:</span> Jane Doe\n</div>\n\n<div class=\"row\">\n<span class=\"label\">ID:</span> P001\n</div>\n\n<div class=\"row\">\n<span class=\"label\">Date:</span> 2025-08-09\n</div>\n\n<div class=\"row\">\n<span class=\"label\">Batch ID:</span> B202508091547120\n</div>\n\n<div class=\"row\">\n<span class=\"label\">Eval ID:</span> E3-20250809-7830\n</div>\n\n<h3>Work Habits</h3>\n<table>\n<tr>\n<th style=\"width: 50%;\">Item</th>\n<th>Yes</th>\n<th>NI</th>\n<th>N/A</th>\n</tr>\n<tr>\n<td>Attendance — Correct day and time?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n<tr>\n<td>Hygiene — Appropriately groomed",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n<tr>\n<td>Attitude — Positive attitude",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n</table>\n\n<h3>Preparatory Goals</h3>\n<table>\n<tr>\n<th style=\"width: 50%;\">Item</th>\n<th>Yes</th>\n<th>NI</th>\n<th>N/A</th>\n</tr>\n<tr>\n<td>Attention Span — Adequate for tasks",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n<tr>\n<td>Task Completion — Stayed on task",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n<tr>\n<td>Safety — Followed procedures",
+      "?</td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n<td class=\"center\"><input type=\"checkbox\"></td>\n</tr>\n</table>\n\n<h3>Comments</h3>\n<div class=\"comment-box\"></div>\n\n<h3>Signature</h3>\n<div class=\"row\">\n<span class=\"label\">Instructor:</span> Chris Burdette\n</div>\n\n<div class=\"row\">\n<span class=\"label\">Signature Date:</span> 2025-08-09\n</div>\n\n</body>\n</html>"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "doctype html>\n<html>\n<head>\n<title>E3 Evaluation Form</title>\n<style>\nbody { font: 14px Arial; margin: 20px; }\n row { margin: 10px 0; padding: 5px; border-bottom: 1px solid #ccc; }\n...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1309,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.05",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "f35f30a601f976387a2eb25b3530e68a"
+  }
+}

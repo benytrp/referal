@@ -1,0 +1,260 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:39.032Z",
+    "anchor_id": "e9aa3c72e36aefacb9d7f12f3a3df2bae7ff6b9f0384d79d92362ceb386c3000",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.745,
+    "contradictions_detected": 41,
+    "word_count": 2784
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 108
+      },
+      {
+        "theme": "text",
+        "frequency": 105
+      },
+      {
+        "theme": "document",
+        "frequency": 43
+      },
+      {
+        "theme": "fusion",
+        "frequency": 36
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 36
+      },
+      {
+        "theme": "json",
+        "frequency": 33
+      },
+      {
+        "theme": "length",
+        "frequency": 33
+      },
+      {
+        "theme": "return",
+        "frequency": 32
+      },
+      {
+        "theme": "output",
+        "frequency": 30
+      },
+      {
+        "theme": "function",
+        "frequency": 30
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "e from complex neural patterns...\\nUser: But how do we know we're conscious and not just simulating it?\\nAssistant: That's the hard problem of consciousness - t"
+      },
+      {
+        "idx": 1,
+        "sample": "re:\\n- AI that creates AI\\n- Self-modifying code\\n- Consciousness as a pattern, not a thing\\n- What if emotions are just data processing?\\n- Why do we assume in"
+      },
+      {
+        "idx": 2,
+        "sample": "function analyzeContradictions(text){ const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*nev"
+      },
+      {
+        "idx": 3,
+        "sample": "ion analyzeContradictions(text){ const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|every"
+      },
+      {
+        "idx": 4,
+        "sample": "analyzeContradictions(text){ const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everythin"
+      },
+      {
+        "idx": 5,
+        "sample": "ntradictions(text){ const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothin"
+      },
+      {
+        "idx": 6,
+        "sample": "ions(text){ const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*n"
+      },
+      {
+        "idx": 7,
+        "sample": "const patterns = [ /\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi,"
+      },
+      {
+        "idx": 8,
+        "sample": "/\\b(?:but|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|again"
+      },
+      {
+        "idx": 9,
+        "sample": "ut|however|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|against|oppos"
+      },
+      {
+        "idx": 10,
+        "sample": "ever|yet|although|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|against|opposite|co"
+      },
+      {
+        "idx": 11,
+        "sample": "hough|despite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|against|opposite|contrary)\\b/gi"
+      },
+      {
+        "idx": 12,
+        "sample": "spite|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|against|opposite|contrary)\\b/gi,"
+      },
+      {
+        "idx": 13,
+        "sample": "|nevertheless|whereas)\\b/gi, /\\b(?:always.*never|everything.*nothing|all.*none)\\b/gi, /\\b(?:vs\\.|versus|against|opposite|contrary)\\b/gi, /\\b(?"
+      },
+      {
+        "idx": 14,
+        "sample": "ontrary)\\b/gi, /\\b(?:both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) ="
+      },
+      {
+        "idx": 15,
+        "sample": "ary)\\b/gi, /\\b(?:both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) => n"
+      },
+      {
+        "idx": 16,
+        "sample": ")\\b/gi, /\\b(?:both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) => n + ("
+      },
+      {
+        "idx": 17,
+        "sample": ", /\\b(?:both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) => n + ((text."
+      },
+      {
+        "idx": 18,
+        "sample": "/\\b(?:both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) => n + ((text.match"
+      },
+      {
+        "idx": 19,
+        "sample": ":both.*and|either.*or|neither.*nor)\\b/gi, /\\b(?:not|no|never|none|nothing|n't)\\b/gi, ]; return patterns.reduce((n, re) => n + ((text.match(re) ||"
+      },
+      {
+        "idx": 20,
+        "sample": "const contradictory = []; sentences.forEach((s, i)=>{ if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ contradictory.p"
+      },
+      {
+        "idx": 21,
+        "sample": "st contradictory = []; sentences.forEach((s, i)=>{ if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ contradictory.push(`Lin"
+      },
+      {
+        "idx": 22,
+        "sample": "ontradictory = []; sentences.forEach((s, i)=>{ if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ contradictory.push(`Line ${"
+      },
+      {
+        "idx": 23,
+        "sample": "ory = []; sentences.forEach((s, i)=>{ if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ contradictory.push(`Line ${i+1}: ${s"
+      },
+      {
+        "idx": 24,
+        "sample": "; sentences.forEach((s, i)=>{ if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ contradictory.push(`Line ${i+1}: ${s.trim()}"
+      },
+      {
+        "idx": 25,
+        "sample": "tory Elements:</strong><br/> ${contradictory.slice(0,3).join('<br/>') || 'None detected'}<br/><br/> <strong>Questions/Uncertainties:</strong><br/>"
+      },
+      {
+        "idx": 26,
+        "sample": "<strong>Questions/Uncertainties:</strong><br/> ${qs.join('<br/>') || 'None detected'}<br/><br/> <strong>Pattern Indicators:</strong><br/>"
+      },
+      {
+        "idx": 27,
+        "sample": "<strong>Pattern Indicators:</strong><br/> ${pats.join('<br/>') || 'None detected'} `; } window.performFusion = async function performFusio"
+      },
+      {
+        "idx": 28,
+        "sample": "for(let i=0;i<sents.length;i++){ const s = sents[i]; if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ const parts = s"
+      },
+      {
+        "idx": 29,
+        "sample": "let i=0;i<sents.length;i++){ const s = sents[i]; if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ const parts = s.split(/"
+      },
+      {
+        "idx": 30,
+        "sample": "i=0;i<sents.length;i++){ const s = sents[i]; if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(b"
+      },
+      {
+        "idx": 31,
+        "sample": "ts.length;i++){ const s = sents[i]; if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(but|howeve"
+      },
+      {
+        "idx": 32,
+        "sample": "h;i++){ const s = sents[i]; if(/\\b(but|however|yet|although|despite|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(but|however|yet|al"
+      },
+      {
+        "idx": 33,
+        "sample": "hough|despite|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(but|however|yet|although|despite|nevertheless)\\b/i); if(parts.length>2){"
+      },
+      {
+        "idx": 34,
+        "sample": "spite|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(but|however|yet|although|despite|nevertheless)\\b/i); if(parts.length>2){ a"
+      },
+      {
+        "idx": 35,
+        "sample": "e|nevertheless)\\b/i.test(s)){ const parts = s.split(/\\b(but|however|yet|although|despite|nevertheless)\\b/i); if(parts.length>2){ arr.p"
+      },
+      {
+        "idx": 36,
+        "sample": "eless)\\b/i.test(s)){ const parts = s.split(/\\b(but|however|yet|although|despite|nevertheless)\\b/i); if(parts.length>2){ arr.push({ sta"
+      },
+      {
+        "idx": 37,
+        "sample": "/i.test(s)){ const parts = s.split(/\\b(but|however|yet|although|despite|nevertheless)\\b/i); if(parts.length>2){ arr.push({ statement_a"
+      },
+      {
+        "idx": 38,
+        "sample": "put').textContent || ''; if(output.includes('Awaiting text input')){ alert('No fusion output to download. Please perform fusion first.'); return; } cons"
+      },
+      {
+        "idx": 39,
+        "sample": "contradictions actually enhance learning. When we encounter something that doesn't fit our existing patterns, we're forced to create new neural pathways. Yet w"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "conversation: `User: How does consciousness work?",
+      "\\nUser: But how do we know we're conscious and not just simulating it?",
+      "reates AI\\n- Self-modifying code\\n- Consciousness as a pattern, not a thing\\n- What if emotions are just data processing?",
+      "\\n- Why do we assume intelligence requires consciousness?",
+      "trim()?",
+      "/\\b(?",
+      "/\\b(?",
+      "/\\b(?",
+      "/\\b(?",
+      "/\\b(?",
+      "?",
+      "trim()?",
+      "?",
+      "]*\\?",
+      "?"
+    ],
+    "summary": "const, text, document, fusion, getelementbyid"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 9,
+    "uncertainty": 5
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "json_md_fusion_converter_improved.html",
+    "relative_path": "json_md_fusion_converter_improved.html",
+    "size_bytes": 32248,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.95
+  }
+}

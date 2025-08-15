@@ -1,0 +1,240 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:39.816Z",
+    "source_text_length": 56445,
+    "word_count": 4060,
+    "sentence_count": 484,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "1d8ac6f132c2c6bd5e1e9407d503d3b8",
+    "entropy_level": null,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "x_logic_processor (1).html",
+      "processing_timestamp": "2025-08-11T05:05:39.816Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 63,
+        "significance": "0.0155",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 58,
+        "significance": "0.0143",
+        "examples": [
+          ".entropy-bar"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 57,
+        "significance": "0.0140",
+        "examples": [
+          "\"Document"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 48,
+        "significance": "0.0118",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 48,
+        "significance": "0.0118",
+        "examples": [
+          "document.getElementById('schemaPreset').value;\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 47,
+        "significance": "0.0116",
+        "examples": [
+          ".phase-indicator"
+        ]
+      },
+      {
+        "theme": "verification",
+        "frequency": 44,
+        "significance": "0.0108",
+        "examples": [
+          "onclick=\"switchTab('verification')\">Verification</button>\n"
+        ]
+      },
+      {
+        "theme": "parameters",
+        "frequency": 40,
+        "significance": "0.0099",
+        "examples": [
+          "parameters:"
+        ]
+      },
+      {
+        "theme": "output_alias",
+        "frequency": 34,
+        "significance": "0.0084",
+        "examples": [
+          "output_alias:"
+        ]
+      },
+      {
+        "theme": "thoughtledger",
+        "frequency": 14,
+        "significance": "0.0034",
+        "examples": [
+          "this.thoughtLedger"
+        ]
+      },
+      {
+        "theme": "updateexecutiondisplay",
+        "frequency": 11,
+        "significance": "0.0027",
+        "examples": [
+          "updateExecutionDisplay(\"🚀"
+        ]
+      },
+      {
+        "theme": "currentcycle",
+        "frequency": 9,
+        "significance": "0.0022",
+        "examples": [
+          "this.currentCycle"
+        ]
+      }
+    ],
+    "key_questions": [
+      "length > 80 ? '",
+      "parallel_sandboxes ? 0",
+      "length > 0 ? successfulEntries",
+      "8 ? \"COMPLETE\" : \"ISSUE_REPORTED\",\n                    seal: hash,\n                    execution_timestamp: new Date()",
+      "goal_achieved ? '✅' : '❌'}\n- **Constraints Respected**: ${verification",
+      "constraints_respected ? '✅' : '❌'}\n- **Success Criteria Met**: ${verification",
+      "success_criteria_met ? '✅' : '❌'}\n- **Ledger Integrity**: ${verification",
+      "ledger_integrity ? '✅' : '❌'}\n\n## Thought Ledger Summary\n${result"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "repeat",
+      "return",
+      "feedback",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "delay(500);\n\n                let concluded = false;\n                w",
+        "statement_b": "(",
+        "line": 135,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.61"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 17,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>X-Logic Autonomous Processor</title>\n    <script src=\"https://cdnjs...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "\n            </div>\n\n            <button class=\"btn\" onclick=\"executeXLogic()\" id=\"executeBtn\" disabled>\n                <span id=\"executeText\">Execute X-Logic</span>\n                <div class=\"loading\" id=\"executeLoader\" style=\"display: none;\"></div>\n            </button>\n\n            <div class=\"input-group\" style=\"margin-top: 2rem;\">\n                <button class=\"btn btn-danger\" onclick=\"resetSystem()\">Reset System</button>\n            </div>\n\n            <",
+        "urgency_score": "0.44",
+        "feasibility_score": "0.96"
+      },
+      {
+        "action": "-- Phase Indicator -->\n            <div class=\"phase-indicator\" id=\"phaseIndicator\" style=\"display: none;\">\n                <div class=\"phase-step\" id=\"phase-analyze\">Analyze</div>\n                <div class=\"phase-step\" id=\"phase-plan\">Plan</div>\n                <div class=\"phase-step\" id=\"phase-execute\">Execute</div>\n                <div class=\"phase-step\" id=\"phase-reflect\">Reflect</div>\n            </div>\n\n            <",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.86"
+      },
+      {
+        "action": "-- Export Tab -->\n            <div class=\"tab-content\" id=\"export-tab\">\n                <div class=\"input-group\">\n                    <label>Export Format:</label>\n                    <select id=\"exportFormat\">\n                        <option value=\"json\">Complete JSON Bundle</option>\n                        <option value=\"markdown\">Markdown Report</option>\n                        <option value=\"structured\">Structured Text</option>\n                        <option value=\"ledger-only\">Ledger Only</option>\n                    </select>\n                </div>\n                <button class=\"btn btn-success\" onclick=\"exportData()\">Download Export</button>\n                <button class=\"btn btn-secondary\" onclick=\"copyExportData()\">Copy to Clipboard</button>\n                <div class=\"output-container\" style=\"margin-top: 1rem;\">\n                    <div class=\"execution-display\" id=\"exportPreview\">\n                        Select export format and execute system to preview",
+        "urgency_score": "0.27",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": "3\n                    },\n                    {\n                        phase_name: \"Execute\",\n                        operations: [\n                            {op: \"implement_strategy\", depends_on: \"strategy\", parameters: {mode: \"progressive\"}, output_alias: \"implementation\"}\n                        ],\n                        parallel_sandboxes: true,\n                        entropy: 0",
+        "urgency_score": "0.70",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": "4\n                    },\n                    {\n                        phase_name: \"Reflect\",\n                        operations: [\n                            {op: \"synthesize_results\", depends_on: \"implementation\", parameters: {format: \"structured\"}, output_alias: \"synthesis\"}\n                        ],\n                        parallel_sandboxes: false,\n                        entropy: 0",
+        "urgency_score": "0.95",
+        "feasibility_score": "0.20"
+      },
+      {
+        "action": "4\n                    },\n                    {\n                        phase_name: \"Develop\",\n                        operations: [\n                            {op: \"expand_concepts\", depends_on: \"refined_ideas\", parameters: {depth: \"comprehensive\"}, output_alias: \"developed_content\"}\n                        ],\n                        parallel_sandboxes: false,\n                        entropy: 0",
+        "urgency_score": "0.25",
+        "feasibility_score": "0.88"
+      },
+      {
+        "action": "3\n                    },\n                    {\n                        phase_name: \"Polish\",\n                        operations: [\n                            {op: \"finalize_output\", depends_on: \"developed_content\", parameters: {style: \"professional\"}, output_alias: \"final_creative\"}\n                        ],\n                        parallel_sandboxes: false,\n                        entropy: 0",
+        "urgency_score": "0.47",
+        "feasibility_score": "0.80"
+      },
+      {
+        "action": "2\n                    }\n                ]\n            },\n            technical: {\n                trigger: \"<x>\",\n                contract: {\n                    goal: \"Conduct comprehensive technical research and analysis\",\n                    constraints: [\"Verify sources\", \"Maintain technical accuracy\", \"Document methodology\"],\n                    success_criteria: [\"Produce actionable insights\", \"Generate detailed documentation\", \"Validate findings\"]\n                },\n                phases: [\n                    {\n                        phase_name: \"Research\",\n                        operations: [\n                            {op: \"gather_technical_data\", parameters: {scope: \"comprehensive\"}, output_alias: \"raw_data\"},\n                            {op: \"validate_sources\", parameters: {rigor: \"high\"}, output_alias: \"validated_data\"}\n                        ],\n                        parallel_sandboxes: true,\n                        entropy: 0",
+        "urgency_score": "0.97",
+        "feasibility_score": "0.80"
+      },
+      {
+        "action": "3\n                    },\n                    {\n                        phase_name: \"Document\",\n                        operations: [\n                            {op: \"generate_report\", depends_on: \"insights\", parameters: {format: \"technical\"}, output_alias: \"final_report\"},\n                            {op: \"create_documentation\", parameters: {detail: \"comprehensive\"}, output_alias: \"documentation\"}\n                        ],\n                        parallel_sandboxes: false,\n                        entropy: 0",
+        "urgency_score": "0.96",
+        "feasibility_score": "0.22"
+      },
+      {
+        "action": "2\n                    }\n                ]\n            },\n            planning: {\n                trigger: \"<x>\",\n                contract: {\n                    goal: \"Develop comprehensive strategic plan with actionable steps\",\n                    constraints: [\"Consider resource limitations\", \"Include timeline\", \"Define measurable outcomes\"],\n                    success_criteria: [\"Produce actionable plan\", \"Define clear milestones\", \"Generate success metrics\"]\n                },\n                phases: [\n                    {\n                        phase_name: \"Situational_Analysis\",\n                        operations: [\n                            {op: \"assess_current_state\", parameters: {comprehensiveness: \"full\"}, output_alias: \"current_state\"},\n                            {op: \"identify_stakeholders\", parameters: {scope: \"all_relevant\"}, output_alias: \"stakeholders\"}\n                        ],\n                        parallel_sandboxes: false,\n                        entropy: 0",
+        "urgency_score": "0.17",
+        "feasibility_score": "0.22"
+      }
+    ],
+    "unresolved_tensions": [
+      "delay(500);\n\n                let concluded = false;\n                w vs ("
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.56",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "1d8ac6f132c2c6bd5e1e9407d503d3b8"
+  }
+}

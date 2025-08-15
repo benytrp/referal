@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:42.906Z",
+    "source_text_length": 723,
+    "word_count": 104,
+    "sentence_count": 9,
+    "entropy_level": 0.981,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (100).html"
+    },
+    "anchor_id": "e678a41d431bd363c5acf949293ad181"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "prompt",
+        "frequency": 4
+      },
+      {
+        "theme": "bridge",
+        "frequency": 4
+      },
+      {
+        "theme": "perfect",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "inputs",
+        "frequency": 2
+      },
+      {
+        "theme": "download",
+        "frequency": 2
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "card",
+        "frequency": 2
+      },
+      {
+        "theme": "file",
+        "frequency": 1
+      },
+      {
+        "theme": "generator",
+        "frequency": 1
+      },
+      {
+        "theme": "structured",
+        "frequency": 1
+      },
+      {
+        "theme": "actionable",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Bridge File Generator Generate structured, actionable handoff artifacts for your systems and teams … Add your own slots/vars in the JSON “params” block to wire-run with pipelines",
+    "key_insights": [],
+    "action_items": [
+      "Perfect Prompt Bridge File Generator Generate structured, actionable handoff artifacts for your systems and teams"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "e678a41d431bd363c5acf949293ad181"
+  }
+}

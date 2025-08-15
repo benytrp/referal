@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:34.547Z",
+    "source_text_length": 439,
+    "word_count": 75,
+    "sentence_count": 9,
+    "entropy_level": 0.968,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_html_chunker.html"
+    },
+    "anchor_id": "be618eab0f97930f66bcbe0d8ed61e08"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "files",
+        "frequency": 5
+      },
+      {
+        "theme": "html",
+        "frequency": 4
+      },
+      {
+        "theme": "browser",
+        "frequency": 2
+      },
+      {
+        "theme": "pasted",
+        "frequency": 2
+      },
+      {
+        "theme": "tokens",
+        "frequency": 2
+      },
+      {
+        "theme": "processed",
+        "frequency": 2
+      },
+      {
+        "theme": "file",
+        "frequency": 2
+      },
+      {
+        "theme": "offline",
+        "frequency": 1
+      },
+      {
+        "theme": "jsonl",
+        "frequency": 1
+      },
+      {
+        "theme": "chunker",
+        "frequency": 1
+      },
+      {
+        "theme": "logic",
+        "frequency": 1
+      },
+      {
+        "theme": "runs",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline HTML → JSONL Chunker All logic runs locally in your browser … You can bookmark it; it never goes online",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "be618eab0f97930f66bcbe0d8ed61e08"
+  }
+}

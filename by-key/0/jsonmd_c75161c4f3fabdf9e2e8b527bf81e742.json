@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:21.640Z",
+    "source_text_length": 350,
+    "word_count": 51,
+    "sentence_count": 8,
+    "entropy_level": 0.979,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "saved_resource(1).html"
+    },
+    "anchor_id": "c75161c4f3fabdf9e2e8b527bf81e742"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 4
+      },
+      {
+        "theme": "head",
+        "frequency": 2
+      },
+      {
+        "theme": "content",
+        "frequency": 2
+      },
+      {
+        "theme": "body",
+        "frequency": 2
+      },
+      {
+        "theme": "iframe",
+        "frequency": 2
+      },
+      {
+        "theme": "https",
+        "frequency": 2
+      },
+      {
+        "theme": "5840",
+        "frequency": 1
+      },
+      {
+        "theme": "saved",
+        "frequency": 1
+      },
+      {
+        "theme": "0011",
+        "frequency": 1
+      },
+      {
+        "theme": "blank",
+        "frequency": 1
+      },
+      {
+        "theme": "meta",
+        "frequency": 1
+      },
+      {
+        "theme": "http",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [
+      "html?origin=https%3A%2F%2Fwww"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "< … ai\" style=\"display: none; visibility: hidden;\"></iframe></body></html>",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "c75161c4f3fabdf9e2e8b527bf81e742"
+  }
+}

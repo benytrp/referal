@@ -1,0 +1,92 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:13:00.008Z",
+    "source_text_length": 2129,
+    "word_count": 282,
+    "entropy_level": 0.945,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "e33bf1d00eda66ac1547420f87c0a872",
+    "source": {
+      "path": "workflow_orchestrator.html",
+      "bytes": 41178,
+      "lastModified": 1754863118303
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "data",
+        "frequency": 10
+      },
+      {
+        "theme": "phase",
+        "frequency": 9
+      },
+      {
+        "theme": "contract",
+        "frequency": 8
+      },
+      {
+        "theme": "analysis",
+        "frequency": 7
+      },
+      {
+        "theme": "entropy",
+        "frequency": 5
+      },
+      {
+        "theme": "execution",
+        "frequency": 4
+      },
+      {
+        "theme": "active",
+        "frequency": 4
+      },
+      {
+        "theme": "synthesis",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Contract Execution Engine Data Analysis Contract Phase 2/4 Active Entropy: 0. … 0 | Trigger: <x> | Entropy Management Active Runtime: 00:15:32 | Next Op: identify_patterns",
+    "key_insights": [],
+    "action_items": [
+      "3 Contract Definition Goal Perform systematic data analysis and generate actionable insights Constraints • Entropy below 0.",
+      "8 • Complete within 8 cycles • Validate all data sources Success Criteria • Generate comprehensive analysis • Identify key patterns • Provide actionable recommendations Current Entropy 0.",
+      "3 during pattern identification [15:30:32] Parallel sandboxes activated for analysis operations [15:30:35] Pattern detection artifact connected successfully [15:30:40] identify_patterns operation 45% complete Advance Phase Skip Operation Emergency Stop Nvrstry JSON Builder Processing schema validation for data sources Pattern Recognition Engine Analyzing data patterns in parallel sandbox Data Visualization Engine Preparing charts for synthesis phase Report Generator Awaiting synthesis completion Consciousness Framework Editor Monitoring contract execution patterns Connect All Health Check Redistribute Load System State Contract Metadata Created: 2025-08-10T21:54:17Z Generator: X-Logic Schema Builder Complexity: Moderate Risk Tolerance: Conservative Communication Bridge Active Channels: 5 Message Queue: 12 pending Sync Status: Real-time Last Heartbeat: 2s ago Performance Memory Usage: 45MB CPU Load: 23% Network I/O: 12KB/s Storage: 2."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

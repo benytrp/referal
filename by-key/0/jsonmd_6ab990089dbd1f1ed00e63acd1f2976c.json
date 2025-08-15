@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:31.074Z",
+    "source_text_length": 6893,
+    "word_count": 834,
+    "sentence_count": 65,
+    "entropy_level": 0.927,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "new 1.html"
+    },
+    "anchor_id": "6ab990089dbd1f1ed00e63acd1f2976c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 19
+      },
+      {
+        "theme": "white",
+        "frequency": 19
+      },
+      {
+        "theme": "prompt",
+        "frequency": 17
+      },
+      {
+        "theme": "settings",
+        "frequency": 16
+      },
+      {
+        "theme": "focus",
+        "frequency": 16
+      },
+      {
+        "theme": "style",
+        "frequency": 11
+      },
+      {
+        "theme": "text",
+        "frequency": 11
+      },
+      {
+        "theme": "mood",
+        "frequency": 10
+      },
+      {
+        "theme": "complexity",
+        "frequency": 10
+      },
+      {
+        "theme": "border",
+        "frequency": 10
+      },
+      {
+        "theme": "ring",
+        "frequency": 10
+      },
+      {
+        "theme": "medium",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [
+      "slice(1)} ))} {/* Main Content */} {/* Generator */} Generate Prompt {isGenerating ? ( ) : ( )} {isGenerating",
+      "? 'Generating"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "import React, { useState, useCallback } from 'react'; import { Wand2, Copy, RefreshCw, Palette, Sparkles, Camera, Brush, Settings } from 'lucide-react'; const ArtPromptGenerator = () => { const [generatedPrompt, setGeneratedPrompt] = useState(''); const [isGenerating, setIsGenerating] = useState(false); const [promptHistory, setPromptHistory] = useState([]); const [settings, setSettings] = useState({ style: 'any', mood: 'any', complexity: 'medium', artMedium: 'any', colorScheme: 'any' }); const styles = [ 'any', 'photorealistic', 'impressionist', 'surreal', 'minimalist', 'abstract', 'cyberpunk",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "6ab990089dbd1f1ed00e63acd1f2976c"
+  }
+}

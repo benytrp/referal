@@ -1,0 +1,440 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:22:18.343Z",
+    "source_text_length": 15634,
+    "word_count": 2369,
+    "entropy_level": 0.844,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "4aed423457e1312ee4788a4b81e0d650"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 46
+      },
+      {
+        "theme": "node",
+        "frequency": 34
+      },
+      {
+        "theme": "const",
+        "frequency": 28
+      },
+      {
+        "theme": "border",
+        "frequency": 26
+      },
+      {
+        "theme": "background",
+        "frequency": 20
+      },
+      {
+        "theme": "span",
+        "frequency": 20
+      },
+      {
+        "theme": "button",
+        "frequency": 20
+      },
+      {
+        "theme": "radius",
+        "frequency": 19
+      },
+      {
+        "theme": "grid",
+        "frequency": 18
+      },
+      {
+        "theme": "option",
+        "frequency": 16
+      },
+      {
+        "theme": "window",
+        "frequency": 15
+      },
+      {
+        "theme": "return",
+        "frequency": 14
+      }
+    ],
+    "key_questions": [
+      "id);\\n    const ang = snapOn ? preset",
+      "angle;\\n    const r   = snapOn ? preset",
+      "id ? ' pulse':'')); // pulse active connector\\n    path",
+      "checked = snapOn; layout();\\n    log(`Grid ${snapOn?'ON':'OFF'} (snap ${snapOn",
+      "?'enabled':'disabled'})`);\\n  }\\n  if(['1','2','3']",
+      "includes(k)){\\n    currentPreset = (k==='1'?'classic':k==='2'",
+      "?'compact':'wide');\\n    $('#presetSelect')",
+      "toggle('on', snapOn); layout(); log(`Snap ${snapOn?'enabled':'disabled'}`); });\\n\\n/* window prompt */\\n$('#sendBtn')"
+    ],
+    "pattern_recognition": [
+      "cycle"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub' … ');\\n</script>\\n</body>\\n</html>\"}",
+    "key_insights": [],
+    "action_items": [
+      "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+      "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+      "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window",
+      "Also, add keyboard shortcuts for each node (O, R, U, S, B), animate the connecting edges when a node is active, and implement a radial grid system with presets (Classic, Compact, Wide) that the nodes can snap to",
+      "createElement('div'); d",
+      "createElementNS('http://www",
+      "appendChild(path);\\n  });\\n}\\n\\n/* ---------- drawer / interactions ---------- */\\nconst drawer = $('#drawer'), drawerTitle = $('#drawerTitle'), drawerContent = $('#drawerContent');\\nfunction openDrawer(nodeId){\\n  const n = nodes"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.262,
+    "cognitive_load_estimate": 0.7817,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.894,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 2,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.789,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 3,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.683,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 4,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.578,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 5,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.473,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 6,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.367,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      },
+      {
+        "generation": 7,
+        "entropy": 0.844,
+        "contradictions": 0,
+        "novelty_index": 0.262,
+        "action_items": [
+          "{\"instruction\": \"Take the provided HTML for the 'Enhanced Value Manager - Complete User Guide' and use its principles to create a new, self-contained HTML application called 'AEON Hub'",
+          "This new application should have a window-centric UI where a main 'Consciousness Interface' is the central focus",
+          "The other functions (Replication, Orchestrator, USF, Status, Bundle) should be interactive, satellite nodes visually connected to the central window"
+        ],
+        "key_questions": [
+          "id);\\n    const ang = snapOn ? preset",
+          "angle;\\n    const r   = snapOn ? preset",
+          "id ? ' pulse':'')); // pulse active connector\\n    path"
+        ],
+        "meta": {
+          "patterns": [
+            "cycle"
+          ],
+          "themes": [
+            {
+              "theme": "class",
+              "frequency": 46
+            },
+            {
+              "theme": "node",
+              "frequency": 34
+            },
+            {
+              "theme": "const",
+              "frequency": 28
+            },
+            {
+              "theme": "border",
+              "frequency": 26
+            },
+            {
+              "theme": "background",
+              "frequency": 20
+            }
+          ]
+        },
+        "score": 0.572
+      }
+    ],
+    "quality_score": 56
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.37,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "ai_studio_code (17).txt",
+      "bytes": 15692,
+      "lastModified": 1754685140736
+    }
+  }
+}

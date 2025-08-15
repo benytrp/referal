@@ -1,0 +1,223 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:30.572Z",
+    "source_text_length": 35123,
+    "word_count": 3982,
+    "sentence_count": 357,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ee2ffd20d651e4668fbecbc8f41fc519",
+    "entropy_level": 0.898,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile (1).html",
+      "processing_timestamp": "2025-08-11T05:05:30.572Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "class",
+        "frequency": 92,
+        "significance": "0.0231",
+        "examples": [
+          "class=\"container\">\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 84,
+        "significance": "0.0211",
+        "examples": [
+          "const"
+        ]
+      },
+      {
+        "theme": "html",
+        "frequency": 56,
+        "significance": "0.0141",
+        "examples": [
+          "html>\n<html"
+        ]
+      },
+      {
+        "theme": "strong",
+        "frequency": 36,
+        "significance": "0.0090",
+        "examples": [
+          "<strong>E3ParticipantProfile</strong>"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 35,
+        "significance": "0.0088",
+        "examples": [
+          "border-radius:"
+        ]
+      },
+      {
+        "theme": "margin",
+        "frequency": 33,
+        "significance": "0.0083",
+        "examples": [
+          "margin:"
+        ]
+      },
+      {
+        "theme": "color",
+        "frequency": 28,
+        "significance": "0.0070",
+        "examples": [
+          "color:"
+        ]
+      },
+      {
+        "theme": "merged",
+        "frequency": 25,
+        "significance": "0.0063",
+        "examples": [
+          "merged"
+        ]
+      },
+      {
+        "theme": "text",
+        "frequency": 24,
+        "significance": "0.0060",
+        "examples": [
+          "text-align:"
+        ]
+      },
+      {
+        "theme": "writeu16",
+        "frequency": 24,
+        "significance": "0.0060",
+        "examples": [
+          "writeU16(view,"
+        ]
+      },
+      {
+        "theme": "center",
+        "frequency": 23,
+        "significance": "0.0058",
+        "examples": [
+          "center;"
+        ]
+      },
+      {
+        "theme": "checkbox",
+        "frequency": 23,
+        "significance": "0.0058",
+        "examples": [
+          ".checkbox-cell"
+        ]
+      }
+    ],
+    "key_questions": [
+      "-- Right: Live Preview -->\n      <section class=\"panel\">\n        <h2>👁️ Live Preview</h2>\n        <div class=\"controls\">\n          <button class=\"btn btn-primary\" onclick=\"preview()\">Refresh Preview</button>\n        </div>\n        <iframe id=\"previewFrame\" class=\"preview-frame\" srcdoc=\"<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>\"></iframe>\n      </section>\n    </div>\n  </div>\n\n  <script>\n    // ===== Utilities =====\n    const esc = (s) => String(s ?",
+      "? '';\n\n    const joinDiag = (codes) => {\n      if (",
+      "toLocaleDateString(); } catch {}\n      return String(d);\n    };\n\n    const truthy = (v) => {\n      const s = String(v ?",
+      "includes(s);\n    };\n\n    const is = (v, target) => String(v ?",
+      "toUpperCase();\n\n    const triCheck = (v, opt) => is(v, opt) ? 'checked' : '';\n\n    // ===== Renderer =====\n    function generateE3HTML(daily = {}, profile = {}) {\n      const merged = {\n        title: 'E3 Achievement Daily Participant Evaluation',\n        location: coalesce(daily",
+      "totalUnits ?",
+      "? '',\n        todaysFocus: daily",
+      "signatures?"
+    ],
+    "pattern_recognition": [
+      "return"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 12,
+      "future": 7
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\" />\n  <title>E3 Offline Template Editor — Compatible</title>\n  <style>\n    /* ===== Layout & Theme ===== */\n    :root {\n      --bg1: #667eea;\n      --bg2: #764ba2;\n      --card: #ffffff;\n      --ink: #2c3e50;\n      --ink-2: #34495e;\n      --brand: #3498db;\n      --ok: #27ae60;\n      --warn: #f39c12;\n      --err: #c62828;\n      --muted: #6b7280;\n      --shadow: 0 20px 40px rgba(0,0,0,0...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "docx)</button>\n        </div>\n        <textarea id=\"htmlOutput\" readonly placeholder=\"Generated HTML will appear here",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.90"
+      },
+      {
+        "action": "-- Right: Live Preview -->\n      <section class=\"panel\">\n        <h2>👁️ Live Preview</h2>\n        <div class=\"controls\">\n          <button class=\"btn btn-primary\" onclick=\"preview()\">Refresh Preview</button>\n        </div>\n        <iframe id=\"previewFrame\" class=\"preview-frame\" srcdoc=\"<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>\"></iframe>\n      </section>\n    </div>\n  </div>\n\n  <script>\n    // ===== Utilities =====\n    const esc = (s) => String(s ",
+        "urgency_score": "0.03",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": " Scott will have the opportunity to learn hands-on how to develop his own line of sublimated products",
+        "urgency_score": "0.14",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": " He will be supported in learning about design, marketing, sales strategies, and customer service",
+        "urgency_score": "0.36",
+        "feasibility_score": "0.47"
+      },
+      {
+        "action": " E3 Achievement will offer Scott the opportunity to use photography, graphic design and sublimation equipment to get first-hand experience in the creation and sale of a product or service",
+        "urgency_score": "0.09",
+        "feasibility_score": "0.69"
+      },
+      {
+        "action": " This course will work with Scott in acquiring acceptable work habits (addressing absences, tardiness, teamwork, problem solving, positive attitude, working safely and increasing awareness of areas of interest / abilities)",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.14"
+      },
+      {
+        "action": "\",\n        \"defaultInstructor\": \"Chris Burdette\",\n        \"location\": \"Battle Creek, Michigan\",\n        \"batchId\": \"BATCH_A\",\n        \"createdAt\": \"2025-08-10T09:00:00-04:00\",\n        \"updatedAt\": \"2025-08-10T09:00:00-04:00\"\n      };\n\n      const exampleDaily = {\n        \"recordType\": \"E3DailyEvaluation\",\n        \"location\": \"Battle Creek, Michigan\",\n        \"participantId\": \"13507\",\n        \"participantName\": \"Hodge, Scott\",\n        \"diagnosisCodes\": [\"F84",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.99"
+      },
+      {
+        "action": "createElement('span');\n          span",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.80"
+      },
+      {
+        "action": "createObjectURL(blob);\n        const a = document",
+        "urgency_score": "0.22",
+        "feasibility_score": "0.37"
+      },
+      {
+        "action": "createElement('a');\n        a",
+        "urgency_score": "0.65",
+        "feasibility_score": "0.91"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.47",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ee2ffd20d651e4668fbecbc8f41fc519"
+  }
+}

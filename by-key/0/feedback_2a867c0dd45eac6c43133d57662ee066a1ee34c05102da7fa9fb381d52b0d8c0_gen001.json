@@ -1,0 +1,122 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:42.890Z",
+    "anchor_id": "2a867c0dd45eac6c43133d57662ee066a1ee34c05102da7fa9fb381d52b0d8c0",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.721,
+    "contradictions_detected": 5,
+    "word_count": 550
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 25
+      },
+      {
+        "theme": "value",
+        "frequency": 23
+      },
+      {
+        "theme": "data",
+        "frequency": 21
+      },
+      {
+        "theme": "document",
+        "frequency": 19
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 17
+      },
+      {
+        "theme": "json",
+        "frequency": 16
+      },
+      {
+        "theme": "output",
+        "frequency": 15
+      },
+      {
+        "theme": "showstatus",
+        "frequency": 14
+      },
+      {
+        "theme": "name",
+        "frequency": 12
+      },
+      {
+        "theme": "trim",
+        "frequency": 9
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "status.style.display = 'block'; setTimeout(() => { status.style.display = 'none'; }, 3000); } function generateQuick() { const name = document.getElem"
+      },
+      {
+        "idx": 1,
+        "sample": "ine.trim()); if (lines.length === 0) { showStatus('No valid data found', true); return; } cons"
+      },
+      {
+        "idx": 2,
+        "sample": "} if (results.length === 0) { showStatus('No valid key=value pairs found', true); return; }"
+      },
+      {
+        "idx": 3,
+        "sample": "document.getElementById('output'); if (!output.value) { showStatus('Nothing to copy - generate JSON first', true); return; } ou"
+      },
+      {
+        "idx": 4,
+        "sample": "document.getElementById('output'); if (!output.value) { showStatus('Nothing to download - generate JSON first', true); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "length === 1 ?",
+      "showStatus(`Successfully converted ${recordCount} record${recordCount > 1 ?"
+    ],
+    "summary": "const, value, data, document, getelementbyid"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "streamlined_translator.html",
+    "relative_path": "streamlined_translator.html",
+    "size_bytes": 10501,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.647
+- Word Count: 255
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:23.002Z",
+  "original_file": "2a867c0dd45eac6c43133d57662ee066a1ee34c05102da7fa9fb381d52b0d8c0.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

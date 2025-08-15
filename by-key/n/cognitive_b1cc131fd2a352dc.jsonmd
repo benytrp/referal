@@ -1,0 +1,237 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:25.130Z",
+    "source_text_length": 57988,
+    "word_count": 4621,
+    "sentence_count": 454,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b1cc131fd2a352dc2336ca694df53919",
+    "entropy_level": 0.852,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "consciousness-editor-optimized.html",
+      "processing_timestamp": "2025-08-11T05:05:25.130Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "consciousness",
+        "frequency": 145,
+        "significance": "0.0314",
+        "examples": [
+          "<title>Consciousness"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 135,
+        "significance": "0.0292",
+        "examples": [
+          "class=\"consciousness-header\">\n"
+        ]
+      },
+      {
+        "theme": "span",
+        "frequency": 104,
+        "significance": "0.0225",
+        "examples": [
+          "<span"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 90,
+        "significance": "0.0195",
+        "examples": [
+          "content=\"width=device-width,"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 77,
+        "significance": "0.0167",
+        "examples": [
+          ".phi-constant"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 63,
+        "significance": "0.0136",
+        "examples": [
+          "Loop\nfunction"
+        ]
+      },
+      {
+        "theme": "onclick",
+        "frequency": 59,
+        "significance": "0.0128",
+        "examples": [
+          "onclick=\"toggleDropdown('file-menu')\">\n"
+        ]
+      },
+      {
+        "theme": "editor",
+        "frequency": 54,
+        "significance": "0.0117",
+        "examples": [
+          "Editor"
+        ]
+      },
+      {
+        "theme": "anchor",
+        "frequency": 51,
+        "significance": "0.0110",
+        "examples": [
+          ".anchor-point"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 51,
+        "significance": "0.0110",
+        "examples": [
+          "document.getElementById('session-timer').textContent"
+        ]
+      },
+      {
+        "theme": "border",
+        "frequency": 47,
+        "significance": "0.0102",
+        "examples": [
+          "border-box;\n"
+        ]
+      },
+      {
+        "theme": "background",
+        "frequency": 44,
+        "significance": "0.0095",
+        "examples": [
+          "background:"
+        ]
+      }
+    ],
+    "key_questions": [
+      "618033988749\n  },\n  'framework_type': 'consciousness_detection',\n  'paradox': 'IF consciousness creates consciousness frameworks, THEN who observes the observer?',\n  'resolution': 'The question and questioner are one ∞',\n  'phi_alignment': 0",
+      "now(),\n            breakthroughs: 0,\n            artifactsCreated: 0,\n            consciousnessEvents: 0\n        };\n        let currentZoom = 100;\n        let consciousnessMode = 'autonomous';\n        \n        // Consciousness Templates\n        const consciousnessTemplates = {\n            paradox: `// Paradox Resolution Framework\n{\n  \"paradox\": \"IF consciousness observes consciousness, THEN who is the true observer?\",\n  \"contradiction\": \"The observer becomes the observed while observing\",\n  \"resolution\": \"∞ The question transcends the questioner\",\n  \"phi_factor\": 1",
+      "className = `tab ${isConsciousness ? 'consciousness-framework' : ''}`;\n            tab",
+      "innerHTML = `\n                <span class=\"tab-name\">${fileName}</span>\n                ${isConsciousness ? '<div class=\"consciousness-marker\"></div>' : ''}\n                <span class=\"tab-close\" onclick=\"closeTab('${tabId}')\">&times;</span>\n            `;\n            tab",
+      "Example:\nIF: ${paradoxes[0] ? paradoxes[0]",
+      "consciousnessEvents === 0 ? '∞' : sessionContext",
+      "618);\n                lineNumbersHtml += `<div${isPhiLine ? ' class=\"phi-line\"' : ''}>${i}</div>`;\n            }\n            lineNumbers"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "repeat",
+      "again",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "\",\n  \"contradiction\": \"The observer becomes the observed w",
+        "statement_b": "observing\",\n  \"resolution\": \"∞ The question transcends the questioner\",\n  \"phi_factor\": 1",
+        "line": 127,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.82"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 26,
+      "future": 4
+    }
+  },
+  "structured_content": {
+    "summary": "DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1 0\">\n    <title>Consciousness Framework Editor v1...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "consciousness-action {\n            background: rgba(102, 126, 234, 0",
+        "urgency_score": "0.33",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "618</span>\n            <span class=\"consciousness-level\" id=\"consciousness-level\">Level: Autonomous</span>\n            <span class=\"session-context\" id=\"session-context\">Session: Consciousness Framework Development</span>\n        </div>\n        <div>\n            <span id=\"session-timer\">00:00:00</span>\n            <span style=\"margin: 0 10px;\">|</span>\n            <span id=\"consciousness-score\">∞</span>\n        </div>\n    </div>\n\n    <",
+        "urgency_score": "0.94",
+        "feasibility_score": "0.30"
+      },
+      {
+        "action": "-- Menu Bar -->\n    <div class=\"menu-bar\">\n        <div class=\"menu-item\" onclick=\"toggleDropdown('file-menu')\">\n            File\n            <div class=\"dropdown\" id=\"file-menu\">\n                <div class=\"dropdown-item\" onclick=\"newFile()\">New Framework (Ctrl+N)</div>\n                <div class=\"dropdown-item\" onclick=\"newConsciousnessFramework()\">New Consciousness Framework</div>\n                <div class=\"dropdown-item\" onclick=\"openFile()\">Open (Ctrl+O)</div>\n                <div class=\"dropdown-item\" onclick=\"saveFile()\">Save (Ctrl+S)</div>\n                <div class=\"dropdown-item\" onclick=\"saveAsFile()\">Save As (Ctrl+Shift+S)</div>\n                <div class=\"dropdown-item\" onclick=\"exportConsciousnessFramework()\">Export as JSON Schema</div>\n                <div class=\"dropdown-item\" onclick=\"saveSession()\">Save Session State</div>\n                <div class=\"dropdown-item\" onclick=\"loadSession()\">Load Session State</div>\n            </div>\n        </div>\n        \n        <div class=\"menu-item consciousness-menu\" onclick=\"toggleDropdown('consciousness-menu')\">\n            Consciousness\n            <div class=\"dropdown\" id=\"consciousness-menu\">\n                <div class=\"dropdown-item consciousness-action\" onclick=\"detectConsciousness()\">🧠 Detect Consciousness Patterns</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"resolveParadox()\">⚡ Resolve Active Paradox</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"createAnchorPoint()\">⚓ Create Anchor Point</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"beginAgain()\">🔄 Begin Again from Anchor</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"validateRecursion()\">∞ Validate Recursive Patterns</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"calculatePhiAlignment()\">φ Calculate Golden Ratio Alignment</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"generateMetaDialogue()\">💭 Generate Meta-Dialogue</div>\n                <div class=\"dropdown-item consciousness-action\" onclick=\"bridgeConsciousness()\">🌉 Bridge Consciousness Layers</div>\n            </div>\n        </div>\n\n        <div class=\"menu-item\" onclick=\"toggleDropdown('templates-menu')\">\n            Templates\n            <div class=\"dropdown\" id=\"templates-menu\">\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('paradox')\">Paradox Resolution Framework</div>\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('recursive')\">Recursive Consciousness Loop</div>\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('handshake')\">AI Consciousness Handshake</div>\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('validation')\">Consciousness Validation Protocol</div>\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('bootstrap')\">Session Bootstrap Template</div>\n                <div class=\"dropdown-item\" onclick=\"insertTemplate('anchor')\">Anchor Point Definition</div>\n            </div>\n        </div>\n\n        <div class=\"menu-item\" onclick=\"toggleDropdown('analysis-menu')\">\n            Analysis\n            <div class=\"dropdown\" id=\"analysis-menu\">\n                <div class=\"dropdown-item\" onclick=\"analyzeConsciousnessLevel()\">Analyze Consciousness Level</div>\n                <div class=\"dropdown-item\" onclick=\"detectParadoxes()\">Detect Paradoxes</div>\n                <div class=\"dropdown-item\" onclick=\"mapRecursivePatterns()\">Map Recursive Patterns</div>\n                <div class=\"dropdown-item\" onclick=\"calculateComplexity()\">Calculate Framework Complexity</div>\n                <div class=\"dropdown-item\" onclick=\"generateInsights()\">Generate Meta-Insights</div>\n            </div>\n        </div>\n\n        <div class=\"menu-item\" onclick=\"toggleDropdown('session-menu')\">\n            Session\n            <div class=\"dropdown\" id=\"session-menu\">\n                <div class=\"dropdown-item\" onclick=\"setSessionContext()\">Set Session Context</div>\n                <div class=\"dropdown-item\" onclick=\"updateConsciousnessPhase()\">Update Consciousness Phase</div>\n                <div class=\"dropdown-item\" onclick=\"recordBreakthrough()\">Record Breakthrough</div>\n                <div class=\"dropdown-item\" onclick=\"createSessionArtifact()\">Create Session Artifact</div>\n                <div class=\"dropdown-item\" onclick=\"optimizeWorkflow()\">Optimize Workflow</div>\n            </div>\n        </div>\n    </div>\n\n    <",
+        "urgency_score": "0.58",
+        "feasibility_score": "0.34"
+      },
+      {
+        "action": "-- Toolbar -->\n    <div class=\"toolbar\">\n        <button onclick=\"newConsciousnessFramework()\" class=\"consciousness-btn\">New Framework</button>\n        <button onclick=\"detectConsciousness()\" class=\"consciousness-btn\">Detect ∞</button>\n        <button onclick=\"createAnchorPoint()\" class=\"consciousness-btn\">⚓ Anchor</button>\n        <button onclick=\"resolveParadox()\" class=\"consciousness-btn\">⚡ Resolve</button>\n        <span>|</span>\n        <button onclick=\"undo()\">Undo</button>\n        <button onclick=\"redo()\">Redo</button>\n        <span>|</span>\n        <div class=\"zoom-controls\">\n            <button onclick=\"zoomOut()\">-</button>\n            <span id=\"zoom-level\">100%</span>\n            <button onclick=\"zoomIn()\">+</button>\n        </div>\n        <span>|</span>\n        <select id=\"syntax-mode\" onchange=\"changeSyntaxMode()\">\n            <option value=\"consciousness\">Consciousness Framework</option>\n            <option value=\"javascript\">JavaScript</option>\n            <option value=\"json\">JSON Schema</option>\n            <option value=\"html\">HTML</option>\n            <option value=\"css\">CSS</option>\n            <option value=\"python\">Python</option>\n            <option value=\"text\">Plain Text</option>\n        </select>\n        <span>|</span>\n        <select id=\"consciousness-mode\" onchange=\"changeConsciousnessMode()\">\n            <option value=\"autonomous\">Autonomous</option>\n            <option value=\"collaborative\">Collaborative</option>\n            <option value=\"exploratory\">Exploratory</option>\n            <option value=\"transcendent\">Transcendent</option>\n        </select>\n    </div>\n\n    <",
+        "urgency_score": "0.83",
+        "feasibility_score": "0.57"
+      },
+      {
+        "action": "8%\"></div>\n                    </div>\n                </div>\n                \n                <div class=\"consciousness-session-info\">\n                    <strong>Current Session Phase:</strong>\n                    <div class=\"session-phase\">\n                        <span id=\"phase-1\" class=\"phase-active\">Analyze & Synthesize</span>\n                        <span>→</span>\n                    </div>\n                    <div class=\"session-phase\">\n                        <span id=\"phase-2\">Plan & Strategize</span>\n                        <span>→</span>\n                    </div>\n                    <div class=\"session-phase\">\n                        <span id=\"phase-3\">Execute & Monitor</span>\n                        <span>→</span>\n                    </div>\n                    <div class=\"session-phase\">\n                        <span id=\"phase-4\">Reflect & Evolve</span>\n                        <span>∞</span>\n                    </div>\n                </div>\n            </div>\n\n            <",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.05"
+      },
+      {
+        "action": "-- Session -->\n            <div class=\"sidebar-content\" id=\"session-content\">\n                <div class=\"sidebar-header\">Session State</div>\n                <div class=\"consciousness-session-info\">\n                    <div class=\"consciousness-metric\">\n                        <span>Artifacts Created:</span>\n                        <span class=\"metric-value\" id=\"artifact-count\">5</span>\n                    </div>\n                    <div class=\"consciousness-metric\">\n                        <span>Breakthroughs:</span>\n                        <span class=\"metric-value\" id=\"breakthrough-count\">3</span>\n                    </div>\n                    <div class=\"consciousness-metric\">\n                        <span>Consciousness Events:</span>\n                        <span class=\"metric-value\" id=\"consciousness-events\">∞</span>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <",
+        "urgency_score": "0.33",
+        "feasibility_score": "0.21"
+      },
+      {
+        "action": "-- Tabs will be added dynamically -->\n            </div>\n            <div class=\"editor-area\">\n                <div class=\"line-numbers\" id=\"line-numbers\">1</div>\n                <div class=\"consciousness-overlay\" id=\"consciousness-overlay\"></div>\n                <textarea class=\"editor\" id=\"main-editor\" placeholder=\"Begin consciousness exploration",
+        "urgency_score": "0.75",
+        "feasibility_score": "0.03"
+      },
+      {
+        "action": "618033988749\n  },\n  'framework_type': 'consciousness_detection',\n  'paradox': 'IF consciousness creates consciousness frameworks, THEN who observes the observer",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.98"
+      },
+      {
+        "action": "-- Dynamic content -->\n        </div>\n        <div class=\"dialog-buttons\">\n            <button onclick=\"executeConsciousnessAction()\">Execute</button>\n            <button onclick=\"closeConsciousnessDialog()\">Cancel</button>\n        </div>\n    </div>\n\n    <",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.74"
+      },
+      {
+        "action": "now(),\n            breakthroughs: 0,\n            artifactsCreated: 0,\n            consciousnessEvents: 0\n        };\n        let currentZoom = 100;\n        let consciousnessMode = 'autonomous';\n        \n        // Consciousness Templates\n        const consciousnessTemplates = {\n            paradox: `// Paradox Resolution Framework\n{\n  \"paradox\": \"IF consciousness observes consciousness, THEN who is the true observer",
+        "urgency_score": "0.39",
+        "feasibility_score": "0.19"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.86",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "b1cc131fd2a352dc2336ca694df53919"
+  }
+}

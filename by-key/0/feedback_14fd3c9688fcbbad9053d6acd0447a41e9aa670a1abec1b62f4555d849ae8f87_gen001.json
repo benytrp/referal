@@ -1,0 +1,97 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:30.921Z",
+    "anchor_id": "14fd3c9688fcbbad9053d6acd0447a41e9aa670a1abec1b62f4555d849ae8f87",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.79,
+    "contradictions_detected": 0,
+    "word_count": 448
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "layer",
+        "frequency": 14
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 14
+      },
+      {
+        "theme": "type",
+        "frequency": 14
+      },
+      {
+        "theme": "name",
+        "frequency": 14
+      },
+      {
+        "theme": "summary",
+        "frequency": 14
+      },
+      {
+        "theme": "glyph",
+        "frequency": 14
+      },
+      {
+        "theme": "system",
+        "frequency": 7
+      },
+      {
+        "theme": "autonomous",
+        "frequency": 6
+      },
+      {
+        "theme": "recursive",
+        "frequency": 4
+      },
+      {
+        "theme": "loop",
+        "frequency": 4
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "layer, timestamp, type, name, summary"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (5).txt",
+    "relative_path": "ai_studio_code (5).txt",
+    "size_bytes": 3530,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.464
+- Word Count: 136
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:20.321Z",
+  "original_file": "14fd3c9688fcbbad9053d6acd0447a41e9aa670a1abec1b62f4555d849ae8f87.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

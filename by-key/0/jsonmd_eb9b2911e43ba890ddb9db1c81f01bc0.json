@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:40.441Z",
+    "source_text_length": 2250,
+    "word_count": 276,
+    "sentence_count": 31,
+    "entropy_level": 0.95,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_self_inspecting_clone.html"
+    },
+    "anchor_id": "eb9b2911e43ba890ddb9db1c81f01bc0"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "aeon",
+        "frequency": 10
+      },
+      {
+        "theme": "const",
+        "frequency": 10
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 7
+      },
+      {
+        "theme": "canvas",
+        "frequency": 6
+      },
+      {
+        "theme": "module",
+        "frequency": 5
+      },
+      {
+        "theme": "glyph",
+        "frequency": 5
+      },
+      {
+        "theme": "findings",
+        "frequency": 5
+      },
+      {
+        "theme": "phase",
+        "frequency": 4
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 4
+      },
+      {
+        "theme": "scroll",
+        "frequency": 3
+      },
+      {
+        "theme": "lineage",
+        "frequency": 3
+      },
+      {
+        "theme": "decodeddata",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Self-Inspecting Clone Scroll ID: aeon:SelfInspectingClone_ψ∞_0807T Phase 1: Perceptual Hash Integration This module creates perceptual fingerprints of visual artifacts … aeon:mode: self_reflective aeon:bridge_status: audit_ready",
+    "key_insights": [],
+    "action_items": [
+      "AEON Self-Inspecting Clone Scroll ID: aeon:SelfInspectingClone_ψ∞_0807T Phase 1: Perceptual Hash Integration This module creates perceptual fingerprints of visual artifacts",
+      "js const computePHash = async (imageBlob) => { const bitmap = await createImageBitmap(imageBlob); const canvas = new OffscreenCanvas(32, 32); const ctx = canvas"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "eb9b2911e43ba890ddb9db1c81f01bc0"
+  }
+}

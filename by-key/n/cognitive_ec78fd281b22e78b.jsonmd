@@ -1,0 +1,238 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:15.443Z",
+    "source_text_length": 15226,
+    "word_count": 1777,
+    "sentence_count": 112,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ec78fd281b22e78b95a6f6febca939f2",
+    "entropy_level": 0.907,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_4c42c0966ba0d511a75318850e8f3f26.json",
+      "processing_timestamp": "2025-08-11T05:02:15.443Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "ctrl",
+        "frequency": 86,
+        "significance": "0.0484",
+        "examples": [
+          "\"ctrl\",\n"
+        ]
+      },
+      {
+        "theme": "const",
+        "frequency": 39,
+        "significance": "0.0219",
+        "examples": [
+          "\"const\",\n"
+        ]
+      },
+      {
+        "theme": "editor",
+        "frequency": 30,
+        "significance": "0.0169",
+        "examples": [
+          "\"editor\",\n"
+        ]
+      },
+      {
+        "theme": "shift",
+        "frequency": 27,
+        "significance": "0.0152",
+        "examples": [
+          "Ctrl+Shift+S"
+        ]
+      },
+      {
+        "theme": "content",
+        "frequency": 26,
+        "significance": "0.0146",
+        "examples": [
+          "\"content_analysis\":"
+        ]
+      },
+      {
+        "theme": "function",
+        "frequency": 22,
+        "significance": "0.0124",
+        "examples": [
+          "\"function\",\n"
+        ]
+      },
+      {
+        "theme": "tabid",
+        "frequency": 20,
+        "significance": "0.0113",
+        "examples": [
+          "tabId"
+        ]
+      },
+      {
+        "theme": "file",
+        "frequency": 19,
+        "significance": "0.0107",
+        "examples": [
+          "File"
+        ]
+      },
+      {
+        "theme": "toggle",
+        "frequency": 19,
+        "significance": "0.0107",
+        "examples": [
+          "Toggle"
+        ]
+      },
+      {
+        "theme": "event",
+        "frequency": 17,
+        "significance": "0.0096",
+        "examples": [
+          "setupEventListeners();"
+        ]
+      },
+      {
+        "theme": "document",
+        "frequency": 15,
+        "significance": "0.0084",
+        "examples": [
+          "\"document\",\n"
+        ]
+      },
+      {
+        "theme": "case",
+        "frequency": 14,
+        "significance": "0.0079",
+        "examples": [
+          "Case"
+        ]
+      }
+    ],
+    "key_questions": [
+      "key === 'ArrowDown' ?\",\n      \"1 : -1); event",
+      "innerHTML = highlightedContent; } function highlightJavaScript(code) { const keywords = /\\\\b(function|var|let|const|if|else|for|while|return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\\\b/g; const strings = /([\\\"'`])(?\",\n      \":(",
+      "?\",\n      \"",
+      ")*?\",\n      \"\\\\1/g; const comments = /\\\\/\\\\/",
+      "*$|\\\\/\\\\*[\\\\s\\\\S]*?\",\n      \"\\\\*\\\\//gm; const numbers = /\\\\b\\\\d+\\\\",
+      "?\",\n      \"\\\\d*\\\\b/g; const functions = /\\\\b(\\\\w+)(",
+      "?\",\n      \"=\\\\s*\\\\()/g; return code",
+      "replace(functions, ' $& '); } function highlightHTML(code) { const tags = /&lt;(\\\\/?\",\n      \"[\\\\w-]+)([^&gt;]*"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "return",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "innerHTML = highlightedContent; } function highlightJavaScript(code) { const keywords = /\\\\b(function|var|let|const|if|else|for|w",
+        "statement_b": "return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\\\b/g; const strings = /([\\\"'`])(",
+        "line": 86,
+        "tension_type": "explicit_contradiction",
+        "severity": "0.67"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 7
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:06...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "push(tab); fileContent[tabId] = ''; fileHistory[tabId] = ['']; redoHistory[tabId] = []; createTab(tabId, fileName); switchToTab(tabs",
+        "urgency_score": "0.00",
+        "feasibility_score": "0.40"
+      },
+      {
+        "action": "length - 1); updateStatusBar('New file created'); } function openFile() { document",
+        "urgency_score": "0.74",
+        "feasibility_score": "0.43"
+      },
+      {
+        "action": "click(); } function openFolder() { // Simulate folder opening updateStatusBar('Folder opened in explorer'); // In a real implementation, this would use the File System Access API } function handleFileLoad(event) { const files = Array",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.39"
+      },
+      {
+        "action": "push(tab); fileContent[tabId] = content; fileHistory[tabId] = [content]; redoHistory[tabId] = []; createTab(tabId, file",
+        "urgency_score": "0.26",
+        "feasibility_score": "0.11"
+      },
+      {
+        "action": "syntax) { validateSyntax(); } // Record macro action if (isRecordingMacro) { recordMacroAction('type', { text: content",
+        "urgency_score": "0.57",
+        "feasibility_score": "0.09"
+      },
+      {
+        "action": " … 'enabled' : 'disabled'}`); } function activatePlugin(pluginName) { switch (pluginName) { case 'autocomplete': // Already integrated in handleEditorChange break; case 'syntax': // Already integrated in applySyntaxHighlighting break; case 'formatter': // Code formatting functionality break; case 'consciousness': // Already integrated in analyzeConsciousness break; } } function deactivatePlugin(pluginName) { switch (pluginName) { case 'autocomplete': closeAutocomplete(\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"push(tab); fileContent[tabId] = ''; fileHistory[tabId] = ['']; redoHistory[tabId] = []; createTab(tabId, fileName); switchToTab(tabs",
+        "urgency_score": "0.72",
+        "feasibility_score": "0.26"
+      },
+      {
+        "action": "\",\n      \"length - 1); updateStatusBar('New file created'); } function openFile() { document",
+        "urgency_score": "0.37",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": "\",\n      \"click(); } function openFolder() { // Simulate folder opening updateStatusBar('Folder opened in explorer'); // In a real implementation, this would use the File System Access API } function handleFileLoad(event) { const files = Array",
+        "urgency_score": "0.41",
+        "feasibility_score": "0.20"
+      },
+      {
+        "action": "\",\n      \"push(tab); fileContent[tabId] = content; fileHistory[tabId] = [content]; redoHistory[tabId] = []; createTab(tabId, file",
+        "urgency_score": "0.49",
+        "feasibility_score": "0.30"
+      },
+      {
+        "action": "\",\n      \"syntax) { validateSyntax(); } // Record macro action if (isRecordingMacro) { recordMacroAction('type', { text: content",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.73"
+      }
+    ],
+    "unresolved_tensions": [
+      "innerHTML = highlightedContent; } function highlightJavaScript(code) { const keywords = /\\\\b(function|var|let|const|if|else|for|w vs return|class|extends|import|export|async|await|try|catch|finally|throw|new|this|super|static|get|set)\\\\b/g; const strings = /([\\\"'`])("
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.7863,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 1 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.90",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "ec78fd281b22e78b95a6f6febca939f2"
+  }
+}

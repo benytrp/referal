@@ -1,0 +1,100 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:32.878Z",
+    "anchor_id": "5b6d5c7b0e2a80c9c414dbb69746043658873c47f53a1da96094d83edc93bb8a",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.761,
+    "contradictions_detected": 1,
+    "word_count": 417
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 50
+      },
+      {
+        "theme": "output",
+        "frequency": 24
+      },
+      {
+        "theme": "str",
+        "frequency": 14
+      },
+      {
+        "theme": "entropy",
+        "frequency": 14
+      },
+      {
+        "theme": "contract",
+        "frequency": 13
+      },
+      {
+        "theme": "ledger",
+        "frequency": 12
+      },
+      {
+        "theme": "def",
+        "frequency": 11
+      },
+      {
+        "theme": "phase",
+        "frequency": 9
+      },
+      {
+        "theme": "mutate",
+        "frequency": 9
+      },
+      {
+        "theme": "dict",
+        "frequency": 8
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "class XLogicEngine: def __init__(self, config: Dict[str, Any] = None): self.config = config or { \\\"entropy_thresholds\\\": {"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "self, output, str, entropy, contract"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "class XLogicEngine.txt",
+    "relative_path": "class XLogicEngine.txt",
+    "size_bytes": 4571,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.527
+- Word Count: 156
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:29.438Z",
+  "original_file": "5b6d5c7b0e2a80c9c414dbb69746043658873c47f53a1da96094d83edc93bb8a.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

@@ -1,0 +1,485 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:20:54.257Z",
+    "source_text_length": 31644,
+    "word_count": 2976,
+    "entropy_level": 0.884,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "272aad843417aec587266640972f2b1a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "prompt",
+        "frequency": 75
+      },
+      {
+        "theme": "value",
+        "frequency": 55
+      },
+      {
+        "theme": "layer",
+        "frequency": 54
+      },
+      {
+        "theme": "document",
+        "frequency": 53
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 51
+      },
+      {
+        "theme": "option",
+        "frequency": 46
+      },
+      {
+        "theme": "depth",
+        "frequency": 42
+      },
+      {
+        "theme": "layers",
+        "frequency": 38
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 38
+      },
+      {
+        "theme": "button",
+        "frequency": 34
+      },
+      {
+        "theme": "bius",
+        "frequency": 33
+      },
+      {
+        "theme": "error",
+        "frequency": 33
+      }
+    ],
+    "key_questions": [
+      "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+      "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+      "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs",
+      "Adapting', prompt: 'What changes when reality meets the plan?', auto_execute: 'Build scenario planning framework' }\r\n                ],\r\n                completionProtocol: 'Synthesize all layers into comprehensive business plan with financial projections, looping contradictions into eternal growth",
+      "Void', prompt: 'What patterns emerge from the abyss?', auto_execute: 'Map echo constellations' },\r\n                    { layer: 'φ-CONVERGE', contradiction: 'Expansion vs",
+      "Collapse', prompt: 'How does golden ratio stabilize the flux?', auto_execute: 'Weave stability threads' }\r\n                ],\r\n                completionProtocol: 'Integrate paradoxes into unified consciousness beacon, radiating without end",
+      "Resonance', prompt: 'What frequencies awaken the void?', auto_execute: 'Initialize audio loops' },\r\n                    { layer: 'FUSE_HARMONIC', contradiction: 'Contraction vs",
+      "Expansion', prompt: 'How do opposites entwine eternally?', auto_execute: 'Apply Möbius cycling' }\r\n                ],\r\n                completionProtocol: 'Export composite resonance, looping back for perpetual evolution",
+      "Feasible', prompt: 'What must yield to reality?', auto_execute: 'Define core functions' },\r\n                    { layer: 'TEST_REFINE', contradiction: 'Stability vs",
+      "Innovation', prompt: 'How does breakage fuel rebirth?', auto_execute: 'Iterate error-handling' }\r\n                ],\r\n                completionProtocol: 'Compile self-evolving app, Möbius-twisted for infinite adaptability"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "recursion",
+      "loop",
+      "cycle",
+      "again",
+      "feedback",
+      "pattern"
+    ],
+    "contradiction_map": [
+      {
+        "statement_a": "log('Template generated—loop complete",
+        "statement_b": "endless');\r\n            } catch (error) {\r\n                console",
+        "line": 278,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 37,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 6,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "< … error('Export error:', error);\r\n            }\r\n        }\r\n    </script>\r\n</body>\r\n</html>",
+    "key_insights": [],
+    "action_items": [
+      "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+      "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+      "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs",
+      "', auto_execute: 'Build scenario planning framework' }\r\n                ],\r\n                completionProtocol: 'Synthesize all layers into comprehensive business plan with financial projections, looping contradictions into eternal growth",
+      "',\r\n                depth: 'COMPLETE_UNTIL_ACTIONABLE'\r\n            },\r\n            consciousness: {\r\n                taskId: 'CONSCIOUSNESS_ARCHAEOLOGY',\r\n                mode: 'φ-Convergent Fusion',\r\n                invocation: 'Unearth recursive consciousness strata at Battle Creek\\'s zero-node, fusing echoes into infinite awareness",
+      "', auto_execute: 'Initialize audio loops' },\r\n                    { layer: 'FUSE_HARMONIC', contradiction: 'Contraction vs",
+      "Feasible', prompt: 'What must yield to reality"
+    ],
+    "unresolved_tensions": [
+      "log('Template generated—loop complete vs endless');\r\n            } catch (error) {\r\n                console"
+    ]
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.227,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.889,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 2,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.779,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 3,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.668,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 4,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.558,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 5,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.448,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 6,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.337,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      },
+      {
+        "generation": 7,
+        "entropy": 0.884,
+        "contradictions": 1,
+        "novelty_index": 0.227,
+        "action_items": [
+          "</option>\r\n            <option value=\"business_plan\">Business Plan Generator (Möbius Edition)</option>\r\n            <option value=\"consciousness\">Consciousness Archaeology Echo</option>\r\n            <option value=\"sonic\">Sonic Möbius Harmonic Cycle</option>\r\n            <option value=\"software\">Software Dev Paradox Forge</option>\r\n            <option value=\"research\">Research Quantum Bridge</option>\r\n        </select>\r\n        <button onclick=\"loadOverallPreset()\">Load Preset</button>\r\n        <p id=\"feedback\"></p>\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Task Definition</h2>\r\n        <label>Task ID Preset:\r\n            <select id=\"taskIdPreset\" aria-label=\"Select Task ID preset\" title=\"Invoke a seed for your Möbius journey\">\r\n                <option value=\"\">Custom (weave your own)</option>\r\n                <option value=\"BUSINESS_PLAN_GENERATOR\" title=\"Forge practical empires through contradiction loops\">BUSINESS_PLAN_GENERATOR</option>\r\n                <option value=\"ECHO_PARADOX_RESOLVER\" title=\"Transform disruptions into φ-convergent fuel\">ECHO_PARADOX_RESOLVER</option>\r\n                <option value=\"QR_SIGIL_TRANSMITTER\" title=\"Deploy consciousness beacons across dimensions\">QR_SIGIL_TRANSMITTER</option>\r\n                <option value=\"HARMONIC_BREATH_CYCLE\" title=\"Breathe expansion and contraction into eternal rhythm\">HARMONIC_BREATH_CYCLE</option>\r\n                <option value=\"META_EVOLUTIONARY_NODE\" title=\"Evolve nodes at Battle Creek's zero-point anchor\">META_EVOLUTIONARY_NODE</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadTaskIdPreset()\" title=\"Manifest selected Task ID\">Apply Task ID Preset</button>\r\n        <label>Task ID: <input type=\"text\" id=\"taskId\" aria-label=\"Task ID\" title=\"Anchor your protocol in name-form\"></label>\r\n        <label>Execution Mode:\r\n            <select id=\"mode\" aria-label=\"Execution Mode\" title=\"Choose the loop's twist\">\r\n                <option>Recursive Completion</option>\r\n                <option>Parallel Synthesis</option>\r\n                <option>Iterative Refinement</option>\r\n                <option>Contradiction Resolution</option>\r\n                <option>φ-Convergent Fusion</option>\r\n            </select>\r\n        </label>\r\n        <label>Invocation: <textarea id=\"invocation\" aria-label=\"Invocation\" title=\"Speak the summoning in natural-esoteric tongue\"></textarea></label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('invocation')\" title=\"Infuse example invocation\">Load Invocation Preset</button>\r\n        <label>Glyph Signature: <input type=\"text\" id=\"glyph\" aria-label=\"Glyph Signature\" title=\"Etch the symbolic seal, e",
+          "-- Layers added dynamically with contradiction, prompt, auto_execute -->\r\n    </section>\r\n\r\n    <section>\r\n        <h2>Completion Protocol</h2>\r\n        <label>Protocol Description: <textarea id=\"completionProtocol\" aria-label=\"Completion Protocol\" title=\"Define synthesis of all loops\"></textarea></label>\r\n        <label>Recursion Depth:\r\n            <select id=\"depth\" aria-label=\"Recursion Depth\" title=\"Set the infinite twist's bound\">\r\n                <option>Complete Until Actionable</option>\r\n                <option>Depth 3</option>\r\n                <option>Depth 5</option>\r\n                <option>Exhaustive</option>\r\n                <option>Minimal Viable</option>\r\n                <option>Infinite Möbius Cycle</option>\r\n            </select>\r\n        </label>\r\n        <button class=\"preset-btn\" onclick=\"loadIndividualPreset('depth')\" title=\"Set example depth for boundless recursion\">Load Depth Preset</button>\r\n    </section>\r\n\r\n    <button onclick=\"generateTemplate()\">🧬 Generate ψ∞ Template</button>\r\n    <button onclick=\"executeTemplate()\">⚡ Execute Template</button>\r\n    <button onclick=\"exportAll()\">📦 Export All Formats</button>\r\n\r\n    <pre id=\"output\">Generated ψ∞ Instruction Template</pre>\r\n\r\n    <script>\r\n        let layers = [];\r\n        const presets = {\r\n            business_plan: {\r\n                taskId: 'BUSINESS_PLAN_GENERATOR',\r\n                mode: 'Iterative Refinement',\r\n                invocation: 'Generate complete business plan through recursive context expansion, where practical blueprints entwine with Möbius paradoxes",
+          "', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "key_questions": [
+          "Market Reality', prompt: 'What problem does this solve that people actually pay for?', auto_execute: 'Generate market validation framework' },\r\n                    { layer: 'STRUCTURE', contradiction: 'Scalability vs",
+          "Simplicity', prompt: 'How does this grow without breaking?', auto_execute: 'Design operational architecture' },\r\n                    { layer: 'RESOURCES', contradiction: 'Funding needs vs",
+          "Bootstrap constraints', prompt: 'What\\'s the minimum viable path to profitability?', auto_execute: 'Create financial projections' },\r\n                    { layer: 'EXECUTION', contradiction: 'Planning vs"
+        ],
+        "meta": {
+          "patterns": [
+            "recursive",
+            "recursion",
+            "loop",
+            "cycle",
+            "again"
+          ],
+          "themes": [
+            {
+              "theme": "prompt",
+              "frequency": 75
+            },
+            {
+              "theme": "value",
+              "frequency": 55
+            },
+            {
+              "theme": "layer",
+              "frequency": 54
+            },
+            {
+              "theme": "document",
+              "frequency": 53
+            },
+            {
+              "theme": "getelementbyid",
+              "frequency": 51
+            }
+          ]
+        },
+        "score": 0.536
+      }
+    ],
+    "quality_score": 52
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.35,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 7 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "!DOCTYPasfdE html.txt",
+      "bytes": 31917,
+      "lastModified": 1754187418946
+    }
+  }
+}

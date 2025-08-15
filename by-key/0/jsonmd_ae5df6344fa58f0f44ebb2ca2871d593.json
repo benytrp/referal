@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:48.144Z",
+    "source_text_length": 1200,
+    "word_count": 174,
+    "sentence_count": 12,
+    "entropy_level": 0.965,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsonmd_downloads_scanner_v_1_3 (4).html"
+    },
+    "anchor_id": "ae5df6344fa58f0f44ebb2ca2871d593"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "output",
+        "frequency": 7
+      },
+      {
+        "theme": "blacklist",
+        "frequency": 4
+      },
+      {
+        "theme": "feed",
+        "frequency": 3
+      },
+      {
+        "theme": "input",
+        "frequency": 3
+      },
+      {
+        "theme": "reprocess",
+        "frequency": 3
+      },
+      {
+        "theme": "listing",
+        "frequency": 3
+      },
+      {
+        "theme": "plan",
+        "frequency": 3
+      },
+      {
+        "theme": "scan",
+        "frequency": 3
+      },
+      {
+        "theme": "last",
+        "frequency": 3
+      },
+      {
+        "theme": "tick",
+        "frequency": 3
+      },
+      {
+        "theme": "scanner",
+        "frequency": 2
+      },
+      {
+        "theme": "auto",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "JSONMD Downloads Scanner v1 … Last Result Preview — Close Plan Scan Results — ✅ Run Now Cancel Output Listing (latest 50) — Close",
+    "key_insights": [],
+    "action_items": [
+      "05 & words<50) 🐞 Debug 🧪 Self‑Test 👁 Preview last Auto‑Feed Loop Enable Max gens Backpressure (max files in _feed) Max feeds per tick Feed TTL (days) Input: — Output: — idle Tips: Start (Ctrl+Enter), Plan (Ctrl+P), Stop (Esc) Anchors in blacklist: 0 Last tick: — Avg tick (5): — feeds_created: 0 gens_capped: 0 skipped_backpressure: 0 skipped_maxPerTick: 0 purged_TTL: 0 Recent Activity Reprocess (ignore blacklist once) 🎯 Pick File to Reprocess Writes into _reprocessed/ under Output; does not touch the blacklist"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "ae5df6344fa58f0f44ebb2ca2871d593"
+  }
+}

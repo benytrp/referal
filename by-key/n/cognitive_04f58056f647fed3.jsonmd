@@ -1,0 +1,178 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:02:14.525Z",
+    "source_text_length": 2455,
+    "word_count": 223,
+    "sentence_count": 14,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "04f58056f647fed3a0bd79a0773bad78",
+    "entropy_level": 0.943,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_3ba8b067fba27944fea06435809fa177.json",
+      "processing_timestamp": "2025-08-11T05:02:14.525Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0359",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0359",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 5,
+        "significance": "0.0224",
+        "examples": [
+          "\"2025-08-11T04:23:10.428Z\",\n"
+        ]
+      },
+      {
+        "theme": "evaluation",
+        "frequency": 5,
+        "significance": "0.0224",
+        "examples": [
+          "\"evaluation\",\n"
+        ]
+      },
+      {
+        "theme": "form",
+        "frequency": 4,
+        "significance": "0.0179",
+        "examples": [
+          "\"format\":"
+        ]
+      },
+      {
+        "theme": "date",
+        "frequency": 4,
+        "significance": "0.0179",
+        "examples": [
+          "\"date\",\n"
+        ]
+      },
+      {
+        "theme": "item",
+        "frequency": 4,
+        "significance": "0.0179",
+        "examples": [
+          "\"item\",\n"
+        ]
+      },
+      {
+        "theme": "attitude",
+        "frequency": 3,
+        "significance": "0.0135",
+        "examples": [
+          "\"attitude\",\n"
+        ]
+      },
+      {
+        "theme": "task",
+        "frequency": 3,
+        "significance": "0.0135",
+        "examples": [
+          "\"task\",\n"
+        ]
+      },
+      {
+        "theme": "signature",
+        "frequency": 3,
+        "significance": "0.0135",
+        "examples": [
+          "\"signature\",\n"
+        ]
+      },
+      {
+        "theme": "7830",
+        "frequency": 2,
+        "significance": "0.0090",
+        "examples": [
+          "E3-20250809-7830"
+        ]
+      },
+      {
+        "theme": "20250809",
+        "frequency": 2,
+        "significance": "0.0090",
+        "examples": [
+          "B202508091547120"
+        ]
+      }
+    ],
+    "key_questions": [
+      "html\",\n      \"bytes\": 2630,\n      \"lastModified\": 1754768891733\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"evaluation\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"date\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"2025-08-09\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"item\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"attitude\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"task\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"signature\",\n        \"frequency\": 2\n      },\n      {\n        \"theme\": \"form\",\n        \"frequency\": 1\n      }\n    ],\n    \"key_questions\": [\n      \"E3 Evaluation Form E3 Achievement Daily Participant Evaluation Name: Jane Doe ID: P001 Date: 2025-08-09 Batch ID: B202508091547120 Eval ID: E3-20250809-7830 Work Habits Item Yes NI N/A Attendance — Correct day and time?\",\n      \"Hygiene — Appropriately groomed",
+      "?\",\n      \"Attitude — Positive attitude",
+      "?\",\n      \"Preparatory Goals Item Yes NI N/A Attention Span — Adequate for tasks",
+      "?\",\n      \"Task Completion — Stayed on task",
+      "?\",\n      \"Safety — Followed procedures",
+      "?\"\n    ],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 1,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"E3 Evaluation Form E3 Achievement Daily Participant Evaluation Name: Jane Doe ID: P001 Date: 2025-08-09 Batch ID: B202508091547120 Eval ID: E3-20250809-7830 Work Habits Item Yes NI N/A Attendance — Correct day and time",
+      "? … Comments Signature Instructor: Chris Burdette Signature Date: 2025-08-09\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T04:23:10...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … Comments Signature Instructor: Chris Burdette Signature Date: 2025-08-09\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.47",
+        "feasibility_score": "0.31"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.12275,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.59",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "04f58056f647fed3a0bd79a0773bad78"
+  }
+}

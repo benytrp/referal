@@ -1,0 +1,351 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:21:47.652Z",
+    "source_text_length": 825,
+    "word_count": 104,
+    "entropy_level": 0.984,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "0cca4fedd7ed94130f6c6286074bf5aa"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "aeon",
+        "frequency": 3
+      },
+      {
+        "theme": "bridgefile",
+        "frequency": 3
+      },
+      {
+        "theme": "evm_context",
+        "frequency": 3
+      },
+      {
+        "theme": "load",
+        "frequency": 2
+      },
+      {
+        "theme": "then",
+        "frequency": 2
+      },
+      {
+        "theme": "preview",
+        "frequency": 2
+      },
+      {
+        "theme": "inject",
+        "frequency": 2
+      },
+      {
+        "theme": "localstorage",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "evm_history",
+        "frequency": 2
+      },
+      {
+        "theme": "presets",
+        "frequency": 2
+      },
+      {
+        "theme": "importer",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON → EVM Importer · offline 1) Load AEON Bridgefile Use sample No file loaded … Colors: error=#e74c3c, export=#9b59b6, import=#f39c12, normal=#2980b9, start=#2ecc71, end=#34495e",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.139,
+    "cognitive_load_estimate": 0.04125,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.877,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 2,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.754,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 3,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.631,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 4,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.508,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 5,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.385,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 6,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.262,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      },
+      {
+        "generation": 7,
+        "entropy": 0.984,
+        "contradictions": 0,
+        "novelty_index": 0.139,
+        "action_items": [],
+        "key_questions": [],
+        "meta": {
+          "patterns": [],
+          "themes": [
+            {
+              "theme": "aeon",
+              "frequency": 3
+            },
+            {
+              "theme": "bridgefile",
+              "frequency": 3
+            },
+            {
+              "theme": "evm_context",
+              "frequency": 3
+            },
+            {
+              "theme": "load",
+              "frequency": 2
+            },
+            {
+              "theme": "then",
+              "frequency": 2
+            }
+          ]
+        },
+        "score": 0.306
+      }
+    ],
+    "quality_score": 30
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.01,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "aeon_importer.html",
+      "bytes": 15015,
+      "lastModified": 1754717639799
+    }
+  }
+}

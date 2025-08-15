@@ -1,0 +1,140 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:04.736Z",
+    "source_text_length": 9856,
+    "word_count": 1724,
+    "sentence_count": 183,
+    "entropy_level": 0.896,
+    "contradictions_detected": 4,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "Children's Depression Inventory 2nd.txt"
+    },
+    "anchor_id": "86c681b9aa576dc20e05a498e042c30a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "score",
+        "frequency": 25
+      },
+      {
+        "theme": "things",
+        "frequency": 16
+      },
+      {
+        "theme": "report",
+        "frequency": 13
+      },
+      {
+        "theme": "subscale",
+        "frequency": 13
+      },
+      {
+        "theme": "problems",
+        "frequency": 12
+      },
+      {
+        "theme": "feel",
+        "frequency": 12
+      },
+      {
+        "theme": "self",
+        "frequency": 11
+      },
+      {
+        "theme": "negative",
+        "frequency": 11
+      },
+      {
+        "theme": "child",
+        "frequency": 10
+      },
+      {
+        "theme": "scale",
+        "frequency": 10
+      },
+      {
+        "theme": "scores",
+        "frequency": 10
+      },
+      {
+        "theme": "myself",
+        "frequency": 10
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "0067) endorsed the item “I think about killing myself",
+        "statement_b": "would not do it",
+        "line": 38,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "Note: The child endorsed the item “I think about killing myself",
+        "statement_b": "would not do it",
+        "line": 66,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I have some friends",
+        "statement_b": "I wish I had more",
+        "line": 124,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "I think about killing myself",
+        "statement_b": "would not do it",
+        "line": 168,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 3,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 3,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "Children's Depression Inventory 2nd Edition: Self-Report\r\nver … and",
+    "key_insights": [
+      "0067) endorsed the item “I think about killing myself but would not do it",
+      "Note: The child endorsed the item “I think about killing myself but would not do it",
+      "I think about killing myself but would not do it"
+    ],
+    "action_items": [
+      "This report is an interpretive aid and should not be provided to parents, teachers, or children or used as the\r\nsole basis for clinical diagnosis or intervention",
+      "To obtain a comprehensive view of the child, information from this report should be\r\ncombined with information gathered from other psychometric tests, interviews, observations, and available\r\nrecords",
+      "Administrators should review the child’s responses to specific items to ensure that\r\nthese interpretations apply",
+      "If it is\r\nnecessary to provide a copy of the report to anyone other than the assessor, this section must be removed",
+      "14R\r\nI have to push myself all the time to do my school\r\nwork",
+      "I have to push myself many times to do my\r\nschool work"
+    ],
+    "unresolved_tensions": [
+      "0067) endorsed the item “I think about killing myself vs would not do it",
+      "Note: The child endorsed the item “I think about killing myself vs would not do it",
+      "I have some friends vs I wish I had more",
+      "I think about killing myself vs would not do it"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 3 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "86c681b9aa576dc20e05a498e042c30a"
+  }
+}

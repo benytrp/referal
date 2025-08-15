@@ -1,0 +1,225 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:13:49.764Z",
+    "source_text_length": 4376,
+    "word_count": 423,
+    "sentence_count": 25,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "faeb5d1ab56aa8d3c658dcf5497bd215",
+    "entropy_level": 0.944,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_379d9284f788904beda5dcee1849d3c4.json",
+      "processing_timestamp": "2025-08-11T05:13:49.764Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "schema",
+        "frequency": 18,
+        "significance": "0.0426",
+        "examples": [
+          "\"xlogic_schema_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0189",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0189",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "start",
+        "frequency": 7,
+        "significance": "0.0165",
+        "examples": [
+          "Start"
+        ]
+      },
+      {
+        "theme": "logic",
+        "frequency": 6,
+        "significance": "0.0142",
+        "examples": [
+          "\"xlogic_schema_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "builder",
+        "frequency": 6,
+        "significance": "0.0142",
+        "examples": [
+          "\"xlogic_schema_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "manage",
+        "frequency": 5,
+        "significance": "0.0118",
+        "examples": [
+          "manage"
+        ]
+      },
+      {
+        "theme": "build",
+        "frequency": 5,
+        "significance": "0.0118",
+        "examples": [
+          "\"xlogic_schema_builder.html\",\n"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 4,
+        "significance": "0.0095",
+        "examples": [
+          "\"processing_phase\":"
+        ]
+      },
+      {
+        "theme": "create",
+        "frequency": 4,
+        "significance": "0.0095",
+        "examples": [
+          "Create,"
+        ]
+      },
+      {
+        "theme": "schemas",
+        "frequency": 4,
+        "significance": "0.0095",
+        "examples": [
+          "schemas"
+        ]
+      },
+      {
+        "theme": "quick",
+        "frequency": 4,
+        "significance": "0.0095",
+        "examples": [
+          "Quick"
+        ]
+      }
+    ],
+    "key_questions": [
+      "📊 Analytical Data analysis and processing workflows Low Risk Quick 🎨 Creative Content generation and ideation Medium Risk Iterative 🔬 Research Comprehensive investigation and documentation High Complexity Thorough 📋 Planning Strategic planning and roadmap creation Structured Goal-oriented Start from Scratch Contract Phases Advanced Primary Goal ?\",\n      \"Complexity Level",
+      "?\",\n      \"Simple (1-3 cycles) Moderate (3-7 cycles) Complex (5-15 cycles) Adaptive (No fixed limit) Risk Tolerance",
+      "?\",\n      \"Conservative (Strict limits) Balanced (Some flexibility) Aggressive (Adaptive limits) Constraints",
+      "?\",\n      \"Success Criteria",
+      "?\",\n      \"💡 Suggestions Phase Configuration + Add Phase 🔄 Common Phase Patterns 📥 Input → Process → Output: Linear workflow for straightforward tasks 🔄 Analyze → Plan → Execute → Reflect: Iterative improvement cycle 🎯 Research → Synthesize → Validate: Knowledge-focused workflow Entropy Threshold",
+      "?\",\n      \"Maximum Cycles",
+      "?\",\n      \"Enable Parallel Sandboxes",
+      "?\",\n      \"Auto (Based on complexity) Always Enabled Disabled Custom Trigger"
+    ],
+    "pattern_recognition": [
+      "recursive",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 3,
+      "negative": 3,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:13:02...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "948,\n    \"contradictions_detected\": 0,\n    \"processing_phase\": \"SYNTHESIS\",\n    \"frequency_resonance\": \"440 Hz (A4)\",\n    \"format\": \"json_md_fusion\",\n    \"anchor_id\": \"379d9284f788904beda5dcee1849d3c4\",\n    \"source\": {\n      \"path\": \"xlogic_schema_builder",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.51"
+      },
+      {
+        "action": "html\",\n      \"bytes\": 58453,\n      \"lastModified\": 1754803042264\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [\n      {\n        \"theme\": \"schema\",\n        \"frequency\": 15\n      },\n      {\n        \"theme\": \"document\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"getelementbyid\",\n        \"frequency\": 10\n      },\n      {\n        \"theme\": \"importedschema\",\n        \"frequency\": 9\n      },\n      {\n        \"theme\": \"phase\",\n        \"frequency\": 8\n      },\n      {\n        \"theme\": \"value\",\n        \"frequency\": 6\n      },\n      {\n        \"theme\": \"contract\",\n        \"frequency\": 5\n      },\n      {\n        \"theme\": \"phases\",\n        \"frequency\": 5\n      }\n    ],\n    \"key_questions\": [\n      \"🔧 X-Logic Schema Builder Create, customize, and manage autonomous consciousness engine schemas 🎯 Schema Builder 🚀 Quick Start Choose a template below or start from scratch to build your custom X-Logic schema",
+        "urgency_score": "0.38",
+        "feasibility_score": "0.56"
+      },
+      {
+        "action": "\",\n      \"💡 Suggestions Phase Configuration + Add Phase 🔄 Common Phase Patterns 📥 Input → Process → Output: Linear workflow for straightforward tasks 🔄 Analyze → Plan → Execute → Reflect: Iterative improvement cycle 🎯 Research → Synthesize → Validate: Knowledge-focused workflow Entropy Threshold ",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.94"
+      },
+      {
+        "action": "\"\n    ],\n    \"pattern_recognition\": [\n      \"always\",\n      \"cycle\",\n      \"pattern\"\n    ],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 2,\n      \"negative\": 4,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 3,\n      \"future\": 1\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"🔧 X-Logic Schema Builder Create, customize, and manage autonomous consciousness engine schemas 🎯 Schema Builder 🚀 Quick Start Choose a template below or start from scratch to build your custom X-Logic schema",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.62"
+      },
+      {
+        "action": " … '); }\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"🔧 X-Logic Schema Builder Create, customize, and manage autonomous consciousness engine schemas 🎯 Schema Builder 🚀 Quick Start Choose a template below or start from scratch to build your custom X-Logic schema",
+        "urgency_score": "0.67",
+        "feasibility_score": "0.00"
+      },
+      {
+        "action": "\",\n      \"⚠️ Validation Issues Generate Schema Validate Manage Templates 👁️ Schema Preview & Export Generated Schema 📋 Copy Select a preset or build your schema to see the preview",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.18"
+      },
+      {
+        "action": "\",\n      \"Create and save some schemas",
+        "urgency_score": "0.15",
+        "feasibility_score": "0.44"
+      },
+      {
+        "action": "\",\n      \"display = 'none'; } function loadSavedTemplates() { // In a real implementation, this would load from localStorage or a backend const savedContainer = document",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.31"
+      },
+      {
+        "action": "\",\n      \"trigger; } // Clear and rebuild phases phaseCounter = 0; document",
+        "urgency_score": "0.98",
+        "feasibility_score": "0.44"
+      },
+      {
+        "action": "\"\n    ],\n    \"unresolved_tensions\": [\n      \"⚠️ Validation Issues Generate Schema Validate Manage Templates 👁️ Schema Preview & Export Generated Schema 📋 Copy Select a preset or build your schema to see the preview",
+        "urgency_score": "0.79",
+        "feasibility_score": "0.71"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.2188,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.20",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "faeb5d1ab56aa8d3c658dcf5497bd215"
+  }
+}

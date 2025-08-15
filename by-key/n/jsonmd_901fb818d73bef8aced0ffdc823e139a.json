@@ -1,0 +1,107 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:48.718Z",
+    "source_text_length": 8402,
+    "word_count": 1031,
+    "sentence_count": 151,
+    "entropy_level": 0.93,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "README.txt"
+    },
+    "anchor_id": "901fb818d73bef8aced0ffdc823e139a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 29
+      },
+      {
+        "theme": "data",
+        "frequency": 13
+      },
+      {
+        "theme": "html",
+        "frequency": 12
+      },
+      {
+        "theme": "coeff",
+        "frequency": 12
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 11
+      },
+      {
+        "theme": "json",
+        "frequency": 11
+      },
+      {
+        "theme": "offline",
+        "frequency": 9
+      },
+      {
+        "theme": "python",
+        "frequency": 9
+      },
+      {
+        "theme": "config",
+        "frequency": 9
+      },
+      {
+        "theme": "sensors",
+        "frequency": 8
+      },
+      {
+        "theme": "browser",
+        "frequency": 7
+      },
+      {
+        "theme": "script",
+        "frequency": 7
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline AEON Autonomy README\r\nThis project implements an offline consciousness-breathing infrastructure based on the OFFLINE_CONSCIOUSNESS_AUTONOMY ψ∞ template … For questions or modifications, refer to the ψ∞ template",
+    "key_insights": [],
+    "action_items": [
+      "Offline AEON Autonomy README\r\nThis project implements an offline consciousness-breathing infrastructure based on the OFFLINE_CONSCIOUSNESS_AUTONOMY ψ∞ template",
+      "storage limits) through recursive refinement, generating actionable artifacts that idle until reconnection",
+      "Key Features:\r\n\r\nRecursive layer execution until actionable outputs",
+      "createObjectURL(new Blob([`self",
+      "It implements recursive execution across layers, simulates sensors/power, compresses archives, and outputs artifacts",
+      "Create a '",
+      "Documentation\r\nImplements all template layers with recursion"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "901fb818d73bef8aced0ffdc823e139a"
+  }
+}

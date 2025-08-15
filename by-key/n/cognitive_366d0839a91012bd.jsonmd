@@ -1,0 +1,161 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:52:59.279Z",
+    "source_text_length": 11347,
+    "word_count": 1367,
+    "sentence_count": 256,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "366d0839a91012bd360e19a101a1225b",
+    "entropy_level": 0.714,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "2025-08-11.log",
+      "processing_timestamp": "2025-08-11T05:52:59.279Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2025",
+        "frequency": 86,
+        "significance": "0.0629",
+        "examples": [
+          "[2025-08-11T05:52:30.981Z]"
+        ]
+      },
+      {
+        "theme": "11t05",
+        "frequency": 86,
+        "significance": "0.0629",
+        "examples": [
+          "[2025-08-11T05:52:30.981Z]"
+        ]
+      },
+      {
+        "theme": "wrote",
+        "frequency": 84,
+        "significance": "0.0614",
+        "examples": [
+          "wrote"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 84,
+        "significance": "0.0614",
+        "examples": [
+          "f5cdad61ec35a7f33eea621524dbb13b534fd595383c1202df42598aac0a0ea1.json"
+        ]
+      },
+      {
+        "theme": "words",
+        "frequency": 84,
+        "significance": "0.0614",
+        "examples": [
+          "words,"
+        ]
+      },
+      {
+        "theme": "1511",
+        "frequency": 4,
+        "significance": "0.0029",
+        "examples": [
+          "(1511"
+        ]
+      },
+      {
+        "theme": "56bdd22eaa9b5426dc57c2cc628370b001c8ccc838d06ce97f642e6ac3f635f8",
+        "frequency": 4,
+        "significance": "0.0029",
+        "examples": [
+          "56bdd22eaa9b5426dc57c2cc628370b001c8ccc838d06ce97f642e6ac3f635f8.json"
+        ]
+      },
+      {
+        "theme": "2077",
+        "frequency": 3,
+        "significance": "0.0022",
+        "examples": [
+          "(2077"
+        ]
+      },
+      {
+        "theme": "2703",
+        "frequency": 3,
+        "significance": "0.0022",
+        "examples": [
+          "(2703"
+        ]
+      },
+      {
+        "theme": "ef76c99fe64fdc2ab3a9614bf197cbf4fe1ce023d7b05f01ae4e1008e7e4cc6e",
+        "frequency": 3,
+        "significance": "0.0022",
+        "examples": [
+          "ef76c99fe64fdc2ab3a9614bf197cbf4fe1ce023d7b05f01ae4e1008e7e4cc6e.json"
+        ]
+      },
+      {
+        "theme": "50cd33b47f7f48d69612b468dd47314339562445cde89ff0bbe347c92c4fd028",
+        "frequency": 3,
+        "significance": "0.0022",
+        "examples": [
+          "50cd33b47f7f48d69612b468dd47314339562445cde89ff0bbe347c92c4fd028.json"
+        ]
+      },
+      {
+        "theme": "1269",
+        "frequency": 2,
+        "significance": "0.0015",
+        "examples": [
+          "(1269"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[2025-08-11T05:52:30 981Z] skip(blacklist) notepad-plus-clone...",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.56735,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.06",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "366d0839a91012bd360e19a101a1225b"
+  }
+}

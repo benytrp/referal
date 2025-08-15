@@ -1,0 +1,391 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "2.0",
+    "timestamp": "2025-08-11T08:23:15.920Z",
+    "source_text_length": 12354,
+    "word_count": 2101,
+    "entropy_level": 0.883,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "cycles_completed": 7,
+    "cycle_tag": "GEN-7",
+    "anchor_id": "0069a52afba4b8c966a181ef0bcc4a64"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "problems",
+        "frequency": 42
+      },
+      {
+        "theme": "clinical",
+        "frequency": 30
+      },
+      {
+        "theme": "range",
+        "frequency": 29
+      },
+      {
+        "theme": "benjamin",
+        "frequency": 22
+      },
+      {
+        "theme": "score",
+        "frequency": 21
+      },
+      {
+        "theme": "aseba",
+        "frequency": 20
+      },
+      {
+        "theme": "2025",
+        "frequency": 19
+      },
+      {
+        "theme": "burdette",
+        "frequency": 17
+      },
+      {
+        "theme": "scores",
+        "frequency": 14
+      },
+      {
+        "theme": "date",
+        "frequency": 13
+      },
+      {
+        "theme": "borderline",
+        "frequency": 13
+      },
+      {
+        "theme": "percentile",
+        "frequency": 13
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "repeat"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 5,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 14,
+      "present": 6,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "CBCL/6-18 - Competence Scale Scores\r\nBiological parent\r\nChris Burdette\r\nRelationship:\r\nClinician: Informant:\r\nDate Completed: 25-Apr-2025 Agency:\r\nM Date on Form:\r\n12\r\nGender:\r\nName: Benjamin Burdette Age:\r\nID: C … org Page 7/7",
+    "key_insights": [],
+    "action_items": [
+      "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+      "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.227,
+    "cognitive_load_estimate": 0.6177,
+    "recursive_potential": "Medium",
+    "cycle_history": [
+      {
+        "generation": 1,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.89,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 2,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.779,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 3,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.669,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 4,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.558,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 5,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.448,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 6,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.338,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      },
+      {
+        "generation": 7,
+        "entropy": 0.883,
+        "contradictions": 0,
+        "novelty_index": 0.227,
+        "action_items": [
+          "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+          "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+        ],
+        "key_questions": [],
+        "meta": {
+          "patterns": [
+            "repeat"
+          ],
+          "themes": [
+            {
+              "theme": "problems",
+              "frequency": 42
+            },
+            {
+              "theme": "clinical",
+              "frequency": 30
+            },
+            {
+              "theme": "range",
+              "frequency": 29
+            },
+            {
+              "theme": "benjamin",
+              "frequency": 22
+            },
+            {
+              "theme": "score",
+              "frequency": 21
+            }
+          ]
+        },
+        "score": 0.407
+      }
+    ],
+    "quality_score": 40
+  },
+  "metadata": {
+    "fusion_methodology": "Unified JSONMD Reactor",
+    "confidence_level": 0.15,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions",
+      "Mode=unified"
+    ],
+    "tags": [
+      "GEN-7",
+      "unified"
+    ],
+    "source": {
+      "path": "CBCL6-18 - Competence Scale Scores.txt",
+      "bytes": 12354,
+      "lastModified": 1753928461511
+    }
+  }
+}

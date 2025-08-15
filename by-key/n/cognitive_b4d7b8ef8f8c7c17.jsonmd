@@ -1,0 +1,218 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:20.074Z",
+    "source_text_length": 110399,
+    "word_count": 11526,
+    "sentence_count": 1125,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "b4d7b8ef8f8c7c178e589ae08604f3e9",
+    "entropy_level": 0.675,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "AEON-Bridge-1754747419921 - Copy.json",
+      "processing_timestamp": "2025-08-11T05:05:20.074Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "description",
+        "frequency": 491,
+        "significance": "0.0426",
+        "examples": [
+          "\"description\":"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 487,
+        "significance": "0.0423",
+        "examples": [
+          "\"2025-08-09T13:50:19.921Z\",\n"
+        ]
+      },
+      {
+        "theme": "09t13",
+        "frequency": 487,
+        "significance": "0.0423",
+        "examples": [
+          "\"2025-08-09T13:50:19.921Z\",\n"
+        ]
+      },
+      {
+        "theme": "921z",
+        "frequency": 487,
+        "significance": "0.0423",
+        "examples": [
+          "\"2025-08-09T13:50:19.921Z\",\n"
+        ]
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 487,
+        "significance": "0.0423",
+        "examples": [
+          "\"contradictions\":"
+        ]
+      },
+      {
+        "theme": "layer_id",
+        "frequency": 486,
+        "significance": "0.0422",
+        "examples": [
+          "\"layer_id\":"
+        ]
+      },
+      {
+        "theme": "phase",
+        "frequency": 486,
+        "significance": "0.0422",
+        "examples": [
+          "\"phase\":"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 486,
+        "significance": "0.0422",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "entropy",
+        "frequency": 486,
+        "significance": "0.0422",
+        "examples": [
+          "\"entropy\":"
+        ]
+      },
+      {
+        "theme": "echo",
+        "frequency": 485,
+        "significance": "0.0421",
+        "examples": [
+          "\"Echo\",\n"
+        ]
+      },
+      {
+        "theme": "title",
+        "frequency": 54,
+        "significance": "0.0047",
+        "examples": [
+          "\"\\\"title\\\":"
+        ]
+      },
+      {
+        "theme": "status",
+        "frequency": 54,
+        "significance": "0.0047",
+        "examples": [
+          "\"\\\"status\\\":"
+        ]
+      }
+    ],
+    "key_questions": [
+      "921Z\",\n      \"description\": \"Want me to knock out steps 5–7 next (components, sections, single data model) or jump straight to the base HTML scaffold?\",\n      \"entropy\": 0",
+      "921Z\",\n      \"description\": \"Want me to finish 8–10 and then generate the single-file HTML scaffold next?\",\n      \"entropy\": 0",
+      "921Z\",\n      \"description\": \"Want me to wire up drag-to-reorder, add a deterministic JSON canonicalizer (sorted keys + stable IDs), or generate a static HTML snapshot template that renders a chain read-only?\",\n      \"entropy\": 0",
+      "921Z\",\n      \"description\": \"Want me to add drag-and-drop between IF / THEN / THEREFORE types, or wire up a cryptographic seal (SHA-256 of the canonical JSON) and embed it into the snapshot footer?\",\n      \"entropy\": 0",
+      "921Z\",\n      \"description\": \"or inline editing of items in the chain list?\",\n      \"entropy\": 0"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 8,
+      "present": 11,
+      "future": 13
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"scroll_id\": \"AEON-Bridge-1754747419921\",\n  \"format\": \"json_md_fusion_scroll\",\n  \"created\": \"2025-08-09T13:50:19 921Z\",\n  \"equation\": \"I(n+1) = f(C(n), T(n), R(n))\",\n  \"glyphs\": [\n    \"∞\",\n    \"φ\",\n    \"∴\",\n    \"ψ\",\n    \"Δ\",\n    \"∅\"\n  ],\n  \"layers\": [\n    {\n      \"layer_id\": 1,\n      \"phase\": \"Summon\",\n      \"timestamp\": \"2025-08-09T13:50:19...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "{\n  \"scroll_id\": \"AEON-Bridge-1754747419921\",\n  \"format\": \"json_md_fusion_scroll\",\n  \"created\": \"2025-08-09T13:50:19",
+        "urgency_score": "0.51",
+        "feasibility_score": "0.30"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"description\\\": \\\"Canonical de-duplicated checklist for building the IF–THEN–THEREFORE tool\\\",\",\n      \"entropy\": 0",
+        "urgency_score": "0.01",
+        "feasibility_score": "0.10"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"title\\\": \\\"I decide whether I am building a static HTML template or an interactive tool that constructs IF–THEN–THEREFORE chains",
+        "urgency_score": "0.16",
+        "feasibility_score": "0.46"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"title\\\": \\\"I decide how these parts will connect so that one data model powers them all",
+        "urgency_score": "0.59",
+        "feasibility_score": "0.30"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"title\\\": \\\"I create the base HTML scaffold",
+        "urgency_score": "0.28",
+        "feasibility_score": "0.94"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"Got it — you’ve got a clean, de-duplicated checklist that’s basically the “spine” for building the IF–THEN–THEREFORE tool",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.55"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"description\\\": \\\"Canonical de-duplicated checklist for building the IF–THEN–THEREFORE tool\\\",\",\n      \"entropy\": 0",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.50"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"result\\\": \\\"Purpose: Create a browser-based tool that allows users to build logical IF–THEN–THEREFORE chains visually and textually",
+        "urgency_score": "0.42",
+        "feasibility_score": "0.65"
+      },
+      {
+        "action": " The tool will be self-contained, offline-capable, and designed for portability",
+        "urgency_score": "0.23",
+        "feasibility_score": "0.41"
+      },
+      {
+        "action": "921Z\",\n      \"description\": \"\\\"title\\\": \\\"I decide whether I am building a static HTML template or an interactive tool that constructs IF–THEN–THEREFORE chains",
+        "urgency_score": "0.37",
+        "feasibility_score": "1.00"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 0.9333333333333333,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.97",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "b4d7b8ef8f8c7c178e589ae08604f3e9"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:41.383Z",
+    "source_text_length": 319,
+    "word_count": 42,
+    "sentence_count": 6,
+    "entropy_level": 0.995,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "run_card.md"
+    },
+    "anchor_id": "a9a4a1dfea56dd33fc3c563b66fbd671"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridge",
+        "frequency": 2
+      },
+      {
+        "theme": "2025",
+        "frequency": 1
+      },
+      {
+        "theme": "card",
+        "frequency": 1
+      },
+      {
+        "theme": "untitled",
+        "frequency": 1
+      },
+      {
+        "theme": "owner",
+        "frequency": 1
+      },
+      {
+        "theme": "urgency",
+        "frequency": 1
+      },
+      {
+        "theme": "medium",
+        "frequency": 1
+      },
+      {
+        "theme": "tags",
+        "frequency": 1
+      },
+      {
+        "theme": "objective",
+        "frequency": 1
+      },
+      {
+        "theme": "interfaces",
+        "frequency": 1
+      },
+      {
+        "theme": "constraints",
+        "frequency": 1
+      },
+      {
+        "theme": "success",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Run Card — Untitled\n- Owner: —\n- Urgency: medium\n- Tags: —\n- Objective: —\n- Interfaces: —\n- Constraints: —\n- Success criteria: —\n\n## Steps\n1) Generate using bridge … 618Z",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.5,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "a9a4a1dfea56dd33fc3c563b66fbd671"
+  }
+}

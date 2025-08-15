@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:45.732Z",
+    "source_text_length": 798,
+    "word_count": 111,
+    "sentence_count": 8,
+    "entropy_level": 0.979,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_bridge_offline_runner_single_file_app.html"
+    },
+    "anchor_id": "904f1e960b0926fc5ee8e91076416b24"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "schema",
+        "frequency": 3
+      },
+      {
+        "theme": "folder",
+        "frequency": 3
+      },
+      {
+        "theme": "persona",
+        "frequency": 3
+      },
+      {
+        "theme": "method",
+        "frequency": 3
+      },
+      {
+        "theme": "risk",
+        "frequency": 3
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "artifacts",
+        "frequency": 2
+      },
+      {
+        "theme": "router",
+        "frequency": 2
+      },
+      {
+        "theme": "input",
+        "frequency": 2
+      },
+      {
+        "theme": "function",
+        "frequency": 2
+      },
+      {
+        "theme": "everything",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON‑Bridge Offline Runner Single‑file app • No network • JSON‑Schema‑guarded Controls Topic Max Cycles7 Max Parallel3 Run AEON Loop Choose Output Folder Artifacts write optional; stays in‑memory if no folder picked … Artifacts Folder layout mirrors /aeon_runs/<topic_slug>/<timestamp>/",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "904f1e960b0926fc5ee8e91076416b24"
+  }
+}

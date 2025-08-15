@@ -1,0 +1,87 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:31.231Z",
+    "source_text_length": 239,
+    "word_count": 39,
+    "entropy_level": 0.971,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "55ea6dff309038adcfc87eda3ccc4692",
+    "source": {
+      "path": "AEON_Scroll_Indexer.html",
+      "bytes": 8934,
+      "lastModified": 1754835077381
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "files",
+        "frequency": 3
+      },
+      {
+        "theme": "selected",
+        "frequency": 3
+      },
+      {
+        "theme": "choose",
+        "frequency": 2
+      },
+      {
+        "theme": "index",
+        "frequency": 2
+      },
+      {
+        "theme": "aeon",
+        "frequency": 1
+      },
+      {
+        "theme": "scroll",
+        "frequency": 1
+      },
+      {
+        "theme": "indexer",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "every"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON Scroll Indexer Drag in your HTML/JSON “scrolls”. … Quick search New tag for selected Add tag Delete selected Selected: 0",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}

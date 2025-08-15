@@ -1,0 +1,97 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:40.996Z",
+    "anchor_id": "69336dfc49670765ccbcf3ad7cd2fe6ce10798363fd0a48462a16e51097091a6",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.644,
+    "contradictions_detected": 4,
+    "word_count": 323
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 12
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 9
+      },
+      {
+        "theme": "bridge",
+        "frequency": 7
+      },
+      {
+        "theme": "text",
+        "frequency": 7
+      },
+      {
+        "theme": "scroll",
+        "frequency": 6
+      },
+      {
+        "theme": "return",
+        "frequency": 6
+      },
+      {
+        "theme": "line",
+        "frequency": 6
+      },
+      {
+        "theme": "session",
+        "frequency": 5
+      },
+      {
+        "theme": "downloadlink",
+        "frequency": 5
+      },
+      {
+        "theme": "generatedbridge",
+        "frequency": 5
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "detectContradictions(text) { const keywords = /\\b(not|but|however|yet|paradox|although|vs)\\b/gi; return (text.matc"
+      },
+      {
+        "idx": 1,
+        "sample": "detectContradictions(text) { const keywords = /\\b(not|but|however|yet|paradox|although|vs)\\b/gi; return (text.match(keywor"
+      },
+      {
+        "idx": 2,
+        "sample": "tectContradictions(text) { const keywords = /\\b(not|but|however|yet|paradox|although|vs)\\b/gi; return (text.match(keywords) || ["
+      },
+      {
+        "idx": 3,
+        "sample": "ctions(text) { const keywords = /\\b(not|but|however|yet|paradox|although|vs)\\b/gi; return (text.match(keywords) || []).length;"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "phase: index === 0 ?"
+    ],
+    "summary": "const, contradictions, bridge, text, scroll"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "orca_share_media1754511153204_7358953147935691171.html",
+    "relative_path": "orca_share_media1754511153204_7358953147935691171.html",
+    "size_bytes": 6980,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

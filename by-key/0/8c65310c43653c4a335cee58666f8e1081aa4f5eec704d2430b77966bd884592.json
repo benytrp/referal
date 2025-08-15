@@ -1,0 +1,78 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:30.154Z",
+    "anchor_id": "8c65310c43653c4a335cee58666f8e1081aa4f5eec704d2430b77966bd884592",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.749,
+    "contradictions_detected": 0,
+    "word_count": 658
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "tool",
+        "frequency": 26
+      },
+      {
+        "theme": "invoke",
+        "frequency": 26
+      },
+      {
+        "theme": "calls",
+        "frequency": 25
+      },
+      {
+        "theme": "name",
+        "frequency": 24
+      },
+      {
+        "theme": "parameters",
+        "frequency": 24
+      },
+      {
+        "theme": "function",
+        "frequency": 22
+      },
+      {
+        "theme": "copy",
+        "frequency": 15
+      },
+      {
+        "theme": "key",
+        "frequency": 14
+      },
+      {
+        "theme": "video",
+        "frequency": 9
+      },
+      {
+        "theme": "api",
+        "frequency": 9
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [],
+    "summary": "tool, invoke, calls, name, parameters"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "ai_studio_code (3).html",
+    "relative_path": "ai_studio_code (3).html",
+    "size_bytes": 12074,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.75
+  }
+}

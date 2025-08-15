@@ -1,0 +1,175 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:50.446Z",
+    "source_text_length": 2017,
+    "word_count": 143,
+    "sentence_count": 8,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "633b1c64265e7689cae2d5a7d48b64fe",
+    "entropy_level": 0.949,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_6c3c45fd7644993e0a3b249f08deadb0.json",
+      "processing_timestamp": "2025-08-11T05:12:50.446Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 8,
+        "significance": "0.0559",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0559",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "downloads",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"jsonmd_downloads_scanner_v_1_2"
+        ]
+      },
+      {
+        "theme": "plan",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"plan\",\n"
+        ]
+      },
+      {
+        "theme": "scan",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"jsonmd_downloads_scanner_v_1_2"
+        ]
+      },
+      {
+        "theme": "output",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"output\",\n"
+        ]
+      },
+      {
+        "theme": "jsonmd",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"jsonmd_downloads_scanner_v_1_2"
+        ]
+      },
+      {
+        "theme": "explore",
+        "frequency": 2,
+        "significance": "0.0140",
+        "examples": [
+          "\"Explore"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 1,
+        "significance": "0.0070",
+        "examples": [
+          "\"2025-08-11T05:12:48.310Z\",\n"
+        ]
+      },
+      {
+        "theme": "25163",
+        "frequency": 1,
+        "significance": "0.0070",
+        "examples": [
+          "25163,\n"
+        ]
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 1,
+        "significance": "0.0070",
+        "examples": [
+          "\"json_md_fusion_scroll\":"
+        ]
+      },
+      {
+        "theme": "version",
+        "frequency": 1,
+        "significance": "0.0070",
+        "examples": [
+          "\"version\":"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:48...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … Plan Scan Results — ✅ Run Now Cancel Output Listing (latest 50) — Close\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Offline analyzer v1",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.38"
+      },
+      {
+        "action": "51,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"domparser\"\n  }\n}",
+        "urgency_score": "0.76",
+        "feasibility_score": "0.74"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.10085,
+    "recursive_potential": "Medium",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.45",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "633b1c64265e7689cae2d5a7d48b64fe"
+  }
+}

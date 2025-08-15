@@ -1,0 +1,120 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:22.270Z",
+    "anchor_id": "29d402a1c30d801d58224e0f232217f9d5f8fdd4d035163244b4af366317aaa5",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.759,
+    "contradictions_detected": 6,
+    "word_count": 2805
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 92
+      },
+      {
+        "theme": "type",
+        "frequency": 69
+      },
+      {
+        "theme": "document",
+        "frequency": 60
+      },
+      {
+        "theme": "json",
+        "frequency": 52
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 48
+      },
+      {
+        "theme": "return",
+        "frequency": 41
+      },
+      {
+        "theme": "string",
+        "frequency": 40
+      },
+      {
+        "theme": "phase",
+        "frequency": 35
+      },
+      {
+        "theme": "obj",
+        "frequency": 34
+      },
+      {
+        "theme": "value",
+        "frequency": 33
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Validation (basic) Offline, single‑file tool. No external libraries. Parsing uses balanced‑brace scan that skips strings; heur"
+      },
+      {
+        "idx": 1,
+        "sample": "ed Output','Cycle:','Operation:','Output:', 'Microsoft (R)','Destination is not a directory:','Reading documents' ]; const DROP_PATTERNS = [ /.+ was"
+      },
+      {
+        "idx": 2,
+        "sample": "was unexpected at this time\\./i, /The system cannot find .+/i, /'.+' is not recognized as an internal or external command/i ]; function stripInvis("
+      },
+      {
+        "idx": 3,
+        "sample": "entListener('click', ()=>{ const sum = $('#extractSummary').textContent || 'No summary.'; download(sum, 'Nvrstry.cleaned.summary.txt', 'text/plain');"
+      },
+      {
+        "idx": 4,
+        "sample": "s/Warnings: `+ `Fatal: ${errors.fatal.length ? errors.fatal.join('; ') : 'None'} `+ `Warnings: ${errors.warnings.length ? errors.warnings.join('; ')"
+      },
+      {
+        "idx": 5,
+        "sample": "'} `+ `Warnings: ${errors.warnings.length ? errors.warnings.join('; ') : 'None'} `+ blocks.join(\" --- \"); if (errors.fatal.length) throw new E"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "split(/\\r?",
+      "getElementById(id)?",
+      "getElementById('chkAutosave')?",
+      "isArray(obj)?",
+      "isArray(o)?",
+      "project_metadata?",
+      "contract?",
+      "contract?",
+      "includes('if-then-therefore')) ?",
+      "const idx = prompt(`Assign which object # to ${target}?",
+      "length?",
+      "entropy === 'number') ?",
+      "const p = op?",
+      "parameters ??",
+      "const tag = `~${tagPrefix}:phase=${cycleCount};op=${idx + 1};name=${op?"
+    ],
+    "summary": "const, type, document, json, getelementbyid"
+  },
+  "sentiment_indicators": {
+    "positive": 1,
+    "negative": 1,
+    "uncertainty": 4
+  },
+  "temporal_markers": [
+    "was",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "offline_json_builder_begin_anywhere (1).html",
+    "relative_path": "offline_json_builder_begin_anywhere (1).html",
+    "size_bytes": 37033,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.81
+  }
+}

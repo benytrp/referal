@@ -1,0 +1,81 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:35.485Z",
+    "anchor_id": "4cbe797515a617cb6838d9a5e26c0eaa80f92c025b3010f0592faff3024b458e",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.826,
+    "contradictions_detected": 0,
+    "word_count": 195
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "margin",
+        "frequency": 4
+      },
+      {
+        "theme": "border",
+        "frequency": 4
+      },
+      {
+        "theme": "font",
+        "frequency": 3
+      },
+      {
+        "theme": "padding",
+        "frequency": 3
+      },
+      {
+        "theme": "achievement",
+        "frequency": 2
+      },
+      {
+        "theme": "daily",
+        "frequency": 2
+      },
+      {
+        "theme": "participant",
+        "frequency": 2
+      },
+      {
+        "theme": "evaluation",
+        "frequency": 2
+      },
+      {
+        "theme": "solid",
+        "frequency": 2
+      },
+      {
+        "theme": "ccc",
+        "frequency": 2
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "nEval ID: E3-202508091656399\\n\\n\\nWork Habits\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nItemYesNIN/AAttendance — Correct day and time?",
+      "Hygiene — Appropriately groomed?",
+      "\\n\\nPreparatory Goals\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nItemYesNIN/AAttention Span — Adequate for tasks?",
+      "Safety — Followed procedures?"
+    ],
+    "summary": "margin, border, font, padding, achievement"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "E3-Themetapatterninsightthatdata-1.html",
+    "relative_path": "E3-Themetapatterninsightthatdata-1.html",
+    "size_bytes": 2465,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

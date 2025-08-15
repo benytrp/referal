@@ -1,0 +1,192 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:12:49.357Z",
+    "source_text_length": 3108,
+    "word_count": 268,
+    "sentence_count": 12,
+    "cognitive_mode": "resolve",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "ab7a3e6d0c735913ff20b72145e03da6",
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "jsonmd_14fd3c9688fcbbad9053d6acd0447a41.json",
+      "processing_timestamp": "2025-08-11T05:12:49.357Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "theme",
+        "frequency": 9,
+        "significance": "0.0336",
+        "examples": [
+          "\"main_themes\":"
+        ]
+      },
+      {
+        "theme": "frequency",
+        "frequency": 8,
+        "significance": "0.0299",
+        "examples": [
+          "\"frequency_resonance\":"
+        ]
+      },
+      {
+        "theme": "2025",
+        "frequency": 6,
+        "significance": "0.0224",
+        "examples": [
+          "\"2025-08-11T05:12:35.122Z\",\n"
+        ]
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 6,
+        "significance": "0.0224",
+        "examples": [
+          "\"timestamp\":"
+        ]
+      },
+      {
+        "theme": "summary",
+        "frequency": 6,
+        "significance": "0.0224",
+        "examples": [
+          "\"summary\",\n"
+        ]
+      },
+      {
+        "theme": "layer_id",
+        "frequency": 5,
+        "significance": "0.0187",
+        "examples": [
+          "\"layer_id\",\n"
+        ]
+      },
+      {
+        "theme": "10t00",
+        "frequency": 5,
+        "significance": "0.0187",
+        "examples": [
+          "\"2025-08-10t00\",\n"
+        ]
+      },
+      {
+        "theme": "type",
+        "frequency": 5,
+        "significance": "0.0187",
+        "examples": [
+          "\"type\",\n"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 5,
+        "significance": "0.0187",
+        "examples": [
+          "\"name\",\n"
+        ]
+      },
+      {
+        "theme": "glyph",
+        "frequency": 5,
+        "significance": "0.0187",
+        "examples": [
+          "\"glyph\",\n"
+        ]
+      },
+      {
+        "theme": "autonomous",
+        "frequency": 2,
+        "significance": "0.0075",
+        "examples": [
+          "\"autonomous\",\n"
+        ]
+      },
+      {
+        "theme": "loop",
+        "frequency": 2,
+        "significance": "0.0075",
+        "examples": [
+          "\"loop\",\n"
+        ]
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [
+      "recursive",
+      "loop",
+      "cycle",
+      "pattern"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 2,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 0\",\n    \"timestamp\": \"2025-08-11T05:12:35...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": " … \\\", \\\"glyph\\\": \\\"∴\\\"}\",\n    \"key_insights\": [],\n    \"action_items\": [\n      \"\\\", \\\"glyph\\\": \\\"φ\\\"}\\n{\\\"layer_id\\\": 3, \\\"timestamp\\\": \\\"2025-08-10T00:03:00Z\\\", \\\"type\\\": \\\"Implementation\\\", \\\"name\\\": \\\"Thalamus Medical Reasoning Engine\\\", \\\"summary\\\": \\\"A practical TypeScript engine demonstrating recursive, phased reasoning in a real-world domain",
+        "urgency_score": "0.96",
+        "feasibility_score": "0.20"
+      },
+      {
+        "action": "\",\n      \"\\\", \\\"glyph\\\": \\\"Δ\\\"}\\n{\\\"layer_id\\\": 4, \\\"timestamp\\\": \\\"2025-08-10T00:04:00Z\\\", \\\"type\\\": \\\"Concept\\\", \\\"name\\\": \\\"Session-Based Functions\\\", \\\"summary\\\": \\\"Defined the core adaptive mechanism: temporary, mutated functions created for specific tasks (Identify, Mutate, Create)",
+        "urgency_score": "0.80",
+        "feasibility_score": "0.45"
+      },
+      {
+        "action": "\",\n      \"\\\", \\\"glyph\\\": \\\"Δ\\\"}\\n{\\\"layer_id\\\": 10, \\\"timestamp\\\": \\\"2025-08-10T00:10:00Z\\\", \\\"type\\\": \\\"Artifact\\\", \\\"name\\\": \\\"X-Logic Autonomous Processor\\\", \\\"summary\\\": \\\"A functional HTML interface that fully implements the x_logic_schema, making the system an interactive tool",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.57"
+      },
+      {
+        "action": "\",\n      \"The architecture is defined, implemented, and proven resilient",
+        "urgency_score": "0.29",
+        "feasibility_score": "0.91"
+      },
+      {
+        "action": "55,\n    \"recommended_next_steps\": [\n      \"Explore high‑entropy passages first\",\n      \"Collect clarifying questions into a research backlog\"\n    ],\n    \"recursive_potential\": \"Low - mostly linear content\",\n    \"focus_preset\": \"explore\",\n    \"extraction_method\": \"plain\"\n  }\n}",
+        "urgency_score": "0.35",
+        "feasibility_score": "0.66"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 0.1554,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.58",
+    "recommended_next_steps": [
+      "Continue resolve analysis",
+      "Review 0 insights",
+      "Execute 5 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "ab7a3e6d0c735913ff20b72145e03da6"
+  }
+}

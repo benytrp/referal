@@ -1,0 +1,127 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T05:52:40.399Z",
+    "anchor_id": "939d976db8214cbe1ea643f296d30b3126252661d3fcea870f848766cd65a33e",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.763,
+    "contradictions_detected": 4,
+    "word_count": 2284
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 73
+      },
+      {
+        "theme": "type",
+        "frequency": 69
+      },
+      {
+        "theme": "json",
+        "frequency": 48
+      },
+      {
+        "theme": "document",
+        "frequency": 48
+      },
+      {
+        "theme": "string",
+        "frequency": 40
+      },
+      {
+        "theme": "return",
+        "frequency": 37
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 36
+      },
+      {
+        "theme": "obj",
+        "frequency": 30
+      },
+      {
+        "theme": "metadata",
+        "frequency": 28
+      },
+      {
+        "theme": "value",
+        "frequency": 28
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Validation (basic) Offline, single‑file tool. No external libraries. Parsing uses balanced‑brace scan that skips strings; heur"
+      },
+      {
+        "idx": 1,
+        "sample": "ed Output','Cycle:','Operation:','Output:', 'Microsoft (R)','Destination is not a directory:','Reading documents' ]; const DROP_PATTERNS = [ /.+ was"
+      },
+      {
+        "idx": 2,
+        "sample": "was unexpected at this time\\./i, /The system cannot find .+/i, /'.+' is not recognized as an internal or external command/i ]; function stripInvis("
+      },
+      {
+        "idx": 3,
+        "sample": "entListener('click', ()=>{ const sum = $('#extractSummary').textContent || 'No summary.'; download(sum, 'Nvrstry.cleaned.summary.txt', 'text/plain');"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "split(/\\r?",
+      "getElementById(id)?",
+      "getElementById('chkAutosave')?",
+      "isArray(obj)?",
+      "isArray(o)?",
+      "project_metadata?",
+      "contract?",
+      "contract?",
+      "includes('if-then-therefore')) ?",
+      "const idx = prompt(`Assign which object # to ${target}?",
+      "length?"
+    ],
+    "summary": "const, type, json, document, string"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 1
+  },
+  "temporal_markers": [
+    "was",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "offline_json_builder_begin_anywhere.html",
+    "relative_path": "offline_json_builder_begin_anywhere.html",
+    "size_bytes": 30641,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}
+
+## Generation 1 Enhancement
+- Entropy Level: 4.733
+- Word Count: 244
+- Enhancement Intent: Initial recursive processing
+
+
+---
+### Processing Metadata
+```json
+{
+  "generation": 1,
+  "enhancement_timestamp": "2025-08-11T07:43:37.974Z",
+  "original_file": "939d976db8214cbe1ea643f296d30b3126252661d3fcea870f848766cd65a33e.json",
+  "enhancement_type": "recursive_evolution",
+  "philosophical_protocol": "phenomenology+pragmatism+hermeneutics+reflection",
+  "convergence_factor": 0.1
+}
+```

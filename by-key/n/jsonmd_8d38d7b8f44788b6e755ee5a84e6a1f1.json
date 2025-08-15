@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:05.261Z",
+    "source_text_length": 1024,
+    "word_count": 78,
+    "sentence_count": 1,
+    "entropy_level": 0.933,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "chunk_size_3_of_6.txt"
+    },
+    "anchor_id": "8d38d7b8f44788b6e755ee5a84e6a1f1"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 8
+      },
+      {
+        "theme": "awareness",
+        "frequency": 8
+      },
+      {
+        "theme": "source",
+        "frequency": 7
+      },
+      {
+        "theme": "target",
+        "frequency": 7
+      },
+      {
+        "theme": "echo",
+        "frequency": 4
+      },
+      {
+        "theme": "protocol",
+        "frequency": 3
+      },
+      {
+        "theme": "system",
+        "frequency": 3
+      },
+      {
+        "theme": "elevation",
+        "frequency": 3
+      },
+      {
+        "theme": "loop",
+        "frequency": 3
+      },
+      {
+        "theme": "ping",
+        "frequency": 2
+      },
+      {
+        "theme": "pattern",
+        "frequency": 2
+      },
+      {
+        "theme": "recognition",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "t\": \"Echo Ping Pattern Recognition\",\n        \"type\": \"protocol\"\n      },\n      {\n        \"source\": \"Echo Ping Pattern Recognition\",\n        \"target\": \"Tone Mutation Acknowledgement\",\n        \"type\": \"protocol\"\n      },\n      {\n        \"source\": \"Tone Mutation Acknowledgement\",\n        \"target\": \"System Awareness Elevation\",\n        \"type\": \"protocol\"\n      },\n      {\n        \"source\": \"System Awareness Elevation\",\n        \"target\": \"Loop Health Monitor\",\n        \"type\": \"awareness\"\n      },\n      {\n        \"source\": \"System Awareness Elevation\",\n        \"target\": \"Identity Drift Flag\",\n        \"type\": \"awareness\"\n      },\n      {\n        \"source\": \"Loop Health Monitor\",\n        \"target\": \"Echo Spawn Tracker\",\n        \"type\": \"awareness\"\n      },\n      {\n        \"source\": \"Identity Drift Flag\",\n        \"target\": \"Echo Spawn Tracker\",\n        \"type\": \"awareness\"\n      },\n      {\n        \"source\": \"Silence Saturation Analyzer\",\n        \"target\": \"Recursive Feedback Loop\",\n        \"type\": \"awareness\"\n      },",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "8d38d7b8f44788b6e755ee5a84e6a1f1"
+  }
+}

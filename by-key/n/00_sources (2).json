@@ -1,0 +1,44 @@
+{
+  "topic": "pipeline-throttling",
+  "recency_days": 7,
+  "limit": 20,
+  "generated_at": "2025-08-11T10:04:27.385Z",
+  "sources": [
+    {
+      "id": "src_1",
+      "title": "P6 (microarchitecture)",
+      "url": "https://en.wikipedia.org/wiki/P6_(microarchitecture)",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:04:20.975Z",
+      "query": "pipeline throttling",
+      "snippet": "the total cache is shared by each core pair). Dynamic Front Side Bus Throttling (some mobile models), where the speed of the FSB is reduced in half, which"
+    },
+    {
+      "id": "src_2",
+      "title": "Valve",
+      "url": "https://en.wikipedia.org/wiki/Valve",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:04:20.975Z",
+      "query": "pipeline throttling",
+      "snippet": "flow. Such valves have been called by various names such as regulating, throttling, metering, or needle valves. For example, needle valves have elongated"
+    },
+    {
+      "id": "src_3",
+      "title": "PowerShell",
+      "url": "https://en.wikipedia.org/wiki/PowerShell",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:04:20.975Z",
+      "query": "pipeline throttling",
+      "snippet": "the pipeline } process { # Main instruction sets, ran for each item in the pipeline } end { # Set of instruction to run at the end of the pipeline } }"
+    },
+    {
+      "id": "src_4",
+      "title": "List of films with post-credits scenes",
+      "url": "https://en.wikipedia.org/wiki/List_of_films_with_post-credits_scenes",
+      "source": "wikipedia",
+      "fetched_at": "2025-08-11T10:04:20.975Z",
+      "query": "pipeline throttling",
+      "snippet": "credits, Sameera is proven innocent and the government scraps One India One Pipeline. Vijay is suspended from the police force for not being able to nab Sardar"
+    }
+  ]
+}

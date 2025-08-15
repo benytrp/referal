@@ -1,0 +1,220 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "cognitive-2.0",
+    "timestamp": "2025-08-11T05:05:24.525Z",
+    "source_text_length": 33888,
+    "word_count": 3854,
+    "sentence_count": 393,
+    "cognitive_mode": "unified",
+    "processing_depth": "standard",
+    "analysis_threshold": 0.6,
+    "anchor_id": "6c598a4b0b7d013ce6db38280829d780",
+    "entropy_level": 0.773,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "cognitive_jsonmd_fusion",
+    "source_metadata": {
+      "filename": "architecture_artifact_iteration_2.json",
+      "processing_timestamp": "2025-08-11T05:05:24.525Z",
+      "scanner_version": "Cognitive JSONMD Working Edition"
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "animation",
+        "frequency": 109,
+        "significance": "0.0283",
+        "examples": [
+          "animation:"
+        ]
+      },
+      {
+        "theme": "class",
+        "frequency": 91,
+        "significance": "0.0236",
+        "examples": [
+          "class=\\\"floating-particles\\\""
+        ]
+      },
+      {
+        "theme": "style",
+        "frequency": 71,
+        "significance": "0.0184",
+        "examples": [
+          "<style>\\n"
+        ]
+      },
+      {
+        "theme": "particle",
+        "frequency": 58,
+        "significance": "0.0150",
+        "examples": [
+          ".floating-particles"
+        ]
+      },
+      {
+        "theme": "left",
+        "frequency": 55,
+        "significance": "0.0143",
+        "examples": [
+          "left:"
+        ]
+      },
+      {
+        "theme": "delay",
+        "frequency": 55,
+        "significance": "0.0143",
+        "examples": [
+          "animation-delay:"
+        ]
+      },
+      {
+        "theme": "layer",
+        "frequency": 52,
+        "significance": "0.0135",
+        "examples": [
+          "\"five_layer_architecture_artifact\",\n"
+        ]
+      },
+      {
+        "theme": "duration",
+        "frequency": 50,
+        "significance": "0.0130",
+        "examples": [
+          "animation-duration:"
+        ]
+      },
+      {
+        "theme": "name",
+        "frequency": 39,
+        "significance": "0.0101",
+        "examples": [
+          "name=\\\"viewport\\\""
+        ]
+      },
+      {
+        "theme": "layers",
+        "frequency": 37,
+        "significance": "0.0096",
+        "examples": [
+          "layers;\\n"
+        ]
+      },
+      {
+        "theme": "purpose",
+        "frequency": 37,
+        "significance": "0.0096",
+        "examples": [
+          "purpose;\\n"
+        ]
+      },
+      {
+        "theme": "json",
+        "frequency": 30,
+        "significance": "0.0078",
+        "examples": [
+          ".json-output"
+        ]
+      }
+    ],
+    "key_questions": [
+      "*?\\\\\\\\)/g, '')"
+    ],
+    "pattern_recognition": [
+      "repeat",
+      "return",
+      "iteration",
+      "pattern",
+      "systematic"
+    ],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 4,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 7,
+      "future": 5
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"type\": \"five_layer_architecture_artifact\",\n  \"iteration\": 2,\n  \"timestamp\": \"2025-08-09T21:15:37 419Z\",\n  \"html_content\": \"<html lang=\\\"en\\\"><head>\\n    <meta charset=\\\"UTF-8\\\">\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1...",
+    "key_insights": [],
+    "action_items": [
+      {
+        "action": "2664s;\\\"></div></div>\\n    \\n    <div class=\\\"container\\\">\\n        <div class=\\\"header\\\">\\n            <h1 class=\\\"title\\\">Five-Layer Architecture Generator</h1>\\n            <div class=\\\"iteration-counter\\\">Iteration: <span id=\\\"iterationCount\\\">2</span></div>\\n            <div class=\\\"progress-bar\\\">\\n                <div class=\\\"progress-fill\\\" id=\\\"progressFill\\\" style=\\\"width: 0%;\\\"></div>\\n            </div>\\n        </div>\\n        \\n        <div class=\\\"control-panel\\\">\\n            <textarea id=\\\"inputData\\\" placeholder=\\\"Paste your architectural data here in JSON format\\\" style=\\\"height: 150px;\\\"></textarea>\\n            <button class=\\\"btn\\\" onclick=\\\"processData()\\\">Process Architecture</button>\\n            <button class=\\\"btn\\\" onclick=\\\"generateCode()\\\">Generate Code</button>\\n            <button class=\\\"btn\\\" onclick=\\\"createNextIteration()\\\">Next Iteration</button>\\n            <button class=\\\"btn\\\" onclick=\\\"exportArtifact()\\\">Export Artifact</button>\\n        </div>\\n\\n        <div class=\\\"data-visualization\\\" id=\\\"dataViz\\\"><div class=\\\"data-node\\\" style=\\\"animation-delay: 0s;\\\">L1</div><div class=\\\"data-node\\\" style=\\\"animation-delay: 0",
+        "urgency_score": "0.34",
+        "feasibility_score": "0.70"
+      },
+      {
+        "action": "</div>\\n                </div><div class=\\\"layer-card\\\" style=\\\"opacity: 1; transform: translateY(0px);\\\">\\n                    <div class=\\\"layer-title\\\">Layer 5: Presentation Abstraction (Multi-Audience Output)</div>\\n                    <div class=\\\"layer-description\\\">Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.91",
+        "feasibility_score": "0.54"
+      },
+      {
+        "action": "put(\\\"presentation\\\", new LayerData(\\n            \\\"Presentation Abstraction (Multi-Audience Output)\\\",\\n            \\\"Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.79"
+      },
+      {
+        "action": "\\\"\\n      },\\n      {\\n        \\\"name\\\": \\\"Presentation Abstraction (Multi-Audience Output)\\\",\\n        \\\"purpose\\\": \\\"Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.68",
+        "feasibility_score": "0.12"
+      },
+      {
+        "action": " We consolidated conceptual architecture, concrete implementation, operational flow, and strategic value into a single unified blueprint, culminating in the design of a portable, self-verifying, presentation-native system with an executable CLI harness",
+        "urgency_score": "0.12",
+        "feasibility_score": "0.32"
+      },
+      {
+        "action": "\\\"\\n                            },\\n                            {\\n                                \\\"name\\\": \\\"Presentation Abstraction (Multi-Audience Output)\\\",\\n                                \\\"purpose\\\": \\\"Multi-audience outputs from the same run without modifying analysis",
+        "urgency_score": "0.66",
+        "feasibility_score": "0.97"
+      },
+      {
+        "action": "\\\"\\n                            }\\n                        ]\\n                    }\\n                ]\\n            }\\n        };\\n\\n        function createParticles() {\\n            const container = document",
+        "urgency_score": "0.73",
+        "feasibility_score": "0.36"
+      },
+      {
+        "action": "createElement('div');\\n                particle",
+        "urgency_score": "0.18",
+        "feasibility_score": "0.35"
+      },
+      {
+        "action": "createElement('div');\\n                card",
+        "urgency_score": "0.43",
+        "feasibility_score": "0.83"
+      },
+      {
+        "action": "createElement('div');\\n                node",
+        "urgency_score": "0.10",
+        "feasibility_score": "0.01"
+      }
+    ],
+    "unresolved_tensions": []
+  },
+  "cognitive_analysis": {
+    "novelty_index": 1,
+    "cognitive_load_estimate": 1,
+    "recursive_potential": "High",
+    "meta_patterns": [
+      "15 themes, 0 tensions"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Comprehensive Cognitive Analysis Engine",
+    "confidence_level": "0.82",
+    "recommended_next_steps": [
+      "Continue unified analysis",
+      "Review 0 insights",
+      "Execute 10 actions"
+    ],
+    "recursive_potential": "High",
+    "text_sha256": "6c598a4b0b7d013ce6db38280829d780"
+  }
+}
