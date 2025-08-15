@@ -1,0 +1,83 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:28.406Z",
+    "anchor_id": "78d845dcc33c450226cade76a31ef351ad27608c25c1780d9fafbfd4545e7661",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.539,
+    "contradictions_detected": 0,
+    "word_count": 1337
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "entropy",
+        "frequency": 37
+      },
+      {
+        "theme": "data",
+        "frequency": 32
+      },
+      {
+        "theme": "contract",
+        "frequency": 27
+      },
+      {
+        "theme": "orchestrator",
+        "frequency": 23
+      },
+      {
+        "theme": "const",
+        "frequency": 23
+      },
+      {
+        "theme": "phase",
+        "frequency": 21
+      },
+      {
+        "theme": "operation",
+        "frequency": 20
+      },
+      {
+        "theme": "execution",
+        "frequency": 15
+      },
+      {
+        "theme": "artifact",
+        "frequency": 15
+      },
+      {
+        "theme": "document",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "currentPhase - 1]?",
+      "1 ?",
+      "3 ?",
+      "6 ?"
+    ],
+    "summary": "entropy, data, contract, orchestrator, const"
+  },
+  "sentiment_indicators": {
+    "positive": 19,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "workflow_orchestrator.html",
+    "relative_path": "workflow_orchestrator.html",
+    "size_bytes": 41178,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.71
+  }
+}

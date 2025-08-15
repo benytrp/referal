@@ -1,0 +1,86 @@
+{
+  "trigger": "<x>",
+  "contract": {
+    "goal": "Generate original creative content through iterative ideation and refinement",
+    "constraints": [
+      "Maintain creative coherence",
+      "Explore multiple perspectives",
+      "Complete within 8 cycles",
+      "Maintain entropy below 0.9",
+      "Complete within 15 cycles"
+    ],
+    "success_criteria": [
+      "Produce original creative output",
+      "Demonstrate iterative improvement",
+      "Achieve desired creative goals"
+    ]
+  },
+  "phases": [
+    {
+      "phase_name": "Ideation",
+      "operations": [
+        {
+          "op": "brainstorm_concepts",
+          "parameters": {}
+        },
+        {
+          "op": "explore_themes",
+          "parameters": {}
+        }
+      ],
+      "parallel_sandboxes": true,
+      "entropy": 0.4
+    },
+    {
+      "phase_name": "Development",
+      "operations": [
+        {
+          "op": "expand_ideas",
+          "parameters": {}
+        },
+        {
+          "op": "create_variations",
+          "parameters": {}
+        }
+      ],
+      "parallel_sandboxes": true,
+      "entropy": 0.5
+    },
+    {
+      "phase_name": "Refinement",
+      "operations": [
+        {
+          "op": "evaluate_output",
+          "parameters": {}
+        },
+        {
+          "op": "iterate_improvements",
+          "parameters": {}
+        }
+      ],
+      "parallel_sandboxes": false,
+      "entropy": 0.3
+    },
+    {
+      "phase_name": "Finalization",
+      "operations": [
+        {
+          "op": "polish_content",
+          "parameters": {}
+        },
+        {
+          "op": "validate_quality",
+          "parameters": {}
+        }
+      ],
+      "parallel_sandboxes": false,
+      "entropy": 0.2
+    }
+  ],
+  "metadata": {
+    "created": "2025-08-10T06:40:02.653Z",
+    "complexity_level": "complex",
+    "risk_tolerance": "balanced",
+    "generator": "X-Logic Schema Builder v1.0"
+  }
+}

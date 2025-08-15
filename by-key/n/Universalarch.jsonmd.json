@@ -1,0 +1,247 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:28.060Z",
+    "anchor_id": "675ca2f422cc130a3bb32a7c948617b0a1fca34ffe3e753afc30167855905424",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.673,
+    "contradictions_detected": 98,
+    "word_count": 15317
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 456
+      },
+      {
+        "theme": "model",
+        "frequency": 405
+      },
+      {
+        "theme": "config",
+        "frequency": 227
+      },
+      {
+        "theme": "str",
+        "frequency": 189
+      },
+      {
+        "theme": "name",
+        "frequency": 169
+      },
+      {
+        "theme": "models",
+        "frequency": 152
+      },
+      {
+        "theme": "decision",
+        "frequency": 137
+      },
+      {
+        "theme": "get",
+        "frequency": 135
+      },
+      {
+        "theme": "return",
+        "frequency": 133
+      },
+      {
+        "theme": "def",
+        "frequency": 132
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "adient(45deg, #00ff88, #00cc6a); color: #000; border: none; padding: 10px 20px; border-radius: 5px;"
+      },
+      {
+        "idx": 1,
+        "sample": "width: 100%; height: 100%; pointer-events: none; z-index: -1; } .particle { p"
+      },
+      {
+        "idx": 2,
+        "sample": "width: 100%; height: 100%; pointer-events: none; background: radial-gradient(circle at 20% 2"
+      },
+      {
+        "idx": 3,
+        "sample": "background-size: 200% 100%; color: #000; border: none; padding: 12px 20px; border-radius: 8px;"
+      },
+      {
+        "idx": 4,
+        "sample": "width: 100%; height: 100%; pointer-events: none; z-index: -1; } .fractal { po"
+      },
+      {
+        "idx": 5,
+        "sample": "\"\"\"Record a metric value for statistical analysis\"\"\" if metric_name not in self.metrics_history: self.metrics_history[metric_name] = []"
+      },
+      {
+        "idx": 6,
+        "sample": "\"\"Perform statistical validation on recorded metrics\"\"\" if metric_name not in self.metrics_history: return {\"status\": \"insufficient_data\","
+      },
+      {
+        "idx": 7,
+        "sample": "self.active = False self.health_check_task: Optional[asyncio.Task] = None async def start(self): \"\"\"Initialize and start the orch"
+      },
+      {
+        "idx": 8,
+        "sample": "logger.warning(f\"✗ {name} model unhealthy\") if not healthy_models: raise RuntimeError(\"No healthy models available"
+      },
+      {
+        "idx": 9,
+        "sample": "hy\") if not healthy_models: raise RuntimeError(\"No healthy models available\") self.active = True"
+      },
+      {
+        "idx": 10,
+        "sample": "\"\"\"Generate response using load balancing and failover\"\"\" if not self.active: raise RuntimeError(\"Orchestrator not active\")"
+      },
+      {
+        "idx": 11,
+        "sample": "r\"\"\" if not self.active: raise RuntimeError(\"Orchestrator not active\") start_time = datetime.now() #"
+      },
+      {
+        "idx": 12,
+        "sample": ".now() - start_time).total_seconds() return { \"response\": None, \"error\": \"All models failed after maximum retries\","
+      },
+      {
+        "idx": 13,
+        "sample": "odels = [m for m in self.models.values() if m.is_healthy] if not healthy_models: raise RuntimeError(\"No healthy models available"
+      },
+      {
+        "idx": 14,
+        "sample": "thy] if not healthy_models: raise RuntimeError(\"No healthy models available\") if self.config.load_balancing_s"
+      },
+      {
+        "idx": 15,
+        "sample": "\"scientific_method\"] for section in required_sections: if section not in artifact_data: raise ValueError(f\"Missing required section:"
+      },
+      {
+        "idx": 16,
+        "sample": "logger.error(f\"Failed to create {model_name}: {e}\") if not models: raise RuntimeError(\"No models could be initialized\")"
+      },
+      {
+        "idx": 17,
+        "sample": "eate {model_name}: {e}\") if not models: raise RuntimeError(\"No models could be initialized\") # Create orchestration configuration"
+      },
+      {
+        "idx": 18,
+        "sample": "secutive_failures = 0 self.circuit_breaker_until: Optional[datetime] = None self.last_success: Optional[datetime] = None @abstractm"
+      },
+      {
+        "idx": 19,
+        "sample": "til: Optional[datetime] = None self.last_success: Optional[datetime] = None @abstractmethod async def generate_response(self, prompt: s"
+      },
+      {
+        "idx": 20,
+        "sample": "if self.circuit_breaker_until: self.circuit_breaker_until = None logger.info(f\"Circuit breaker reset for {self.config.model_id}"
+      },
+      {
+        "idx": 21,
+        "sample": "await asyncio.sleep(0.1 + random.random() * 0.2) # Don't count health checks as real requests if not kwargs.get(\"is_healthch"
+      },
+      {
+        "idx": 22,
+        "sample": ".2) # Don't count health checks as real requests if not kwargs.get(\"is_healthcheck\"): self.request_count += 1"
+      },
+      {
+        "idx": 23,
+        "sample": "await asyncio.sleep(0.15 + random.random() * 0.25) if not kwargs.get(\"is_healthcheck\"): self.request_count += 1"
+      },
+      {
+        "idx": 24,
+        "sample": "await asyncio.sleep(0.3 + random.random() * 0.4) if not kwargs.get(\"is_healthcheck\"): self.request_count += 1"
+      },
+      {
+        "idx": 25,
+        "sample": "record_metric(self, metric_name: str, value: float, metadata: Dict[str, Any] = None): \"\"\"Record a metric value with timestamp and metadata\"\"\""
+      },
+      {
+        "idx": 26,
+        "sample": "\"\"\"Record a metric value with timestamp and metadata\"\"\" if metric_name not in self.metrics_history: self.metrics_history[metric_name] = []"
+      },
+      {
+        "idx": 27,
+        "sample": "return cache_entry[\"result\"] if metric_name not in self.metrics_history: return {\"status\": \"no_data\", \"sample_s"
+      },
+      {
+        "idx": 28,
+        "sample": "\"p99\": sorted(values)[int(sample_size * 0.99)] if sample_size >= 100 else None }, \"data_quality\": self._assess_data_qual"
+      },
+      {
+        "idx": 29,
+        "sample": "Any]: \"\"\"Assess the quality and reliability of the data\"\"\" if not values: return {\"quality\": \"no_data\"} # Coef"
+      },
+      {
+        "idx": 30,
+        "sample": "[] for name, model_stats in status[\"models\"].items(): if not model_stats[\"healthy\"]: alerts.append(f\"Model {name} is unh"
+      },
+      {
+        "idx": 31,
+        "sample": "commendations.append(f\"Investigate high error rate for {name}\") if not model_stats[\"healthy\"]: recommendations.append(f\"Restore {n"
+      },
+      {
+        "idx": 32,
+        "sample": "on_engine: PresentationEngine, artifact_hash: Optional[str] = None): self.models = models self.config = orchestration_config"
+      },
+      {
+        "idx": 33,
+        "sample": "self.active = False self.health_check_task: Optional[asyncio.Task] = None self._select_lock = asyncio.Lock() self.artifact_hash = a"
+      },
+      {
+        "idx": 34,
+        "sample": "logger.warning(f\"✗ {name} model unhealthy\") if not healthy_models: raise RuntimeError(\"No healthy models available"
+      },
+      {
+        "idx": 35,
+        "sample": "hy\") if not healthy_models: raise RuntimeError(\"No healthy models available\") self.active = True"
+      },
+      {
+        "idx": 36,
+        "sample": "ync def stop(self): \"\"\"Gracefully stop the orchestrator\"\"\" if not self.active: logger.info(\"Orchestrator already stopped\")"
+      },
+      {
+        "idx": 37,
+        "sample": ": \"\"\"Generate response with full orchestration pipeline\"\"\" if not self.active: raise RuntimeError(\"Orchestrator not active\")"
+      },
+      {
+        "idx": 38,
+        "sample": "e\"\"\" if not self.active: raise RuntimeError(\"Orchestrator not active\") # Concurrency control if self.active_re"
+      },
+      {
+        "idx": 39,
+        "sample": "elf.max_concurrent_requests: return { \"response\": None, \"error\": \"System at capacity - request rejected\","
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "split(r\"(?",
+      "?",
+      "compile(r\"(nav|menu|breadcrumb|sidebar|sidenav|drawer|tabs?",
+      "**Strategic Implications**: What does this mean for decision-making?"
+    ],
+    "summary": "self, model, config, str, name"
+  },
+  "sentiment_indicators": {
+    "positive": 25,
+    "negative": 11,
+    "uncertainty": 11
+  },
+  "temporal_markers": [
+    "will",
+    "was",
+    "2024",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "Universalarch.txt",
+    "relative_path": "Universalarch.txt",
+    "size_bytes": 182763,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.93
+  }
+}

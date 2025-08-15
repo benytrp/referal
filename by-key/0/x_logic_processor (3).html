@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Logic Schema Processor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr 400px;
+            gap: 20px;
+            height: calc(100vh - 200px);
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            overflow-y: auto;
+        }
+
+        .panel h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .control-section {
+            margin-bottom: 25px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .control-section h3 {
+            color: #2a5298;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+        .execution-log {
+            background: #000;
+            color: #00ff00;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            height: 300px;
+            overflow-y: auto;
+            margin: 15px 0;
+        }
+
+        .cycle-entry {
+            margin-bottom: 8px;
+            padding: 8px;
+            border-left: 3px solid #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .cycle-entry.contested {
+            border-left-color: #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+        }
+
+        .entropy-meter {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 20px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .entropy-fill {
+            height: 100%;
+            transition: all 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .entropy-low { background: linear-gradient(90deg, #28a745, #20c997); }
+        .entropy-medium { background: linear-gradient(90deg, #ffc107, #ff8c00); }
+        .entropy-high { background: linear-gradient(90deg, #dc3545, #c82333); }
+
+        .schema-editor {
+            height: 400px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            resize: vertical;
+        }
+
+        .phase-builder {
+            border: 2px dashed #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f8f9fa;
+        }
+
+        .operation-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+
+        .operation-item input {
+            flex: 1;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .status-ready { background: #6c757d; }
+        .status-running { background: #ffc107; animation: pulse 1s infinite; }
+        .status-success { background: #28a745; }
+        .status-error { background: #dc3545; }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        .template-gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .template-card {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .template-card:hover {
+            border-color: #2a5298;
+            background: #f8f9fa;
+        }
+
+        .template-card h4 {
+            margin-bottom: 8px;
+            color: #1e3c72;
+        }
+
+        .template-card p {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .template-meta {
+            font-size: 0.8rem;
+            color: #adb5bd;
+        }
+
+        .export-options {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .hash-display {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            word-break: break-all;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 X-Logic Schema Processor</h1>
+            <p>Execute • Generate • Build • Analyze cryptographically verified reasoning schemas</p>
+        </div>
+
+        <div class="main-grid">
+            <!-- Left Panel: Control & Generation -->
+            <div class="panel">
+                <h2>⚡ Control Center</h2>
+
+                <div class="control-section">
+                    <h3>Schema Executor</h3>
+                    <textarea id="schema-input" class="schema-editor" placeholder="Paste X-Logic schema JSON here..."></textarea>
+                    <button class="btn" onclick="executeSchema()">Execute Schema</button>
+                    <button class="btn btn-secondary" onclick="loadSampleSchema()">Load Sample</button>
+                </div>
+
+                <div class="control-section">
+                    <h3>Quick Generator</h3>
+                    <div class="form-group">
+                        <label>Goal</label>
+                        <input type="text" id="quick-goal" placeholder="Analyze market trends for Q4 strategy">
+                    </div>
+                    <div class="form-group">
+                        <label>Domain</label>
+                        <select id="quick-domain">
+                            <option value="analysis">Data Analysis</option>
+                            <option value="research">Research</option>
+                            <option value="security">Security Audit</option>
+                            <option value="development">Software Development</option>
+                            <option value="strategy">Strategic Planning</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Complexity</label>
+                        <select id="quick-complexity">
+                            <option value="simple">Simple (3-4 phases)</option>
+                            <option value="moderate">Moderate (4-6 phases)</option>
+                            <option value="complex">Complex (6-8 phases)</option>
+                            <option value="adaptive">Adaptive</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-success" onclick="generateQuickSchema()">Generate Schema</button>
+                </div>
+
+                <div class="control-section">
+                    <h3>Template Library</h3>
+                    <div class="template-gallery" id="template-gallery">
+                        <!-- Templates will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Panel: Execution Monitor -->
+            <div class="panel">
+                <h2>🔄 Execution Monitor</h2>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="cycle-count">0</div>
+                        <div class="metric-label">Cycles</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="current-phase">Ready</div>
+                        <div class="metric-label">Phase</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="entropy-level">0.00</div>
+                        <div class="metric-label">Entropy</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="contested-count">0</div>
+                        <div class="metric-label">Contested</div>
+                    </div>
+                </div>
+
+                <div class="entropy-meter">
+                    <div class="entropy-fill entropy-low" id="entropy-meter" style="width: 0%"></div>
+                </div>
+
+                <div class="execution-log" id="execution-log">
+                    X-Logic Processor ready. Load or generate a schema to begin execution.
+                </div>
+
+                <div class="export-options">
+                    <button class="btn btn-secondary" onclick="exportResults('json')">Export JSON</button>
+                    <button class="btn btn-secondary" onclick="exportResults('csv')">Export CSV</button>
+                    <button class="btn btn-secondary" onclick="exportResults('report')">Generate Report</button>
+                </div>
+
+                <div class="hash-display" id="execution-hash">
+                    Execution Hash: Ready for schema
+                </div>
+            </div>
+
+            <!-- Right Panel: Schema Builder -->
+            <div class="panel">
+                <h2>🏗️ Schema Builder</h2>
+
+                <div class="control-section">
+                    <h3>Schema Configuration</h3>
+                    <div class="form-group">
+                        <label>Goal</label>
+                        <textarea id="builder-goal" rows="2" placeholder="Define the primary objective..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Constraints</label>
+                        <textarea id="builder-constraints" rows="3" placeholder="One constraint per line...">Maintain entropy below 0.7
+Complete within 25 cycles
+Validate all sources</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Success Criteria</label>
+                        <textarea id="builder-criteria" rows="3" placeholder="One criterion per line...">Generate comprehensive analysis
+Identify key patterns
+Provide actionable recommendations</textarea>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <h3>Phase Builder</h3>
+                    <div id="phases-container">
+                        <!-- Phases will be built here -->
+                    </div>
+                    <button class="btn btn-secondary" onclick="addPhase()">Add Phase</button>
+                </div>
+
+                <div class="control-section">
+                    <h3>Advanced Settings</h3>
+                    <div class="form-group">
+                        <label>Risk Tolerance</label>
+                        <select id="risk-tolerance">
+                            <option value="conservative">Conservative</option>
+                            <option value="balanced" selected>Balanced</option>
+                            <option value="aggressive">Aggressive</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="enable-sandboxes" checked> Enable Parallel Sandboxes
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-success" onclick="buildSchema()">Build Schema</button>
+                <button class="btn btn-secondary" onclick="previewSchema()">Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let currentExecution = null;
+        let executionHistory = [];
+        let schemaTemplates = [];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTemplateLibrary();
+            loadSampleSchema();
+        });
+
+        // Schema Execution Engine
+        class XLogicExecutor {
+            constructor(schema) {
+                this.schema = schema;
+                this.currentCycle = 0;
+                this.currentPhaseIndex = 0;
+                this.currentOperationIndex = 0;
+                this.executionLog = [];
+                this.isRunning = false;
+                this.entropy = 0;
+                this.contestedCount = 0;
+            }
+
+            async execute() {
+                this.isRunning = true;
+                this.updateUI();
+                
+                log("🚀 Starting X-Logic schema execution");
+                log(`Goal: ${this.schema.contract.goal}`);
+                
+                for (let phaseIndex = 0; phaseIndex < this.schema.phases.length; phaseIndex++) {
+                    this.currentPhaseIndex = phaseIndex;
+                    const phase = this.schema.phases[phaseIndex];
+                    
+                    log(`\n📋 Phase: ${phase.phase_name} (Entropy: ${phase.entropy})`);
+                    
+                    if (phase.parallel_sandboxes) {
+                        await this.executePhaseParallel(phase);
+                    } else {
+                        await this.executePhaseSequential(phase);
+                    }
+                }
+                
+                this.finalize();
+            }
+
+            async executePhaseSequential(phase) {
+                for (let opIndex = 0; opIndex < phase.operations.length; opIndex++) {
+                    this.currentOperationIndex = opIndex;
+                    await this.executeCycle(phase, phase.operations[opIndex]);
+                }
+            }
+
+            async executePhaseParallel(phase) {
+                log("   🔀 Executing operations in parallel sandboxes");
+                
+                // Simulate parallel execution with slight delays
+                const promises = phase.operations.map(async (operation, index) => {
+                    this.currentOperationIndex = index;
+                    await new Promise(resolve => setTimeout(resolve, Math.random() * 500));
+                    return this.executeCycle(phase, operation);
+                });
+                
+                await Promise.all(promises);
+            }
+
+            async executeCycle(phase, operation) {
+                this.currentCycle++;
+                
+                // Calculate entropy for this cycle
+                const cycleEntropy = this.calculateCycleEntropy(phase, operation);
+                this.entropy = (this.entropy + cycleEntropy) / 2; // Running average
+                
+                // Determine if cycle is contested
+                const contested = this.isContested(cycleEntropy, operation);
+                if (contested) this.contestedCount++;
+                
+                // Generate cycle output
+                const output = this.generateOperationOutput(operation);
+                
+                // Create cycle entry
+                const cycleEntry = {
+                    cycle: this.currentCycle,
+                    phase: phase.phase_name,
+                    op: operation.op,
+                    output: output,
+                    timestamp: new Date().toISOString(),
+                    entropy: cycleEntropy,
+                    contested: contested,
+                    hash_of_entry: this.generateHash({
+                        cycle: this.currentCycle,
+                        op: operation.op,
+                        output: output,
+                        entropy: cycleEntropy
+                    })
+                };
+                
+                this.executionLog.push(cycleEntry);
+                
+                // Log to UI
+                const contestedFlag = contested ? " ⚠️ CONTESTED" : "";
+                log(`   Cycle ${this.currentCycle}: ${operation.op}${contestedFlag}`);
+                log(`     Output: ${output}`);
+                log(`     Entropy: ${cycleEntropy.toFixed(3)} | Hash: ${cycleEntry.hash_of_entry.slice(0, 16)}...`);
+                
+                this.updateUI();
+                
+                // Simulate processing delay
+                await new Promise(resolve => setTimeout(resolve, 200));
+                
+                return cycleEntry;
+            }
+
+            calculateCycleEntropy(phase, operation) {
+                // Base entropy from phase
+                let entropy = phase.entropy || 0.3;
+                
+                // Add operation-specific entropy
+                const opComplexity = {
+                    'search': 0.2, 'gather': 0.2, 'validate': 0.1,
+                    'analyze': 0.4, 'process': 0.4, 'identify': 0.3,
+                    'correlate': 0.5, 'synthesize': 0.4, 'generate': 0.3,
+                    'compile': 0.2, 'finalize': 0.1, 'review': 0.2
+                };
+                
+                const baseComplexity = Object.keys(opComplexity).find(key => 
+                    operation.op.includes(key)) || 'default';
+                
+                entropy += opComplexity[baseComplexity] || 0.3;
+                
+                // Add randomness
+                entropy += (Math.random() - 0.5) * 0.2;
+                
+                return Math.max(0.01, Math.min(0.99, entropy));
+            }
+
+            isContested(entropy, operation) {
+                // Higher entropy operations more likely to be contested
+                const contestProbability = entropy * 0.3;
+                return Math.random() < contestProbability;
+            }
+
+            generateOperationOutput(operation) {
+                const outputs = {
+                    'search_sources': 'Located 12 relevant academic papers and 8 industry reports',
+                    'gather_data': 'Collected 2,847 data points from primary sources',
+                    'validate_sources': 'Verified authenticity and credibility of all sources',
+                    'process_data': 'Applied statistical analysis and cleaned dataset',
+                    'analyze_data': 'Identified 3 significant trends and 7 correlation patterns',
+                    'identify_patterns': 'Discovered recurring themes across 85% of samples',
+                    'correlate_findings': 'Established causal relationships between key variables',
+                    'generate_insights': 'Synthesized 15 actionable insights from analysis',
+                    'compile_report': 'Generated comprehensive 24-page analysis report',
+                    'validate_conclusions': 'Peer-reviewed findings against established benchmarks'
+                };
+                
+                return outputs[operation.op] || `Executed ${operation.op} operation successfully`;
+            }
+
+            generateHash(data) {
+                const jsonString = JSON.stringify(data);
+                return CryptoJS.SHA256(jsonString).toString();
+            }
+
+            updateUI() {
+                document.getElementById('cycle-count').textContent = this.currentCycle;
+                document.getElementById('current-phase').textContent = 
+                    this.schema.phases[this.currentPhaseIndex]?.phase_name || 'Complete';
+                document.getElementById('entropy-level').textContent = this.entropy.toFixed(3);
+                document.getElementById('contested-count').textContent = this.contestedCount;
+                
+                // Update entropy meter
+                const entropyMeter = document.getElementById('entropy-meter');
+                const entropyPercent = this.entropy * 100;
+                entropyMeter.style.width = `${entropyPercent}%`;
+                
+                if (this.entropy < 0.3) {
+                    entropyMeter.className = 'entropy-fill entropy-low';
+                } else if (this.entropy < 0.7) {
+                    entropyMeter.className = 'entropy-fill entropy-medium';
+                } else {
+                    entropyMeter.className = 'entropy-fill entropy-high';
+                }
+            }
+
+            finalize() {
+                this.isRunning = false;
+                const executionHash = this.generateHash(this.executionLog);
+                
+                log(`\n✅ Execution complete!`);
+                log(`Total cycles: ${this.currentCycle}`);
+                log(`Average entropy: ${this.entropy.toFixed(3)}`);
+                log(`Contested cycles: ${this.contestedCount}`);
+                log(`Final hash: ${executionHash}`);
+                
+                document.getElementById('execution-hash').textContent = 
+                    `Execution Hash: ${executionHash}`;
+                
+                // Store in history
+                executionHistory.push({
+                    schema: this.schema,
+                    log: this.executionLog,
+                    metrics: {
+                        cycles: this.currentCycle,
+                        entropy: this.entropy,
+                        contested: this.contestedCount,
+                        hash: executionHash
+                    },
+                    timestamp: new Date().toISOString()
+                });
+            }
+        }
+
+        // Schema Generator
+        class XLogicGenerator {
+            static generateSchema(goal, domain, complexity) {
+                const phases = this.generatePhases(domain, complexity);
+                const constraints = this.generateConstraints(domain);
+                const successCriteria = this.generateSuccessCriteria(domain);
+                
+                return {
+                    trigger: "<x>",
+                    contract: {
+                        goal: goal,
+                        constraints: constraints,
+                        success_criteria: successCriteria
+                    },
+                    phases: phases,
+                    metadata: {
+                        created: new Date().toISOString(),
+                        complexity_level: complexity,
+                        risk_tolerance: "balanced",
+                        generator: "X-Logic Schema Builder v1.0"
+                    }
+                };
+            }
+
+            static generatePhases(domain, complexity) {
+                const phaseTemplates = {
+                    analysis: [
+                        { name: "Data Collection", ops: ["gather_data", "validate_sources"], entropy: 0.2 },
+                        { name: "Analysis", ops: ["process_data", "identify_patterns"], entropy: 0.4 },
+                        { name: "Synthesis", ops: ["correlate_findings", "generate_insights"], entropy: 0.3 },
+                        { name: "Reporting", ops: ["compile_report", "validate_conclusions"], entropy: 0.1 }
+                    ],
+                    research: [
+                        { name: "Literature Review", ops: ["search_sources", "evaluate_relevance"], entropy: 0.3 },
+                        { name: "Data Collection", ops: ["gather_primary_data", "validate_information"], entropy: 0.4 },
+                        { name: "Analysis", ops: ["analyze_data", "identify_gaps"], entropy: 0.5 },
+                        { name: "Documentation", ops: ["write_findings", "peer_review"], entropy: 0.2 }
+                    ],
+                    security: [
+                        { name: "Reconnaissance", ops: ["scan_systems", "identify_assets"], entropy: 0.3 },
+                        { name: "Vulnerability Assessment", ops: ["test_vulnerabilities", "classify_risks"], entropy: 0.6 },
+                        { name: "Analysis", ops: ["correlate_findings", "assess_impact"], entropy: 0.4 },
+                        { name: "Reporting", ops: ["document_findings", "recommend_mitigations"], entropy: 0.2 }
+                    ],
+                    development: [
+                        { name: "Requirements", ops: ["gather_requirements", "define_scope"], entropy: 0.2 },
+                        { name: "Design", ops: ["architect_solution", "design_interfaces"], entropy: 0.4 },
+                        { name: "Implementation", ops: ["code_components", "integrate_systems"], entropy: 0.5 },
+                        { name: "Testing", ops: ["unit_testing", "integration_testing"], entropy: 0.3 },
+                        { name: "Deployment", ops: ["deploy_system", "monitor_performance"], entropy: 0.2 }
+                    ]
+                };
+
+                let basePhases = phaseTemplates[domain] || phaseTemplates.analysis;
+                
+                // Adjust complexity
+                if (complexity === 'simple' && basePhases.length > 4) {
+                    basePhases = basePhases.slice(0, 4);
+                } else if (complexity === 'complex') {
+                    // Add additional phases
+                    basePhases.push({
+                        name: "Validation", 
+                        ops: ["cross_validate", "peer_review"], 
+                        entropy: 0.3
+                    });
+                }
+
+                return basePhases.map(phase => ({
+                    phase_name: phase.name,
+                    operations: phase.ops.map(op => ({ op, parameters: {} })),
+                    parallel_sandboxes: phase.entropy > 0.3,
+                    entropy: phase.entropy
+                }));
+            }
+
+            static generateConstraints(domain) {
+                const baseConstraints = [
+                    "Maintain entropy below 0.7",
+                    "Complete within 25 cycles"
+                ];
+
+                const domainConstraints = {
+                    analysis: ["Validate all data sources", "Maintain statistical significance"],
+                    research: ["Verify all sources", "Maintain academic rigor"],
+                    security: ["Do not disrupt production systems", "Follow ethical guidelines"],
+                    development: ["Follow coding standards", "Maintain backward compatibility"]
+                };
+
+                return [...baseConstraints, ...(domainConstraints[domain] || [])];
+            }
+
+            static generateSuccessCriteria(domain) {
+                const baseCriteria = [
+                    "Complete all phases successfully",
+                    "Maintain quality standards"
+                ];
+
+                const domainCriteria = {
+                    analysis: ["Generate actionable insights", "Provide data-driven recommendations"],
+                    research: ["Original analysis and insights", "Peer-reviewable documentation"],
+                    security: ["Identify critical vulnerabilities", "Provide remediation roadmap"],
+                    development: ["Deliver working software", "Pass all test suites"]
+                };
+
+                return [...baseCriteria, ...(domainCriteria[domain] || [])];
+            }
+        }
+
+        // UI Functions
+        function log(message) {
+            const logElement = document.getElementById('execution-log');
+            logElement.innerHTML += message + '\n';
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+
+        function executeSchema() {
+            const schemaText = document.getElementById('schema-input').value.trim();
+            if (!schemaText) {
+                alert('Please paste a schema first');
+                return;
+            }
+
+            try {
+                const schema = JSON.parse(schemaText);
+                document.getElementById('execution-log').innerHTML = '';
+                
+                currentExecution = new XLogicExecutor(schema);
+                currentExecution.execute();
+            } catch (error) {
+                log(`❌ Error parsing schema: ${error.message}`);
+            }
+        }
+
+        function generateQuickSchema() {
+            const goal = document.getElementById('quick-goal').value;
+            const domain = document.getElementById('quick-domain').value;
+            const complexity = document.getElementById('quick-complexity').value;
+
+            if (!goal) {
+                alert('Please enter a goal');
+                return;
+            }
+
+            const schema = XLogicGenerator.generateSchema(goal, domain, complexity);
+            document.getElementById('schema-input').value = JSON.stringify(schema, null, 2);
+            
+            log(`Generated ${complexity} ${domain} schema for: ${goal}`);
+        }
+
+        function loadSampleSchema() {
+            const sampleSchema = {
+                "trigger": "<x>",
+                "contract": {
+                    "goal": "Perform systematic data analysis and generate actionable insights",
+                    "constraints": [
+                        "Maintain entropy below 0.7",
+                        "Validate all data sources",
+                        "Complete within 25 cycles"
+                    ],
+                    "success_criteria": [
+                        "Generate comprehensive analysis report",
+                        "Identify key patterns and trends",
+                        "Provide actionable recommendations"
+                    ]
+                },
+                "phases": [
+                    {
+                        "phase_name": "Data Collection",
+                        "operations": [
+                            { "op": "gather_data", "parameters": {} },
+                            { "op": "validate_sources", "parameters": {} }
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.2
+                    },
+                    {
+                        "phase_name": "Analysis",
+                        "operations": [
+                            { "op": "process_data", "parameters": {} },
+                            { "op": "identify_patterns", "parameters": {} }
+                        ],
+                        "parallel_sandboxes": true,
+                        "entropy": 0.4
+                    },
+                    {
+                        "phase_name": "Synthesis",
+                        "operations": [
+                            { "op": "correlate_findings", "parameters": {} },
+                            { "op": "generate_insights", "parameters": {} }
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.3
+                    },
+                    {
+                        "phase_name": "Reporting",
+                        "operations": [
+                            { "op": "compile_report", "parameters": {} },
+                            { "op": "validate_conclusions", "parameters": {} }
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.1
+                    }
+                ],
+                "metadata": {
+                    "created": new Date().toISOString(),
+                    "complexity_level": "adaptive",
+                    "risk_tolerance": "balanced",
+                    "generator": "X-Logic Schema Builder v1.0"
+                }
+            };
+
+            document.getElementById('schema-input').value = JSON.stringify(sampleSchema, null, 2);
+        }
+
+        function loadTemplateLibrary() {
+            const templates = [
+                {
+                    name: "Data Analysis",
+                    description: "Systematic data processing and insight generation",
+                    domain: "analysis",
+                    complexity: "moderate",
+                    phases: 4
+                },
+                {
+                    name: "Security Audit",
+                    description: "Comprehensive security assessment framework",
+                    domain: "security", 
+                    complexity: "complex",
+                    phases: 5
+                },
+                {
+                    name: "Research Study",
+                    description: "Academic research methodology",
+                    domain: "research",
+                    complexity: "complex",
+                    phases: 6
+                },
+                {
+                    name: "Software Development",
+                    description: "Full development lifecycle",
+                    domain: "development",
+                    complexity: "complex",
+                    phases: 5
+                },
+                {
+                    name: "Strategic Planning",
+                    description: "Business strategy development",
+                    domain: "strategy",
+                    complexity: "moderate",
+                    phases: 4
+                }
+            ];
+
+            const gallery = document.getElementById('template-gallery');
+            gallery.innerHTML = templates.map(template => `
+                <div class="template-card" onclick="loadTemplate('${template.domain}', '${template.complexity}')">
+                    <h4>${template.name}</h4>
+                    <p>${template.description}</p>
+                    <div class="template-meta">${template.phases} phases • ${template.complexity}</div>
+                </div>
+            `).join('');
+        }
+
+        function loadTemplate(domain, complexity) {
+            const goal = `Execute ${domain} workflow using ${complexity} methodology`;
+            document.getElementById('quick-goal').value = goal;
+            document.getElementById('quick-domain').value = domain;
+            document.getElementById('quick-complexity').value = complexity;
+            generateQuickSchema();
+        }
+
+        function exportResults(format) {
+            if (!currentExecution) {
+                alert('No execution to export');
+                return;
+            }
+
+            let content, filename;
+            
+            switch(format) {
+                case 'json':
+                    content = JSON.stringify({
+                        schema: currentExecution.schema,
+                        execution_log: currentExecution.executionLog,
+                        metrics: {
+                            cycles: currentExecution.currentCycle,
+                            entropy: currentExecution.entropy,
+                            contested: currentExecution.contestedCount
+                        }
+                    }, null, 2);
+                    filename = 'x-logic-execution.json';
+                    break;
+                    
+                case 'csv':
+                    const headers = ['cycle', 'phase', 'operation', 'entropy', 'contested', 'timestamp'];
+                    const rows = currentExecution.executionLog.map(entry => [
+                        entry.cycle, entry.phase, entry.op, entry.entropy, 
+                        entry.contested, entry.timestamp
+                    ]);
+                    content = [headers, ...rows].map(row => row.join(',')).join('\n');
+                    filename = 'x-logic-execution.csv';
+                    break;
+                    
+                case 'report':
+                    content = generateExecutionReport(currentExecution);
+                    filename = 'x-logic-report.md';
+                    break;
+            }
+
+            downloadFile(filename, content);
+        }
+
+        function generateExecutionReport(execution) {
+            return `# X-Logic Execution Report
+
+## Schema Overview
+**Goal:** ${execution.schema.contract.goal}
+**Generated:** ${execution.schema.metadata.created}
+**Complexity:** ${execution.schema.metadata.complexity_level}
+
+## Execution Metrics
+- **Total Cycles:** ${execution.currentCycle}
+- **Average Entropy:** ${execution.entropy.toFixed(3)}
+- **Contested Cycles:** ${execution.contestedCount}
+- **Success Rate:** ${((execution.currentCycle - execution.contestedCount) / execution.currentCycle * 100).toFixed(1)}%
+
+## Phase Summary
+${execution.schema.phases.map((phase, index) => `
+### ${phase.phase_name}
+- **Operations:** ${phase.operations.length}
+- **Parallel Sandboxes:** ${phase.parallel_sandboxes ? 'Yes' : 'No'}  
+- **Target Entropy:** ${phase.entropy}
+`).join('')}
+
+## Detailed Log
+${execution.executionLog.map(entry => `
+**Cycle ${entry.cycle}** | ${entry.phase} | ${entry.op}
+- Output: ${entry.output}
+- Entropy: ${entry.entropy.toFixed(3)}
+- Contested: ${entry.contested ? 'Yes' : 'No'}
+- Hash: ${entry.hash_of_entry}
+`).join('')}
+
+---
+Generated by X-Logic Schema Processor v1.0
+`;
+        }
+
+        function downloadFile(filename, content) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        // Schema Builder Functions
+        function addPhase() {
+            const container = document.getElementById('phases-container');
+            const phaseCount = container.children.length + 1;
+            
+            const phaseDiv = document.createElement('div');
+            phaseDiv.className = 'phase-builder';
+            phaseDiv.innerHTML = `
+                <div class="form-group">
+                    <label>Phase ${phaseCount} Name</label>
+                    <input type="text" placeholder="e.g., Data Collection" value="Phase ${phaseCount}">
+                </div>
+                <div class="form-group">
+                    <label>Operations</label>
+                    <div class="operations-container">
+                        <div class="operation-item">
+                            <input type="text" placeholder="Operation name" value="operation_${phaseCount}">
+                            <button class="btn btn-danger btn-small" onclick="this.parentElement.remove()">Remove</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary btn-small" onclick="addOperation(this.parentElement)">Add Operation</button>
+                </div>
+                <div class="form-group">
+                    <label>Entropy Level</label>
+                    <input type="number" min="0" max="1" step="0.1" value="0.3">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" checked> Parallel Sandboxes
+                    </label>
+                </div>
+                <button class="btn btn-danger btn-small" onclick="this.parentElement.remove()">Remove Phase</button>
+            `;
+            
+            container.appendChild(phaseDiv);
+        }
+
+        function addOperation(operationsGroup) {
+            const container = operationsGroup.querySelector('.operations-container');
+            const operationDiv = document.createElement('div');
+            operationDiv.className = 'operation-item';
+            operationDiv.innerHTML = `
+                <input type="text" placeholder="Operation name">
+                <button class="btn btn-danger btn-small" onclick="this.parentElement.remove()">Remove</button>
+            `;
+            container.appendChild(operationDiv);
+        }
+
+        function buildSchema() {
+            const goal = document.getElementById('builder-goal').value;
+            const constraints = document.getElementById('builder-constraints').value.split('\n').filter(c => c.trim());
+            const criteria = document.getElementById('builder-criteria').value.split('\n').filter(c => c.trim());
+            const riskTolerance = document.getElementById('risk-tolerance').value;
+
+            if (!goal) {
+                alert('Please enter a goal');
+                return;
+            }
+
+            // Collect phases
+            const phases = Array.from(document.querySelectorAll('.phase-builder')).map(phaseDiv => {
+                const phaseName = phaseDiv.querySelector('input[placeholder*="Phase"]').value;
+                const operations = Array.from(phaseDiv.querySelectorAll('.operation-item input')).map(input => ({
+                    op: input.value || 'unnamed_operation',
+                    parameters: {}
+                }));
+                const entropy = parseFloat(phaseDiv.querySelector('input[type="number"]').value) || 0.3;
+                const parallelSandboxes = phaseDiv.querySelector('input[type="checkbox"]').checked;
+
+                return {
+                    phase_name: phaseName,
+                    operations: operations,
+                    parallel_sandboxes: parallelSandboxes,
+                    entropy: entropy
+                };
+            });
+
+            const schema = {
+                trigger: "<x>",
+                contract: {
+                    goal: goal,
+                    constraints: constraints,
+                    success_criteria: criteria
+                },
+                phases: phases,
+                metadata: {
+                    created: new Date().toISOString(),
+                    complexity_level: "custom",
+                    risk_tolerance: riskTolerance,
+                    generator: "X-Logic Schema Builder v1.0"
+                }
+            };
+
+            document.getElementById('schema-input').value = JSON.stringify(schema, null, 2);
+            log(`Built custom schema with ${phases.length} phases`);
+        }
+
+        function previewSchema() {
+            buildSchema();
+            const schema = JSON.parse(document.getElementById('schema-input').value);
+            
+            alert(`Schema Preview:
+Goal: ${schema.contract.goal}
+Phases: ${schema.phases.length}
+Total Operations: ${schema.phases.reduce((sum, phase) => sum + phase.operations.length, 0)}
+Risk Tolerance: ${schema.metadata.risk_tolerance}`);
+        }
+
+        // Initialize with a sample phase
+        addPhase();
+    </script>
+</body>
+</html>

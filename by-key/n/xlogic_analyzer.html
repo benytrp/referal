@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Logic Execution Analyzer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .panel {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            padding-bottom: 0.5rem;
+        }
+
+        .upload-zone {
+            border: 2px dashed rgba(100, 116, 139, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .upload-zone:hover {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        .upload-zone.active {
+            border-color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            color: #e2e8f0;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.85rem;
+            resize: vertical;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-value.success { color: #10b981; }
+        .metric-value.warning { color: #f59e0b; }
+        .metric-value.danger { color: #ef4444; }
+        .metric-value.info { color: #3b82f6; }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 1rem 0;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .analysis-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .analysis-card h4 {
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .analysis-card .value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .analysis-card .description {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .ledger-timeline {
+            max-height: 300px;
+            overflow-y: auto;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .ledger-entry {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            background: rgba(100, 116, 139, 0.1);
+            font-size: 0.8rem;
+        }
+
+        .ledger-entry .cycle {
+            background: #3b82f6;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-right: 1rem;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .ledger-entry .phase {
+            color: #10b981;
+            font-weight: 600;
+            margin-right: 1rem;
+            min-width: 80px;
+        }
+
+        .ledger-entry .operation {
+            color: #f59e0b;
+            margin-right: 1rem;
+            min-width: 120px;
+        }
+
+        .ledger-entry .entropy {
+            color: #ef4444;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        .insights-panel {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .insights-panel h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .insight-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .insight-icon {
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .constraint-violation {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .constraint-violation h4 {
+            color: #ef4444;
+            margin-bottom: 0.5rem;
+        }
+
+        .sample-data-btn {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+            margin-bottom: 1rem;
+        }
+
+        .copy-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+            margin-left: 0.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .metrics-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>X-Logic Execution Analyzer</h1>
+            <p style="color: #94a3b8; font-size: 1.1rem;">Advanced analysis and visualization of autonomous consciousness engine execution data</p>
+        </div>
+
+        <!-- Left Panel: Data Input & Basic Analysis -->
+        <div class="panel">
+            <h2 class="section-title">📊 Execution Data Analysis</h2>
+            
+            <button class="btn sample-data-btn" onclick="loadSampleData()">Load Sample Execution Data</button>
+            
+            <div class="upload-zone" onclick="document.getElementById('fileInput').click()" 
+                 ondrop="handleFileDrop(event)" ondragover="event.preventDefault()" ondragenter="handleDragEnter(event)" ondragleave="handleDragLeave(event)">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">📁</div>
+                <div>Drop execution JSON file here or click to browse</div>
+                <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.5rem;">Supports x-logic-execution.json files</div>
+            </div>
+            <input type="file" id="fileInput" accept=".json" style="display: none;" onchange="handleFileSelect(event)">
+
+            <textarea id="jsonInput" placeholder="Or paste execution JSON data here..."></textarea>
+            <button class="btn" onclick="analyzeExecution()">Analyze Execution</button>
+
+            <div id="basicMetrics" style="display: none;">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="statusValue">-</div>
+                        <div class="metric-label">Status</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="cyclesValue">-</div>
+                        <div class="metric-label">Cycles</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="entropyValue">-</div>
+                        <div class="metric-label">Final Entropy</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="successValue">-</div>
+                        <div class="metric-label">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="constraintAnalysis" style="display: none;">
+                <h3 style="color: #f1f5f9; margin: 1rem 0 0.5rem 0;">Constraint Analysis</h3>
+                <div id="constraintResults"></div>
+            </div>
+
+            <div id="insights" style="display: none;">
+                <div class="insights-panel">
+                    <h3>🧠 AI Insights</h3>
+                    <div id="insightsList"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Advanced Visualizations -->
+        <div class="panel">
+            <h2 class="section-title">📈 Advanced Visualizations</h2>
+            
+            <div id="visualizations" style="display: none;">
+                <div class="chart-container">
+                    <canvas id="entropyChart"></canvas>
+                </div>
+
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h4>Entropy Escalation</h4>
+                        <div class="value" id="entropyEscalation">-</div>
+                        <div class="description">Rate of entropy increase</div>
+                    </div>
+                    <div class="analysis-card">
+                        <h4>Sandbox Efficiency</h4>
+                        <div class="value" id="sandboxEfficiency">-</div>
+                        <div class="description">Sandboxes per cycle</div>
+                    </div>
+                    <div class="analysis-card">
+                        <h4>Phase Distribution</h4>
+                        <div class="value" id="phaseDistribution">-</div>
+                        <div class="description">Most active phase</div>
+                    </div>
+                    <div class="analysis-card">
+                        <h4>Operational Tempo</h4>
+                        <div class="value" id="operationalTempo">-</div>
+                        <div class="description">Ops per second</div>
+                    </div>
+                </div>
+
+                <h3 style="color: #f1f5f9; margin: 1rem 0 0.5rem 0;">🕐 Ledger Timeline</h3>
+                <div class="ledger-timeline" id="ledgerTimeline"></div>
+
+                <div style="margin-top: 1rem;">
+                    <button class="btn copy-btn" onclick="copyAnalysisReport()">Copy Analysis Report</button>
+                    <button class="btn copy-btn" onclick="exportVisualizationData()">Export Visualization Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentExecutionData = null;
+        let entropyChart = null;
+
+        // Sample data from the provided execution
+        const sampleExecutionData = {
+            "verification": {
+                "status": "COMPLETE",
+                "seal": "x-logic-seal:29996f60",
+                "execution_timestamp": "2025-08-10T00:47:57.078Z",
+                "metrics": {
+                    "total_cycles": 11,
+                    "success_rate": 1,
+                    "final_entropy": 0.978,
+                    "ledger_entries": 111,
+                    "parallel_sandboxes": 14
+                },
+                "contract_fulfillment": {
+                    "goal_achieved": false,
+                    "constraints_respected": false,
+                    "success_criteria_met": true,
+                    "ledger_integrity": true
+                }
+            },
+            "thought_ledger": [
+                {"cycle": 0, "phase": "SYSTEM", "op": "initialization", "output": "X-Logic execution initiated with trigger: <x>", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:25.368Z", "entropy": 0},
+                {"cycle": 0, "phase": "CONTRACT", "op": "loaded", "output": "Goal: Perform basic analytical processing and synthesis", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:25.369Z", "entropy": 0},
+                {"cycle": 0, "phase": "ANALYZE", "op": "phase_start", "output": "Beginning Analyze", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:25.874Z", "entropy": 0},
+                {"cycle": 0, "phase": "ANALYZE", "op": "phase_complete", "output": "Analyzed contextual factors and environmental conditions", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:26.197Z", "entropy": 0},
+                {"cycle": 1, "phase": "PARALLEL", "op": "sandbox_spawn", "output": "Created sandbox_1_1754786850426 for Execute", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:30.426Z", "entropy": 0.989},
+                {"cycle": 2, "phase": "PARALLEL", "op": "sandbox_spawn", "output": "Created sandbox_2_1754786853134 for Execute", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:33.134Z", "entropy": 1},
+                {"cycle": 3, "phase": "PARALLEL", "op": "sandbox_spawn", "output": "Created sandbox_3_1754786855863 for Execute", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:35.863Z", "entropy": 1},
+                {"cycle": 10, "phase": "REFLECT", "op": "phase_complete", "output": "Integrated findings into coherent analytical framework", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:56.762Z", "entropy": 1},
+                {"cycle": 11, "phase": "SAFETY", "op": "max_cycles_reached", "output": "Forcing conclusion after 10 cycles", "status": "SUCCESS", "timestamp": "2025-08-10T00:47:57.077Z", "entropy": 0.978}
+            ],
+            "schema_used": {
+                "contract": {
+                    "goal": "Perform basic analytical processing and synthesis",
+                    "constraints": ["Maintain entropy below 0.8", "Complete within 5 cycles"]
+                }
+            }
+        };
+
+        function loadSampleData() {
+            document.getElementById('jsonInput').value = JSON.stringify(sampleExecutionData, null, 2);
+            analyzeExecution();
+        }
+
+        function handleFileDrop(event) {
+            event.preventDefault();
+            document.querySelector('.upload-zone').classList.remove('active');
+            
+            const file = event.dataTransfer.files[0];
+            if (file && file.type === 'application/json') {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('jsonInput').value = e.target.result;
+                    analyzeExecution();
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function handleDragEnter(event) {
+            event.preventDefault();
+            document.querySelector('.upload-zone').classList.add('active');
+        }
+
+        function handleDragLeave(event) {
+            event.preventDefault();
+            document.querySelector('.upload-zone').classList.remove('active');
+        }
+
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('jsonInput').value = e.target.result;
+                    analyzeExecution();
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function analyzeExecution() {
+            try {
+                const jsonText = document.getElementById('jsonInput').value;
+                currentExecutionData = JSON.parse(jsonText);
+                
+                displayBasicMetrics();
+                analyzeConstraints();
+                generateInsights();
+                createVisualizations();
+                renderLedgerTimeline();
+                
+                // Show analysis panels
+                document.getElementById('basicMetrics').style.display = 'block';
+                document.getElementById('constraintAnalysis').style.display = 'block';
+                document.getElementById('insights').style.display = 'block';
+                document.getElementById('visualizations').style.display = 'block';
+                
+            } catch (error) {
+                alert('Error parsing JSON data: ' + error.message);
+            }
+        }
+
+        function displayBasicMetrics() {
+            const verification = currentExecutionData.verification;
+            
+            document.getElementById('statusValue').textContent = verification.status;
+            document.getElementById('statusValue').className = 'metric-value ' + 
+                (verification.status === 'COMPLETE' ? 'success' : 'danger');
+            
+            document.getElementById('cyclesValue').textContent = verification.metrics.total_cycles;
+            document.getElementById('cyclesValue').className = 'metric-value ' + 
+                (verification.metrics.total_cycles > 5 ? 'warning' : 'success');
+            
+            document.getElementById('entropyValue').textContent = verification.metrics.final_entropy.toFixed(3);
+            document.getElementById('entropyValue').className = 'metric-value ' + 
+                (verification.metrics.final_entropy > 0.8 ? 'danger' : 'success');
+            
+            document.getElementById('successValue').textContent = (verification.metrics.success_rate * 100).toFixed(1) + '%';
+            document.getElementById('successValue').className = 'metric-value ' + 
+                (verification.metrics.success_rate > 0.9 ? 'success' : 'warning');
+        }
+
+        function analyzeConstraints() {
+            const verification = currentExecutionData.verification;
+            const schema = currentExecutionData.schema_used;
+            let constraintHTML = '';
+
+            // Analyze entropy constraint
+            const entropyConstraint = schema.contract.constraints.find(c => c.includes('entropy'));
+            if (entropyConstraint) {
+                const threshold = parseFloat(entropyConstraint.match(/\d+\.?\d*/)[0]);
+                const violated = verification.metrics.final_entropy > threshold;
+                
+                constraintHTML += `
+                    <div class="constraint-violation" style="${violated ? '' : 'background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border-color: rgba(16, 185, 129, 0.3);'}">
+                        <h4 style="color: ${violated ? '#ef4444' : '#10b981'}">
+                            ${violated ? '⚠️' : '✅'} Entropy Constraint
+                        </h4>
+                        <div>Required: ${entropyConstraint}</div>
+                        <div>Actual: ${verification.metrics.final_entropy.toFixed(3)}</div>
+                        <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #94a3b8;">
+                            ${violated ? 'System exceeded entropy threshold, indicating high complexity' : 'Entropy maintained within acceptable limits'}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Analyze cycle constraint
+            const cycleConstraint = schema.contract.constraints.find(c => c.includes('cycles') || c.includes('Complete within'));
+            if (cycleConstraint) {
+                const threshold = parseInt(cycleConstraint.match(/\d+/)[0]);
+                const violated = verification.metrics.total_cycles > threshold;
+                
+                constraintHTML += `
+                    <div class="constraint-violation" style="${violated ? '' : 'background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); border-color: rgba(16, 185, 129, 0.3);'}">
+                        <h4 style="color: ${violated ? '#ef4444' : '#10b981'}">
+                            ${violated ? '⚠️' : '✅'} Cycle Constraint
+                        </h4>
+                        <div>Required: ${cycleConstraint}</div>
+                        <div>Actual: ${verification.metrics.total_cycles} cycles</div>
+                        <div style="margin-top: 0.5rem; font-size: 0.8rem; color: #94a3b8;">
+                            ${violated ? 'Execution required more cycles than planned due to complexity' : 'Execution completed within expected timeframe'}
+                        </div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('constraintResults').innerHTML = constraintHTML;
+        }
+
+        function generateInsights() {
+            const verification = currentExecutionData.verification;
+            const ledger = currentExecutionData.thought_ledger;
+            const insights = [];
+
+            // Analyze entropy progression
+            const entropyValues = ledger.map(entry => entry.entropy);
+            const maxEntropy = Math.max(...entropyValues);
+            if (maxEntropy >= 1.0) {
+                insights.push({ icon: '🔥', text: 'System reached maximum entropy, indicating emergent complexity' });
+            }
+
+            // Analyze parallel sandbox usage
+            if (verification.metrics.parallel_sandboxes > 10) {
+                insights.push({ icon: '🔀', text: 'Extensive parallel processing detected - system self-optimized for complex tasks' });
+            }
+
+            // Analyze success rate
+            if (verification.metrics.success_rate === 1.0) {
+                insights.push({ icon: '🎯', text: 'Perfect operational success despite constraint violations - robust error handling' });
+            }
+
+            // Analyze constraint violations
+            if (!verification.contract_fulfillment.constraints_respected) {
+                insights.push({ icon: '⚖️', text: 'Controlled constraint violation - system prioritized completion over limits' });
+            }
+
+            // Analyze cycle efficiency
+            const opsPerCycle = verification.metrics.ledger_entries / verification.metrics.total_cycles;
+            if (opsPerCycle > 10) {
+                insights.push({ icon: '⚡', text: 'High operational density - efficient processing despite complexity' });
+            }
+
+            // Safety mechanism analysis
+            const safetyTrigger = ledger.find(entry => entry.phase === 'SAFETY');
+            if (safetyTrigger) {
+                insights.push({ icon: '🛡️', text: 'Safety mechanism correctly activated - autonomous termination protocol engaged' });
+            }
+
+            const insightHTML = insights.map(insight => 
+                `<div class="insight-item">
+                    <span class="insight-icon">${insight.icon}</span>
+                    <span>${insight.text}</span>
+                </div>`
+            ).join('');
+
+            document.getElementById('insightsList').innerHTML = insightHTML;
+        }
+
+        function createVisualizations() {
+            const ledger = currentExecutionData.thought_ledger;
+            
+            // Prepare entropy chart data
+            const entropyData = ledger.map((entry, index) => ({
+                x: index,
+                y: entry.entropy,
+                cycle: entry.cycle,
+                phase: entry.phase
+            }));
+
+            // Destroy existing chart
+            if (entropyChart) {
+                entropyChart.destroy();
+            }
+
+            // Create entropy progression chart
+            const ctx = document.getElementById('entropyChart').getContext('2d');
+            entropyChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    datasets: [{
+                        label: 'Entropy Progression',
+                        data: entropyData,
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        fill: true,
+                        tension: 0.2
+                    }, {
+                        label: 'Constraint Threshold',
+                        data: Array(entropyData.length).fill(0.8),
+                        borderColor: '#ef4444',
+                        borderDash: [5, 5],
+                        pointRadius: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Entropy Progression Over Time',
+                            color: '#f1f5f9'
+                        },
+                        legend: {
+                            labels: {
+                                color: '#94a3b8'
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            type: 'linear',
+                            title: {
+                                display: true,
+                                text: 'Operation Index',
+                                color: '#94a3b8'
+                            },
+                            ticks: {
+                                color: '#94a3b8'
+                            },
+                            grid: {
+                                color: 'rgba(100, 116, 139, 0.2)'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Entropy Level',
+                                color: '#94a3b8'
+                            },
+                            ticks: {
+                                color: '#94a3b8'
+                            },
+                            grid: {
+                                color: 'rgba(100, 116, 139, 0.2)'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Calculate advanced metrics
+            const verification = currentExecutionData.verification;
+            const totalTime = new Date(ledger[ledger.length - 1].timestamp).getTime() - new Date(ledger[0].timestamp).getTime();
+            const opsPerSecond = (verification.metrics.ledger_entries / (totalTime / 1000)).toFixed(2);
+            
+            const entropyIncrease = verification.metrics.final_entropy - ledger[0].entropy;
+            const sandboxEfficiency = (verification.metrics.parallel_sandboxes / verification.metrics.total_cycles).toFixed(2);
+            
+            const phaseCount = {};
+            ledger.forEach(entry => {
+                phaseCount[entry.phase] = (phaseCount[entry.phase] || 0) + 1;
+            });
+            const dominantPhase = Object.keys(phaseCount).reduce((a, b) => phaseCount[a] > phaseCount[b] ? a : b);
+
+            document.getElementById('entropyEscalation').textContent = '+' + entropyIncrease.toFixed(3);
+            document.getElementById('sandboxEfficiency').textContent = sandboxEfficiency + '/cycle';
+            document.getElementById('phaseDistribution').textContent = dominantPhase;
+            document.getElementById('operationalTempo').textContent = opsPerSecond + '/sec';
+        }
+
+        function renderLedgerTimeline() {
+            const ledger = currentExecutionData.thought_ledger;
+            const timelineHTML = ledger.slice(0, 20).map(entry => 
+                `<div class="ledger-entry">
+                    <div class="cycle">${entry.cycle}</div>
+                    <div class="phase">${entry.phase}</div>
+                    <div class="operation">${entry.op}</div>
+                    <div class="entropy">ε${entry.entropy.toFixed(3)}</div>
+                </div>`
+            ).join('');
+            
+            if (ledger.length > 20) {
+                timelineHTML += `<div style="text-align: center; padding: 1rem; color: #94a3b8; font-size: 0.8rem;">
+                    ... and ${ledger.length - 20} more entries
+                </div>`;
+            }
+
+            document.getElementById('ledgerTimeline').innerHTML = timelineHTML;
+        }
+
+        function copyAnalysisReport() {
+            const verification = currentExecutionData.verification;
+            const report = `
+X-Logic Execution Analysis Report
+================================
+
+EXECUTION SUMMARY:
+- Status: ${verification.status}
+- Cycles Completed: ${verification.metrics.total_cycles}
+- Success Rate: ${(verification.metrics.success_rate * 100).toFixed(1)}%
+- Final Entropy: ${verification.metrics.final_entropy.toFixed(3)}
+- Parallel Sandboxes: ${verification.metrics.parallel_sandboxes}
+- Ledger Entries: ${verification.metrics.ledger_entries}
+
+CONSTRAINT ANALYSIS:
+- Goal Achievement: ${verification.contract_fulfillment.goal_achieved ? 'YES' : 'NO'}
+- Constraints Respected: ${verification.contract_fulfillment.constraints_respected ? 'YES' : 'NO'}
+- Success Criteria Met: ${verification.contract_fulfillment.success_criteria_met ? 'YES' : 'NO'}
+- Ledger Integrity: ${verification.contract_fulfillment.ledger_integrity ? 'VERIFIED' : 'COMPROMISED'}
+
+BEHAVIORAL OBSERVATIONS:
+- System demonstrated controlled constraint violation
+- Entropy escalation triggered adaptive sandbox creation
+- Safety mechanisms functioned correctly
+- High operational success despite complexity overshoot
+
+VERIFICATION SEAL: ${verification.seal}
+TIMESTAMP: ${verification.execution_timestamp}
+            `.trim();
+
+            navigator.clipboard.writeText(report).then(() => {
+                alert('Analysis report copied to clipboard!');
+            });
+        }
+
+        function exportVisualizationData() {
+            const exportData = {
+                metadata: {
+                    export_timestamp: new Date().toISOString(),
+                    analyzer_version: "1.0.0"
+                },
+                raw_execution: currentExecutionData,
+                processed_metrics: {
+                    entropy_progression: currentExecutionData.thought_ledger.map(e => e.entropy),
+                    phase_distribution: currentExecutionData.thought_ledger.reduce((acc, entry) => {
+                        acc[entry.phase] = (acc[entry.phase] || 0) + 1;
+                        return acc;
+                    }, {}),
+                    temporal_analysis: {
+                        total_duration: new Date(currentExecutionData.thought_ledger[currentExecutionData.thought_ledger.length - 1].timestamp).getTime() - 
+                                      new Date(currentExecutionData.thought_ledger[0].timestamp).getTime(),
+                        operations_per_second: currentExecutionData.verification.metrics.ledger_entries / 
+                                             ((new Date(currentExecutionData.thought_ledger[currentExecutionData.thought_ledger.length - 1].timestamp).getTime() - 
+                                               new Date(currentExecutionData.thought_ledger[0].timestamp).getTime()) / 1000)
+                    }
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'x-logic-analysis-export.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize with sample data
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                loadSampleData();
+            }, 500);
+        });
+    </script>
+</body>
+</html>

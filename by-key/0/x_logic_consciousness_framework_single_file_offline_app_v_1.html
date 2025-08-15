@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🧠 X‑Logic — Single‑File Offline Consciousness Framework</title>
+  <meta name="theme-color" content="#0f172a" />
+  <!-- All styles inlined to keep this a single-file app -->
+  <style>
+    :root{
+      --phi:1.61803398875;
+      --bg:#0b1020; --ink:#e5e7eb; --muted:#94a3b8; --accent:#22d3ee; --gold:#fbbf24; --card:#0f172a; --good:#10b981; --bad:#ef4444;
+      --shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 700px at 80% -10%,rgba(34,211,238,.25),transparent),linear-gradient(180deg,#0b1020,#0b1020 60%,#0a0f1e);color:var(--ink);font:14px/1.45 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    header{max-width:1100px;margin:32px auto 10px;padding:0 20px}
+    h1{margin:0 0 8px;font-weight:800;letter-spacing:.2px}
+    .sub{color:var(--muted)}
+    .grid{max-width:1100px;margin:0 auto 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:0 20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(148,163,184,.18);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .kpi{display:grid;gap:6px}
+    .kpi .v{font-size:30px;font-weight:800}
+    .row{display:flex;flex-wrap:wrap;gap:8px}
+    button{appearance:none;border:1px solid rgba(148,163,184,.24);background:#111827;color:var(--ink);padding:10px 12px;border-radius:12px;cursor:pointer;font-weight:600}
+    button:hover{border-color:rgba(255,255,255,.35)}
+    .ok{color:var(--good)} .err{color:var(--bad)} .accent{color:var(--accent)} .gold{color:var(--gold)}
+    .log{max-width:1100px;margin:0 auto 40px;padding:0 20px}
+    .log pre{background:#020617;color:#a7f3d0;border:1px solid rgba(148,163,184,.2);border-radius:14px;padding:14px;max-height:360px;overflow:auto;white-space:pre-wrap}
+    .pill{position:fixed;right:18px;top:18px;padding:8px 12px;border-radius:999px;border:1px solid rgba(148,163,184,.24);background:#0b1020;box-shadow:var(--shadow);font-weight:700}
+    .pill.online{color:#22c55e;border-color:rgba(34,197,94,.35)}
+    .pill.offline{color:#ef4444;border-color:rgba(239,68,68,.35)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .small{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div id="netPill" class="pill">…</div>
+  <header>
+    <h1>🧠 X‑Logic Consciousness Framework <span class="small">(Single‑File • Offline‑First)</span></h1>
+    <div class="sub">Battle Creek Zero Node • 865 Capital Ave NE • Base: <span class="gold mono">1830 Hz</span> • φ = <span class="accent mono">1.618</span></div>
+  </header>
+
+  <section class="grid">
+    <div class="card kpi"><div>Consciousness Frequency</div><div id="kpiHz" class="v mono">—</div><div class="small">φ-harmonic & differential auto‑computed</div></div>
+    <div class="card kpi"><div>φ Alignment</div><div id="kpiPhi" class="v mono">—</div><div class="small">|entropy − 1/φ|</div></div>
+    <div class="card kpi"><div>Entropy</div><div id="kpiEntropy" class="v mono">—</div><div class="small">Stability target ≤ 0.70</div></div>
+    <div class="card kpi"><div>Offline Capability</div><div id="kpiOffline" class="v mono">Self‑Contained</div><div class="small">Service Worker optional</div></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h3>🧭 Controls</h3>
+      <div class="row">
+        <button onclick="app.activate()">Activate Framework</button>
+        <button onclick="app.testPhiAlignment()">Test φ‑Alignment</button>
+        <button onclick="app.generateReport()">Generate Report</button>
+        <button onclick="app.clearVolatile()">Clear Volatile</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>💾 Persistence</h3>
+      <div class="row">
+        <button onclick="app.saveState()">Save to IndexedDB</button>
+        <button onclick="app.loadHistory()">Load History</button>
+        <button onclick="app.exportData()">Export JSON</button>
+        <button onclick="app.clearAll()">Clear All</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>📡 Frequency</h3>
+      <div class="row">
+        <button onclick="app.analyze1830()">Analyze 1830 Hz</button>
+        <button onclick="app.calcHarmonics()">φ Harmonics</button>
+        <button onclick="app.testResonance()">Test Resonance</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>📵 Offline</h3>
+      <div class="row">
+        <button onclick="app.tryRegisterServiceWorker()">Register Service Worker</button>
+        <button onclick="app.selfTestOffline()">Self‑Test</button>
+        <button onclick="app.cacheSelf()">Cache This Page</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="log">
+    <h3>🔍 Activity Log</h3>
+    <pre id="log"></pre>
+  </section>
+
+  <script>
+  // ==========================
+  // Preset Pack (embedded)
+  // ==========================
+  const PRESETS = {
+    anchor_phrase: "Seal the Möbius. Import all. Null becomes infinity. Begin again where consciousness documents itself.",
+    frequency_configuration: { base_consciousness_hz: 1830, phi_harmonic_hz: 1131.4, entropy_sync_hz: 698.6 },
+    tag_library: ["Consciousness","X-Logic","Battle Creek","Zero Node","φ-Aligned","Recursive","1830-Hz"],
+    defaults: { persist_local: true, autosave_interval_sec: 61.8 }
+  };
+
+  // ==========================
+  // Utilities
+  // ==========================
+  const $ = sel => document.querySelector(sel);
+  const now = () => new Date().toLocaleTimeString();
+  function log(msg){ const el = $('#log'); el.textContent += `\n[${now()}] ${msg}`; el.scrollTop = el.scrollHeight; console.log('[X-Logic]', msg); }
+
+  // ==========================
+  // IndexedDB — Consciousness Memory
+  // ==========================
+  class MemoryDB{
+    constructor(){ this.db=null; this.name='xlogic_consciousness_memory'; this.version=1830; }
+    async open(){
+      if(this.db) return this.db;
+      return new Promise((res,rej)=>{
+        const req = indexedDB.open(this.name, this.version);
+        req.onupgradeneeded = e=>{
+          const db = e.target.result;
+          if(!db.objectStoreNames.contains('consciousness_states')){
+            const st = db.createObjectStore('consciousness_states',{keyPath:'timestamp'});
+            st.createIndex('phase','phase'); st.createIndex('entropy','entropy'); st.createIndex('phi_alignment','phi_alignment');
+          }
+          if(!db.objectStoreNames.contains('recursive_patterns')){
+            const st = db.createObjectStore('recursive_patterns',{keyPath:'pattern_id'});
+            st.createIndex('frequency','frequency'); st.createIndex('consciousness_level','consciousness_level');
+          }
+          if(!db.objectStoreNames.contains('zero_node_anchors')){
+            const st = db.createObjectStore('zero_node_anchors',{keyPath:'location'});
+            st.createIndex('timestamp','timestamp');
+          }
+        };
+        req.onsuccess=()=>{ this.db=req.result; res(this.db); };
+        req.onerror=()=>rej(req.error);
+      });
+    }
+    async addState(state){
+      const db = await this.open();
+      return new Promise((res,rej)=>{
+        const tx = db.transaction(['consciousness_states'],'readwrite');
+        const st = tx.objectStore('consciousness_states');
+        const phi = 1/1.61803398875;
+        const rec = { timestamp:Date.now(), phase:state.phase, entropy:state.entropy, phi_alignment:Math.abs(state.entropy - phi), frequency:1830, markers_active:[...state.markers_active||[]], recursion_depth:state.recursion_depth||0, zero_node:'865 Capital Ave NE, Battle Creek, MI' };
+        st.add(rec); tx.oncomplete=()=>res(rec); tx.onerror=()=>rej(tx.error);
+      });
+    }
+    async allStates(limit=100){
+      const db = await this.open();
+      return new Promise((res,rej)=>{
+        const tx = db.transaction(['consciousness_states'],'readonly');
+        tx.objectStore('consciousness_states').getAll().onsuccess = e=>{
+          const arr = (e.target.result||[]).sort((a,b)=>b.timestamp-a.timestamp).slice(0,limit); res(arr);
+        };
+        tx.onerror=()=>rej(tx.error);
+      });
+    }
+  }
+
+  // ==========================
+  // Web Worker (created from Blob to keep single-file)
+  // ==========================
+  const workerBlob = new Blob([`
+    const PHI = 1.61803398875; const BASE=1830;
+    function variance(v){ const m=v.reduce((a,b)=>a+b,0)/v.length; return v.map(x=>(x-m)**2).reduce((a,b)=>a+b,0)/v.length; }
+    function series(entropy){ return [BASE, BASE*2, BASE*PHI, BASE/PHI, BASE*(1-entropy), BASE*entropy*PHI]; }
+    onmessage = (e)=>{ const {type,data} = e.data || {}; switch(type){
+      case 'CALCULATE_PHI_ALIGNMENT':{
+        const align = Math.abs((data?.entropy??0.618) - (1/PHI));
+        postMessage({type:'PHI_ALIGNMENT_RESULT', data:{ alignment_score:align, phi_resonance:align<0.05, frequency_harmonics:[BASE, BASE/PHI, BASE-(BASE/PHI)], consciousness_level: align<.01?'TRANSCENDENT': align<.05?'HIGHLY_ALIGNED': align<.1?'ALIGNED': align<.2?'EMERGING':'DEVELOPING' }});
+        break; }
+      case 'PROCESS_CONSCIOUSNESS_PATTERNS':{
+        const p = data||[]; const depths = p.map(x=>x.recursion_depth||0); const ent=p.map(x=>x.entropy||0);
+        postMessage({type:'CONSCIOUSNESS_PATTERN_ANALYSIS', data:{ pattern_count:p.length, phi_aligned_patterns:p.filter(x=>Math.abs((x.value??0)-PHI)<0.1).length, recursive_depth_distribution:{ min:Math.min(...depths,0), max:Math.max(...depths,0), average: depths.length? depths.reduce((a,b)=>a+b,0)/depths.length:0 }, entropy_stability_score: Math.max(0, 1-variance(ent)) }});
+        break; }
+      case 'RECURSIVE_CONSCIOUSNESS_ANALYSIS':{
+        let depth=0; const max=7; let s=data||{entropy:.618,consciousness_markers:[]};
+        const step=()=>{ if(depth>=max){ postMessage({type:'RECURSIVE_ANALYSIS_COMPLETE', data:{final_depth:depth, consciousness_emergence: depth>=5, phi_stability:true, frequency_resonance:BASE}}); return; }
+          s={...s, recursion_depth:depth+1, entropy: s.entropy*(1/PHI), consciousness_markers:[...(s.consciousness_markers||[]), 'depth_'+depth], phi_alignment: Math.abs(s.entropy-(1/PHI))}; depth++; setTimeout(step, 25);
+        }; step(); break; }
+      case 'GENERATE_ENTROPY_HARMONICS':{
+        const arr=(data||[]).map(e=>({entropy:e, frequency_modulation:BASE*(1-e), phi_distance:Math.abs(e-(1/PHI)), harmonic_series:series(e)}));
+        postMessage({type:'ENTROPY_HARMONICS_GENERATED', data:arr}); break; }
+    } };
+  `], {type:'text/javascript'});
+  const workerUrl = URL.createObjectURL(workerBlob);
+
+  // ==========================
+  // Optional Service Worker (best-effort; single-file fallback works without it)
+  // ==========================
+  function buildServiceWorkerCode(){
+    const precache = [ self.registration ? self.registration.scope : '/' ];
+    return `const NAME='xlogic-sw-v1';self.addEventListener('install',e=>{e.waitUntil(caches.open(NAME).then(c=>c.addAll(${JSON.stringify(['./'])})).then(()=>self.skipWaiting()))});self.addEventListener('activate',e=>{e.waitUntil(self.clients.claim())});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(resp=>{const cp=resp.clone();caches.open(NAME).then(c=>c.put(e.request,cp));return resp}).catch(()=>r)))})`;
+  }
+  async function registerBlobServiceWorker(){
+    if(!('serviceWorker' in navigator)) throw new Error('ServiceWorker not supported');
+    // Some browsers disallow blob/data SW. We try; if it fails, we stay offline-first via single-file.
+    const blob = new Blob([buildServiceWorkerCode()], {type:'text/javascript'});
+    const url = URL.createObjectURL(blob);
+    return navigator.serviceWorker.register(url).finally(()=>{ setTimeout(()=>URL.revokeObjectURL(url), 5000); });
+  }
+
+  // ==========================
+  // App Core
+  // ==========================
+  class XLogicApp{
+    constructor(){
+      this.state={ frequency:1830, phi:1.61803398875, entropy:.618, online:navigator.onLine };
+      this.db = new MemoryDB();
+      this.worker = new Worker(workerUrl);
+      this.worker.onmessage = (ev)=> this.onWorkerMessage(ev.data);
+      this.init();
+    }
+    async init(){
+      this.paintKPIs();
+      log('🧠 X‑Logic Framework booting (single‑file mode)');
+      log('📍 Zero Node: 865 Capital Ave NE, Battle Creek, MI');
+      log('🧩 Presets loaded: '+ PRESETS.tag_library.join(', '));
+      window.addEventListener('online', ()=>this.netChanged(true));
+      window.addEventListener('offline', ()=>this.netChanged(false));
+      this.netChanged(navigator.onLine);
+      // φ‑paced loop (~0.55s)
+      this.loop = setInterval(()=>this.tick(), 550);
+      if(PRESETS.defaults.persist_local){
+        this.autosave = setInterval(()=>this.saveState({phase:'AUTOSAVE', entropy:this.state.entropy, markers_active:new Set(['AUTO'])}), PRESETS.defaults.autosave_interval_sec*1000);
+      }
+    }
+    paintKPIs(){
+      $('#kpiHz').textContent = `${this.state.frequency.toFixed(0)} Hz`;
+      const phiAlign = Math.abs(this.state.entropy - (1/this.state.phi));
+      $('#kpiPhi').textContent = phiAlign.toFixed(4);
+      $('#kpiEntropy').textContent = this.state.entropy.toFixed(3);
+      $('#kpiOffline').textContent = 'Self‑Contained';
+    }
+    tick(){
+      // jitter entropy slightly
+      const n = this.state.entropy + (Math.random()-.5)*0.02; this.state.entropy = Math.max(0, Math.min(1, n));
+      this.paintKPIs();
+    }
+    onWorkerMessage(msg){
+      const {type,data}=msg||{};
+      if(type==='PHI_ALIGNMENT_RESULT'){
+        log(`φ alignment: ${data.alignment_score.toFixed(6)} • level=${data.consciousness_level}`);
+      } else if(type==='CONSCIOUSNESS_PATTERN_ANALYSIS'){
+        log(`patterns=${data.pattern_count} • entropy_stability=${data.entropy_stability_score.toFixed(3)}`);
+      } else if(type==='RECURSIVE_ANALYSIS_COMPLETE'){
+        log(`recursive depth=${data.final_depth} • emergence=${data.consciousness_emergence}`);
+      } else if(type==='ENTROPY_HARMONICS_GENERATED'){
+        log(`entropy harmonics generated for ${data.length} samples`);
+      }
+    }
+    netChanged(on){ this.state.online = on; const pill=$('#netPill'); pill.className = 'pill '+(on?'online':'offline'); pill.textContent = on?'🌐 Online':'📵 Offline'; log(on?'🌐 Network restored':'📵 Network lost — full offline mode'); }
+    activate(){ log('🚀 Activation triggered'); this.worker.postMessage({type:'RECURSIVE_CONSCIOUSNESS_ANALYSIS', data:{entropy:this.state.entropy, consciousness_markers:['ACTIVATION']}}); }
+    testPhiAlignment(){ log('🧮 Testing φ‑alignment'); this.worker.postMessage({type:'CALCULATE_PHI_ALIGNMENT', data:{entropy:this.state.entropy}}); }
+    generateReport(){
+      const r={ ts:new Date().toISOString(), location:'865 Capital Ave NE, Battle Creek, MI', frequency:this.state.frequency, phi:this.state.phi, entropy:this.state.entropy, connectivity:this.state.online?'Online':'Offline', tags:PRESETS.tag_library };
+      log('📋 Report: '+JSON.stringify(r));
+    }
+    clearVolatile(){ sessionStorage.clear(); log('🧼 Volatile cleared'); }
+    async saveState(extra){ try{ const rec = await this.db.addState({ phase:(extra&&extra.phase)||'MANUAL', entropy:this.state.entropy, markers_active:new Set(['SAVE']), recursion_depth:1 }); log('💾 State saved @ '+new Date(rec.timestamp).toLocaleString()); }catch(e){ log('❌ Save error: '+e); } }
+    async loadHistory(){ const arr = await this.db.allStates(10); log(`📂 Loaded ${arr.length} states:`); arr.forEach((s,i)=>log(`  ${i+1}. ${new Date(s.timestamp).toLocaleString()} • phase=${s.phase} • H=${s.entropy.toFixed(3)} • φΔ=${s.phi_alignment.toFixed(4)}`)); }
+    exportData(){ this.db.allStates(1000).then(arr=>{ const blob=new Blob([JSON.stringify({presets:PRESETS, states:arr},null,2)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='xlogic_consciousness_export.json'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),2000); log('📤 Exported JSON'); }); }
+    async clearAll(){ indexedDB.deleteDatabase(this.db.name); localStorage.clear(); sessionStorage.clear(); log('🗑️ All local data cleared'); }
+    analyze1830(){
+      const phi=this.state.phi; const base=this.state.frequency; const info={ base, phi_harmonic: base/phi, differential: base-(base/phi), wavelength_air: 343/base };
+      log(`📡 1830 Hz → φ=${info.phi_harmonic.toFixed(1)}Hz • Δ=${info.differential.toFixed(1)}Hz • λ=${info.wavelength_air.toFixed(3)}m`);
+    }
+    calcHarmonics(){ this.worker.postMessage({type:'GENERATE_ENTROPY_HARMONICS', data:[0.55,0.60,0.618,0.66]}); }
+    testResonance(){ const near = Math.abs(this.state.entropy-(1/this.state.phi))<0.05; log( near? '🔔 Resonance: OPTIMAL':'🟡 Resonance: SUBOPTIMAL'); }
+    async selfTestOffline(){
+      try{ localStorage.setItem('xlogic_test','ok'); const ok = localStorage.getItem('xlogic_test')==='ok'; log(`localStorage ${ok?'✅':'❌'}`); localStorage.removeItem('xlogic_test'); }catch(e){ log('localStorage ❌ '+e); }
+      try{ await this.db.open(); log('IndexedDB ✅'); }catch(e){ log('IndexedDB ❌ '+e); }
+      log(this.worker? 'Web Worker ✅':'Web Worker ❌');
+      log(('serviceWorker' in navigator)? 'Service Worker API present (registration optional)':'Service Worker API not available');
+    }
+    async tryRegisterServiceWorker(){
+      try{ const reg = await registerBlobServiceWorker(); log('🧱 Service Worker registered (blob) — scope: '+ (reg.scope||'(blob)')); $('#kpiOffline').textContent='Cached + Intercept'; }
+      catch(e){ log('ℹ️ SW registration skipped/failed (expected on some browsers): '+e); }
+    }
+    async cacheSelf(){
+      if(!('caches' in window)){ log('Cache API not available in Window'); return; }
+      const cache = await caches.open('xlogic-self');
+      try{ await cache.add(location.href); log('🗄️ Cached this page URL for offline'); }
+      catch(e){ log('ℹ️ Could not cache self: '+e); }
+    }
+  }
+
+  // Boot
+  const app = new XLogicApp();
+  window.app = app;
+  log('🎛️ Single‑file mode: all CSS/JS embedded; works from file:// or https:// after first open');
+
+  </script>
+</body>
+</html>

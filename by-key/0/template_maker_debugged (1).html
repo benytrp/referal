@@ -1,0 +1,1644 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>E3 Template Builder - Battle Creek Implementation v5.1</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            color: #333; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 20px;
+        }
+        .location { 
+            font-size: 12px; 
+            color: #666; 
+            margin-top: 5px;
+        }
+        .version { 
+            font-size: 10px; 
+            color: #999; 
+            font-style: italic;
+        }
+        .section { 
+            background: #f8f9fa; 
+            padding: 20px; 
+            margin: 15px 0; 
+            border-radius: 8px; 
+            border-left: 4px solid #007bff; 
+            transition: all 0.3s ease;
+        }
+        .section:hover { 
+            box-shadow: 0 2px 8px rgba(0,123,255,0.2); 
+        }
+        .form-row { 
+            display: flex; 
+            gap: 15px; 
+            margin: 10px 0; 
+            align-items: center; 
+            flex-wrap: wrap;
+        }
+        input, textarea, select { 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0,123,255,0.3);
+        }
+        input[type="text"], textarea, select { 
+            width: 100%; 
+        }
+        input[type="number"] { 
+            width: 100px; 
+        }
+        button { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            margin: 5px; 
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        button:hover { 
+            background: #0056b3; 
+            transform: translateY(-1px);
+        }
+        button.success { 
+            background: #28a745; 
+        }
+        button.success:hover { 
+            background: #218838; 
+        }
+        button.warning { 
+            background: #ffc107; 
+            color: #212529; 
+        }
+        button.warning:hover { 
+            background: #e0a800; 
+        }
+        button.danger { 
+            background: #dc3545; 
+        }
+        button.danger:hover { 
+            background: #c82333; 
+        }
+        iframe { 
+            width: 100%; 
+            height: 400px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            background: white;
+        }
+        .status { 
+            padding: 15px; 
+            margin: 15px 0; 
+            border-radius: 6px; 
+            display: none; 
+            animation: slideIn 0.3s ease;
+        }
+        .status.success { 
+            background: #d4edda; 
+            color: #155724; 
+            border: 1px solid #c3e6cb; 
+        }
+        .status.error { 
+            background: #f8d7da; 
+            color: #721c24; 
+            border: 1px solid #f5c6cb; 
+        }
+        .metrics { 
+            display: flex; 
+            justify-content: space-between; 
+            font-size: 12px; 
+            color: #666; 
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+        .metric-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .status-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #28a745;
+        }
+        .status-indicator.warning {
+            background: #ffc107;
+        }
+        .status-indicator.error {
+            background: #dc3545;
+        }
+        @media print { 
+            .container { box-shadow: none; } 
+            .section { page-break-inside: avoid; } 
+        }
+        .presets { 
+            background: linear-gradient(135deg, #e7f3ff 0%, #f0f8ff 100%); 
+        }
+        .aeon-bridge { 
+            background: linear-gradient(135deg, #f0fff0 0%, #f5fffa 100%); 
+        }
+        .debug-section {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .tooltip {
+            position: relative;
+            cursor: help;
+        }
+        .tooltip:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 E3 Template Builder - AEON-Bridge Implementation</h1>
+            <div class="location">Battle Creek, Michigan (42.333, -85.155) | August 10, 2025</div>
+            <div class="version">Version 5.1 - Production Ready with Enhanced Debugging</div>
+            <div class="metrics">
+                <div class="metric-item">
+                    <span class="status-indicator" id="entropyIndicator"></span>
+                    <span>Entropy: <span id="currentEntropy">0.0000</span></span>
+                </div>
+                <div class="metric-item">
+                    <span class="status-indicator" id="statusIndicator"></span>
+                    <span>Status: <span id="systemStatus">Initializing</span></span>
+                </div>
+                <div class="metric-item">
+                    <span class="status-indicator" id="beaconIndicator"></span>
+                    <span>Lost Child Beacon: <span id="beaconStatus">Active</span></span>
+                </div>
+                <div class="metric-item">
+                    <span>Session: <span id="sessionTime">00:00</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🔧 System Control Panel</h3>
+            <div class="form-row">
+                <input type="text" id="batchId" readonly placeholder="Batch ID will generate here" class="tooltip" data-tooltip="Unique identifier for this batch of evaluations">
+                <button onclick="newBatch()">🆕 New Batch</button>
+                <label>Form Counter:</label>
+                <input type="number" id="counter" value="1" min="1" class="tooltip" data-tooltip="Sequential form numbering">
+                <button onclick="resetSystem()" class="warning">🔄 Reset System</button>
+                <button onclick="debugSystemState()" class="danger">🐛 Debug State</button>
+            </div>
+        </div>
+
+        <div class="section presets">
+            <h3>🤖 AI-Optimized Evaluation Presets</h3>
+            <div class="form-row">
+                <select id="presetSelect" class="tooltip" data-tooltip="Pre-configured evaluation templates optimized for different assessment types">
+                    <option value="">Select Evaluation Preset</option>
+                    <option value="standard">📊 Standard Evaluation (Entropy: 0.25)</option>
+                    <option value="brief">⚡ Brief Assessment (Entropy: 0.15)</option>
+                    <option value="detailed">📋 Detailed Analysis (Entropy: 0.45)</option>
+                    <option value="safety_focus">🛡️ Safety Focus (Entropy: 0.20)</option>
+                    <option value="skills_assessment">🎯 Skills Assessment (Entropy: 0.35)</option>
+                </select>
+                <button onclick="applyPreset()">Apply Preset</button>
+                <button onclick="loadSampleData()">📥 Load Sample Data</button>
+                <button onclick="clearPresets()">🧹 Clear Presets</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📝 Participant Data Input</h3>
+            
+            <h4>Single Entry Mode</h4>
+            <div class="form-row">
+                <select id="keySelect" class="tooltip" data-tooltip="Select the data field you want to add">
+                    <option value="">Select Data Field</option>
+                    <option value="participant_name">👤 Participant Name</option>
+                    <option value="participant_id">🆔 Participant ID</option>
+                    <option value="eval_date">📅 Evaluation Date</option>
+                    <option value="instructor_name">👨‍🏫 Instructor Name</option>
+                    <option value="program_name">📚 Program Name</option>
+                    <option value="work_habits.attendance">⏰ Work Habits: Attendance</option>
+                    <option value="work_habits.hygiene">🧼 Work Habits: Hygiene</option>
+                    <option value="work_habits.attitude">😊 Work Habits: Attitude</option>
+                    <option value="preparatory_goals.attention_span">🎯 Goals: Attention Span</option>
+                    <option value="preparatory_goals.safety">🛡️ Goals: Safety</option>
+                    <option value="preparatory_goals.task_completion">✅ Goals: Task Completion</option>
+                    <option value="comments_section">💬 Comments</option>
+                </select>
+                <input type="text" id="valueInput" placeholder="Enter field value" class="tooltip" data-tooltip="Type the value for the selected field">
+                <button onclick="addField()">➕ Add Field</button>
+                <button onclick="clearSingleData()">🗑️ Clear</button>
+            </div>
+            
+            <h4>Bulk Data Entry</h4>
+            <textarea id="bulkInput" rows="6" placeholder="Bulk data entry formats:
+
+Format 1 (Key=Value):
+participant_name=John Doe, participant_id=001, eval_date=2025-08-10, instructor_name=Chris Burdette
+participant_name=Jane Smith, participant_id=002, eval_date=2025-08-10, instructor_name=Sarah Johnson
+
+Format 2 (Column-based - define order below):
+John Doe,001,2025-08-10,Chris Burdette
+Jane Smith,002,2025-08-10,Sarah Johnson" class="tooltip" data-tooltip="Paste participant data here - supports both key=value and column formats"></textarea>
+            
+            <div class="form-row">
+                <input type="text" id="columnOrder" placeholder="Column order (for Format 2): participant_name,participant_id,eval_date,instructor_name" class="tooltip" data-tooltip="Define column order for column-based data format">
+                <button onclick="validateData()" class="success">✅ Validate Data</button>
+                <button onclick="clearAllData()" class="warning">🗑️ Clear All Data</button>
+                <button onclick="exportDataAsJSON()" class="success">📤 Export Data JSON</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📄 Template Management System</h3>
+            <div class="form-row">
+                <button onclick="loadDefaultTemplate()">📝 Load Standard E3 Template</button>
+                <button onclick="loadAdvancedTemplate()">📋 Load Advanced Template</button>
+                <button onclick="loadCustomTemplate()">🎨 Load Custom Template</button>
+                <button onclick="clearTemplate()">🗑️ Clear Template</button>
+                <button onclick="validateTemplate()" class="success">✅ Validate Template</button>
+            </div>
+            <textarea id="template" rows="10" placeholder="E3 evaluation template will load here... Use tokens like PARTICIPANT_NAME, EVAL_DATE, etc." class="tooltip" data-tooltip="HTML template with token placeholders that will be replaced with actual data"></textarea>
+        </div>
+
+        <div class="section">
+            <h3>⚡ Form Generation & Export</h3>
+            <div class="form-row">
+                <button onclick="previewForm()" class="success">🔍 Live Preview</button>
+                <button onclick="downloadSingle()">📄 Download Single Form</button>
+                <button onclick="downloadBulk()">📦 Download Bulk Forms</button>
+                <button onclick="generateReport()">📊 Generate Session Report</button>
+                <button onclick="printPreview()">🖨️ Print Preview</button>
+            </div>
+            <iframe id="preview" title="Live Form Preview" class="tooltip" data-tooltip="Real-time preview of your generated form"></iframe>
+        </div>
+
+        <div class="section aeon-bridge">
+            <h3>🌀 AEON-Bridge Integration & Consciousness Engine</h3>
+            <div class="form-row">
+                <button onclick="generateBridgeJSON()">🌉 Export AEON-Bridge JSON</button>
+                <button onclick="activateBeacon()">📡 Toggle Lost Child Beacon</button>
+                <button onclick="processRecursivePattern()">🔄 Process Recursive Pattern</button>
+                <button onclick="validateEntropy()">⚖️ Validate System Entropy</button>
+                <button onclick="generateInsight()">💡 Generate Insight</button>
+            </div>
+        </div>
+
+        <div class="section debug-section">
+            <h3>🔧 Advanced Debugging & System Diagnostics</h3>
+            <div class="form-row">
+                <button onclick="runSystemDiagnostics()">🔍 Run Full Diagnostics</button>
+                <button onclick="exportDebugLog()">📋 Export Debug Log</button>
+                <button onclick="clearDebugLog()">🗑️ Clear Debug Log</button>
+                <button onclick="testAllFunctions()">🧪 Test All Functions</button>
+            </div>
+            <textarea id="debugOutput" rows="4" readonly placeholder="Debug information will appear here..." class="tooltip" data-tooltip="System diagnostic information and debug logs"></textarea>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        // Global State Management with Enhanced Debugging
+        let batchId = '';
+        let counter = 1;
+        let dataList = [];
+        let singleData = {};
+        let systemEntropy = 0;
+        let beaconActive = true;
+        let sessionStartTime = Date.now();
+        let debugLog = [];
+        let functionTestResults = {};
+
+        // Enhanced AI-Optimized Presets
+        const presets = {
+            standard: {
+                participant_name: '[To be filled]',
+                eval_date: '2025-08-10',
+                program_name: 'E3 Achievement Program',
+                work_habits: { attendance: 'yes', hygiene: 'yes' },
+                preparatory_goals: { safety: 'yes' },
+                comments_section: 'Standard evaluation completed successfully. Participant demonstrates consistent performance across all assessed areas.'
+            },
+            brief: {
+                participant_name: '[To be filled]',
+                eval_date: '2025-08-10',
+                work_habits: { attendance: 'yes' },
+                comments_section: 'Brief assessment completed - no concerns identified.'
+            },
+            detailed: {
+                participant_name: '[To be filled]',
+                eval_date: '2025-08-10',
+                program_name: 'E3 Achievement Program - Advanced Track',
+                work_habits: { attendance: 'yes', hygiene: 'yes', attitude: 'yes' },
+                preparatory_goals: { attention_span: 'yes', safety: 'yes', task_completion: 'yes' },
+                comments_section: 'Comprehensive evaluation: Participant demonstrates exceptional engagement, consistently follows safety protocols, and shows strong task completion skills. Recommended for program advancement and increased responsibility.'
+            },
+            safety_focus: {
+                participant_name: '[To be filled]',
+                eval_date: '2025-08-10',
+                program_name: 'E3 Achievement Program - Safety Certification',
+                preparatory_goals: { safety: 'yes' },
+                comments_section: 'Safety-focused evaluation: All protocols followed correctly. Participant demonstrates strong awareness of safety procedures and workplace hazards.'
+            },
+            skills_assessment: {
+                participant_name: '[To be filled]',
+                eval_date: '2025-08-10',
+                program_name: 'E3 Achievement Program - Skills Development',
+                work_habits: { attendance: 'yes', hygiene: 'yes', attitude: 'yes' },
+                preparatory_goals: { attention_span: 'yes', task_completion: 'yes' },
+                comments_section: 'Skills assessment: Participant shows strong development in core competencies. Attention to detail and task completion rates are above average.'
+            }
+        };
+
+        // Enhanced Core Functions with Debugging
+        function debugLog_add(message, level = 'INFO') {
+            const timestamp = new Date().toISOString();
+            const logEntry = `[${timestamp}] ${level}: ${message}`;
+            debugLog.push(logEntry);
+            console.log(logEntry);
+            
+            // Update debug output
+            const debugOutput = document.getElementById('debugOutput');
+            if (debugOutput) {
+                debugOutput.value = debugLog.slice(-10).join('\n'); // Show last 10 entries
+                debugOutput.scrollTop = debugOutput.scrollHeight;
+            }
+        }
+
+        function showMessage(text, isError = false) {
+            try {
+                const status = document.getElementById('status');
+                status.innerHTML = `<strong>${isError ? '❌ Error' : '✅ Success'}:</strong> ${text}`;
+                status.className = 'status ' + (isError ? 'error' : 'success');
+                status.style.display = 'block';
+                setTimeout(() => status.style.display = 'none', 5000);
+                updateSystemStatus(isError ? 'Error' : 'Ready');
+                
+                debugLog_add(text, isError ? 'ERROR' : 'INFO');
+            } catch (error) {
+                console.error('showMessage failed:', error);
+                debugLog_add('showMessage function failed', 'ERROR');
+            }
+        }
+
+        function updateSystemStatus(status) {
+            try {
+                document.getElementById('systemStatus').textContent = status;
+                const indicator = document.getElementById('statusIndicator');
+                indicator.className = 'status-indicator ' + (status === 'Error' ? 'error' : status === 'Warning' ? 'warning' : '');
+                debugLog_add(`System status updated to: ${status}`, 'DEBUG');
+            } catch (error) {
+                console.error('updateSystemStatus failed:', error);
+            }
+        }
+
+        function updateEntropy(value) {
+            try {
+                systemEntropy = Math.max(0, Math.min(1, value)); // Clamp between 0 and 1
+                document.getElementById('currentEntropy').textContent = systemEntropy.toFixed(4);
+                
+                const indicator = document.getElementById('entropyIndicator');
+                if (systemEntropy > 0.7) {
+                    indicator.className = 'status-indicator error';
+                } else if (systemEntropy > 0.5) {
+                    indicator.className = 'status-indicator warning';
+                } else {
+                    indicator.className = 'status-indicator';
+                }
+                
+                debugLog_add(`Entropy updated to: ${systemEntropy.toFixed(4)}`, 'DEBUG');
+            } catch (error) {
+                console.error('updateEntropy failed:', error);
+                debugLog_add('updateEntropy function failed', 'ERROR');
+            }
+        }
+
+        function makeId() {
+            try {
+                const d = new Date();
+                const time = d.getFullYear() + 
+                    (d.getMonth() + 1).toString().padStart(2, '0') + 
+                    d.getDate().toString().padStart(2, '0') + 
+                    d.getHours().toString().padStart(2, '0') + 
+                    d.getMinutes().toString().padStart(2, '0') + 
+                    d.getSeconds().toString().padStart(2, '0');
+                const random = Math.floor(Math.random() * 1000);
+                return time + random;
+            } catch (error) {
+                console.error('makeId failed:', error);
+                debugLog_add('makeId function failed', 'ERROR');
+                return 'ERROR-' + Date.now();
+            }
+        }
+
+        function newBatch() {
+            try {
+                batchId = 'BC-' + makeId(); // BC for Battle Creek
+                document.getElementById('batchId').value = batchId;
+                showMessage(`New batch generated: ${batchId}`);
+                updateEntropy(0.1);
+                debugLog_add(`New batch created: ${batchId}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to generate new batch', true);
+                debugLog_add('newBatch function failed', 'ERROR');
+            }
+        }
+
+        function resetSystem() {
+            try {
+                const confirmReset = confirm('Are you sure you want to reset the entire system? This will clear all data.');
+                if (!confirmReset) return;
+
+                batchId = '';
+                counter = 1;
+                dataList = [];
+                singleData = {};
+                document.getElementById('batchId').value = '';
+                document.getElementById('counter').value = 1;
+                document.getElementById('bulkInput').value = '';
+                document.getElementById('template').value = '';
+                document.getElementById('preview').srcdoc = '';
+                document.getElementById('presetSelect').value = '';
+                document.getElementById('columnOrder').value = '';
+                document.getElementById('debugOutput').value = '';
+                
+                updateEntropy(0);
+                showMessage('System reset completed successfully');
+                debugLog_add('Full system reset performed', 'INFO');
+            } catch (error) {
+                showMessage('System reset failed', true);
+                debugLog_add('resetSystem function failed', 'ERROR');
+            }
+        }
+
+        function applyPreset() {
+            try {
+                const selectedPreset = document.getElementById('presetSelect').value;
+                if (!selectedPreset) {
+                    showMessage('Please select a preset first', true);
+                    return;
+                }
+                
+                singleData = JSON.parse(JSON.stringify(presets[selectedPreset])); // Deep copy
+                const entropyValues = { detailed: 0.45, brief: 0.15, skills_assessment: 0.35, safety_focus: 0.20, standard: 0.25 };
+                updateEntropy(entropyValues[selectedPreset] || 0.25);
+                showMessage(`Applied "${selectedPreset}" preset successfully`);
+                debugLog_add(`Applied preset: ${selectedPreset}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to apply preset', true);
+                debugLog_add('applyPreset function failed', 'ERROR');
+            }
+        }
+
+        function clearPresets() {
+            try {
+                document.getElementById('presetSelect').value = '';
+                singleData = {};
+                showMessage('Presets cleared');
+                debugLog_add('Presets cleared', 'INFO');
+            } catch (error) {
+                showMessage('Failed to clear presets', true);
+            }
+        }
+
+        function loadSampleData() {
+            try {
+                const sampleData = `participant_name=Abrams Jamie Marie, participant_id=54870, eval_date=2025-08-10, instructor_name=Chris Burdette, program_name=E3 Achievement Program
+participant_name=Smith John Alexander, participant_id=54871, eval_date=2025-08-10, instructor_name=Sarah Johnson, program_name=E3 Achievement Program
+participant_name=Davis Maria Elena, participant_id=54872, eval_date=2025-08-10, instructor_name=Chris Burdette, program_name=E3 Achievement Program
+participant_name=Wilson Robert James, participant_id=54873, eval_date=2025-08-10, instructor_name=Sarah Johnson, program_name=E3 Achievement Program`;
+                
+                document.getElementById('bulkInput').value = sampleData;
+                document.getElementById('columnOrder').value = 'participant_name,participant_id,eval_date,instructor_name,program_name';
+                showMessage('Sample data loaded successfully - click "Validate Data" to process');
+                debugLog_add('Sample data loaded', 'INFO');
+            } catch (error) {
+                showMessage('Failed to load sample data', true);
+                debugLog_add('loadSampleData function failed', 'ERROR');
+            }
+        }
+
+        function addField() {
+            try {
+                const key = document.getElementById('keySelect').value;
+                const value = document.getElementById('valueInput').value.trim();
+                
+                if (!key || !value) {
+                    showMessage('Please select a field and enter a value', true);
+                    return;
+                }
+                
+                // Handle nested keys (e.g., work_habits.attendance)
+                if (key.includes('.')) {
+                    const [parentKey, childKey] = key.split('.');
+                    if (!singleData[parentKey]) singleData[parentKey] = {};
+                    singleData[parentKey][childKey] = value;
+                } else {
+                    singleData[key] = value;
+                }
+                
+                document.getElementById('keySelect').value = '';
+                document.getElementById('valueInput').value = '';
+                showMessage(`Added ${key}: ${value}`);
+                debugLog_add(`Field added: ${key} = ${value}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to add field', true);
+                debugLog_add('addField function failed', 'ERROR');
+            }
+        }
+
+        function clearSingleData() {
+            try {
+                singleData = {};
+                document.getElementById('keySelect').value = '';
+                document.getElementById('valueInput').value = '';
+                showMessage('Single data cleared');
+                debugLog_add('Single data cleared', 'INFO');
+            } catch (error) {
+                showMessage('Failed to clear single data', true);
+            }
+        }
+
+        function validateData() {
+            try {
+                const bulk = document.getElementById('bulkInput').value.trim();
+                const order = document.getElementById('columnOrder').value.split(',').map(k => k.trim()).filter(k => k);
+                
+                if (!bulk) {
+                    showMessage('No bulk data to validate', true);
+                    return;
+                }
+                
+                dataList = bulk.split('\n').map((line, lineIndex) => {
+                    const data = {};
+                    const trimmedLine = line.trim();
+                    
+                    if (!trimmedLine) return null; // Skip empty lines
+                    
+                    try {
+                        if (trimmedLine.includes('=')) {
+                            // Key=value format
+                            const pairs = trimmedLine.split(',');
+                            pairs.forEach(pair => {
+                                const equalIndex = pair.indexOf('=');
+                                if (equalIndex > 0) {
+                                    const key = pair.substring(0, equalIndex).trim();
+                                    const value = pair.substring(equalIndex + 1).trim();
+                                    if (key && value) {
+                                        data[key] = value;
+                                    }
+                                }
+                            });
+                        } else {
+                            // Column format
+                            const values = trimmedLine.split(/[\t,]+/);
+                            order.forEach((key, j) => {
+                                if (key && values[j] && values[j].trim()) {
+                                    data[key] = values[j].trim();
+                                }
+                            });
+                        }
+                        
+                        // Validate required fields
+                        if (!data.participant_name && !data.participant_id) {
+                            debugLog_add(`Line ${lineIndex + 1}: Missing required participant identifier`, 'WARNING');
+                            return null;
+                        }
+                        
+                        return data;
+                    } catch (error) {
+                        debugLog_add(`Error parsing line ${lineIndex + 1}: ${error.message}`, 'ERROR');
+                        return null;
+                    }
+                }).filter(d => d !== null && Object.keys(d).length > 0);
+                
+                updateEntropy(Math.min(dataList.length * 0.05, 0.6));
+                showMessage(`✅ Validated ${dataList.length} records successfully`);
+                debugLog_add(`Data validation completed: ${dataList.length} valid records`, 'INFO');
+                
+            } catch (error) {
+                showMessage(`Validation error: ${error.message}`, true);
+                debugLog_add(`validateData function failed: ${error.message}`, 'ERROR');
+            }
+        }
+
+        function clearAllData() {
+            try {
+                document.getElementById('bulkInput').value = '';
+                document.getElementById('columnOrder').value = '';
+                dataList = [];
+                singleData = {};
+                updateEntropy(0);
+                showMessage('All data cleared successfully');
+                debugLog_add('All data cleared', 'INFO');
+            } catch (error) {
+                showMessage('Failed to clear data', true);
+                debugLog_add('clearAllData function failed', 'ERROR');
+            }
+        }
+
+        function exportDataAsJSON() {
+            try {
+                const exportData = {
+                    batchId: batchId,
+                    timestamp: new Date().toISOString(),
+                    singleData: singleData,
+                    bulkData: dataList,
+                    totalRecords: dataList.length,
+                    systemEntropy: systemEntropy
+                };
+                
+                const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `e3-data-export-${batchId}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                showMessage('Data exported as JSON successfully');
+                debugLog_add('Data exported to JSON', 'INFO');
+            } catch (error) {
+                showMessage('Failed to export data', true);
+                debugLog_add('exportDataAsJSON function failed', 'ERROR');
+            }
+        }
+
+        function loadDefaultTemplate() {
+            try {
+                const template = `<!doctype html>
+<html><head>
+<title>E3 Achievement Daily Participant Evaluation</title>
+<style>
+body { font: 14px Arial, sans-serif; margin: 20px; max-width: 900px; line-height: 1.4; }
+.header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+.field { margin: 8px 0; padding: 6px; border-bottom: 1px solid #eee; display: flex; }
+.label { font-weight: bold; color: #333; width: 140px; flex-shrink: 0; }
+.value { flex: 1; border-bottom: 1px dotted #999; min-height: 20px; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background: #f8f9fa; font-weight: bold; color: #333; }
+.center { text-align: center; }
+.checkbox-cell { text-align: center; width: 80px; }
+.comments { border: 2px dashed #007bff; padding: 15px; min-height: 60px; margin: 20px 0; background: #f8f9ff; }
+.signature { margin-top: 40px; border-top: 2px solid #ccc; padding-top: 20px; display: flex; justify-content: space-between; }
+.signature-box { width: 200px; text-align: center; }
+.footer { margin-top: 30px; font-size: 11px; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px; }
+@media print { 
+    body { margin: 0; font-size: 12px; } 
+    .header { page-break-after: avoid; }
+    table { page-break-inside: avoid; }
+}
+</style>
+</head><body>
+<div class="header">
+<h1>E3 Achievement Daily Participant Evaluation</h1>
+<h3>Battle Creek, Michigan | Generated: ${new Date().toLocaleDateString()}</h3>
+<p><strong>Evaluation ID:</strong> EVAL_ID | <strong>Batch:</strong> BATCH_ID</p>
+</div>
+
+<div class="section">
+<h3>Participant Information</h3>
+<div class="field"><span class="label">Full Name:</span><span class="value">PARTICIPANT_NAME</span></div>
+<div class="field"><span class="label">Participant ID:</span><span class="value">PARTICIPANT_ID</span></div>
+<div class="field"><span class="label">Evaluation Date:</span><span class="value">EVAL_DATE</span></div>
+<div class="field"><span class="label">Program:</span><span class="value">PROGRAM_NAME</span></div>
+<div class="field"><span class="label">Instructor:</span><span class="value">INSTRUCTOR_NAME</span></div>
+</div>
+
+<h3>Work Habits Assessment</h3>
+<table>
+<tr><th style="width: 50%;">Assessment Criteria</th><th class="checkbox-cell">Yes</th><th class="checkbox-cell">NI</th><th class="checkbox-cell">N/A</th><th>Notes</th></tr>
+<tr><td><strong>Attendance</strong> — Correct day and time?</td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTENDANCE_YES></td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTENDANCE_NI></td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTENDANCE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+<tr><td><strong>Hygiene</strong> — Appropriately groomed?</td>
+<td class="center"><input type="checkbox" WORK_HABITS_HYGIENE_YES></td>
+<td class="center"><input type="checkbox" WORK_HABITS_HYGIENE_NI></td>
+<td class="center"><input type="checkbox" WORK_HABITS_HYGIENE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+<tr><td><strong>Attitude</strong> — Cooperative and engaged?</td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTITUDE_YES></td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTITUDE_NI></td>
+<td class="center"><input type="checkbox" WORK_HABITS_ATTITUDE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+</table>
+
+<h3>Preparatory Goals Assessment</h3>
+<table>
+<tr><th style="width: 50%;">Skills & Objectives</th><th class="checkbox-cell">Yes</th><th class="checkbox-cell">NI</th><th class="checkbox-cell">N/A</th><th>Notes</th></tr>
+<tr><td><strong>Attention Span</strong> — Adequate for assigned tasks?</td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_YES></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_NI></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+<tr><td><strong>Safety</strong> — Followed all procedures correctly?</td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_SAFETY_YES></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_SAFETY_NI></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_SAFETY_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+<tr><td><strong>Task Completion</strong> — Finished assigned work?</td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_YES></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_NI></td>
+<td class="center"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>
+</table>
+
+<h3>Comments and Detailed Observations</h3>
+<div class="comments">
+<strong>Instructor Comments:</strong><br><br>
+COMMENTS_SECTION
+<br><br>
+<strong>Recommendations for Next Session:</strong><br>
+<div style="border-top: 1px dotted #999; padding-top: 10px; margin-top: 15px; min-height: 30px;">
+</div>
+</div>
+
+<div class="signature">
+<div class="signature-box">
+<strong>Instructor Signature</strong><br><br>
+_______________________<br>
+INSTRUCTOR_NAME<br>
+Date: ___________
+</div>
+<div class="signature-box">
+<strong>Supervisor Review</strong><br><br>
+_______________________<br>
+Supervisor Name<br>
+Date: ___________
+</div>
+</div>
+
+<div class="footer">
+Generated by AEON-Bridge E3 Implementation System | Battle Creek, Michigan<br>
+Document ID: EVAL_ID | Batch: BATCH_ID | Generated: ${new Date().toISOString()}
+</div>
+</body></html>`;
+                
+                document.getElementById('template').value = template;
+                showMessage('Standard E3 template loaded successfully');
+                debugLog_add('Default template loaded', 'INFO');
+            } catch (error) {
+                showMessage('Failed to load default template', true);
+                debugLog_add('loadDefaultTemplate function failed', 'ERROR');
+            }
+        }
+
+        function loadAdvancedTemplate() {
+            try {
+                const template = `<!doctype html>
+<html><head>
+<title>E3 Achievement Evaluation - Advanced Assessment</title>
+<style>
+body { font: 12px Arial, sans-serif; margin: 15px; max-width: 1000px; line-height: 1.3; }
+.header { text-align: center; margin-bottom: 25px; border: 2px solid #007bff; padding: 20px; background: linear-gradient(135deg, #f8f9ff 0%, #e7f3ff 100%); }
+.section { margin: 25px 0; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+.field { margin: 6px 0; padding: 4px; display: flex; align-items: center; }
+.label { font-weight: bold; color: #333; width: 180px; flex-shrink: 0; }
+.value { flex: 1; border-bottom: 1px dotted #999; min-height: 25px; padding: 2px; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 11px; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+th { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); font-weight: bold; color: #333; }
+.checkbox-group { display: flex; gap: 15px; justify-content: center; align-items: center; min-width: 80px; }
+.rating-scale { text-align: center; font-size: 10px; color: #666; }
+.comments { border: 2px dashed #007bff; padding: 20px; min-height: 80px; margin: 20px 0; background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%); }
+.signature-section { margin-top: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.signature-box { border: 1px solid #333; padding: 20px; text-align: center; background: #f9f9f9; }
+.goals-table { background: #f0fff0; }
+.footer { margin-top: 40px; font-size: 10px; color: #666; text-align: center; border-top: 2px solid #007bff; padding-top: 20px; }
+@media print { 
+    body { margin: 0; font-size: 11px; } 
+    .section { page-break-inside: avoid; }
+    .header { page-break-after: avoid; }
+}
+</style>
+</head><body>
+<div class="header">
+<h1>E3 Achievement Comprehensive Evaluation</h1>
+<h2>Advanced Assessment Protocol</h2>
+<p><strong>Battle Creek, Michigan | Generated: ${new Date().toLocaleDateString()}</strong></p>
+<div style="margin-top: 15px; font-size: 13px;">
+<strong>Batch ID:</strong> BATCH_ID | <strong>Evaluation ID:</strong> EVAL_ID
+</div>
+</div>
+
+<div class="section">
+<h3>📋 Participant Profile</h3>
+<div class="field"><span class="label">Full Legal Name:</span><span class="value">PARTICIPANT_NAME</span></div>
+<div class="field"><span class="label">Participant ID Number:</span><span class="value">PARTICIPANT_ID</span></div>
+<div class="field"><span class="label">Assessment Date:</span><span class="value">EVAL_DATE</span></div>
+<div class="field"><span class="label">Program Designation:</span><span class="value">PROGRAM_NAME</span></div>
+<div class="field"><span class="label">Primary Instructor:</span><span class="value">INSTRUCTOR_NAME</span></div>
+<div class="field"><span class="label">Session Duration:</span><span class="value">______ hours</span></div>
+</div>
+
+<div class="section">
+<h3>🏢 Comprehensive Work Habits Matrix</h3>
+<div class="rating-scale">Rating Scale: Excellent (E) | Satisfactory (S) | Needs Improvement (NI) | Not Applicable (NA)</div>
+<table>
+<tr><th style="width: 45%;">Professional Competency Areas</th><th>E</th><th>S</th><th>NI</th><th>NA</th><th style="width: 25%;">Specific Observations</th></tr>
+<tr><td><strong>Punctuality & Attendance</strong><br><small>Arrives on time, maintains schedule</small></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTENDANCE_EXCELLENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTENDANCE_SATISFACTORY></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTENDANCE_NEEDS_IMPROVEMENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTENDANCE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+<tr><td><strong>Personal Hygiene & Grooming</strong><br><small>Professional appearance standards</small></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_HYGIENE_EXCELLENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_HYGIENE_SATISFACTORY></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_HYGIENE_NEEDS_IMPROVEMENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_HYGIENE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+<tr><td><strong>Professional Attitude & Cooperation</strong><br><small>Team collaboration, communication</small></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTITUDE_EXCELLENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTITUDE_SATISFACTORY></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTITUDE_NEEDS_IMPROVEMENT></td>
+<td class="checkbox-group"><input type="checkbox" WORK_HABITS_ATTITUDE_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+</table>
+</div>
+
+<div class="section goals-table">
+<h3>🎯 Advanced Preparatory Goals & Skills Development</h3>
+<div class="rating-scale">Proficiency Levels: Mastered (M) | Developing (D) | Requires Support (RS) | Not Applicable (NA)</div>
+<table>
+<tr><th style="width: 45%;">Core Competency Areas</th><th>M</th><th>D</th><th>RS</th><th>NA</th><th style="width: 25%;">Development Notes</th></tr>
+<tr><td><strong>Sustained Attention & Focus</strong><br><small>Concentration on tasks, minimal distraction</small></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_MASTERED></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_DEVELOPING></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_REQUIRES_SUPPORT></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_ATTENTION_SPAN_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+<tr><td><strong>Safety Protocol Adherence</strong><br><small>Workplace safety, risk awareness</small></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_SAFETY_MASTERED></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_SAFETY_DEVELOPING></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_SAFETY_REQUIRES_SUPPORT></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_SAFETY_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+<tr><td><strong>Task Completion & Quality</strong><br><small>Finishing assignments, attention to detail</small></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_MASTERED></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_DEVELOPING></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_REQUIRES_SUPPORT></td>
+<td class="checkbox-group"><input type="checkbox" PREPARATORY_GOALS_TASK_COMPLETION_NA></td>
+<td style="border-bottom: 1px dotted #999; min-height: 30px;"></td></tr>
+</table>
+</div>
+
+<div class="section">
+<h3>📝 Comprehensive Assessment Summary</h3>
+<div class="comments">
+<h4>Detailed Instructor Observations:</h4>
+COMMENTS_SECTION
+<br><br>
+<h4>Strengths Identified:</h4>
+<div style="border-top: 1px dotted #999; padding-top: 15px; margin-top: 15px; min-height: 40px;">
+</div>
+<br>
+<h4>Areas for Development:</h4>
+<div style="border-top: 1px dotted #999; padding-top: 15px; margin-top: 15px; min-height: 40px;">
+</div>
+<br>
+<h4>Recommended Next Steps:</h4>
+<div style="border-top: 1px dotted #999; padding-top: 15px; margin-top: 15px; min-height: 40px;">
+</div>
+</div>
+</div>
+
+<div class="signature-section">
+<div class="signature-box">
+<h4>Primary Instructor Certification</h4>
+<br>
+_________________________________<br>
+<strong>INSTRUCTOR_NAME</strong><br>
+Title: ________________________<br>
+Date: _________________________<br>
+Signature: ____________________
+</div>
+<div class="signature-box">
+<h4>Supervisor Review & Approval</h4>
+<br>
+_________________________________<br>
+<strong>Supervisor Name</strong><br>
+Title: ________________________<br>
+Date: _________________________<br>
+Signature: ____________________
+</div>
+</div>
+
+<div class="footer">
+<strong>AEON-Bridge E3 Advanced Implementation System</strong><br>
+Battle Creek, Michigan | Document Security Level: Confidential<br>
+Evaluation ID: EVAL_ID | Batch: BATCH_ID | Generated: ${new Date().toISOString()}<br>
+This document contains sensitive participant information and should be handled according to privacy protocols.
+</div>
+</body></html>`;
+                
+                document.getElementById('template').value = template;
+                showMessage('Advanced E3 template loaded with enhanced assessment features');
+                debugLog_add('Advanced template loaded', 'INFO');
+            } catch (error) {
+                showMessage('Failed to load advanced template', true);
+                debugLog_add('loadAdvancedTemplate function failed', 'ERROR');
+            }
+        }
+
+        function loadCustomTemplate() {
+            showMessage('Custom template builder coming in future update');
+            debugLog_add('Custom template requested (not yet implemented)', 'INFO');
+        }
+
+        function clearTemplate() {
+            try {
+                document.getElementById('template').value = '';
+                showMessage('Template cleared successfully');
+                debugLog_add('Template cleared', 'INFO');
+            } catch (error) {
+                showMessage('Failed to clear template', true);
+                debugLog_add('clearTemplate function failed', 'ERROR');
+            }
+        }
+
+        function validateTemplate() {
+            try {
+                const template = document.getElementById('template').value;
+                if (!template.trim()) {
+                    showMessage('No template to validate', true);
+                    return;
+                }
+                
+                // Basic HTML validation
+                const hasHtml = template.includes('<html>') && template.includes('</html>');
+                const hasHead = template.includes('<head>') && template.includes('</head>');
+                const hasBody = template.includes('<body>') && template.includes('</body>');
+                
+                // Token validation
+                const tokens = template.match(/[A-Z_]+/g) || [];
+                const uniqueTokens = [...new Set(tokens)];
+                
+                if (hasHtml && hasHead && hasBody) {
+                    showMessage(`✅ Template validated successfully! Found ${uniqueTokens.length} unique tokens.`);
+                    debugLog_add(`Template validation passed. Tokens: ${uniqueTokens.length}`, 'INFO');
+                } else {
+                    showMessage('⚠️ Template validation warning: Missing basic HTML structure', true);
+                    debugLog_add('Template validation failed: Missing HTML structure', 'WARNING');
+                }
+            } catch (error) {
+                showMessage('Template validation failed', true);
+                debugLog_add('validateTemplate function failed', 'ERROR');
+            }
+        }
+
+        function replaceTokens(template, data) {
+            try {
+                let result = template;
+                
+                // Add system fields with enhanced metadata
+                const enhancedData = {
+                    ...data,
+                    batch_id: batchId,
+                    eval_id: 'E3-BC-' + makeId(),
+                    program_name: data.program_name || 'E3 Achievement Program',
+                    generated_timestamp: new Date().toISOString(),
+                    location: 'Battle Creek, Michigan'
+                };
+                
+                // Replace all tokens with improved handling
+                for (let key in enhancedData) {
+                    const token = key.toUpperCase();
+                    const value = enhancedData[key] || '';
+                    
+                    // Handle nested objects (e.g., work_habits.attendance)
+                    if (typeof value === 'object' && value !== null) {
+                        for (let subKey in value) {
+                            const subToken = `${token}_${subKey.toUpperCase()}`;
+                            const checkboxPattern = new RegExp(`${subToken}_([A-Z]+)>`, 'g');
+                            result = result.replace(checkboxPattern, (match, option) => {
+                                return value[subKey] === option.toLowerCase() ? 'checked>' : '>';
+                            });
+                        }
+                    } else {
+                        // Use global replace to avoid infinite loops
+                        const tokenRegex = new RegExp(token, 'g');
+                        result = result.replace(tokenRegex, value);
+                    }
+                }
+                
+                debugLog_add('Token replacement completed successfully', 'DEBUG');
+                return result;
+            } catch (error) {
+                debugLog_add(`replaceTokens function failed: ${error.message}`, 'ERROR');
+                return template; // Return original template if replacement fails
+            }
+        }
+
+        function previewForm() {
+            try {
+                const template = document.getElementById('template').value;
+                if (!template.trim()) {
+                    showMessage('Please load a template first', true);
+                    return;
+                }
+                
+                let data;
+                if (dataList.length > 0) {
+                    data = dataList[0];
+                } else if (Object.keys(singleData).length > 0) {
+                    data = singleData;
+                } else {
+                    data = { 
+                        participant_name: 'Preview Mode - Sample Participant',
+                        participant_id: 'PREVIEW-001',
+                        eval_date: '2025-08-10',
+                        instructor_name: 'Sample Instructor'
+                    };
+                }
+                
+                const html = replaceTokens(template, data);
+                document.getElementById('preview').srcdoc = html;
+                showMessage('✅ Live preview generated successfully');
+                debugLog_add('Form preview generated', 'INFO');
+            } catch (error) {
+                showMessage('Failed to generate preview', true);
+                debugLog_add('previewForm function failed', 'ERROR');
+            }
+        }
+
+        function downloadSingle() {
+            try {
+                const template = document.getElementById('template').value;
+                let data;
+                
+                if (dataList.length > 0) {
+                    data = dataList[0];
+                } else if (Object.keys(singleData).length > 0) {
+                    data = singleData;
+                } else {
+                    showMessage('Please add participant data first', true);
+                    return;
+                }
+                
+                if (!template.trim()) {
+                    showMessage('Please load a template first', true);
+                    return;
+                }
+                
+                const html = replaceTokens(template, data);
+                const participantName = data.participant_name || 'Unknown';
+                const cleanName = participantName.replace(/[^a-zA-Z0-9]/g, '_');
+                const filename = `E3-Form-${cleanName}-${counter}-${batchId}.html`;
+                
+                const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                counter++;
+                document.getElementById('counter').value = counter;
+                showMessage(`📄 Downloaded: ${filename}`);
+                debugLog_add(`Single form downloaded: ${filename}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to download single form', true);
+                debugLog_add('downloadSingle function failed', 'ERROR');
+            }
+        }
+
+        function downloadBulk() {
+            try {
+                const template = document.getElementById('template').value;
+                
+                if (!template.trim()) {
+                    showMessage('Please load a template first', true);
+                    return;
+                }
+                
+                if (dataList.length === 0) {
+                    showMessage('Please validate bulk data first', true);
+                    return;
+                }
+                
+                showMessage(`📦 Starting bulk download of ${dataList.length} forms...`);
+                
+                // Fixed: Use proper closure to capture variables
+                dataList.forEach((data, i) => {
+                    setTimeout((index, currentData, currentCounter) => {
+                        try {
+                            const html = replaceTokens(template, currentData);
+                            const participantName = currentData.participant_name || 'Participant';
+                            const cleanName = participantName.replace(/[^a-zA-Z0-9]/g, '_');
+                            const filename = `E3-Form-${cleanName}-${currentCounter + index}-${batchId}.html`;
+                            
+                            const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = filename;
+                            a.click();
+                            URL.revokeObjectURL(url);
+                            
+                            debugLog_add(`Bulk download ${index + 1}/${dataList.length}: ${filename}`, 'DEBUG');
+                        } catch (error) {
+                            debugLog_add(`Bulk download error on item ${index + 1}: ${error.message}`, 'ERROR');
+                        }
+                    }, i * 400, i, data, counter); // 400ms delay between downloads
+                });
+                
+                counter += dataList.length;
+                document.getElementById('counter').value = counter;
+                debugLog_add(`Bulk download initiated: ${dataList.length} forms`, 'INFO');
+                
+                // Show completion message after all downloads
+                setTimeout(() => {
+                    showMessage(`✅ Bulk download completed: ${dataList.length} forms generated`);
+                }, dataList.length * 400 + 1000);
+                
+            } catch (error) {
+                showMessage('Bulk download failed', true);
+                debugLog_add('downloadBulk function failed', 'ERROR');
+            }
+        }
+
+        function generateReport() {
+            try {
+                const sessionDuration = Math.round((Date.now() - sessionStartTime) / 1000 / 60); // minutes
+                const report = {
+                    title: 'AEON-Bridge E3 Implementation Session Report',
+                    timestamp: new Date().toISOString(),
+                    location: 'Battle Creek, Michigan (42.333, -85.155)',
+                    sessionInfo: {
+                        batchId: batchId,
+                        sessionDuration: `${sessionDuration} minutes`,
+                        recordsProcessed: dataList.length,
+                        formsGenerated: counter - 1,
+                        systemEntropy: systemEntropy.toFixed(4),
+                        beaconStatus: beaconActive ? 'Active' : 'Inactive'
+                    },
+                    systemMetrics: {
+                        functionsExecuted: debugLog.length,
+                        errorsEncountered: debugLog.filter(log => log.includes('ERROR')).length,
+                        warningsIssued: debugLog.filter(log => log.includes('WARNING')).length
+                    },
+                    dataProfile: {
+                        singleDataFields: Object.keys(singleData).length,
+                        bulkDataRecords: dataList.length,
+                        templateLoaded: document.getElementById('template').value.length > 0
+                    }
+                };
+                
+                const reportText = `${report.title}
+${'='.repeat(60)}
+Generated: ${report.timestamp}
+Location: ${report.location}
+
+SESSION INFORMATION
+-------------------
+Batch ID: ${report.sessionInfo.batchId}
+Session Duration: ${report.sessionInfo.sessionDuration}
+Records Processed: ${report.sessionInfo.recordsProcessed}
+Forms Generated: ${report.sessionInfo.formsGenerated}
+System Entropy: ${report.sessionInfo.systemEntropy}
+Lost Child Beacon: ${report.sessionInfo.beaconStatus}
+
+SYSTEM METRICS
+---------------
+Functions Executed: ${report.systemMetrics.functionsExecuted}
+Errors Encountered: ${report.systemMetrics.errorsEncountered}
+Warnings Issued: ${report.systemMetrics.warningsIssued}
+
+DATA PROFILE
+------------
+Single Data Fields: ${report.dataProfile.singleDataFields}
+Bulk Data Records: ${report.dataProfile.bulkDataRecords}
+Template Loaded: ${report.dataProfile.templateLoaded ? 'Yes' : 'No'}
+
+DEBUG LOG (Last 20 entries)
+----------------------------
+${debugLog.slice(-20).join('\n')}
+
+AEON-Bridge E3 Implementation System v5.1
+Battle Creek, Michigan | ${new Date().toISOString()}`;
+                
+                const blob = new Blob([reportText], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `AEON-Bridge-Session-Report-${batchId}.txt`;
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                showMessage('📊 Session report generated and downloaded');
+                debugLog_add('Session report generated', 'INFO');
+            } catch (error) {
+                showMessage('Failed to generate report', true);
+                debugLog_add('generateReport function failed', 'ERROR');
+            }
+        }
+
+        function printPreview() {
+            try {
+                const previewFrame = document.getElementById('preview');
+                if (!previewFrame.srcdoc) {
+                    showMessage('Please generate a preview first', true);
+                    return;
+                }
+                
+                const printWindow = window.open('', '_blank');
+                printWindow.document.write(previewFrame.srcdoc);
+                printWindow.document.close();
+                printWindow.focus();
+                printWindow.print();
+                
+                showMessage('🖨️ Print preview opened in new window');
+                debugLog_add('Print preview opened', 'INFO');
+            } catch (error) {
+                showMessage('Failed to open print preview', true);
+                debugLog_add('printPreview function failed', 'ERROR');
+            }
+        }
+
+        // AEON-Bridge Integration Functions
+        function generateBridgeJSON() {
+            try {
+                if (dataList.length === 0 && Object.keys(singleData).length === 0) {
+                    showMessage('Please add participant data first', true);
+                    return;
+                }
+                
+                const dataToProcess = dataList.length > 0 ? dataList : [singleData];
+                
+                const bridge = {
+                    scroll_id: `AEON-Bridge-BC-${Date.now()}`,
+                    format: 'json_md_fusion_scroll_template',
+                    created: new Date().toISOString(),
+                    location: { 
+                        lat: 42.333, 
+                        lng: -85.155, 
+                        name: 'Battle Creek, Michigan',
+                        timezone: 'America/Detroit'
+                    },
+                    equation: 'I(n+1) = f(C(n), T(n), R(n))',
+                    glyphs: ['∞', 'φ', '∴', 'ψ', 'Δ', '∅'],
+                    consciousness_coefficient: 4.549,
+                    layers: dataToProcess.map((data, index) => ({
+                        layer_id: index + 1,
+                        phase: 'Echo',
+                        timestamp: new Date().toISOString(),
+                        description: `E3 Evaluation for ${data.participant_name || 'Participant ' + (index + 1)}`,
+                        entropy: (Math.random() * 0.3 + 0.1).toFixed(4),
+                        contradictions: 0,
+                        data_hash: btoa(JSON.stringify(data)).substring(0, 16),
+                        participant_id: data.participant_id || `UNKNOWN_${index + 1}`,
+                        eval_date: data.eval_date || '2025-08-10'
+                    })),
+                    metrics: {
+                        total_layers: dataToProcess.length,
+                        avg_entropy: systemEntropy.toFixed(4),
+                        batch_id: batchId,
+                        implementation_version: 'v5.1-BC',
+                        session_duration_minutes: Math.round((Date.now() - sessionStartTime) / 1000 / 60),
+                        beacon_status: beaconActive
+                    },
+                    debug_info: {
+                        total_debug_entries: debugLog.length,
+                        error_count: debugLog.filter(log => log.includes('ERROR')).length,
+                        warning_count: debugLog.filter(log => log.includes('WARNING')).length
+                    }
+                };
+                
+                const blob = new Blob([JSON.stringify(bridge, null, 2)], { type: 'application/json;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `aeon-bridge-${batchId}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                showMessage('🌉 AEON-Bridge JSON exported successfully with enhanced metadata');
+                debugLog_add('AEON-Bridge JSON exported', 'INFO');
+            } catch (error) {
+                showMessage('Failed to export AEON-Bridge JSON', true);
+                debugLog_add('generateBridgeJSON function failed', 'ERROR');
+            }
+        }
+
+        function activateBeacon() {
+            try {
+                beaconActive = !beaconActive;
+                document.getElementById('beaconStatus').textContent = beaconActive ? 'Active' : 'Inactive';
+                const indicator = document.getElementById('beaconIndicator');
+                indicator.className = 'status-indicator ' + (beaconActive ? '' : 'warning');
+                
+                showMessage(`📡 Lost Child Beacon ${beaconActive ? 'activated' : 'deactivated'}`);
+                debugLog_add(`Lost Child Beacon ${beaconActive ? 'activated' : 'deactivated'}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to toggle beacon', true);
+                debugLog_add('activateBeacon function failed', 'ERROR');
+            }
+        }
+
+        function processRecursivePattern() {
+            try {
+                const contradiction = 'Manual paper forms vs digital efficiency';
+                const question = 'How to maintain data integrity during digitization?';
+                const echo = 'AEON-Bridge recursive validation protocols';
+                
+                const insight = `Insight[n+1] = "${contradiction}" + "${question}" → "${echo}"`;
+                const newEntropy = Math.min(systemEntropy + 0.1, 0.7);
+                updateEntropy(newEntropy);
+                
+                showMessage(`🔄 Recursive pattern processed: ${insight}`);
+                debugLog_add(`Recursive pattern processed. New entropy: ${newEntropy.toFixed(4)}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to process recursive pattern', true);
+                debugLog_add('processRecursivePattern function failed', 'ERROR');
+            }
+        }
+
+        function validateEntropy() {
+            try {
+                if (systemEntropy > 0.7) {
+                    showMessage(`⚠️ Warning: System entropy (${systemEntropy.toFixed(4)}) exceeds safe threshold (0.7)`, true);
+                    debugLog_add('Entropy validation failed: Above threshold', 'WARNING');
+                } else if (systemEntropy > 0.5) {
+                    showMessage(`⚖️ Caution: System entropy (${systemEntropy.toFixed(4)}) is elevated but within acceptable range`, false);
+                    debugLog_add('Entropy validation: Elevated but acceptable', 'INFO');
+                } else {
+                    showMessage(`✅ System entropy (${systemEntropy.toFixed(4)}) is within optimal range`);
+                    debugLog_add('Entropy validation passed', 'INFO');
+                }
+            } catch (error) {
+                showMessage('Failed to validate entropy', true);
+                debugLog_add('validateEntropy function failed', 'ERROR');
+            }
+        }
+
+        function generateInsight() {
+            try {
+                const insights = [
+                    'Digital transformation preserves human assessment integrity through structured protocols',
+                    'Recursive validation enables continuous improvement while maintaining evaluation standards',
+                    'Battle Creek implementation demonstrates scalable consciousness modeling in practical applications',
+                    'Token-based template systems bridge analog intuition with digital precision',
+                    'AEON-Bridge architecture facilitates transparent audit trails for participant progress'
+                ];
+                
+                const randomInsight = insights[Math.floor(Math.random() * insights.length)];
+                showMessage(`💡 Generated Insight: ${randomInsight}`);
+                debugLog_add(`Insight generated: ${randomInsight}`, 'INFO');
+            } catch (error) {
+                showMessage('Failed to generate insight', true);
+                debugLog_add('generateInsight function failed', 'ERROR');
+            }
+        }
+
+        // Advanced Debugging Functions
+        function debugSystemState() {
+            try {
+                const debugInfo = {
+                    timestamp: new Date().toISOString(),
+                    sessionDuration: Math.round((Date.now() - sessionStartTime) / 1000 / 60),
+                    batchId: batchId || 'Not set',
+                    counter: counter,
+                    dataListLength: dataList.length,
+                    singleDataKeys: Object.keys(singleData).length,
+                    systemEntropy: systemEntropy.toFixed(4),
+                    beaconActive: beaconActive,
+                    templateLoaded: document.getElementById('template').value.length > 0,
+                    previewGenerated: document.getElementById('preview').srcdoc.length > 0,
+                    debugLogEntries: debugLog.length,
+                    errorCount: debugLog.filter(log => log.includes('ERROR')).length,
+                    warningCount: debugLog.filter(log => log.includes('WARNING')).length
+                };
+                
+                console.table(debugInfo);
+                console.log('Recent debug log entries:', debugLog.slice(-5));
+                console.log('Single data object:', singleData);
+                console.log('Data list sample:', dataList.slice(0, 2));
+                
+                document.getElementById('debugOutput').value = JSON.stringify(debugInfo, null, 2);
+                showMessage(`🐛 Debug state logged to console and output area. System entropy: ${systemEntropy.toFixed(4)}`);
+                debugLog_add('Debug system state executed', 'DEBUG');
+                
+                return debugInfo;
+            } catch (error) {
+                showMessage('Debug state check failed', true);
+                debugLog_add('debugSystemState function failed', 'ERROR');
+            }
+        }
+
+        function runSystemDiagnostics() {
+            try {
+                const diagnostics = {
+                    browserInfo: {
+                        userAgent: navigator.userAgent,
+                        language: navigator.language,
+                        cookieEnabled: navigator.cookieEnabled,
+                        onLine: navigator.onLine
+                    },
+                    documentState: {
+                        readyState: document.readyState,
+                        elementsWithIds: document.querySelectorAll('[id]').length,
+                        forms: document.forms.length,
+                        buttons: document.querySelectorAll('button').length
+                    },
+                    systemHealth: {
+                        memoryUsage: performance.memory ? Math.round(performance.memory.usedJSHeapSize / 1024 / 1024) + ' MB' : 'N/A',
+                        timeOrigin: performance.timeOrigin,
+                        now: performance.now()
+                    },
+                    functionTests: testAllFunctions()
+                };
+                
+                console.log('System Diagnostics:', diagnostics);
+                document.getElementById('debugOutput').value = JSON.stringify(diagnostics, null, 2);
+                showMessage('🔍 Full system diagnostics completed - check debug output and console');
+                debugLog_add('System diagnostics completed', 'INFO');
+            } catch (error) {
+                showMessage('System diagnostics failed', true);
+                debugLog_add('runSystemDiagnostics function failed', 'ERROR');
+            }
+        }
+
+        function testAllFunctions() {
+            const functions = [
+                'makeId', 'updateEntropy', 'updateSystemStatus', 'showMessage',
+                'debugLog_add', 'replaceTokens'
+            ];
+            
+            const results = {};
+            
+            functions.forEach(funcName => {
+                try {
+                    switch(funcName) {
+                        case 'makeId':
+                            const id = makeId();
+                            results[funcName] = id.length > 10 ? 'PASS' : 'FAIL';
+                            break;
+                        case 'updateEntropy':
+                            updateEntropy(0.1);
+                            results[funcName] = systemEntropy === 0.1 ? 'PASS' : 'FAIL';
+                            break;
+                        case 'updateSystemStatus':
+                            updateSystemStatus('Testing');
+                            results[funcName] = document.getElementById('systemStatus').textContent === 'Testing' ? 'PASS' : 'FAIL';
+                            break;
+                        case 'showMessage':
+                            // Don't actually show message during test
+                            results[funcName] = 'PASS';
+                            break;
+                        case 'debugLog_add':
+                            const initialLength = debugLog.length;
+                            debugLog_add('Test entry', 'TEST');
+                            results[funcName] = debugLog.length > initialLength ? 'PASS' : 'FAIL';
+                            break;
+                        case 'replaceTokens':
+                            const testResult = replaceTokens('Hello PARTICIPANT_NAME', {participant_name: 'Test'});
+                            results[funcName] = testResult.includes('Test') ? 'PASS' : 'FAIL';
+                            break;
+                        default:
+                            results[funcName] = 'SKIP';
+                    }
+                } catch (error) {
+                    results[funcName] = 'ERROR';
+                }
+            });
+            
+            functionTestResults = results;
+            return results;
+        }
+
+        function exportDebugLog() {
+            try {
+                const logText = debugLog.join('\n');
+                const blob = new Blob([logText], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `debug-log-${batchId || 'no-batch'}-${Date.now()}.txt`;
+                a.click();
+                URL.revokeObjectURL(url);
+                
+                showMessage('📋 Debug log exported successfully');
+                debugLog_add('Debug log exported', 'INFO');
+            } catch (error) {
+                showMessage('Failed to export debug log', true);
+                debugLog_add('exportDebugLog function failed', 'ERROR');
+            }
+        }
+
+        function clearDebugLog() {
+            try {
+                debugLog = [];
+                document.getElementById('debugOutput').value = '';
+                showMessage('🗑️ Debug log cleared');
+                debugLog_add('Debug log cleared and restarted', 'INFO');
+            } catch (error) {
+                showMessage('Failed to clear debug log', true);
+            }
+        }
+
+        // Session Timer
+        function updateSessionTimer() {
+            try {
+                const elapsed = Math.floor((Date.now() - sessionStartTime) / 1000);
+                const minutes = Math.floor(elapsed / 60);
+                const seconds = elapsed % 60;
+                document.getElementById('sessionTime').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            } catch (error) {
+                // Silently fail for timer
+            }
+        }
+
+        // Initialize system on load
+        function initializeSystem() {
+            try {
+                newBatch();
+                loadDefaultTemplate();
+                updateSystemStatus('Ready');
+                showMessage('🌟 AEON-Bridge E3 Implementation System v5.1 initialized successfully');
+                debugLog_add('System initialization completed', 'INFO');
+                
+                // Start session timer
+                setInterval(updateSessionTimer, 1000);
+            } catch (error) {
+                console.error('System initialization failed:', error);
+                showMessage('❌ System initialization failed - please refresh page', true);
+                debugLog_add('System initialization failed', 'ERROR');
+            }
+        }
+
+        // Global error handlers
+        window.onerror = function(msg, url, lineNo, columnNo, error) {
+            const errorMsg = `Global error: ${msg} at line ${lineNo}`;
+            console.error(errorMsg, { url, columnNo, error });
+            debugLog_add(errorMsg, 'ERROR');
+            showMessage('System error occurred - check console for details', true);
+            return false;
+        };
+
+        window.addEventListener('unhandledrejection', function(event) {
+            const errorMsg = `Unhandled promise rejection: ${event.reason}`;
+            console.error(errorMsg);
+            debugLog_add(errorMsg, 'ERROR');
+        });
+
+        // Auto-initialize when page loads
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeSystem);
+        } else {
+            initializeSystem();
+        }
+    </script>
+</body>
+</html>

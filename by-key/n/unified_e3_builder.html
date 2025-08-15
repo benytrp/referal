@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>E3 Unified Builder - Fixed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+        }
+        .tab.active {
+            background: #007bff;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            font-family: monospace;
+        }
+        .quick-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .batch-row {
+            display: flex;
+            gap: 15px;
+            align-items: end;
+            margin-bottom: 15px;
+        }
+        .batch-row > div {
+            flex: 1;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button.secondary { background: #6c757d; }
+        button.success { background: #28a745; }
+        button.warning { background: #ffc107; color: #000; }
+        .button-row {
+            text-align: center;
+        }
+        .status {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .examples {
+            background: #e9f7ff;
+            border: 1px solid #bee5eb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .examples code {
+            background: #d1ecf1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        #template { height: 300px; font-size: 12px; }
+        #bulkInput { height: 150px; }
+        .counter { background: #e9ecef; padding: 8px 12px; border-radius: 5px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏗️ E3 Unified Builder</h1>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('data')">📝 Data Entry</button>
+            <button class="tab" onclick="showTab('template')">📄 Template</button>
+            <button class="tab" onclick="showTab('generate')">⚡ Generate</button>
+        </div>
+
+        <!-- Data Tab -->
+        <div id="data-tab" class="tab-content active">
+            <div class="section">
+                <h3>Quick Single Entry</h3>
+                <div class="quick-form">
+                    <input type="text" id="quickName" placeholder="Participant Name">
+                    <input type="text" id="quickId" placeholder="Participant ID">
+                    <input type="text" id="quickDate" placeholder="Date (2025-08-09)">
+                    <input type="text" id="quickInstructor" placeholder="Instructor Name">
+                </div>
+                <div class="button-row">
+                    <button onclick="addQuickToBulk()">➕ Add to Bulk</button>
+                    <button onclick="clearQuick()">🗑️ Clear</button>
+                </div>
+            </div>
+
+            <div class="examples">
+                <h4>📋 Bulk Data Format:</h4>
+                <p><strong>Basic:</strong> <code>participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09</code></p>
+                <p><strong>With checkboxes:</strong> <code>work_habits.hygiene=yes, preparatory_goals.safety=ni</code></p>
+                <p><strong>Multiple records:</strong> One line per person</p>
+            </div>
+
+            <div class="section">
+                <h3>Bulk Data Entry</h3>
+                <label for="bulkInput">Enter multiple records (one per line):</label>
+                <textarea id="bulkInput" placeholder="participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09
+participant_name=John Smith, participant_id=P002, eval_date=2025-08-09"></textarea>
+                <div class="button-row">
+                    <button onclick="loadSample()">📁 Load Sample</button>
+                    <button onclick="clearBulk()">🗑️ Clear</button>
+                    <button onclick="validateData()" class="success">✅ Validate</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Template Tab -->
+        <div id="template-tab" class="tab-content">
+            <div class="section">
+                <h3>Template Management</h3>
+                <div class="button-row">
+                    <button onclick="loadTemplate()">📋 Load E3 Default</button>
+                    <button onclick="clearTemplate()">🗑️ Clear</button>
+                </div>
+                <label for="template">HTML Template:</label>
+                <textarea id="template" placeholder="Click 'Load E3 Default' to get started"></textarea>
+            </div>
+        </div>
+
+        <!-- Generate Tab -->
+        <div id="generate-tab" class="tab-content">
+            <div class="section">
+                <h3>Generation Settings</h3>
+                <div class="batch-row">
+                    <div>
+                        <label>Batch ID:</label>
+                        <input type="text" id="batchId" readonly>
+                    </div>
+                    <button onclick="newBatch()">🔄 New Batch</button>
+                    <div>
+                        <label>Counter:</label>
+                        <div class="counter" id="counter">1</div>
+                    </div>
+                </div>
+                
+                <div class="button-row">
+                    <button onclick="preview()" class="success">👁️ Preview</button>
+                    <button onclick="downloadSingle()">💾 Download Single</button>
+                    <button onclick="downloadAll()" class="warning">📦 Download All</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Preview</h3>
+                <iframe id="preview"></iframe>
+            </div>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+<script>
+// Global state
+var batchId = '';
+var counter = 1;
+var formData = [];
+
+// Utility functions
+function showStatus(msg, isError) {
+    var status = document.getElementById('status');
+    status.textContent = msg;
+    status.className = 'status ' + (isError ? 'error' : 'success');
+    status.style.display = 'block';
+    setTimeout(function() { status.style.display = 'none'; }, 3000);
+}
+
+function makeId() {
+    var now = new Date();
+    return now.getFullYear() + 
+        String(now.getMonth() + 1).padStart(2, '0') + 
+        String(now.getDate()).padStart(2, '0') + 
+        String(now.getHours()).padStart(2, '0') + 
+        String(now.getMinutes()).padStart(2, '0') + 
+        Math.random().toString(36).substr(2, 4);
+}
+
+// Tab management
+function showTab(tabName) {
+    // Hide all
+    var tabs = document.querySelectorAll('.tab-content');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+    }
+    var buttons = document.querySelectorAll('.tab');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+    }
+    
+    // Show selected
+    document.getElementById(tabName + '-tab').classList.add('active');
+    event.target.classList.add('active');
+}
+
+// Data functions
+function addQuickToBulk() {
+    var name = document.getElementById('quickName').value.trim();
+    var id = document.getElementById('quickId').value.trim();
+    var date = document.getElementById('quickDate').value.trim();
+    var instructor = document.getElementById('quickInstructor').value.trim();
+    
+    if (!name && !id && !date && !instructor) {
+        showStatus('Fill in at least one field', true);
+        return;
+    }
+    
+    var line = '';
+    if (name) line += 'participant_name=' + name;
+    if (id) line += (line ? ', ' : '') + 'participant_id=' + id;
+    if (date) line += (line ? ', ' : '') + 'eval_date=' + date;
+    if (instructor) line += (line ? ', ' : '') + 'instructor_name=' + instructor;
+    
+    var bulk = document.getElementById('bulkInput');
+    if (bulk.value) bulk.value += '\n';
+    bulk.value += line;
+    
+    clearQuick();
+    showStatus('Added to bulk data');
+}
+
+function clearQuick() {
+    document.getElementById('quickName').value = '';
+    document.getElementById('quickId').value = '';
+    document.getElementById('quickDate').value = '';
+    document.getElementById('quickInstructor').value = '';
+}
+
+function clearBulk() {
+    document.getElementById('bulkInput').value = '';
+    showStatus('Bulk data cleared');
+}
+
+function loadSample() {
+    var sample = 'participant_name=Abrams Jamie Marie, participant_id=54870, eval_date=1/9/25, instructor_name=Chris Burdette, work_habits.hygiene=yes\nparticipant_name=Smith John, participant_id=P002, eval_date=1/10/25, instructor_name=Sarah Johnson, preparatory_goals.safety=ni';
+    document.getElementById('bulkInput').value = sample;
+    showStatus('Sample data loaded');
+}
+
+function parseData(line) {
+    var data = {};
+    var pairs = line.split(',');
+    
+    for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].trim();
+        var eq = pair.indexOf('=');
+        if (eq > 0) {
+            var key = pair.substring(0, eq).trim();
+            var value = pair.substring(eq + 1).trim();
+            if (key && value) data[key] = value;
+        }
+    }
+    return data;
+}
+
+function validateData() {
+    var bulk = document.getElementById('bulkInput').value.trim();
+    if (!bulk) {
+        showStatus('No data to validate', true);
+        return;
+    }
+    
+    var lines = bulk.split('\n').filter(function(line) { return line.trim(); });
+    formData = [];
+    
+    for (var i = 0; i < lines.length; i++) {
+        var data = parseData(lines[i]);
+        if (Object.keys(data).length > 0) {
+            formData.push(data);
+        }
+    }
+    
+    if (formData.length === 0) {
+        showStatus('No valid data found', true);
+        return;
+    }
+    
+    showStatus('Validated ' + formData.length + ' record(s) - ready to generate');
+}
+
+// Template functions
+function loadTemplate() {
+    var template = '<!doctype html>\n<html>\n<head>\n<title>E3 Achievement Daily Participant Evaluation</title>\n<style>\nbody { font: 14px Arial, sans-serif; margin: 20px; }\n.field { margin: 10px 0; padding: 5px; border-bottom: 1px solid #ccc; }\n.label { font-weight: bold; color: #666; }\ntable { width: 100%; border-collapse: collapse; margin: 15px 0; }\nth, td { border: 1px solid #ccc; padding: 8px; }\nth { background: #f0f0f0; }\n.checkbox-cell { text-align: center; }\n.comments { border: 1px dashed #999; padding: 10px; min-height: 40px; }\n@media print { body { margin: 0; font-size: 12px; } }\n</style>\n</head>\n<body>\n<h1 style="text-align: center;">E3 Achievement Daily Participant Evaluation</h1>\n\n<div class="field">\n<span class="label">Name:</span> PARTICIPANT_NAME\n</div>\n<div class="field">\n<span class="label">ID:</span> PARTICIPANT_ID\n</div>\n<div class="field">\n<span class="label">Date:</span> EVAL_DATE\n</div>\n<div class="field">\n<span class="label">Batch ID:</span> BATCH_ID\n</div>\n<div class="field">\n<span class="label">Eval ID:</span> EVAL_ID\n</div>\n\n<h3>Work Habits</h3>\n<table>\n<tr><th style="width: 60%;">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\n<tr>\n<td>Attendance — Correct day and time?</td>\n<td class="checkbox-cell"><input type="checkbox" name="attendance"></td>\n<td class="checkbox-cell"><input type="checkbox" name="attendance"></td>\n<td class="checkbox-cell"><input type="checkbox" name="attendance"></td>\n</tr>\n<tr>\n<td>Hygiene — Appropriately groomed?</td>\n<td class="checkbox-cell"><input type="checkbox" name="hygiene"></td>\n<td class="checkbox-cell"><input type="checkbox" name="hygiene"></td>\n<td class="checkbox-cell"><input type="checkbox" name="hygiene"></td>\n</tr>\n</table>\n\n<h3>Preparatory Goals</h3>\n<table>\n<tr><th style="width: 60%;">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\n<tr>\n<td>Attention Span — Adequate for tasks?</td>\n<td class="checkbox-cell"><input type="checkbox" name="attention"></td>\n<td class="checkbox-cell"><input type="checkbox" name="attention"></td>\n<td class="checkbox-cell"><input type="checkbox" name="attention"></td>\n</tr>\n<tr>\n<td>Safety — Followed procedures?</td>\n<td class="checkbox-cell"><input type="checkbox" name="safety"></td>\n<td class="checkbox-cell"><input type="checkbox" name="safety"></td>\n<td class="checkbox-cell"><input type="checkbox" name="safety"></td>\n</tr>\n</table>\n\n<h3>Comments</h3>\n<div class="comments">COMMENTS_SECTION</div>\n\n<h3>Signature</h3>\n<div class="field">\n<span class="label">Instructor:</span> INSTRUCTOR_NAME\n</div>\n\n<script>\nvar boxes = document.querySelectorAll("input[type=checkbox]");\nfor (var i = 0; i < boxes.length; i++) {\n  boxes[i].onclick = function() {\n    if (this.checked) {\n      var name = this.name;\n      var others = document.querySelectorAll("input[name=" + name + "]");\n      for (var j = 0; j < others.length; j++) {\n        if (others[j] !== this) others[j].checked = false;\n      }\n    }\n  };\n}\n</script>\n</body>\n</html>';
+    
+    document.getElementById('template').value = template;
+    showStatus('E3 template loaded');
+}
+
+function clearTemplate() {
+    document.getElementById('template').value = '';
+    showStatus('Template cleared');
+}
+
+// Generation functions
+function newBatch() {
+    batchId = 'B' + makeId();
+    document.getElementById('batchId').value = batchId;
+    showStatus('New batch: ' + batchId);
+}
+
+function replaceTokens(template, data) {
+    var result = template;
+    
+    // Add system data
+    data.batch_id = batchId;
+    data.eval_id = 'E3-' + makeId();
+    data.generated_at = new Date().toISOString();
+    
+    // Replace tokens
+    for (var key in data) {
+        var token = new RegExp(key.toUpperCase(), 'g');
+        var value = data[key] || '';
+        result = result.replace(token, value);
+    }
+    
+    return result;
+}
+
+function preview() {
+    var template = document.getElementById('template').value;
+    if (!template) {
+        showStatus('Load template first', true);
+        return;
+    }
+    
+    if (formData.length === 0) {
+        validateData();
+        if (formData.length === 0) {
+            showStatus('Validate data first', true);
+            return;
+        }
+    }
+    
+    var html = replaceTokens(template, formData[0]);
+    document.getElementById('preview').srcdoc = html;
+    showStatus('Preview generated');
+}
+
+function downloadSingle() {
+    var template = document.getElementById('template').value;
+    if (!template) {
+        showStatus('Load template first', true);
+        return;
+    }
+    
+    if (formData.length === 0) {
+        validateData();
+        if (formData.length === 0) {
+            showStatus('Validate data first', true);
+            return;
+        }
+    }
+    
+    var html = replaceTokens(template, formData[0]);
+    var filename = 'E3-Form-' + counter + '.html';
+    
+    var blob = new Blob([html], {type: 'text/html'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+    
+    counter++;
+    document.getElementById('counter').textContent = counter;
+    showStatus('Downloaded: ' + filename);
+}
+
+function downloadAll() {
+    var template = document.getElementById('template').value;
+    if (!template) {
+        showStatus('Load template first', true);
+        return;
+    }
+    
+    if (formData.length === 0) {
+        validateData();
+        if (formData.length === 0) {
+            showStatus('Validate data first', true);
+            return;
+        }
+    }
+    
+    for (var i = 0; i < formData.length; i++) {
+        (function(index) {
+            setTimeout(function() {
+                var html = replaceTokens(template, formData[index]);
+                var filename = 'E3-Form-' + (counter + index) + '.html';
+                
+                var blob = new Blob([html], {type: 'text/html'});
+                var url = URL.createObjectURL(blob);
+                var a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                a.click();
+                URL.revokeObjectURL(url);
+            }, index * 300);
+        })(i);
+    }
+    
+    counter += formData.length;
+    document.getElementById('counter').textContent = counter;
+    showStatus('Downloading ' + formData.length + ' files...');
+}
+
+// Initialize
+newBatch();
+loadTemplate();
+</script>
+</body>
+</html>

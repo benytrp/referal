@@ -1,0 +1,173 @@
+{
+  "schema": {
+    "trigger": "<x>",
+    "contract": {
+      "goal": "Perform systematic data analysis and generate actionable insights",
+      "constraints": [
+        "Maintain entropy below 0.7",
+        "Validate all data sources",
+        "Complete within 25 cycles"
+      ],
+      "success_criteria": [
+        "Generate comprehensive analysis report",
+        "Identify key patterns and trends",
+        "Provide actionable recommendations"
+      ]
+    },
+    "phases": [
+      {
+        "phase_name": "Data Collection",
+        "operations": [
+          {
+            "op": "gather_data",
+            "parameters": {}
+          },
+          {
+            "op": "validate_sources",
+            "parameters": {}
+          }
+        ],
+        "parallel_sandboxes": false,
+        "entropy": 0.2
+      },
+      {
+        "phase_name": "Analysis",
+        "operations": [
+          {
+            "op": "process_data",
+            "parameters": {}
+          },
+          {
+            "op": "identify_patterns",
+            "parameters": {}
+          }
+        ],
+        "parallel_sandboxes": true,
+        "entropy": 0.4
+      },
+      {
+        "phase_name": "Synthesis",
+        "operations": [
+          {
+            "op": "correlate_findings",
+            "parameters": {}
+          },
+          {
+            "op": "generate_insights",
+            "parameters": {}
+          }
+        ],
+        "parallel_sandboxes": false,
+        "entropy": 0.3
+      },
+      {
+        "phase_name": "Reporting",
+        "operations": [
+          {
+            "op": "compile_report",
+            "parameters": {}
+          },
+          {
+            "op": "validate_conclusions",
+            "parameters": {}
+          }
+        ],
+        "parallel_sandboxes": false,
+        "entropy": 0.1
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-10T06:00:03.040Z",
+      "complexity_level": "adaptive",
+      "risk_tolerance": "balanced",
+      "generator": "X-Logic Schema Builder v1.0"
+    }
+  },
+  "execution_log": [
+    {
+      "cycle": 1,
+      "phase": "Data Collection",
+      "op": "gather_data",
+      "output": "Collected 2,847 data points from primary sources",
+      "timestamp": "2025-08-10T06:00:03.799Z",
+      "entropy": 0.48359619418249383,
+      "contested": false,
+      "hash_of_entry": "9e9c43c72c1d93f235d7d924c9f29b4b20adfb685a92fb8cde9434c3cf839d91"
+    },
+    {
+      "cycle": 2,
+      "phase": "Data Collection",
+      "op": "validate_sources",
+      "output": "Verified authenticity and credibility of all sources",
+      "timestamp": "2025-08-10T06:00:04.007Z",
+      "entropy": 0.26956588151623,
+      "contested": false,
+      "hash_of_entry": "42d37b9449b74d243f37f97e340d06a7e690f245dd80f10175e9a4b7534df8e9"
+    },
+    {
+      "cycle": 3,
+      "phase": "Analysis",
+      "op": "identify_patterns",
+      "output": "Discovered recurring themes across 85% of samples",
+      "timestamp": "2025-08-10T06:00:04.451Z",
+      "entropy": 0.7585354847486336,
+      "contested": false,
+      "hash_of_entry": "e8a0d22b7dbc17f02dd502dc298238975703c1325a12cf3dffb20d3b65c605d1"
+    },
+    {
+      "cycle": 4,
+      "phase": "Analysis",
+      "op": "process_data",
+      "output": "Applied statistical analysis and cleaned dataset",
+      "timestamp": "2025-08-10T06:00:04.490Z",
+      "entropy": 0.8337659159952657,
+      "contested": false,
+      "hash_of_entry": "88d99531b1229c73d13174e1b49540337096bfb3e4b6a0a4b0c163baef371d0d"
+    },
+    {
+      "cycle": 5,
+      "phase": "Synthesis",
+      "op": "correlate_findings",
+      "output": "Established causal relationships between key variables",
+      "timestamp": "2025-08-10T06:00:04.702Z",
+      "entropy": 0.7368681539888055,
+      "contested": false,
+      "hash_of_entry": "6a66aaa022a3d86a0d569dc189b47f83e78a6fdae6b679636562794d9f6caa30"
+    },
+    {
+      "cycle": 6,
+      "phase": "Synthesis",
+      "op": "generate_insights",
+      "output": "Synthesized 15 actionable insights from analysis",
+      "timestamp": "2025-08-10T06:00:04.906Z",
+      "entropy": 0.6852106702584603,
+      "contested": false,
+      "hash_of_entry": "ec71e194ea5a4637f349a76e5e0f77b59da43b206a9fb47e4eda9651cefabbc4"
+    },
+    {
+      "cycle": 7,
+      "phase": "Reporting",
+      "op": "compile_report",
+      "output": "Generated comprehensive 24-page analysis report",
+      "timestamp": "2025-08-10T06:00:05.123Z",
+      "entropy": 0.31540818916515545,
+      "contested": false,
+      "hash_of_entry": "49491810a616243711b69455d2a5562a3c47311735b6f554a8b6f414214b2898"
+    },
+    {
+      "cycle": 8,
+      "phase": "Reporting",
+      "op": "validate_conclusions",
+      "output": "Peer-reviewed findings against established benchmarks",
+      "timestamp": "2025-08-10T06:00:05.339Z",
+      "entropy": 0.29143076456597056,
+      "contested": false,
+      "hash_of_entry": "fb02b4ca110694629608be3a103eead9e5b6dca52fd6665d4890803669848ccc"
+    }
+  ],
+  "metrics": {
+    "cycles": 8,
+    "entropy": 0.3981753558878024,
+    "contested": 0
+  }
+}

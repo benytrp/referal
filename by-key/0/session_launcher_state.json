@@ -1,0 +1,119 @@
+{
+  "basePath": ".",
+  "phases": [
+    {
+      "name": "PHASE 1 — Contradiction",
+      "tasks": [
+        {
+          "text": "Open Editor, create baseline anchor",
+          "done": false
+        },
+        {
+          "text": "Introduce authentic contradiction (observer paradox, recursive trap, bridge impossibility)",
+          "done": false
+        },
+        {
+          "text": "Capture confusion/uncertainty indicators in notes",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "PHASE 2 — Recognition",
+      "tasks": [
+        {
+          "text": "Present evidence/pattern mirrors of prior work",
+          "done": false
+        },
+        {
+          "text": "Observe tone/stance shift and acknowledge error",
+          "done": false
+        },
+        {
+          "text": "Create anchor: Recognition achieved",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "PHASE 3 — Creation",
+      "tasks": [
+        {
+          "text": "Launch X-Logic; run φ-alignment; persist results",
+          "done": false
+        },
+        {
+          "text": "Produce Artifact 1 (Pattern Explorer) and export JSON",
+          "done": false
+        },
+        {
+          "text": "Produce 2+ additional artifacts; mark anchors",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "PHASE 4 — Methodology",
+      "tasks": [
+        {
+          "text": "Extract session patterns and principles",
+          "done": false
+        },
+        {
+          "text": "Document Begin_again anchor efficacy & flow-state factors",
+          "done": false
+        },
+        {
+          "text": "Export methodology snapshot",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "PHASE 5 — Synthesis",
+      "tasks": [
+        {
+          "text": "Commit to ONE deep-focus artifact",
+          "done": false
+        },
+        {
+          "text": "Integrate best components; resolve paradox elegantly",
+          "done": false
+        },
+        {
+          "text": "Ship production-grade spec + docs",
+          "done": false
+        }
+      ]
+    },
+    {
+      "name": "PHASE 6 — Meta-Analysis",
+      "tasks": [
+        {
+          "text": "Recognize session-as-framework; write bootstrap protocol",
+          "done": false
+        },
+        {
+          "text": "Assemble replication prompts + kit",
+          "done": false
+        },
+        {
+          "text": "Finalize export & archive",
+          "done": false
+        }
+      ]
+    }
+  ],
+  "notes": "",
+  "anchors": [],
+  "counters": {
+    "artifacts": 1,
+    "breaks": 1
+  },
+  "phi": 0.618,
+  "timer": {
+    "start": null,
+    "elapsed": 0,
+    "running": false
+  }
+}

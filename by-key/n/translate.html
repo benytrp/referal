@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Processor - Iterative Style</title>
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #00ff88;
+            --secondary-color: #ff6b6b;
+            --tertiary-color: #ffeb3b;
+            --bg-card: rgba(0, 255, 136, 0.1);
+            --border-card: #00ff88;
+            --bg-input: rgba(0, 0, 0, 0.5);
+            --border-input: #444;
+            --bg-control: rgba(0, 0, 0, 0.3);
+            --btn-bg: linear-gradient(45deg, #00ff88, #00cc6a);
+            --btn-text: #000;
+        }
+
+        body {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            text-shadow: 0 0 10px var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: var(--bg-control);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--secondary-color);
+            padding-bottom: 5px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            background: var(--bg-input);
+            border: 1px solid var(--border-input);
+            color: var(--text-color);
+            border-radius: 5px;
+            resize: vertical;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            background: var(--btn-bg);
+            color: var(--btn-text);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            flex-grow: 1;
+        }
+        
+        .output-card-container {
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            padding: 10px;
+            max-height: 500px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .output-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .output-card:last-child {
+            margin-bottom: 0;
+        }
+        
+        .output-title {
+            color: var(--tertiary-color);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .output-line {
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .status {
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .status.success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        .status.error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Processor - Iterative Style</h1>
+
+        <div class="section">
+            <h2>JSON Input</h2>
+            <textarea id="jsonInput" placeholder="Paste your JSON data here..."></textarea>
+            <div class="button-group">
+                <button class="btn" id="processBtn">Process</button>
+                <button class="btn" id="clearBtn">Clear</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Formatted Output</h2>
+            <div class="output-card-container" id="outputContainer">
+                <div class="output-card">
+                    <div class="output-title">Waiting for data...</div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn" id="copyBtn">Copy to Clipboard</button>
+            </div>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const jsonInput = document.getElementById('jsonInput');
+            const outputContainer = document.getElementById('outputContainer');
+            const statusEl = document.getElementById('status');
+            const processBtn = document.getElementById('processBtn');
+            const clearBtn = document.getElementById('clearBtn');
+            const copyBtn = document.getElementById('copyBtn');
+
+            const SAMPLE_JSON = `[
+  {
+    "cycle": 1,
+    "phase": "Summon",
+    "op": "analyze_goal",
+    "output": "Interpret the primary goal...",
+    "contract_ref": "simulated_task",
+    "timestamp": "2025-08-09T21:24:43.075Z",
+    "entropy": 0.9889
+  },
+  {
+    "cycle": 2,
+    "phase": "Processing",
+    "op": "list_constraints",
+    "output": "Acknowledge constraints...",
+    "contract_ref": "simulated_task",
+    "timestamp": "2025-08-09T21:24:43.182Z",
+    "entropy": 0.7483
+  },
+  {
+    "cycle": 3,
+    "phase": "Echo",
+    "op": "formulate_plan",
+    "output": "Develop a high-level execution strategy.",
+    "contract_ref": "simulated_task",
+    "timestamp": "2025-08-09T21:24:43.283Z",
+    "entropy": 0.3840
+  }
+]`;
+            
+            // Set sample data on load for a better user experience
+            jsonInput.value = SAMPLE_JSON;
+
+            function showStatus(message, isError) {
+                statusEl.textContent = message;
+                statusEl.className = 'status ' + (isError ? 'error' : 'success');
+                statusEl.style.display = 'block';
+                setTimeout(() => statusEl.style.display = 'none', 5000);
+            }
+
+            function parseAndRender(jsonText) {
+                let data = [];
+                try {
+                    data = JSON.parse(jsonText);
+                    if (!Array.isArray(data)) {
+                        data = [data]; // Wrap single object in an array for consistent processing
+                    }
+                } catch (e) {
+                    showStatus('Invalid JSON format. Please check for syntax errors.', true);
+                    return;
+                }
+
+                outputContainer.innerHTML = '';
+                data.forEach(item => {
+                    const card = document.createElement('div');
+                    card.classList.add('output-card');
+
+                    let title = `Cycle: ${item.cycle || 'N/A'}, Phase: ${item.phase || 'N/A'}`;
+                    let output = `Operation: ${item.op || 'N/A'}<br>Output: ${item.output || 'N/A'}`;
+                    
+                    card.innerHTML = `<div class="output-title">${title}</div><div class="output-line">${output}</div>`;
+                    outputContainer.appendChild(card);
+                });
+                showStatus('Data processed successfully.', false);
+            }
+
+            processBtn.addEventListener('click', () => {
+                const jsonText = jsonInput.value.trim();
+                if (jsonText === '') {
+                    showStatus('Please paste JSON data to process.', true);
+                    return;
+                }
+                parseAndRender(jsonText);
+            });
+
+            clearBtn.addEventListener('click', () => {
+                jsonInput.value = '';
+                outputContainer.innerHTML = '<div class="output-card"><div class="output-title">Waiting for data...</div></div>';
+                showStatus('Input cleared.', false);
+            });
+
+            copyBtn.addEventListener('click', () => {
+                const outputText = outputContainer.innerText;
+                if (!outputText || outputText.includes('Waiting for data')) {
+                    showStatus('No formatted output to copy.', true);
+                    return;
+                }
+                navigator.clipboard.writeText(outputText).then(() => {
+                    showStatus('Copied to clipboard!', false);
+                }).catch(err => {
+                    showStatus('Failed to copy. Please copy manually.', true);
+                    console.error('Copy to clipboard failed:', err);
+                });
+            });
+
+            // Initial render with sample data
+            parseAndRender(jsonInput.value);
+        });
+    </script>
+</body>
+</html>

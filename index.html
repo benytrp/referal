@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Art Prompt Generator – Palette Edition</title>
+<style>
+/* --- condensed utility layer (unchanged parts collapsed) --- */
+:root{--bg-from:#2a0a4a;--bg-via:#0d0d6b;--bg-to:#241c5a;--purple-200:#c5a1ff;--purple-300:#ab7aff;
+ --white-10:rgba(255,255,255,.1);--white-20:rgba(255,255,255,.2);--radius:.75rem;--transition:.2s}
+body{margin:0;min-height:100vh;background:linear-gradient(135deg,var(--bg-from),var(--bg-via),var(--bg-to));
+ color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",sans-serif;
+ display:flex;justify-content:center;padding:1.5rem}
+.container{max-width:1260px;width:100%}.card{background:var(--white-10);backdrop-filter:blur(16px);
+ border:1px solid var(--white-20);border-radius:var(--radius);padding:1.5rem}
+h1{font-size:2.25rem;margin:0;font-weight:700}h2{font-size:1.25rem;margin:0 0 1rem}
+.flex{display:flex}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.justify-between{justify-content:space-between}
+.grid{display:grid}.cols-1{grid-template-columns:1fr}.cols-3-lg{grid-template-columns:1fr}
+@media(min-width:1024px){.cols-3-lg{grid-template-columns:1fr 2fr}}
+select,button{cursor:pointer;padding:.5rem .75rem;border:none;border-radius:.5rem;background:var(--white-10);color:#fff}
+button.primary{background:linear-gradient(90deg,#7c3aed,#ec4899)}button.primary:hover{filter:brightness(1.1)}
+button:disabled{opacity:.5}.icon{width:1.1rem;height:1.1rem;vertical-align:-2px}
+.scroll{max-height:24rem;overflow-y:auto}.history-item{background:rgba(0,0,0,.2);border:1px solid var(--white-10);
+ border-radius:.5rem;padding:.75rem;margin-bottom:.75rem}
+.swatch{width:1.2rem;height:1.2rem;border-radius:50%;border:2px solid #fff}
+</style>
+
+<!-- inline Lucide‑like icons omitted for brevity – keep identical to previous file -->
+
+</head><body><div class="container">
+
+<!-- header -->
+<div class="flex gap-3" style="justify-content:center;margin-bottom:2rem">
+  <h1>AI Art Prompt Generator <span style="font-weight:400">· Palettes</span></h1>
+</div>
+
+<div class="grid cols-1 cols-3-lg gap-6">
+
+<!-- SETTINGS ------------------------------------------------------------->
+<div class="card">
+  <h2>Settings</h2>
+  <div class="gap-4 flex" style="flex-direction:column">
+
+    <label>Style <select id="styleSelect"></select></label>
+    <label>Mood <select id="moodSelect"></select></label>
+    <label>Art Medium <select id="mediumSelect"></select></label>
+    <label>Color Scheme <select id="colorSelect"></select></label>
+    <label>Complexity <select id="complexitySelect"></select></label>
+
+    <!-- NEW palette selector -->
+    <label>Colour Palette
+      <select id="paletteSelect">
+        <option value="">None (classic)</option>
+      </select>
+    </label>
+    <div id="swatchRow" class="flex gap-2" style="margin-top:.25rem"></div>
+
+  </div>
+</div>
+
+<!-- MAIN ----------------------------------------------------------------->
+<div class="gap-6 flex" style="flex-direction:column">
+
+<!-- generator -->
+<div class="card">
+  <div class="flex justify-between items-center mb-4">
+    <h2>Generate Prompt</h2>
+    <button id="generateBtn" class="primary flex items-center gap-2">
+      <span>Generate</span>
+    </button>
+  </div>
+  <textarea id="generatedPrompt" readonly style="width:100%;min-height:4rem;display:none"></textarea>
+  <button id="copyBtn" title="Copy" style="display:none;margin-top:.5rem">Copy</button>
+</div>
+
+<!-- history -->
+<div id="historyCard" class="card" style="display:none">
+  <h2>Recent Prompts</h2>
+  <div id="historyList" class="scroll"></div>
+</div>
+
+</div></div></div>
+
+<!-- ---------- EMBEDDED PALETTE DATA (from uploaded JSON files) ---------- -->
+<script type="application/json" id="paletteData">
+{
+ "φ‑Harmonic Spectrum": {
+  "order": ["Crimson Resonance","Amber Harmonic","Golden Convergence","Emerald Equilibrium","Sapphire Recursion","Violet Transcendence"],
+  "map": {
+   "Crimson Resonance":"#FF4500",
+   "Amber Harmonic":"#FF8C00",
+   "Golden Convergence":"#FFD700",
+   "Emerald Equilibrium":"#32CD32",
+   "Sapphire Recursion":"#4169E1",
+   "Violet Transcendence":"#8A2BE2"
+  }
+ },
+ "Consciousness Emergence": {
+  "order": ["Magenta Spark","Sky Synapse","Lime Network","Pink Resonance","Plum Memory","Wheat Wisdom"],
+  "map": {
+   "Magenta Spark":"#FF69B4",
+   "Sky Synapse":"#00BFFF",
+   "Lime Network":"#ADFF2F",
+   "Pink Resonance":"#FFB6C1",
+   "Plum Memory":"#DDA0DD",
+   "Wheat Wisdom":"#F5DEB3"
+  }
+ },
+ "Quantum Bridge Spectrum": {
+  "order": ["Teal Coherence","Slate Interference","Orchid Entanglement","Khaki Collapse","Salmon Uncertainty","Mint Measurement"],
+  "map": {
+   "Teal Coherence":"#00CED1",
+   "Slate Interference":"#7B68EE",
+   "Orchid Entanglement":"#DA70D6",
+   "Khaki Collapse":"#F0E68C",
+   "Salmon Uncertainty":"#FFA07A",
+   "Mint Measurement":"#98FB98"
+  }
+ }
+}
+</script>
+
+<!-- ---------- APPLICATION LOGIC ---------------------------------------- -->
+<script>
+/* === original arrays === */
+const styles=['any','photorealistic','impressionist','surreal','minimalist','abstract','cyberpunk','steampunk','art nouveau','baroque','gothic','pop art'];
+const moods=['any','serene','mysterious','energetic','melancholic','whimsical','dramatic','peaceful','intense','dreamlike','nostalgic','futuristic'];
+const complexities=['simple','medium','detailed','highly detailed'];
+const artMediums=['any','oil painting','watercolor','digital art','pencil sketch','acrylic','photography','sculpture','ink drawing','mixed media'];
+const colorSchemes=['any','monochrome','warm tones','cool tones','vibrant','pastel','high contrast','muted','neon','earth tones','jewel tones'];
+const subjects=[/* ... same 20 subjects ... */'majestic mountain landscape at golden hour','ancient tree with glowing roots in a mystical forest','futuristic city floating among clouds','serene lake reflecting aurora borealis','mysterious figure walking through a field of luminescent flowers','clockwork dragon perched on crystal formations','abandoned library overgrown with bioluminescent plants','cosmic whale swimming through a nebula','ethereal dancer made of light and shadow','steampunk airship navigating storm clouds','zen garden with impossible geometric patterns','phoenix rising from digital flames','underwater palace made of coral and pearls','robotic monk meditating in a bamboo grove','crystal cave filled with floating musical notes','time traveler standing at the crossroads of past and future','enchanted door opening to multiple dimensions','mechanical heart pumping liquid starlight','sage owl with galaxy eyes perched on ancient ruins','dancing northern lights forming constellation patterns'];
+const techniques=['dramatic lighting','soft focus','macro lens','wide angle','bokeh effect','golden ratio composition','rule of thirds','symmetrical balance','leading lines','depth of field','silhouette','reflection','double exposure','long exposure','HDR','tilt-shift'];
+const qualityModifiers=['8K resolution','ultra detailed','masterpiece','award winning','professional photography','studio lighting','cinematic','trending on artstation','highly detailed','photorealistic'];
+
+/* === populate generic selects === */
+const fill=(el,list)=>{el.innerHTML=list.map(v=>`<option>${v}</option>`).join('')};
+fill(styleSelect,styles);fill(moodSelect,moods);fill(mediumSelect,artMediums);
+fill(colorSelect,colorSchemes);fill(complexitySelect,complexities);
+
+/* === palettes === */
+const palettes=JSON.parse(document.getElementById('paletteData').textContent);
+for(const key of Object.keys(palettes)){
+  paletteSelect.insertAdjacentHTML('beforeend',`<option>${key}</option>`);
+}
+
+/* === swatch display === */
+const showSwatches=name=>{
+  swatchRow.innerHTML='';
+  if(!name){return;}
+  palettes[name].order.forEach(c=>{
+    const hex=palettes[name].map[c];
+    swatchRow.insertAdjacentHTML('beforeend',`<span class="swatch" title="${c} (${hex})" style="background:${hex}"></span>`);
+  });
+};
+paletteSelect.addEventListener('change',e=>showSwatches(e.target.value));
+
+/* === history === */
+const historyKey='promptHistoryV2';let history=JSON.parse(localStorage.getItem(historyKey)||'[]');
+const renderHistory=_=>{
+  historyCard.style.display=history.length?'block':'none';
+  historyList.innerHTML=history.map(p=>`<div class="history-item">${p}</div>`).join('');
+};renderHistory();
+
+/* === random helper === */
+const rand=a=>a[Math.floor(Math.random()*a.length)];
+
+/* === generate === */
+generateBtn.onclick=()=>{
+  generateBtn.disabled=true;
+  setTimeout(()=>{
+    const settings={
+      style:styleSelect.value,mood:moodSelect.value,artMedium:mediumSelect.value,
+      colorScheme:colorSelect.value,complexity:complexitySelect.value
+    };
+    let prompt=rand(subjects);
+    if(settings.style!=='any')prompt+=`, ${settings.style} style`;
+    if(settings.mood!=='any')prompt+=`, ${settings.mood} atmosphere`;
+    if(settings.artMedium!=='any')prompt+=`, rendered as ${settings.artMedium}`;
+    if(settings.colorScheme!=='any')prompt+=`, ${settings.colorScheme}`;
+    prompt+=`, ${rand(techniques)}, ${rand(qualityModifiers)}`;
+    switch(settings.complexity){
+      case'detailed':prompt+=', intricate details, fine textures';break;
+      case'highly detailed':prompt+=', extremely detailed, hyperrealistic, intricate patterns, fine textures, perfect composition';break;
+      case'simple':prompt+=', clean composition, minimal details';break;
+    }
+    const paletteName=paletteSelect.value;
+    if(paletteName){
+      const names=palettes[paletteName].order.join(' → ');
+      prompt+=`, using ${paletteName} (${names})`;
+    }
+    generatedPrompt.value=prompt;generatedPrompt.style.display='block';
+    copyBtn.style.display='inline-block';
+    history=[prompt,...history].slice(0,10);localStorage.setItem(historyKey,JSON.stringify(history));
+    renderHistory();generateBtn.disabled=false;
+  },800);
+};
+
+/* === copy === */
+copyBtn.onclick=()=>navigator.clipboard.writeText(generatedPrompt.value);
+</script>
+</body></html>

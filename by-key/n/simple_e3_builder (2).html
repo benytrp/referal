@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>E3 Builder - Working Version</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .box { border: 1px solid #ccc; padding: 15px; margin: 15px 0; background: #f9f9f9; }
+    input, textarea { padding: 8px; margin: 5px; border: 1px solid #ccc; }
+    button { background: #007bff; color: white; border: none; padding: 10px 15px; margin: 5px; cursor: pointer; }
+    textarea { width: 95%; font-family: monospace; font-size: 12px; }
+    #template { height: 150px; }
+    #data { height: 80px; }
+    #preview { width: 100%; height: 300px; border: 1px solid #ccc; }
+    .status { padding: 10px; margin: 10px 0; background: #d4edda; color: #155724; }
+  </style>
+</head>
+<body>
+  <h1>E3 Builder - Working Version</h1>
+  
+  <div class="box">
+    <h3>1. Batch ID</h3>
+    <input type="text" id="batch" size="30">
+    <button onclick="makeBatch()">Generate ID</button>
+  </div>
+
+  <div class="box">
+    <h3>2. Template</h3>
+    <button onclick="loadTemplate()">Load E3 Template</button>
+    <br><textarea id="template"></textarea>
+  </div>
+
+  <div class="box">
+    <h3>3. Data</h3>
+    <p>Format: name=John Doe, id=123, date=2025-01-09</p>
+    <textarea id="data">participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09, instructor=Chris Burdette</textarea>
+  </div>
+
+  <div class="box">
+    <h3>4. Actions</h3>
+    <button onclick="makePreview()">Make Preview</button>
+    <button onclick="downloadFile()">Download HTML</button>
+    <div id="status"></div>
+  </div>
+
+  <div class="box">
+    <h3>5. Preview</h3>
+    <iframe id="preview"></iframe>
+  </div>
+
+<script>
+function makeBatch() {
+  var d = new Date();
+  var id = 'B' + d.getFullYear() + 
+    (d.getMonth() + 1 < 10 ? '0' : '') + (d.getMonth() + 1) +
+    (d.getDate() < 10 ? '0' : '') + d.getDate() +
+    (d.getHours() < 10 ? '0' : '') + d.getHours() +
+    (d.getMinutes() < 10 ? '0' : '') + d.getMinutes() +
+    Math.floor(Math.random() * 1000);
+  
+  document.getElementById('batch').value = id;
+  document.getElementById('status').innerHTML = 'Batch ID created: ' + id;
+}
+
+function loadTemplate() {
+  var t = '<!doctype html>\n<html>\n<head>\n<title>E3 Evaluation Form</title>\n<style>\nbody { font: 14px Arial; margin: 20px; }\n.row { margin: 10px 0; padding: 5px; border-bottom: 1px solid #ccc; }\n.label { font-weight: bold; color: #666; }\ntable { width: 100%; border-collapse: collapse; margin: 10px 0; }\nth, td { border: 1px solid #ccc; padding: 5px; }\nth { background: #f0f0f0; }\n.center { text-align: center; }\n.comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }\n</style>\n</head>\n<body>\n<h1 style="text-align: center;">E3 Achievement Daily Participant Evaluation</h1>\n\n<div class="row">\n<span class="label">Name:</span> PARTICIPANT_NAME\n</div>\n\n<div class="row">\n<span class="label">ID:</span> PARTICIPANT_ID\n</div>\n\n<div class="row">\n<span class="label">Date:</span> EVAL_DATE\n</div>\n\n<div class="row">\n<span class="label">Batch ID:</span> BATCH_ID\n</div>\n\n<div class="row">\n<span class="label">Eval ID:</span> EVAL_ID\n</div>\n\n<h3>Work Habits</h3>\n<table>\n<tr>\n<th style="width: 50%;">Item</th>\n<th>Yes</th>\n<th>NI</th>\n<th>N/A</th>\n</tr>\n<tr>\n<td>Attendance — Correct day and time?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n<tr>\n<td>Hygiene — Appropriately groomed?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n<tr>\n<td>Attitude — Positive attitude?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n</table>\n\n<h3>Preparatory Goals</h3>\n<table>\n<tr>\n<th style="width: 50%;">Item</th>\n<th>Yes</th>\n<th>NI</th>\n<th>N/A</th>\n</tr>\n<tr>\n<td>Attention Span — Adequate for tasks?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n<tr>\n<td>Task Completion — Stayed on task?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n<tr>\n<td>Safety — Followed procedures?</td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n<td class="center"><input type="checkbox"></td>\n</tr>\n</table>\n\n<h3>Comments</h3>\n<div class="comment-box">COMMENTS</div>\n\n<h3>Signature</h3>\n<div class="row">\n<span class="label">Instructor:</span> INSTRUCTOR\n</div>\n\n<div class="row">\n<span class="label">Signature Date:</span> EVAL_DATE\n</div>\n\n</body>\n</html>';
+
+  document.getElementById('template').value = t;
+  document.getElementById('status').innerHTML = 'Template loaded successfully';
+}
+
+function makePreview() {
+  var template = document.getElementById('template').value;
+  var dataText = document.getElementById('data').value;
+  var batchId = document.getElementById('batch').value;
+  
+  if (!template) {
+    document.getElementById('status').innerHTML = 'ERROR: Load template first';
+    return;
+  }
+  
+  if (!batchId) {
+    document.getElementById('status').innerHTML = 'ERROR: Generate batch ID first';
+    return;
+  }
+  
+  // Parse data
+  var data = {};
+  var pairs = dataText.split(',');
+  for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i];
+    if (pair.indexOf('=') > 0) {
+      var parts = pair.split('=');
+      var key = parts[0].replace(/\s/g, '');
+      var value = parts[1].replace(/^\s+|\s+$/g, '');
+      data[key] = value;
+    }
+  }
+  
+  // Make eval ID
+  var d = new Date();
+  var evalId = 'E3-' + d.getFullYear() + 
+    (d.getMonth() + 1 < 10 ? '0' : '') + (d.getMonth() + 1) +
+    (d.getDate() < 10 ? '0' : '') + d.getDate() + '-' +
+    Math.floor(Math.random() * 10000);
+  
+  // Replace text
+  var html = template;
+  html = html.replace(/PARTICIPANT_NAME/g, data.participant_name || '');
+  html = html.replace(/PARTICIPANT_ID/g, data.participant_id || '');
+  html = html.replace(/EVAL_DATE/g, data.eval_date || '');
+  html = html.replace(/BATCH_ID/g, batchId);
+  html = html.replace(/EVAL_ID/g, evalId);
+  html = html.replace(/INSTRUCTOR/g, data.instructor || '');
+  html = html.replace(/COMMENTS/g, data.comments || '');
+  
+  // Show preview
+  var iframe = document.getElementById('preview');
+  iframe.srcdoc = html;
+  
+  // Save for download
+  window.savedHtml = html;
+  
+  document.getElementById('status').innerHTML = 'Preview created successfully';
+}
+
+function downloadFile() {
+  if (!window.savedHtml) {
+    document.getElementById('status').innerHTML = 'ERROR: Create preview first';
+    return;
+  }
+  
+  var blob = new Blob([window.savedHtml], {type: 'text/html'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'E3-Form.html';
+  a.click();
+  URL.revokeObjectURL(url);
+  
+  document.getElementById('status').innerHTML = 'File downloaded: E3-Form.html';
+}
+
+// Auto-start
+makeBatch();
+loadTemplate();
+</script>
+</body>
+</html>

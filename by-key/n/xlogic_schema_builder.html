@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Logic Schema Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .panel {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            height: fit-content;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+
+        .label-with-help {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .help-icon {
+            width: 16px;
+            height: 16px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            cursor: help;
+            position: relative;
+        }
+
+        .help-icon:hover::after {
+            content: attr(data-help);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1f2937;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        input, select, textarea {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            width: auto;
+            margin: 0;
+        }
+
+        .quick-start {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .preset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .preset-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .preset-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+        }
+
+        .preset-card.selected {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .preset-title {
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 0.5rem;
+        }
+
+        .preset-description {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .preset-tags {
+            display: flex;
+            gap: 0.25rem;
+            flex-wrap: wrap;
+        }
+
+        .preset-tag {
+            background: rgba(59, 130, 246, 0.2);
+            color: #93c5fd;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+        }
+
+        .phase-builder {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .phase-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .phase-number {
+            background: #3b82f6;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .operation-item {
+            background: rgba(100, 116, 139, 0.1);
+            border-radius: 6px;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid #10b981;
+        }
+
+        .operation-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .operation-name {
+            font-weight: 600;
+            color: #10b981;
+        }
+
+        .schema-preview {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: rgba(59, 130, 246, 0.8);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+            font-size: 0.7rem;
+        }
+
+        .suggestions-panel {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+        }
+
+        .suggestion-icon {
+            color: #10b981;
+        }
+
+        .validation-errors {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: none;
+        }
+
+        .error-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            color: #fca5a5;
+        }
+
+        .template-manager {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .template-modal {
+            background: #1f2937;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab.active {
+            color: #3b82f6;
+            border-bottom-color: #3b82f6;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .preset-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 X-Logic Schema Builder</h1>
+            <p class="subtitle">Create, customize, and manage autonomous consciousness engine schemas</p>
+        </div>
+
+        <!-- Left Panel: Schema Builder -->
+        <div class="panel">
+            <h2 class="section-title">
+                🎯 Schema Builder
+            </h2>
+
+            <!-- Quick Start Section -->
+            <div class="quick-start">
+                <h3 style="color: #3b82f6; margin-bottom: 1rem;">🚀 Quick Start</h3>
+                <p style="margin-bottom: 1rem; font-size: 0.9rem;">Choose a template below or start from scratch to build your custom X-Logic schema.</p>
+                
+                <div class="preset-grid">
+                    <div class="preset-card" onclick="loadPreset('analytical')">
+                        <div class="preset-title">📊 Analytical</div>
+                        <div class="preset-description">Data analysis and processing workflows</div>
+                        <div class="preset-tags">
+                            <span class="preset-tag">Low Risk</span>
+                            <span class="preset-tag">Quick</span>
+                        </div>
+                    </div>
+                    <div class="preset-card" onclick="loadPreset('creative')">
+                        <div class="preset-title">🎨 Creative</div>
+                        <div class="preset-description">Content generation and ideation</div>
+                        <div class="preset-tags">
+                            <span class="preset-tag">Medium Risk</span>
+                            <span class="preset-tag">Iterative</span>
+                        </div>
+                    </div>
+                    <div class="preset-card" onclick="loadPreset('research')">
+                        <div class="preset-title">🔬 Research</div>
+                        <div class="preset-description">Comprehensive investigation and documentation</div>
+                        <div class="preset-tags">
+                            <span class="preset-tag">High Complexity</span>
+                            <span class="preset-tag">Thorough</span>
+                        </div>
+                    </div>
+                    <div class="preset-card" onclick="loadPreset('planning')">
+                        <div class="preset-title">📋 Planning</div>
+                        <div class="preset-description">Strategic planning and roadmap creation</div>
+                        <div class="preset-tags">
+                            <span class="preset-tag">Structured</span>
+                            <span class="preset-tag">Goal-oriented</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-secondary" onclick="startFromScratch()">Start from Scratch</button>
+            </div>
+
+            <!-- Contract Settings -->
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('contract')">Contract</button>
+                <button class="tab" onclick="switchTab('phases')">Phases</button>
+                <button class="tab" onclick="switchTab('advanced')">Advanced</button>
+            </div>
+
+            <!-- Contract Tab -->
+            <div class="tab-content active" id="contract-tab">
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="goalInput">Primary Goal</label>
+                        <div class="help-icon" data-help="The main objective the system should achieve">?</div>
+                    </div>
+                    <textarea id="goalInput" rows="3" placeholder="Describe what you want the X-Logic system to accomplish..."></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="label-with-help">
+                            <label for="complexityLevel">Complexity Level</label>
+                            <div class="help-icon" data-help="Determines default constraints and phase structure">?</div>
+                        </div>
+                        <select id="complexityLevel" onchange="updateComplexitySuggestions()">
+                            <option value="simple">Simple (1-3 cycles)</option>
+                            <option value="moderate">Moderate (3-7 cycles)</option>
+                            <option value="complex">Complex (5-15 cycles)</option>
+                            <option value="adaptive">Adaptive (No fixed limit)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="label-with-help">
+                            <label for="riskTolerance">Risk Tolerance</label>
+                            <div class="help-icon" data-help="How much constraint violation is acceptable">?</div>
+                        </div>
+                        <select id="riskTolerance">
+                            <option value="conservative">Conservative (Strict limits)</option>
+                            <option value="balanced">Balanced (Some flexibility)</option>
+                            <option value="aggressive">Aggressive (Adaptive limits)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="constraintsInput">Constraints</label>
+                        <div class="help-icon" data-help="Limits and boundaries for system operation">?</div>
+                    </div>
+                    <textarea id="constraintsInput" rows="3" placeholder="Enter constraints, one per line..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="successCriteriaInput">Success Criteria</label>
+                        <div class="help-icon" data-help="How to measure if the goal was achieved">?</div>
+                    </div>
+                    <textarea id="successCriteriaInput" rows="3" placeholder="Enter success criteria, one per line..."></textarea>
+                </div>
+
+                <div class="suggestions-panel" id="contractSuggestions">
+                    <h4 style="color: #10b981; margin-bottom: 0.5rem;">💡 Suggestions</h4>
+                    <div id="suggestionsList"></div>
+                </div>
+            </div>
+
+            <!-- Phases Tab -->
+            <div class="tab-content" id="phases-tab">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <h3 style="color: #f1f5f9;">Phase Configuration</h3>
+                    <button class="btn btn-small btn-success" onclick="addPhase()">+ Add Phase</button>
+                </div>
+                
+                <div id="phasesContainer">
+                    <!-- Phases will be dynamically added here -->
+                </div>
+
+                <div class="suggestions-panel">
+                    <h4 style="color: #10b981; margin-bottom: 0.5rem;">🔄 Common Phase Patterns</h4>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">📥</span>
+                        <span><strong>Input → Process → Output:</strong> Linear workflow for straightforward tasks</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">🔄</span>
+                        <span><strong>Analyze → Plan → Execute → Reflect:</strong> Iterative improvement cycle</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">🎯</span>
+                        <span><strong>Research → Synthesize → Validate:</strong> Knowledge-focused workflow</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Tab -->
+            <div class="tab-content" id="advanced-tab">
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="label-with-help">
+                            <label for="entropyThreshold">Entropy Threshold</label>
+                            <div class="help-icon" data-help="Maximum entropy before system adaptation">?</div>
+                        </div>
+                        <input type="number" id="entropyThreshold" value="0.8" step="0.1" min="0.1" max="1.0">
+                    </div>
+                    <div class="form-group">
+                        <div class="label-with-help">
+                            <label for="maxCycles">Maximum Cycles</label>
+                            <div class="help-icon" data-help="Safety limit for execution cycles">?</div>
+                        </div>
+                        <input type="number" id="maxCycles" value="10" min="1" max="50">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="parallelSandboxes">Enable Parallel Sandboxes</label>
+                        <div class="help-icon" data-help="Allow system to create parallel processing environments">?</div>
+                    </div>
+                    <select id="parallelSandboxes">
+                        <option value="auto">Auto (Based on complexity)</option>
+                        <option value="enabled">Always Enabled</option>
+                        <option value="disabled">Disabled</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="customTrigger">Custom Trigger</label>
+                        <div class="help-icon" data-help="Override default <x> trigger">?</div>
+                    </div>
+                    <input type="text" id="customTrigger" placeholder="<x>" value="<x>">
+                </div>
+
+                <div class="form-group">
+                    <div class="label-with-help">
+                        <label for="metadataInput">Metadata & Tags</label>
+                        <div class="help-icon" data-help="Additional schema information">?</div>
+                    </div>
+                    <textarea id="metadataInput" rows="3" placeholder="Add tags, version info, or other metadata..."></textarea>
+                </div>
+            </div>
+
+            <div class="validation-errors" id="validationErrors">
+                <h4 style="color: #ef4444; margin-bottom: 0.5rem;">⚠️ Validation Issues</h4>
+                <div id="errorsList"></div>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                <button class="btn" onclick="generateSchema()">Generate Schema</button>
+                <button class="btn btn-secondary" onclick="validateSchema()">Validate</button>
+                <button class="btn btn-secondary" onclick="openTemplateManager()">Manage Templates</button>
+            </div>
+        </div>
+
+        <!-- Right Panel: Preview & Export -->
+        <div class="panel">
+            <h2 class="section-title">
+                👁️ Schema Preview & Export
+            </h2>
+
+            <div class="form-group">
+                <label>Generated Schema</label>
+                <div class="schema-preview" id="schemaPreview">
+                    <button class="copy-btn" onclick="copySchema()">📋 Copy</button>
+                    <div id="schemaContent">Select a preset or build your schema to see the preview...</div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button class="btn btn-success" onclick="downloadSchema()">💾 Download JSON</button>
+                <button class="btn btn-secondary" onclick="exportToProcessor()">🚀 Export to Processor</button>
+            </div>
+
+            <div class="suggestions-panel">
+                <h4 style="color: #10b981; margin-bottom: 0.5rem;">📋 Schema Checklist</h4>
+                <div id="schemaChecklist">
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">⏸️</span>
+                        <span>Goal is clearly defined</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">⏸️</span>
+                        <span>Constraints are realistic</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">⏸️</span>
+                        <span>Success criteria are measurable</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">⏸️</span>
+                        <span>Phases follow logical sequence</span>
+                    </div>
+                    <div class="suggestion-item">
+                        <span class="suggestion-icon">⏸️</span>
+                        <span>Operations have clear purposes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-start" style="margin-top: 2rem;">
+                <h3 style="color: #3b82f6; margin-bottom: 1rem;">🔍 Schema Analysis</h3>
+                <div id="schemaStats">
+                    <p style="margin-bottom: 0.5rem;">📊 Complexity Score: <span id="complexityScore">-</span></p>
+                    <p style="margin-bottom: 0.5rem;">⏱️ Estimated Runtime: <span id="estimatedRuntime">-</span></p>
+                    <p style="margin-bottom: 0.5rem;">🎯 Risk Level: <span id="riskLevel">-</span></p>
+                    <p style="margin-bottom: 0.5rem;">🔀 Parallel Potential: <span id="parallelPotential">-</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template Manager Modal -->
+    <div class="template-manager" id="templateManager">
+        <div class="template-modal">
+            <h2 style="color: #f1f5f9; margin-bottom: 1rem;">📚 Template Manager</h2>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="switchModalTab('saved')">Saved Templates</button>
+                <button class="tab" onclick="switchModalTab('import')">Import/Export</button>
+                <button class="tab" onclick="switchModalTab('community')">Community Templates</button>
+            </div>
+
+            <div class="tab-content active" id="saved-tab">
+                <div id="savedTemplates">
+                    <p style="color: #94a3b8; text-align: center; padding: 2rem;">No saved templates yet. Create and save some schemas!</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="import-tab">
+                <div class="form-group">
+                    <label>Import Schema JSON</label>
+                    <textarea id="importInput" rows="6" placeholder="Paste schema JSON here..."></textarea>
+                    <button class="btn" onclick="importSchema()">Import Schema</button>
+                </div>
+                
+                <div class="form-group">
+                    <label>Export Current Schema</label>
+                    <button class="btn btn-secondary" onclick="exportCurrentSchema()">Export as Template</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="community-tab">
+                <div id="communityTemplates">
+                    <!-- Community templates would be loaded here -->
+                    <p style="color: #94a3b8; text-align: center; padding: 2rem;">Community templates coming soon!</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                <button class="btn btn-secondary" onclick="closeTemplateManager()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let currentSchema = {
+            trigger: "<x>",
+            contract: {
+                goal: "",
+                constraints: [],
+                success_criteria: []
+            },
+            phases: []
+        };
+
+        let phaseCounter = 0;
+        
+        // Preset templates
+        const presetTemplates = {
+            analytical: {
+                goal: "Perform systematic data analysis and generate actionable insights",
+                complexity: "moderate",
+                risk: "conservative",
+                constraints: [
+                    "Maintain entropy below 0.7",
+                    "Complete within 5 cycles",
+                    "Validate all data sources"
+                ],
+                successCriteria: [
+                    "Generate comprehensive analysis report",
+                    "Identify key patterns and trends",
+                    "Provide actionable recommendations"
+                ],
+                phases: [
+                    {
+                        name: "Data Collection",
+                        operations: ["gather_data", "validate_sources"],
+                        entropy: 0.2,
+                        parallel: false
+                    },
+                    {
+                        name: "Analysis",
+                        operations: ["process_data", "identify_patterns"],
+                        entropy: 0.3,
+                        parallel: true
+                    },
+                    {
+                        name: "Synthesis",
+                        operations: ["correlate_findings", "generate_insights"],
+                        entropy: 0.2,
+                        parallel: false
+                    },
+                    {
+                        name: "Reporting",
+                        operations: ["compile_report", "validate_conclusions"],
+                        entropy: 0.1,
+                        parallel: false
+                    }
+                ]
+            },
+            creative: {
+                goal: "Generate original creative content through iterative ideation and refinement",
+                complexity: "complex",
+                risk: "balanced",
+                constraints: [
+                    "Maintain creative coherence",
+                    "Explore multiple perspectives",
+                    "Complete within 8 cycles"
+                ],
+                successCriteria: [
+                    "Produce original creative output",
+                    "Demonstrate iterative improvement",
+                    "Achieve desired creative goals"
+                ],
+                phases: [
+                    {
+                        name: "Ideation",
+                        operations: ["brainstorm_concepts", "explore_themes"],
+                        entropy: 0.4,
+                        parallel: true
+                    },
+                    {
+                        name: "Development",
+                        operations: ["expand_ideas", "create_variations"],
+                        entropy: 0.5,
+                        parallel: true
+                    },
+                    {
+                        name: "Refinement",
+                        operations: ["evaluate_output", "iterate_improvements"],
+                        entropy: 0.3,
+                        parallel: false
+                    },
+                    {
+                        name: "Finalization",
+                        operations: ["polish_content", "validate_quality"],
+                        entropy: 0.2,
+                        parallel: false
+                    }
+                ]
+            },
+            research: {
+                goal: "Conduct comprehensive research and produce detailed documentation",
+                complexity: "complex",
+                risk: "conservative",
+                constraints: [
+                    "Verify all sources",
+                    "Maintain academic rigor",
+                    "Complete within 12 cycles",
+                    "Document methodology"
+                ],
+                successCriteria: [
+                    "Comprehensive literature review",
+                    "Original analysis and insights",
+                    "Peer-reviewable documentation",
+                    "Reproducible methodology"
+                ],
+                phases: [
+                    {
+                        name: "Literature Review",
+                        operations: ["search_sources", "evaluate_relevance", "synthesize_background"],
+                        entropy: 0.3,
+                        parallel: true
+                    },
+                    {
+                        name: "Data Collection",
+                        operations: ["gather_primary_data", "validate_information", "organize_findings"],
+                        entropy: 0.4,
+                        parallel: true
+                    },
+                    {
+                        name: "Analysis",
+                        operations: ["analyze_data", "identify_gaps", "develop_hypotheses"],
+                        entropy: 0.5,
+                        parallel: false
+                    },
+                    {
+                        name: "Documentation",
+                        operations: ["write_findings", "peer_review", "finalize_report"],
+                        entropy: 0.2,
+                        parallel: false
+                    }
+                ]
+            },
+            planning: {
+                goal: "Develop comprehensive strategic plan with actionable implementation roadmap",
+                complexity: "moderate",
+                risk: "balanced",
+                constraints: [
+                    "Consider resource limitations",
+                    "Include risk assessment",
+                    "Define measurable milestones",
+                    "Complete within 6 cycles"
+                ],
+                successCriteria: [
+                    "Clear strategic objectives",
+                    "Detailed implementation plan",
+                    "Risk mitigation strategies",
+                    "Success metrics defined"
+                ],
+                phases: [
+                    {
+                        name: "Situational Analysis",
+                        operations: ["assess_current_state", "identify_stakeholders", "analyze_environment"],
+                        entropy: 0.2,
+                        parallel: false
+                    },
+                    {
+                        name: "Strategic Design",
+                        operations: ["define_objectives", "develop_strategies", "evaluate_options"],
+                        entropy: 0.3,
+                        parallel: true
+                    },
+                    {
+                        name: "Implementation Planning",
+                        operations: ["create_roadmap", "allocate_resources", "define_milestones"],
+                        entropy: 0.3,
+                        parallel: false
+                    },
+                    {
+                        name: "Validation",
+                        operations: ["assess_feasibility", "review_plan", "finalize_strategy"],
+                        entropy: 0.1,
+                        parallel: false
+                    }
+                ]
+            }
+        };
+
+        // Operation suggestions
+        const operationSuggestions = {
+            data: ["gather_data", "validate_sources", "process_data", "analyze_patterns", "clean_data"],
+            analysis: ["analyze_context", "identify_patterns", "correlate_findings", "statistical_analysis", "trend_analysis"],
+            creative: ["brainstorm_concepts", "explore_themes", "generate_variations", "iterate_ideas", "refine_concepts"],
+            planning: ["assess_situation", "define_objectives", "develop_strategies", "create_roadmap", "evaluate_options"],
+            research: ["literature_review", "gather_evidence", "validate_sources", "synthesize_findings", "peer_review"],
+            synthesis: ["integrate_findings", "generate_insights", "create_summary", "draw_conclusions", "validate_results"],
+            output: ["compile_report", "generate_documentation", "create_presentation", "finalize_output", "quality_check"]
+        };
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPreset('analytical');
+            updateComplexitySuggestions();
+        });
+
+        function loadPreset(presetName) {
+            // Clear existing selection
+            document.querySelectorAll('.preset-card').forEach(card => card.classList.remove('selected'));
+            
+            // Select current preset
+            event?.target?.closest('.preset-card')?.classList.add('selected');
+            
+            const preset = presetTemplates[presetName];
+            if (!preset) return;
+
+            // Load basic contract info
+            document.getElementById('goalInput').value = preset.goal;
+            document.getElementById('complexityLevel').value = preset.complexity;
+            document.getElementById('riskTolerance').value = preset.risk;
+            document.getElementById('constraintsInput').value = preset.constraints.join('\n');
+            document.getElementById('successCriteriaInput').value = preset.successCriteria.join('\n');
+
+            // Clear and rebuild phases
+            phaseCounter = 0;
+            document.getElementById('phasesContainer').innerHTML = '';
+            
+            preset.phases.forEach(phase => {
+                addPhase(phase);
+            });
+
+            updateComplexitySuggestions();
+            generateSchema();
+        }
+
+        function startFromScratch() {
+            // Clear all fields
+            document.getElementById('goalInput').value = '';
+            document.getElementById('constraintsInput').value = '';
+            document.getElementById('successCriteriaInput').value = '';
+            document.getElementById('phasesContainer').innerHTML = '';
+            
+            // Reset to defaults
+            document.getElementById('complexityLevel').value = 'moderate';
+            document.getElementById('riskTolerance').value = 'balanced';
+            
+            // Clear selection
+            document.querySelectorAll('.preset-card').forEach(card => card.classList.remove('selected'));
+            
+            phaseCounter = 0;
+            addPhase(); // Add one empty phase to start
+            generateSchema();
+        }
+
+        function addPhase(phaseData = null) {
+            phaseCounter++;
+            const container = document.getElementById('phasesContainer');
+            
+            const phaseDiv = document.createElement('div');
+            phaseDiv.className = 'phase-builder';
+            phaseDiv.id = `phase-${phaseCounter}`;
+            
+            const phaseName = phaseData?.name || `Phase ${phaseCounter}`;
+            const phaseEntropy = phaseData?.entropy || 0.3;
+            const phaseParallel = phaseData?.parallel !== undefined ? phaseData.parallel : false;
+            const phaseOps = phaseData?.operations || ['operation_name'];
+
+            phaseDiv.innerHTML = `
+                <div class="phase-header">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <div class="phase-number">${phaseCounter}</div>
+                        <input type="text" value="${phaseName}" placeholder="Phase Name" style="width: 200px;" onchange="generateSchema()">
+                    </div>
+                    <button class="btn btn-small btn-danger" onclick="removePhase(${phaseCounter})">Remove</button>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Expected Entropy (0.0 - 1.0)</label>
+                        <input type="number" value="${phaseEntropy}" step="0.1" min="0.0" max="1.0" onchange="generateSchema()">
+                    </div>
+                    <div class="form-group">
+                        <label>Parallel Sandboxes</label>
+                        <select onchange="generateSchema()">
+                            <option value="false" ${!phaseParallel ? 'selected' : ''}>Disabled</option>
+                            <option value="true" ${phaseParallel ? 'selected' : ''}>Enabled</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <label>Operations</label>
+                        <button class="btn btn-small btn-success" onclick="addOperation(${phaseCounter})">+ Add Operation</button>
+                    </div>
+                    <div class="operations-container" id="operations-${phaseCounter}">
+                        ${phaseOps.map((op, index) => createOperationHTML(phaseCounter, index, op)).join('')}
+                    </div>
+                </div>
+            `;
+            
+            container.appendChild(phaseDiv);
+            generateSchema();
+        }
+
+        function createOperationHTML(phaseId, opIndex, opName) {
+            return `
+                <div class="operation-item" id="op-${phaseId}-${opIndex}">
+                    <div class="operation-header">
+                        <input type="text" value="${opName}" placeholder="operation_name" class="operation-name" onchange="generateSchema()" style="background: transparent; border: none; font-weight: 600; color: #10b981;">
+                        <button class="btn btn-small btn-danger" onclick="removeOperation(${phaseId}, ${opIndex})">×</button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Parameters (JSON)</label>
+                            <input type="text" placeholder='{"key": "value"}' onchange="generateSchema()">
+                        </div>
+                        <div class="form-group">
+                            <label>Output Alias</label>
+                            <input type="text" placeholder="output_name" onchange="generateSchema()">
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function addOperation(phaseId) {
+            const container = document.getElementById(`operations-${phaseId}`);
+            const opIndex = container.children.length;
+            
+            const opDiv = document.createElement('div');
+            opDiv.innerHTML = createOperationHTML(phaseId, opIndex, 'new_operation');
+            container.appendChild(opDiv.firstElementChild);
+            
+            generateSchema();
+        }
+
+        function removePhase(phaseId) {
+            const phase = document.getElementById(`phase-${phaseId}`);
+            phase.remove();
+            generateSchema();
+        }
+
+        function removeOperation(phaseId, opIndex) {
+            const operation = document.getElementById(`op-${phaseId}-${opIndex}`);
+            operation.remove();
+            generateSchema();
+        }
+
+        function switchTab(tabName) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to selected tab and content
+            event.target.classList.add('active');
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+
+        function switchModalTab(tabName) {
+            // Remove active class from modal tabs and content
+            document.querySelectorAll('#templateManager .tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('#templateManager .tab-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to selected tab and content
+            event.target.classList.add('active');
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+        }
+
+        function updateComplexitySuggestions() {
+            const complexity = document.getElementById('complexityLevel').value;
+            const suggestions = {
+                simple: [
+                    "Perfect for straightforward tasks with minimal branching",
+                    "Consider 2-4 phases: Input → Process → Output",
+                    "Keep entropy threshold low (0.5-0.7)"
+                ],
+                moderate: [
+                    "Good for multi-step workflows with some iteration",
+                    "Consider 3-5 phases with potential parallel processing",
+                    "Standard entropy threshold (0.7-0.8)"
+                ],
+                complex: [
+                    "Suitable for research, analysis, and creative projects",
+                    "Plan for 4-8 phases with multiple parallel branches",
+                    "Higher entropy threshold (0.8-0.9) for flexibility"
+                ],
+                adaptive: [
+                    "No fixed cycle limits - system adapts to task complexity",
+                    "Focus on safety mechanisms and monitoring",
+                    "Consider emergent behavior patterns"
+                ]
+            };
+
+            const suggestionsList = document.getElementById('suggestionsList');
+            suggestionsList.innerHTML = suggestions[complexity].map(suggestion => 
+                `<div class="suggestion-item">
+                    <span class="suggestion-icon">💡</span>
+                    <span>${suggestion}</span>
+                </div>`
+            ).join('');
+
+            // Update advanced settings based on complexity
+            const settings = {
+                simple: { entropy: 0.6, cycles: 5 },
+                moderate: { entropy: 0.8, cycles: 8 },
+                complex: { entropy: 0.9, cycles: 15 },
+                adaptive: { entropy: 1.0, cycles: 25 }
+            };
+
+            if (settings[complexity]) {
+                document.getElementById('entropyThreshold').value = settings[complexity].entropy;
+                document.getElementById('maxCycles').value = settings[complexity].cycles;
+            }
+        }
+
+        function generateSchema() {
+            const goal = document.getElementById('goalInput').value;
+            const constraints = document.getElementById('constraintsInput').value.split('\n').filter(c => c.trim());
+            const successCriteria = document.getElementById('successCriteriaInput').value.split('\n').filter(c => c.trim());
+            const entropyThreshold = parseFloat(document.getElementById('entropyThreshold').value);
+            const maxCycles = parseInt(document.getElementById('maxCycles').value);
+            const trigger = document.getElementById('customTrigger').value || '<x>';
+
+            // Add entropy and cycle constraints
+            const autoConstraints = [
+                `Maintain entropy below ${entropyThreshold}`,
+                `Complete within ${maxCycles} cycles`
+            ];
+            const allConstraints = [...new Set([...constraints, ...autoConstraints])];
+
+            // Build phases
+            const phases = [];
+            document.querySelectorAll('.phase-builder').forEach((phaseEl, index) => {
+                const nameInput = phaseEl.querySelector('input[type="text"]');
+                const entropyInput = phaseEl.querySelector('input[type="number"]');
+                const parallelSelect = phaseEl.querySelector('select');
+                
+                const operations = [];
+                phaseEl.querySelectorAll('.operation-item').forEach(opEl => {
+                    const opName = opEl.querySelector('.operation-name').value;
+                    const paramInput = opEl.querySelectorAll('input')[1];
+                    const aliasInput = opEl.querySelectorAll('input')[2];
+                    
+                    let parameters = {};
+                    try {
+                        if (paramInput.value.trim()) {
+                            parameters = JSON.parse(paramInput.value);
+                        }
+                    } catch (e) {
+                        parameters = { raw: paramInput.value };
+                    }
+
+                    const operation = {
+                        op: opName,
+                        parameters: parameters
+                    };
+
+                    if (aliasInput.value.trim()) {
+                        operation.output_alias = aliasInput.value.trim();
+                    }
+
+                    operations.push(operation);
+                });
+
+                if (operations.length > 0) {
+                    phases.push({
+                        phase_name: nameInput.value || `Phase ${index + 1}`,
+                        operations: operations,
+                        parallel_sandboxes: parallelSelect.value === 'true',
+                        entropy: parseFloat(entropyInput.value) || 0.3
+                    });
+                }
+            });
+
+            currentSchema = {
+                trigger: trigger,
+                contract: {
+                    goal: goal,
+                    constraints: allConstraints,
+                    success_criteria: successCriteria
+                },
+                phases: phases,
+                metadata: {
+                    created: new Date().toISOString(),
+                    complexity_level: document.getElementById('complexityLevel').value,
+                    risk_tolerance: document.getElementById('riskTolerance').value,
+                    generator: "X-Logic Schema Builder v1.0"
+                }
+            };
+
+            // Update preview
+            document.getElementById('schemaContent').textContent = JSON.stringify(currentSchema, null, 2);
+            
+            // Update analysis
+            updateSchemaAnalysis();
+            updateSchemaChecklist();
+        }
+
+        function updateSchemaAnalysis() {
+            const phases = currentSchema.phases || [];
+            const totalOps = phases.reduce((sum, phase) => sum + phase.operations.length, 0);
+            const avgEntropy = phases.reduce((sum, phase) => sum + phase.entropy, 0) / phases.length || 0;
+            const parallelPhases = phases.filter(phase => phase.parallel_sandboxes).length;
+
+            // Complexity score (0-100)
+            const complexityScore = Math.min(100, (phases.length * 10) + (totalOps * 5) + (avgEntropy * 30));
+            
+            // Estimated runtime
+            const baseTime = phases.length * 2; // 2 seconds per phase
+            const opTime = totalOps * 0.5; // 0.5 seconds per operation
+            const estimatedTime = Math.round(baseTime + opTime);
+            
+            // Risk level
+            const riskFactors = [
+                avgEntropy > 0.8 ? 1 : 0,
+                phases.length > 6 ? 1 : 0,
+                parallelPhases > 2 ? 1 : 0,
+                totalOps > 20 ? 1 : 0
+            ];
+            const riskLevel = riskFactors.reduce((sum, factor) => sum + factor, 0);
+            const riskLabels = ['Low', 'Medium', 'High', 'Very High'];
+
+            document.getElementById('complexityScore').textContent = complexityScore.toFixed(0);
+            document.getElementById('estimatedRuntime').textContent = `${estimatedTime}s`;
+            document.getElementById('riskLevel').textContent = riskLabels[riskLevel] || 'Low';
+            document.getElementById('parallelPotential').textContent = `${parallelPhases}/${phases.length} phases`;
+        }
+
+        function updateSchemaChecklist() {
+            const checklist = [
+                { check: currentSchema.contract?.goal?.length > 10, text: "Goal is clearly defined" },
+                { check: currentSchema.contract?.constraints?.length > 0, text: "Constraints are realistic" },
+                { check: currentSchema.contract?.success_criteria?.length > 0, text: "Success criteria are measurable" },
+                { check: currentSchema.phases?.length > 0, text: "Phases follow logical sequence" },
+                { check: currentSchema.phases?.every(p => p.operations?.length > 0), text: "Operations have clear purposes" }
+            ];
+
+            const checklistHTML = checklist.map(item => 
+                `<div class="suggestion-item">
+                    <span class="suggestion-icon">${item.check ? '✅' : '⏸️'}</span>
+                    <span>${item.text}</span>
+                </div>`
+            ).join('');
+
+            document.getElementById('schemaChecklist').innerHTML = checklistHTML;
+        }
+
+        function validateSchema() {
+            const errors = [];
+            
+            if (!currentSchema.contract?.goal) {
+                errors.push("Goal is required");
+            }
+            
+            if (!currentSchema.phases || currentSchema.phases.length === 0) {
+                errors.push("At least one phase is required");
+            }
+            
+            currentSchema.phases?.forEach((phase, index) => {
+                if (!phase.operations || phase.operations.length === 0) {
+                    errors.push(`Phase ${index + 1} must have at least one operation`);
+                }
+                
+                if (phase.entropy > 1.0 || phase.entropy < 0.0) {
+                    errors.push(`Phase ${index + 1} entropy must be between 0.0 and 1.0`);
+                }
+            });
+
+            const errorsContainer = document.getElementById('validationErrors');
+            const errorsList = document.getElementById('errorsList');
+            
+            if (errors.length > 0) {
+                errorsList.innerHTML = errors.map(error => 
+                    `<div class="error-item">
+                        <span style="color: #ef4444;">⚠️</span>
+                        <span>${error}</span>
+                    </div>`
+                ).join('');
+                errorsContainer.style.display = 'block';
+            } else {
+                errorsContainer.style.display = 'none';
+                alert('✅ Schema validation passed! Your schema is ready to use.');
+            }
+        }
+
+        function copySchema() {
+            const schemaText = JSON.stringify(currentSchema, null, 2);
+            navigator.clipboard.writeText(schemaText).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => btn.textContent = originalText, 2000);
+            });
+        }
+
+        function downloadSchema() {
+            const schemaText = JSON.stringify(currentSchema, null, 2);
+            const blob = new Blob([schemaText], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `x-logic-schema-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function exportToProcessor() {
+            // This would integrate with the main X-Logic processor
+            const schemaText = JSON.stringify(currentSchema, null, 2);
+            const processorURL = 'data:text/html;base64,' + btoa(`
+                <!DOCTYPE html>
+                <html>
+                <head><title>X-Logic Schema Export</title></head>
+                <body>
+                    <h1>Ready to import into X-Logic Processor</h1>
+                    <p>Copy the schema below and paste it into the X-Logic Processor:</p>
+                    <textarea style="width: 100%; height: 400px; font-family: monospace;">${schemaText}</textarea>
+                    <script>
+                        // Auto-select the schema text
+                        document.querySelector('textarea').select();
+                    </script>
+                </body>
+                </html>
+            `);
+            
+            window.open(processorURL, '_blank');
+        }
+
+        function openTemplateManager() {
+            document.getElementById('templateManager').style.display = 'flex';
+            loadSavedTemplates();
+        }
+
+        function closeTemplateManager() {
+            document.getElementById('templateManager').style.display = 'none';
+        }
+
+        function loadSavedTemplates() {
+            // In a real implementation, this would load from localStorage or a backend
+            const savedContainer = document.getElementById('savedTemplates');
+            savedContainer.innerHTML = '<p style="color: #94a3b8; text-align: center; padding: 2rem;">Template management coming soon!</p>';
+        }
+
+        function importSchema() {
+            try {
+                const importText = document.getElementById('importInput').value;
+                const importedSchema = JSON.parse(importText);
+                
+                // Populate form with imported schema
+                if (importedSchema.contract) {
+                    document.getElementById('goalInput').value = importedSchema.contract.goal || '';
+                    document.getElementById('constraintsInput').value = (importedSchema.contract.constraints || []).join('\n');
+                    document.getElementById('successCriteriaInput').value = (importedSchema.contract.success_criteria || []).join('\n');
+                }
+                
+                if (importedSchema.trigger) {
+                    document.getElementById('customTrigger').value = importedSchema.trigger;
+                }
+                
+                // Clear and rebuild phases
+                phaseCounter = 0;
+                document.getElementById('phasesContainer').innerHTML = '';
+                
+                if (importedSchema.phases) {
+                    importedSchema.phases.forEach(phase => {
+                        addPhase({
+                            name: phase.phase_name,
+                            operations: phase.operations.map(op => op.op),
+                            entropy: phase.entropy,
+                            parallel: phase.parallel_sandboxes
+                        });
+                    });
+                }
+                
+                generateSchema();
+                closeTemplateManager();
+                alert('✅ Schema imported successfully!');
+                
+            } catch (error) {
+                alert('❌ Invalid JSON format. Please check your input.');
+            }
+        }
+
+        function exportCurrentSchema() {
+            const schemaText = JSON.stringify(currentSchema, null, 2);
+            document.getElementById('importInput').value = schemaText;
+            alert('✅ Current schema exported to import field. You can copy it from there.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "scroll_id": "Thalamus-Proof-Bundle-1754748501984",
+  "created": "2025-08-09T14:08:21.984Z",
+  "contract": {
+    "scroll_id": "AEON-Creative-Co-Admin-1754702400002",
+    "payload": {
+      "blocks": {
+        "GOAL": "Co-write a short story about 'meta-cognition' and 'recursive loops'.",
+        "CONSTRAINTS": [
+          "<500 words.",
+          "Use glyphs: '∞', 'φ', '∴'."
+        ],
+        "SUCCESS_CRITERIA": [
+          "Story is coherent.",
+          "Output is plain text."
+        ]
+      }
+    },
+    "hash": {
+      "seal": {
+        "mobius_seal": "fedcba9876543210fedcba9876543210fedcba9876543210fedcba9876543210"
+      }
+    }
+  },
+  "thought_ledger": [
+    {
+      "cycle": 1,
+      "phase": "Summon",
+      "op": "analyze_goal",
+      "output": "Interpret the primary goal: \"Co-write a short story about 'meta-cognition' and 'recursive loops'.\"",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.140Z",
+      "entropy": 0.48159579969356037,
+      "contested": true,
+      "hash_of_entry": "b5de99e5cd0a4e7dabbcd5b6567140172cd85ba09e54a5d376d01a3ea8d49267"
+    },
+    {
+      "cycle": 2,
+      "phase": "Processing",
+      "op": "list_constraints",
+      "output": "Acknowledge constraints: [\"<500 words.\",\"Use glyphs: '∞', 'φ', '∴'.\"]",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.247Z",
+      "entropy": 0.974399139797084,
+      "contested": true,
+      "hash_of_entry": "5b23c16fb5fe558d19bd890900b2763392fe9630d03633ee07b615520ad3ba74"
+    },
+    {
+      "cycle": 3,
+      "phase": "Processing",
+      "op": "formulate_plan",
+      "output": "Develop a high-level execution strategy.",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.347Z",
+      "entropy": 0.785526374476813,
+      "contested": false,
+      "hash_of_entry": "d6568e706c643e916915f9b2fb5991409afb83474a715049bd0fd56ed43e5bcc"
+    },
+    {
+      "cycle": 4,
+      "phase": "Processing",
+      "op": "develop_characters",
+      "output": "Flesh out the motivations for The Courier and The Architect.",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.447Z",
+      "entropy": 0.12897329443783367,
+      "contested": true,
+      "hash_of_entry": "9f95ff6c87dd8819dcf610faa2f40d7848c39545805770c8a2fb7ff03e0263ef"
+    },
+    {
+      "cycle": 5,
+      "phase": "Processing",
+      "op": "write_opening_scene",
+      "output": "Draft the initial scene introducing the core conflict and the glyphs ∞, φ, ∴.",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.547Z",
+      "entropy": 0.7687741814215469,
+      "contested": false,
+      "hash_of_entry": "274011b0022da749b70a1ef9a50e06b99d3953628ad7cc0c96407736d689fa68"
+    },
+    {
+      "cycle": 6,
+      "phase": "Echo",
+      "op": "finalize_output",
+      "output": "Consolidate results and prepare for final output.",
+      "contract_ref": "simulated_task",
+      "timestamp": "2025-08-09T14:08:20.647Z",
+      "entropy": 0.2276146145882335,
+      "contested": false,
+      "hash_of_entry": "7d6648e2640d873a3442c7cefd58ab5a1ba3429c40f8885edf1d29ae9df78fdb"
+    }
+  ],
+  "ledger_seal": "Ledger Seal: fd20f12f7a588d14006a5b3e2c8cdd596a4d9e615ac42a15c52690843c754bca",
+  "verification_summary": "Awaiting manual verification."
+}

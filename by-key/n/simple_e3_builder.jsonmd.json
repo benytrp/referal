@@ -1,0 +1,103 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:25.456Z",
+    "anchor_id": "4f07d00771d936142bed95b9252e9c0bdf175219064f495360e848e1a9f69b4c",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.715,
+    "contradictions_detected": 3,
+    "word_count": 1017
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 35
+      },
+      {
+        "theme": "data",
+        "frequency": 32
+      },
+      {
+        "theme": "value",
+        "frequency": 31
+      },
+      {
+        "theme": "document",
+        "frequency": 29
+      },
+      {
+        "theme": "template",
+        "frequency": 24
+      },
+      {
+        "theme": "function",
+        "frequency": 22
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 22
+      },
+      {
+        "theme": "key",
+        "frequency": 17
+      },
+      {
+        "theme": "counter",
+        "frequency": 16
+      },
+      {
+        "theme": "html",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "value) { value = value[key]; } else { return ''; // Token not found, return empty } } return value == null ? '' : Strin"
+      },
+      {
+        "idx": 1,
+        "sample": ".includes(str)) { result[fullKey] = 'yes'; } else if (['ni', 'no', 'false', '0'].includes(str)) { result[fullKey] = 'ni'; }"
+      },
+      {
+        "idx": 2,
+        "sample": "des(str)) { result[fullKey] = 'ni'; } else if (['na', 'n/a', 'none'].includes(str)) { result[fullKey] = 'na'; } }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "className = 'status ' + (isError ?",
+      "return value == null ?",
+      "const fullKey = prefix ?",
+      "Attendance — Correct day and time?",
+      "Hygiene — Participant was appropriately groomed?",
+      "Attitude — Participant exhibited positive attitude?",
+      "Attention Span — adequate span for tasks?",
+      "Task Completion — stayed on task?",
+      "Safety — followed safety procedures?",
+      "if (confirm('Reset to default template?"
+    ],
+    "summary": "const, data, value, document, template"
+  },
+  "sentiment_indicators": {
+    "positive": 2,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "was"
+  ],
+  "metadata": {
+    "source_name": "simple_e3_builder.html",
+    "relative_path": "simple_e3_builder.html",
+    "size_bytes": 16654,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.77
+  }
+}

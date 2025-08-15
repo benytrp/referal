@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Template Editor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .main-content {
+            display: flex;
+            min-height: 80vh;
+        }
+        
+        .panel {
+            flex: 1;
+            padding: 30px;
+            border-right: 1px solid #eee;
+        }
+        
+        .panel:last-child {
+            border-right: none;
+        }
+        
+        .panel h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #27ae60, #229954);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+        
+        .btn-warning {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+        }
+        
+        .preview-frame {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background: white;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .json-example {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+        }
+        
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #f44336;
+        }
+        
+        .success {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            border-left: 4px solid #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔧 Offline Template Editor</h1>
+            <p>Create dynamic HTML templates using JSON configuration</p>
+        </div>
+        
+        <div class="main-content">
+            <!-- JSON Configuration Panel -->
+            <div class="panel">
+                <h2>📋 JSON Configuration</h2>
+                <div class="controls">
+                    <button class="btn" onclick="loadExample()">Load Example</button>
+                    <button class="btn btn-success" onclick="generateTemplate()">Generate Template</button>
+                    <button class="btn btn-warning" onclick="clearAll()">Clear All</button>
+                </div>
+                
+                <textarea id="jsonInput" placeholder="Enter your JSON configuration here..."></textarea>
+                
+                <div class="json-example">
+                    <strong>Example JSON Structure:</strong><br>
+                    Click "Load Example" to see a complete configuration
+                </div>
+                
+                <div id="jsonError"></div>
+            </div>
+            
+            <!-- HTML Output Panel -->
+            <div class="panel">
+                <h2>🎨 Generated HTML</h2>
+                <div class="controls">
+                    <button class="btn" onclick="copyHTML()">Copy HTML</button>
+                    <button class="btn btn-success" onclick="downloadHTML()">Download</button>
+                    <button class="btn btn-warning" onclick="previewTemplate()">Preview</button>
+                </div>
+                
+                <textarea id="htmlOutput" readonly placeholder="Generated HTML will appear here..."></textarea>
+                
+                <div id="htmlStatus"></div>
+            </div>
+            
+            <!-- Preview Panel -->
+            <div class="panel">
+                <h2>👁️ Live Preview</h2>
+                <div class="controls">
+                    <button class="btn" onclick="refreshPreview()">Refresh Preview</button>
+                </div>
+                
+                <iframe id="previewFrame" class="preview-frame" srcdoc="<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Template generation engine
+        class TemplateGenerator {
+            constructor() {
+                this.templates = {
+                    evaluation: this.generateEvaluationTemplate,
+                    form: this.generateFormTemplate,
+                    report: this.generateReportTemplate,
+                    custom: this.generateCustomTemplate
+                };
+            }
+            
+            generate(config) {
+                const templateType = config.type || 'custom';
+                const generator = this.templates[templateType] || this.templates.custom;
+                return generator.call(this, config);
+            }
+            
+            generateEvaluationTemplate(config) {
+                const { title, sections, styling, metadata } = config;
+                
+                let html = `<!doctype html>
+<html><head>
+<title>${title || 'Evaluation Form'}</title>
+<style>
+${this.generateCSS(styling)}
+</style>
+</head><body>`;
+                
+                // Header
+                html += `<div class="header">
+<h1>${title || 'Evaluation Form'}</h1>
+<h3>${metadata?.location || 'Location'} | Generated: ${new Date().toLocaleDateString()}</h3>
+<p><strong>Evaluation ID:</strong> ${metadata?.evalId || 'EVAL_ID'} | <strong>Batch:</strong> ${metadata?.batchId || 'BATCH_ID'}</p>
+</div>`;
+                
+                // Participant Info
+                if (sections?.participantInfo) {
+                    html += this.generateParticipantInfo(sections.participantInfo);
+                }
+                
+                // Assessment Sections
+                if (sections?.assessments) {
+                    sections.assessments.forEach(assessment => {
+                        html += this.generateAssessmentSection(assessment);
+                    });
+                }
+                
+                // Comments Section
+                if (sections?.comments) {
+                    html += this.generateCommentsSection(sections.comments);
+                }
+                
+                // Signatures
+                if (sections?.signatures) {
+                    html += this.generateSignatureSection(sections.signatures);
+                }
+                
+                // Footer
+                html += `<div class="footer">
+Generated by Template Editor | ${metadata?.location || 'Location'}<br>
+Document ID: ${metadata?.evalId || 'EVAL_ID'} | Generated: ${new Date().toISOString()}
+</div>`;
+                
+                html += '</body></html>';
+                return html;
+            }
+            
+            generateFormTemplate(config) {
+                const { title, fields, styling } = config;
+                
+                let html = `<!doctype html>
+<html><head>
+<title>${title || 'Form'}</title>
+<style>
+${this.generateCSS(styling)}
+</style>
+</head><body>`;
+                
+                html += `<div class="header"><h1>${title || 'Form'}</h1></div>`;
+                html += '<form>';
+                
+                fields?.forEach(field => {
+                    html += this.generateField(field);
+                });
+                
+                html += '<button type="submit" class="btn">Submit</button></form>';
+                html += '</body></html>';
+                return html;
+            }
+            
+            generateCustomTemplate(config) {
+                const { title, content, styling } = config;
+                
+                let html = `<!doctype html>
+<html><head>
+<title>${title || 'Custom Template'}</title>
+<style>
+${this.generateCSS(styling)}
+</style>
+</head><body>`;
+                
+                if (content) {
+                    html += this.processContent(content);
+                }
+                
+                html += '</body></html>';
+                return html;
+            }
+            
+            generateCSS(styling) {
+                const defaultCSS = `
+body { font: 14px Arial, sans-serif; margin: 20px; max-width: 900px; line-height: 1.4; }
+.header { text-align: center; margin-bottom: 25px; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+.field { margin: 8px 0; padding: 6px; border-bottom: 1px solid #eee; display: flex; }
+.label { font-weight: bold; color: #333; width: 140px; flex-shrink: 0; }
+.value { flex: 1; border-bottom: 1px dotted #999; min-height: 20px; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+th { background: #f8f9fa; font-weight: bold; color: #333; }
+.center { text-align: center; }
+.checkbox-cell { text-align: center; width: 80px; }
+.comments { border: 2px dashed #007bff; padding: 15px; min-height: 60px; margin: 20px 0; background: #f8f9ff; }
+.signature { margin-top: 40px; border-top: 2px solid #ccc; padding-top: 20px; display: flex; justify-content: space-between; }
+.signature-box { width: 200px; text-align: center; }
+.footer { margin-top: 30px; font-size: 11px; color: #666; text-align: center; border-top: 1px solid #eee; padding-top: 15px; }
+.btn { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+@media print { body { margin: 0; font-size: 12px; } }
+                `;
+                
+                return styling?.custom ? styling.custom : defaultCSS;
+            }
+            
+            generateParticipantInfo(info) {
+                let html = '<div class="section"><h3>Participant Information</h3>';
+                
+                info.fields?.forEach(field => {
+                    html += `<div class="field"><span class="label">${field.label}:</span><span class="value">${field.placeholder || field.value || ''}</span></div>`;
+                });
+                
+                html += '</div>';
+                return html;
+            }
+            
+            generateAssessmentSection(assessment) {
+                let html = `<h3>${assessment.title}</h3><table>`;
+                html += `<tr><th style="width: 50%;">Assessment Criteria</th><th class="checkbox-cell">Yes</th><th class="checkbox-cell">NI</th><th class="checkbox-cell">N/A</th><th>Notes</th></tr>`;
+                
+                assessment.criteria?.forEach(criterion => {
+                    html += `<tr><td><strong>${criterion.name}</strong> — ${criterion.description}</td>`;
+                    html += `<td class="center"><input type="checkbox"></td>`;
+                    html += `<td class="center"><input type="checkbox"></td>`;
+                    html += `<td class="center"><input type="checkbox"></td>`;
+                    html += `<td style="border-bottom: 1px dotted #999; min-height: 20px;"></td></tr>`;
+                });
+                
+                html += '</table>';
+                return html;
+            }
+            
+            generateCommentsSection(comments) {
+                return `<h3>${comments.title || 'Comments and Observations'}</h3>
+<div class="comments">
+<strong>${comments.mainLabel || 'Comments'}:</strong><br><br>
+${comments.placeholder || 'Comments section'}
+<br><br>
+<strong>${comments.subLabel || 'Additional Notes'}:</strong><br>
+<div style="border-top: 1px dotted #999; padding-top: 10px; margin-top: 15px; min-height: 30px;"></div>
+</div>`;
+            }
+            
+            generateSignatureSection(signatures) {
+                let html = '<div class="signature">';
+                
+                signatures.forEach(sig => {
+                    html += `<div class="signature-box">
+<strong>${sig.title}</strong><br><br>
+_______________________<br>
+${sig.name || 'Name'}<br>
+Date: ___________
+</div>`;
+                });
+                
+                html += '</div>';
+                return html;
+            }
+            
+            generateField(field) {
+                const { type, label, name, placeholder, required } = field;
+                let html = `<div class="field">`;
+                
+                if (label) {
+                    html += `<label class="label" for="${name}">${label}${required ? '*' : ''}:</label>`;
+                }
+                
+                switch (type) {
+                    case 'text':
+                    case 'email':
+                    case 'number':
+                        html += `<input type="${type}" name="${name}" placeholder="${placeholder || ''}" ${required ? 'required' : ''}>`;
+                        break;
+                    case 'textarea':
+                        html += `<textarea name="${name}" placeholder="${placeholder || ''}" ${required ? 'required' : ''}></textarea>`;
+                        break;
+                    case 'select':
+                        html += `<select name="${name}" ${required ? 'required' : ''}>`;
+                        field.options?.forEach(option => {
+                            html += `<option value="${option.value}">${option.label}</option>`;
+                        });
+                        html += '</select>';
+                        break;
+                    case 'checkbox':
+                        html += `<input type="checkbox" name="${name}" value="1">`;
+                        break;
+                    default:
+                        html += `<input type="text" name="${name}" placeholder="${placeholder || ''}" ${required ? 'required' : ''}>`;
+                }
+                
+                html += '</div>';
+                return html;
+            }
+            
+            processContent(content) {
+                // Process dynamic content sections
+                let html = '';
+                
+                if (Array.isArray(content)) {
+                    content.forEach(section => {
+                        if (section.type === 'heading') {
+                            html += `<h${section.level || 2}>${section.text}</h${section.level || 2}>`;
+                        } else if (section.type === 'paragraph') {
+                            html += `<p>${section.text}</p>`;
+                        } else if (section.type === 'list') {
+                            html += `<ul>`;
+                            section.items?.forEach(item => {
+                                html += `<li>${item}</li>`;
+                            });
+                            html += `</ul>`;
+                        }
+                    });
+                } else if (typeof content === 'string') {
+                    html = content;
+                }
+                
+                return html;
+            }
+        }
+        
+        // Initialize the template generator
+        const generator = new TemplateGenerator();
+        
+        // UI Functions
+        function loadExample() {
+            const exampleConfig = {
+                "type": "evaluation",
+                "title": "E3 Achievement Daily Participant Evaluation",
+                "metadata": {
+                    "location": "Battle Creek, Michigan",
+                    "evalId": "EVAL_001",
+                    "batchId": "BATCH_A"
+                },
+                "sections": {
+                    "participantInfo": {
+                        "fields": [
+                            {"label": "Full Name", "placeholder": "PARTICIPANT_NAME"},
+                            {"label": "Participant ID", "placeholder": "PARTICIPANT_ID"},
+                            {"label": "Evaluation Date", "placeholder": "EVAL_DATE"},
+                            {"label": "Program", "placeholder": "PROGRAM_NAME"},
+                            {"label": "Instructor", "placeholder": "INSTRUCTOR_NAME"}
+                        ]
+                    },
+                    "assessments": [
+                        {
+                            "title": "Work Habits Assessment",
+                            "criteria": [
+                                {"name": "Attendance", "description": "Correct day and time?"},
+                                {"name": "Hygiene", "description": "Appropriately groomed?"},
+                                {"name": "Attitude", "description": "Cooperative and engaged?"}
+                            ]
+                        },
+                        {
+                            "title": "Preparatory Goals Assessment",
+                            "criteria": [
+                                {"name": "Attention Span", "description": "Adequate for assigned tasks?"},
+                                {"name": "Safety", "description": "Followed all procedures correctly?"},
+                                {"name": "Task Completion", "description": "Finished assigned work?"}
+                            ]
+                        }
+                    ],
+                    "comments": {
+                        "title": "Comments and Detailed Observations",
+                        "mainLabel": "Instructor Comments",
+                        "subLabel": "Recommendations for Next Session"
+                    },
+                    "signatures": [
+                        {"title": "Instructor Signature", "name": "INSTRUCTOR_NAME"},
+                        {"title": "Supervisor Review", "name": "Supervisor Name"}
+                    ]
+                }
+            };
+            
+            document.getElementById('jsonInput').value = JSON.stringify(exampleConfig, null, 2);
+            showStatus('jsonError', 'Example configuration loaded!', 'success');
+        }
+        
+        function generateTemplate() {
+            const jsonInput = document.getElementById('jsonInput').value;
+            const htmlOutput = document.getElementById('htmlOutput');
+            
+            try {
+                const config = JSON.parse(jsonInput);
+                const html = generator.generate(config);
+                htmlOutput.value = html;
+                showStatus('htmlStatus', 'Template generated successfully!', 'success');
+                refreshPreview();
+            } catch (error) {
+                showStatus('jsonError', `JSON Error: ${error.message}`, 'error');
+            }
+        }
+        
+        function copyHTML() {
+            const htmlOutput = document.getElementById('htmlOutput');
+            htmlOutput.select();
+            document.execCommand('copy');
+            showStatus('htmlStatus', 'HTML copied to clipboard!', 'success');
+        }
+        
+        function downloadHTML() {
+            const html = document.getElementById('htmlOutput').value;
+            if (!html) {
+                showStatus('htmlStatus', 'No HTML to download. Generate a template first.', 'error');
+                return;
+            }
+            
+            const blob = new Blob([html], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'template.html';
+            a.click();
+            URL.revokeObjectURL(url);
+            showStatus('htmlStatus', 'Template downloaded!', 'success');
+        }
+        
+        function previewTemplate() {
+            refreshPreview();
+        }
+        
+        function refreshPreview() {
+            const html = document.getElementById('htmlOutput').value;
+            const preview = document.getElementById('previewFrame');
+            
+            if (html) {
+                preview.srcdoc = html;
+            } else {
+                preview.srcdoc = "<h3 style='text-align:center; color:#666; margin-top:100px;'>Generate a template to see preview</h3>";
+            }
+        }
+        
+        function clearAll() {
+            document.getElementById('jsonInput').value = '';
+            document.getElementById('htmlOutput').value = '';
+            document.getElementById('previewFrame').srcdoc = "<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>";
+            showStatus('jsonError', 'All fields cleared!', 'success');
+        }
+        
+        function showStatus(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<div class="${type}">${message}</div>`;
+            setTimeout(() => {
+                element.innerHTML = '';
+            }, 3000);
+        }
+        
+        // Auto-save to localStorage
+        setInterval(() => {
+            const jsonInput = document.getElementById('jsonInput').value;
+            const htmlOutput = document.getElementById('htmlOutput').value;
+            if (jsonInput) localStorage.setItem('templateEditor_json', jsonInput);
+            if (htmlOutput) localStorage.setItem('templateEditor_html', htmlOutput);
+        }, 5000);
+        
+        // Load from localStorage on page load
+        window.addEventListener('load', () => {
+            const savedJson = localStorage.getItem('templateEditor_json');
+            const savedHtml = localStorage.getItem('templateEditor_html');
+            if (savedJson) document.getElementById('jsonInput').value = savedJson;
+            if (savedHtml) {
+                document.getElementById('htmlOutput').value = savedHtml;
+                refreshPreview();
+            }
+        });
+    </script>
+</body>
+</html>

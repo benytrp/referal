@@ -1,0 +1,121 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:30.085Z",
+    "anchor_id": "1b6ef649db2d8fe02e5875665b8dda8d91395c23892fe521f0152bce6590ed55",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.564,
+    "contradictions_detected": 7,
+    "word_count": 2386
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 64
+      },
+      {
+        "theme": "document",
+        "frequency": 64
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 48
+      },
+      {
+        "theme": "value",
+        "frequency": 42
+      },
+      {
+        "theme": "phase",
+        "frequency": 39
+      },
+      {
+        "theme": "phases",
+        "frequency": 37
+      },
+      {
+        "theme": "entropy",
+        "frequency": 37
+      },
+      {
+        "theme": "div",
+        "frequency": 36
+      },
+      {
+        "theme": "operations",
+        "frequency": 34
+      },
+      {
+        "theme": "parallel",
+        "frequency": 27
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Complex (5-15 cycles) Adaptive (No fixed limit)"
+      },
+      {
+        "idx": 1,
+        "sample": "unity Templates No saved templates yet. Create and save some schemas!"
+      },
+      {
+        "idx": 2,
+        "sample": "No saved templates yet. Create and save some schemas!"
+      },
+      {
+        "idx": 3,
+        "sample": "ation-name\" onchange=\"generateSchema()\" style=\"background: transparent; border: none; font-weight: 600; color: #10b981;\"> <button class="
+      },
+      {
+        "idx": 4,
+        "sample": "lexibility\" ], adaptive: [ \"No fixed cycle limits - system adapts to task complexity\", \""
+      },
+      {
+        "idx": 5,
+        "sample": "'block'; } else { errorsContainer.style.display = 'none'; alert('✅ Schema validation passed! Your schema is ready t"
+      },
+      {
+        "idx": 6,
+        "sample": "ger() { document.getElementById('templateManager').style.display = 'none'; } function loadSavedTemplates() { // In a re"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "event?",
+      "target?",
+      "preset-card')?",
+      "const phaseName = phaseData?",
+      "const phaseEntropy = phaseData?"
+    ],
+    "summary": "const, document, getelementbyid, value, phase"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 12,
+    "uncertainty": 0
+  },
+  "temporal_markers": [],
+  "metadata": {
+    "source_name": "xlogic_schema_builder.html",
+    "relative_path": "xlogic_schema_builder.html",
+    "size_bytes": 58453,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

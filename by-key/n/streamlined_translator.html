@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>E3 Data Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        textarea, input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+        }
+        textarea {
+            height: 120px;
+            font-family: monospace;
+            resize: vertical;
+        }
+        #output {
+            height: 200px;
+            background: #f9f9f9;
+        }
+        .quick-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .quick-form input {
+            margin-bottom: 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button.secondary {
+            background: #6c757d;
+        }
+        button.secondary:hover {
+            background: #545b62;
+        }
+        .button-row {
+            text-align: center;
+        }
+        .status {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: none;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .field-help {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .examples {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .examples h4 {
+            margin: 0 0 10px 0;
+            color: #495057;
+        }
+        .examples code {
+            background: #e9ecef;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>E3 Data Translator</h1>
+        <p class="subtitle">Convert your data to JSON format for the E3 Template Builder</p>
+
+        <div class="section">
+            <label>Quick Single Entry:</label>
+            <div class="quick-form">
+                <input type="text" id="quickName" placeholder="Participant Name (e.g., Jane Doe)">
+                <input type="text" id="quickId" placeholder="Participant ID (e.g., P001)">
+                <input type="text" id="quickDate" placeholder="Date (e.g., 2025-08-09)">
+                <input type="text" id="quickInstructor" placeholder="Instructor (e.g., Chris Burdette)">
+            </div>
+            <div class="button-row">
+                <button onclick="generateQuick()">Generate JSON from Quick Form</button>
+            </div>
+        </div>
+
+        <div class="examples">
+            <h4>Bulk Data Examples:</h4>
+            <p><strong>Simple format:</strong> <code>name=Jane Doe, id=P001, date=2025-08-09</code></p>
+            <p><strong>With checkboxes:</strong> <code>name=John Smith, id=P002, work_habits.hygiene=yes, preparatory_goals.safety=ni</code></p>
+            <p><strong>Multiple records:</strong> One line per person</p>
+        </div>
+
+        <div class="section">
+            <label for="bulkInput">Bulk Data Input:</label>
+            <textarea id="bulkInput" placeholder="Enter data here. Examples:
+
+participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09, instructor_name=Chris Burdette
+participant_name=John Smith, participant_id=P002, eval_date=2025-08-09, work_habits.hygiene=yes, preparatory_goals.safety=ni"></textarea>
+            <div class="field-help">
+                Format: <strong>key=value, key=value</strong> (comma-separated). One record per line for bulk.
+                <br>Checkbox values: <strong>yes</strong>, <strong>ni</strong>, <strong>na</strong>
+            </div>
+        </div>
+
+        <div class="button-row">
+            <button onclick="translateData()">Translate to JSON</button>
+            <button onclick="clearAll()">Clear All</button>
+            <button onclick="loadSample()">Load Sample Data</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="section">
+            <label for="output">JSON Output (copy this to E3 Builder):</label>
+            <textarea id="output" readonly></textarea>
+            <div class="button-row">
+                <button class="secondary" onclick="copyOutput()">Copy to Clipboard</button>
+                <button class="secondary" onclick="downloadJSON()">Download JSON File</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+function showStatus(message, isError = false) {
+    const status = document.getElementById('status');
+    status.textContent = message;
+    status.className = 'status ' + (isError ? 'error' : 'success');
+    status.style.display = 'block';
+    setTimeout(() => { status.style.display = 'none'; }, 3000);
+}
+
+function generateQuick() {
+    const name = document.getElementById('quickName').value.trim();
+    const id = document.getElementById('quickId').value.trim();
+    const date = document.getElementById('quickDate').value.trim();
+    const instructor = document.getElementById('quickInstructor').value.trim();
+    
+    if (!name && !id && !date && !instructor) {
+        showStatus('Please fill in at least one quick form field', true);
+        return;
+    }
+    
+    const data = {};
+    if (name) data.participant_name = name;
+    if (id) data.participant_id = id;
+    if (date) data.eval_date = date;
+    if (instructor) data.instructor_name = instructor;
+    
+    document.getElementById('output').value = JSON.stringify(data, null, 2);
+    showStatus('Quick form converted to JSON!');
+}
+
+function parseKeyValueLine(line) {
+    const data = {};
+    const pairs = line.split(',');
+    
+    for (let pair of pairs) {
+        const trimmed = pair.trim();
+        const equalPos = trimmed.indexOf('=');
+        
+        if (equalPos > 0) {
+            const key = trimmed.substring(0, equalPos).trim();
+            const value = trimmed.substring(equalPos + 1).trim();
+            
+            if (key && value) {
+                data[key] = value;
+            }
+        }
+    }
+    
+    return data;
+}
+
+function translateData() {
+    const bulkInput = document.getElementById('bulkInput').value.trim();
+    const output = document.getElementById('output');
+    
+    if (!bulkInput) {
+        showStatus('Please enter some data to translate', true);
+        return;
+    }
+    
+    try {
+        const lines = bulkInput.split('\n').filter(line => line.trim());
+        
+        if (lines.length === 0) {
+            showStatus('No valid data found', true);
+            return;
+        }
+        
+        const results = [];
+        
+        for (let line of lines) {
+            const data = parseKeyValueLine(line);
+            if (Object.keys(data).length > 0) {
+                results.push(data);
+            }
+        }
+        
+        if (results.length === 0) {
+            showStatus('No valid key=value pairs found', true);
+            return;
+        }
+        
+        // Output single object or array
+        const finalOutput = results.length === 1 ? results[0] : results;
+        output.value = JSON.stringify(finalOutput, null, 2);
+        
+        const recordCount = results.length;
+        showStatus(`Successfully converted ${recordCount} record${recordCount > 1 ? 's' : ''} to JSON!`);
+        
+    } catch (error) {
+        showStatus('Error during translation: ' + error.message, true);
+    }
+}
+
+function clearAll() {
+    document.getElementById('quickName').value = '';
+    document.getElementById('quickId').value = '';
+    document.getElementById('quickDate').value = '';
+    document.getElementById('quickInstructor').value = '';
+    document.getElementById('bulkInput').value = '';
+    document.getElementById('output').value = '';
+    showStatus('All fields cleared');
+}
+
+function loadSample() {
+    const sampleData = `participant_name=Abrams Jamie Marie, participant_id=54870, eval_date=1/9/25, instructor_name=Chris Burdette, work_habits.hygiene=yes, work_habits.attitude=yes, preparatory_goals.safety=ni
+participant_name=Smith John, participant_id=P002, eval_date=1/10/25, instructor_name=Sarah Johnson, work_habits.attendance=yes, preparatory_goals.attention_span=yes`;
+    
+    document.getElementById('bulkInput').value = sampleData;
+    showStatus('Sample data loaded - click Translate to JSON');
+}
+
+function copyOutput() {
+    const output = document.getElementById('output');
+    if (!output.value) {
+        showStatus('Nothing to copy - generate JSON first', true);
+        return;
+    }
+    
+    output.select();
+    document.execCommand('copy');
+    showStatus('JSON copied to clipboard!');
+}
+
+function downloadJSON() {
+    const output = document.getElementById('output');
+    if (!output.value) {
+        showStatus('Nothing to download - generate JSON first', true);
+        return;
+    }
+    
+    const blob = new Blob([output.value], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'e3-data.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    showStatus('JSON file downloaded!');
+}
+</script>
+</body>
+</html>

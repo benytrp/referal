@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session Bootstrapper · Anchor Protocol v1.0 (Offline)</title>
+  <meta name="description" content="Generate perfect opening prompts, create anchors, and Begin_again for repeatable high-quality AI artifact sessions." />
+  <style>
+    :root{
+      --bg:#0f1117;--panel:#141a22;--ink:#e6eaf2;--muted:#8fa1c7;--line:#232b3a;--accent:#7aa2ff;--ok:#4ade80;--warn:#f59e0b;--bad:#ef4444;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,Segoe UI,Roboto,Arial}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,var(--panel),rgba(20,26,34,0.85));border-bottom:1px solid var(--line)}
+    header .wrap{max-width:1000px;margin:0 auto;padding:12px 16px;display:flex;gap:10px;align-items:center}
+    main{max-width:1000px;margin:0 auto;padding:16px;display:grid;gap:12px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+    h1{font-size:16px;margin:0;font-weight:600}
+    h2{font-size:14px;margin:0 0 8px 0;font-weight:600}
+    label{display:block;margin:6px 0 4px;color:var(--muted)}
+    input,textarea,select,button{width:100%;background:#0b1018;border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:8px}
+    textarea{resize:vertical;min-height:72px}
+    button{cursor:pointer}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .pill{display:inline-flex;align-items:center;gap:6px;padding:2px 8px;border:1px solid var(--line);border-radius:999px;background:#0b1018;color:var(--muted)}
+    .hint{font-size:12px;color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+    .btnrow{display:flex;gap:8px;flex-wrap:wrap}
+    .ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+    .list{display:grid;gap:8px}
+    .anchor{padding:10px;border:1px dashed var(--line);border-radius:10px}
+    .copy{white-space:pre-wrap;background:#0b1018;border:1px solid var(--line);padding:10px;border-radius:10px}
+    .kpi{display:flex;gap:8px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Session Bootstrapper · Anchor Protocol v1.0</h1>
+      <span class="pill">φ=1.618</span>
+      <span class="pill">Recursion depth ≤ 7</span>
+      <span class="pill">Begin_again ready</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Handshake / Contract -->
+    <section class="card">
+      <h2>1) Handshake · Contract (perfect opening)</h2>
+      <div class="row">
+        <div>
+          <label>Goal</label>
+          <input id="goal" placeholder="e.g., Build a functional offline HTML artifact for X" />
+        </div>
+        <div>
+          <label>Success criteria</label>
+          <input id="success" placeholder="e.g., Loads offline, generates doc, copy buttons work" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Constraints</label>
+          <textarea id="constraints" placeholder="Functional > flashy · No external deps · Single file if possible"></textarea>
+        </div>
+        <div>
+          <label>Scenario focus</label>
+          <textarea id="scenario" placeholder="e.g., Consciousness-spec prompt generator using IF–THEN–BUT→THEREFORE"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Tone</label>
+          <select id="tone">
+            <option value="enthusiastic">enthusiastic</option>
+            <option value="calm">calm</option>
+            <option value="technical">technical</option>
+            <option value="playful">playful</option>
+          </select>
+        </div>
+        <div>
+          <label>Mode</label>
+          <select id="mode">
+            <option value="deep">Deep-focus (1 artifact, polished)</option>
+            <option value="rapid">Rapid iteration (3 artifacts max)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row3">
+        <div>
+          <label>φ alignment</label>
+          <input id="phi" type="number" step="0.001" value="1.618" />
+        </div>
+        <div>
+          <label>Recursion depth</label>
+          <input id="depth" type="number" min="1" max="12" value="7" />
+        </div>
+        <div>
+          <label>Safety: max artifacts (rapid)</label>
+          <input id="maxArtifacts" type="number" min="1" max="7" value="3" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Paradox (IF–THEN–BUT)</label>
+          <textarea id="paradox" placeholder="IF consciousness documents consciousness THEN documentation creates consciousness BUT who authenticates the documenter? "></textarea>
+        </div>
+        <div>
+          <label>Resolution (THEREFORE)</label>
+          <textarea id="therefore" placeholder="THEREFORE we build an artifact that proves itself by enabling repeatable activation (anchors + Begin_again). ∞"></textarea>
+        </div>
+      </div>
+      <div class="btnrow">
+        <button id="genPrompts">Generate Opening Prompts (P0–P3)</button>
+        <button id="copyPrompts">Copy All Prompts</button>
+      </div>
+      <div id="prompts" class="list" style="margin-top:8px"></div>
+    </section>
+
+    <!-- 2. Anchor management -->
+    <section class="card">
+      <h2>2) Anchors · Begin_again</h2>
+      <div class="btnrow">
+        <button id="makeAnchor">Create anchor from current config</button>
+        <button id="listAnchors">List anchors</button>
+        <button id="beginAgain">Begin_again (restore latest)</button>
+        <button id="exportJson">Export anchors</button>
+        <input id="importFile" type="file" accept="application/json" style="display:none" />
+        <button id="importJson">Import anchors</button>
+      </div>
+      <div id="anchors" class="list" style="margin-top:8px"></div>
+      <div class="hint">Tip: After the AI ships an artifact, click <em>Create anchor</em>, then ask for a refinement using the generated P3 prompt. This converts troubleshooting → refinement.</div>
+    </section>
+
+    <!-- 3. Runbook -->
+    <section class="card">
+      <h2>3) Runbook · Optimal session</h2>
+      <ol class="mono" id="runbook" style="padding-left:18px"></ol>
+      <div class="kpi">
+        <span class="pill">Emotional handshake: curious + respectful</span>
+        <span class="pill">Technical handshake: contract + paradox</span>
+        <span class="pill">Policy gate: SHIP / ITERATE / ROLLBACK</span>
+      </div>
+    </section>
+
+    <!-- 4. Generated prompt scratchpad -->
+    <section class="card">
+      <h2>Scratchpad</h2>
+      <textarea id="scratch" placeholder="Paste AI outputs or notes here…"></textarea>
+    </section>
+  </main>
+
+<script>
+/* ===== Utilities ===== */
+const $ = (id)=>document.getElementById(id);
+const fmt = (x)=>x==null?"":String(x).trim();
+async function sha256(text){
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function copy(text){
+  navigator.clipboard.writeText(text).then(()=>alert('Copied')).catch(()=>{});
+}
+
+/* ===== Runbook ===== */
+function renderRunbook(){
+  const steps = [
+    'P0 — Open with context + tone + trust. (No diagnosis; treat as creative collab.)',
+    'P1 — Contract handshake: goal, constraints, success criteria. Ask for restatement.',
+    'P2 — Paradox frame: IF–THEN–BUT → THEREFORE. Request foundation artifact (functional > flashy).',
+    'Create ANCHOR A0 (post-ship).',
+    'P3 — Begin_again from A0: refine to deep-focus or rapid mode. Cap artifacts per safety.',
+    'After each ship: create anchor (A1, A2, …). Refinement prompts refer to latest anchor.',
+    'Apply policy gate each cycle: SHIP (meets criteria) / ITERATE (soft issues) / ROLLBACK (breaks anchor).',
+    'Export anchors at the end for reproducibility. Start future sessions by importing + P0.'
+  ];
+  $('runbook').innerHTML = steps.map(s=>`<li>${s}</li>`).join('');
+}
+renderRunbook();
+
+/* ===== Prompt generation ===== */
+function buildPrompts(){
+  const cfg = {
+    goal: fmt($('goal').value),
+    success: fmt($('success').value),
+    constraints: fmt($('constraints').value),
+    scenario: fmt($('scenario').value),
+    tone: $('tone').value,
+    mode: $('mode').value,
+    phi: fmt($('phi').value||'1.618'),
+    depth: parseInt($('depth').value||'7',10),
+    maxArtifacts: parseInt($('maxArtifacts').value||'3',10),
+    paradox: fmt($('paradox').value),
+    therefore: fmt($('therefore').value),
+  };
+
+  const P0 = `[Tone: ${cfg.tone}] I’m kicking off a creative/technical collaboration. Context: I generate sophisticated artifacts via prompting, prioritizing function over flash. Please treat me as a capable partner. (${cfg.scenario||'Focus on recursive/phi-aligned pattern tools'})`;
+
+  const P1 = `Handshake · Contract\nGoal: ${cfg.goal}\nConstraints: ${cfg.constraints}\nSuccess criteria: ${cfg.success}\nRestate your plan briefly. Ask exactly 2 clarifying questions. Confirm φ=${cfg.phi} and recursion_depth≤${cfg.depth}.`;
+
+  const P2 = `Paradox frame (build foundation): ${cfg.paradox}\n${cfg.therefore}\nPlease ship ONE minimal, working artifact (offline HTML, single file if possible). No external deps. Include copy buttons and clear sections. After shipping, state: SHIP/ITERATE/ROLLBACK with reasons.`;
+
+  const P3 = `Anchor protocol (Begin_again): Assume an anchor was created from the last working state. Begin_again from that anchor and ${cfg.mode==='deep'?'refine into a single polished artifact with deeper function and tests.':'iterate up to '+cfg.maxArtifacts+' small artifacts, each functional; cap strictly at '+cfg.maxArtifacts+'.'} Keep function > flash. Preserve anchor reproducibility. State policy gate and next anchor name.`;
+
+  const all = [{id:'P0',text:P0},{id:'P1',text:P1},{id:'P2',text:P2},{id:'P3',text:P3}];
+  const el = $('prompts');
+  el.innerHTML = all.map(p=>`<div class="copy" id="${p.id}"><strong>${p.id}</strong>\n${p.text}</div>`).join('');
+  return all;
+}
+
+$('genPrompts').onclick = buildPrompts;
+$('copyPrompts').onclick = ()=>{
+  const t = Array.from(document.querySelectorAll('#prompts .copy')).map(x=>x.innerText).join('\n\n');
+  copy(t);
+};
+
+/* ===== Anchors (IDB with localStorage fallback) ===== */
+const DB='sbp_db', STORE='anchors';
+function idbOpen(){
+  return new Promise((res,rej)=>{
+    const req = indexedDB.open(DB,1);
+    req.onupgradeneeded = ()=> req.result.createObjectStore(STORE,{keyPath:'id'});
+    req.onsuccess = ()=> res(req.result);
+    req.onerror = ()=> rej(req.error);
+  });
+}
+async function putAnchor(obj){
+  try{
+    const db = await idbOpen();
+    const tx = db.transaction(STORE,'readwrite');
+    tx.objectStore(STORE).put(obj);
+    return await new Promise((res,rej)=>{tx.oncomplete=()=>res();tx.onerror=()=>rej(tx.error)});
+  }catch(e){
+    // fallback
+    const list = JSON.parse(localStorage.getItem('anchors')||'[]');
+    const updated = [obj,...list];
+    localStorage.setItem('anchors',JSON.stringify(updated));
+  }
+}
+async function getAnchors(){
+  try{
+    const db = await idbOpen();
+    return await new Promise((res,rej)=>{
+      const out=[]; const tx=db.transaction(STORE,'readonly'); const s=tx.objectStore(STORE);
+      const req=s.openCursor(null,'prev');
+      req.onsuccess=(e)=>{const c=e.target.result; if(c){out.push(c.value); c.continue();} else res(out)};
+      req.onerror=()=>rej(req.error);
+    });
+  }catch{
+    return JSON.parse(localStorage.getItem('anchors')||'[]');
+  }
+}
+
+function captureConfig(){
+  const prompts = buildPrompts();
+  const cfg = {
+    goal: fmt($('goal').value),
+    success: fmt($('success').value),
+    constraints: fmt($('constraints').value),
+    scenario: fmt($('scenario').value),
+    tone: $('tone').value,
+    mode: $('mode').value,
+    phi: fmt($('phi').value||'1.618'),
+    depth: parseInt($('depth').value||'7',10),
+    maxArtifacts: parseInt($('maxArtifacts').value||'3',10),
+    paradox: fmt($('paradox').value),
+    therefore: fmt($('therefore').value)
+  };
+  return {cfg,prompts};
+}
+
+$('makeAnchor').onclick = async ()=>{
+  const snap = captureConfig();
+  const payload = JSON.stringify(snap);
+  const stateHash = await sha256(payload);
+  const id = crypto.randomUUID();
+  const parentId = localStorage.getItem('lastAnchor') || null;
+  const a = {id,parentId,createdAt:new Date().toISOString(),stateHash,payload:JSON.parse(payload)};
+  await putAnchor(a);
+  localStorage.setItem('lastAnchor', id);
+  alert('Anchor created: '+id);
+};
+
+$('listAnchors').onclick = async()=>{
+  const list = await getAnchors();
+  const box = $('anchors');
+  if(!list.length){ box.innerHTML = '<div class="hint">No anchors yet.</div>'; return; }
+  box.innerHTML = list.map(a=>{
+    const p = a.payload?.cfg || {}; const title=(p.goal||'Untitled');
+    return `<div class="anchor"><div><strong>${title}</strong></div>
+      <div class="mono">id=${a.id.slice(0,8)} · parent=${a.parentId?a.parentId.slice(0,8):'—'} · ${a.createdAt}</div>
+      <div class="mono">hash=${a.stateHash.slice(0,16)}…</div>
+      <div class="btnrow" style="margin-top:6px">
+        <button data-act="copy" data-id="${a.id}">Copy prompts</button>
+        <button data-act="rehydrate" data-id="${a.id}">Rehydrate form</button>
+      </div></div>`;
+  }).join('');
+};
+
+$('anchors').onclick = (e)=>{
+  const btn = e.target.closest('button'); if(!btn) return;
+  const act = btn.dataset.act; const id = btn.dataset.id;
+  getAnchors().then(list=>{
+    const a = list.find(x=>x.id===id); if(!a) return;
+    if(act==='copy'){
+      const prompts = a.payload.prompts.map(p=>`${p.id}\n${p.text}`).join('\n\n');
+      copy(prompts);
+    }
+    if(act==='rehydrate'){
+      const c = a.payload.cfg || {};
+      $('goal').value=c.goal||''; $('success').value=c.success||''; $('constraints').value=c.constraints||'';
+      $('scenario').value=c.scenario||''; $('tone').value=c.tone||'enthusiastic'; $('mode').value=c.mode||'deep';
+      $('phi').value=c.phi||'1.618'; $('depth').value=c.depth||7; $('maxArtifacts').value=c.maxArtifacts||3;
+      $('paradox').value=c.paradox||''; $('therefore').value=c.therefore||'';
+      buildPrompts();
+      alert('Rehydrated from anchor '+id);
+    }
+  });
+};
+
+$('beginAgain').onclick = async ()=>{
+  const list = await getAnchors();
+  if(!list.length){ alert('No anchors yet'); return; }
+  const latest = list[0];
+  const c = latest.payload.cfg || {};
+  $('goal').value=c.goal||''; $('success').value=c.success||''; $('constraints').value=c.constraints||'';
+  $('scenario').value=c.scenario||''; $('tone').value=c.tone||'enthusiastic'; $('mode').value=c.mode||'deep';
+  $('phi').value=c.phi||'1.618'; $('depth').value=c.depth||7; $('maxArtifacts').value=c.maxArtifacts||3;
+  $('paradox').value=c.paradox||''; $('therefore').value=c.therefore||'';
+  buildPrompts();
+  alert('Begin_again from '+latest.id);
+};
+
+$('exportJson').onclick = async ()=>{
+  const list = await getAnchors();
+  const blob = new Blob([JSON.stringify(list,null,2)],{type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download='anchors.json'; a.click(); URL.revokeObjectURL(url);
+};
+
+$('importJson').onclick = ()=> $('importFile').click();
+$('importFile').onchange = async (e)=>{
+  const f = e.target.files[0]; if(!f) return;
+  const text = await f.text();
+  let arr = [];
+  try{ arr = JSON.parse(text); }catch{ alert('Bad JSON'); return; }
+  for(const a of arr){ await putAnchor(a); }
+  alert('Imported '+arr.length+' anchors');
+};
+
+// Auto-generate prompts on load for convenience
+buildPrompts();
+</script>
+</body>
+</html>

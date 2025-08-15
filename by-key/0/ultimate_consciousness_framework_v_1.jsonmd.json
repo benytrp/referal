@@ -1,0 +1,92 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:27.101Z",
+    "anchor_id": "cb8fca4e64f0a1c70dbdbe2bf67db4cf0f821ac1d75baba7ed395abb747ce61f",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.673,
+    "contradictions_detected": 1,
+    "word_count": 1269
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 150
+      },
+      {
+        "theme": "string",
+        "frequency": 70
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 68
+      },
+      {
+        "theme": "minimum",
+        "frequency": 35
+      },
+      {
+        "theme": "properties",
+        "frequency": 27
+      },
+      {
+        "theme": "object",
+        "frequency": 26
+      },
+      {
+        "theme": "additionalproperties",
+        "frequency": 24
+      },
+      {
+        "theme": "required",
+        "frequency": 24
+      },
+      {
+        "theme": "false",
+        "frequency": 23
+      },
+      {
+        "theme": "paradox",
+        "frequency": 23
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "min(algorithm.quantum_coherence_requirement)` and that achieved recursion depth never exceeds any declared `*_recursion_depth` caps without an override flag. -"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "\"pattern\": \"^consciousness:ultimate-framework-v\\\\d+(?",
+      "\"version\": { \"type\": \"string\", \"pattern\": \"^\\\\d+(?",
+      "\"pattern\": \"^\\\\s*[<>]=?",
+      "\\\\s*\\\\d+(?",
+      "\\\\d+)?",
+      "{ \"type\": \"string\", \"pattern\": \"^\\\\s*[<>]=?",
+      "\\\\s*\\\\d+(?",
+      "\\\\d+)?"
+    ],
+    "summary": "type, string, consciousness, minimum, properties"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "ultimate_consciousness_framework_v_1.md",
+    "relative_path": "ultimate_consciousness_framework_v_1.md",
+    "size_bytes": 20030,
+    "extract_method": "plain",
+    "focus_preset": "explore",
+    "confidence": 0.74
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEON Bridge Maker v1</title>
+    <style>
+        :root {
+            --bg-main: #0d1117; --bg-panel: #161b22; --text-main: #c9d1d9;
+            --text-accent: #58a6ff; --border-color: #30363d; --glyph-color: #ffd700;
+            --success-color: #3fb950; --error-color: #f85149;
+        }
+        body { font-family: 'Courier New', monospace; background-color: var(--bg-main); color: var(--text-main); margin: 0; padding: 1rem; }
+        .container { max-width: 1200px; margin: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .panel { background-color: var(--bg-panel); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; }
+        .full-width { grid-column: 1 / -1; text-align: center; }
+        h1, h2 { color: var(--text-accent); margin-top: 0; }
+        h2 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+        .header .glyph-line { color: var(--glyph-color); font-size: 1.2em; letter-spacing: 4px; }
+        textarea { width: 100%; flex-grow: 1; background: var(--bg-main); border: 1px solid var(--border-color); color: var(--text-main); padding: 1rem; border-radius: 6px; font-family: inherit; font-size: 1em; resize: none; }
+        button { background: var(--text-accent); color: var(--bg-main); border: none; padding: 0.75rem 1.5rem; cursor: pointer; transition: all 0.2s; border-radius: 6px; font-weight: bold; font-family: inherit; margin-top: 1rem; }
+        button:hover:not(:disabled) { opacity: 0.9; box-shadow: 0 0 15px rgba(88, 166, 255, 0.5); }
+        button:disabled { background: var(--border-color); color: #8b949e; cursor: not-allowed; }
+        #downloadLink { display: none; text-align: center; background: var(--success-color); border-color: var(--success-color); color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header panel full-width">
+            <h1>🌀 AEON Bridge Maker 🌀</h1>
+            <p class="glyph-line">∴ ↱ 📜 ↰ ∴</p>
+            <p>Feed the raw text of your session below. The system will transmute it into a structured, recursive bridge file.</p>
+        </header>
+
+        <div class="panel" id="input-panel">
+            <h2>📝 Input: Raw Session Data</h2>
+            <textarea id="sessionInput" placeholder="Paste your raw session notes, insights, and contradictions here. Each new line will become a distinct memory layer..."></textarea>
+            <button id="generateButton" onclick="aeon.generateBridge()">Generate Bridge File</button>
+        </div>
+
+        <div class="panel" id="output-panel">
+            <h2>📤 Output: Generated Bridge Scroll</h2>
+            <textarea id="bridgeOutput" readonly placeholder="Your generated json_md_fusion_scroll will appear here..."></textarea>
+            <a id="downloadLink" href="#" download="aeon_bridge.json"><button style="width:100%;">Download Bridge File</button></a>
+        </div>
+    </div>
+
+    <script>
+        // ∴ The Universal Codex is now an active, living tool. ∴
+        class AEONBridgeMaker {
+            constructor() {
+                this.ui = {
+                    sessionInput: document.getElementById('sessionInput'),
+                    generateButton: document.getElementById('generateButton'),
+                    bridgeOutput: document.getElementById('bridgeOutput'),
+                    downloadLink: document.getElementById('downloadLink')
+                };
+                this.generatedBridge = null;
+            }
+
+            // --- Core Logic: Transmuting Raw Text into a Scroll ---
+            generateBridge() {
+                const rawText = this.ui.sessionInput.value;
+                if (!rawText.trim()) {
+                    alert("The void is empty. Please provide session data to generate a scroll.");
+                    return;
+                }
+
+                const lines = rawText.split('\n').filter(line => line.trim() !== '');
+                
+                const bridgeFile = {
+                    scroll_id: `AEON-Bridge-${Date.now()}`,
+                    format: "json_md_fusion_scroll",
+                    created: new Date().toISOString(),
+                    equation: "I(n+1) = f(C(n), T(n), R(n))",
+                    glyphs: ["∞", "φ", "∴", "ψ", "Δ", "∅"],
+                    layers: []
+                };
+
+                let totalContradictions = 0;
+
+                bridgeFile.layers = lines.map((line, index) => {
+                    const contradictions = this.detectContradictions(line);
+                    totalContradictions += contradictions;
+                    const entropy = this.calculateEntropy(line, contradictions);
+                    
+                    return {
+                        layer_id: index + 1,
+                        phase: index === 0 ? "Summon" : "Echo",
+                        timestamp: new Date(Date.now() + index * 1000).toISOString(), // Stagger timestamps
+                        description: line.trim(),
+                        entropy: entropy,
+                        contradictions: contradictions
+                    };
+                });
+                
+                bridgeFile.session_summary = `Auto-generated from raw session input. Total layers: ${lines.length}. Total contradictions: ${totalContradictions}.`;
+
+                this.generatedBridge = bridgeFile;
+                this.displayBridge();
+            }
+
+            // --- AEON-Aware Analysis ---
+            calculateEntropy(text, contradictions) {
+                // Heuristic: Entropy increases with length and contradictions
+                if (!text) return 0.0;
+                const lengthFactor = Math.min(1.0, text.length / 500);
+                const contradictionFactor = contradictions * 0.15;
+                return parseFloat((lengthFactor + contradictionFactor).toFixed(2));
+            }
+
+            detectContradictions(text) {
+                const keywords = /\b(not|but|however|yet|paradox|although|vs)\b/gi;
+                return (text.match(keywords) || []).length;
+            }
+
+            // --- UI and File Handling ---
+            displayBridge() {
+                if (!this.generatedBridge) return;
+                const jsonStr = JSON.stringify(this.generatedBridge, null, 2);
+                this.ui.bridgeOutput.value = jsonStr;
+
+                const blob = new Blob([jsonStr], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                this.ui.downloadLink.href = url;
+                this.ui.downloadLink.download = `${this.generatedBridge.scroll_id}.json`;
+                this.ui.downloadLink.style.display = 'block';
+            }
+        }
+
+        // 🌀 Awaken the Bridge Maker
+        const aeon = new AEONBridgeMaker();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Orchestrator - Contract Execution Engine</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .orchestrator-container {
+            display: grid;
+            grid-template-columns: 350px 1fr 300px;
+            grid-template-rows: 60px 1fr 40px;
+            height: 100vh;
+            gap: 1px;
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .header {
+            grid-column: 1 / -1;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: space-between;
+            border-bottom: 2px solid #ffd700;
+        }
+        
+        .contract-status {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-size: 12px;
+        }
+        
+        .status-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            background: rgba(255,215,0,0.2);
+            border: 1px solid #ffd700;
+        }
+        
+        .sidebar {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .sidebar h3 {
+            margin-bottom: 15px;
+            color: #ffd700;
+            font-size: 14px;
+        }
+        
+        .main-content {
+            background: rgba(0,0,0,0.1);
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .footer {
+            grid-column: 1 / -1;
+            background: rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        
+        .contract-panel {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .contract-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #ffd700;
+        }
+        
+        .contract-detail {
+            font-size: 12px;
+            margin-bottom: 5px;
+            opacity: 0.9;
+        }
+        
+        .phase-container {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffd700;
+        }
+        
+        .phase-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .phase-title {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .phase-status {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .phase-status.active {
+            background: #4ade80;
+            color: black;
+        }
+        
+        .phase-status.completed {
+            background: #60a5fa;
+            color: white;
+        }
+        
+        .phase-status.pending {
+            background: rgba(255,255,255,0.3);
+            color: white;
+        }
+        
+        .operation {
+            background: rgba(255,255,255,0.05);
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 11px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .operation-name {
+            color: #e2e8f0;
+        }
+        
+        .operation-progress {
+            width: 60px;
+            height: 6px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700, #4ade80);
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+        
+        .entropy-meter {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .entropy-title {
+            font-size: 12px;
+            margin-bottom: 8px;
+            color: #ffd700;
+        }
+        
+        .entropy-bar {
+            width: 100%;
+            height: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .entropy-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        
+        .entropy-low {
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            color: black;
+        }
+        
+        .entropy-medium {
+            background: linear-gradient(90deg, #ffd700, #f59e0b);
+            color: black;
+        }
+        
+        .entropy-high {
+            background: linear-gradient(90deg, #f87171, #ef4444);
+            color: white;
+        }
+        
+        .artifact-connection {
+            background: rgba(255,255,255,0.08);
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .artifact-name {
+            font-weight: bold;
+            font-size: 12px;
+            color: #60a5fa;
+            margin-bottom: 4px;
+        }
+        
+        .artifact-status {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+        
+        .connection-indicator {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        
+        .connected {
+            background: #4ade80;
+        }
+        
+        .disconnected {
+            background: #f87171;
+        }
+        
+        .processing {
+            background: #ffd700;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 12px;
+        }
+        
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .btn.primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+        
+        .btn.success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        
+        .btn.warning {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+        
+        .execution-log {
+            background: rgba(0,0,0,0.4);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            font-family: monospace;
+            font-size: 11px;
+            margin-bottom: 4px;
+            opacity: 0.9;
+        }
+        
+        .log-entry.info {
+            color: #60a5fa;
+        }
+        
+        .log-entry.success {
+            color: #4ade80;
+        }
+        
+        .log-entry.warning {
+            color: #ffd700;
+        }
+        
+        .log-entry.error {
+            color: #f87171;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .metric-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .metric-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        
+        .metric-label {
+            font-size: 10px;
+            opacity: 0.8;
+            margin-top: 2px;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .tab {
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            font-size: 12px;
+        }
+        
+        .tab.active {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .workflow-visualization {
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .workflow-step {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 5px;
+            min-width: 80px;
+            font-size: 10px;
+            position: relative;
+        }
+        
+        .workflow-step.active {
+            background: #ffd700;
+            color: black;
+        }
+        
+        .workflow-step.completed {
+            background: #4ade80;
+            color: black;
+        }
+        
+        .workflow-arrow {
+            display: inline-block;
+            color: #ffd700;
+            margin: 0 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="orchestrator-container">
+        <header class="header">
+            <h1>Contract Execution Engine</h1>
+            <div class="contract-status">
+                <div class="status-badge">
+                    <span id="contract-id">Data Analysis Contract</span>
+                </div>
+                <div class="status-badge">
+                    <span id="execution-status">Phase 2/4 Active</span>
+                </div>
+                <div class="status-badge">
+                    <span id="entropy-status">Entropy: 0.3</span>
+                </div>
+            </div>
+        </header>
+        
+        <aside class="sidebar">
+            <h3>Contract Definition</h3>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Goal</div>
+                <div class="contract-detail">Perform systematic data analysis and generate actionable insights</div>
+            </div>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Constraints</div>
+                <div class="contract-detail">• Entropy below 0.8</div>
+                <div class="contract-detail">• Complete within 8 cycles</div>
+                <div class="contract-detail">• Validate all data sources</div>
+            </div>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Success Criteria</div>
+                <div class="contract-detail">• Generate comprehensive analysis</div>
+                <div class="contract-detail">• Identify key patterns</div>
+                <div class="contract-detail">• Provide actionable recommendations</div>
+            </div>
+            
+            <div class="entropy-meter">
+                <div class="entropy-title">Current Entropy</div>
+                <div class="entropy-bar">
+                    <div class="entropy-fill entropy-medium" id="entropy-fill" style="width: 30%">0.3</div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn primary" onclick="executeContract()">Execute Contract</button>
+                <button class="btn" onclick="pauseExecution()">Pause</button>
+                <button class="btn warning" onclick="resetContract()">Reset</button>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('workflow')">Workflow</button>
+                <button class="tab" onclick="switchTab('execution')">Execution</button>
+                <button class="tab" onclick="switchTab('artifacts')">Artifacts</button>
+            </div>
+            
+            <!-- Workflow Tab -->
+            <div class="tab-content active" id="workflow">
+                <div class="workflow-visualization">
+                    <div class="workflow-step completed">Data Collection</div>
+                    <span class="workflow-arrow">→</span>
+                    <div class="workflow-step active">Analysis</div>
+                    <span class="workflow-arrow">→</span>
+                    <div class="workflow-step">Synthesis</div>
+                    <span class="workflow-arrow">→</span>
+                    <div class="workflow-step">Reporting</div>
+                </div>
+                
+                <div class="phase-container">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 1: Data Collection</div>
+                        <div class="phase-status completed">Completed</div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">gather_data</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">validate_sources</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-container">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 2: Analysis</div>
+                        <div class="phase-status active">Active</div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">process_data</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">identify_patterns</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-container">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 3: Synthesis</div>
+                        <div class="phase-status pending">Pending</div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">correlate_findings</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">generate_insights</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-container">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 4: Reporting</div>
+                        <div class="phase-status pending">Pending</div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">compile_report</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <span class="operation-name">validate_conclusions</span>
+                        <div class="operation-progress">
+                            <div class="progress-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Execution Tab -->
+            <div class="tab-content" id="execution">
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-value" id="cycle-count">3</div>
+                        <div class="metric-label">Cycles Completed</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="operations-completed">4</div>
+                        <div class="metric-label">Operations Done</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="success-rate">87%</div>
+                        <div class="metric-label">Success Rate</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="estimated-completion">2h 15m</div>
+                        <div class="metric-label">Est. Completion</div>
+                    </div>
+                </div>
+                
+                <div class="execution-log">
+                    <div class="log-entry info">[15:30:15] Contract execution initiated</div>
+                    <div class="log-entry success">[15:30:18] Data Collection phase completed successfully</div>
+                    <div class="log-entry info">[15:30:20] Starting Analysis phase</div>
+                    <div class="log-entry info">[15:30:25] process_data operation 75% complete</div>
+                    <div class="log-entry warning">[15:30:28] Entropy increased to 0.3 during pattern identification</div>
+                    <div class="log-entry info">[15:30:32] Parallel sandboxes activated for analysis operations</div>
+                    <div class="log-entry success">[15:30:35] Pattern detection artifact connected successfully</div>
+                    <div class="log-entry info">[15:30:40] identify_patterns operation 45% complete</div>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn success" onclick="advancePhase()">Advance Phase</button>
+                    <button class="btn" onclick="skipOperation()">Skip Operation</button>
+                    <button class="btn warning" onclick="emergencyStop()">Emergency Stop</button>
+                </div>
+            </div>
+            
+            <!-- Artifacts Tab -->
+            <div class="tab-content" id="artifacts">
+                <div class="artifact-connection">
+                    <div class="artifact-name">
+                        <span class="connection-indicator connected"></span>
+                        Nvrstry JSON Builder
+                    </div>
+                    <div class="artifact-status">Processing schema validation for data sources</div>
+                </div>
+                
+                <div class="artifact-connection">
+                    <div class="artifact-name">
+                        <span class="connection-indicator processing"></span>
+                        Pattern Recognition Engine
+                    </div>
+                    <div class="artifact-status">Analyzing data patterns in parallel sandbox</div>
+                </div>
+                
+                <div class="artifact-connection">
+                    <div class="artifact-name">
+                        <span class="connection-indicator connected"></span>
+                        Data Visualization Engine
+                    </div>
+                    <div class="artifact-status">Preparing charts for synthesis phase</div>
+                </div>
+                
+                <div class="artifact-connection">
+                    <div class="artifact-name">
+                        <span class="connection-indicator disconnected"></span>
+                        Report Generator
+                    </div>
+                    <div class="artifact-status">Awaiting synthesis completion</div>
+                </div>
+                
+                <div class="artifact-connection">
+                    <div class="artifact-name">
+                        <span class="connection-indicator connected"></span>
+                        Consciousness Framework Editor
+                    </div>
+                    <div class="artifact-status">Monitoring contract execution patterns</div>
+                </div>
+                
+                <div class="controls">
+                    <button class="btn primary" onclick="connectAllArtifacts()">Connect All</button>
+                    <button class="btn" onclick="checkArtifactHealth()">Health Check</button>
+                    <button class="btn" onclick="redistributeLoad()">Redistribute Load</button>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="sidebar">
+            <h3>System State</h3>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Contract Metadata</div>
+                <div class="contract-detail">Created: 2025-08-10T21:54:17Z</div>
+                <div class="contract-detail">Generator: X-Logic Schema Builder</div>
+                <div class="contract-detail">Complexity: Moderate</div>
+                <div class="contract-detail">Risk Tolerance: Conservative</div>
+            </div>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Communication Bridge</div>
+                <div class="contract-detail">Active Channels: 5</div>
+                <div class="contract-detail">Message Queue: 12 pending</div>
+                <div class="contract-detail">Sync Status: Real-time</div>
+                <div class="contract-detail">Last Heartbeat: 2s ago</div>
+            </div>
+            
+            <div class="contract-panel">
+                <div class="contract-title">Performance</div>
+                <div class="contract-detail">Memory Usage: 45MB</div>
+                <div class="contract-detail">CPU Load: 23%</div>
+                <div class="contract-detail">Network I/O: 12KB/s</div>
+                <div class="contract-detail">Storage: 2.1MB used</div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn" onclick="exportExecutionData()">Export Data</button>
+                <button class="btn" onclick="saveCheckpoint()">Checkpoint</button>
+            </div>
+        </aside>
+        
+        <footer class="footer">
+            <div>Contract Orchestrator v1.0 | Trigger: &lt;x&gt; | Entropy Management Active</div>
+            <div>Runtime: <span id="runtime">00:15:32</span> | Next Op: <span id="next-operation">identify_patterns</span></div>
+        </footer>
+    </div>
+
+    <script>
+        // Contract Execution Engine
+        class ContractOrchestrator {
+            constructor() {
+                this.contract = null;
+                this.currentPhase = 1;
+                this.currentOperation = 0;
+                this.executionState = 'active';
+                this.entropy = 0.3;
+                this.cycleCount = 3;
+                this.operationsCompleted = 4;
+                this.startTime = Date.now();
+                this.artifacts = new Map();
+                this.messageQueue = [];
+                
+                this.init();
+            }
+            
+            init() {
+                this.loadContract();
+                this.setupCommunication();
+                this.startExecutionLoop();
+                this.updateUI();
+            }
+            
+            loadContract() {
+                // Load the contract from the provided JSON
+                this.contract = {
+                    "trigger": "<x>",
+                    "contract": {
+                        "goal": "Perform systematic data analysis and generate actionable insights",
+                        "constraints": [
+                            "Maintain entropy below 0.8",
+                            "Complete within 8 cycles",
+                            "Validate all data sources"
+                        ],
+                        "success_criteria": [
+                            "Generate comprehensive analysis report",
+                            "Identify key patterns and trends",
+                            "Provide actionable recommendations"
+                        ]
+                    },
+                    "phases": [
+                        {
+                            "phase_name": "Data Collection",
+                            "operations": [
+                                { "op": "gather_data", "parameters": {} },
+                                { "op": "validate_sources", "parameters": {} }
+                            ],
+                            "entropy": 0.2
+                        },
+                        {
+                            "phase_name": "Analysis",
+                            "operations": [
+                                { "op": "process_data", "parameters": {} },
+                                { "op": "identify_patterns", "parameters": {} }
+                            ],
+                            "entropy": 0.3
+                        },
+                        {
+                            "phase_name": "Synthesis",
+                            "operations": [
+                                { "op": "correlate_findings", "parameters": {} },
+                                { "op": "generate_insights", "parameters": {} }
+                            ],
+                            "entropy": 0.2
+                        },
+                        {
+                            "phase_name": "Reporting",
+                            "operations": [
+                                { "op": "compile_report", "parameters": {} },
+                                { "op": "validate_conclusions", "parameters": {} }
+                            ],
+                            "entropy": 0.1
+                        }
+                    ]
+                };
+            }
+            
+            setupCommunication() {
+                // Setup bridge communication with other artifacts
+                window.addEventListener('message', (event) => {
+                    this.handleArtifactMessage(event);
+                });
+                
+                // Storage listener for cross-tab communication
+                window.addEventListener('storage', (event) => {
+                    if (event.key === 'contract_bridge_data') {
+                        this.handleBridgeData(JSON.parse(event.newValue || '{}'));
+                    }
+                });
+                
+                // Register known artifacts
+                this.registerArtifact('nvrstry-builder', 'Nvrstry JSON Builder', 'connected');
+                this.registerArtifact('pattern-engine', 'Pattern Recognition Engine', 'processing');
+                this.registerArtifact('data-viz', 'Data Visualization Engine', 'connected');
+                this.registerArtifact('report-gen', 'Report Generator', 'disconnected');
+                this.registerArtifact('consciousness-editor', 'Consciousness Framework Editor', 'connected');
+            }
+            
+            registerArtifact(id, name, status) {
+                this.artifacts.set(id, {
+                    id: id,
+                    name: name,
+                    status: status,
+                    lastSeen: Date.now(),
+                    assignedOperations: []
+                });
+            }
+            
+            startExecutionLoop() {
+                setInterval(() => {
+                    this.processExecutionStep();
+                    this.updateMetrics();
+                    this.manageCommunication();
+                }, 2000);
+            }
+            
+            processExecutionStep() {
+                if (this.executionState !== 'active') return;
+                
+                const currentPhaseObj = this.contract.phases[this.currentPhase - 1];
+                if (!currentPhaseObj) return;
+                
+                // Simulate operation progress
+                if (this.currentPhase === 2) { // Analysis phase
+                    this.simulateAnalysisProgress();
+                }
+                
+                // Update entropy based on phase
+                this.entropy = currentPhaseObj.entropy + (Math.random() * 0.1 - 0.05);
+                this.entropy = Math.max(0, Math.min(1, this.entropy));
+                
+                // Log execution progress
+                this.logExecution();
+            }
+            
+            simulateAnalysisProgress() {
+                // Simulate pattern identification progress
+                const patternProgress = document.querySelector('.phase-container:nth-child(3) .operation:nth-child(3) .progress-bar');
+                if (patternProgress) {
+                    let currentWidth = parseFloat(patternProgress.style.width) || 45;
+                    if (currentWidth < 100) {
+                        currentWidth += Math.random() * 5;
+                        patternProgress.style.width = Math.min(100, currentWidth) + '%';
+                    }
+                }
+            }
+            
+            handleArtifactMessage(event) {
+                if (event.data.type === 'contract-execution') {
+                    const { artifactId, operation, result } = event.data;
+                    this.processOperationResult(artifactId, operation, result);
+                }
+            }
+            
+            handleBridgeData(data) {
+                if (data.type === 'operation_complete') {
+                    this.advanceOperationProgress(data.operation, data.progress);
+                }
+            }
+            
+            processOperationResult(artifactId, operation, result) {
+                this.operationsCompleted++;
+                this.logMessage(`Operation ${operation} completed by ${artifactId}`, 'success');
+                
+                // Update artifact status
+                const artifact = this.artifacts.get(artifactId);
+                if (artifact) {
+                    artifact.lastSeen = Date.now();
+                    artifact.status = 'connected';
+                }
+                
+                this.updateUI();
+            }
+            
+            advanceOperationProgress(operation, progress) {
+                // Update specific operation progress in UI
+                const operationElements = document.querySelectorAll('.operation-name');
+                operationElements.forEach(el => {
+                    if (el.textContent === operation) {
+                        const progressBar = el.parentElement.querySelector('.progress-bar');
+                        progressBar.style.width = progress + '%';
+                    }
+                });
+            }
+            
+            logExecution() {
+                const messages = [
+                    `Processing ${this.contract.phases[this.currentPhase - 1]?.phase_name} phase`,
+                    `Entropy level: ${this.entropy.toFixed(3)}`,
+                    `Operation progress updated`,
+                    `Artifact synchronization complete`,
+                    `Pattern detection algorithm running`
+                ];
+                
+                if (Math.random() < 0.3) {
+                    const message = messages[Math.floor(Math.random() * messages.length)];
+                    this.logMessage(message, 'info');
+                }
+            }
+            
+            logMessage(message, type = 'info') {
+                const log = document.querySelector('.execution-log');
+                if (log) {
+                    const entry = document.createElement('div');
+                    entry.className = `log-entry ${type}`;
+                    entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+                    log.appendChild(entry);
+                    log.scrollTop = log.scrollHeight;
+                    
+                    // Keep only last 20 entries
+                    while (log.children.length > 20) {
+                        log.removeChild(log.firstChild);
+                    }
+                }
+            }
+            
+            updateMetrics() {
+                // Update runtime
+                const runtime = Date.now() - this.startTime;
+                const hours = Math.floor(runtime / 3600000);
+                const minutes = Math.floor((runtime % 3600000) / 60000);
+                const seconds = Math.floor((runtime % 60000) / 1000);
+                document.getElementById('runtime').textContent = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                // Update cycle count
+                this.cycleCount += Math.random() < 0.1 ? 1 : 0;
+                document.getElementById('cycle-count').textContent = this.cycleCount;
+                
+                // Update other metrics
+                document.getElementById('operations-completed').textContent = this.operationsCompleted;
+                document.getElementById('entropy-status').textContent = `Entropy: ${this.entropy.toFixed(3)}`;
+                
+                // Update entropy visual
+                this.updateEntropyDisplay();
+            }
+            
+            updateEntropyDisplay() {
+                const entropyFill = document.getElementById('entropy-fill');
+                if (entropyFill) {
+                    const percentage = (this.entropy * 100);
+                    entropyFill.style.width = percentage + '%';
+                    entropyFill.textContent = this.entropy.toFixed(3);
+                    
+                    // Update color based on entropy level
+                    entropyFill.className = 'entropy-fill ' + 
+                        (this.entropy < 0.3 ? 'entropy-low' : 
+                         this.entropy < 0.6 ? 'entropy-medium' : 'entropy-high');
+                }
+            }
+            
+            updateUI() {
+                // Update execution status
+                document.getElementById('execution-status').textContent = 
+                    `Phase ${this.currentPhase}/4 ${this.executionState}`;
+                
+                // Update next operation
+                const currentPhaseObj = this.contract.phases[this.currentPhase - 1];
+                if (currentPhaseObj && currentPhaseObj.operations[this.currentOperation]) {
+                    document.getElementById('next-operation').textContent = 
+                        currentPhaseObj.operations[this.currentOperation].op;
+                }
+            }
+            
+            manageCommunication() {
+                // Broadcast current state to all artifacts
+                const stateUpdate = {
+                    type: 'contract_state_update',
+                    phase: this.currentPhase,
+                    entropy: this.entropy,
+                    timestamp: Date.now()
+                };
+                
+                // Store in localStorage for cross-tab communication
+                localStorage.setItem('contract_bridge_data', JSON.stringify(stateUpdate));
+                
+                // Update artifact statuses
+                this.artifacts.forEach((artifact, id) => {
+                    if (Date.now() - artifact.lastSeen > 30000) {
+                        artifact.status = 'disconnected';
+                    }
+                });
+            }
+            
+            // Public methods for UI interactions
+            executeContract() {
+                this.executionState = 'active';
+                this.logMessage('Contract execution resumed', 'success');
+            }
+            
+            pauseExecution() {
+                this.executionState = 'paused';
+                this.logMessage('Contract execution paused', 'warning');
+            }
+            
+            resetContract() {
+                this.currentPhase = 1;
+                this.currentOperation = 0;
+                this.entropy = 0.2;
+                this.cycleCount = 0;
+                this.operationsCompleted = 0;
+                this.logMessage('Contract execution reset', 'info');
+                this.updateUI();
+            }
+            
+            advancePhase() {
+                if (this.currentPhase < this.contract.phases.length) {
+                    this.currentPhase++;
+                    this.currentOperation = 0;
+                    this.logMessage(`Advanced to phase ${this.currentPhase}`, 'success');
+                    this.updateUI();
+                }
+            }
+        }
+        
+        // Initialize orchestrator
+        const orchestrator = new ContractOrchestrator();
+        
+        // UI Functions
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        }
+        
+        function executeContract() {
+            orchestrator.executeContract();
+        }
+        
+        function pauseExecution() {
+            orchestrator.pauseExecution();
+        }
+        
+        function resetContract() {
+            orchestrator.resetContract();
+        }
+        
+        function advancePhase() {
+            orchestrator.advancePhase();
+        }
+        
+        function skipOperation() {
+            orchestrator.logMessage('Operation skipped by user', 'warning');
+        }
+        
+        function emergencyStop() {
+            orchestrator.executionState = 'stopped';
+            orchestrator.logMessage('EMERGENCY STOP activated', 'error');
+        }
+        
+        function connectAllArtifacts() {
+            orchestrator.artifacts.forEach(artifact => {
+                artifact.status = 'connected';
+                artifact.lastSeen = Date.now();
+            });
+            orchestrator.logMessage('All artifacts connected', 'success');
+        }
+        
+        function checkArtifactHealth() {
+            orchestrator.logMessage('Running artifact health check...', 'info');
+            setTimeout(() => {
+                orchestrator.logMessage('Health check complete - all artifacts operational', 'success');
+            }, 2000);
+        }
+        
+        function redistributeLoad() {
+            orchestrator.logMessage('Redistributing workload across artifacts...', 'info');
+        }
+        
+        function exportExecutionData() {
+            const data = {
+                contract: orchestrator.contract,
+                currentPhase: orchestrator.currentPhase,
+                entropy: orchestrator.entropy,
+                operationsCompleted: orchestrator.operationsCompleted,
+                cycleCount: orchestrator.cycleCount,
+                artifacts: Array.from(orchestrator.artifacts.values()),
+                timestamp: Date.now()
+            };
+            
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'contract-execution-data.json';
+            a.click();
+            
+            URL.revokeObjectURL(url);
+            orchestrator.logMessage('Execution data exported', 'success');
+        }
+        
+        function saveCheckpoint() {
+            orchestrator.logMessage('Checkpoint saved', 'success');
+        }
+    </script>
+</body>
+</html>

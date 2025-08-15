@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>E3 Master Builder - Fixed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.4; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section { background: #f9f9f9; border: 1px solid #ddd; border-radius: 5px; padding: 15px; margin-bottom: 20px; }
+    .form-row { display: flex; gap: 15px; margin-bottom: 10px; align-items: center; }
+    .form-row > * { flex: 1; }
+    label { display: block; font-weight: bold; margin-bottom: 5px; }
+    input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 3px; font-family: inherit; }
+    button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 3px; cursor: pointer; font-size: 14px; }
+    button:hover { background: #0056b3; }
+    button.secondary { background: #6c757d; }
+    textarea.code { font-family: monospace; font-size: 12px; }
+    #template { height: 200px; }
+    #baseData { height: 100px; }
+    #preview { width: 100%; height: 300px; border: 1px solid #ccc; }
+    .status { padding: 10px; border-radius: 3px; margin: 10px 0; }
+    .status.success { background: #d4edda; color: #155724; }
+    .status.error { background: #f8d7da; color: #721c24; }
+    .mono { font-family: monospace; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>E3 Master Builder - Fixed</h1>
+    
+    <div class="section">
+      <h3>Step 1: Setup</h3>
+      <div class="form-row">
+        <div>
+          <label>Batch ID</label>
+          <input type="text" id="batchId" class="mono" readonly>
+        </div>
+        <div>
+          <button type="button" onclick="newBatch()">New Batch</button>
+        </div>
+        <div>
+          <label>Counter</label>
+          <input type="number" id="counter" value="1" min="1">
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Step 2: Base Data (Optional)</h3>
+      <label>JSON data to merge into all children</label>
+      <textarea id="baseData" class="code" placeholder='{"record_meta": {"date": "2025-08-09"}}'></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Step 3: Template</h3>
+      <div class="form-row">
+        <button type="button" onclick="resetTemplate()" class="secondary">Load Default E3 Template</button>
+      </div>
+      <label>Child Template (use ⟦token⟧ syntax)</label>
+      <textarea id="template" class="code"></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Step 4: Actions</h3>
+      <div class="form-row">
+        <button type="button" onclick="previewChild()">Preview</button>
+        <button type="button" onclick="downloadOne()">Download Single</button>
+      </div>
+      <div class="form-row">
+        <input type="file" id="bulkFile" accept=".json">
+        <button type="button" onclick="bulkExport()">Bulk Export</button>
+      </div>
+      <div id="status"></div>
+    </div>
+
+    <div class="section">
+      <h3>Preview</h3>
+      <iframe id="preview"></iframe>
+    </div>
+  </div>
+
+<script>
+// Global variables
+var batchId = '';
+var counter = 1;
+
+// Utility functions
+function makeId() {
+  var now = new Date();
+  var date = now.getFullYear() + 
+    String(now.getMonth() + 1).padStart(2, '0') + 
+    String(now.getDate()).padStart(2, '0');
+  var time = String(now.getHours()).padStart(2, '0') + 
+    String(now.getMinutes()).padStart(2, '0') + 
+    String(now.getSeconds()).padStart(2, '0');
+  var random = Math.random().toString(36).substr(2, 4);
+  return date + time + random;
+}
+
+function showStatus(message, isError) {
+  var status = document.getElementById('status');
+  status.textContent = message;
+  status.className = 'status ' + (isError ? 'error' : 'success');
+}
+
+function getValue(obj, path) {
+  var keys = path.split('.');
+  var current = obj;
+  
+  for (var i = 0; i < keys.length; i++) {
+    if (current && typeof current === 'object' && keys[i] in current) {
+      current = current[keys[i]];
+    } else {
+      return '';
+    }
+  }
+  
+  return current == null ? '' : String(current);
+}
+
+function replaceTokens(template, data) {
+  return template.replace(/⟦([^⟧]+)⟧/g, function(match, token) {
+    return getValue(data, token.trim());
+  });
+}
+
+function findCheckboxValues(data) {
+  var result = {};
+  
+  function scan(obj, prefix) {
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        var fullKey = prefix ? prefix + '.' + key : key;
+        var value = obj[key];
+        
+        if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
+          scan(value, fullKey);
+        } else {
+          var str = String(value).toLowerCase().trim();
+          if (str === 'yes' || str === 'y' || str === 'true' || str === '1') {
+            result[fullKey] = 'yes';
+          } else if (str === 'ni' || str === 'no' || str === 'false' || str === '0') {
+            result[fullKey] = 'ni';
+          } else if (str === 'na' || str === 'n/a' || str === 'none') {
+            result[fullKey] = 'na';
+          }
+        }
+      }
+    }
+  }
+  
+  scan(data, '');
+  return result;
+}
+
+function buildChild(template, data) {
+  // Add system data
+  if (!data.record_meta) data.record_meta = {};
+  data.record_meta.batch_id = batchId;
+  data.record_meta.eval_id = 'E3-' + makeId();
+  data.record_meta.instance_seq = counter;
+  data.record_meta.generated_at = new Date().toISOString();
+  
+  // Replace tokens
+  var html = replaceTokens(template, data);
+  
+  // Add checkbox script
+  var checkboxes = findCheckboxValues(data);
+  var checkboxScript = '<script>' +
+    'window.checkboxData = ' + JSON.stringify(checkboxes) + ';' +
+    
+    'function setupCheckboxes() {' +
+      'var checkboxes = document.querySelectorAll("input[type=checkbox][data-key]");' +
+      'for (var i = 0; i < checkboxes.length; i++) {' +
+        'checkboxes[i].addEventListener("change", function() {' +
+          'if (this.checked) {' +
+            'var key = this.getAttribute("data-key");' +
+            'var others = document.querySelectorAll("input[type=checkbox][data-key=\\"" + key + "\\"]");' +
+            'for (var j = 0; j < others.length; j++) {' +
+              'if (others[j] !== this) others[j].checked = false;' +
+            '}' +
+          '}' +
+        '});' +
+      '}' +
+      
+      'for (var key in window.checkboxData) {' +
+        'var value = window.checkboxData[key];' +
+        'var checkbox = document.querySelector("input[type=checkbox][data-key=\\"" + key + "\\"][data-opt=\\"" + value + "\\"]");' +
+        'if (checkbox) checkbox.checked = true;' +
+      '}' +
+    '}' +
+    
+    'if (document.readyState === "loading") {' +
+      'document.addEventListener("DOMContentLoaded", setupCheckboxes);' +
+    '} else {' +
+      'setupCheckboxes();' +
+    '}' +
+    '</script>';
+  
+  // Insert script before closing body tag
+  if (html.indexOf('</body>') !== -1) {
+    html = html.replace('</body>', checkboxScript + '\n</body>');
+  } else {
+    html += checkboxScript;
+  }
+  
+  return html;
+}
+
+function downloadFile(filename, content) {
+  var blob = new Blob([content], { type: 'text/html' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// Button functions
+function newBatch() {
+  batchId = 'B' + makeId();
+  document.getElementById('batchId').value = batchId;
+  showStatus('New batch ID generated');
+}
+
+function resetTemplate() {
+  if (confirm('Reset to default template? Your changes will be lost.')) {
+    document.getElementById('template').value = getDefaultTemplate();
+    showStatus('Template reset to default');
+  }
+}
+
+function previewChild() {
+  try {
+    var template = document.getElementById('template').value;
+    var data = {};
+    
+    var baseDataText = document.getElementById('baseData').value.trim();
+    if (baseDataText) {
+      data = JSON.parse(baseDataText);
+    }
+    
+    var html = buildChild(template, data);
+    document.getElementById('preview').srcdoc = html;
+    showStatus('Preview generated successfully');
+  } catch (error) {
+    showStatus('Error: ' + error.message, true);
+  }
+}
+
+function downloadOne() {
+  try {
+    var template = document.getElementById('template').value;
+    var data = {};
+    
+    var baseDataText = document.getElementById('baseData').value.trim();
+    if (baseDataText) {
+      data = JSON.parse(baseDataText);
+    }
+    
+    var html = buildChild(template, data);
+    var filename = 'E3-Child-' + counter + '.html';
+    
+    downloadFile(filename, html);
+    counter++;
+    document.getElementById('counter').value = counter;
+    showStatus('Downloaded: ' + filename);
+  } catch (error) {
+    showStatus('Error: ' + error.message, true);
+  }
+}
+
+function bulkExport() {
+  var file = document.getElementById('bulkFile').files[0];
+  if (!file) {
+    showStatus('Please select a JSON file first', true);
+    return;
+  }
+  
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var bulkData = JSON.parse(e.target.result);
+      if (!Array.isArray(bulkData)) {
+        showStatus('File must contain a JSON array', true);
+        return;
+      }
+      
+      var template = document.getElementById('template').value;
+      var baseData = {};
+      
+      var baseDataText = document.getElementById('baseData').value.trim();
+      if (baseDataText) {
+        baseData = JSON.parse(baseDataText);
+      }
+      
+      for (var i = 0; i < bulkData.length; i++) {
+        (function(index) {
+          setTimeout(function() {
+            var rowData = bulkData[index];
+            var data = JSON.parse(JSON.stringify(baseData)); // Deep copy
+            
+            // Merge row data
+            for (var key in rowData) {
+              if (rowData.hasOwnProperty(key)) {
+                if (key.indexOf('.') !== -1) {
+                  // Handle dot notation
+                  var parts = key.split('.');
+                  var current = data;
+                  for (var j = 0; j < parts.length - 1; j++) {
+                    if (!current[parts[j]]) current[parts[j]] = {};
+                    current = current[parts[j]];
+                  }
+                  current[parts[parts.length - 1]] = rowData[key];
+                } else {
+                  data[key] = rowData[key];
+                }
+              }
+            }
+            
+            var html = buildChild(template, data);
+            var filename = 'E3-Child-' + (counter + index) + '.html';
+            downloadFile(filename, html);
+          }, index * 500); // Stagger downloads
+        })(i);
+      }
+      
+      counter += bulkData.length;
+      document.getElementById('counter').value = counter;
+      showStatus('Bulk export started: ' + bulkData.length + ' files');
+      
+    } catch (error) {
+      showStatus('Error processing file: ' + error.message, true);
+    }
+  };
+  
+  reader.readAsText(file);
+}
+
+function getDefaultTemplate() {
+  return '<!doctype html>\n<html>\n<head>\n  <meta charset="utf-8">\n  <title>E3 Achievement Daily Participant Evaluation</title>\n  <style>\n    body { font: 14px Arial, sans-serif; margin: 20px; }\n    h1 { text-align: center; color: #333; }\n    .row { display: flex; gap: 20px; margin-bottom: 10px; }\n    .field { flex: 1; padding: 5px; border-bottom: 1px solid #ccc; }\n    .label { font-weight: bold; color: #666; }\n    .value { margin-top: 5px; }\n    .section { margin: 20px 0; border-top: 2px solid #333; padding-top: 10px; }\n    table { width: 100%; border-collapse: collapse; margin: 10px 0; }\n    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }\n    th { background: #f5f5f5; }\n    .checkbox-cell { text-align: center; }\n    .comments { border: 1px dashed #999; padding: 10px; min-height: 40px; background: #fafafa; }\n    @media print { body { margin: 0; font-size: 12px; } }\n  </style>\n</head>\n<body>\n  <h1>E3 Achievement Daily Participant Evaluation</h1>\n  \n  <div class="row">\n    <div class="field">\n      <div class="label">Name:</div>\n      <div class="value">⟦record_meta.participant_label⟧</div>\n    </div>\n    <div class="field">\n      <div class="label">ID:</div>\n      <div class="value">⟦record_meta.participant_code⟧</div>\n    </div>\n    <div class="field">\n      <div class="label">Date:</div>\n      <div class="value">⟦record_meta.date⟧</div>\n    </div>\n  </div>\n  \n  <div class="row">\n    <div class="field">\n      <div class="label">Eval ID:</div>\n      <div class="value">⟦record_meta.eval_id⟧</div>\n    </div>\n    <div class="field">\n      <div class="label">Batch:</div>\n      <div class="value">⟦record_meta.batch_id⟧</div>\n    </div>\n    <div class="field">\n      <div class="label">Instance:</div>\n      <div class="value">⟦record_meta.instance_seq⟧</div>\n    </div>\n  </div>\n\n  <div class="section">\n    <h3>Work Habits</h3>\n    <table>\n      <tr>\n        <th style="width: 50%;">Item</th>\n        <th>Yes</th>\n        <th>NI</th>\n        <th>N/A</th>\n      </tr>\n      <tr>\n        <td>Attendance — Correct day and time?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="na"> N/A\n        </td>\n      </tr>\n      <tr>\n        <td>Hygiene — Participant was appropriately groomed?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.hygiene" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.hygiene" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.hygiene" data-opt="na"> N/A\n        </td>\n      </tr>\n      <tr>\n        <td>Attitude — Participant exhibited positive attitude?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attitude" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attitude" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="work_habits.attitude" data-opt="na"> N/A\n        </td>\n      </tr>\n    </table>\n    <div class="label">Comments:</div>\n    <div class="comments">⟦work_habits.comments⟧</div>\n  </div>\n\n  <div class="section">\n    <h3>Preparatory Goals</h3>\n    <table>\n      <tr>\n        <th style="width: 50%;">Item</th>\n        <th>Yes</th>\n        <th>NI</th>\n        <th>N/A</th>\n      </tr>\n      <tr>\n        <td>Attention Span — adequate span for tasks?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="na"> N/A\n        </td>\n      </tr>\n      <tr>\n        <td>Task Completion — stayed on task?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="na"> N/A\n        </td>\n      </tr>\n      <tr>\n        <td>Safety — followed safety procedures?</td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="yes"> Yes\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="ni"> NI\n        </td>\n        <td class="checkbox-cell">\n          <input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="na"> N/A\n        </td>\n      </tr>\n    </table>\n    <div class="label">Comments:</div>\n    <div class="comments">⟦preparatory_goals.comments⟧</div>\n  </div>\n\n  <div class="section">\n    <h3>Signature</h3>\n    <div class="row">\n      <div class="field">\n        <div class="label">Instructor:</div>\n        <div class="value">⟦record_meta.instructor_id⟧</div>\n      </div>\n      <div class="field">\n        <div class="label">Date:</div>\n        <div class="value">⟦record_meta.date⟧</div>\n      </div>\n    </div>\n  </div>\n</body>\n</html>';
+}
+
+// Initialize when page loads
+function init() {
+  batchId = 'B' + makeId();
+  counter = 1;
+  
+  document.getElementById('batchId').value = batchId;
+  document.getElementById('counter').value = counter;
+  document.getElementById('template').value = getDefaultTemplate();
+  
+  // Update counter when input changes
+  document.getElementById('counter').addEventListener('input', function() {
+    counter = parseInt(this.value) || 1;
+  });
+}
+
+// Start when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+</body>
+</html>

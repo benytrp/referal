@@ -1,0 +1,452 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>E3 Smart Builder</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f0f0f0; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; }
+        .big-box { background: #f8f9fa; padding: 25px; margin: 20px 0; border-radius: 8px; border: 2px dashed #007bff; }
+        .step-title { font-size: 18px; font-weight: bold; color: #007bff; margin-bottom: 15px; }
+        .paste-area { width: 100%; height: 200px; padding: 15px; border: 2px solid #007bff; border-radius: 5px; font-family: monospace; font-size: 14px; background: white; }
+        .paste-area:focus { border-color: #0056b3; box-shadow: 0 0 5px rgba(0,123,255,0.3); }
+        .examples { background: #e7f3ff; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 4px solid #007bff; }
+        .examples h4 { margin: 0 0 10px 0; color: #0056b3; }
+        .detected-data { background: #d4edda; padding: 15px; border-radius: 5px; margin: 15px 0; }
+        .detected-item { background: white; padding: 8px; margin: 5px 0; border-radius: 3px; border-left: 3px solid #28a745; }
+        button { background: #007bff; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; margin: 5px; }
+        button:hover { background: #0056b3; }
+        button.big { padding: 15px 30px; font-size: 18px; }
+        button.success { background: #28a745; }
+        button.success:hover { background: #1e7e34; }
+        .status { padding: 15px; margin: 15px 0; border-radius: 5px; text-align: center; font-weight: bold; display: none; }
+        .status.success { background: #d4edda; color: #155724; }
+        .status.error { background: #f8d7da; color: #721c24; }
+        .status.info { background: #d1ecf1; color: #0c5460; }
+        iframe { width: 100%; height: 400px; border: 2px solid #007bff; border-radius: 5px; }
+        .button-row { text-align: center; margin: 20px 0; }
+        .quick-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 15px 0; }
+        .data-count { font-size: 14px; color: #666; margin-top: 10px; }
+        .auto-detected { font-size: 12px; color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 E3 Smart Builder</h1>
+        <p style="text-align: center; color: #666; font-size: 18px;">Just paste your data - we'll figure out the format!</p>
+
+        <div class="big-box">
+            <div class="step-title">📋 Paste Your Data Here</div>
+            <p><strong>Just copy and paste from anywhere:</strong> Excel, Word, emails, databases, CSV files, etc.</p>
+            
+            <textarea id="smartInput" class="paste-area" placeholder="Paste anything here! Examples:
+
+From Excel:
+Name        ID      Date        Instructor
+Jane Doe    P001    1/9/25      Chris Burdette
+John Smith  P002    1/10/25     Sarah Johnson
+
+From Email/Word:
+Name: Jane Doe
+ID: P001
+Date: 1/9/25
+Instructor: Chris Burdette
+
+From Database:
+Jane Doe,P001,1/9/25,Chris Burdette
+John Smith,P002,1/10/25,Sarah Johnson
+
+We'll automatically detect the format and convert it!"></textarea>
+
+            <div class="quick-buttons">
+                <button onclick="loadExcelSample()">📊 Excel Sample</button>
+                <button onclick="loadEmailSample()">📧 Email Sample</button>
+                <button onclick="loadCSVSample()">📄 CSV Sample</button>
+                <button onclick="loadFormSample()">📝 Form Sample</button>
+                <button onclick="clearAll()">🗑️ Clear</button>
+            </div>
+
+            <div class="examples">
+                <h4>✨ We automatically detect these formats:</h4>
+                <ul>
+                    <li><strong>Excel/Google Sheets:</strong> Tab or comma separated columns</li>
+                    <li><strong>Email/Word:</strong> "Name: Value" style lines</li>
+                    <li><strong>CSV/Database:</strong> Comma-separated values</li>
+                    <li><strong>Forms:</strong> Key=Value pairs</li>
+                    <li><strong>Mixed formats:</strong> We'll figure it out!</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="detectedSection" style="display: none;">
+            <div class="detected-data">
+                <div class="step-title">🎯 Auto-Detected Data</div>
+                <div id="detectedData"></div>
+                <div class="data-count" id="dataCount"></div>
+            </div>
+        </div>
+
+        <div class="button-row">
+            <button onclick="smartParse()" class="big success">🧠 Smart Parse Data</button>
+        </div>
+
+        <div class="big-box" id="generateSection" style="display: none;">
+            <div class="step-title">⚡ Generate Forms</div>
+            <div class="button-row">
+                <button onclick="previewForms()" class="big">👁️ Preview Forms</button>
+                <button onclick="downloadAll()">📦 Download All Forms</button>
+            </div>
+            <iframe id="preview" style="display: none;"></iframe>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script type="text/javascript">
+        // Global state
+        window.parsedData = [];
+        window.batchId = '';
+
+        // Utility functions
+        function showStatus(message, type) {
+            var status = document.getElementById('status');
+            status.textContent = message;
+            status.className = 'status ' + (type || 'success');
+            status.style.display = 'block';
+            setTimeout(function() {
+                status.style.display = 'none';
+            }, 4000);
+        }
+
+        function makeId() {
+            var now = new Date();
+            return now.getFullYear() + 
+                String(now.getMonth() + 1).padStart(2, '0') + 
+                String(now.getDate()).padStart(2, '0') + 
+                String(now.getHours()).padStart(2, '0') + 
+                String(now.getMinutes()).padStart(2, '0') + 
+                Math.floor(Math.random() * 1000);
+        }
+
+        // Sample data functions
+        function loadExcelSample() {
+            var sample = "Name\tID\tDate\tInstructor\nJane Doe\tP001\t1/9/25\tChris Burdette\nJohn Smith\tP002\t1/10/25\tSarah Johnson\nMary Wilson\tP003\t1/11/25\tMike Davis";
+            document.getElementById('smartInput').value = sample;
+            showStatus('Excel sample loaded - try Smart Parse!', 'info');
+        }
+
+        function loadEmailSample() {
+            var sample = "Name: Jane Doe\nID: P001\nDate: 1/9/25\nInstructor: Chris Burdette\nComments: Excellent progress today\n\nName: John Smith\nID: P002\nDate: 1/10/25\nInstructor: Sarah Johnson\nComments: Good attendance";
+            document.getElementById('smartInput').value = sample;
+            showStatus('Email sample loaded - try Smart Parse!', 'info');
+        }
+
+        function loadCSVSample() {
+            var sample = "Jane Doe,P001,1/9/25,Chris Burdette\nJohn Smith,P002,1/10/25,Sarah Johnson\nMary Wilson,P003,1/11/25,Mike Davis";
+            document.getElementById('smartInput').value = sample;
+            showStatus('CSV sample loaded - try Smart Parse!', 'info');
+        }
+
+        function loadFormSample() {
+            var sample = "participant_name=Jane Doe, participant_id=P001, eval_date=1/9/25, instructor_name=Chris Burdette\nparticipant_name=John Smith, participant_id=P002, eval_date=1/10/25, instructor_name=Sarah Johnson";
+            document.getElementById('smartInput').value = sample;
+            showStatus('Form sample loaded - try Smart Parse!', 'info');
+        }
+
+        function clearAll() {
+            document.getElementById('smartInput').value = '';
+            document.getElementById('detectedSection').style.display = 'none';
+            document.getElementById('generateSection').style.display = 'none';
+            window.parsedData = [];
+            showStatus('All cleared - paste new data!', 'info');
+        }
+
+        // Smart parsing functions
+        function detectFormat(text) {
+            var lines = text.trim().split('\n').filter(function(line) { return line.trim(); });
+            
+            if (lines.length === 0) return 'empty';
+            
+            // Check for tab-separated (Excel)
+            if (lines[0].indexOf('\t') > -1) return 'excel';
+            
+            // Check for key:value format (Email/Word)
+            if (lines[0].indexOf(':') > -1 && lines[0].indexOf('=') === -1) return 'keyvalue';
+            
+            // Check for key=value format (Forms)
+            if (lines[0].indexOf('=') > -1) return 'form';
+            
+            // Check for CSV (commas)
+            if (lines[0].indexOf(',') > -1) return 'csv';
+            
+            // Default to space-separated
+            return 'space';
+        }
+
+        function parseExcelFormat(text) {
+            var lines = text.trim().split('\n');
+            var headers = lines[0].split('\t').map(function(h) { return h.trim().toLowerCase().replace(/\s+/g, '_'); });
+            var data = [];
+            
+            for (var i = 1; i < lines.length; i++) {
+                var values = lines[i].split('\t');
+                var record = {};
+                
+                for (var j = 0; j < headers.length && j < values.length; j++) {
+                    if (headers[j] && values[j]) {
+                        // Map common headers to standard names
+                        var key = headers[j];
+                        if (key === 'name') key = 'participant_name';
+                        if (key === 'id') key = 'participant_id';
+                        if (key === 'date') key = 'eval_date';
+                        if (key === 'instructor') key = 'instructor_name';
+                        
+                        record[key] = values[j].trim();
+                    }
+                }
+                
+                if (Object.keys(record).length > 0) {
+                    data.push(record);
+                }
+            }
+            
+            return data;
+        }
+
+        function parseKeyValueFormat(text) {
+            var blocks = text.split('\n\n');
+            var data = [];
+            
+            for (var b = 0; b < blocks.length; b++) {
+                var lines = blocks[b].split('\n');
+                var record = {};
+                
+                for (var i = 0; i < lines.length; i++) {
+                    var line = lines[i].trim();
+                    var colonPos = line.indexOf(':');
+                    
+                    if (colonPos > 0) {
+                        var key = line.substring(0, colonPos).trim().toLowerCase().replace(/\s+/g, '_');
+                        var value = line.substring(colonPos + 1).trim();
+                        
+                        // Map common keys
+                        if (key === 'name') key = 'participant_name';
+                        if (key === 'id') key = 'participant_id';
+                        if (key === 'date') key = 'eval_date';
+                        if (key === 'instructor') key = 'instructor_name';
+                        
+                        if (value) record[key] = value;
+                    }
+                }
+                
+                if (Object.keys(record).length > 0) {
+                    data.push(record);
+                }
+            }
+            
+            return data;
+        }
+
+        function parseCSVFormat(text) {
+            var lines = text.trim().split('\n');
+            var data = [];
+            
+            for (var i = 0; i < lines.length; i++) {
+                var values = lines[i].split(',').map(function(v) { return v.trim(); });
+                
+                if (values.length >= 2) {
+                    var record = {};
+                    
+                    // Assume common order: name, id, date, instructor
+                    if (values[0]) record.participant_name = values[0];
+                    if (values[1]) record.participant_id = values[1];
+                    if (values[2]) record.eval_date = values[2];
+                    if (values[3]) record.instructor_name = values[3];
+                    if (values[4]) record.comments_section = values[4];
+                    
+                    data.push(record);
+                }
+            }
+            
+            return data;
+        }
+
+        function parseFormFormat(text) {
+            var lines = text.trim().split('\n');
+            var data = [];
+            
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i].trim();
+                if (!line) continue;
+                
+                var record = {};
+                var pairs = line.split(',');
+                
+                for (var j = 0; j < pairs.length; j++) {
+                    var pair = pairs[j].trim();
+                    var equalPos = pair.indexOf('=');
+                    
+                    if (equalPos > 0) {
+                        var key = pair.substring(0, equalPos).trim();
+                        var value = pair.substring(equalPos + 1).trim();
+                        
+                        if (key && value) {
+                            record[key] = value;
+                        }
+                    }
+                }
+                
+                if (Object.keys(record).length > 0) {
+                    data.push(record);
+                }
+            }
+            
+            return data;
+        }
+
+        function smartParse() {
+            var input = document.getElementById('smartInput').value.trim();
+            
+            if (!input) {
+                showStatus('Please paste some data first!', 'error');
+                return;
+            }
+
+            try {
+                var format = detectFormat(input);
+                var parsedData = [];
+                
+                switch (format) {
+                    case 'excel':
+                        parsedData = parseExcelFormat(input);
+                        break;
+                    case 'keyvalue':
+                        parsedData = parseKeyValueFormat(input);
+                        break;
+                    case 'csv':
+                        parsedData = parseCSVFormat(input);
+                        break;
+                    case 'form':
+                        parsedData = parseFormFormat(input);
+                        break;
+                    default:
+                        // Try CSV as fallback
+                        parsedData = parseCSVFormat(input);
+                }
+                
+                if (parsedData.length === 0) {
+                    showStatus('Could not parse data - try a different format', 'error');
+                    return;
+                }
+                
+                window.parsedData = parsedData;
+                window.batchId = 'B' + makeId();
+                
+                displayDetectedData(parsedData, format);
+                showStatus('Parsed ' + parsedData.length + ' records from ' + format + ' format!', 'success');
+                
+            } catch (error) {
+                showStatus('Parsing error: ' + error.message, 'error');
+            }
+        }
+
+        function displayDetectedData(data, format) {
+            var html = '<div class="auto-detected">Auto-detected format: ' + format.toUpperCase() + '</div>';
+            
+            for (var i = 0; i < Math.min(data.length, 3); i++) {
+                html += '<div class="detected-item">';
+                html += '<strong>Record ' + (i + 1) + ':</strong> ';
+                
+                var fields = [];
+                for (var key in data[i]) {
+                    fields.push(key + '=' + data[i][key]);
+                }
+                html += fields.join(', ');
+                html += '</div>';
+            }
+            
+            if (data.length > 3) {
+                html += '<div class="detected-item">... and ' + (data.length - 3) + ' more records</div>';
+            }
+            
+            document.getElementById('detectedData').innerHTML = html;
+            document.getElementById('dataCount').textContent = 'Total: ' + data.length + ' participants ready for forms';
+            document.getElementById('detectedSection').style.display = 'block';
+            document.getElementById('generateSection').style.display = 'block';
+        }
+
+        function getDefaultTemplate() {
+            return '<!doctype html>\\n<html>\\n<head>\\n<title>E3 Achievement Daily Participant Evaluation</title>\\n<style>\\nbody { font: 14px Arial, sans-serif; margin: 20px; }\\n.field { margin: 8px 0; padding: 5px; border-bottom: 1px solid #ccc; }\\n.label { font-weight: bold; color: #666; }\\ntable { width: 100%; border-collapse: collapse; margin: 10px 0; }\\nth, td { border: 1px solid #ccc; padding: 6px; }\\nth { background: #f0f0f0; }\\n.center { text-align: center; }\\n.comments { border: 1px dashed #999; padding: 8px; min-height: 30px; }\\n@media print { body { margin: 0; font-size: 12px; } }\\n</style>\\n</head>\\n<body>\\n<h1 style="text-align: center;">E3 Achievement Daily Participant Evaluation</h1>\\n\\n<div class="field">\\n<span class="label">Name:</span> PARTICIPANT_NAME\\n</div>\\n<div class="field">\\n<span class="label">ID:</span> PARTICIPANT_ID\\n</div>\\n<div class="field">\\n<span class="label">Date:</span> EVAL_DATE\\n</div>\\n<div class="field">\\n<span class="label">Batch:</span> BATCH_ID\\n</div>\\n<div class="field">\\n<span class="label">Eval ID:</span> EVAL_ID\\n</div>\\n\\n<h3>Work Habits</h3>\\n<table>\\n<tr><th style="width: 60%;">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attendance — Correct day and time?</td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n</tr>\\n<tr>\\n<td>Hygiene — Appropriately groomed?</td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n</tr>\\n</table>\\n\\n<h3>Preparatory Goals</h3>\\n<table>\\n<tr><th style="width: 60%;">Item</th><th>Yes</th><th>NI</th><th>N/A</th></tr>\\n<tr>\\n<td>Attention Span — Adequate for tasks?</td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n</tr>\\n<tr>\\n<td>Safety — Followed procedures?</td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n<td class="center"><input type="checkbox"></td>\\n</tr>\\n</table>\\n\\n<h3>Comments</h3>\\n<div class="comments">COMMENTS_SECTION</div>\\n\\n<h3>Signature</h3>\\n<div class="field">\\n<span class="label">Instructor:</span> INSTRUCTOR_NAME\\n</div>\\n\\n</body>\\n</html>';
+        }
+
+        function replaceTokens(template, data) {
+            var result = template;
+            
+            // Add system data
+            data.batch_id = window.batchId;
+            data.eval_id = 'E3-' + makeId();
+            
+            // Replace tokens
+            for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    var token = key.toUpperCase();
+                    var value = String(data[key] || '');
+                    
+                    while (result.indexOf(token) !== -1) {
+                        result = result.replace(token, value);
+                    }
+                }
+            }
+            
+            return result;
+        }
+
+        function previewForms() {
+            if (window.parsedData.length === 0) {
+                showStatus('Parse data first!', 'error');
+                return;
+            }
+            
+            var template = getDefaultTemplate();
+            var html = replaceTokens(template, window.parsedData[0]);
+            
+            document.getElementById('preview').srcdoc = html;
+            document.getElementById('preview').style.display = 'block';
+            showStatus('Preview showing first form - ' + window.parsedData.length + ' total ready', 'success');
+        }
+
+        function downloadAll() {
+            if (window.parsedData.length === 0) {
+                showStatus('Parse data first!', 'error');
+                return;
+            }
+            
+            var template = getDefaultTemplate();
+            
+            for (var i = 0; i < window.parsedData.length; i++) {
+                setTimeout(function(index) {
+                    return function() {
+                        var html = replaceTokens(template, window.parsedData[index]);
+                        var name = window.parsedData[index].participant_name || 'Participant';
+                        var filename = 'E3-' + name.replace(/[^a-zA-Z0-9]/g, '') + '-' + (index + 1) + '.html';
+                        
+                        var blob = new Blob([html], { type: 'text/html' });
+                        var url = URL.createObjectURL(blob);
+                        var a = document.createElement('a');
+                        a.href = url;
+                        a.download = filename;
+                        a.click();
+                        URL.revokeObjectURL(url);
+                    };
+                }(i), i * 200);
+            }
+            
+            showStatus('Downloading ' + window.parsedData.length + ' forms...', 'success');
+        }
+
+        // Initialize
+        showStatus('E3 Smart Builder ready - paste any data format!', 'info');
+    </script>
+</body>
+</html>

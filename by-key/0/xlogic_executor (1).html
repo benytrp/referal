@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Logic Schema Executor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0f1c 0%, #1a1f2e 50%, #2a2f3e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+
+        .panel {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            height: fit-content;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #f1f5f9;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+        }
+
+        textarea, select, input {
+            width: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            border-radius: 8px;
+            padding: 0.75rem;
+            color: #e2e8f0;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        textarea:focus, select:focus, input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin-top: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6b7280, #4b5563);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .btn-warning {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+        }
+
+        .schema-info {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+        }
+
+        .execution-status {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-card {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 6px;
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        .status-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .status-label {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .phase-progress {
+            margin: 1rem 0;
+        }
+
+        .phase-list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .phase-item {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(100, 116, 139, 0.2);
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            flex: 1;
+            text-align: center;
+            margin: 0 0.25rem;
+        }
+
+        .phase-item.pending {
+            background: rgba(100, 116, 139, 0.2);
+            color: #94a3b8;
+        }
+
+        .phase-item.active {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .phase-item.complete {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+        }
+
+        .phase-item.error {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .entropy-meter {
+            margin: 1rem 0;
+        }
+
+        .entropy-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(100, 116, 139, 0.2);
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .entropy-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444);
+            transition: width 0.5s ease;
+            border-radius: 6px;
+        }
+
+        .entropy-value {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .execution-log {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'JetBrains Mono', Consolas, monospace;
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            margin-bottom: 1rem;
+        }
+
+        .log-entry {
+            margin-bottom: 0.5rem;
+            padding: 0.25rem 0;
+            border-left: 3px solid transparent;
+            padding-left: 0.5rem;
+        }
+
+        .log-entry.info {
+            border-left-color: #3b82f6;
+            color: #93c5fd;
+        }
+
+        .log-entry.success {
+            border-left-color: #10b981;
+            color: #6ee7b7;
+        }
+
+        .log-entry.warning {
+            border-left-color: #f59e0b;
+            color: #fcd34d;
+        }
+
+        .log-entry.error {
+            border-left-color: #ef4444;
+            color: #fca5a5;
+        }
+
+        .log-entry.system {
+            border-left-color: #8b5cf6;
+            color: #c4b5fd;
+        }
+
+        .operation-tracker {
+            background: rgba(15, 23, 42, 0.4);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .operation-item {
+            display: flex;
+            align-items: center;
+            justify-content: between;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            background: rgba(100, 116, 139, 0.1);
+            font-size: 0.85rem;
+        }
+
+        .operation-status {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .operation-status.pending {
+            background: #6b7280;
+        }
+
+        .operation-status.running {
+            background: #3b82f6;
+            animation: pulse 1s infinite;
+        }
+
+        .operation-status.complete {
+            background: #10b981;
+        }
+
+        .operation-status.error {
+            background: #ef4444;
+        }
+
+        .operation-details {
+            flex: 1;
+        }
+
+        .operation-name {
+            font-weight: 600;
+            color: #f1f5f9;
+            margin-bottom: 0.25rem;
+        }
+
+        .operation-phase {
+            color: #94a3b8;
+            font-size: 0.75rem;
+        }
+
+        .sandbox-monitor {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .sandbox-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .sandbox-item {
+            background: rgba(16, 185, 129, 0.2);
+            color: #6ee7b7;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .results-panel {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(100, 116, 139, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .results-tabs {
+            display: flex;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.2);
+        }
+
+        .results-tab {
+            padding: 0.5rem 1rem;
+            background: none;
+            border: none;
+            color: #94a3b8;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+            font-size: 0.85rem;
+        }
+
+        .results-tab.active {
+            color: #3b82f6;
+            border-bottom-color: #3b82f6;
+        }
+
+        .results-content {
+            display: none;
+            font-size: 0.85rem;
+        }
+
+        .results-content.active {
+            display: block;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50%;
+            border-top-color: #3b82f6;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 0.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .quick-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .quick-actions .btn {
+            flex: 1;
+            margin: 0;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .status-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .phase-list {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .phase-item {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ X-Logic Schema Executor</h1>
+            <p class="subtitle">Execute autonomous consciousness engine schemas with real-time monitoring</p>
+        </div>
+
+        <!-- Left Panel: Schema Input & Configuration -->
+        <div class="panel">
+            <h2 class="section-title">
+                📋 Schema Configuration
+            </h2>
+
+            <div class="form-group">
+                <label for="schemaInput">X-Logic Schema (JSON)</label>
+                <textarea id="schemaInput" rows="12" placeholder="Paste your X-Logic schema here..."></textarea>
+                <button class="btn btn-secondary" id="loadSampleBtn">Load Sample Schema</button>
+            </div>
+
+            <div class="schema-info" id="schemaInfo" style="display: none;">
+                <h4 style="color: #3b82f6; margin-bottom: 0.5rem;">📊 Schema Overview</h4>
+                <div id="schemaDetails"></div>
+            </div>
+
+            <div class="execution-status">
+                <h4 style="color: #3b82f6; margin-bottom: 1rem;">🔧 Execution Control</h4>
+                
+                <div class="quick-actions">
+                    <button class="btn" id="executeBtn" disabled>
+                        <span id="executeText">🚀 Execute Schema</span>
+                        <div class="loading-spinner" id="executeSpinner" style="display: none;"></div>
+                    </button>
+                    <button class="btn btn-warning" id="pauseBtn" disabled>⏸️ Pause</button>
+                    <button class="btn btn-danger" id="stopBtn" disabled>⏹️ Stop</button>
+                </div>
+
+                <div class="status-grid">
+                    <div class="status-card">
+                        <div class="status-value" id="currentCycle">0</div>
+                        <div class="status-label">Current Cycle</div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-value" id="completedOps">0</div>
+                        <div class="status-label">Operations</div>
+                    </div>
+                    <div class="status-card">
+                        <div class="status-value" id="activeSandboxes">0</div>
+                        <div class="status-label">Sandboxes</div>
+                    </div>
+                </div>
+
+                <div class="entropy-meter">
+                    <label style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <span>System Entropy</span>
+                        <span id="entropyText">0.000</span>
+                    </label>
+                    <div class="entropy-bar">
+                        <div class="entropy-fill" id="entropyFill" style="width: 0%;">
+                            <div class="entropy-value" id="entropyValue">0%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Execution Mode</label>
+                <select id="executionMode">
+                    <option value="normal">Normal Speed</option>
+                    <option value="fast">Fast Execution</option>
+                    <option value="debug" selected>Debug Mode (Slow)</option>
+                    <option value="step">Step-by-Step</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="autoScrollLog" checked style="width: auto; margin-right: 0.5rem;">
+                    Auto-scroll execution log
+                </label>
+            </div>
+
+            <button class="btn btn-secondary" id="validateBtn">🔍 Validate Schema</button>
+            <button class="btn btn-secondary" id="resetBtn">🔄 Reset Executor</button>
+        </div>
+
+        <!-- Right Panel: Execution Monitoring -->
+        <div class="panel">
+            <h2 class="section-title">
+                📊 Execution Monitor
+            </h2>
+
+            <div class="phase-progress">
+                <h4 style="color: #f1f5f9; margin-bottom: 0.5rem;">Phase Progress</h4>
+                <div class="phase-list" id="phaseList">
+                    <div class="phase-item pending">Waiting for schema...</div>
+                </div>
+            </div>
+
+            <div class="operation-tracker">
+                <h4 style="color: #f1f5f9; margin-bottom: 0.5rem;">Operation Tracker</h4>
+                <div id="operationList">
+                    <p style="color: #94a3b8; text-align: center; padding: 1rem;">No operations loaded</p>
+                </div>
+            </div>
+
+            <div class="sandbox-monitor" id="sandboxMonitor" style="display: none;">
+                <h4 style="color: #10b981; margin-bottom: 0.5rem;">🔀 Parallel Sandboxes</h4>
+                <div class="sandbox-list" id="sandboxList"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Execution Log</label>
+                <div class="execution-log" id="executionLog">
+                    <div class="log-entry system">[SYSTEM] X-Logic Executor initialized. Ready for schema input.</div>
+                </div>
+            </div>
+
+            <div class="results-panel" id="resultsPanel" style="display: none;">
+                <div class="results-tabs">
+                    <button class="results-tab active" data-tab="summary">Summary</button>
+                    <button class="results-tab" data-tab="ledger">Thought Ledger</button>
+                    <button class="results-tab" data-tab="verification">Verification</button>
+                    <button class="results-tab" data-tab="export">Export</button>
+                </div>
+
+                <div class="results-content active" id="summary-content">
+                    <div id="executionSummary"></div>
+                </div>
+
+                <div class="results-content" id="ledger-content">
+                    <div id="thoughtLedger"></div>
+                </div>
+
+                <div class="results-content" id="verification-content">
+                    <div id="verificationResults"></div>
+                </div>
+
+                <div class="results-content" id="export-content">
+                    <button class="btn btn-success" id="downloadResultsBtn">💾 Download Results</button>
+                    <button class="btn btn-secondary" id="copyResultsBtn">📋 Copy to Clipboard</button>
+                    <div style="margin-top: 1rem;">
+                        <label>Export Format</label>
+                        <select id="exportFormat">
+                            <option value="json">Complete JSON</option>
+                            <option value="summary">Summary Report</option>
+                            <option value="ledger">Ledger Only</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global execution state
+        let executionState = {
+            schema: null,
+            engine: null,
+            isRunning: false,
+            isPaused: false,
+            currentCycle: 0,
+            currentPhase: null,
+            currentOperation: null,
+            entropy: 0,
+            thoughtLedger: [],
+            activeSandboxes: new Map(),
+            operations: [],
+            results: null,
+            startTime: null
+        };
+
+        // Enhanced Autonomous Consciousness Engine
+        class EnhancedAutonomousEngine {
+            constructor(schema, callbacks = {}) {
+                this.schema = schema;
+                this.callbacks = callbacks;
+                this.currentCycle = 0;
+                this.thoughtLedger = [];
+                this.parallelSandboxes = new Map();
+                this.entropy = 0;
+                this.isRunning = false;
+                this.isPaused = false;
+                this.operations = [];
+                this.operationIndex = 0;
+                
+                this.buildOperationsList();
+            }
+
+            buildOperationsList() {
+                this.operations = [];
+                this.schema.phases.forEach((phase, phaseIndex) => {
+                    phase.operations.forEach((operation, opIndex) => {
+                        this.operations.push({
+                            id: `${phaseIndex}-${opIndex}`,
+                            phaseIndex: phaseIndex,
+                            phaseName: phase.phase_name,
+                            operation: operation,
+                            entropy: phase.entropy,
+                            parallel: phase.parallel_sandboxes,
+                            status: 'pending'
+                        });
+                    });
+                });
+            }
+
+            async execute(trigger = "<x>") {
+                this.isRunning = true;
+                this.callbacks.onStart?.();
+                
+                this.log("SYSTEM", "initialization", `Enhanced X-Logic execution initiated with trigger: ${trigger}`);
+                
+                if (!this.validateTrigger(trigger)) {
+                    throw new Error("Invalid trigger - autonomous mode requires '<x>' directive");
+                }
+
+                const contract = this.schema.contract;
+                this.log("CONTRACT", "loaded", `Goal: ${contract.goal}`);
+                
+                let concluded = false;
+                while (!concluded && this.isRunning) {
+                    if (this.isPaused) {
+                        await this.delay(100);
+                        continue;
+                    }
+                    
+                    concluded = await this.executePhaseLoop();
+                    this.currentCycle++;
+                    
+                    this.callbacks.onCycleComplete?.({
+                        cycle: this.currentCycle,
+                        entropy: this.entropy,
+                        ledgerEntries: this.thoughtLedger.length,
+                        sandboxes: this.parallelSandboxes.size
+                    });
+
+                    if (this.currentCycle > 25) {
+                        this.log("SAFETY", "max_cycles_reached", "Forcing conclusion after 25 cycles");
+                        concluded = true;
+                    }
+                }
+
+                this.isRunning = false;
+                const verification = this.generateVerification();
+                this.callbacks.onComplete?.(verification);
+                
+                return verification;
+            }
+
+            async executePhaseLoop() {
+                const phases = this.schema.phases;
+                let shouldConclude = false;
+
+                for (let i = 0; i < phases.length && this.isRunning; i++) {
+                    if (this.isPaused) {
+                        while (this.isPaused && this.isRunning) {
+                            await this.delay(100);
+                        }
+                    }
+                    
+                    const phase = phases[i];
+                    
+                    this.callbacks.onPhaseStart?.(i, phase);
+                    
+                    const phaseResult = await this.executePhase(phase, i);
+                    
+                    this.callbacks.onPhaseComplete?.(i, phaseResult);
+                    
+                    if (phaseResult.status === "CONCLUSION") {
+                        shouldConclude = true;
+                        break;
+                    }
+                    
+                    this.updateEntropy(phaseResult);
+                    
+                    if (this.entropy > 0.7 && phase.parallel_sandboxes) {
+                        await this.spawnParallelSandbox(phase);
+                    }
+                }
+                
+                return shouldConclude;
+            }
+
+            async executePhase(phase, phaseIndex) {
+                this.log(phase.phase_name.toUpperCase(), "phase_start", `Beginning ${phase.phase_name}`);
+                
+                let phaseOutput = "";
+                let status = "SUCCESS";
+                
+                for (let opIndex = 0; opIndex < phase.operations.length && this.isRunning; opIndex++) {
+                    if (this.isPaused) {
+                        while (this.isPaused && this.isRunning) {
+                            await this.delay(100);
+                        }
+                    }
+                    
+                    const operation = phase.operations[opIndex];
+                    
+                    try {
+                        this.callbacks.onOperationStart?.(phaseIndex, opIndex, operation);
+                        
+                        const result = await this.executeOperation(operation, phase);
+                        phaseOutput += result + " ";
+                        
+                        this.callbacks.onOperationComplete?.(phaseIndex, opIndex, result);
+                        
+                        if (result.includes("complete") || result.includes("concluded")) {
+                            status = "CONCLUSION";
+                        }
+                        
+                        await this.delay(this.getExecutionDelay());
+                        
+                    } catch (error) {
+                        this.log(phase.phase_name.toUpperCase(), "operation_error", error.message);
+                        this.callbacks.onOperationError?.(phaseIndex, opIndex, error);
+                        status = "ISSUE";
+                    }
+                }
+                
+                this.log(phase.phase_name.toUpperCase(), "phase_complete", phaseOutput.trim(), status);
+                
+                return { status, output: phaseOutput, entropy: this.calculatePhaseEntropy(phase) };
+            }
+
+            async executeOperation(operation, phase) {
+                const mutatedFunction = this.mutateFunction(operation.op, operation.parameters);
+                const result = await mutatedFunction.execute();
+                
+                if (operation.output_alias) {
+                    this.parallelSandboxes.set(operation.output_alias, result);
+                }
+                
+                return result;
+            }
+
+            mutateFunction(operationName, parameters = {}) {
+                const baseFunctions = {
+                    // Data operations
+                    gather_data: () => "Systematically collected and organized data from multiple validated sources",
+                    validate_sources: () => "Verified data integrity and source authenticity using multi-layer validation",
+                    process_data: () => "Applied advanced statistical processing and normalization techniques",
+                    identify_patterns: () => "Detected significant patterns and correlations using ML algorithms",
+                    
+                    // Analysis operations
+                    analyze_context: () => "Performed comprehensive contextual analysis with environmental factors",
+                    correlate_findings: () => "Cross-referenced findings to identify causal relationships and dependencies",
+                    generate_insights: () => "Synthesized actionable insights from processed analytical data",
+                    
+                    // Reporting operations
+                    compile_report: () => "Generated comprehensive analytical report with visualizations and recommendations",
+                    validate_conclusions: () => "Peer-reviewed conclusions against established criteria and domain expertise"
+                };
+                
+                const baseFunction = baseFunctions[operationName] || 
+                    (() => `Executed specialized operation: ${operationName} with enhanced parameters`);
+                
+                return {
+                    name: operationName,
+                    parameters,
+                    execute: async () => {
+                        await this.delay(this.getOperationDelay());
+                        const baseResult = baseFunction();
+                        
+                        if (parameters.entropy_threshold && this.entropy > parameters.entropy_threshold) {
+                            return `${baseResult} [ENTROPY ADAPTATION: ${this.entropy.toFixed(3)} exceeded threshold]`;
+                        }
+                        
+                        if (parameters.depth === "comprehensive") {
+                            return `${baseResult} [COMPREHENSIVE MODE: Enhanced analytical depth]`;
+                        }
+                        
+                        return baseResult;
+                    }
+                };
+            }
+
+            async spawnParallelSandbox(phase) {
+                const sandboxId = `sandbox_${this.currentCycle}_${Date.now()}`;
+                this.log("PARALLEL", "sandbox_spawn", `Created ${sandboxId} for ${phase.phase_name}`);
+                
+                const sandbox = {
+                    id: sandboxId,
+                    phase: phase.phase_name,
+                    entropy: this.entropy,
+                    status: "RUNNING",
+                    startTime: Date.now()
+                };
+                
+                this.parallelSandboxes.set(sandboxId, sandbox);
+                this.callbacks.onSandboxCreated?.(sandbox);
+                
+                setTimeout(() => {
+                    sandbox.status = "COMPLETE";
+                    sandbox.endTime = Date.now();
+                    this.log("PARALLEL", "sandbox_complete", `${sandboxId} converged successfully`);
+                    this.callbacks.onSandboxComplete?.(sandbox);
+                }, this.getOperationDelay() * 2);
+            }
+
+            updateEntropy(phaseResult) {
+                const baseEntropy = phaseResult.entropy || 0.1;
+                const complexityFactor = phaseResult.output.length / 200;
+                this.entropy = Math.min(1.0, this.entropy * 0.8 + baseEntropy + complexityFactor * 0.1);
+                
+                this.callbacks.onEntropyUpdate?.(this.entropy);
+            }
+
+            calculatePhaseEntropy(phase) {
+                const operationCount = phase.operations.length;
+                const hasParallelSandboxes = phase.parallel_sandboxes ? 0.2 : 0;
+                return Math.min(1.0, operationCount * 0.15 + hasParallelSandboxes);
+            }
+
+            log(phase, operation, output, status = "SUCCESS") {
+                const entry = {
+                    cycle: this.currentCycle,
+                    phase,
+                    op: operation,
+                    output,
+                    status,
+                    timestamp: new Date().toISOString(),
+                    entropy: parseFloat(this.entropy.toFixed(3))
+                };
+                
+                this.thoughtLedger.push(entry);
+                this.callbacks.onLogEntry?.(entry);
+            }
+
+            validateTrigger(trigger) {
+                return this.schema.trigger === trigger;
+            }
+
+            generateVerification() {
+                const ledgerContent = JSON.stringify(this.thoughtLedger);
+                const hash = this.generateHash(ledgerContent);
+                
+                const contract = this.schema.contract;
+                const successfulEntries = this.thoughtLedger.filter(entry => 
+                    entry.status === "SUCCESS" || entry.status === "CONCLUSION");
+                const successRate = this.thoughtLedger.length > 0 ? successfulEntries.length / this.thoughtLedger.length : 0;
+                
+                return {
+                    verification: {
+                        status: successRate > 0.8 ? "COMPLETE" : "PARTIAL_SUCCESS",
+                        seal: hash,
+                        execution_timestamp: new Date().toISOString(),
+                        metrics: {
+                            total_cycles: this.currentCycle,
+                            success_rate: parseFloat(successRate.toFixed(3)),
+                            final_entropy: parseFloat(this.entropy.toFixed(3)),
+                            ledger_entries: this.thoughtLedger.length,
+                            parallel_sandboxes: this.parallelSandboxes.size,
+                            execution_time: Date.now() - executionState.startTime
+                        },
+                        contract_fulfillment: this.evaluateContractFulfillment()
+                    },
+                    thought_ledger: this.thoughtLedger,
+                    final_state: {
+                        entropy: this.entropy,
+                        cycles_completed: this.currentCycle,
+                        sandboxes_created: Array.from(this.parallelSandboxes.keys())
+                    },
+                    schema_used: this.schema
+                };
+            }
+
+            evaluateContractFulfillment() {
+                return {
+                    goal_achieved: this.thoughtLedger.some(entry => 
+                        entry.status === "CONCLUSION" || 
+                        entry.output.toLowerCase().includes('complete')),
+                    constraints_respected: this.entropy <= 1.0,
+                    success_criteria_met: this.thoughtLedger.filter(entry => entry.status === "SUCCESS").length > 0,
+                    ledger_integrity: true
+                };
+            }
+
+            generateHash(content) {
+                let hash = 0;
+                for (let i = 0; i < content.length; i++) {
+                    const char = content.charCodeAt(i);
+                    hash = ((hash << 5) - hash) + char;
+                    hash = hash & hash;
+                }
+                return `enhanced-x-logic-seal:${Math.abs(hash).toString(16).padStart(8, '0')}`;
+            }
+
+            getExecutionDelay() {
+                const mode = document.getElementById('executionMode').value;
+                const delays = {
+                    normal: 500,
+                    fast: 100,
+                    debug: 1000,
+                    step: 2000
+                };
+                return delays[mode] || 500;
+            }
+
+            getOperationDelay() {
+                return Math.random() * 200 + 100; // 100-300ms random delay
+            }
+
+            pause() {
+                this.isPaused = true;
+            }
+
+            resume() {
+                this.isPaused = false;
+            }
+
+            stop() {
+                this.isRunning = false;
+                this.isPaused = false;
+            }
+
+            delay(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+        }
+
+        // UI Management Functions
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 X-Logic Executor Loaded');
+            
+            // Event listeners
+            document.getElementById('loadSampleBtn').addEventListener('click', loadSampleSchema);
+            document.getElementById('executeBtn').addEventListener('click', executeSchema);
+            document.getElementById('pauseBtn').addEventListener('click', pauseExecution);
+            document.getElementById('stopBtn').addEventListener('click', stopExecution);
+            document.getElementById('validateBtn').addEventListener('click', validateSchema);
+            document.getElementById('resetBtn').addEventListener('click', resetExecutor);
+            document.getElementById('downloadResultsBtn').addEventListener('click', downloadResults);
+            document.getElementById('copyResultsBtn').addEventListener('click', copyResults);
+            
+            // Schema input listener
+            document.getElementById('schemaInput').addEventListener('input', function() {
+                try {
+                    const schema = JSON.parse(this.value);
+                    loadSchemaInfo(schema);
+                    document.getElementById('executeBtn').disabled = false;
+                } catch (e) {
+                    document.getElementById('executeBtn').disabled = true;
+                    hideSchemaInfo();
+                }
+            });
+
+            // Results tab listeners
+            document.querySelectorAll('.results-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    switchResultsTab(this.dataset.tab);
+                });
+            });
+
+            // Load sample schema immediately
+            loadSampleSchema();
+        });
+
+        function loadSampleSchema() {
+            const sampleSchema = {
+                "trigger": "<x>",
+                "contract": {
+                    "goal": "Perform systematic data analysis and generate actionable insights. Build an executor Create a schema generator template builder. ensuring all JavaScript is functioning and looping properly",
+                    "constraints": [
+                        "Maintain entropy below 0.7",
+                        "Validate all data sources",
+                        "Maintain entropy below 1",
+                        "Complete within 25 cycles"
+                    ],
+                    "success_criteria": [
+                        "Generate comprehensive analysis report",
+                        "Identify key patterns and trends",
+                        "Provide actionable recommendations"
+                    ]
+                },
+                "phases": [
+                    {
+                        "phase_name": "Data Collection",
+                        "operations": [
+                            {"op": "gather_data", "parameters": {}},
+                            {"op": "validate_sources", "parameters": {}}
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.2
+                    },
+                    {
+                        "phase_name": "Analysis",
+                        "operations": [
+                            {"op": "process_data", "parameters": {}},
+                            {"op": "identify_patterns", "parameters": {}}
+                        ],
+                        "parallel_sandboxes": true,
+                        "entropy": 0.3
+                    },
+                    {
+                        "phase_name": "Synthesis",
+                        "operations": [
+                            {"op": "correlate_findings", "parameters": {}},
+                            {"op": "generate_insights", "parameters": {}}
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.2
+                    },
+                    {
+                        "phase_name": "Reporting",
+                        "operations": [
+                            {"op": "compile_report", "parameters": {}},
+                            {"op": "validate_conclusions", "parameters": {}}
+                        ],
+                        "parallel_sandboxes": false,
+                        "entropy": 0.1
+                    }
+                ],
+                "metadata": {
+                    "created": "2025-08-10T05:58:18.754Z",
+                    "complexity_level": "adaptive",
+                    "risk_tolerance": "balanced",
+                    "generator": "X-Logic Schema Builder v1.0"
+                }
+            };
+
+            document.getElementById('schemaInput').value = JSON.stringify(sampleSchema, null, 2);
+            loadSchemaInfo(sampleSchema);
+            document.getElementById('executeBtn').disabled = false;
+        }
+
+        function loadSchemaInfo(schema) {
+            const phases = schema.phases || [];
+            const totalOps = phases.reduce((sum, phase) => sum + phase.operations.length, 0);
+            const avgEntropy = phases.reduce((sum, phase) => sum + phase.entropy, 0) / phases.length || 0;
+            
+            const info = `
+                <p><strong>Goal:</strong> ${schema.contract.goal.substring(0, 100)}${schema.contract.goal.length > 100 ? '...' : ''}</p>
+                <p><strong>Phases:</strong> ${phases.length} | <strong>Operations:</strong> ${totalOps} | <strong>Avg Entropy:</strong> ${avgEntropy.toFixed(2)}</p>
+                <p><strong>Constraints:</strong> ${schema.contract.constraints.length} | <strong>Success Criteria:</strong> ${schema.contract.success_criteria.length}</p>
+            `;
+            
+            document.getElementById('schemaDetails').innerHTML = info;
+            document.getElementById('schemaInfo').style.display = 'block';
+            
+            // Update phase list
+            updatePhaseList(phases);
+            
+            // Update operation list
+            updateOperationList(phases);
+        }
+
+        function hideSchemaInfo() {
+            document.getElementById('schemaInfo').style.display = 'none';
+        }
+
+        function updatePhaseList(phases) {
+            const phaseList = document.getElementById('phaseList');
+            phaseList.innerHTML = phases.map((phase, index) => 
+                `<div class="phase-item pending" id="phase-${index}">${phase.phase_name}</div>`
+            ).join('');
+        }
+
+        function updateOperationList(phases) {
+            const operationList = document.getElementById('operationList');
+            let html = '';
+            
+            phases.forEach((phase, phaseIndex) => {
+                phase.operations.forEach((operation, opIndex) => {
+                    html += `
+                        <div class="operation-item" id="op-${phaseIndex}-${opIndex}">
+                            <div class="operation-status pending"></div>
+                            <div class="operation-details">
+                                <div class="operation-name">${operation.op}</div>
+                                <div class="operation-phase">${phase.phase_name}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+            });
+            
+            operationList.innerHTML = html;
+        }
+
+        async function executeSchema() {
+            try {
+                const schemaText = document.getElementById('schemaInput').value;
+                const schema = JSON.parse(schemaText);
+                
+                // Reset state
+                executionState = {
+                    schema: schema,
+                    engine: null,
+                    isRunning: true,
+                    isPaused: false,
+                    currentCycle: 0,
+                    currentPhase: null,
+                    currentOperation: null,
+                    entropy: 0,
+                    thoughtLedger: [],
+                    activeSandboxes: new Map(),
+                    operations: [],
+                    results: null,
+                    startTime: Date.now()
+                };
+                
+                // Update UI
+                document.getElementById('executeBtn').disabled = true;
+                document.getElementById('pauseBtn').disabled = false;
+                document.getElementById('stopBtn').disabled = false;
+                document.getElementById('executeSpinner').style.display = 'inline-block';
+                document.getElementById('executeText').textContent = 'Executing...';
+                
+                // Clear log
+                document.getElementById('executionLog').innerHTML = '';
+                
+                // Create engine with callbacks
+                const engine = new EnhancedAutonomousEngine(schema, {
+                    onStart: () => {
+                        addLogEntry('system', 'Execution started');
+                    },
+                    onPhaseStart: (phaseIndex, phase) => {
+                        updatePhaseStatus(phaseIndex, 'active');
+                        addLogEntry('info', `Starting phase: ${phase.phase_name}`);
+                    },
+                    onPhaseComplete: (phaseIndex, result) => {
+                        updatePhaseStatus(phaseIndex, 'complete');
+                        addLogEntry('success', `Phase completed: ${result.status}`);
+                    },
+                    onOperationStart: (phaseIndex, opIndex, operation) => {
+                        updateOperationStatus(phaseIndex, opIndex, 'running');
+                        addLogEntry('info', `Operation: ${operation.op}`);
+                    },
+                    onOperationComplete: (phaseIndex, opIndex, result) => {
+                        updateOperationStatus(phaseIndex, opIndex, 'complete');
+                        addLogEntry('success', `Completed: ${result.substring(0, 50)}...`);
+                    },
+                    onOperationError: (phaseIndex, opIndex, error) => {
+                        updateOperationStatus(phaseIndex, opIndex, 'error');
+                        addLogEntry('error', `Error: ${error.message}`);
+                    },
+                    onCycleComplete: (metrics) => {
+                        updateMetrics(metrics);
+                    },
+                    onEntropyUpdate: (entropy) => {
+                        updateEntropyMeter(entropy);
+                    },
+                    onSandboxCreated: (sandbox) => {
+                        addSandbox(sandbox);
+                    },
+                    onSandboxComplete: (sandbox) => {
+                        updateSandbox(sandbox);
+                    },
+                    onLogEntry: (entry) => {
+                        // Additional log processing if needed
+                    },
+                    onComplete: (results) => {
+                        executionState.results = results;
+                        showResults(results);
+                        
+                        // Reset UI
+                        document.getElementById('executeBtn').disabled = false;
+                        document.getElementById('pauseBtn').disabled = true;
+                        document.getElementById('stopBtn').disabled = true;
+                        document.getElementById('executeSpinner').style.display = 'none';
+                        document.getElementById('executeText').textContent = '🚀 Execute Schema';
+                        
+                        addLogEntry('system', `Execution completed. Status: ${results.verification.status}`);
+                    }
+                });
+                
+                executionState.engine = engine;
+                
+                // Start execution
+                await engine.execute("<x>");
+                
+            } catch (error) {
+                addLogEntry('error', `Execution failed: ${error.message}`);
+                resetExecutionUI();
+            }
+        }
+
+        function pauseExecution() {
+            if (executionState.engine && executionState.isRunning) {
+                if (executionState.isPaused) {
+                    executionState.engine.resume();
+                    executionState.isPaused = false;
+                    document.getElementById('pauseBtn').textContent = '⏸️ Pause';
+                    addLogEntry('system', 'Execution resumed');
+                } else {
+                    executionState.engine.pause();
+                    executionState.isPaused = true;
+                    document.getElementById('pauseBtn').textContent = '▶️ Resume';
+                    addLogEntry('warning', 'Execution paused');
+                }
+            }
+        }
+
+        function stopExecution() {
+            if (executionState.engine) {
+                executionState.engine.stop();
+                executionState.isRunning = false;
+                addLogEntry('warning', 'Execution stopped by user');
+                resetExecutionUI();
+            }
+        }
+
+        function resetExecutionUI() {
+            document.getElementById('executeBtn').disabled = false;
+            document.getElementById('pauseBtn').disabled = true;
+            document.getElementById('stopBtn').disabled = true;
+            document.getElementById('executeSpinner').style.display = 'none';
+            document.getElementById('executeText').textContent = '🚀 Execute Schema';
+            document.getElementById('pauseBtn').textContent = '⏸️ Pause';
+        }
+
+        function validateSchema() {
+            try {
+                const schemaText = document.getElementById('schemaInput').value;
+                const schema = JSON.parse(schemaText);
+                
+                const errors = [];
+                
+                if (!schema.contract?.goal) {
+                    errors.push("Missing contract goal");
+                }
+                
+                if (!schema.phases || schema.phases.length === 0) {
+                    errors.push("No phases defined");
+                }
+                
+                schema.phases?.forEach((phase, index) => {
+                    if (!phase.operations || phase.operations.length === 0) {
+                        errors.push(`Phase ${index + 1} has no operations`);
+                    }
+                });
+                
+                if (errors.length > 0) {
+                    addLogEntry('error', `Validation failed: ${errors.join(', ')}`);
+                } else {
+                    addLogEntry('success', 'Schema validation passed');
+                }
+                
+            } catch (error) {
+                addLogEntry('error', `Invalid JSON: ${error.message}`);
+            }
+        }
+
+        function resetExecutor() {
+            if (confirm('Reset the executor? This will stop any running execution.')) {
+                if (executionState.engine) {
+                    executionState.engine.stop();
+                }
+                
+                // Reset state
+                executionState = {
+                    schema: null,
+                    engine: null,
+                    isRunning: false,
+                    isPaused: false,
+                    currentCycle: 0,
+                    currentPhase: null,
+                    currentOperation: null,
+                    entropy: 0,
+                    thoughtLedger: [],
+                    activeSandboxes: new Map(),
+                    operations: [],
+                    results: null,
+                    startTime: null
+                };
+                
+                // Reset UI
+                document.getElementById('executionLog').innerHTML = '<div class="log-entry system">[SYSTEM] Executor reset. Ready for new schema.</div>';
+                document.getElementById('currentCycle').textContent = '0';
+                document.getElementById('completedOps').textContent = '0';
+                document.getElementById('activeSandboxes').textContent = '0';
+                updateEntropyMeter(0);
+                document.getElementById('resultsPanel').style.display = 'none';
+                document.getElementById('sandboxMonitor').style.display = 'none';
+                resetExecutionUI();
+                
+                // Reset phase and operation displays
+                document.querySelectorAll('.phase-item').forEach(item => {
+                    item.className = 'phase-item pending';
+                });
+                document.querySelectorAll('.operation-status').forEach(status => {
+                    status.className = 'operation-status pending';
+                });
+            }
+        }
+
+        function updatePhaseStatus(phaseIndex, status) {
+            const phaseElement = document.getElementById(`phase-${phaseIndex}`);
+            if (phaseElement) {
+                phaseElement.className = `phase-item ${status}`;
+            }
+        }
+
+        function updateOperationStatus(phaseIndex, opIndex, status) {
+            const opElement = document.querySelector(`#op-${phaseIndex}-${opIndex} .operation-status`);
+            if (opElement) {
+                opElement.className = `operation-status ${status}`;
+            }
+        }
+
+        function updateMetrics(metrics) {
+            document.getElementById('currentCycle').textContent = metrics.cycle;
+            document.getElementById('completedOps').textContent = metrics.ledgerEntries;
+            document.getElementById('activeSandboxes').textContent = metrics.sandboxes;
+        }
+
+        function updateEntropyMeter(entropy) {
+            const percentage = (entropy * 100);
+            document.getElementById('entropyFill').style.width = `${percentage}%`;
+            document.getElementById('entropyValue').textContent = `${percentage.toFixed(1)}%`;
+            document.getElementById('entropyText').textContent = entropy.toFixed(3);
+            
+            // Color coding
+            let color = '#10b981'; // Green
+            if (entropy > 0.7) color = '#f59e0b'; // Yellow
+            if (entropy > 0.9) color = '#ef4444'; // Red
+            
+            document.getElementById('entropyFill').style.background = color;
+        }
+
+        function addSandbox(sandbox) {
+            document.getElementById('sandboxMonitor').style.display = 'block';
+            const sandboxList = document.getElementById('sandboxList');
+            
+            const sandboxElement = document.createElement('div');
+            sandboxElement.className = 'sandbox-item';
+            sandboxElement.id = `sandbox-${sandbox.id}`;
+            sandboxElement.textContent = sandbox.id;
+            
+            sandboxList.appendChild(sandboxElement);
+        }
+
+        function updateSandbox(sandbox) {
+            const sandboxElement = document.getElementById(`sandbox-${sandbox.id}`);
+            if (sandboxElement) {
+                sandboxElement.style.opacity = '0.6';
+                sandboxElement.textContent += ' ✓';
+            }
+        }
+
+        function addLogEntry(type, message) {
+            const log = document.getElementById('executionLog');
+            const timestamp = new Date().toLocaleTimeString();
+            
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${timestamp}] ${message}`;
+            
+            log.appendChild(entry);
+            
+            if (document.getElementById('autoScrollLog').checked) {
+                log.scrollTop = log.scrollHeight;
+            }
+        }
+
+        function showResults(results) {
+            document.getElementById('resultsPanel').style.display = 'block';
+            
+            // Summary
+            const summary = `
+                <h4 style="color: #3b82f6; margin-bottom: 1rem;">Execution Summary</h4>
+                <p><strong>Status:</strong> ${results.verification.status}</p>
+                <p><strong>Cycles:</strong> ${results.verification.metrics.total_cycles}</p>
+                <p><strong>Success Rate:</strong> ${(results.verification.metrics.success_rate * 100).toFixed(1)}%</p>
+                <p><strong>Final Entropy:</strong> ${results.verification.metrics.final_entropy}</p>
+                <p><strong>Execution Time:</strong> ${(results.verification.metrics.execution_time / 1000).toFixed(1)}s</p>
+                <p><strong>Seal:</strong> <code>${results.verification.seal}</code></p>
+            `;
+            document.getElementById('executionSummary').innerHTML = summary;
+            
+            // Thought Ledger
+            document.getElementById('thoughtLedger').innerHTML = `<pre>${JSON.stringify(results.thought_ledger, null, 2)}</pre>`;
+            
+            // Verification
+            document.getElementById('verificationResults').innerHTML = `<pre>${JSON.stringify(results.verification, null, 2)}</pre>`;
+        }
+
+        function switchResultsTab(tabName) {
+            document.querySelectorAll('.results-tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.results-content').forEach(content => content.classList.remove('active'));
+            
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+            document.getElementById(`${tabName}-content`).classList.add('active');
+        }
+
+        function downloadResults() {
+            if (!executionState.results) return;
+            
+            const format = document.getElementById('exportFormat').value;
+            let content, filename, mimeType;
+            
+            switch (format) {
+                case 'json':
+                    content = JSON.stringify(executionState.results, null, 2);
+                    filename = `x-logic-execution-${Date.now()}.json`;
+                    mimeType = 'application/json';
+                    break;
+                case 'summary':
+                    content = generateSummaryReport(executionState.results);
+                    filename = `x-logic-summary-${Date.now()}.txt`;
+                    mimeType = 'text/plain';
+                    break;
+                case 'ledger':
+                    content = JSON.stringify(executionState.results.thought_ledger, null, 2);
+                    filename = `x-logic-ledger-${Date.now()}.json`;
+                    mimeType = 'application/json';
+                    break;
+            }
+            
+            const blob = new Blob([content], { type: mimeType });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function copyResults() {
+            if (!executionState.results) return;
+            
+            const format = document.getElementById('exportFormat').value;
+            let content;
+            
+            switch (format) {
+                case 'json':
+                    content = JSON.stringify(executionState.results, null, 2);
+                    break;
+                case 'summary':
+                    content = generateSummaryReport(executionState.results);
+                    break;
+                case 'ledger':
+                    content = JSON.stringify(executionState.results.thought_ledger, null, 2);
+                    break;
+            }
+            
+            navigator.clipboard.writeText(content).then(() => {
+                const btn = document.getElementById('copyResultsBtn');
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => btn.textContent = originalText, 2000);
+            });
+        }
+
+        function generateSummaryReport(results) {
+            return `
+X-Logic Execution Summary Report
+===============================
+
+Execution Status: ${results.verification.status}
+Timestamp: ${results.verification.execution_timestamp}
+Verification Seal: ${results.verification.seal}
+
+Performance Metrics:
+- Total Cycles: ${results.verification.metrics.total_cycles}
+- Success Rate: ${(results.verification.metrics.success_rate * 100).toFixed(1)}%
+- Final Entropy: ${results.verification.metrics.final_entropy}
+- Ledger Entries: ${results.verification.metrics.ledger_entries}
+- Parallel Sandboxes: ${results.verification.metrics.parallel_sandboxes}
+- Execution Time: ${(results.verification.metrics.execution_time / 1000).toFixed(1)} seconds
+
+Contract Fulfillment:
+- Goal Achieved: ${results.verification.contract_fulfillment.goal_achieved}
+- Constraints Respected: ${results.verification.contract_fulfillment.constraints_respected}
+- Success Criteria Met: ${results.verification.contract_fulfillment.success_criteria_met}
+- Ledger Integrity: ${results.verification.contract_fulfillment.ledger_integrity}
+
+Generated by X-Logic Schema Executor
+            `.trim();
+        }
+    </script>
+</body>
+</html>
