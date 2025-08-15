@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>E3 Master Template Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #111827;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+        textarea, select, input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            background-color: #f9fafb;
+            resize: vertical;
+        }
+        textarea {
+            min-height: 150px;
+            font-family: monospace;
+        }
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        .form-row input[type="text"], .form-row select {
+            flex: 1;
+        }
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        button {
+            flex: 1;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+        }
+        #addBtn {
+            flex: none;
+            width: auto;
+            background-color: #10b981;
+            color: #ffffff;
+        }
+        #addBtn:hover {
+            background-color: #059669;
+        }
+        #generateFormBtn, #generateBulkBtn {
+            background-color: #4f46e5;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        #generateFormBtn:hover, #generateBulkBtn:hover {
+            background-color: #4338ca;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #copyBtn {
+            background-color: #6b7280;
+            color: #ffffff;
+            font-size: 1rem;
+        }
+        #copyBtn:hover {
+            background-color: #4b5563;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .status {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            text-align: center;
+            display: none;
+        }
+        .status.success {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        .status.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        #formFields {
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        #preview {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>E3 Master Template Manager</h1>
+        <p>This all-in-one tool generates E3 evaluation forms with unique identifiers from your data. Use the form for single entries or the text area for bulk data, then generate and download your forms.</p>
+
+        <h2>1. Batch Setup</h2>
+        <div class="form-row">
+            <div>
+                <label>Batch ID</label>
+                <input type="text" id="batchId" readonly>
+            </div>
+            <div>
+                <button id="newBatchBtn">New Batch</button>
+            </div>
+        </div>
+        
+        <h2>2. Data Input</h2>
+        <p>Use the form below for a single record, or the text area for bulk records.</p>
+        <div id="formFields">
+            <div class="form-row">
+                <select class="key-select">
+                    <option value="">Select a Key</option>
+                    <optgroup label="Form Fields">
+                        <option value="participant_name">participant_name</option>
+                        <option value="participant_id">participant_id</option>
+                        <option value="eval_date">eval_date</option>
+                        <option value="instructor_name">instructor_name</option>
+                        <option value="signature_date">signature_date</option>
+                        <option value="comments_section">comments_section</option>
+                    </optgroup>
+                    <optgroup label="Checkbox Fields">
+                        <option value="work_habits.attendance">work_habits.attendance</option>
+                        <option value="work_habits.hygiene">work_habits.hygiene</option>
+                        <option value="work_habits.attitude">work_habits.attitude</option>
+                        <option value="preparatory_goals.attention_span">preparatory_goals.attention_span</option>
+                        <option value="preparatory_goals.task_completion">preparatory_goals.task_completion</option>
+                        <option value="preparatory_goals.safety">preparatory_goals.safety</option>
+                    </optgroup>
+                </select>
+                <div class="value-container">
+                    <input type="text" class="value-input" placeholder="Enter Value">
+                </div>
+            </div>
+        </div>
+        <div class="button-group" style="justify-content: flex-start;">
+            <button id="addBtn">Add Field</button>
+            <button id="generateFormBtn">Generate from Form</button>
+        </div>
+
+        <label for="inputData" style="margin-top: 2rem;">Bulk Data (paste `key=value` pairs, one record per line):</label>
+        <textarea id="inputData" placeholder="Example:
+participant_name=Jane Doe, participant_id=P001, eval_date=2025-08-09
+participant_name=John Smith, participant_id=P002, eval_date=2025-08-09"></textarea>
+        <button id="generateBulkBtn" style="width: 100%;">Generate Bulk from Text</button>
+
+        <h2>3. Template & Actions</h2>
+        <label for="template">Child Template HTML (use ALL_CAPS for placeholders)</label>
+        <textarea id="template"></textarea>
+        <div class="button-group">
+            <button id="previewBtn">Preview</button>
+            <button id="downloadOneBtn">Download Single Form</button>
+            <div>
+                <label for="bulkFile" style="text-align: center;">Bulk File Export</label>
+                <input type="file" id="bulkFile" accept=".json">
+            </div>
+            <button id="bulkExportBtn">Bulk Export</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <h2>4. Preview</h2>
+        <iframe id="preview"></iframe>
+    </div>
+
+    <script>
+        const checkboxKeys = [
+            'work_habits.attendance',
+            'work_habits.hygiene',
+            'work_habits.attitude',
+            'preparatory_goals.attention_span',
+            'preparatory_goals.task_completion',
+            'preparatory_goals.safety'
+        ];
+
+        let batchId = '';
+        let counter = 1;
+
+        const DEFAULT_TEMPLATE = `<!doctype html>
+<html>
+<head>
+    <title>E3 Achievement Daily Participant Evaluation</title>
+    <style>
+        body { font: 14px Arial, sans-serif; margin: 20px; }
+        .row { margin: 10px 0; padding: 5px; border-bottom: 1px solid #ccc; }
+        .label { font-weight: bold; color: #666; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { border: 1px solid #ccc; padding: 5px; }
+        th { background: #f0f0f0; }
+        .center { text-align: center; }
+        .comment-box { border: 1px solid #999; padding: 10px; min-height: 40px; }
+        @media print { body { margin: 0; font-size: 12px; } }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">E3 Achievement Daily Participant Evaluation</h1>
+
+    <div class="row">
+        <span class="label">Name:</span> PARTICIPANT_NAME
+    </div>
+
+    <div class="row">
+        <span class="label">ID:</span> PARTICIPANT_ID
+    </div>
+
+    <div class="row">
+        <span class="label">Date:</span> EVAL_DATE
+    </div>
+
+    <div class="row">
+        <span class="label">Batch ID:</span> BATCH_ID
+    </div>
+
+    <div class="row">
+        <span class="label">Eval ID:</span> EVAL_ID
+    </div>
+
+    <h3>Work Habits</h3>
+    <table>
+    <tr>
+    <th style="width: 50%;">Item</th>
+    <th>Yes</th>
+    <th>NI</th>
+    <th>N/A</th>
+    </tr>
+    <tr>
+    <td>Attendance — Correct day and time?</td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attendance" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attendance" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attendance" data-opt="na"></td>
+    </tr>
+    <tr>
+    <td>Hygiene — Appropriately groomed?</td>
+    <td class="center"><input type="checkbox" data-key="work_habits.hygiene" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.hygiene" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.hygiene" data-opt="na"></td>
+    </tr>
+    <tr>
+    <td>Attitude — Positive attitude?</td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attitude" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attitude" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="work_habits.attitude" data-opt="na"></td>
+    </tr>
+    </table>
+
+    <h3>Preparatory Goals</h3>
+    <table>
+    <tr>
+    <th style="width: 50%;">Item</th>
+    <th>Yes</th>
+    <th>NI</th>
+    <th>N/A</th>
+    </tr>
+    <tr>
+    <td>Attention Span — Adequate for tasks?</td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="na"></td>
+    </tr>
+    <tr>
+    <td>Task Completion — Stayed on task?</td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.task_completion" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.task_completion" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.task_completion" data-opt="na"></td>
+    </tr>
+    <tr>
+    <td>Safety — Followed procedures?</td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.safety" data-opt="yes"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.safety" data-opt="ni"></td>
+    <td class="center"><input type="checkbox" data-key="preparatory_goals.safety" data-opt="na"></td>
+    </tr>
+    </table>
+
+    <h3>Comments</h3>
+    <div class="comment-box">COMMENTS_SECTION</div>
+
+    <h3>Signature</h3>
+    <div class="row">
+    <span class="label">Instructor:</span> INSTRUCTOR_NAME
+    </div>
+
+    <div class="row">
+    <span class="label">Signature Date:</span> SIGNATURE_DATE
+    </div>
+
+</body>
+</html>`;
+        
+        function makeId() {
+            const now = new Date();
+            const date = now.getFullYear() + String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0');
+            const time = String(now.getHours()).padStart(2, '0') + String(now.getMinutes()).padStart(2, '0') + String(now.getSeconds()).padStart(2, '0');
+            const random = Math.random().toString(36).substr(2, 4);
+            return date + time + random;
+        }
+
+        function showStatus(message, isError) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = isError ? 'status error' : 'status success';
+            statusEl.style.display = 'block';
+        }
+
+        function replaceTokens(template, data) {
+            let html = template;
+            const tokenMap = {};
+
+            // Add system data
+            tokenMap.batch_id = batchId;
+            tokenMap.eval_id = 'E3-' + makeId();
+            tokenMap.eval_date = new Date().toISOString().slice(0, 10);
+            
+            // Merge custom data
+            Object.assign(tokenMap, data);
+
+            // Replace all tokens
+            Object.keys(tokenMap).forEach(key => {
+                const value = tokenMap[key] !== undefined ? String(tokenMap[key]) : '';
+                const placeholder = new RegExp(key.toUpperCase(), 'g');
+                html = html.replace(placeholder, value);
+            });
+
+            // Handle checkboxes
+            html = html.replace(/<input type="checkbox" data-key="([^"]+)" data-opt="([^"]+)">/g, (match, key, opt) => {
+                const dataValue = tokenMap[key];
+                if (dataValue && dataValue.toLowerCase() === opt.toLowerCase()) {
+                    return `<input type="checkbox" data-key="${key}" data-opt="${opt}" checked disabled>`;
+                } else {
+                    return `<input type="checkbox" data-key="${key}" data-opt="${opt}" disabled>`;
+                }
+            });
+
+            // Embed script for interactivity
+            const script = `
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.disabled = true);
+                });
+            </script>`;
+            
+            if (html.includes('</body>')) {
+                html = html.replace('</body>', script + '</body>');
+            } else {
+                html += script;
+            }
+
+            return html;
+        }
+
+        function download(filename, content) {
+            const blob = new Blob([content], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function createValueInput(key) {
+            const container = document.createElement('div');
+            container.classList.add('value-container');
+            if (checkboxKeys.includes(key)) {
+                container.innerHTML = `
+                    <select class="value-input">
+                        <option value="yes">yes</option>
+                        <option value="ni">ni</option>
+                        <option value="na">na</option>
+                    </select>
+                `;
+            } else {
+                container.innerHTML = `<input type="text" class="value-input" placeholder="Enter Value">`;
+            }
+            return container;
+        }
+
+        function createFormRow() {
+            const formFields = document.getElementById('formFields');
+            const newRow = document.createElement('div');
+            newRow.classList.add('form-row');
+
+            const keySelect = document.createElement('select');
+            keySelect.classList.add('key-select');
+            keySelect.innerHTML = `
+                <option value="">Select a Key</option>
+                <optgroup label="Form Fields">
+                    <option value="participant_name">participant_name</option>
+                    <option value="participant_id">participant_id</option>
+                    <option value="eval_date">eval_date</option>
+                    <option value="instructor_name">instructor_name</option>
+                    <option value="signature_date">signature_date</option>
+                    <option value="comments_section">comments_section</option>
+                </optgroup>
+                <optgroup label="Checkbox Fields">
+                    <option value="work_habits.attendance">work_habits.attendance</option>
+                    <option value="work_habits.hygiene">work_habits.hygiene</option>
+                    <option value="work_habits.attitude">work_habits.attitude</option>
+                    <option value="preparatory_goals.attention_span">preparatory_goals.attention_span</option>
+                    <option value="preparatory_goals.task_completion">preparatory_goals.task_completion</option>
+                    <option value="preparatory_goals.safety">preparatory_goals.safety</option>
+                </optgroup>
+            `;
+            
+            const valueInput = createValueInput('');
+
+            keySelect.addEventListener('change', function() {
+                const selectedKey = this.value;
+                const parentRow = this.closest('.form-row');
+                const currentValueContainer = parentRow.querySelector('.value-container');
+                const newValueContainer = createValueInput(selectedKey);
+                currentValueContainer.replaceWith(newValueContainer);
+            });
+            
+            newRow.appendChild(keySelect);
+            newRow.appendChild(valueInput);
+            formFields.appendChild(newRow);
+        }
+
+        document.getElementById('addBtn').addEventListener('click', createFormRow);
+
+        document.getElementById('formFields').addEventListener('change', function(e) {
+            if (e.target.classList.contains('key-select')) {
+                const selectedKey = e.target.value;
+                const parentRow = e.target.closest('.form-row');
+                const currentValueContainer = parentRow.querySelector('.value-container');
+                const newValueContainer = createValueInput(selectedKey);
+                currentValueContainer.replaceWith(newValueContainer);
+            }
+        });
+
+        document.getElementById('newBatchBtn').addEventListener('click', function() {
+            batchId = 'B' + makeId();
+            document.getElementById('batchId').value = batchId;
+            showStatus('New batch ID generated: ' + batchId);
+        });
+
+        document.getElementById('generateFormBtn').addEventListener('click', function() {
+            const formFields = document.getElementById('formFields');
+            const rows = formFields.querySelectorAll('.form-row');
+            let obj = {};
+
+            try {
+                rows.forEach(row => {
+                    const key = row.querySelector('.key-select').value.trim();
+                    const value = row.querySelector('.value-input').value.trim();
+                    if (key && value) {
+                        obj[key] = value;
+                    }
+                });
+                
+                if (Object.keys(obj).length === 0) {
+                    showStatus('No data entered in the form.', true);
+                    return;
+                }
+
+                const template = document.getElementById('template').value;
+                const html = replaceTokens(template, obj);
+                document.getElementById('preview').srcdoc = html;
+                showStatus('Form generated successfully from form data!', false);
+            } catch (e) {
+                showStatus('Error during form generation: ' + e.message, true);
+            }
+        });
+
+        document.getElementById('generateBulkBtn').addEventListener('click', function() {
+            const inputData = document.getElementById('inputData').value;
+            if (!inputData) {
+                showStatus('Please enter data in the bulk area.', true);
+                return;
+            }
+
+            const lines = inputData.split('\\n').filter(line => line.trim() !== '');
+            const template = document.getElementById('template').value;
+            const formContainer = document.getElementById('formFields');
+            let generatedHtml = '';
+
+            try {
+                lines.forEach(line => {
+                    let obj = {};
+                    const pairs = line.split(',');
+                    pairs.forEach(pair => {
+                        const [key, value] = pair.split('=').map(s => s.trim());
+                        if (key && value) {
+                            obj[key] = value;
+                        }
+                    });
+                    if (Object.keys(obj).length > 0) {
+                        generatedHtml += replaceTokens(template, obj);
+                    }
+                });
+
+                document.getElementById('preview').srcdoc = generatedHtml;
+                showStatus(`Successfully generated ${lines.length} forms from bulk data!`, false);
+
+            } catch (e) {
+                showStatus('Error during bulk form generation: ' + e.message, true);
+            }
+        });
+
+        document.getElementById('downloadOneBtn').addEventListener('click', function() {
+            try {
+                const template = document.getElementById('template').value;
+                const formFields = document.getElementById('formFields');
+                const rows = formFields.querySelectorAll('.form-row');
+                let obj = {};
+                rows.forEach(row => {
+                    const key = row.querySelector('.key-select').value.trim();
+                    const value = row.querySelector('.value-input').value.trim();
+                    if (key && value) {
+                        obj[key] = value;
+                    }
+                });
+
+                if (Object.keys(obj).length === 0) {
+                    showStatus('No data entered in the form to download.', true);
+                    return;
+                }
+
+                const html = replaceTokens(template, obj);
+                const filename = 'E3-Child-' + counter + '.html';
+                download(filename, html);
+                counter++;
+                showStatus('Downloaded: ' + filename, false);
+            } catch (e) {
+                showStatus('Error during download: ' + e.message, true);
+            }
+        });
+
+        document.getElementById('bulkExportBtn').addEventListener('click', function() {
+            const fileInput = document.getElementById('bulkFile');
+            const file = fileInput.files[0];
+            if (!file) {
+                showStatus('Please select a JSON file first for bulk export.', true);
+                return;
+            }
+            
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const bulkData = JSON.parse(e.target.result);
+                    if (!Array.isArray(bulkData)) {
+                        showStatus('File must contain a JSON array.', true);
+                        return;
+                    }
+                    
+                    const template = document.getElementById('template').value;
+                    let downloadsCount = 0;
+                    bulkData.forEach((rowData, index) => {
+                        const html = replaceTokens(template, rowData);
+                        const filename = 'E3-Child-Bulk-' + (counter + index) + '.html';
+                        setTimeout(() => {
+                            download(filename, html);
+                            downloadsCount++;
+                            if (downloadsCount === bulkData.length) {
+                                showStatus(`Successfully exported ${downloadsCount} forms!`, false);
+                            }
+                        }, index * 200);
+                    });
+                    counter += bulkData.length;
+                    showStatus('Bulk export started...', false);
+
+                } catch (e) {
+                    showStatus('Error processing bulk file: ' + e.message, true);
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        document.getElementById('previewBtn').addEventListener('click', function() {
+             const formFields = document.getElementById('formFields');
+             const rows = formFields.querySelectorAll('.form-row');
+             let obj = {};
+
+             try {
+                rows.forEach(row => {
+                    const key = row.querySelector('.key-select').value.trim();
+                    const value = row.querySelector('.value-input').value.trim();
+                    if (key && value) {
+                        obj[key] = value;
+                    }
+                });
+                
+                const template = document.getElementById('template').value;
+                const html = replaceTokens(template, obj);
+                document.getElementById('preview').srcdoc = html;
+                showStatus('Preview generated successfully!', false);
+            } catch (e) {
+                showStatus('Error during preview generation: ' + e.message, true);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('template').value = DEFAULT_TEMPLATE;
+            document.getElementById('newBatchBtn').click();
+            
+            const formFields = document.getElementById('formFields');
+            const firstRow = formFields.querySelector('.form-row');
+            firstRow.querySelector('.key-select').value = 'participant_name';
+            firstRow.querySelector('.value-input').value = 'Jane Doe';
+            createFormRow();
+            const secondRow = formFields.querySelectorAll('.form-row')[1];
+            secondRow.querySelector('.key-select').value = 'work_habits.attendance';
+            secondRow.querySelector('.value-container').replaceWith(createValueInput('work_habits.attendance'));
+            secondRow.querySelector('.value-input').value = 'yes';
+        });
+
+    </script>
+</body>
+</html>

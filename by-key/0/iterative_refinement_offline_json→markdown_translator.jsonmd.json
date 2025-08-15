@@ -1,0 +1,111 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:20.126Z",
+    "anchor_id": "56bdd22eaa9b5426dc57c2cc628370b001c8ccc838d06ce97f642e6ac3f635f8",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.757,
+    "contradictions_detected": 4,
+    "word_count": 1511
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 60
+      },
+      {
+        "theme": "document",
+        "frequency": 28
+      },
+      {
+        "theme": "rows",
+        "frequency": 25
+      },
+      {
+        "theme": "contested",
+        "frequency": 21
+      },
+      {
+        "theme": "cycle",
+        "frequency": 19
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 19
+      },
+      {
+        "theme": "raw",
+        "frequency": 17
+      },
+      {
+        "theme": "entropy",
+        "frequency": 17
+      },
+      {
+        "theme": "return",
+        "frequency": 16
+      },
+      {
+        "theme": "lines",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "}catch(e){ /* keep scanning */ } } } } throw new Error('No valid JSON array found in the input.'); } function normalizeRows(arr"
+      },
+      {
+        "idx": 1,
+        "sample": "lizeRows(arr){ if(!Array.isArray(arr)) throw new Error('Parsed payload is not an array.'); // de-dupe by hash_of_entry if present const seen ="
+      },
+      {
+        "idx": 2,
+        "sample": "<span class=\"${r.contested? 'error':'ok'}\">${r.contested? 'Contested' : 'Not contested'}</span> </div>`; el.appendChild(dot); el.appendCh"
+      },
+      {
+        "idx": 3,
+        "sample": "x))); if(!rows.length) throw new Error('Found a JSON array, but it does not contain recognizable cycle objects.'); const md = toMarkdown(rows);"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "getAttribute('data-theme') === 'dark' ?",
+      "length ?",
+      "length ?",
+      "length ?",
+      "end) ?",
+      "cycle ??",
+      "phase ??",
+      "op ??",
+      "cycle ??",
+      "phase ??",
+      "op ??",
+      "timestamp ?",
+      "output?",
+      "entropy ??",
+      "contested?"
+    ],
+    "summary": "const, document, rows, contested, cycle"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 1
+  },
+  "temporal_markers": [
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "iterative_refinement_offline_json→markdown_translator.html",
+    "relative_path": "iterative_refinement_offline_json→markdown_translator.html",
+    "size_bytes": 19236,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:34.181Z",
+    "source_text_length": 825,
+    "word_count": 104,
+    "sentence_count": 8,
+    "entropy_level": 0.984,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "aeon_importer.html"
+    },
+    "anchor_id": "0cca4fedd7ed94130f6c6286074bf5aa"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "aeon",
+        "frequency": 3
+      },
+      {
+        "theme": "bridgefile",
+        "frequency": 3
+      },
+      {
+        "theme": "evm_context",
+        "frequency": 3
+      },
+      {
+        "theme": "load",
+        "frequency": 2
+      },
+      {
+        "theme": "then",
+        "frequency": 2
+      },
+      {
+        "theme": "preview",
+        "frequency": 2
+      },
+      {
+        "theme": "inject",
+        "frequency": 2
+      },
+      {
+        "theme": "localstorage",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "evm_history",
+        "frequency": 2
+      },
+      {
+        "theme": "presets",
+        "frequency": 2
+      },
+      {
+        "theme": "importer",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AEON → EVM Importer · offline 1) Load AEON Bridgefile Use sample No file loaded … Colors: error=#e74c3c, export=#9b59b6, import=#f39c12, normal=#2980b9, start=#2ecc71, end=#34495e",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0cca4fedd7ed94130f6c6286074bf5aa"
+  }
+}

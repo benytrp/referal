@@ -1,0 +1,135 @@
+# Content Evolution - Generation 0
+
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:55.306Z",
+    "source_text_length": 5440,
+    "word_count": 780,
+    "entropy_level": 0.815,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "18420fc2bbf7738cd089e5ffe56fb4a3",
+    "source": {
+      "path": "simple_e3_builder (1).html",
+      "bytes": 17803,
+      "lastModified": 1754767957845
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "document",
+        "frequency": 21
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 16
+      },
+      {
+        "theme": "value",
+        "frequency": 14
+      },
+      {
+        "theme": "data",
+        "frequency": 13
+      },
+      {
+        "theme": "function",
+        "frequency": 12
+      },
+      {
+        "theme": "counter",
+        "frequency": 11
+      },
+      {
+        "theme": "html",
+        "frequency": 11
+      },
+      {
+        "theme": "template",
+        "frequency": 10
+      }
+    ],
+    "key_questions": [
+      "E3 Master Builder - Fixed Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax) Step 4: Actions Preview Download Single Bulk Export Preview '; // Insert script before closing body tag if (html.indexOf('') !== -1) { html = html.replace('', checkboxScript + '\\n'); } else { html += checkboxScript; } return html; } function downloadFile(filename, content) { var blob = new Blob([content], { type: 'text/html' }); var url = URL.createObjectURL(blob); var a = document.createElement('a'); a.href = url; a.download = filename; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); } // Button functions function newBatch() { batchId = 'B' + makeId(); document.getElementById('batchId').value = batchId; showStatus('New batch ID generated'); } function resetTemplate() { if (confirm('Reset to default template?",
+      "Your changes will be lost.')) { document.getElementById('template').value = getDefaultTemplate(); showStatus('Template reset to default'); } } function previewChild() { try { var template = document.getElementById('template').value; var data = {}; var baseDataText = document.getElementById('baseData').value.trim(); if (baseDataText) { data = JSON.parse(baseDataText); } var html = buildChild(template, data); document.getElementById('preview').srcdoc = html; showStatus('Preview generated successfully'); } catch (error) { showStatus('Error: ' + error.message, true); } } function downloadOne() { try { var template = document.getElementById('template').value; var data = {}; var baseDataText = document.getElementById('baseData').value.trim(); if (baseDataText) { data = JSON.parse(baseDataText); } var html = buildChild(template, data); var filename = 'E3-Child-' + counter + '.html'; downloadFile(filename, html); counter++; document.getElementById('counter').value = counter; showStatus('Downloaded: ' + filename); } catch (error) { showStatus('Error: ' + error.message, true); } } function bulkExport() { var file = document.getElementById('bulkFile').files[0]; if (!file) { showStatus('Please select a JSON file first', true); return; } var reader = new FileReader(); reader.onload = function(e) { try { var bulkData = JSON.parse(e.target.result); if (!Array.isArray(bulkData)) { showStatus('File must contain a JSON array', true); return; } var template = document.getElementById('template').value; var baseData = {}; var baseDataText = document.getElementById('baseData').value.trim(); if (baseDataText) { baseData = JSON.parse(baseDataText); } for (var i = 0; i < bulkData.length; i++) { (function(index) { setTimeout(function() { var rowData = bulkData[index]; var data = JSON.parse(JSON.stringify(baseData)); // Deep copy // Merge row data for (var key in rowData) { if (rowData.hasOwnProperty(key)) { if (key.indexOf('.') !== -1) { // Handle dot notation var parts = key.split('.'); var current = data; for (var j = 0; j < parts.length - 1; j++) { if (!current[parts[j]]) current[parts[j]] = {}; current = current[parts[j]]; } current[parts[parts.length - 1]] = rowData[key]; } else { data[key] = rowData[key]; } } } var html = buildChild(template, data); var filename = 'E3-Child-' + (counter + index) + '.html'; downloadFile(filename, html); }, index * 500); // Stagger downloads })(i); } counter += bulkData.length; document.getElementById('counter').value = counter; showStatus('Bulk export started: ' + bulkData.length + ' files'); } catch (error) { showStatus('Error processing file: ' + error.message, true); } }; reader.readAsText(file); } function getDefaultTemplate() { return '\\n\\n\\n \\n E3 Achievement Daily Participant Evaluation\\n \\n\\n\\n E3 Achievement Daily Participant Evaluation\\n \\n \\n \\n Name:\\n ⟦record_meta.participant_label⟧\\n \\n \\n ID:\\n ⟦record_meta.participant_code⟧\\n \\n \\n Date:\\n ⟦record_meta.date⟧\\n \\n \\n \\n \\n \\n Eval ID:\\n ⟦record_meta.eval_id⟧\\n \\n \\n Batch:\\n ⟦record_meta.batch_id⟧\\n \\n \\n Instance:\\n ⟦record_meta.instance_seq⟧\\n \\n \\n\\n \\n Work Habits\\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n ItemYesNIN/AAttendance — Correct day and time?",
+      "\\n Yes\\n \\n NI\\n \\n N/A\\n Hygiene — Participant was appropriately groomed?",
+      "\\n Yes\\n \\n NI\\n \\n N/A\\n Attitude — Participant exhibited positive attitude?",
+      "\\n Yes\\n \\n NI\\n \\n N/A\\n \\n Comments:\\n ⟦work_habits.comments⟧\\n \\n\\n \\n Preparatory Goals\\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n \\n ItemYesNIN/AAttention Span — adequate span for tasks?",
+      "\\n Yes\\n \\n NI\\n \\n N/A\\n Task Completion — stayed on task?",
+      "\\n Yes\\n \\n NI\\n \\n N/A\\n Safety — followed safety procedures?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Master Builder - Fixed Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax) Step 4: Actions Preview Download Single Bulk Export Preview '; // Insert script before closing body tag if (html. … addEventListener('DOMContentLoaded', init); } else { init(); }",
+    "key_insights": [],
+    "action_items": [
+      "E3 Master Builder - Fixed Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax) Step 4: Actions Preview Download Single Bulk Export Preview '; // Insert script before closing body tag if (html.",
+      "createObjectURL(blob); var a = document.",
+      "createElement('a'); a.",
+      "parse(baseDataText); } var html = buildChild(template, data); document.",
+      "parse(baseDataText); } var html = buildChild(template, data); var filename = 'E3-Child-' + counter + '.",
+      "isArray(bulkData)) { showStatus('File must contain a JSON array', true); return; } var template = document.",
+      "length - 1]] = rowData[key]; } else { data[key] = rowData[key]; } } } var html = buildChild(template, data); var filename = 'E3-Child-' + (counter + index) + '."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.59,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 965
+- Complexity score: 100.0
+- Key themes: template, data, html, document, counter, getelementbyid, step, json, value, function
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of template?
+2. How does template connect to broader patterns?
+3. What are the deeper implications of data?
+4. How does data connect to broader patterns?
+5. What are the deeper implications of html?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: template, data, html
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: template
+This theme emerges as significant in generation 0. Consider how template relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: data
+This theme emerges as significant in generation 0. Consider how data relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

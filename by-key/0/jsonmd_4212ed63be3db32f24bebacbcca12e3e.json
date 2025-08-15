@@ -1,0 +1,108 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:34.703Z",
+    "source_text_length": 550,
+    "word_count": 87,
+    "sentence_count": 7,
+    "entropy_level": 0.973,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_html_chunker_v2.html"
+    },
+    "anchor_id": "4212ed63be3db32f24bebacbcca12e3e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 5
+      },
+      {
+        "theme": "overlap",
+        "frequency": 3
+      },
+      {
+        "theme": "files",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "chunk",
+        "frequency": 2
+      },
+      {
+        "theme": "browser",
+        "frequency": 2
+      },
+      {
+        "theme": "drop",
+        "frequency": 2
+      },
+      {
+        "theme": "tokens",
+        "frequency": 2
+      },
+      {
+        "theme": "download",
+        "frequency": 2
+      },
+      {
+        "theme": "jsonl",
+        "frequency": 2
+      },
+      {
+        "theme": "chunker",
+        "frequency": 1
+      },
+      {
+        "theme": "parse",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "html files here 0 files No network / No libs Target tokens per chunk Heuristic: ~4 chars ≈ 1 token Overlap tokens Trailing-sentence overlap to keep context Process Reset Outputs No output",
+        "statement_b": "Download manifest",
+        "line": 3,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline HTML → LLM Chunker Parse HTML, preserve headings, strip boilerplate, chunk with overlap — all in your browser, fully offline … Drop in HTML and go",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "html files here 0 files No network / No libs Target tokens per chunk Heuristic: ~4 chars ≈ 1 token Overlap tokens Trailing-sentence overlap to keep context Process Reset Outputs No output vs Download manifest"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "4212ed63be3db32f24bebacbcca12e3e"
+  }
+}

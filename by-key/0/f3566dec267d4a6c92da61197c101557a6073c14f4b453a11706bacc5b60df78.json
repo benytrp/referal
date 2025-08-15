@@ -1,0 +1,149 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:54.078Z",
+    "anchor_id": "f3566dec267d4a6c92da61197c101557a6073c14f4b453a11706bacc5b60df78",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.707,
+    "contradictions_detected": 13,
+    "word_count": 1736
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 72
+      },
+      {
+        "theme": "text",
+        "frequency": 39
+      },
+      {
+        "theme": "return",
+        "frequency": 28
+      },
+      {
+        "theme": "sentence",
+        "frequency": 28
+      },
+      {
+        "theme": "length",
+        "frequency": 27
+      },
+      {
+        "theme": "cognitive",
+        "frequency": 26
+      },
+      {
+        "theme": "tolowercase",
+        "frequency": 23
+      },
+      {
+        "theme": "function",
+        "frequency": 22
+      },
+      {
+        "theme": "analysis",
+        "frequency": 21
+      },
+      {
+        "theme": "math",
+        "frequency": 21
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "|| []).length > 50 ? 0.3 : 0.1; const contradictions = (text.match(/\\b(but|however|yet|although|despite)\\b/gi) || []).length * 0.2; const sentiment = t"
+      },
+      {
+        "idx": 1,
+        "sample": "length > 50 ? 0.3 : 0.1; const contradictions = (text.match(/\\b(but|however|yet|although|despite)\\b/gi) || []).length * 0.2; const sentiment = text.matc"
+      },
+      {
+        "idx": 2,
+        "sample": "th > 50 ? 0.3 : 0.1; const contradictions = (text.match(/\\b(but|however|yet|although|despite)\\b/gi) || []).length * 0.2; const sentiment = text.match(/\\"
+      },
+      {
+        "idx": 3,
+        "sample": "0.3 : 0.1; const contradictions = (text.match(/\\b(but|however|yet|although|despite)\\b/gi) || []).length * 0.2; const sentiment = text.match(/\\b(error|f"
+      },
+      {
+        "idx": 4,
+        "sample": "ould','would','also','only','very','just','like','the','and','for','are','but','not','you','all','can','her','was','one','our','had','use','word','each','said',"
+      },
+      {
+        "idx": 5,
+        "sample": "const lower = sentence.toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (m"
+      },
+      {
+        "idx": 6,
+        "sample": "lower = sentence.toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (match) {"
+      },
+      {
+        "idx": 7,
+        "sample": "r = sentence.toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (match) {"
+      },
+      {
+        "idx": 8,
+        "sample": "nce.toLowerCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (match) { const"
+      },
+      {
+        "idx": 9,
+        "sample": "werCase(); const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (match) { const splitPo"
+      },
+      {
+        "idx": 10,
+        "sample": "const match = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though)\\b/); if (match) { const splitPoint = sentenc"
+      },
+      {
+        "idx": 11,
+        "sample": "} function assessContradictionSeverity(a, b) { const conflictWords = ['not', 'never', 'impossible', 'cannot', 'fail', 'wrong']; const aConflicts ="
+      },
+      {
+        "idx": 12,
+        "sample": "function assessContradictionSeverity(a, b) { const conflictWords = ['not', 'never', 'impossible', 'cannot', 'fail', 'wrong']; const aConflicts = conflic"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "8 ?",
+      "6 ?",
+      "length > 50 ?",
+      "match(/\\b(error|fail|conflict|problem)\\b/gi) ?",
+      "7 ?",
+      "4 ?",
+      "className = mode === 'explore' ?",
+      "className = mode === 'resolve' ?",
+      "className = mode === 'ship' ?",
+      "body ?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "?"
+    ],
+    "summary": "const, text, return, sentence, length"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 3,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "cognitive_jsonmd_scanner_v2.html",
+    "relative_path": "cognitive_jsonmd_scanner_v2.html",
+    "size_bytes": 28164,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.87
+  }
+}

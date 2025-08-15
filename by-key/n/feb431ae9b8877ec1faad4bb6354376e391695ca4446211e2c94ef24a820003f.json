@@ -1,0 +1,164 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.660Z",
+    "anchor_id": "feb431ae9b8877ec1faad4bb6354376e391695ca4446211e2c94ef24a820003f",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.769,
+    "contradictions_detected": 16,
+    "word_count": 3710
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 180
+      },
+      {
+        "theme": "text",
+        "frequency": 88
+      },
+      {
+        "theme": "await",
+        "frequency": 81
+      },
+      {
+        "theme": "return",
+        "frequency": 67
+      },
+      {
+        "theme": "function",
+        "frequency": 65
+      },
+      {
+        "theme": "name",
+        "frequency": 54
+      },
+      {
+        "theme": "length",
+        "frequency": 39
+      },
+      {
+        "theme": "async",
+        "frequency": 35
+      },
+      {
+        "theme": "new",
+        "frequency": 29
+      },
+      {
+        "theme": "aeon",
+        "frequency": 28
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "e,i)=>{ const lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/);"
+      },
+      {
+        "idx": 1,
+        "sample": "const lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){"
+      },
+      {
+        "idx": 2,
+        "sample": "t lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ cons"
+      },
+      {
+        "idx": 3,
+        "sample": "' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=low"
+      },
+      {
+        "idx": 4,
+        "sample": "+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=lower.index"
+      },
+      {
+        "idx": 5,
+        "sample": "Case(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=lower.indexOf(m[0]); con"
+      },
+      {
+        "idx": 6,
+        "sample": "const words = wordArr(text); const stop=new Set(['the','and','for','are','but','not','you','this','that','with','from','have','will','they','into','your','about"
+      },
+      {
+        "idx": 7,
+        "sample": "es.push(name); } names.sort().reverse(); alert((names.slice(0,50).join('\\n'))||'No outputs yet'); } async function downloadTodayLog(){ if (!logsDir) logsDir=a"
+      },
+      {
+        "idx": 8,
+        "sample": "e); } names.sort().reverse(); alert((names.slice(0,50).join('\\n'))||'No outputs yet'); } async function downloadTodayLog(){ if (!logsDir) logsDir=await ensure"
+      },
+      {
+        "idx": 9,
+        "sample": "e,i)=>{ const lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/);"
+      },
+      {
+        "idx": 10,
+        "sample": "const lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){"
+      },
+      {
+        "idx": 11,
+        "sample": "t lower=(' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ cons"
+      },
+      {
+        "idx": 12,
+        "sample": "' '+line+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=low"
+      },
+      {
+        "idx": 13,
+        "sample": "+' ').toLowerCase(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=lower.index"
+      },
+      {
+        "idx": 14,
+        "sample": "Case(); const m = lower.match(/\\b(but|however|yet|although|despite|nevertheless|whereas|while|though|conversely)\\b/); if (m){ const pos=lower.indexOf(m[0]); con"
+      },
+      {
+        "idx": 15,
+        "sample": "const words = wordArr(text); const stop=new Set(['the','and','for','are','but','not','you','this','that','with']); const f={}; for (const w of words){ if (w.len"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "textContent = ms ?",
+      "push('html?",
+      "body ?",
+      "log(2); return maxH?",
+      "?",
+      "?",
+      "]*\\?",
+      "?",
+      "?",
+      "?",
+      "?",
+      "includes(' '+w+' ')?",
+      "includes(' '+w+' ')?",
+      "?",
+      "tags:[`aeon_gen:${cyclesTotal}`, cycleIndex===cyclesTotal?"
+    ],
+    "summary": "const, text, await, return, function"
+  },
+  "sentiment_indicators": {
+    "positive": 6,
+    "negative": 12,
+    "uncertainty": 5
+  },
+  "temporal_markers": [
+    "yesterday",
+    "today",
+    "tomorrow",
+    "will",
+    "was",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "aeon_bridge_unified_offline_scanner_mv_3_wrapper.html",
+    "relative_path": "aeon_bridge_unified_offline_scanner_mv_3_wrapper.html",
+    "size_bytes": 37542,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.91
+  }
+}

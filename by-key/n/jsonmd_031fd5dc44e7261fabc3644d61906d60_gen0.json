@@ -1,0 +1,135 @@
+# Content Evolution - Generation 0
+
+{
+  "json_md_fusion_scroll": {
+    "version": "1.0",
+    "timestamp": "2025-08-11T05:12:55.942Z",
+    "source_text_length": 4757,
+    "word_count": 568,
+    "entropy_level": 0.907,
+    "contradictions_detected": 0,
+    "processing_phase": "SYNTHESIS",
+    "frequency_resonance": "440 Hz (A4)",
+    "format": "json_md_fusion",
+    "anchor_id": "031fd5dc44e7261fabc3644d61906d60",
+    "source": {
+      "path": "simple_e3_builder.html",
+      "bytes": 16654,
+      "lastModified": 1754767764580
+    }
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "document",
+        "frequency": 24
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 21
+      },
+      {
+        "theme": "const",
+        "frequency": 19
+      },
+      {
+        "theme": "value",
+        "frequency": 14
+      },
+      {
+        "theme": "data",
+        "frequency": 13
+      },
+      {
+        "theme": "template",
+        "frequency": 11
+      },
+      {
+        "theme": "html",
+        "frequency": 11
+      },
+      {
+        "theme": "function",
+        "frequency": 11
+      }
+    ],
+    "key_questions": [
+      "E3 Master Builder - Ultra Simple Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax for replacements) Step 4: Actions Preview Download Single Bulk Export Preview `; // Insert script before closing body tag if (html.includes('')) { html = html.replace('', script + '\\n'); } else { html += script; } return html; } function download(filename, content) { const blob = new Blob([content], { type: 'text/html' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = filename; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); } // Default template const DEFAULT_TEMPLATE = ` E3 Achievement Daily Participant Evaluation E3 Achievement Daily Participant Evaluation Name: ⟦record_meta.participant_label⟧ ID: ⟦record_meta.participant_code⟧ Date: ⟦record_meta.date⟧ Eval ID: ⟦record_meta.eval_id⟧ Batch: ⟦record_meta.batch_id⟧ Instance: ⟦record_meta.instance_seq⟧ Work Habits Item Yes NI N/A Attendance — Correct day and time?",
+      "Yes NI N/A Hygiene — Participant was appropriately groomed?",
+      "Yes NI N/A Attitude — Participant exhibited positive attitude?",
+      "Yes NI N/A Comments: ⟦work_habits.comments⟧ Preparatory Goals Item Yes NI N/A Attention Span — adequate span for tasks?",
+      "Yes NI N/A Task Completion — stayed on task?",
+      "Yes NI N/A Safety — followed safety procedures?",
+      "Yes NI N/A Comments: ⟦preparatory_goals.comments⟧ Signature Instructor: ⟦record_meta.instructor_id⟧ Date: ⟦record_meta.date⟧ `; // Initialize function init() { batchId = 'B' + makeId(); counter = 1; document.getElementById('batchId').value = batchId; document.getElementById('counter').value = counter; document.getElementById('template').value = DEFAULT_TEMPLATE; } // Event handlers document.getElementById('newBatch').addEventListener('click', function() { batchId = 'B' + makeId(); document.getElementById('batchId').value = batchId; showStatus('New batch ID generated'); }); document.getElementById('counter').addEventListener('input', function() { counter = parseInt(this.value) || 1; }); document.getElementById('resetTemplate').addEventListener('click', function() { if (confirm('Reset to default template?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "E3 Master Builder - Ultra Simple Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax for replacements) Step 4: Actions Preview Download Single Bulk Export Preview `; // Insert script before closing body tag if (html. … readAsText(file); }); // Start the app init();",
+    "key_insights": [],
+    "action_items": [
+      "E3 Master Builder - Ultra Simple Step 1: Setup Batch ID New Batch Counter Step 2: Base Data (Optional) JSON data to merge into all children Step 3: Template Load Default E3 Template Child Template (use ⟦token⟧ syntax for replacements) Step 4: Actions Preview Download Single Bulk Export Preview `; // Insert script before closing body tag if (html.",
+      "createObjectURL(blob); const a = document.",
+      "createElement('a'); a.",
+      "parse(baseDataText); } const html = buildChild(template, data); document.",
+      "parse(baseDataText); } const html = buildChild(template, data); const filename = 'E3-Child-' + counter + '.",
+      "isArray(bulkData)) { showStatus('File must contain a JSON array', true); return; } const template = document.",
+      "assign(data, rowData); const html = buildChild(template, data); const filename = 'E3-Child-' + (counter + index) + '."
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Offline analyzer v1.3.4",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Explore high‑entropy passages first",
+      "Collect clarifying questions into a research backlog"
+    ],
+    "recursive_potential": "Low - mostly linear content",
+    "focus_preset": "explore",
+    "extraction_method": "domparser"
+  }
+}
+
+## Analysis (Gen 0)
+- Word count: 589
+- Complexity score: 100.0
+- Key themes: template, document, html, const, step, data, counter, theme, frequency, getelementbyid
+
+
+## Exploration Questions (Gen 0)
+1. What are the deeper implications of template?
+2. How does template connect to broader patterns?
+3. What are the deeper implications of document?
+4. How does document connect to broader patterns?
+5. What are the deeper implications of html?
+
+
+## Cross-References (Gen 0)
+- Previous generation: Gen -1
+- Related themes: template, document, html
+- Evolution cycle: 0
+
+
+## Content Expansion (Gen 0)
+
+### Deep Dive: template
+This theme emerges as significant in generation 0. Consider how template relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+### Deep Dive: document
+This theme emerges as significant in generation 0. Consider how document relates to the overall content evolution and what new insights might emerge in future processing cycles.
+
+
+## Knowledge Synthesis (Gen 0)
+This content has evolved through 0 processing cycles, each adding layers of analysis and insight. The recursive nature of this pipeline means that understanding deepens with each iteration.

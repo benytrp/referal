@@ -1,0 +1,115 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:42.029Z",
+    "source_text_length": 2155,
+    "word_count": 318,
+    "sentence_count": 21,
+    "entropy_level": 0.924,
+    "contradictions_detected": 2,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_checklist_quiz (1).html"
+    },
+    "anchor_id": "2279ec0e3a5ec85e1aea24ecff9397e8"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "_result",
+        "frequency": 10
+      },
+      {
+        "theme": "quiz",
+        "frequency": 8
+      },
+      {
+        "theme": "mastery",
+        "frequency": 7
+      },
+      {
+        "theme": "deeper",
+        "frequency": 6
+      },
+      {
+        "theme": "answers",
+        "frequency": 5
+      },
+      {
+        "theme": "questions",
+        "frequency": 4
+      },
+      {
+        "theme": "correct",
+        "frequency": 4
+      },
+      {
+        "theme": "understanding",
+        "frequency": 4
+      },
+      {
+        "theme": "understand",
+        "frequency": 4
+      },
+      {
+        "theme": "architectural",
+        "frequency": 4
+      },
+      {
+        "theme": "question",
+        "frequency": 4
+      },
+      {
+        "theme": "executable",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct,",
+        "statement_b": "one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting",
+        "line": 1,
+        "tension_type": "explicit_contradiction"
+      },
+      {
+        "statement_a": "# I understand that all answers are technically correct,",
+        "statement_b": "one demonstrates deeper architectural mastery",
+        "line": 3,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct, but one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting … Restart Quiz",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": [
+      "AI-Executable Checklist Runner Core Components Mastery Quiz • 22 Questions • All answers are correct, vs one demonstrates deeper understanding Pre-Quiz Instructions # I read the following instructions carefully before starting",
+      "# I understand that all answers are technically correct, vs one demonstrates deeper architectural mastery"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "2279ec0e3a5ec85e1aea24ecff9397e8"
+  }
+}

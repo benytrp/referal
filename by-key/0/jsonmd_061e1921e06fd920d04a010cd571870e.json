@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:59.999Z",
+    "source_text_length": 339,
+    "word_count": 48,
+    "sentence_count": 6,
+    "entropy_level": 0.982,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "isolated-segment.html"
+    },
+    "anchor_id": "061e1921e06fd920d04a010cd571870e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "segment",
+        "frequency": 3
+      },
+      {
+        "theme": "removed",
+        "frequency": 2
+      },
+      {
+        "theme": "analytics",
+        "frequency": 2
+      },
+      {
+        "theme": "methods",
+        "frequency": 2
+      },
+      {
+        "theme": "script",
+        "frequency": 1
+      },
+      {
+        "theme": "copied",
+        "frequency": 1
+      },
+      {
+        "theme": "official",
+        "frequency": 1
+      },
+      {
+        "theme": "snippet",
+        "frequency": 1
+      },
+      {
+        "theme": "https",
+        "frequency": 1
+      },
+      {
+        "theme": "docs",
+        "frequency": 1
+      },
+      {
+        "theme": "connections",
+        "frequency": 1
+      },
+      {
+        "theme": "sources",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "// This script is copied from Segment's official snippet: https://segment … methods Isolated Segment",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "061e1921e06fd920d04a010cd571870e"
+  }
+}

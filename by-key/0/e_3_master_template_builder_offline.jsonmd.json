@@ -1,0 +1,96 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:18.422Z",
+    "anchor_id": "8e7524182c04ecf22594c07a48b159394e0f27c0654c9a2264777b958f3f27a3",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.726,
+    "contradictions_detected": 3,
+    "word_count": 697
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 41
+      },
+      {
+        "theme": "data",
+        "frequency": 23
+      },
+      {
+        "theme": "value",
+        "frequency": 16
+      },
+      {
+        "theme": "function",
+        "frequency": 15
+      },
+      {
+        "theme": "html",
+        "frequency": 12
+      },
+      {
+        "theme": "url",
+        "frequency": 11
+      },
+      {
+        "theme": "addeventlistener",
+        "frequency": 11
+      },
+      {
+        "theme": "json",
+        "frequency": 10
+      },
+      {
+        "theme": "input",
+        "frequency": 8
+      },
+      {
+        "theme": "master",
+        "frequency": 7
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "E3 Master Template Builder (Offline) No deps • Works offline Spawns downloadable child HTML files"
+      },
+      {
+        "idx": 1,
+        "sample": "Preview Tip: Everything runs in your browser. No network needed. // ---------- helpers ---------- c"
+      },
+      {
+        "idx": 2,
+        "sample": "createElement('a'); a.href = url; a.download = filename; a.style.display='none'; document.body.appendChild(a); a.click(); setTimeout(()=>{ URL"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "cur[k] ??",
+      "reduce((acc,k)=> acc && (k in acc) ?",
+      "return (v === undefined || v === null || v === '') ?",
+      "replace(/[\\\\\\/:*?"
+    ],
+    "summary": "const, data, value, function, html"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today"
+  ],
+  "metadata": {
+    "source_name": "e_3_master_template_builder_offline.html",
+    "relative_path": "e_3_master_template_builder_offline.html",
+    "size_bytes": 32796,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.78
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:18.563Z",
+    "anchor_id": "d41ffec34c80b32ad3941a7cd369652b292f88d921cefb8617b56d337e35ea66",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.76,
+    "contradictions_detected": 7,
+    "word_count": 3090
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "div",
+        "frequency": 114
+      },
+      {
+        "theme": "const",
+        "frequency": 84
+      },
+      {
+        "theme": "class",
+        "frequency": 66
+      },
+      {
+        "theme": "html",
+        "frequency": 54
+      },
+      {
+        "theme": "writeu",
+        "frequency": 38
+      },
+      {
+        "theme": "strong",
+        "frequency": 28
+      },
+      {
+        "theme": "esc",
+        "frequency": 26
+      },
+      {
+        "theme": "daily",
+        "frequency": 25
+      },
+      {
+        "theme": "merged",
+        "frequency": 25
+      },
+      {
+        "theme": "val",
+        "frequency": 25
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "h> <th class=\"checkbox-cell\">Yes</th> <th class=\"checkbox-cell\">No</th> </tr> <tr><td><strong>Attendance</strong> — Correct day and"
+      },
+      {
+        "idx": 1,
+        "sample": "ts\": { \"attendance\": { \"correctDayTime\": \"YES\", \"excessiveAbsences\": \"NO\" }, \"timeliness\": { \"arrivedOnTime\": \"YES\", \"excessiveTardiness\": \""
+      },
+      {
+        "idx": 2,
+        "sample": "NO\" }, \"timeliness\": { \"arrivedOnTime\": \"YES\", \"excessiveTardiness\": \"NO\" }, \"hygiene\": { \"appropriatelyGroomed\": \"YES\" }, \"dress\""
+      },
+      {
+        "idx": 3,
+        "sample": "{ const el = $('htmlOutput'); if (!el.value) { show('htmlStatus', 'No HTML to copy.', 'err'); return; } el.select(); document.execComma"
+      },
+      {
+        "idx": 4,
+        "sample": "const html = $('htmlOutput').value; if (!html) { show('htmlStatus', 'No HTML to download.', 'err'); return; } el.select(); document.execComman"
+      },
+      {
+        "idx": 5,
+        "sample": "const html = $('htmlOutput').value; if (!html) { show('htmlStatus', 'No HTML to export.', 'err'); return; } try { const parser = new D"
+      },
+      {
+        "idx": 6,
+        "sample": "const html = $('htmlOutput').value; if (!html) { show('htmlStatus', 'No HTML to export.', 'err'); return; } try { const prepared = prep"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "const esc = (s) => String(s ??",
+      "== '') ??",
+      "const s = String(v ??",
+      "const is = (v, target) => String(v ??",
+      "const triCheck = (v, opt) => is(v, opt) ?",
+      "totalUnits ??",
+      "signatures?",
+      "signatures?",
+      "staffing?",
+      "staffPresentNames) ?",
+      "<td class=\"center checkbox-cell\"><input type=\"checkbox\" ${truthy(yesVal) ?",
+      "<td class=\"center checkbox-cell\"><input type=\"checkbox\" ${truthy(yesVal) ?",
+      "<tr><td><strong>Attendance</strong> — Correct day and time?",
+      "</td>${yesNo(wh?",
+      "attendance?"
+    ],
+    "summary": "div, const, class, html, writeu"
+  },
+  "sentiment_indicators": {
+    "positive": 3,
+    "negative": 2,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "will",
+    "2025"
+  ],
+  "metadata": {
+    "source_name": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile (1).html",
+    "relative_path": "e_3_offline_template_editor_compatible_with_e_3_daily_evaluation_e_3_participant_profile (1).html",
+    "size_bytes": 35191,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.82
+  }
+}

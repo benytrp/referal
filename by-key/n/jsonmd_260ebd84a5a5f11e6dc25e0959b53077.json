@@ -1,0 +1,107 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:44.435Z",
+    "source_text_length": 6210,
+    "word_count": 761,
+    "sentence_count": 135,
+    "entropy_level": null,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (16).txt"
+    },
+    "anchor_id": "260ebd84a5a5f11e6dc25e0959b53077"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 18
+      },
+      {
+        "theme": "logic",
+        "frequency": 11
+      },
+      {
+        "theme": "length",
+        "frequency": 11
+      },
+      {
+        "theme": "sha256",
+        "frequency": 8
+      },
+      {
+        "theme": "return",
+        "frequency": 8
+      },
+      {
+        "theme": "value",
+        "frequency": 8
+      },
+      {
+        "theme": "aeon",
+        "frequency": 7
+      },
+      {
+        "theme": "json",
+        "frequency": 6
+      },
+      {
+        "theme": "offline",
+        "frequency": 6
+      },
+      {
+        "theme": "files",
+        "frequency": 6
+      },
+      {
+        "theme": "nconst",
+        "frequency": 5
+      },
+      {
+        "theme": "size",
+        "frequency": 5
+      }
+    ],
+    "key_questions": [
+      "join(\\\",\\\")+\\\"}\\\"; }\\nconst CRC32_TABLE = (() => { let c, table = new Uint32Array(256); for (let n=0; n<256; n++){ c = n; for (let k=0; k<8; k++){ c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); } table[n] = c >>> 0; } return table; })();\\nfunction crc32(buf){ let c = 0xFFFFFFFF; for (let i=0;i<buf",
+      "length ? f"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"spec_version\": \"1 … json>\"\n  },\n  \"content_validation\": {\n    \"content_hash\": \"sha256:c3b4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4\",\n    \"methodology_hash\": \"sha256:d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5\",\n    \"evidence_hash\": \"sha256:e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6\",\n    \"integrity_verification\": \"sha256:f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7\",\n    \"self_verification_hash\": \"sha256:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2\"\n  }\n}",
+    "key_insights": [],
+    "action_items": [
+      "\",\n    \"implementation_readiness\": \"Ready for deployment",
+      "The embedded logic can be extracted and injected into a minimal HTML shell to create a new, running instance",
+      "USF buildArtifact logic",
+      "\",\n    \"extraction_instructions\": \"Extract 'verification_script' to verify_self"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": null,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "260ebd84a5a5f11e6dc25e0959b53077"
+  }
+}

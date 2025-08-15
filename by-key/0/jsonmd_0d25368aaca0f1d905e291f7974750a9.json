@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:12.073Z",
+    "source_text_length": 501,
+    "word_count": 70,
+    "sentence_count": 6,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "New Text Document.txt"
+    },
+    "anchor_id": "0d25368aaca0f1d905e291f7974750a9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "organization",
+        "frequency": 3
+      },
+      {
+        "theme": "problem",
+        "frequency": 2
+      },
+      {
+        "theme": "project",
+        "frequency": 2
+      },
+      {
+        "theme": "mission",
+        "frequency": 2
+      },
+      {
+        "theme": "issue",
+        "frequency": 2
+      },
+      {
+        "theme": "write",
+        "frequency": 1
+      },
+      {
+        "theme": "statement",
+        "frequency": 1
+      },
+      {
+        "theme": "grant",
+        "frequency": 1
+      },
+      {
+        "theme": "proposal",
+        "frequency": 1
+      },
+      {
+        "theme": "goal",
+        "frequency": 1
+      },
+      {
+        "theme": "projectgoal",
+        "frequency": 1
+      },
+      {
+        "theme": "describe",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 2,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Write a problem statement for the grant proposal … Make the reader care about solving this issue",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0d25368aaca0f1d905e291f7974750a9"
+  }
+}

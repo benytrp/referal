@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:10.851Z",
+    "source_text_length": 669,
+    "word_count": 85,
+    "sentence_count": 8,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "budget.txt"
+    },
+    "anchor_id": "2c93d3852522bcacedb4f9adec6cd6ea"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "budget",
+        "frequency": 3
+      },
+      {
+        "theme": "item",
+        "frequency": 3
+      },
+      {
+        "theme": "narrative",
+        "frequency": 2
+      },
+      {
+        "theme": "line",
+        "frequency": 2
+      },
+      {
+        "theme": "requested",
+        "frequency": 2
+      },
+      {
+        "theme": "amount",
+        "frequency": 2
+      },
+      {
+        "theme": "funderrequirements",
+        "frequency": 2
+      },
+      {
+        "theme": "fundingamount",
+        "frequency": 2
+      },
+      {
+        "theme": "project",
+        "frequency": 2
+      },
+      {
+        "theme": "items",
+        "frequency": 2
+      },
+      {
+        "theme": "costs",
+        "frequency": 2
+      },
+      {
+        "theme": "total",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Write the budget narrative and line-item breakdown for this grant proposal … fundingAmount }}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "2c93d3852522bcacedb4f9adec6cd6ea"
+  }
+}

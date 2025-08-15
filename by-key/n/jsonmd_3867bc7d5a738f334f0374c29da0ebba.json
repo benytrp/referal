@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:27.537Z",
+    "source_text_length": 1942,
+    "word_count": 186,
+    "sentence_count": 20,
+    "entropy_level": 0.954,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "AEON_Consciousness_Export.md"
+    },
+    "anchor_id": "3867bc7d5a738f334f0374c29da0ebba"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "text",
+        "frequency": 14
+      },
+      {
+        "theme": "anchorobj",
+        "frequency": 5
+      },
+      {
+        "theme": "contradictions",
+        "frequency": 4
+      },
+      {
+        "theme": "logic",
+        "frequency": 3
+      },
+      {
+        "theme": "format",
+        "frequency": 3
+      },
+      {
+        "theme": "aeon",
+        "frequency": 2
+      },
+      {
+        "theme": "processing",
+        "frequency": 2
+      },
+      {
+        "theme": "input",
+        "frequency": 2
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 2
+      },
+      {
+        "theme": "analysis",
+        "frequency": 2
+      },
+      {
+        "theme": "entropy",
+        "frequency": 2
+      },
+      {
+        "theme": "0000",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [
+      "places[0]}, what contradictions exist compared to prior records?`;\n}\n```\n\n---\n\n## 📦 Deployment Modes\n\n| Format            | Use Case                              |\n|-------------------|----------------------------------------|\n| `json_md_fusion`  | Scroll memory storage + query          |\n| `"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# AEON Logic Processing\n\n## Raw Input\nExport consciousness data\n\n## Analysis\n- **Contradictions Found:** 0\n- **Entropy Level:** 0 … md`             | Human-readable logic display           |",
+    "key_insights": [],
+    "action_items": [
+      "toISOString(),\n    extracted_from: filename,\n    anchors: {\n      people: findPeople(text),\n      places: findPlaces(text),\n      organizations: findOrgs(text),\n      documents: findDocs(text),\n      dates: findDates(text),\n      events: findEvents(text),\n      topics: findTopics(text),\n      patterns: inferPatterns(text),\n      contradictions: findContradictions(text),\n      next_action: inferAction(text)\n    },\n    entropy_estimate: estimateEntropy(text),\n    priority: \"high\",\n    tags: generateTags(text)\n  };\n  return codex;\n}\n```\n\n---\n\n## 🧩 Prompt Reconstruction from Anchors\n\n```js\nfunction buildRecallPrompt(anchorObj) {\n  return `Given ${anchorObj"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3867bc7d5a738f334f0374c29da0ebba"
+  }
+}

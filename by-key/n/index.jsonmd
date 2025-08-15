@@ -1,0 +1,29 @@
+# Project Index — JSON-MD
+
+**Project:** ProjectName  
+**Updated:** 2025-08-12T18:16:55.195Z
+
+```json
+{
+  "project_id": "ProjectName",
+  "intent_vector": {
+    "systems": 1,
+    "evolution": 0.8,
+    "consciousness": 0.9
+  },
+  "children": [],
+  "promoted_insight": {
+    "id": "ins-001",
+    "text": "…",
+    "from_session": "seed",
+    "reason": {
+      "alignment": 0.7,
+      "potency": 0.8,
+      "thresholds": {
+        "delta_score": ">=0.03",
+        "min_confidence": 0.7
+      }
+    }
+  }
+}
+```

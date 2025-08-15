@@ -1,0 +1,91 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:51.310Z",
+    "source_text_length": 271,
+    "word_count": 31,
+    "sentence_count": 3,
+    "entropy_level": 0.979,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (7).txt"
+    },
+    "anchor_id": "136755fcae47a5a9df967c3b9d7dfe6d"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "mobius",
+        "frequency": 3
+      },
+      {
+        "theme": "scroll",
+        "frequency": 3
+      },
+      {
+        "theme": "echoreality",
+        "frequency": 3
+      },
+      {
+        "theme": "concept",
+        "frequency": 2
+      },
+      {
+        "theme": "keywords",
+        "frequency": 2
+      },
+      {
+        "theme": "content",
+        "frequency": 2
+      },
+      {
+        "theme": "live",
+        "frequency": 2
+      },
+      {
+        "theme": "definition",
+        "frequency": 2
+      },
+      {
+        "theme": "google",
+        "frequency": 1
+      },
+      {
+        "theme": "drive",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "[\n  { \"concept\": \"Mobius Scroll\", \"keywords\": [\"mobius\", \"scroll\"], \"content\": \"This is the live definition of the Mobius Scroll from Google Drive … \" }\n]",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "136755fcae47a5a9df967c3b9d7dfe6d"
+  }
+}

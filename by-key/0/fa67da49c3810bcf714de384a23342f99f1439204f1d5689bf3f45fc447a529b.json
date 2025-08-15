@@ -1,0 +1,108 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:53.420Z",
+    "anchor_id": "fa67da49c3810bcf714de384a23342f99f1439204f1d5689bf3f45fc447a529b",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.755,
+    "contradictions_detected": 4,
+    "word_count": 1105
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 53
+      },
+      {
+        "theme": "await",
+        "frequency": 52
+      },
+      {
+        "theme": "msg",
+        "frequency": 27
+      },
+      {
+        "theme": "type",
+        "frequency": 18
+      },
+      {
+        "theme": "usfdir",
+        "frequency": 17
+      },
+      {
+        "theme": "function",
+        "frequency": 17
+      },
+      {
+        "theme": "return",
+        "frequency": 17
+      },
+      {
+        "theme": "async",
+        "frequency": 16
+      },
+      {
+        "theme": "body",
+        "frequency": 16
+      },
+      {
+        "theme": "json",
+        "frequency": 13
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "Initialize / Verify _usf/ Refresh status This app never leaves your device. It writes JSON to _usf/ and appends to an append‑only"
+      },
+      {
+        "idx": 1,
+        "sample": "eady'; } async function getDir(name){ if(!usfDir) throw new Error('USF not initialized'); return await usfDir.getDirectoryHandle(name, { create:tru"
+      },
+      {
+        "idx": 2,
+        "sample": "il||'?'} (hb: ${j.heartbeat_ms||'?'}ms)`; }catch{ leaseState.textContent = 'no lease'; } } // Event wiring $('#pickRoot').onclick = async () => {"
+      },
+      {
+        "idx": 3,
+        "sample": "portPill.classList.add('ok'); }else{ supportPill.textContent = 'FS Access not supported'; supportPill.classList.remove('warn'); supportPill.classList."
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "actor||'?",
+      "object||'?",
+      "object||'?",
+      "actor||'?",
+      "causal: parent ?",
+      "match(/\\d+/)?",
+      "trim() ?",
+      "holder||'?",
+      "until||'?",
+      "heartbeat_ms||'?",
+      "if(confirm('Delete ALL mailbox items?",
+      "Proceed?"
+    ],
+    "summary": "const, await, msg, type, usfdir"
+  },
+  "sentiment_indicators": {
+    "positive": 3,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "author.html",
+    "relative_path": "author.html",
+    "size_bytes": 16027,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}

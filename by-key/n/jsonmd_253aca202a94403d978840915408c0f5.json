@@ -1,0 +1,111 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:48.534Z",
+    "source_text_length": 6997,
+    "word_count": 930,
+    "sentence_count": 82,
+    "entropy_level": 0.922,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "js_loops_v1.html"
+    },
+    "anchor_id": "253aca202a94403d978840915408c0f5"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "const",
+        "frequency": 27
+      },
+      {
+        "theme": "results",
+        "frequency": 16
+      },
+      {
+        "theme": "console",
+        "frequency": 15
+      },
+      {
+        "theme": "item",
+        "frequency": 14
+      },
+      {
+        "theme": "performance",
+        "frequency": 13
+      },
+      {
+        "theme": "error",
+        "frequency": 13
+      },
+      {
+        "theme": "async",
+        "frequency": 12
+      },
+      {
+        "theme": "code",
+        "frequency": 10
+      },
+      {
+        "theme": "learning",
+        "frequency": 9
+      },
+      {
+        "theme": "processing",
+        "frequency": 9
+      },
+      {
+        "theme": "offline",
+        "frequency": 8
+      },
+      {
+        "theme": "loop",
+        "frequency": 8
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "▶️ Test Together ML-Enhanced Performance Analysis 🧠 ML Analysis 📊 Predict Performance Performance Heatmap (Last 100 Executions): ML Performance Insights: 🎯 Intelligent Recommendations Pattern Detected: Your loops show consistent O(n) complexity,",
+        "statement_b": "we've identified 3 opportunities for optimization",
+        "line": 59,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 1,
+      "present": 1,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "🔌 Offline Mode - Using cached content JavaScript Loops Mastery v5 … 3x average Last sync: 2 hours ago",
+    "key_insights": [],
+    "action_items": [
+      "ML Prediction: Implementing suggested changes could improve performance by 23% based on similar code patterns",
+      "length); 🧠 Analyze with ML Offline-First Development Tools 💾 Cache Codebase 📁 Export Progress 🔄 Sync Offline Capabilities Status: Code Examples Cached: 100% - All examples available offline Learning Progress Stored: 95% - Synced with local storage ML Models Downloaded: 88% - Performance analyzer ready Offline Code Generator: Generate loop type: High-performance loop Async processing loop Functional approach Error-safe iteration Generate Local Learning Analytics: 📊 Your Offline Stats Sessions completed offline: 12 Code examples practiced: 47 Performance improvements: 8"
+    ],
+    "unresolved_tensions": [
+      "▶️ Test Together ML-Enhanced Performance Analysis 🧠 ML Analysis 📊 Predict Performance Performance Heatmap (Last 100 Executions): ML Performance Insights: 🎯 Intelligent Recommendations Pattern Detected: Your loops show consistent O(n) complexity, vs we've identified 3 opportunities for optimization"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "253aca202a94403d978840915408c0f5"
+  }
+}

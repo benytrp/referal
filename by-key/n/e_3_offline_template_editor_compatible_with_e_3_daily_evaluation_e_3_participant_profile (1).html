@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E3 Offline Template Editor — Compatible</title>
+  <style>
+    /* ===== Layout & Theme ===== */
+    :root {
+      --bg1: #667eea;
+      --bg2: #764ba2;
+      --card: #ffffff;
+      --ink: #2c3e50;
+      --ink-2: #34495e;
+      --brand: #3498db;
+      --ok: #27ae60;
+      --warn: #f39c12;
+      --err: #c62828;
+      --muted: #6b7280;
+      --shadow: 0 20px 40px rgba(0,0,0,0.10);
+    }
+
+    html, body { height: 100%; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 20px; min-height: 100vh;
+      background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+    }
+
+    .container {
+      max-width: 1500px; margin: 0 auto; background: var(--card);
+      border-radius: 16px; box-shadow: var(--shadow); overflow: hidden;
+    }
+
+    .header { background: linear-gradient(135deg, var(--ink), var(--ink-2)); color: #fff; padding: 28px; text-align: center; }
+    .header h1 { margin: 0; font-size: 2.1rem; }
+    .header p { margin: 8px 0 0; color: #cbd5e1; }
+
+    .main { display: grid; grid-template-columns: 1.35fr 1fr 1.2fr; gap: 0; min-height: 78vh; }
+
+    .panel { padding: 24px; border-right: 1px solid #eee; }
+    .panel:last-child { border-right: none; }
+    .panel h2 { margin: 0 0 14px; color: var(--ink); border-bottom: 3px solid var(--brand); padding-bottom: 8px; }
+
+    .stack { display: grid; gap: 16px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 14px; }
+
+    textarea {
+      width: 100%; height: 220px; resize: vertical;
+      border: 2px solid #e5e7eb; border-radius: 10px; padding: 12px;
+      font-family: "Courier New", monospace; font-size: 13px; line-height: 1.4;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(52,152,219,.15); }
+
+    .btn { border: 0; border-radius: 24px; padding: 10px 18px; color: #fff; cursor: pointer; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,.12); transition: transform .15s, box-shadow .15s; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.18); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), #2980b9); }
+    .btn-success { background: linear-gradient(135deg, var(--ok), #229954); }
+    .btn-warn { background: linear-gradient(135deg, var(--warn), #e67e22); }
+    .btn-ghost { background: #0f172a; }
+
+    .status { margin-top: 10px; }
+    .alert { padding: 12px 14px; border-radius: 10px; border-left: 4px solid; background: #f8fafc; font-size: .95rem; }
+    .alert.ok { border-color: #22c55e; background: #ecfdf5; color: #166534; }
+    .alert.err { border-color: #ef4444; background: #fef2f2; color: #991b1b; }
+    .alert.info { border-color: #60a5fa; background: #eff6ff; color: #1e3a8a; }
+
+    #htmlOutput { height: 520px; }
+    .preview-frame { width: 100%; height: 560px; border: 2px solid #e5e7eb; border-radius: 10px; background: #fff; }
+
+    .small { color: var(--muted); font-size: .9rem; }
+
+    /* ===== Printable Document Styles (inside generated HTML as well) ===== */
+    .doc { font: 14px/1.4 Arial, sans-serif; color: #111827; max-width: 900px; margin: 0 auto; }
+    .doc .doc-header { text-align: center; margin-bottom: 18px; border-bottom: 2px solid #0ea5e9; padding-bottom: 10px; }
+    .doc .doc-header h1 { margin: 0; font-size: 1.35rem; }
+    .doc .doc-sub { color: #475569; font-size: .95rem; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+    .field { display: grid; grid-template-columns: 160px 1fr; gap: 10px; align-items: center; }
+    .label { font-weight: 700; color: #111827; }
+    .val { border-bottom: 1px dotted #6b7280; min-height: 20px; padding: 2px 0; }
+
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; color: #0f172a; }
+    .center { text-align: center; }
+    .checkbox-cell { text-align: center; width: 80px; }
+
+    .comments { border: 2px dashed #0ea5e9; padding: 12px; min-height: 56px; margin: 12px 0 18px; background: #f0f9ff; }
+
+    .note { color: #334155; font-size: .92rem; margin: 18px 0; }
+
+    .signatures { display: flex; gap: 24px; margin-top: 24px; padding-top: 12px; border-top: 2px solid #e5e7eb; }
+    .sig-box { flex: 1; text-align: center; }
+    .line { display: block; border-bottom: 2px solid #475569; height: 26px; margin: 10px 0; }
+
+    .footer { margin-top: 20px; font-size: 11px; color: #64748b; text-align: center; border-top: 1px solid #e5e7eb; padding-top: 10px; }
+
+    @media print { body { background: #fff; padding: 0; } .container, .header, .panel { box-shadow: none; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔧 E3 Offline Template Editor (Compatible)</h1>
+      <p>Paste your <strong>E3ParticipantProfile</strong> + <strong>E3DailyEvaluation</strong> JSON, then generate a printable HTML document.</p>
+    </div>
+
+    <div class="main">
+      <!-- Left: JSON Inputs -->
+      <section class="panel">
+        <h2>📁 JSON Inputs</h2>
+        <div class="controls">
+          <button class="btn btn-primary" onclick="loadExamples()">Load Examples</button>
+          <button class="btn btn-success" onclick="generateFromInputs()">Generate HTML</button>
+          <button class="btn btn-warn" onclick="clearAll()">Clear All</button>
+        </div>
+        <div class="stack">
+          <div>
+            <label class="small"><strong>Student Profile JSON</strong> (recordType: <code>E3ParticipantProfile</code>)</label>
+            <textarea id="profileInput" placeholder='{"recordType":"E3ParticipantProfile", ...}'></textarea>
+            <div id="profileStatus" class="status"></div>
+          </div>
+          <div>
+            <label class="small"><strong>Daily Evaluation JSON</strong> (recordType: <code>E3DailyEvaluation</code>)</label>
+            <textarea id="dailyInput" placeholder='{"recordType":"E3DailyEvaluation", ...}'></textarea>
+            <div id="dailyStatus" class="status"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Middle: HTML Output -->
+      <section class="panel">
+        <h2>🎨 Generated HTML</h2>
+        <div class="controls">
+          <button class="btn btn-primary" onclick="copyHTML()">Copy HTML</button>
+          <button class="btn btn-success" onclick="downloadHTML()">Download</button>
+          <button class="btn btn-warn" onclick="preview()">Preview</button>
+        </div>
+        <div class="controls" style="margin-top:8px;">
+          <button class="btn btn-success" onclick="downloadWord()">Export Word (.doc)</button>
+          <button class="btn btn-success" onclick="downloadDocx()">Export Word (.docx)</button>
+        </div>
+        <textarea id="htmlOutput" readonly placeholder="Generated HTML will appear here..."></textarea>
+        <div id="htmlStatus" class="status"></div>
+      </section>
+
+      <!-- Right: Live Preview -->
+      <section class="panel">
+        <h2>👁️ Live Preview</h2>
+        <div class="controls">
+          <button class="btn btn-primary" onclick="preview()">Refresh Preview</button>
+        </div>
+        <iframe id="previewFrame" class="preview-frame" srcdoc="<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>"></iframe>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // ===== Utilities =====
+    const esc = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+
+    const coalesce = (...vals) => vals.find(v => v !== undefined && v !== null && String(v).trim() !== '') ?? '';
+
+    const joinDiag = (codes) => {
+      if (!codes) return '';
+      if (Array.isArray(codes)) return codes.filter(Boolean).join(', ');
+      return String(codes);
+    };
+
+    const fmtDate = (d) => {
+      if (!d) return '';
+      try { const dt = new Date(d); if (!isNaN(dt)) return dt.toLocaleDateString(); } catch {}
+      return String(d);
+    };
+
+    const truthy = (v) => {
+      const s = String(v ?? '').trim().toUpperCase();
+      return ['Y','YES','TRUE','1','✔','CHECKED'].includes(s);
+    };
+
+    const is = (v, target) => String(v ?? '').trim().toUpperCase() === String(target).toUpperCase();
+
+    const triCheck = (v, opt) => is(v, opt) ? 'checked' : '';
+
+    // ===== Renderer =====
+    function generateE3HTML(daily = {}, profile = {}) {
+      const merged = {
+        title: 'E3 Achievement Daily Participant Evaluation',
+        location: coalesce(daily.location, profile.location, 'Battle Creek, Michigan'),
+        participantName: coalesce(daily.participantName, profile.fullName, ''),
+        participantId: coalesce(daily.participantId, profile.participantId, ''),
+        diagnosisCodes: coalesce(joinDiag(daily.diagnosisCodes), joinDiag(profile.diagnosisCodes), ''),
+        evalDate: daily.evalDate || '',
+        timeIn: daily.timeIn || '',
+        timeOut: daily.timeOut || '',
+        totalUnits: daily.totalUnits ?? '',
+        todaysFocus: daily.todaysFocus || '',
+        goalsStatement: coalesce(profile.goalsStatement, ''),
+        workHabits: daily.workHabits || {},
+        preparatoryGoals: daily.preparatoryGoals || {},
+        interestsAbilities: daily.interestsAbilities || {},
+        staffing: daily.staffing || {},
+        signatures: daily.signatures || {}
+      };
+
+      const wh = merged.workHabits;
+      const pg = merged.preparatoryGoals;
+      const ia = merged.interestsAbilities;
+
+      const instructorSig = merged.signatures?.instructor || {};
+      const supervisorSig = merged.signatures?.supervisor || {};
+
+      const staffNames = Array.isArray(merged.staffing?.staffPresentNames) ? merged.staffing.staffPresentNames.filter(Boolean).join(', ') : '';
+
+      const yesNo = (yesVal) => `
+        <td class="center checkbox-cell"><input type="checkbox" ${truthy(yesVal) ? 'checked' : ''} disabled></td>
+        <td class="center checkbox-cell"><input type="checkbox" ${truthy(yesVal) ? '' : 'checked'} disabled></td>`;
+
+      const triRow = (label, val) => `
+        <tr>
+          <td><strong>${label}</strong></td>
+          <td class="center checkbox-cell"><input type="checkbox" ${triCheck(val,'YES')} disabled></td>
+          <td class="center checkbox-cell"><input type="checkbox" ${triCheck(val,'NI')} disabled></td>
+          <td class="center checkbox-cell"><input type="checkbox" ${triCheck(val,'N/A')} disabled></td>
+        </tr>`;
+
+      const html = `<!doctype html>
+<html><head>
+  <meta charset="utf-8"/>
+  <title>${esc(merged.title)}</title>
+  <style>
+    body { font: 14px/1.4 Arial, sans-serif; color: #111827; margin: 20px; }
+    .doc-header { text-align: center; margin-bottom: 18px; border-bottom: 2px solid #0ea5e9; padding-bottom: 10px; }
+    .doc-header h1 { margin: 0; font-size: 1.35rem; }
+    .doc-sub { color: #475569; font-size: .95rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+    .field { display: grid; grid-template-columns: 160px 1fr; gap: 10px; align-items: center; }
+    .label { font-weight: 700; color: #111827; }
+    .val { border-bottom: 1px dotted #6b7280; min-height: 20px; padding: 2px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; color: #0f172a; }
+    .center { text-align: center; }
+    .checkbox-cell { text-align: center; width: 80px; }
+    .comments { border: 2px dashed #0ea5e9; padding: 12px; min-height: 56px; margin: 12px 0 18px; background: #f0f9ff; }
+    .note { color: #334155; font-size: .92rem; margin: 18px 0; }
+    .signatures { display: flex; gap: 24px; margin-top: 24px; padding-top: 12px; border-top: 2px solid #e5e7eb; }
+    .sig-box { flex: 1; text-align: center; }
+    .line { display: block; border-bottom: 2px solid #475569; height: 26px; margin: 10px 0; }
+    .footer { margin-top: 20px; font-size: 11px; color: #64748b; text-align: center; border-top: 1px solid #e5e7eb; padding-top: 10px; }
+    @media print { body { margin: 0; font-size: 12px; } }
+  </style>
+</head>
+<body>
+  <div class="doc">
+    <div class="doc-header">
+      <h1>${esc(merged.title)}</h1>
+      <div class="doc-sub">${esc(merged.location)} | Date: ${esc(fmtDate(merged.evalDate))}</div>
+    </div>
+
+    <div class="grid">
+      <div class="field"><div class="label">Name</div><div class="val">${esc(merged.participantName)}</div></div>
+      <div class="field"><div class="label">ID #</div><div class="val">${esc(merged.participantId)}</div></div>
+      <div class="field"><div class="label">Diag. Codes</div><div class="val">${esc(merged.diagnosisCodes)}</div></div>
+      <div class="field"><div class="label">Evaluation Date</div><div class="val">${esc(fmtDate(merged.evalDate))}</div></div>
+      <div class="field"><div class="label">Time In</div><div class="val">${esc(merged.timeIn)}</div></div>
+      <div class="field"><div class="label">Time Out</div><div class="val">${esc(merged.timeOut)}</div></div>
+      <div class="field"><div class="label">Total Units</div><div class="val">${esc(merged.totalUnits)}</div></div>
+    </div>
+
+    <div class="note"><strong>Goals</strong> — ${esc(merged.goalsStatement)}</div>
+    <div class="field" style="grid-template-columns: 160px 1fr;">
+      <div class="label">Today's Focus</div>
+      <div class="val">${esc(merged.todaysFocus)}</div>
+    </div>
+
+    <h3>Work Habits</h3>
+    <table>
+      <tr>
+        <th style="width:60%">Assessment</th>
+        <th class="checkbox-cell">Yes</th>
+        <th class="checkbox-cell">No</th>
+      </tr>
+      <tr><td><strong>Attendance</strong> — Correct day and time?</td>${yesNo(wh?.attendance?.correctDayTime)}</tr>
+      <tr><td><strong>Attendance</strong> — Excessive absences?</td>${yesNo(wh?.attendance?.excessiveAbsences)}</tr>
+      <tr><td><strong>Timeliness</strong> — Arrived on time?</td>${yesNo(wh?.timeliness?.arrivedOnTime)}</tr>
+      <tr><td><strong>Timeliness</strong> — Excessive tardiness?</td>${yesNo(wh?.timeliness?.excessiveTardiness)}</tr>
+      <tr><td><strong>Hygiene</strong> — Participant appropriately groomed?</td>${yesNo(wh?.hygiene?.appropriatelyGroomed)}</tr>
+      <tr><td><strong>Dress</strong> — Participant appropriately dressed?</td>${yesNo(wh?.dress?.appropriatelyDressed)}</tr>
+      <tr><td><strong>Attitude</strong> — Participant exhibited positive attitude?</td>${yesNo(wh?.attitude?.positiveAttitude)}</tr>
+    </table>
+    <div class="comments"><strong>Comments (Work Habits):</strong><br/>${esc(wh?.sectionComments || '')}</div>
+
+    <h3>Preparatory Goals</h3>
+    <table>
+      <tr>
+        <th style="width:60%">Assessment</th>
+        <th class="checkbox-cell">Yes</th>
+        <th class="checkbox-cell">NI</th>
+        <th class="checkbox-cell">N/A</th>
+      </tr>
+      ${triRow('Attention Span — Adequate for tasks?', pg?.attentionSpan)}
+      ${triRow('Following Directions — Followed simple instructions?', pg?.followingDirections?.simpleInstructions)}
+      ${triRow('Following Directions — Followed multi-step instructions?', pg?.followingDirections?.multiStepInstructions)}
+      ${triRow('Task Completion — Stayed on task?', pg?.taskCompletion?.stayedOnTask)}
+      ${triRow('Task Completion — Completed task being worked on?', pg?.taskCompletion?.completedTask)}
+      ${triRow('Motor Skills — Exhibits improvement?', pg?.motorSkills)}
+      ${triRow('Problem Solving — Ability to solve presented problems?', pg?.problemSolving)}
+      ${triRow('Safety — Followed safety procedures?', pg?.safety)}
+      ${triRow('Change — Adapted to presented changes?', pg?.changeAdaptability)}
+    </table>
+    <div class="comments"><strong>Comments (Preparatory Goals):</strong><br/>${esc(pg?.sectionComments || '')}</div>
+
+    <h3>Interests / Abilities</h3>
+    <table>
+      <tr>
+        <th style="width:60%">Assessment</th>
+        <th class="checkbox-cell">Yes</th>
+        <th class="checkbox-cell">NI</th>
+        <th class="checkbox-cell">N/A</th>
+      </tr>
+      ${triRow('Interests — Increased awareness of areas of interest?', ia?.interestsAwareness)}
+      ${triRow('Abilities — Increased awareness of talents/abilities?', ia?.abilitiesAwareness)}
+      ${triRow('Transferrable Skills — Understanding of transferrable skills?', ia?.transferableSkillsUnderstanding)}
+    </table>
+    <div class="comments"><strong>Comments (Interests/Abilities):</strong><br/>${esc(ia?.sectionComments || '')}</div>
+
+    <div class="note">I have worked with this program participant during classroom and/or production time and have made the above observations.</div>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top: 10px;">
+      <div class="field"><div class="label">Staff Assigned</div><div class="val">${esc(merged.staffing?.staffAssigned || '')}</div></div>
+      <div class="field"><div class="label">Staff Present (Names)</div><div class="val">${esc(staffNames)}</div></div>
+      <div class="field"><div class="label"># Staff Present</div><div class="val">${esc(merged.staffing?.staffPresentCount ?? '')}</div></div>
+      <div class="field"><div class="label"># Students Present</div><div class="val">${esc(merged.staffing?.studentsPresentCount ?? '')}</div></div>
+    </div>
+
+    <div class="signatures">
+      <div class="sig-box">
+        <div><strong>Instructor</strong></div>
+        <span class="line"></span>
+        <div>${esc(instructorSig?.name || '')}</div>
+        <div>Date: ${esc(fmtDate(instructorSig?.signedAt || ''))}</div>
+      </div>
+      <div class="sig-box">
+        <div><strong>Supervisor</strong></div>
+        <span class="line"></span>
+        <div>${esc(supervisorSig?.name || '')}</div>
+        <div>Date: ${esc(fmtDate(supervisorSig?.signedAt || ''))}</div>
+      </div>
+    </div>
+
+    <div class="footer">Generated by E3 Offline Template Editor — ${esc(merged.location)}</div>
+  </div>
+</body>
+</html>`;
+
+      return html;
+    }
+
+    // ===== UI Handlers =====
+    const $ = (id) => document.getElementById(id);
+
+    function loadExamples() {
+      const exampleProfile = {
+        "recordType": "E3ParticipantProfile",
+        "participantId": "13507",
+        "fullName": "Hodge, Scott",
+        "diagnosisCodes": ["F84.0", "F41.1", "F63.9"],
+        "program": "E3 Achievement – Generation E entrepreneurial curriculum & sublimation workshop",
+        "goalsStatement": "This course's focus is on understanding the world of business and discovering opportunities using the Generation E entrepreneurial curriculum and E3 Achievement's sublimation workshop. Scott will have the opportunity to learn hands-on how to develop his own line of sublimated products. He will be supported in learning about design, marketing, sales strategies, and customer service. E3 Achievement will offer Scott the opportunity to use photography, graphic design and sublimation equipment to get first-hand experience in the creation and sale of a product or service. This course will work with Scott in acquiring acceptable work habits (addressing absences, tardiness, teamwork, problem solving, positive attitude, working safely and increasing awareness of areas of interest / abilities).",
+        "defaultInstructor": "Chris Burdette",
+        "location": "Battle Creek, Michigan",
+        "batchId": "BATCH_A",
+        "createdAt": "2025-08-10T09:00:00-04:00",
+        "updatedAt": "2025-08-10T09:00:00-04:00"
+      };
+
+      const exampleDaily = {
+        "recordType": "E3DailyEvaluation",
+        "location": "Battle Creek, Michigan",
+        "participantId": "13507",
+        "participantName": "Hodge, Scott",
+        "diagnosisCodes": ["F84.0", "F41.1", "F63.9"],
+        "evalDate": "2025-08-10",
+        "timeIn": "09:00",
+        "timeOut": "12:00",
+        "totalUnits": 3,
+        "todaysFocus": "Product photography & safety refresher.",
+        "workHabits": {
+          "attendance": { "correctDayTime": "YES", "excessiveAbsences": "NO" },
+          "timeliness": { "arrivedOnTime": "YES", "excessiveTardiness": "NO" },
+          "hygiene": { "appropriatelyGroomed": "YES" },
+          "dress": { "appropriatelyDressed": "YES" },
+          "attitude": { "positiveAttitude": "YES" },
+          "sectionComments": "On task, positive and engaged."
+        },
+        "preparatoryGoals": {
+          "attentionSpan": "YES",
+          "followingDirections": { "simpleInstructions": "YES", "multiStepInstructions": "NI" },
+          "taskCompletion": { "stayedOnTask": "YES", "completedTask": "YES" },
+          "motorSkills": "YES",
+          "problemSolving": "NI",
+          "safety": "YES",
+          "changeAdaptability": "YES",
+          "sectionComments": "Needs more practice with multi-step procedures."
+        },
+        "interestsAbilities": {
+          "interestsAwareness": "YES",
+          "abilitiesAwareness": "YES",
+          "transferableSkillsUnderstanding": "NI",
+          "sectionComments": "Understands camera basics; continue exposure triangle practice."
+        },
+        "staffing": {
+          "staffAssigned": "Chris Burdette",
+          "staffPresentNames": ["Chris Burdette"],
+          "staffPresentCount": 1,
+          "studentsPresentCount": 6
+        },
+        "signatures": {
+          "instructor": { "name": "Chris Burdette", "signedAt": "2025-08-10T12:05:00-04:00" },
+          "supervisor": { "name": "Supervisor Name", "signedAt": "2025-08-10T12:10:00-04:00" }
+        }
+      };
+
+      $('profileInput').value = JSON.stringify(exampleProfile, null, 2);
+      $('dailyInput').value = JSON.stringify(exampleDaily, null, 2);
+      show('profileStatus', 'Loaded example profile JSON.', 'ok');
+      show('dailyStatus', 'Loaded example daily JSON.', 'ok');
+    }
+
+    function show(id, msg, kind = 'info') {
+      const el = $(id);
+      el.innerHTML = `<div class="alert ${kind}">${msg}</div>`;
+      setTimeout(() => { el.innerHTML = ''; }, 3500);
+    }
+
+    function parseJson(text, statusId, expectType /* optional */) {
+      if (!text || !text.trim()) { show(statusId, 'Empty input — this panel is optional.', 'info'); return null; }
+      try {
+        const obj = JSON.parse(text);
+        if (expectType && obj.recordType !== expectType) {
+          show(statusId, `Warning: recordType is "${obj.recordType}" (expected "${expectType}"). Proceeding anyway.`, 'info');
+        } else {
+          show(statusId, 'JSON parsed successfully.', 'ok');
+        }
+        return obj;
+      } catch (e) {
+        show(statusId, 'JSON error: ' + e.message, 'err');
+        throw e;
+      }
+    }
+
+    function generateFromInputs() {
+      let profile = null, daily = null;
+      try {
+        profile = parseJson($('profileInput').value, 'profileStatus', 'E3ParticipantProfile');
+        daily = parseJson($('dailyInput').value, 'dailyStatus', 'E3DailyEvaluation');
+      } catch { return; }
+
+      // Allow using a single combined JSON if user pastes only daily (with participantName/diagnosisCodes) or only profile
+      const html = generateE3HTML(daily || {}, profile || {});
+      $('htmlOutput').value = html;
+      show('htmlStatus', 'Template generated successfully!', 'ok');
+      preview();
+      persist();
+    }
+
+    function preview() {
+      const html = $('htmlOutput').value;
+      $('previewFrame').srcdoc = html ? html : "<h3 style='text-align:center; color:#666; margin-top:100px;'>Generate HTML to see preview</h3>";
+    }
+
+    function copyHTML() {
+      const el = $('htmlOutput');
+      if (!el.value) { show('htmlStatus', 'No HTML to copy.', 'err'); return; }
+      el.select();
+      document.execCommand('copy');
+      show('htmlStatus', 'HTML copied to clipboard!', 'ok');
+    }
+
+    function downloadHTML() {
+      const html = $('htmlOutput').value;
+      if (!html) { show('htmlStatus', 'No HTML to download.', 'err'); return; }
+
+      el.select(); document.execCommand('copy');
+      show('htmlStatus', 'HTML copied to clipboard!', 'ok');
+    }
+
+    
+    // Export Word (.doc) using MS Word-compatible HTML wrapper (offline)
+    function downloadWord() {
+      const html = $('htmlOutput').value;
+      if (!html) { show('htmlStatus', 'No HTML to export.', 'err'); return; }
+
+      try {
+        const parser = new DOMParser();
+        const parsed = parser.parseFromString(html, 'text/html');
+
+        // Replace checkboxes with visual symbols for Word
+        parsed.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+          const span = parsed.createElement('span');
+          span.textContent = cb.checked ? '☑' : '☐';
+          span.style.fontFamily = 'Arial, sans-serif';
+          cb.replaceWith(span);
+        });
+
+        const styles = Array.from(parsed.querySelectorAll('style')).map(s => s.innerHTML).join('
+');
+        const bodyContent = parsed.body.innerHTML;
+
+        const wordDoc = `<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+  <meta charset="utf-8">
+  <title>E3 Evaluation</title>
+  <!--[if gte mso 9]><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom><w:DoNotOptimizeForBrowser/></w:WordDocument></xml><![endif]-->
+  <style>
+    ${styles}
+    /* Ensure borders/spacing render well in Word */
+    table, th, td { border-collapse: collapse; }
+    body { margin: 1in; }
+  </style>
+</head>
+<body>
+  ${bodyContent}
+</body>
+</html>`;
+
+        const blob = new Blob([wordDoc], { type: 'application/msword' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'e3-evaluation.doc'; a.click();
+        URL.revokeObjectURL(url);
+        show('htmlStatus', 'Word (.doc) exported!', 'ok');
+      } catch (e) {
+        show('htmlStatus', 'Export failed: ' + e.message, 'err');
+      }
+    }
+      const blob = new Blob([html], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'e3-evaluation.html'; a.click();
+      URL.revokeObjectURL(url);
+      show('htmlStatus', 'Template downloaded!', 'ok');
+    }
+
+    // Export Word (.docx) using minimal DOCX (altChunk) packer
+    function downloadDocx() {
+      const html = $('htmlOutput').value;
+      if (!html) { show('htmlStatus', 'No HTML to export.', 'err'); return; }
+      try {
+        const prepared = prepareWordHtml(html); // full HTML with styles + checkbox symbols
+        const bytes = makeDocxFromHtml(prepared);
+        const blob = new Blob([bytes], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'e3-evaluation.docx'; a.click();
+        URL.revokeObjectURL(url);
+        show('htmlStatus', 'Word (.docx) exported!', 'ok');
+      } catch (e) {
+        show('htmlStatus', 'DOCX export failed: ' + e.message, 'err');
+      }
+    }
+
+    // Prepare HTML for Word export: replace checkboxes and inline styles
+    function prepareWordHtml(html) {
+      const parser = new DOMParser();
+      const parsed = parser.parseFromString(html, 'text/html');
+      parsed.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        const span = parsed.createElement('span');
+        span.textContent = cb.checked ? '☑' : '☐';
+        span.style.fontFamily = 'Arial, sans-serif';
+        cb.replaceWith(span);
+      });
+      const styles = Array.from(parsed.querySelectorAll('style')).map(s => s.innerHTML).join('
+');
+      const extra = 'table,th,td{border-collapse:collapse} body{margin:1in;}';
+      const docHtml = `<!DOCTYPE html><html><head><meta charset="utf-8"><style>${styles}
+${extra}</style></head><body>${parsed.body.innerHTML}</body></html>`;
+      return docHtml;
+    }
+
+    // --- Minimal ZIP (store method) + DOCX packaging ---
+    function makeDocxFromHtml(htmlString) {
+      const now = new Date();
+      const files = {
+        '[Content_Types].xml': `<?xml version="1.0" encoding="UTF-8"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+  <Default Extension="xml" ContentType="application/xml"/>
+  <Default Extension="html" ContentType="text/html"/>
+  <Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>
+</Types>`,
+        '_rels/.rels': `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+</Relationships>`,
+        'word/document.xml': `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <w:body>
+    <w:altChunk r:id="htmlChunk"/>
+    <w:sectPr/>
+  </w:body>
+</w:document>`,
+        'word/_rels/document.xml.rels': `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="htmlChunk" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/aFChunk" Target="afchunk.html"/>
+</Relationships>`,
+        'word/afchunk.html': htmlString
+      };
+      return makeStoredZip(files, now);
+    }
+
+    function makeStoredZip(filesObj, date) {
+      const enc = new TextEncoder();
+      const fileNames = Object.keys(filesObj);
+      const localParts = [];
+      const centralParts = [];
+      let offset = 0;
+
+      function dosTime(d) {
+        const yr = d.getFullYear() - 1980; const mo = d.getMonth() + 1; const da = d.getDate();
+        const hr = d.getHours(); const mi = d.getMinutes(); const se = Math.floor(d.getSeconds() / 2);
+        return { time: (hr << 11) | (mi << 5) | se, date: (yr << 9) | (mo << 5) | da };
+      }
+      function writeU16(view, pos, val) { view[pos] = val & 0xFF; view[pos+1] = (val >>> 8) & 0xFF; }
+      function writeU32(view, pos, val) { view[pos] = val & 0xFF; view[pos+1] = (val >>> 8) & 0xFF; view[pos+2] = (val >>> 16) & 0xFF; view[pos+3] = (val >>> 24) & 0xFF; }
+      function toBytes(str) { return (str instanceof Uint8Array) ? str : enc.encode(str); }
+
+      const when = dosTime(date || new Date());
+
+      const entries = [];
+      for (const name of fileNames) {
+        const data = toBytes(filesObj[name]);
+        const crc = crc32(data);
+        const nameBytes = enc.encode(name);
+        const localHeader = new Uint8Array(30 + nameBytes.length);
+        // Local file header
+        writeU32(localHeader, 0, 0x04034b50);
+        writeU16(localHeader, 4, 20); // version
+        writeU16(localHeader, 6, 0);  // flags
+        writeU16(localHeader, 8, 0);  // method: store
+        writeU16(localHeader,10, when.time);
+        writeU16(localHeader,12, when.date);
+        writeU32(localHeader,14, crc);
+        writeU32(localHeader,18, data.length);
+        writeU32(localHeader,22, data.length);
+        writeU16(localHeader,26, nameBytes.length);
+        writeU16(localHeader,28, 0); // extra len
+        localHeader.set(nameBytes, 30);
+
+        const local = concat(localHeader, data);
+        localParts.push(local);
+
+        const central = new Uint8Array(46 + nameBytes.length);
+        writeU32(central, 0, 0x02014b50); // central header
+        writeU16(central, 4, 20); // version made by
+        writeU16(central, 6, 20); // version needed
+        writeU16(central, 8, 0);  // flags
+        writeU16(central,10, 0);  // method
+        writeU16(central,12, when.time);
+        writeU16(central,14, when.date);
+        writeU32(central,16, crc);
+        writeU32(central,20, data.length);
+        writeU32(central,24, data.length);
+        writeU16(central,28, nameBytes.length);
+        writeU16(central,30, 0); // extra
+        writeU16(central,32, 0); // comment
+        writeU16(central,34, 0); // disk start
+        writeU16(central,36, 0); // int attrs
+        writeU32(central,38, 0); // ext attrs
+        writeU32(central,42, offset); // local header offset
+        central.set(nameBytes, 46);
+        centralParts.push(central);
+
+        offset += local.length;
+        entries.push({ name, size: data.length, crc });
+      }
+
+      const centralBlob = concat(...centralParts);
+      const end = new Uint8Array(22);
+      writeU32(end, 0, 0x06054b50);
+      writeU16(end, 4, 0); // disk
+      writeU16(end, 6, 0); // start disk
+      writeU16(end, 8, fileNames.length);
+      writeU16(end,10, fileNames.length);
+      writeU32(end,12, centralBlob.length);
+      writeU32(end,16, offset);
+      writeU16(end,20, 0); // comment len
+
+      return concat(...localParts, centralBlob, end);
+
+      function concat(...arrays) {
+        const len = arrays.reduce((n,a)=>n+a.length,0);
+        const out = new Uint8Array(len); let p=0; for (const a of arrays){ out.set(a, p); p+=a.length; } return out;
+      }
+    }
+
+    // CRC-32 (IEEE 802.3) for ZIP
+    const CRC_TABLE = (() => {
+      let c; const table = new Uint32Array(256);
+      for (let n=0; n<256; n++) { c = n; for (let k=0; k<8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1); table[n] = c >>> 0; }
+      return table;
+    })();
+    function crc32(bytes) {
+      let crc = 0 ^ (-1);
+      for (let i=0; i<bytes.length; i++) crc = (crc >>> 8) ^ CRC_TABLE[(crc ^ bytes[i]) & 0xFF];
+      return (crc ^ (-1)) >>> 0;
+    }
+
+    function clearAll() {
+      $('profileInput').value = '';
+      $('dailyInput').value = '';
+      $('htmlOutput').value = '';
+      $('previewFrame').srcdoc = "<h3 style='text-align:center; color:#666; margin-top:100px;'>Preview will appear here</h3>";
+      show('profileStatus', 'Profile panel cleared.', 'ok');
+      show('dailyStatus', 'Daily panel cleared.', 'ok');
+      show('htmlStatus', 'Output cleared.', 'ok');
+      persist();
+    }
+
+    // ===== Persistence =====
+    function persist() {
+      localStorage.setItem('e3_profile_json', $('profileInput').value || '');
+      localStorage.setItem('e3_daily_json', $('dailyInput').value || '');
+      localStorage.setItem('e3_html', $('htmlOutput').value || '');
+    }
+
+    function hydrate() {
+      const p = localStorage.getItem('e3_profile_json') || '';
+      const d = localStorage.getItem('e3_daily_json') || '';
+      const h = localStorage.getItem('e3_html') || '';
+      if (p) $('profileInput').value = p;
+      if (d) $('dailyInput').value = d;
+      if (h) { $('htmlOutput').value = h; preview(); }
+    }
+
+    window.addEventListener('load', hydrate);
+    setInterval(persist, 3000);
+  </script>
+</body>
+</html>

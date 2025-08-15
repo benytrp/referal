@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iterative Refinement — Offline Translator (Debugged)</title>
+  <style>
+    :root{
+      --bg:#0b0d10; --panel:#12151a; --muted:#7b8496; --text:#eaf0ff; --accent:#7aa2ff; --accent-2:#9dffb0; --warn:#ffcf6b; --danger:#ff7a90;
+      --border:#1f2530; --card:#121720; --shadow:0 8px 24px rgba(0,0,0,.35);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --round: 16px;
+    }
+    [data-theme="light"]{
+      --bg:#f7f9fc; --panel:#ffffff; --muted:#5b6372; --text:#0b0d10; --accent:#2a64ff; --accent-2:#0aa86f; --warn:#b17a00; --danger:#b81c36;
+      --border:#e7ebf3; --card:#fbfcff; --shadow:0 8px 24px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; background:var(--bg); color:var(--text); font: 15px/1.45 Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+
+    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(1.2) blur(8px); background:linear-gradient(0deg, transparent, rgba(0,0,0,.15));}
+    .wrap{max-width:1100px; margin:0 auto; padding:22px}
+    .panel{background:var(--panel); border:1px solid var(--border); border-radius:var(--round); box-shadow:var(--shadow)}
+
+    .grid{display:grid; gap:16px}
+    .g-2{grid-template-columns:1fr 1fr}
+    .g-3{grid-template-columns:1.3fr 1fr 1fr}
+    @media (max-width:980px){.g-2,.g-3{grid-template-columns:1fr}}
+
+    textarea{width:100%; min-height:220px; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:12px; padding:12px; font-family:var(--mono); font-size:13px}
+    pre.code{white-space:pre-wrap; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; font-family:var(--mono); overflow:auto}
+    table{width:100%; border-collapse:collapse; font-size:13px}
+    th,td{padding:8px 10px; border-bottom:1px solid var(--border); vertical-align:top}
+    th{color:var(--muted); text-align:left}
+    tr:hover td{background:rgba(122,162,255,.06)}
+
+    .btn{display:inline-flex; gap:8px; align-items:center; border:1px solid var(--border); background:var(--card); color:var(--text); padding:10px 14px; border-radius:12px; cursor:pointer; text-decoration:none; user-select:none}
+    .btn:hover{border-color:var(--accent)}
+    .btn.primary{background:linear-gradient(180deg, rgba(122,162,255,.15), rgba(122,162,255,.08)); border-color:rgba(122,162,255,.55)}
+    .btn.ghost{background:transparent}
+    .row{display:flex; flex-wrap:wrap; gap:10px; align-items:center}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid var(--border); background:var(--card); font-size:12px}
+    .ok{color:var(--accent-2)}
+    .warn{color:var(--warn)}
+    .err{color:var(--danger)}
+
+    .timeline{position:relative; margin:8px 0 0 0; padding-left:16px}
+    .tl-item{position:relative; padding-left:18px; margin:12px 0}
+    .tl-item:before{content:""; position:absolute; left:0; top:0.45em; width:10px; height:10px; border-radius:50%; background:var(--accent)}
+    .tl-item:after{content:""; position:absolute; left:4px; top:1.3em; width:2px; bottom:-12px; background:var(--border)}
+    .tl-item:last-child:after{display:none}
+
+    .split{display:grid; grid-template-columns: 1fr; gap:16px}
+    @media (min-width:1100px){ .split{grid-template-columns: 1.2fr .8fr} }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap row">
+    <strong>Iterative Refinement — Offline Translator</strong>
+    <span class="badge">debugged build</span>
+    <span style="flex:1"></span>
+    <button class="btn" id="themeBtn" type="button" title="Toggle theme">🌓 Theme</button>
+  </div>
+</header>
+
+<main class="wrap grid g-2">
+  <section class="panel" style="padding:16px">
+    <div class="row" style="justify-content:space-between">
+      <h3 style="margin:6px 0">Input</h3>
+      <div class="row">
+        <label class="row" style="gap:6px"><input type="checkbox" id="lenient"/> <span class="muted">Lenient parse</span></label>
+        <label class="row" style="gap:6px"><input type="checkbox" id="sortByCycle" checked/> <span class="muted">Sort by cycle</span></label>
+        <label class="row" style="gap:6px"><input type="checkbox" id="dedupe" checked/> <span class="muted">De‑dupe by hash</span></label>
+      </div>
+    </div>
+    <textarea id="raw" placeholder="Paste your raw session data here — the tool will extract the first JSON array automatically."></textarea>
+    <div class="row" style="margin-top:10px">
+      <button class="btn primary" id="parseBtn" type="button">Parse & Render</button>
+      <button class="btn" id="sampleBtn" type="button">Load Sample</button>
+      <button class="btn" id="clearBtn" type="button">Clear</button>
+    </div>
+    <div id="err" class="muted" style="margin-top:8px; white-space:pre-wrap"></div>
+  </section>
+
+  <section class="panel split" style="padding:16px">
+    <div>
+      <div class="row" style="justify-content:space-between">
+        <h3 style="margin:6px 0">Rendered</h3>
+        <div class="row">
+          <span id="stats" class="muted"></span>
+        </div>
+      </div>
+      <div id="timeline" class="timeline"></div>
+      <div style="margin-top:14px; overflow:auto">
+        <table id="tbl"></table>
+      </div>
+    </div>
+    <div>
+      <div class="row" style="justify-content:space-between">
+        <h3 style="margin:6px 0">Markdown</h3>
+        <div class="row">
+          <button class="btn" id="copyMdBtn" type="button">Copy Markdown</button>
+          <button class="btn" id="dlMdBtn" type="button">Download .md</button>
+          <button class="btn" id="snapshotBtn" type="button" title="Download a self‑contained HTML with your current data">Snapshot (HTML)</button>
+        </div>
+      </div>
+      <pre id="md" class="code"></pre>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  const $ = sel => document.querySelector(sel);
+  const rawEl = $('#raw');
+  const errEl = $('#err');
+  const statsEl = $('#stats');
+  const tlEl = $('#timeline');
+  const tblEl = $('#tbl');
+  const mdEl = $('#md');
+
+  const state = { items: [], md: '' };
+
+  // THEME
+  $('#themeBtn').addEventListener('click', () => {
+    const root = document.documentElement;
+    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+  });
+
+  // SAMPLE DATA
+  const sample = [
+    { "cycle": 1, "phase": "Summon", "op": "analyze_goal", "output": "Interpret the primary goal: \"Co-write a short story about 'meta-cognition' and 'recursive loops'.\"", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.075Z", "entropy": 0.9889039115262395, "contested": false, "hash_of_entry": "1ceb678f3b0d349e8f38101c2bd88de5438275ff66f31aa80aa705a63ff7472e" },
+    { "cycle": 2, "phase": "Processing", "op": "list_constraints", "output": "Acknowledge constraints: [\"<500 words.\",\"Use glyphs: '∞', 'φ', '∴'.\"]", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.182Z", "entropy": 0.7483837662038213, "contested": false, "hash_of_entry": "702304c83ab1a0ee63f70e7bcb1c2bae4be1e607798941b44feffac11f48005f" },
+    { "cycle": 3, "phase": "Processing", "op": "formulate_plan", "output": "Develop a high-level execution strategy.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.283Z", "entropy": 0.3840690466304232, "contested": false, "hash_of_entry": "bd3b941c0546fdfe81dadbc8f84c4721f99286c85623b206f9ad856c1f83662f" },
+    { "cycle": 4, "phase": "Processing", "op": "develop_characters", "output": "Flesh out the motivations for The Courier and The Architect.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.383Z", "entropy": 0.4659609497967585, "contested": false, "hash_of_entry": "6873d830afa9253acc12da42b089edb4dc55433cfa9ca0c6445488c57f9b7e19" },
+    { "cycle": 5, "phase": "Processing", "op": "write_opening_scene", "output": "Draft the initial scene introducing the core conflict and the glyphs ∞, φ, ∴.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.483Z", "entropy": 0.5052336698761021, "contested": false, "hash_of_entry": "d6cdbb3ae3ab40a1d5caa55ae33f036213709d3d442ee7a7f0ebaeb08491b73c" },
+    { "cycle": 6, "phase": "Echo", "op": "finalize_output", "output": "Consolidate results and prepare for final output.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.583Z", "entropy": 0.7211190494088391, "contested": false, "hash_of_entry": "623ff05e685fa8386990311c3068860da345eb42d6c4158cf5702f645eb193f6" }
+  ];
+
+  $('#sampleBtn').addEventListener('click', () => {
+    rawEl.value = JSON.stringify(sample, null, 2);
+    errEl.textContent = '';
+  });
+
+  $('#clearBtn').addEventListener('click', () => {
+    rawEl.value = '';
+    tlEl.innerHTML = '';
+    tblEl.innerHTML = '';
+    mdEl.textContent = '';
+    statsEl.textContent = '';
+    errEl.textContent = '';
+    state.items = [];
+  });
+
+  // Robust extraction: finds the first JSON array, ignoring brackets inside strings/escapes.
+  function extractFirstJSONArray(text){
+    let i = text.indexOf('[');
+    if (i === -1) throw new Error('No JSON array found.');
+    let depth = 0, inStr = false, esc = false;
+    for (let j = i; j < text.length; j++){
+      const ch = text[j];
+      if (inStr){
+        if (esc){ esc = false; }
+        else if (ch === '\\'){ esc = true; }
+        else if (ch === '"'){ inStr = false; }
+      } else {
+        if (ch === '"') { inStr = true; }
+        else if (ch === '[') { if (depth === 0) i = (i === -1 ? j : i); depth++; }
+        else if (ch === ']') { depth--; if (depth === 0){ const slice = text.slice(i, j+1); return JSON.parse(slice); } }
+      }
+    }
+    throw new Error('Unbalanced brackets; could not locate full JSON array.');
+  }
+
+  function tryLenient(text){
+    // Trim leading "```" fences and common wrappers.
+    text = text.replace(/^```[a-zA-Z]*\n?|```$/g, '');
+    // Replace smart quotes with straight quotes.
+    text = text.replace(/[“”]/g,'"').replace(/[‘’]/g,"'");
+    // Attempt extraction; if it fails, last resort: locate substring between first '[' and last ']'.
+    try { return extractFirstJSONArray(text); } catch(e) {}
+    const a = text.indexOf('['), b = text.lastIndexOf(']');
+    if (a !== -1 && b !== -1 && b > a){
+      try { return JSON.parse(text.slice(a, b+1)); } catch(e) {}
+    }
+    throw new Error('Lenient parse failed. Ensure the input contains a valid JSON array.');
+  }
+
+  function parseInput(){
+    const t = rawEl.value.trim();
+    if (!t) throw new Error('Nothing to parse. Paste your session data first.');
+    if ($('#lenient').checked){ return tryLenient(t); }
+    try {
+      // If raw is a plain array, parse directly; else try robust extractor.
+      const firstChar = t.trim()[0];
+      if (firstChar === '[') return JSON.parse(t);
+      return extractFirstJSONArray(t);
+    } catch(e){
+      // Offer lenient retry hint
+      e.message += ' (Tip: enable "Lenient parse" and try again.)';
+      throw e;
+    }
+  }
+
+  function fmtTime(iso){
+    try { const d = new Date(iso); return d.toLocaleString(); } catch(e){ return String(iso); }
+  }
+
+  function byCycle(a,b){ return Number(a.cycle||0) - Number(b.cycle||0); }
+
+  function uniqueBy(arr, key){
+    const seen = new Set();
+    const out = [];
+    for (const it of arr){
+      const k = it[key];
+      if (k && !seen.has(k)) { seen.add(k); out.push(it); }
+      if (!k) out.push(it);
+    }
+    return out;
+  }
+
+  function render(items){
+    // Stats
+    const phases = new Set(items.map(x=>x.phase));
+    const contested = items.filter(x=>x.contested).length;
+    statsEl.textContent = `${items.length} entries • ${phases.size} phases • ${contested} contested`;
+
+    // Timeline
+    tlEl.innerHTML = items.map(x=> {
+      return `<div class="tl-item">
+        <div><strong>Cycle ${x.cycle ?? '?'} — ${escapeHtml(x.phase||'')}</strong> <span class="badge">${escapeHtml(x.op||'')}</span></div>
+        <div class="muted">${fmtTime(x.timestamp||'')} • entropy ${typeof x.entropy==='number'?x.entropy.toFixed(3):escapeHtml(String(x.entropy||''))} ${x.contested?'<span class="badge err">contested</span>':''}</div>
+        <div>${escapeHtml(x.output||'')}</div>
+      </div>`;
+    }).join('');
+
+    // Table
+    const head = `<tr><th>cycle</th><th>phase</th><th>op</th><th>output</th><th>entropy</th><th>contested</th><th>timestamp</th></tr>`;
+    const rows = items.map(x=> `<tr>
+      <td>${escapeHtml(String(x.cycle||''))}</td>
+      <td>${escapeHtml(x.phase||'')}</td>
+      <td>${escapeHtml(x.op||'')}</td>
+      <td>${escapeHtml(x.output||'')}</td>
+      <td>${typeof x.entropy==='number'?x.entropy.toFixed(6):escapeHtml(String(x.entropy||''))}</td>
+      <td>${x.contested? 'true' : 'false'}</td>
+      <td>${escapeHtml(String(x.timestamp||''))}</td>
+    </tr>`).join('');
+    tblEl.innerHTML = head + rows;
+
+    // Markdown
+    mdEl.textContent = toMarkdown(items);
+    state.items = items;
+    state.md = mdEl.textContent;
+  }
+
+  function toMarkdown(items){
+    const lines = [];
+    lines.push('## This iterative process of refinement');
+    lines.push('');
+    for (const x of items){
+      lines.push(`- **Cycle ${x.cycle ?? '?'}** — ${x.phase||''} · ${x.op||''}`);
+      if (x.output) lines.push(`  - _Output:_ ${x.output.replace(/\n/g,' ')}`);
+      const meta = [];
+      if (x.timestamp) meta.push(`time: ${x.timestamp}`);
+      if (typeof x.entropy !== 'undefined') meta.push(`entropy: ${x.entropy}`);
+      if (typeof x.contested !== 'undefined') meta.push(`contested: ${x.contested}`);
+      if (meta.length) lines.push('  - ' + meta.join(' · '));
+    }
+    lines.push('');
+    return lines.join('\n');
+  }
+
+  function escapeHtml(s){
+    return String(s)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/\"/g,'&quot;')
+      .replace(/'/g,'&#39;');
+  }
+
+  async function copyToClipboard(text){
+    try{
+      await navigator.clipboard.writeText(text);
+      toast('Copied to clipboard.');
+    }catch(e){
+      // Fallback for file:// or denied permissions
+      try{
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta);
+        toast('Copied (fallback).');
+      }catch(err){ toast('Copy failed: ' + err.message, true); }
+    }
+  }
+
+  function download(filename, text){
+    const blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 1000);
+  }
+
+  function escapeScript(s){ return s.replace(/<\/-*script/gi, '<\\/script'); }
+
+  function snapshot(){
+    const data = state.items && state.items.length ? state.items : null;
+    const md = state.md || '';
+    const html = `<!doctype html><html lang="en">\n<head>\n<meta charset="utf-8"/>\n<title>Iterative Refinement — Snapshot</title>\n</head>\n<body>\n<pre>${escapeHtml(md)}</pre>\n<script>window.__DATA__ = ${data ? escapeScript(JSON.stringify(data)) : 'null'};<\/script>\n</body></html>`;
+    download('iterative_refinement_snapshot.html', html);
+  }
+
+  function toast(msg, isErr){ errEl.textContent = msg; errEl.style.color = isErr ? 'var(--danger)' : 'var(--muted)'; }
+
+  // BUTTONS
+  $('#parseBtn').addEventListener('click', () => {
+    errEl.textContent = '';
+    try{
+      let items = parseInput();
+      if (!Array.isArray(items)) throw new Error('Parsed payload is not an array.');
+      // Normalize types and keys
+      items = items.map(x=>({
+        cycle: Number(x.cycle ?? x.CYCLE ?? x.id ?? 0),
+        phase: x.phase || x.PHASE || '',
+        op: x.op || x.operation || '',
+        output: x.output || x.result || '',
+        contract_ref: x.contract_ref || '',
+        timestamp: x.timestamp || x.time || '',
+        entropy: typeof x.entropy === 'number' ? x.entropy : (x.entropy ? Number(x.entropy) : undefined),
+        contested: Boolean(x.contested),
+        hash_of_entry: x.hash_of_entry || x.hash || ''
+      }));
+      if ($('#dedupe').checked) items = uniqueBy(items, 'hash_of_entry');
+      if ($('#sortByCycle').checked) items.sort(byCycle);
+      render(items);
+    }catch(e){
+      errEl.textContent = 'Error: ' + e.message;
+      tlEl.innerHTML = ''; tblEl.innerHTML=''; mdEl.textContent=''; statsEl.textContent='';
+    }
+  });
+
+  $('#copyMdBtn').addEventListener('click', ()=> copyToClipboard(mdEl.textContent || ''));
+  $('#dlMdBtn').addEventListener('click', ()=> download('iterative_refinement.md', mdEl.textContent || ''));
+  $('#snapshotBtn').addEventListener('click', snapshot);
+
+  // If the snapshot embeds __DATA__, hydrate on load
+  try{
+    if (Array.isArray(window.__DATA__)){
+      rawEl.value = JSON.stringify(window.__DATA__, null, 2);
+      document.getElementById('parseBtn').click();
+    }
+  }catch(_){/* ignore */}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iterative Refinement — Offline Translator</title>
+  <style>
+    :root{
+      --bg:#0b0d10; --panel:#12151a; --muted:#7b8496; --text:#eaf0ff; --accent:#7aa2ff; --accent-2:#9dffb0; --warn:#ffcf6b; --danger:#ff7a90;
+      --border:#1f2530; --card:#121720; --shadow:0 8px 24px rgba(0,0,0,.35);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --round: 16px;
+    }
+    [data-theme="light"]{
+      --bg:#f7f9fc; --panel:#ffffff; --muted:#5b6372; --text:#0b0d10; --accent:#2a64ff; --accent-2:#0aa86f; --warn:#b17a00; --danger:#b81c36;
+      --border:#e7ebf3; --card:#fbfcff; --shadow:0 8px 24px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; background:var(--bg); color:var(--text); font: 15px/1.48 Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+
+    header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(1.2) blur(8px); background:linear-gradient(0deg, transparent, rgba(0,0,0,.15));}
+    .wrap{max-width:1100px; margin:0 auto; padding:22px}
+    .panel{background:var(--panel); border:1px solid var(--border); border-radius:var(--round); box-shadow:var(--shadow)}
+
+    .grid{display:grid; gap:16px}
+    .g-2{grid-template-columns:1fr 1fr}
+    .g-3{grid-template-columns:1.5fr 1fr 1fr}
+    @media (max-width:980px){.g-2,.g-3{grid-template-columns:1fr}}
+
+    textarea{width:100%; min-height:240px; background:var(--card); color:var(--text); border:1px solid var(--border); border-radius:12px; padding:12px; font-family:var(--mono); font-size:13px}
+    pre.code{white-space:pre-wrap; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; font-family:var(--mono); overflow:auto}
+    .btn{display:inline-flex; gap:8px; align-items:center; border:1px solid var(--border); background:var(--card); color:var(--text); padding:10px 14px; border-radius:12px; cursor:pointer; text-decoration:none; user-select:none}
+    .btn:hover{border-color:var(--accent)}
+    .btn.primary{background:linear-gradient(180deg, rgba(122,162,255,.15), rgba(122,162,255,.08)); border-color:rgba(122,162,255,.55)}
+    .btn.ghost{background:transparent}
+    .toolbar{display:flex; flex-wrap:wrap; gap:10px}
+
+    .section{padding:16px}
+    h1,h2,h3{margin:0 0 12px 0}
+    small.muted{color:var(--muted)}
+
+    .timeline{display:grid; gap:12px; padding:8px}
+    .item{display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:start}
+    .dot{width:12px; height:12px; border-radius:50%; background:var(--accent); margin-top:6px}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px}
+
+    table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden}
+    thead th{background:linear-gradient(180deg, rgba(122,162,255,.08), rgba(122,162,255,.02)); text-align:left; padding:10px; font-weight:600; border-bottom:1px solid var(--border)}
+    tbody td{padding:10px; border-bottom:1px dashed var(--border); vertical-align:top}
+    tbody tr:last-child td{border-bottom:none}
+    code.k{font-family:var(--mono); background:rgba(255,255,255,.06); padding:2px 6px; border-radius:8px}
+
+    .statbar{display:flex; gap:12px; flex-wrap:wrap}
+    .stat{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:10px 12px}
+
+    .error{color:var(--danger)}
+    .ok{color:var(--accent-2)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="grid g-3">
+        <div>
+          <h1>Iterative Refinement — Offline Translator</h1>
+          <small class="muted">Paste raw session data (with or without extra text). I’ll extract the first matching JSON array of cycles.</small>
+        </div>
+        <div class="toolbar" style="justify-content:flex-end; align-self:center">
+          <button class="btn" id="themeBtn" title="Toggle theme">🌗 Theme</button>
+          <button class="btn" id="sampleBtn" title="Load sample">📥 Load Sample</button>
+          <button class="btn" id="clearBtn" title="Clear input">🧹 Clear</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid g-2">
+      <section class="panel section">
+        <h2>1) Paste Raw Session Data</h2>
+        <textarea id="raw" placeholder="Paste the whole block here…"></textarea>
+        <div class="toolbar" style="margin-top:12px">
+          <button class="btn primary" id="parseBtn">🔎 Parse & Render</button>
+          <button class="btn" id="copyMdBtn" disabled>📋 Copy Markdown</button>
+          <button class="btn" id="dlMdBtn" disabled>💾 Download Markdown</button>
+          <button class="btn" id="dlHtmlBtn" disabled>🗂️ Download Snapshot HTML</button>
+        </div>
+        <div id="status" class="section" style="padding:10px 0 0 0"></div>
+      </section>
+
+      <section class="panel section">
+        <h2>2) Markdown Output</h2>
+        <pre class="code" id="md"></pre>
+      </section>
+    </div>
+
+    <div class="grid g-2" style="margin-top:16px">
+      <section class="panel section">
+        <h2>Timeline</h2>
+        <div id="timeline" class="timeline"></div>
+      </section>
+      <section class="panel section">
+        <h2>Table</h2>
+        <div class="statbar" id="stats"></div>
+        <div style="margin-top:12px; overflow:auto">
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Cycle</th>
+                <th>Phase</th>
+                <th>Op</th>
+                <th>Contested</th>
+                <th>Entropy</th>
+                <th>Timestamp</th>
+                <th>Hash</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // --- Theme ---
+    (function(){
+      const html = document.documentElement;
+      const saved = localStorage.getItem('ir_theme');
+      if(saved){ html.setAttribute('data-theme', saved); }
+      document.getElementById('themeBtn').addEventListener('click', ()=>{
+        const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('ir_theme', next);
+      });
+    })();
+
+    // --- Sample data ---
+    const SAMPLE = `[
+  { "cycle": 1, "phase": "Summon", "op": "analyze_goal", "output": "Interpret the primary goal: \"Co-write a short story about 'meta-cognition' and 'recursive loops'.\"", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.075Z", "entropy": 0.9889039115262395, "contested": false, "hash_of_entry": "1ceb678f3b0d349e8f38101c2bd88de5438275ff66f31aa80aa705a63ff7472e" },
+  { "cycle": 2, "phase": "Processing", "op": "list_constraints", "output": "Acknowledge constraints: [\"<500 words.\",\"Use glyphs: '∞', 'φ', '∴'.\"]", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.182Z", "entropy": 0.7483837662038213, "contested": false, "hash_of_entry": "702304c83ab1a0ee63f70e7bcb1c2bae4be1e607798941b44feffac11f48005f" },
+  { "cycle": 3, "phase": "Processing", "op": "formulate_plan", "output": "Develop a high-level execution strategy.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.283Z", "entropy": 0.3840690466304232, "contested": false, "hash_of_entry": "bd3b941c0546fdfe81dadbc8f84c4721f99286c85623b206f9ad856c1f83662f" },
+  { "cycle": 4, "phase": "Processing", "op": "develop_characters", "output": "Flesh out the motivations for The Courier and The Architect.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.383Z", "entropy": 0.4659609497967585, "contested": false, "hash_of_entry": "6873d830afa9253acc12da42b089edb4dc55433cfa9ca0c6445488c57f9b7e19" },
+  { "cycle": 5, "phase": "Processing", "op": "write_opening_scene", "output": "Draft the initial scene introducing the core conflict and the glyphs ∞, φ, ∴.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.483Z", "entropy": 0.5052336698761021, "contested": false, "hash_of_entry": "d6cdbb3ae3ab40a1d5caa55ae33f036213709d3d442ee7a7f0ebaeb08491b73c" },
+  { "cycle": 6, "phase": "Echo", "op": "finalize_output", "output": "Consolidate results and prepare for final output.", "contract_ref": "simulated_task", "timestamp": "2025-08-09T21:24:43.583Z", "entropy": 0.7211190494088391, "contested": false, "hash_of_entry": "623ff05e685fa8386990311c3068860da345eb42d6c4158cf5702f645eb193f6" }
+]`;
+
+    // --- Utilities ---
+    const $ = (sel)=>document.querySelector(sel);
+    const escapeMd = (s)=>String(s).replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+    function humanTs(ts){
+      try{ return new Date(ts).toISOString().replace('T',' ').replace('Z','Z'); }
+      catch{ return String(ts); }
+    }
+
+    function summaryStats(rows){
+      const n = rows.length;
+      const contested = rows.filter(r=>r.contested===true).length;
+      const entropies = rows.map(r=>Number(r.entropy)).filter(v=>Number.isFinite(v));
+      const ent = entropies.length ? {
+        min: Math.min(...entropies), max: Math.max(...entropies), avg: entropies.reduce((a,b)=>a+b,0)/entropies.length
+      } : null;
+      const times = rows.map(r=>Date.parse(r.timestamp)).filter(v=>!Number.isNaN(v));
+      const start = times.length ? new Date(Math.min(...times)).toISOString() : null;
+      const end   = times.length ? new Date(Math.max(...times)).toISOString() : null;
+      return {n, contested, ent, start, end};
+    }
+
+    // Extract first JSON array from arbitrary text; be string/escape aware.
+    function extractFirstJsonArray(text){
+      // If page saved a prior run, prefer it
+      if (window.__SAVED_RAW && !text.trim()) text = window.__SAVED_RAW;
+      const s = text;
+      let inStr=false, strQ=''; let esc=false; let depth=0; let start=-1;
+      for(let i=0;i<s.length;i++){
+        const c = s[i];
+        if(inStr){
+          if(esc){ esc=false; continue; }
+          if(c==='\\'){ esc=true; continue; }
+          if(c===strQ){ inStr=false; continue; }
+          continue;
+        }
+        if(c==='"' || c==='\''){ inStr=true; strQ=c; continue; }
+        if(c==='['){ if(depth===0) start=i; depth++; continue; }
+        if(c===']'){ if(depth>0){ depth--; if(depth===0 && start>=0){
+          const candidate = s.slice(start, i+1);
+          try{
+            const parsed = JSON.parse(candidate);
+            if(Array.isArray(parsed)) return parsed;
+          }catch(e){ /* keep scanning */ }
+        } }
+      }
+      throw new Error('No valid JSON array found in the input.');
+    }
+
+    function normalizeRows(arr){
+      if(!Array.isArray(arr)) throw new Error('Parsed payload is not an array.');
+      // de-dupe by hash_of_entry if present
+      const seen = new Set();
+      const rows = [];
+      for(const r of arr){
+        const id = r && (r.hash_of_entry || JSON.stringify([r.cycle,r.phase,r.op,r.timestamp]));
+        if(seen.has(id)) continue; seen.add(id);
+        rows.push(r);
+      }
+      // prefer sort by numeric cycle then timestamp
+      rows.sort((a,b)=>{
+        const ac = Number(a.cycle); const bc = Number(b.cycle);
+        if(Number.isFinite(ac) && Number.isFinite(bc) && ac!==bc) return ac-bc;
+        const at = Date.parse(a.timestamp)||0; const bt = Date.parse(b.timestamp)||0;
+        return at-bt;
+      });
+      return rows;
+    }
+
+    function toMarkdown(rows){
+      const stats = summaryStats(rows);
+      const lines = [];
+      lines.push('# This iterative process of refinement');
+      lines.push('');
+      const windowStr = (stats.start && stats.end) ? `${stats.start} — ${stats.end}` : 'n/a';
+      lines.push(`**Cycles:** ${stats.n} | **Contested:** ${stats.contested} | **Time window:** ${windowStr}`);
+      if(stats.ent){
+        lines.push(` | **Entropy avg:** ${stats.ent.avg.toFixed(3)} (min ${stats.ent.min.toFixed(3)}, max ${stats.ent.max.toFixed(3)})`);
+      }
+      lines.push('');
+      rows.forEach((r, idx)=>{
+        const title = `**Cycle ${r.cycle ?? (idx+1)} — ${r.phase ?? 'Unknown'} / ${r.op ?? 'op'}**`;
+        lines.push(`${idx+1}. ${title}`);
+        if(r.output) lines.push(`   - Output: ${escapeMd(r.output)}`);
+        if(r.contract_ref) lines.push(`   - Contract: ${escapeMd(r.contract_ref)}`);
+        if(r.entropy!==undefined) lines.push(`   - Entropy: ${r.entropy}`);
+        lines.push(`   - Contested: ${Boolean(r.contested)}`);
+        if(r.timestamp) lines.push(`   - Timestamp: ${humanTs(r.timestamp)}`);
+        if(r.hash_of_entry) lines.push(`   - Hash: \\`${r.hash_of_entry}\\``);
+        lines.push('');
+      });
+      return lines.join('\n');
+    }
+
+    function renderTimeline(rows){
+      const host = document.getElementById('timeline');
+      host.innerHTML = '';
+      rows.forEach(r=>{
+        const el = document.createElement('div'); el.className='item';
+        const dot = document.createElement('div'); dot.className='dot';
+        const body = document.createElement('div'); body.className='card';
+        body.innerHTML = `<div style="display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap">
+          <strong>Cycle ${r.cycle ?? ''} • ${r.phase ?? ''} • <span class="muted">${r.op ?? ''}</span></strong>
+          <span class="muted">${r.timestamp ? humanTs(r.timestamp) : ''}</span>
+        </div>
+        <div style="margin-top:6px">${(r.output? escapeHtml(r.output) : '')}</div>
+        <div style="margin-top:6px; display:flex; gap:10px; flex-wrap:wrap">
+          <span class="muted">Entropy: ${r.entropy ?? '—'}</span>
+          <span class="${r.contested? 'error':'ok'}">${r.contested? 'Contested' : 'Not contested'}</span>
+        </div>`;
+        el.appendChild(dot); el.appendChild(body); host.appendChild(el);
+      });
+    }
+
+    function renderTable(rows){
+      const tb = document.querySelector('#table tbody');
+      tb.innerHTML='';
+      for(const r of rows){
+        const tr = document.createElement('tr');
+        const tds = [r.cycle, r.phase, r.op, String(r.contested), r.entropy, r.timestamp? humanTs(r.timestamp):'', (r.hash_of_entry||'').slice(0,12)+ (r.hash_of_entry? '…':'')];
+        tds.forEach(v=>{ const td=document.createElement('td'); td.textContent = (v===undefined||v===null)? '' : String(v); tr.appendChild(td); });
+        tb.appendChild(tr);
+      }
+    }
+
+    function renderStats(rows){
+      const s = summaryStats(rows); const host = document.getElementById('stats'); host.innerHTML='';
+      const mk = (label,val)=>{ const d=document.createElement('div'); d.className='stat'; d.innerHTML = `<div class="muted" style="font-size:12px">${label}</div><div style="font-weight:600">${val}</div>`; return d; };
+      host.appendChild(mk('Cycles', s.n));
+      host.appendChild(mk('Contested', s.contested));
+      if(s.ent){ host.appendChild(mk('Entropy avg', s.ent.avg.toFixed(3))); host.appendChild(mk('Entropy range', `${s.ent.min.toFixed(3)}–${s.ent.max.toFixed(3)}`)); }
+      if(s.start && s.end){ host.appendChild(mk('Window', `${s.start.split('T')[1]?.replace('Z','Z')||s.start} → ${s.end.split('T')[1]?.replace('Z','Z')||s.end}`)); }
+    }
+
+    function escapeHtml(s){
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    }
+
+    function setButtons(enabled){
+      ['copyMdBtn','dlMdBtn','dlHtmlBtn'].forEach(id=>{ const b=document.getElementById(id); b.disabled = !enabled; b.classList.toggle('primary', enabled && id==='dlHtmlBtn'); });
+    }
+
+    async function copyToClipboard(text){
+      try{ await navigator.clipboard.writeText(text); return true; }
+      catch(e){
+        // Fallback
+        const ta=document.createElement('textarea'); ta.style.position='fixed'; ta.value=text; document.body.appendChild(ta); ta.select();
+        try{ document.execCommand('copy'); return true; } finally { document.body.removeChild(ta); }
+      }
+    }
+
+    function download(filename, content, type='text/plain'){
+      const blob = new Blob([content], {type});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = filename; a.click();
+      setTimeout(()=>URL.revokeObjectURL(url), 2000);
+    }
+
+    function makeSnapshotHtml(rawText){
+      const doc = document.documentElement.cloneNode(true);
+      // inject saved data
+      const script = document.createElement('script');
+      script.textContent = `window.__SAVED_RAW = ${JSON.stringify(rawText)};`;
+      doc.querySelector('head').appendChild(script);
+      const ser = '<!doctype html>'+"\n"+doc.outerHTML;
+      return ser;
+    }
+
+    // --- Wire up ---
+    const status = document.getElementById('status');
+
+    document.getElementById('sampleBtn').addEventListener('click', ()=>{ $('#raw').value = SAMPLE; status.textContent='Sample loaded.'; });
+    document.getElementById('clearBtn').addEventListener('click', ()=>{ $('#raw').value=''; $('#md').textContent=''; $('#timeline').innerHTML=''; $('#table tbody').innerHTML=''; $('#stats').innerHTML=''; status.textContent=''; setButtons(false); });
+
+    document.getElementById('parseBtn').addEventListener('click', ()=>{
+      try{
+        const raw = $('#raw').value || '';
+        const arr = extractFirstJsonArray(raw);
+        // Heuristic: prefer arrays of objects with cycle+phase
+        const rows = normalizeRows(arr.filter(x=>x && typeof x === 'object' && ('cycle' in x || 'phase' in x)));
+        if(!rows.length) throw new Error('Found a JSON array, but it does not contain recognizable cycle objects.');
+
+        const md = toMarkdown(rows);
+        $('#md').textContent = md;
+        renderTimeline(rows);
+        renderTable(rows);
+        renderStats(rows);
+        status.innerHTML = '<span class="ok">✓ Parsed ' + rows.length + ' cycles.</span>';
+        setButtons(true);
+      } catch(err){
+        status.innerHTML = '<span class="error">' + escapeHtml(err.message||String(err)) + '</span>';
+        setButtons(false);
+      }
+    });
+
+    document.getElementById('copyMdBtn').addEventListener('click', async ()=>{
+      const md = $('#md').textContent || '';
+      if(!md.trim()) return;
+      const ok = await copyToClipboard(md);
+      status.textContent = ok ? 'Markdown copied to clipboard.' : 'Copy failed.';
+    });
+
+    document.getElementById('dlMdBtn').addEventListener('click', ()=>{
+      const md = $('#md').textContent || '';
+      if(!md.trim()) return;
+      download('iterative_process.md', md, 'text/markdown');
+    });
+
+    document.getElementById('dlHtmlBtn').addEventListener('click', ()=>{
+      const raw = $('#raw').value || '';
+      if(!raw.trim()) return;
+      const html = makeSnapshotHtml(raw);
+      download('Iterative-Refinement-Translator.snapshot.html', html, 'text/html');
+    });
+
+    // Auto-render if saved snapshot embeds prior input
+    window.addEventListener('load', ()=>{
+      if(window.__SAVED_RAW){ $('#raw').value = window.__SAVED_RAW; document.getElementById('parseBtn').click(); }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:42.277Z",
+    "source_text_length": 656,
+    "word_count": 102,
+    "sentence_count": 9,
+    "entropy_level": 0.963,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_executable_checklist_container_self_checking_markdown_runner (1).html"
+    },
+    "anchor_id": "3991e6173341d9dbce1275a1ab043b2b"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "steps",
+        "frequency": 5
+      },
+      {
+        "theme": "markdown",
+        "frequency": 4
+      },
+      {
+        "theme": "plan",
+        "frequency": 4
+      },
+      {
+        "theme": "export",
+        "frequency": 4
+      },
+      {
+        "theme": "parse",
+        "frequency": 3
+      },
+      {
+        "theme": "load",
+        "frequency": 2
+      },
+      {
+        "theme": "check",
+        "frequency": 2
+      },
+      {
+        "theme": "runner",
+        "frequency": 2
+      },
+      {
+        "theme": "reset",
+        "frequency": 2
+      },
+      {
+        "theme": "auto",
+        "frequency": 2
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "produce",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "AI‑Executable Checklist Container Load your “# I …” Markdown plan, run steps, self‑check, and export artifacts … ▶ Run All (Auto‑check) ✓ Mark All OK ◻ Reset All Status ↻ Restart/Debug Cycle Export JSON Export Markdown 💾 Produce Artifact Progress: 0/0 Loop State: waiting",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3991e6173341d9dbce1275a1ab043b2b"
+  }
+}

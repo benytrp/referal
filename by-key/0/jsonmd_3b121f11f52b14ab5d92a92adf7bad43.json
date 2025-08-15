@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:28.548Z",
+    "source_text_length": 203,
+    "word_count": 29,
+    "sentence_count": 2,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "losdgnolag.html"
+    },
+    "anchor_id": "3b121f11f52b14ab5d92a92adf7bad43"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "library",
+        "frequency": 4
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "bash",
+        "frequency": 2
+      },
+      {
+        "theme": "generator",
+        "frequency": 2
+      },
+      {
+        "theme": "2025",
+        "frequency": 1
+      },
+      {
+        "theme": "repository",
+        "frequency": 1
+      },
+      {
+        "theme": "recipe",
+        "frequency": 1
+      },
+      {
+        "theme": "generate",
+        "frequency": 1
+      },
+      {
+        "theme": "download",
+        "frequency": 1
+      },
+      {
+        "theme": "build",
+        "frequency": 1
+      },
+      {
+        "theme": "package",
+        "frequency": 1
+      },
+      {
+        "theme": "preview",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline Bash Library Generator 1 – Add repository recipe Add to library 2 – Generate & download Build zip package Preview library sh © 2025 Offline Bash Library Generator • MIT Licence (JSZip & template)",
+    "key_insights": [],
+    "action_items": [
+      "Offline Bash Library Generator 1 – Add repository recipe Add to library 2 – Generate & download Build zip package Preview library"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3b121f11f52b14ab5d92a92adf7bad43"
+  }
+}

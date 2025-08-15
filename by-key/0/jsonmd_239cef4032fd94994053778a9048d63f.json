@@ -1,0 +1,110 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:09.203Z",
+    "source_text_length": 7404,
+    "word_count": 883,
+    "sentence_count": 78,
+    "entropy_level": 0.872,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "dfhsehe - Copy.html"
+    },
+    "anchor_id": "239cef4032fd94994053778a9048d63f"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "function_calls",
+        "frequency": 48
+      },
+      {
+        "theme": "invoke",
+        "frequency": 48
+      },
+      {
+        "theme": "tool_name",
+        "frequency": 48
+      },
+      {
+        "theme": "parameters",
+        "frequency": 48
+      },
+      {
+        "theme": "copy",
+        "frequency": 25
+      },
+      {
+        "theme": "search",
+        "frequency": 12
+      },
+      {
+        "theme": "create",
+        "frequency": 8
+      },
+      {
+        "theme": "python",
+        "frequency": 7
+      },
+      {
+        "theme": "title",
+        "frequency": 7
+      },
+      {
+        "theme": "short",
+        "frequency": 6
+      },
+      {
+        "theme": "image",
+        "frequency": 6
+      },
+      {
+        "theme": "queries",
+        "frequency": 6
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "AI Tool Calls — Offline Cheatsheet Copy-paste presets • Works offline This Chat Perplexity Tip: edit placeholders like YOUR QUERY, turnX…, or UTC±HH:MM before you run … card>",
+    "key_insights": [],
+    "action_items": [
+      "exec Create tables/plots/files that render to the user",
+      "create_textdoc Create a rich document/code file in the side canvas",
+      "create_textdoc</tool_name> <parameters>{ \"name\": \"Spec Draft\", \"type\": \"document\", \"content\": \"# Title\\\\nStart here…\" }</parameters> </invoke> </function_calls> Copy Update Canvas (regex replace) canmore",
+      "comment_textdoc Add actionable comments anchored to regex matches",
+      "\"} ] }</parameters> </invoke> </function_calls> Copy Create Reminder (daily 9am) automations",
+      "create Schedule a recurring task via iCal RRULE",
+      "create</tool_name> <parameters>{ \"title\": \"Check headlines\", \"prompt\": \"Search for top AI news and summarize for me",
+      "text2im Create an image from a prompt (no external deps)",
+      "<function_calls> <invoke> <tool_name>search_web</tool_name> <parameters> <queries>[\"latest AI developments\"]</queries> </parameters> </invoke> </function_calls> Copy Fetch URL fetch_url Load content from one or more URLs",
+      "\")</code> </parameters> </invoke> </function_calls> Copy Create Chart create_chart Simple chart from JSON data (explicitly requested)"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "239cef4032fd94994053778a9048d63f"
+  }
+}

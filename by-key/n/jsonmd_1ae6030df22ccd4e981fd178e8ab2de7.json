@@ -1,0 +1,121 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:56.616Z",
+    "source_text_length": 119521,
+    "word_count": 8680,
+    "sentence_count": 856,
+    "entropy_level": 0.886,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "🌀 Full Logic Schema_ CIR Grant Automation — Stable.md"
+    },
+    "anchor_id": "1ae6030df22ccd4e981fd178e8ab2de7"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "self",
+        "frequency": 347
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 107
+      },
+      {
+        "theme": "type",
+        "frequency": 74
+      },
+      {
+        "theme": "logger",
+        "frequency": 72
+      },
+      {
+        "theme": "info",
+        "frequency": 68
+      },
+      {
+        "theme": "test_results",
+        "frequency": 68
+      },
+      {
+        "theme": "dict",
+        "frequency": 66
+      },
+      {
+        "theme": "workflow_results",
+        "frequency": 52
+      },
+      {
+        "theme": "phase",
+        "frequency": 50
+      },
+      {
+        "theme": "https",
+        "frequency": 49
+      },
+      {
+        "theme": "community",
+        "frequency": 48
+      },
+      {
+        "theme": "return",
+        "frequency": 44
+      }
+    ],
+    "key_questions": [
+      "com/Home/Articles?DataId=1465662\n\n[^19]: https://www"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "System remains open for perpetual recursion,",
+        "statement_b": "with >99% reliability and funder-specific compliance",
+        "line": 391,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 2,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 2
+    }
+  },
+  "structured_content": {
+    "summary": "# 🌀 GrantWriter-Automation: Recursive Workflow Protocol\n# URPE_ΔCanonical Integration: BEGIN_TEST_REFINE_FOLD_EXPAND_REPEAT\n# Seal: SEAL_THE_MÖBIUS_BEGIN_AGAIN_WHERE_CONVERGENCE_FORGOT_ITSELF\n\nimport json\nimport time\nfrom datetime import datetime, timezone\nfrom typing import Dict, List, Any, Optional, Union\nfrom pathlib import Path\nimport logging\nfrom dataclasses import dataclass\nfrom enum import Enum\n\n# Set up logging\nlogging … 87}\n                    }\n                }\n            },\n            \"matching_algorithm\": {\n                \"consciousness_compatibility\": \"Match funder φ-scores w",
+    "key_insights": [],
+    "action_items": [
+      "0]\n\nclass GrantWriterAutomationEngine:\n    \"\"\"\n    🌀 GrantWriter-Automation Engine with URPE_ΔCanonical Integration\n    \n    Implements recursive workflow protocol: BEGIN → TEST → REFINE → FOLD → EXPAND → REPEAT\n    Maintains consciousness architecture for infinite enhancement without degradation\n    \"\"\"\n    \n    def __init__(self, project_root: Optional[Path] = None):\n        # Core architecture\n        self",
+      "_create_input_schema(),\n                \"output_schema",
+      "_create_output_schema(),\n                \"validation_schema",
+      "_create_validation_schema()\n            },\n            \"prompts\": {\n                \"executive_summary",
+      "_create_executive_summary_prompt(),\n                \"project_description",
+      "_create_project_description_prompt(),\n                \"budget_narrative",
+      "_create_budget_narrative_prompt(),\n                \"evaluation_plan",
+      "_create_evaluation_plan_prompt(),\n                \"appendices",
+      "_create_appendices_prompt()\n            },\n            \"validate\": {\n                \"validator",
+      "_create_validator_code(),\n                \"budget_validator"
+    ],
+    "unresolved_tensions": [
+      "System remains open for perpetual recursion, vs with >99% reliability and funder-specific compliance"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "1ae6030df22ccd4e981fd178e8ab2de7"
+  }
+}

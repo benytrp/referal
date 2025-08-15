@@ -1,0 +1,99 @@
+{
+  "analyzer_version": "Offline analyzer v1.0 (merged)",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T18:47:18.094Z",
+    "anchor_id": "eeb030aa350a56b565a78c831c802250fe05c73a09a9cc1dd4d47af6f5d26ae2",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.563,
+    "contradictions_detected": 4,
+    "word_count": 1383
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "analysis",
+        "frequency": 83
+      },
+      {
+        "theme": "ultimate",
+        "frequency": 35
+      },
+      {
+        "theme": "document",
+        "frequency": 30
+      },
+      {
+        "theme": "consciousness",
+        "frequency": 28
+      },
+      {
+        "theme": "const",
+        "frequency": 27
+      },
+      {
+        "theme": "active",
+        "frequency": 23
+      },
+      {
+        "theme": "output",
+        "frequency": 22
+      },
+      {
+        "theme": "level",
+        "frequency": 21
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 20
+      },
+      {
+        "theme": "addlogentry",
+        "frequency": 19
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "No analysis performed yet. Execute an analysis to see results."
+      },
+      {
+        "idx": 1,
+        "sample": "No analysis performed yet. Execute an analysis to see results."
+      },
+      {
+        "idx": 2,
+        "sample": "document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none'; } // Main Functions async function execu"
+      },
+      {
+        "idx": 3,
+        "sample": "s() { if (!engine.lastAnalysis) { showNotification('No analysis results to export'); return; }"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "Now what?",
+      "display = show ?",
+      "value === 'true' ?"
+    ],
+    "summary": "analysis, ultimate, document, consciousness, const"
+  },
+  "sentiment_indicators": {
+    "positive": 7,
+    "negative": 0,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "enterprise_aeon_interface_working.html",
+    "relative_path": "enterprise_aeon_interface_working.html",
+    "size_bytes": 49314,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.75
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:04.608Z",
+    "source_text_length": 12354,
+    "word_count": 2101,
+    "sentence_count": 333,
+    "entropy_level": 0.883,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "CBCL6-18 - Competence Scale Scores.txt"
+    },
+    "anchor_id": "0069a52afba4b8c966a181ef0bcc4a64"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "problems",
+        "frequency": 42
+      },
+      {
+        "theme": "clinical",
+        "frequency": 30
+      },
+      {
+        "theme": "range",
+        "frequency": 29
+      },
+      {
+        "theme": "benjamin",
+        "frequency": 22
+      },
+      {
+        "theme": "score",
+        "frequency": 21
+      },
+      {
+        "theme": "aseba",
+        "frequency": 20
+      },
+      {
+        "theme": "2025",
+        "frequency": 19
+      },
+      {
+        "theme": "burdette",
+        "frequency": 17
+      },
+      {
+        "theme": "scores",
+        "frequency": 14
+      },
+      {
+        "theme": "date",
+        "frequency": 13
+      },
+      {
+        "theme": "borderline",
+        "frequency": 13
+      },
+      {
+        "theme": "percentile",
+        "frequency": 13
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 1
+    },
+    "temporal_markers": {
+      "past": 2,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "CBCL/6-18 - Competence Scale Scores\r\nBiological parent\r\nChris Burdette\r\nRelationship:\r\nClinician: Informant:\r\nDate Completed: 25-Apr-2025 Agency:\r\nM Date on Form:\r\n12\r\nGender:\r\nName: Benjamin Burdette Age:\r\nID: C … org Page 7/7",
+    "key_insights": [],
+    "action_items": [
+      "These results indicate that the DSM should be consulted to determine whether Benjamin meets\r\ndiagnostic criteria for Depressive Problems and Anxiety Problems",
+      "Benjamin's scores in the\r\nborderline clinical range suggest that the DSM should be consulted to determine whether Benjamin might meet diagnostic criteria\r\nfor disorders characterized by problems included on those scales"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.56,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 2 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0069a52afba4b8c966a181ef0bcc4a64"
+  }
+}

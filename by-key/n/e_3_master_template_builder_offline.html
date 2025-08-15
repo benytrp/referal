@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>E3 Master Template Builder (Offline)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --ink:#0f172a; /* slate-900 */
+      --muted:#64748b; /* slate-500 */
+      --rule:#e2e8f0; /* slate-200 */
+      --accent:#0ea5e9; /* sky-500 */
+      --bg:#ffffff;
+      --pad:12px;
+    }
+    *{box-sizing:border-box}
+    body{font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--ink); background:var(--bg); margin:0}
+    header{position:sticky; top:0; background:#fff; z-index:10; border-bottom:1px solid var(--rule)}
+    header .wrap{display:flex; align-items:center; gap:12px; padding:10px 16px}
+    h1{font-size:16px; margin:0}
+
+    .app{display:grid; grid-template-columns: 300px 1fr; gap:0; min-height:100vh}
+    .side{border-right:1px solid var(--rule); padding:14px; background:#fafbff}
+    .main{padding:16px;}
+
+    .section{margin-bottom:18px}
+    .section h2{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:#334155; margin:0 0 8px}
+
+    label{display:grid; grid-template-columns: 120px 1fr; align-items:center; gap:8px; margin-bottom:8px}
+    label .l{color:#475569; font-size:12px}
+    input[type="text"], input[type="date"], textarea{width:100%; padding:8px 10px; border:1px solid var(--rule); border-radius:8px; font:inherit}
+    textarea{min-height:70px; resize:vertical}
+    .muted{color:var(--muted)}
+
+    .row{display:flex; gap:8px; flex-wrap:wrap}
+    .btn{appearance:none; border:none; background:var(--ink); color:#fff; padding:8px 12px; border-radius:10px; cursor:pointer; font-weight:600}
+    .btn.secondary{background:#11182710; color:#0f172a; border:1px solid var(--rule)}
+    .btn.ghost{background:transparent; color:#0f172a}
+    .btn:disabled{opacity:.5; cursor:not-allowed}
+
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; background:#f1f5f9; border:1px solid var(--rule); border-bottom-width:2px; padding:2px 6px; border-radius:6px}
+
+    .stack{display:flex; flex-direction:column; gap:8px}
+    .chip{display:inline-flex; align-items:center; gap:6px; border:1px solid var(--rule); border-radius:999px; padding:4px 8px; font-size:12px}
+
+    .grid-2{display:grid; grid-template-columns: 1fr 1fr; gap:10px}
+    .grid-3{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px}
+
+    .notice{padding:10px; background:#f8fafc; border:1px dashed var(--rule); border-radius:10px; color:#334155}
+
+    .editor{width:100%; min-height:280px; font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; border:1px solid var(--rule); border-radius:12px; padding:12px; background:#0b102015; white-space:pre; overflow:auto}
+
+    iframe.preview{width:100%; height:70vh; border:1px solid var(--rule); border-radius:12px; background:#fff}
+
+    .footer-note{margin-top:10px; color:#64748b; font-size:12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>E3 Master Template Builder (Offline)</h1>
+      <span class="chip">No deps • Works offline</span>
+      <span class="chip">Spawns downloadable child HTML files</span>
+    </div>
+  </header>
+
+  <div class="app">
+    <aside class="side">
+      <div class="section">
+        <h2>Fill tokens</h2>
+        <div class="stack">
+          <label><span class="l">Name</span><input type="text" id="f_record_meta.participant_label" placeholder="e.g., Jamie Rivera"/></label>
+          <label><span class="l">ID #</span><input type="text" id="f_record_meta.participant_code" placeholder="PR-1042"/></label>
+          <label><span class="l">Diag. Codes</span><input type="text" id="f_record_meta.diag_codes" placeholder="F84.0"/></label>
+          <label><span class="l">Date</span><input type="date" id="f_record_meta.date"/></label>
+          <label><span class="l">Time In</span><input type="text" id="f_session.time_in" placeholder="09:00"/></label>
+          <label><span class="l">Time Out</span><input type="text" id="f_session.time_out" placeholder="13:00"/></label>
+          <label><span class="l">Total Units</span><input type="text" id="f_session.total_units" placeholder="4"/></label>
+          <label><span class="l">Staff Assigned</span><input type="text" id="f_record_meta.assigned_staff_id" placeholder="STF-12"/></label>
+          <label><span class="l">Goals</span><textarea id="f_program_goals_summary" placeholder="Short summary of goals"></textarea></label>
+          <label><span class="l">Today's Focus</span><textarea id="f_todays_focus" placeholder="Main focus today"></textarea></label>
+          <label><span class="l">WH Comments</span><textarea id="f_work_habits.comments" placeholder="Work Habits notes"></textarea></label>
+          <label><span class="l">Prep Comments</span><textarea id="f_preparatory_goals.comments" placeholder="Preparatory Goals notes"></textarea></label>
+          <label><span class="l">Int/Abil Comments</span><textarea id="f_interests_abilities.comments" placeholder="Interests/Abilities notes"></textarea></label>
+          <label><span class="l">Commentary</span><textarea id="f_commentary.session_note" placeholder="Observational commentary"></textarea></label>
+          <label><span class="l">Instructor</span><input type="text" id="f_record_meta.instructor_id" placeholder="INSTR-3"/></label>
+          <label><span class="l">Signature</span><input type="text" id="f_signoff.instructor_signed" placeholder="/s/ Instructor"/></label>
+          <label><span class="l">Sign Time</span><input type="text" id="f_signoff.signature_timestamp" placeholder="2025-08-09 13:10"/></label>
+          <label><span class="l">Sign Notes</span><input type="text" id="f_signoff.notes" placeholder="Any signoff notes"/></label>
+          <label><span class="l"># Staff</span><input type="text" id="f_session.headcount.staff" placeholder="2"/></label>
+          <label><span class="l"># Students</span><input type="text" id="f_session.headcount.students" placeholder="8"/></label>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>File name pattern</h2>
+        <input type="text" id="filePattern" value="E3-Daily-⟦record_meta.participant_label⟧-⟦record_meta.date⟧.html" />
+        <div class="footer-note">Tokens like <span class="kbd">⟦record_meta.participant_label⟧</span> are replaced.</div>
+      </div>
+
+      <div class="section">
+        <h2>Bulk spawn (JSON)</h2>
+        <div class="notice">Provide a JSON array of objects. Keys should match token paths (e.g., <code>record_meta.participant_label</code>).</div>
+        <div class="row">
+          <input type="file" id="jsonFile" accept="application/json"/>
+          <button class="btn secondary" id="runBulk" disabled>Bulk Export</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Template source</h2>
+        <div class="row" style="margin-bottom:6px">
+          <button class="btn secondary" id="resetTemplate">Reset to default</button>
+          <button class="btn ghost" id="saveLocal">Save locally</button>
+          <button class="btn ghost" id="loadLocal">Load saved</button>
+        </div>
+        <textarea id="editor" class="editor" spellcheck="false"></textarea>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="section">
+        <h2>Actions</h2>
+        <div class="row">
+          <button class="btn" id="btnPreview">Preview Child</button>
+          <button class="btn" id="btnDownload">Download Child</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Preview</h2>
+        <iframe class="preview" id="preview"></iframe>
+      </div>
+
+      <p class="footer-note">Tip: Everything runs in your browser. No network needed.</p>
+    </main>
+  </div>
+
+  <!-- The default CHILD template (exactly your provided evaluation form). It remains inert here. -->
+  <template id="child-default">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>E3 Achievement — Daily Participant Evaluation (Checkbox Template)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --ink:#111;
+      --muted:#555;
+      --rule:#cfd6df;
+      --accent:#0e7afe;
+      --pad:10px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font:14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      margin:24px;
+      background:#fff;
+    }
+    h1{
+      text-align:center;
+      font-size:18px;
+      margin:0 0 12px 0;
+      text-transform:uppercase;
+      letter-spacing:.5px;
+    }
+    .row{display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:12px; margin-bottom:8px}
+    .field{
+      border-bottom:1px solid var(--rule);
+      padding:6px 4px;
+      display:flex; gap:6px; align-items:baseline;
+      min-height:30px;
+    }
+    .label{color:var(--muted); min-width:max-content}
+    .value{flex:1; font-weight:600}
+    .section{margin-top:18px; border-top:2px solid var(--ink); padding-top:8px}
+    .section h2{font-size:15px; margin:0 0 6px 0}
+    table{width:100%; border-collapse:collapse; margin:6px 0 10px 0; table-layout:fixed}
+    th, td{border:1px solid var(--rule); padding:6px 8px; vertical-align:middle}
+    th{background:#f6f7f9; font-weight:700; text-align:left}
+    .w-40 {width:40%}
+    .note{border:1px dashed var(--rule); padding:8px; min-height:48px; color:#222; background:#fcfdff}
+    .small{font-size:12px; color:var(--muted)}
+    .sign-row{display:grid; grid-template-columns: 2fr 1fr 1fr; gap:12px; margin-top:8px}
+    .counts{display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px}
+    .muted{color:var(--muted)}
+    @media print{
+      body{margin:0; font-size:12px}
+      .no-print.controls{display:none !important}
+      input[type="checkbox"]{ transform: scale(1.2); }
+    }
+    .chkcell{ text-align:center }
+    .chkwrap{ display:inline-flex; align-items:center; gap:6px; justify-content:center }
+    .chkwrap input[type="checkbox"]{ width:18px; height:18px }
+    .legend{display:flex; gap:16px; align-items:center; margin:6px 0 0 0; color:var(--muted); font-size:12px}
+  </style>
+</head>
+<body>
+  <h1>E3 Achievement Daily Participant Evaluation</h1>
+
+  <!-- Identity / Session Meta -->
+  <div class="row">
+    <div class="field"><div class="label">Name:</div><div class="value">⟦record_meta.participant_label⟧</div></div>
+    <div class="field"><div class="label">ID #</div><div class="value">⟦record_meta.participant_code⟧</div></div>
+    <div class="field"><div class="label">Diag. Codes</div><div class="value">⟦record_meta.diag_codes⟧</div></div>
+    <div class="field"><div class="label">Date</div><div class="value">⟦record_meta.date⟧</div></div>
+  </div>
+  <div class="row">
+    <div class="field"><div class="label">Time In</div><div class="value">⟦session.time_in⟧</div></div>
+    <div class="field"><div class="label">Time Out</div><div class="value">⟦session.time_out⟧</div></div>
+    <div class="field"><div class="label">Total Units</div><div class="value">⟦session.total_units⟧</div></div>
+    <div class="field"><div class="label">Staff Assigned</div><div class="value">⟦record_meta.assigned_staff_id⟧</div></div>
+  </div>
+
+  <div class="field"><div class="label">Goals:</div><div class="value">⟦program_goals_summary⟧</div></div>
+  <div class="field"><div class="label">Today's Focus:</div><div class="value">⟦todays_focus⟧</div></div>
+
+  <div class="legend no-print controls">
+    <strong>Selection rule:</strong> choose exactly one box per row (Yes, NI, or N/A). The page will keep only one checked per row.
+  </div>
+
+  <!-- Work Habits -->
+  <div class="section">
+    <h2>Work Habits</h2>
+    <table>
+      <colgroup><col class="w-40"/><col/><col/><col/></colgroup>
+      <thead>
+        <tr><th>Item</th><th class="center">Yes</th><th class="center">NI</th><th class="center">N/A</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Attendance — Correct day and time?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.correct_day_time" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Attendance — Excessive absences?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.excessive_absences" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.excessive_absences" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attendance.excessive_absences" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Timeliness — Arrived on time?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.arrived_on_time" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.arrived_on_time" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.arrived_on_time" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Timeliness — Excessive tardiness?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.excessive_tardiness" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.excessive_tardiness" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.timeliness.excessive_tardiness" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Hygiene — Participant was appropriately groomed?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.hygiene" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.hygiene" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.hygiene" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Dress — Participant was appropriately dressed?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.dress" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.dress" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.dress" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Attitude — Participant exhibited positive attitude?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attitude" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attitude" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="work_habits.attitude" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="label">Comments:</div>
+    <div class="note">⟦work_habits.comments⟧</div>
+  </div>
+
+  <!-- Preparatory Goals -->
+  <div class="section">
+    <h2>Preparatory Goals</h2>
+    <table>
+      <colgroup><col class="w-40"/><col/><col/><col/></colgroup>
+      <thead>
+        <tr><th>Item</th><th class="center">Yes</th><th class="center">NI</th><th class="center">N/A</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Attention Span — adequate span for tasks?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.attention_span" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Following Directions — followed simple instructions?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_simple" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_simple" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_simple" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Following Directions — followed multi-step instructions?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_multi_step" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_multi_step" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.following_directions_multi_step" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Task Completion — stayed on task?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_stayed_on_task" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Task Completion — completed task being worked on?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_completed_task" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_completed_task" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.task_completion_completed_task" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Motor Skills — exhibits improvement?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.motor_skills_improvement" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.motor_skills_improvement" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.motor_skills_improvement" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Problem Solving — able to solve presented problems?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.problem_solving" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.problem_solving" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.problem_solving" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Safety — followed safety procedures?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.safety_procedures" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Change — ability to adapt to presented changes?</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.change_adaptation" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.change_adaptation" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="preparatory_goals.change_adaptation" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="label">Comments:</div>
+    <div class="note">⟦preparatory_goals.comments⟧</div>
+  </div>
+
+  <!-- Interests / Abilities -->
+  <div class="section">
+    <h2>Interests / Abilities</h2>
+    <table>
+      <colgroup><col class="w-40"/><col/><col/><col/></colgroup>
+      <thead>
+        <tr><th>Item</th><th class="center">Yes</th><th class="center">NI</th><th class="center">N/A</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Interests — increased awareness of areas of interest</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.interests_awareness" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.interests_awareness" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.interests_awareness" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Abilities — increased awareness of talents / abilities</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.abilities_awareness" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.abilities_awareness" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.abilities_awareness" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+        <tr>
+          <td>Transferable Skills — understanding of transferable skills</td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.transferable_skills" data-opt="yes"><span>Yes</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.transferable_skills" data-opt="ni"><span>NI</span></label></td>
+          <td class="chkcell"><label class="chkwrap"><input type="checkbox" data-key="interests_abilities.transferable_skills" data-opt="na"><span>N/A</span></label></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="label">Comments:</div>
+    <div class="note">⟦interests_abilities.comments⟧</div>
+  </div>
+
+  <!-- Narrative Commentary (session reference + focus + goals) -->
+  <div class="section">
+    <h2>Commentary (Observational Tone)</h2>
+    <div class="note">⟦commentary.session_note⟧</div>
+    <p class="small muted">Tip: can be AI-generated from profile/goals/focus. Example token available: ⟦commentary.autogen⟧.</p>
+  </div>
+
+  <!-- Signature / Staff counts -->
+  <div class="section">
+    <p>I have worked with this program participant during classroom and/or production time and have made the above observations.</p>
+    <div class="sign-row">
+      <div class="field"><div class="label">Instructor</div><div class="value">⟦record_meta.instructor_id⟧</div></div>
+      <div class="field"><div class="label">Signature</div><div class="value">⟦signoff.instructor_signed⟧</div></div>
+      <div class="field"><div class="label">Date</div><div class="value">⟦signoff.signature_timestamp⟧</div></div>
+    </div>
+    <div class="field" style="margin-top:8px;"><div class="label">Signoff Notes:</div><div class="value">⟦signoff.notes⟧</div></div>
+    <div class="counts">
+      <div class="field"><div class="label"># STAFF PRESENT</div><div class="value">⟦session.headcount.staff⟧</div></div>
+      <div class="field"><div class="label"># STUDENTS PRESENT</div><div class="value">⟦session.headcount.students⟧</div></div>
+    </div>
+  </div>
+
+  <script>
+    // Enforce one checkbox per row (per data-key), and expose value to window.formState for AI reads
+    (function(){
+      const state = {};
+      function updateGroup(key, opt, el){
+        // Uncheck siblings
+        document.querySelectorAll('input[type="checkbox"][data-key="'+key+'"]').forEach(cb=>{
+          if(cb !== el) cb.checked = false;
+        });
+        // Update state
+        state[key] = el.checked ? opt : "";
+      }
+      document.querySelectorAll('input[type="checkbox"][data-key]').forEach(cb=>{
+        const key = cb.getAttribute('data-key');
+        const opt = cb.getAttribute('data-opt');
+        cb.addEventListener('change', () => updateGroup(key, opt, cb));
+      });
+      window.formState = state; // optional: an AI agent can read this
+    })();
+  </script>
+</body>
+</html>
+  </template>
+
+  <script>
+    // ---------- helpers ----------
+    const $ = (sel, ctx=document) => ctx.querySelector(sel);
+    const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+
+    function todayISO(){
+      const d = new Date();
+      const tzOffset = d.getTimezoneOffset();
+      const local = new Date(d - tzOffset*60000);
+      return local.toISOString().slice(0,10);
+    }
+
+    function pathSet(obj, path, value){
+      const segs = path.split('.');
+      let cur = obj;
+      for(let i=0;i<segs.length-1;i++){
+        const k = segs[i];
+        cur[k] ??= {};
+        cur = cur[k];
+      }
+      cur[segs[segs.length-1]] = value;
+    }
+
+    function pathGet(obj, path){
+      return path.split('.').reduce((acc,k)=> acc && (k in acc) ? acc[k] : undefined, obj);
+    }
+
+    function collectFormData(){
+      const data = {};
+      $$('#\n        [id^="f_"]\n      ').forEach(input=>{
+        const key = input.id.replace(/^f_/, '');
+        if(input.type === 'date'){
+          pathSet(data, key, input.value || '');
+        } else {
+          pathSet(data, key, (input.value||'').toString());
+        }
+      });
+      return data;
+    }
+
+    function replaceTokens(html, data){
+      return html.replace(/⟦([\w\.]+)⟧/g, (m, path)=>{
+        const v = pathGet(data, path);
+        return (v === undefined || v === null || v === '') ? m : String(v);
+      });
+    }
+
+    function sanitizeFilename(name){
+      return name.replace(/[\\\/:*?"<>|]/g,'-').replace(/\s+/g,' ').trim();
+    }
+
+    function makeChildHTML(source, data){
+      return replaceTokens(source, data);
+    }
+
+    function download(filename, content){
+      const blob = new Blob([content], {type:'text/html;charset=utf-8'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = filename; a.style.display='none';
+      document.body.appendChild(a); a.click();
+      setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); }, 200);
+    }
+
+    function updatePreview(){
+      const tpl = $('#editor').value;
+      const data = collectFormData();
+      const html = makeChildHTML(tpl, data);
+      const blob = new Blob([html], {type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const iframe = $('#preview');
+      iframe.src = url;
+      // Cleanup URL when iframe reloads again
+      iframe.addEventListener('load', () => {
+        setTimeout(()=>URL.revokeObjectURL(url), 500);
+      }, {once:true});
+    }
+
+    function loadDefaultTemplate(){
+      const raw = $('#child-default').innerHTML.trim();
+      $('#editor').value = raw;
+    }
+
+    function saveToLocal(){
+      localStorage.setItem('e3_master_template_source', $('#editor').value);
+      localStorage.setItem('e3_master_filepattern', $('#filePattern').value);
+      // Also persist current form data
+      const data = collectFormData();
+      localStorage.setItem('e3_master_formdata', JSON.stringify(data));
+      alert('Saved locally.');
+    }
+
+    function loadFromLocal(){
+      const src = localStorage.getItem('e3_master_template_source');
+      const pat = localStorage.getItem('e3_master_filepattern');
+      const form = localStorage.getItem('e3_master_formdata');
+      if(src) $('#editor').value = src;
+      if(pat) $('#filePattern').value = pat;
+      if(form){
+        const data = JSON.parse(form);
+        for(const [k,v] of Object.entries(data)){
+          const el = document.getElementById('f_'+k);
+          if(el) el.value = v;
+        }
+      }
+      updatePreview();
+    }
+
+    function spawnDownload(){
+      const tpl = $('#editor').value;
+      const data = collectFormData();
+      const html = makeChildHTML(tpl, data);
+      const name = replaceTokens($('#filePattern').value, data);
+      download(sanitizeFilename(name), html);
+    }
+
+    function bulkFromJSON(file){
+      const reader = new FileReader();
+      reader.onload = () => {
+        try{
+          const items = JSON.parse(reader.result);
+          if(!Array.isArray(items)) throw new Error('JSON root must be an array of objects');
+          const tpl = $('#editor').value;
+          const base = collectFormData();
+          let count = 0;
+          items.forEach((row,i)=>{
+            const data = JSON.parse(JSON.stringify(base));
+            // merge row keys onto data
+            for(const [k,v] of Object.entries(row||{})){
+              pathSet(data, k, v);
+            }
+            const html = makeChildHTML(tpl, data);
+            const fname = replaceTokens($('#filePattern').value, data) || `E3-Child-${i+1}.html`;
+            download(sanitizeFilename(fname), html);
+            count++;
+          });
+          alert(`Exported ${count} file(s).`);
+        }catch(err){
+          alert('Failed to parse JSON: '+err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // ---------- init ----------
+    (function(){
+      // Seed date with today
+      $('#f_record_meta.date').value = todayISO();
+
+      loadDefaultTemplate();
+      updatePreview();
+
+      // Wire controls
+      $('#btnPreview').addEventListener('click', updatePreview);
+      $('#btnDownload').addEventListener('click', spawnDownload);
+      $('#resetTemplate').addEventListener('click', ()=>{ loadDefaultTemplate(); updatePreview(); });
+      $('#saveLocal').addEventListener('click', saveToLocal);
+      $('#loadLocal').addEventListener('click', loadFromLocal);
+
+      // Update preview when file pattern changes
+      $('#filePattern').addEventListener('input', ()=>{});
+
+      // Live preview on edits (debounced)
+      let t=null; $('#editor').addEventListener('input', ()=>{ clearTimeout(t); t=setTimeout(updatePreview, 350); });
+      $$('#[id^="f_"]').forEach(el=> el.addEventListener('input', ()=>{ clearTimeout(t); t=setTimeout(updatePreview, 300); }));
+
+      // Bulk JSON
+      const jsonInput = $('#jsonFile');
+      const runBulk = $('#runBulk');
+      jsonInput.addEventListener('change', ()=>{
+        runBulk.disabled = !jsonInput.files.length;
+      });
+      runBulk.addEventListener('click', ()=>{
+        if(jsonInput.files.length){
+          bulkFromJSON(jsonInput.files[0]);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

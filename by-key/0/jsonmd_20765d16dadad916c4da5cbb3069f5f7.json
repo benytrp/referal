@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:06.536Z",
+    "source_text_length": 127,
+    "word_count": 20,
+    "sentence_count": 3,
+    "entropy_level": 0.984,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "clipboard_export_scroll (2).html"
+    },
+    "anchor_id": "20765d16dadad916c4da5cbb3069f5f7"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "clipboard",
+        "frequency": 2
+      },
+      {
+        "theme": "export",
+        "frequency": 2
+      },
+      {
+        "theme": "text",
+        "frequency": 2
+      },
+      {
+        "theme": "module",
+        "frequency": 1
+      },
+      {
+        "theme": "embedded",
+        "frequency": 1
+      },
+      {
+        "theme": "content",
+        "frequency": 1
+      },
+      {
+        "theme": "copy",
+        "frequency": 1
+      },
+      {
+        "theme": "image",
+        "frequency": 1
+      },
+      {
+        "theme": "html",
+        "frequency": 1
+      },
+      {
+        "theme": "toggle",
+        "frequency": 1
+      },
+      {
+        "theme": "dark",
+        "frequency": 1
+      },
+      {
+        "theme": "mode",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "📋 Clipboard Export Module This is the embedded clipboard text content … html Toggle Dark Mode dfhh",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "20765d16dadad916c4da5cbb3069f5f7"
+  }
+}

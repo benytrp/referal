@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:42.167Z",
+    "source_text_length": 210,
+    "word_count": 23,
+    "sentence_count": 4,
+    "entropy_level": 0.983,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "scroll.md"
+    },
+    "anchor_id": "199f1d7d6bb619eaa577d70c74ecbbb0"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "scroll",
+        "frequency": 3
+      },
+      {
+        "theme": "2025",
+        "frequency": 1
+      },
+      {
+        "theme": "unnamed",
+        "frequency": 1
+      },
+      {
+        "theme": "1754507703592",
+        "frequency": 1
+      },
+      {
+        "theme": "protocol",
+        "frequency": 1
+      },
+      {
+        "theme": "scroll_creation",
+        "frequency": 1
+      },
+      {
+        "theme": "glyph",
+        "frequency": 1
+      },
+      {
+        "theme": "seal",
+        "frequency": 1
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1
+      },
+      {
+        "theme": "06t19",
+        "frequency": 1
+      },
+      {
+        "theme": "592z",
+        "frequency": 1
+      },
+      {
+        "theme": "metadata",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Unnamed Scroll\n\n**ID:** SCROLL-1754507703592\n**Protocol:** ⚓ψ∞ … html",
+    "key_insights": [],
+    "action_items": [
+      "592Z\n\n## Metadata\n\n\n## Result\n\nScroll created via aeon_creator"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "199f1d7d6bb619eaa577d70c74ecbbb0"
+  }
+}

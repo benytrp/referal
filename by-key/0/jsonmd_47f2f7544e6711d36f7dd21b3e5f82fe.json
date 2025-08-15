@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:58:49.043Z",
+    "source_text_length": 741,
+    "word_count": 106,
+    "sentence_count": 5,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "offline_cot_validator_v_7.html"
+    },
+    "anchor_id": "47f2f7544e6711d36f7dd21b3e5f82fe"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "entropy",
+        "frequency": 4
+      },
+      {
+        "theme": "contr",
+        "frequency": 3
+      },
+      {
+        "theme": "export",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 3
+      },
+      {
+        "theme": "file",
+        "frequency": 3
+      },
+      {
+        "theme": "checks",
+        "frequency": 3
+      },
+      {
+        "theme": "spicy",
+        "frequency": 3
+      },
+      {
+        "theme": "offline",
+        "frequency": 2
+      },
+      {
+        "theme": "focus",
+        "frequency": 2
+      },
+      {
+        "theme": "files",
+        "frequency": 2
+      },
+      {
+        "theme": "integrity",
+        "frequency": 2
+      },
+      {
+        "theme": "validator",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "Offline CoT Validator v7 Ready Focus Preset Explore Resolve Ship Entropy ≥ Contr/k ≧ Load sample Export JSON Export CSV Clear Ingest & Validate Drop CoT JSON files here or use the file picker ↑ Files 0 Passed 0 Failed 0 Warnings 0 Pipeline File checks → size/type Parse JSON → structural safe clone Schema validation → required fields/types CoT logic checks → contradiction map, line refs Consistency checks → counts, ratios Entropy & density → spicy flag Integrity → optional SHA-256 verify Report → table + details, export Idle … No external deps",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "47f2f7544e6711d36f7dd21b3e5f82fe"
+  }
+}

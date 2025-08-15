@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:28.385Z",
+    "source_text_length": 1069,
+    "word_count": 159,
+    "sentence_count": 28,
+    "entropy_level": 0.941,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "lonsgosnig.html"
+    },
+    "anchor_id": "3ed9bf0dd08cc12b99b1f5a80d52ad1c"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "scroll",
+        "frequency": 10
+      },
+      {
+        "theme": "json",
+        "frequency": 7
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 7
+      },
+      {
+        "theme": "trigger",
+        "frequency": 6
+      },
+      {
+        "theme": "date",
+        "frequency": 5
+      },
+      {
+        "theme": "command",
+        "frequency": 4
+      },
+      {
+        "theme": "event",
+        "frequency": 4
+      },
+      {
+        "theme": "8601",
+        "frequency": 3
+      },
+      {
+        "theme": "click",
+        "frequency": 3
+      },
+      {
+        "theme": "metadata",
+        "frequency": 3
+      },
+      {
+        "theme": "anchor_log",
+        "frequency": 3
+      },
+      {
+        "theme": "copy",
+        "frequency": 2
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "📜 Scroll Ritual Command Palette Click any command to copy it to clipboard … && git commit -m \"scroll: event log export $(date --iso-8601=seconds)\" Commit logs to version control (Add your next command) Click → Edit in your editor Click a command to copy",
+    "key_insights": [],
+    "action_items": [
+      "json Create a timestamped backup jq -r '"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3ed9bf0dd08cc12b99b1f5a80d52ad1c"
+  }
+}

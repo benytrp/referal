@@ -1,0 +1,112 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:55.806Z",
+    "anchor_id": "f191acaf66d146790763a3e4d074c4efe6e47fa7b2471b706e2711f11ccf6656",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.645,
+    "contradictions_detected": 6,
+    "word_count": 1854
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "code",
+        "frequency": 39
+      },
+      {
+        "theme": "function",
+        "frequency": 33
+      },
+      {
+        "theme": "enterprise",
+        "frequency": 28
+      },
+      {
+        "theme": "const",
+        "frequency": 26
+      },
+      {
+        "theme": "document",
+        "frequency": 25
+      },
+      {
+        "theme": "shownotification",
+        "frequency": 23
+      },
+      {
+        "theme": "performance",
+        "frequency": 20
+      },
+      {
+        "theme": "event",
+        "frequency": 16
+      },
+      {
+        "theme": "getelementbyid",
+        "frequency": 16
+      },
+      {
+        "theme": "input",
+        "frequency": 15
+      }
+    ],
+    "contradiction_map": [
+      {
+        "idx": 0,
+        "sample": "} // AI Functions function initializeAIFeatures() { // Initialize AI chat if not already done const chatHistory = document.getElementById('aiChatHistory');"
+      },
+      {
+        "idx": 1,
+        "sample": "chatWindow.style.display === 'flex'; chatWindow.style.display = isVisible ? 'none' : 'flex'; if (!isVisible) { document.getElementById('chatInput')."
+      },
+      {
+        "idx": 2,
+        "sample": "<button onclick=\"this.parentElement.remove()\" style=\"float: right; background: none; border: none; cursor: pointer; color: var(--gray-500);\">✕</button> `;"
+      },
+      {
+        "idx": 3,
+        "sample": "ck=\"this.parentElement.remove()\" style=\"float: right; background: none; border: none; cursor: pointer; color: var(--gray-500);\">✕</button> `; container.a"
+      },
+      {
+        "idx": 4,
+        "sample": "{ document.getElementById('loadingOverlay').style.display = show ? 'flex' : 'none'; } function trackEvent(eventName, data = {}) { // Analytics tracking"
+      },
+      {
+        "idx": 5,
+        "sample": "success'); }) .catch(() => { showNotification('Installation not available on this device', 'warning'); }); } } // Accessibility Fun"
+      }
+    ]
+  },
+  "structured_content": {
+    "key_questions": [
+      "What would you like to work on today?",
+      "What would you like to work on?",
+      "Could you provide more specific details about what aspect you\\'d like to explore?",
+      "display = isVisible ?",
+      "display = show ?"
+    ],
+    "summary": "code, function, enterprise, const, document"
+  },
+  "sentiment_indicators": {
+    "positive": 23,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "today",
+    "tomorrow",
+    "will",
+    "were"
+  ],
+  "metadata": {
+    "source_name": "planned_js_loops_platform.html",
+    "relative_path": "planned_js_loops_platform.html",
+    "size_bytes": 66479,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.79
+  }
+}

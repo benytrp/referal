@@ -1,0 +1,94 @@
+{
+  "analyzer_version": "Offline analyzer v1.3.5",
+  "processing_phase": "SYNTHESIS",
+  "frequency_resonance": "440 Hz (A4)",
+  "json_md_fusion_scroll": {
+    "timestamp": "2025-08-11T15:29:52.588Z",
+    "anchor_id": "fd3c7e784a430bde72639687a543397c57f5bda026e6d46962cf1268becae2b1",
+    "processing_phase": "SYNTHESIS",
+    "entropy_level": 0.785,
+    "contradictions_detected": 0,
+    "word_count": 826
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "value",
+        "frequency": 24
+      },
+      {
+        "theme": "prompt",
+        "frequency": 21
+      },
+      {
+        "theme": "name",
+        "frequency": 20
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 19
+      },
+      {
+        "theme": "autoexecute",
+        "frequency": 16
+      },
+      {
+        "theme": "invocation",
+        "frequency": 12
+      },
+      {
+        "theme": "layers",
+        "frequency": 12
+      },
+      {
+        "theme": "layer",
+        "frequency": 12
+      },
+      {
+        "theme": "const",
+        "frequency": 11
+      },
+      {
+        "theme": "presets",
+        "frequency": 10
+      }
+    ],
+    "contradiction_map": []
+  },
+  "structured_content": {
+    "key_questions": [
+      "Market Reality\", prompt: \"What problem does this solve in the market?",
+      "Simplicity\", prompt: \"How to structure for growth without complexity?",
+      "what can it do?",
+      "Maintainability\", prompt: \"How do we optimize for speed and clarity?",
+      "Trending\", prompt: \"How to balance timeless value with current relevance?",
+      "Broader access\", prompt: \"What features for Battle Creek events?",
+      "Concrete\", prompt: \"How to blend surreal ideas with detailed descriptions?",
+      "Modern\", prompt: \"How to fuse classic techniques with digital effects?",
+      "Feasibility\", prompt: \"What novel features can be visualized realistically?",
+      "Simplicity\", prompt: \"How to highlight key elements without overwhelming?",
+      "Contemporary\", prompt: \"How to depict Battle Creek's heritage in modern contexts?",
+      "Reality\", prompt: \"What core value does this solve?",
+      "Simplicity\", prompt: \"How will this grow without breaking?",
+      "Protection\", prompt: \"How do we make it usable but secure?",
+      "Agility\", prompt: \"How do we ship fast but reliably?"
+    ],
+    "summary": "value, prompt, name, contradiction, autoexecute"
+  },
+  "sentiment_indicators": {
+    "positive": 0,
+    "negative": 1,
+    "uncertainty": 0
+  },
+  "temporal_markers": [
+    "will"
+  ],
+  "metadata": {
+    "source_name": "!DOCTYPE html.html",
+    "relative_path": "!DOCTYPE html.html",
+    "size_bytes": 10060,
+    "extract_method": "domparser",
+    "focus_preset": "explore",
+    "confidence": 0.76
+  }
+}

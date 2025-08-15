@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:44.181Z",
+    "source_text_length": 354,
+    "word_count": 18,
+    "sentence_count": 5,
+    "entropy_level": 1,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (15).txt"
+    },
+    "anchor_id": "00faf5339e099bd2cb6053b64bedcbf6"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "1234",
+        "frequency": 1
+      },
+      {
+        "theme": "packet_id",
+        "frequency": 1
+      },
+      {
+        "theme": "unique_uuid_for_this_packet",
+        "frequency": 1
+      },
+      {
+        "theme": "parent_session_id",
+        "frequency": 1
+      },
+      {
+        "theme": "id_of_the_source_session",
+        "frequency": 1
+      },
+      {
+        "theme": "classification",
+        "frequency": 1
+      },
+      {
+        "theme": "the_reason_it_was_chunked",
+        "frequency": 1
+      },
+      {
+        "theme": "executive_summary",
+        "frequency": 1
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1
+      },
+      {
+        "theme": "utc_timestamp_of_creation",
+        "frequency": 1
+      },
+      {
+        "theme": "data",
+        "frequency": 1
+      },
+      {
+        "theme": "the_actual_data_chunk",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"packet_id\": \"unique_uuid_for_this_packet\",\n  \"parent_session_id\": \"id_of_the_source_session\",\n  \"classification\": \"The_Reason_It_Was_Chunked (e … },\n  \"metadata\": {\n    \"size_bytes\": 1234,\n    \"sha256_hash\": \"hash_of_the_data_chunk\"\n  }\n}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.5,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "00faf5339e099bd2cb6053b64bedcbf6"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:42.530Z",
+    "source_text_length": 3059,
+    "word_count": 290,
+    "sentence_count": 18,
+    "entropy_level": 0.918,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (1).txt"
+    },
+    "anchor_id": "3434b8adf5e3d5826d12695d09f04d82"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "type",
+        "frequency": 22
+      },
+      {
+        "theme": "description",
+        "frequency": 13
+      },
+      {
+        "theme": "string",
+        "frequency": 10
+      },
+      {
+        "theme": "scroll",
+        "frequency": 7
+      },
+      {
+        "theme": "format",
+        "frequency": 6
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 6
+      },
+      {
+        "theme": "object",
+        "frequency": 5
+      },
+      {
+        "theme": "title",
+        "frequency": 4
+      },
+      {
+        "theme": "date",
+        "frequency": 4
+      },
+      {
+        "theme": "layer",
+        "frequency": 4
+      },
+      {
+        "theme": "schema",
+        "frequency": 3
+      },
+      {
+        "theme": "aeon",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"$schema\": \"https://json-schema … , 'USER_EDIT', 'SYSTEM_MUTATION', 'EXPORT_PDF'\" },\n        \"details\": { \"type\": \"object\", \"additionalProperties\": true }\n      },\n      \"required\": [\"anchor_id\", \"timestamp\", \"event_type\"]\n    }\n  }\n}",
+    "key_insights": [],
+    "action_items": [
+      "\"\n    },\n    \"created_at\": {\n      \"type\": \"string\",\n      \"description\": \"The ISO 8601 timestamp of the scroll's genesis event",
+      ", user actions, system mutations, exports) used for rollback and time-travel",
+      "\",\n        \"additionalProperties\": true\n    }\n  },\n  \"required\": [\"scroll_id\", \"title\", \"created_at\", \"last_updated_at\", \"layers\", \"anchors\"],\n  \n  \"$defs\": {\n    \"layer\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"layer_id\": { \"type\": \"integer\" },\n        \"phase\": { \"type\": \"string\", \"enum\": [\"Summon\", \"Echo\", \"Reflect\", \"Resolve\", \"Propagate\"] },\n        \"timestamp\": { \"type\": \"string\", \"format\": \"date-time\" },\n        \"description\": { \"type\": \"string\" },\n        \"entropy\": { \"type\": \"number\" },\n        \"contradictions\": { \"type\": \"integer\" }\n      },\n      \"required\": [\"layer_id\", \"phase\", \"timestamp\", \"description\"]\n    },\n    \"anchorPoint\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"anchor_id\": { \"type\": \"string\", \"format\": \"uuid\" },\n        \"timestamp\": { \"type\": \"string\", \"format\": \"date-time\" },\n        \"event_type\": { \"type\": \"string\", \"description\": \"e"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.54,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3434b8adf5e3d5826d12695d09f04d82"
+  }
+}

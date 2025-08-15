@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:59:13.362Z",
+    "source_text_length": 1331,
+    "word_count": 98,
+    "sentence_count": 5,
+    "entropy_level": 0.966,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsonmd_4dfdf977d052b90417a9551d74b4284a.json"
+    },
+    "anchor_id": "306d53378f9af9d1f93d437d00b04ec9"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "offline",
+        "frequency": 3
+      },
+      {
+        "theme": "recpipe",
+        "frequency": 2
+      },
+      {
+        "theme": "studio",
+        "frequency": 2
+      },
+      {
+        "theme": "file",
+        "frequency": 2
+      },
+      {
+        "theme": "folder",
+        "frequency": 2
+      },
+      {
+        "theme": "scan",
+        "frequency": 2
+      },
+      {
+        "theme": "2025",
+        "frequency": 1
+      },
+      {
+        "theme": "24476",
+        "frequency": 1
+      },
+      {
+        "theme": "json_md_fusion_scroll",
+        "frequency": 1
+      },
+      {
+        "theme": "version",
+        "frequency": 1
+      },
+      {
+        "theme": "timestamp",
+        "frequency": 1
+      },
+      {
+        "theme": "13t01",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"json_md_fusion_scroll\": {\n    \"version\": \"1 … html\",\n      \"bytes\": 24476,\n      \"lastModified\": 1754908675419\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"RecPipe Offline Studio RecPipe Offline Studio Single-file • File System Access • IndexedDB • WebCrypto Co",
+    "key_insights": [],
+    "action_items": [
+      "html\",\n      \"bytes\": 24476,\n      \"lastModified\": 1754908675419\n    }\n  },\n  \"content_analysis\": {\n    \"main_themes\": [],\n    \"key_questions\": [],\n    \"pattern_recognition\": [],\n    \"contradiction_map\": [],\n    \"sentiment_indicators\": {\n      \"positive\": 0,\n      \"negative\": 0,\n      \"uncertainty\": 0\n    },\n    \"temporal_markers\": {\n      \"past\": 0,\n      \"present\": 0,\n      \"future\": 0\n    }\n  },\n  \"structured_content\": {\n    \"summary\": \"RecPipe Offline Studio RecPipe Offline Studio Single-file • File System Access • IndexedDB • WebCrypto Controls ① Connect Root Folder Init Stage Tree ② Scan & P…\",\n    \"key_insights\": [],\n    \"action_items\": [],\n    \"unresolved_tensions\": []\n  },\n  \"metadata\": {\n    \"fusion_methodology\": \"Browser offline scan (Downloads folder)\",\n    \"confidence_level\": 1,\n    \"recommended_next_steps\": [],\n    \"recursive_potential\": \"n/a\"\n  }\n}"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "306d53378f9af9d1f93d437d00b04ec9"
+  }
+}

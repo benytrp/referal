@@ -1,0 +1,123 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:48.475Z",
+    "source_text_length": 17584,
+    "word_count": 1492,
+    "sentence_count": 160,
+    "entropy_level": null,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "thalamus_implementation_guide.md"
+    },
+    "anchor_id": "032ce586b67ee08da312a285ab365c6e"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "domain",
+        "frequency": 38
+      },
+      {
+        "theme": "thalamus",
+        "frequency": 34
+      },
+      {
+        "theme": "script",
+        "frequency": 25
+      },
+      {
+        "theme": "const",
+        "frequency": 23
+      },
+      {
+        "theme": "config",
+        "frequency": 18
+      },
+      {
+        "theme": "html",
+        "frequency": 17
+      },
+      {
+        "theme": "analysis",
+        "frequency": 17
+      },
+      {
+        "theme": "framework",
+        "frequency": 16
+      },
+      {
+        "theme": "context",
+        "frequency": 15
+      },
+      {
+        "theme": "engine",
+        "frequency": 14
+      },
+      {
+        "theme": "title",
+        "frequency": 13
+      },
+      {
+        "theme": "thalamusengine",
+        "frequency": 12
+      }
+    ],
+    "key_questions": [
+      "ScientificReasoningEngine({\n        maxCycles: 500\n    });\n</script>\n```\n\n### Method 4: WordPress/CMS Plugins\n```php\n<?php\n/**\n * Plugin Name: Thalamus Reasoning Tools\n * Description: Embeddable cryptographic reasoning artifacts\n */\n\nfunction thalamus_reasoning_shortcode($atts) {\n    $atts = shortcode_atts([\n        'domain' => 'scientific',\n        'cycles' => 300,\n        'title' => 'Analysis Tool'\n    ], $atts);\n    \n    return '<div id=\"thalamus-'",
+      "'</h3>\n                 <div class=\"thalamus-container\"></div>\n            </div>\n            <script>initializeThalamus();</script>';\n}\nadd_shortcode('thalamus_analysis', 'thalamus_reasoning_shortcode');\n?>\n```\n\n## Template Creation Guide\n\n### Custom Domain Template Structure\n```javascript\n// Template: Create your own reasoning domain\nclass [YourDomain]ReasoningEngine extends ThalamusEngine {\n    constructor(config) {\n        super({\n            domain: 'your_domain',\n            \n            // Define domain-specific operations\n            operationSet: {\n                summon: [\n                    // Initial operations (10% of cycles)\n                    'operation_1',\n                    'operation_2'\n                ],\n                processing: [\n                    // Main reasoning (75% of cycles)\n                    'operation_3',\n                    'operation_4',\n                    'operation_5'\n                ],\n                echo: [\n                    // Synthesis operations (15% of cycles)\n                    'operation_6',\n                    'operation_7'\n                ]\n            },\n            \n            // Define domain-specific challenges\n            adversarialChallenges: [\n                {\n                    type: 'challenge_name',\n                    cycleRange: [start_cycle, end_cycle],\n                    description: 'What this challenge tests',\n                    resolution: 'How it should be resolved',\n                    entropyIncrease: 0",
+      "runAnalysis();\n    };\n    \n    return (\n        <div className=\"thalamus-analyzer\">\n            <button onClick={startAnalysis} disabled={isRunning}>\n                {isRunning ? 'Analyzing"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "Enterprise Solutions\n- **Custom Domains**: Industry-specific templates\n- **Integration APIs**: Enterprise system connections\n- **Training Programs**: Implementation workshops\n- **Support Services**: Deployment assistance\n\nThis framework democratizes cryptographically verifiable AI reasoning - making it as easy to deploy as a website,",
+        "statement_b": "with the rigor of peer-reviewed research",
+        "line": 160,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 1,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 1,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# Thalamus Framework Implementation & Distribution Guide\n\n## Quick Start: 5 Steps to Your First Reasoning Artifact\n\n### Step 1: Choose Your Template\n```html\n< … Enterprise Solutions\n- **Custom Domains**: Industry-specific templates\n- **Integration APIs**: Enterprise system connections\n- **Training Programs**: Implementation workshops\n- **Support Services**: Deployment assistance\n\nThis framework democratizes cryptographically verifiable AI reasoning - making it as easy to deploy as a website, but with the rigor of peer-reviewed research",
+    "key_insights": [],
+    "action_items": [
+      "# Thalamus Framework Implementation & Distribution Guide\n\n## Quick Start: 5 Steps to Your First Reasoning Artifact\n\n### Step 1: Choose Your Template\n```html\n<",
+      "log('Analysis complete:', bundle);\n        }\n    </script>\n</body>\n</html>\n```\n\n### Step 2: Customize for Your Domain\n```javascript\n// Create a Medical Diagnosis Engine\nclass MedicalReasoningEngine extends ThalamusEngine {\n    constructor(config) {\n        super({\n            domain: 'medical',\n            operationSet: {\n                summon: [\n                    'gather_symptoms',\n                    'review_history', \n                    'identify_risk_factors',\n                    'establish_differential_diagnosis'\n                ],\n                processing: [\n                    'analyze_lab_results',\n                    'interpret_imaging',\n                    'assess_symptom_patterns',\n                    'rule_out_conditions',\n                    'calculate_probability_scores',\n                    'consider_drug_interactions'\n                ],\n                echo: [\n                    'synthesize_diagnosis',\n                    'recommend_treatment',\n                    'assess_prognosis',\n                    'identify_monitoring_plan'\n                ]\n            },\n            adversarialChallenges: [\n                {\n                    type: 'anchoring_bias',\n                    cycleRange: [100, 150],\n                    description: 'Initial diagnosis bias detected',\n                    resolution: 'Systematic differential diagnosis review',\n                    entropyIncrease: 0",
+      "2);\n    }\n}\n```\n\n## Distribution Methods\n\n### Method 1: Static HTML Files (Easiest)\n```bash\n# Create a single-file distribution\ncat > medical-diagnosis-tool",
+      "Create repository\ngit init thalamus-legal-analysis\ncd thalamus-legal-analysis\n\n# 2",
+      ">\n```\n\n## Template Creation Guide\n\n### Custom Domain Template Structure\n```javascript\n// Template: Create your own reasoning domain\nclass [YourDomain]ReasoningEngine extends ThalamusEngine {\n    constructor(config) {\n        super({\n            domain: 'your_domain',\n            \n            // Define domain-specific operations\n            operationSet: {\n                summon: [\n                    // Initial operations (10% of cycles)\n                    'operation_1',\n                    'operation_2'\n                ],\n                processing: [\n                    // Main reasoning (75% of cycles)\n                    'operation_3',\n                    'operation_4',\n                    'operation_5'\n                ],\n                echo: [\n                    // Synthesis operations (15% of cycles)\n                    'operation_6',\n                    'operation_7'\n                ]\n            },\n            \n            // Define domain-specific challenges\n            adversarialChallenges: [\n                {\n                    type: 'challenge_name',\n                    cycleRange: [start_cycle, end_cycle],\n                    description: 'What this challenge tests',\n                    resolution: 'How it should be resolved',\n                    entropyIncrease: 0",
+      "0\",\n        \"domain\": \"scientific\",\n        \"metadata\": {\n            \"title\": \"Climate Change Causation Analysis\",\n            \"description\": \"Cryptographic analysis of CO2-temperature relationships\",\n            \"author\": \"Research Team\",\n            \"created\": \"2025-08-09\",\n            \"license\": \"MIT\"\n        },\n        \"engine\": {\n            \"maxCycles\": 678,\n            \"entropyThresholds\": {\n                \"low\": 0",
+      "6\n            }\n        ],\n        \"ui\": {\n            \"theme\": \"scientific\",\n            \"showEntropyChart\": true,\n            \"showCycleLog\": true,\n            \"enableRealTimeUpdates\": true\n        },\n        \"export\": {\n            \"formats\": [\"json\", \"pdf\", \"csv\"],\n            \"includeChain\": true,\n            \"includeCrypto\": true\n        }\n    }\n}\n```\n\n## Deployment Automation\n\n### Build Script for Distribution\n```bash\n#",
+      "/bin/bash\n# build-thalamus-tool",
+      "/build-thalamus-tool",
+      "json]\"\n    exit 1\nfi\n\necho \"Building Thalamus tool for domain: $DOMAIN\"\n\n# Create distribution directory\nmkdir -p dist/$DOMAIN\n\n# Copy framework\ncp thalamus-framework"
+    ],
+    "unresolved_tensions": [
+      "Enterprise Solutions\n- **Custom Domains**: Industry-specific templates\n- **Integration APIs**: Enterprise system connections\n- **Training Programs**: Implementation workshops\n- **Support Services**: Deployment assistance\n\nThis framework democratizes cryptographically verifiable AI reasoning - making it as easy to deploy as a website, vs with the rigor of peer-reviewed research"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": null,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "032ce586b67ee08da312a285ab365c6e"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:28.824Z",
+    "source_text_length": 1853,
+    "word_count": 243,
+    "sentence_count": 25,
+    "entropy_level": 0.939,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "README.md"
+    },
+    "anchor_id": "0a1f82595a1701b3c8ffc888b2a88339"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bash",
+        "frequency": 11
+      },
+      {
+        "theme": "library",
+        "frequency": 11
+      },
+      {
+        "theme": "json",
+        "frequency": 6
+      },
+      {
+        "theme": "https",
+        "frequency": 5
+      },
+      {
+        "theme": "license",
+        "frequency": 5
+      },
+      {
+        "theme": "documentation",
+        "frequency": 4
+      },
+      {
+        "theme": "name",
+        "frequency": 4
+      },
+      {
+        "theme": "commands",
+        "frequency": 3
+      },
+      {
+        "theme": "readable",
+        "frequency": 3
+      },
+      {
+        "theme": "repository",
+        "frequency": 3
+      },
+      {
+        "theme": "github",
+        "frequency": 3
+      },
+      {
+        "theme": "youruser",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 3,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "# my-bash-library\n\nA curated collection of reusable bash commands and utilities for system administration, scripting, and automation … ## License\n\nThis project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details",
+    "key_insights": [],
+    "action_items": [
+      "sh` for developers"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.53,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0a1f82595a1701b3c8ffc888b2a88339"
+  }
+}

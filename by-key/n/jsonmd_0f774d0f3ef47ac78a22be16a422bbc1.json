@@ -1,0 +1,113 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:23:48.966Z",
+    "source_text_length": 11442,
+    "word_count": 1030,
+    "sentence_count": 198,
+    "entropy_level": 0.893,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "ai_studio_code (5).txt"
+    },
+    "anchor_id": "0f774d0f3ef47ac78a22be16a422bbc1"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "thread",
+        "frequency": 48
+      },
+      {
+        "theme": "const",
+        "frequency": 38
+      },
+      {
+        "theme": "class",
+        "frequency": 19
+      },
+      {
+        "theme": "item",
+        "frequency": 19
+      },
+      {
+        "theme": "document",
+        "frequency": 17
+      },
+      {
+        "theme": "button",
+        "frequency": 17
+      },
+      {
+        "theme": "sentiment",
+        "frequency": 16
+      },
+      {
+        "theme": "function",
+        "frequency": 16
+      },
+      {
+        "theme": "style",
+        "frequency": 16
+      },
+      {
+        "theme": "canvas",
+        "frequency": 15
+      },
+      {
+        "theme": "threads",
+        "frequency": 13
+      },
+      {
+        "theme": "width",
+        "frequency": 11
+      }
+    ],
+    "key_questions": [
+      "3 ? 'Love' : \n                                    state",
+      "3 ? 'Hate' : 'Neutral';\n                sentimentEl",
+      "includes(\"love\") ? 1",
+      "includes(\"hate\") ? -1",
+      "value) - 1;\n            const thread = threads[0];\n            const state = thread?"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "<div class=\"container\">\n    <div class=\"header\">\n        <h1>Scrollwalker Emotion Field System</h1>\n        <p>Dynamic sentiment analysis with recursive echo patterns</p>\n    </div>\n    \n    <div class=\"stats\">\n        <div class=\"stat-item\">\n            <div class=\"stat-value\" id=\"global-sentiment\">0 … shadow;\n            });\n        });\n        \n        // Start with one thread\n        spawnNewThread();\n        drawSpectrumOverlay();\n        updateStats();\n    }\n\n    // Start the system\n    init();\n</script>",
+    "key_insights": [],
+    "action_items": [
+      "push(thread);\n        createThreadElement(thread);\n        runThreadCycle(thread, threadCount);\n        updateStats();\n    }\n\n    function createThreadElement(thread) {\n        const gridContainer = document",
+      "createElement('div');\n        element",
+      "createElement('div');\n        logElement",
+      "createRadialGradient(\n                x + width/2, canvas",
+      "createObjectURL(blob);\n        const a = document",
+      "createElement('a');\n        a",
+      "add('echo-active');\n        }\n    }\n\n    // ==== Initialization ====\n    function init() {\n        // Create initial controls\n        const controlsContainer = document"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.55,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "0f774d0f3ef47ac78a22be16a422bbc1"
+  }
+}

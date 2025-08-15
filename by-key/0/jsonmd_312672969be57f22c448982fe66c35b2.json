@@ -1,0 +1,120 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:46.065Z",
+    "source_text_length": 4821,
+    "word_count": 578,
+    "sentence_count": 40,
+    "entropy_level": 0.958,
+    "contradictions_detected": 1,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "studio tone.html"
+    },
+    "anchor_id": "312672969be57f22c448982fe66c35b2"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "2026",
+        "frequency": 11
+      },
+      {
+        "theme": "2025",
+        "frequency": 9
+      },
+      {
+        "theme": "layer",
+        "frequency": 8
+      },
+      {
+        "theme": "data",
+        "frequency": 8
+      },
+      {
+        "theme": "phase",
+        "frequency": 6
+      },
+      {
+        "theme": "start",
+        "frequency": 6
+      },
+      {
+        "theme": "note",
+        "frequency": 5
+      },
+      {
+        "theme": "analysis",
+        "frequency": 5
+      },
+      {
+        "theme": "name",
+        "frequency": 5
+      },
+      {
+        "theme": "research",
+        "frequency": 4
+      },
+      {
+        "theme": "hypothesis",
+        "frequency": 4
+      },
+      {
+        "theme": "contradiction",
+        "frequency": 4
+      }
+    ],
+    "key_questions": [
+      "Flexibility\", \"prompt\": \"How do we focus without limiting discovery?\", \"core_challenge\": \"Define research boundaries that are narrow enough to test yet elastic enough to pivot",
+      "Practicality\", \"prompt\": \"How do we ensure validity within constraints?\", \"core_challenge\": \"Select methods that maximise internal validity while respecting budget & time",
+      "Timeliness\", \"prompt\": \"How much data is enough to draw conclusions?\", \"core_challenge\": \"Balance comprehensive coverage with project deadlines",
+      "Insight\", \"prompt\": \"How do we find meaning without bias?\", \"core_challenge\": \"Apply analytic techniques that surface effects without researcher over-interpretation",
+      "\" ] } }, \"meta_dialogue\": { \"open_questions\": [ \"Should qualitative sampling include outliers to stress-test the model?\", \"Which journal’s methodological preferences should guide reporting style",
+      "?\" ], \"change_log\": [], \"beacon_protocol\": \"Each layer’s piano note serves as an offline progress chirp; a monitoring script logs beacon timestamps and raises an alert if expected tones are missing"
+    ],
+    "pattern_recognition": [],
+    "contradiction_map": [
+      {
+        "statement_a": "\", \"core_challenge\": \"Define research boundaries that are narrow enough to test",
+        "statement_b": "elastic enough to pivot",
+        "line": 9,
+        "tension_type": "explicit_contradiction"
+      }
+    ],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 2,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{ \"task_id\": \"RESEARCH_PROJECT_ARCHITECT\", \"mode\": \"ITERATIVE_REFINEMENT\", \"glyph_signature\": \"∇ ∆ ∇ ∆ ∇\", \"version\": \"v1 … \" } }",
+    "key_insights": [],
+    "action_items": [
+      "\", \"auto_execute\": \"Create data collection plan\", \"output\": { \"collection_window\": \"2025-10-01 → 2026-01-15\", \"data_checks\": [ \"Weekly missing-data report (< 5%)\", \"Mid-point power recalculation (2025-11-30)\" ], \"success_indicator\": \"≥ 90% response rate; ≤ 3% attrition",
+      "\", \"auto_execute\": \"Develop analysis framework\", \"output\": { \"quant_analysis\": [ \"Hierarchical linear modelling (HLM)\", \"Robustness checks: bootstrapped CIs (5000 draws)\" ], \"qual_analysis\": [ \"Reflexive thematic coding (two-coder consensus)\", \"Member-checking with 5 participants\" ], \"integration\": \"Joint-display matrices aligning HLM coefficients with emergent themes\", \"success_indicator\": \"Convergence across methods; Cohen’s κ ≥ 0",
+      "\" ] } }, \"meta_dialogue\": { \"open_questions\": [ \"Should qualitative sampling include outliers to stress-test the model",
+      "\", \"Which journal’s methodological preferences should guide reporting style"
+    ],
+    "unresolved_tensions": [
+      "\", \"core_challenge\": \"Define research boundaries that are narrow enough to test vs elastic enough to pivot"
+    ]
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.52,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 3 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "312672969be57f22c448982fe66c35b2"
+  }
+}

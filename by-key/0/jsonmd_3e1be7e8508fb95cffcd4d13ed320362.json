@@ -1,0 +1,101 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-12T23:24:22.469Z",
+    "source_text_length": 636,
+    "word_count": 88,
+    "sentence_count": 6,
+    "entropy_level": 0.973,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "hjghjg.html"
+    },
+    "anchor_id": "3e1be7e8508fb95cffcd4d13ed320362"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "bridge",
+        "frequency": 4
+      },
+      {
+        "theme": "preset",
+        "frequency": 4
+      },
+      {
+        "theme": "line",
+        "frequency": 3
+      },
+      {
+        "theme": "preview",
+        "frequency": 3
+      },
+      {
+        "theme": "json",
+        "frequency": 2
+      },
+      {
+        "theme": "session",
+        "frequency": 2
+      },
+      {
+        "theme": "inputs",
+        "frequency": 2
+      },
+      {
+        "theme": "success",
+        "frequency": 2
+      },
+      {
+        "theme": "generate",
+        "frequency": 2
+      },
+      {
+        "theme": "files",
+        "frequency": 2
+      },
+      {
+        "theme": "schema",
+        "frequency": 2
+      },
+      {
+        "theme": "perfect",
+        "frequency": 1
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 1,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 1
+    }
+  },
+  "structured_content": {
+    "summary": "Perfect Prompt Logic — Bridge Generator (v2 lite) Preset Choose preset: AI-Create Preset (draft) View / Edit selected preset JSON Session Inputs Owner Urgency lowmediumhighcritical Tags (comma-separated) Key Constraints (one per line) Interfaces / Inputs (one per line) Success Criteria (one per line, metric: value) Session Data (freeform; will be chunked) Generate Bridge Files Generate Files Clear Preview — bridge … md Guardrail reminder: keep presets strictly scoped, quantify success, avoid unverifiable claims/PII, and validate outputs against the schema before use",
+    "key_insights": [],
+    "action_items": [
+      "Perfect Prompt Logic — Bridge Generator (v2 lite) Preset Choose preset: AI-Create Preset (draft) View / Edit selected preset JSON Session Inputs Owner Urgency lowmediumhighcritical Tags (comma-separated) Key Constraints (one per line) Interfaces / Inputs (one per line) Success Criteria (one per line, metric: value) Session Data (freeform; will be chunked) Generate Bridge Files Generate Files Clear Preview — bridge"
+    ],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.51,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 1 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "3e1be7e8508fb95cffcd4d13ed320362"
+  }
+}

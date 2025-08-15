@@ -1,0 +1,99 @@
+{
+  "json_md_fusion_scroll": {
+    "version": "unified-2.1",
+    "timestamp": "2025-08-13T04:59:16.448Z",
+    "source_text_length": 10796,
+    "word_count": 802,
+    "sentence_count": 97,
+    "entropy_level": 0.749,
+    "contradictions_detected": 0,
+    "processing_phase": "COGNITIVE_FUSION",
+    "frequency_resonance": "659.25 Hz (E5)",
+    "format": "json_md_fusion",
+    "source": {
+      "filename": "jsonmd_blacklist_v1.json"
+    },
+    "anchor_id": "1f9e39977840702231c3c789f886991a"
+  },
+  "content_analysis": {
+    "main_themes": [
+      {
+        "theme": "html",
+        "frequency": 47
+      },
+      {
+        "theme": "2025",
+        "frequency": 46
+      },
+      {
+        "theme": "13t01",
+        "frequency": 46
+      },
+      {
+        "theme": "anchor_id",
+        "frequency": 45
+      },
+      {
+        "theme": "name",
+        "frequency": 45
+      },
+      {
+        "theme": "relpath",
+        "frequency": 45
+      },
+      {
+        "theme": "bytes",
+        "frequency": 45
+      },
+      {
+        "theme": "lastmodified",
+        "frequency": 45
+      },
+      {
+        "theme": "saved",
+        "frequency": 45
+      },
+      {
+        "theme": "jsonmd_downloads_scanner_v_1_3",
+        "frequency": 4
+      },
+      {
+        "theme": "copy",
+        "frequency": 3
+      },
+      {
+        "theme": "cognitive_jsonmd_scanner_v2",
+        "frequency": 3
+      }
+    ],
+    "key_questions": [],
+    "pattern_recognition": [],
+    "contradiction_map": [],
+    "sentiment_indicators": {
+      "positive": 0,
+      "negative": 0,
+      "uncertainty": 0
+    },
+    "temporal_markers": {
+      "past": 0,
+      "present": 0,
+      "future": 0
+    }
+  },
+  "structured_content": {
+    "summary": "{\n  \"version\": 1,\n  \"updated\": \"2025-08-13T01:34:25 … 396Z\"\n    }\n  ]\n}",
+    "key_insights": [],
+    "action_items": [],
+    "unresolved_tensions": []
+  },
+  "metadata": {
+    "fusion_methodology": "Unified Offline Engine",
+    "confidence_level": 0.63,
+    "recommended_next_steps": [
+      "Review 0 insights",
+      "Execute 0 actions"
+    ],
+    "recursive_potential": "Medium",
+    "text_sha256": "1f9e39977840702231c3c789f886991a"
+  }
+}
